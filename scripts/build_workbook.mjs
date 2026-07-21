@@ -231,7 +231,7 @@ readme.getRange("A3:B28").values = [
   ["Expansion Exclusions", "Five Connector anchors excluded from assertion output with an explicit reason and preserved source text."],
   ["Coordinate method", "geonames_locality_centroid means approximate town/place coordinates, never an exact field."],
   ["GeoNames attribution", "Locality coordinates use GeoNames under CC BY 4.0: https://www.geonames.org/"],
-  ["Images", "Third-party photos are not redistributed. The KMZ packages zero image files and carries one disabled remote source link."],
+  ["Images", "Third-party photos are not redistributed. The KMZ packages zero image files and carries six disabled remote source links."],
   ["Directions", "Reviewed geographic bearings live in data/orientation_observations.csv in the repository."],
   ["Reproducibility", `Generated ${summaryJson.generated_at}; source PDF SHA-256 ${summaryJson.pdf.sha256}.`],
 ];

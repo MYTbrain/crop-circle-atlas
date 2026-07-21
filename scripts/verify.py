@@ -71,16 +71,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8390, 7745, 4025, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8390, 7745, 4026, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
-    "locality_reference": 4017,
-    "unresolved": 3720,
+    "locality_reference": 4012,
+    "unresolved": 3719,
     "corroborated_field": 2,
-    "candidate_field": 1,
+    "candidate_field": 7,
     "registered_site": 5,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 4
+assert summary["site_resolutions"]["reviewed_overrides"] == 10
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -211,8 +211,8 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 8
-assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 4017
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 14
+assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 4012
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
 assert all(feature["properties"]["site_status"] in FIELD_SITE_STATUSES for feature in site_geojson["features"])
@@ -385,8 +385,11 @@ assert provisional["origin_uncertainty_m"] >= float(whiskey_1998["site_coordinat
 registered_overlays = json.loads(
     (ROOT / "web" / "data" / "registered_overlays.json").read_text(encoding="utf-8")
 )
+formation_images = json.loads(
+    (ROOT / "web" / "data" / "formation_images.json").read_text(encoding="utf-8")
+)
 validate_registered_overlay(ROOT)
-assert len(registered_overlays["overlays"]) == 5
+assert len(registered_overlays["overlays"]) == 6
 overlays_by_id = {item["overlay_id"]: item for item in registered_overlays["overlays"]}
 assert set(overlays_by_id) == {
     "whiskey-hill-1998-user-registration",
@@ -394,7 +397,36 @@ assert set(overlays_by_id) == {
     "mayville-kekoskee-2003-source-gps-registration",
     "howell-township-2003-source-gps-registration",
     "jupiter-2005-source-gps-scene-placement",
+    "wausau-1997-usgs-followup-registration",
 }
+image_relationships = [
+    (formation_id, image)
+    for formation_id, images in formation_images["images_by_formation"].items()
+    for image in images
+]
+unique_source_image_urls = {image["image_url"] for _, image in image_relationships}
+catalog_metadata = formation_images["metadata"]
+assert catalog_metadata["schema_version"] == "crop-circle-atlas/formation-images/v1"
+assert catalog_metadata["unique_image_count"] == len(unique_source_image_urls) == 480
+assert catalog_metadata["formation_image_link_count"] == len(image_relationships) == 517
+assert catalog_metadata["formation_count"] == len(formation_images["images_by_formation"]) == 266
+assert catalog_metadata["us_unique_image_count"] == 479
+assert catalog_metadata["overlay_placement_count"] == len(registered_overlays["overlays"])
+source_image_rows = {(row["image_url"], row["sha256"]) for row in iccra_images}
+overlay_image_pairs = {
+    (item["formation_id"], item["source_image_url"])
+    for item in registered_overlays["overlays"]
+}
+mapped_catalog_relationships = 0
+for formation_id, image in image_relationships:
+    assert formation_id in formation_by_id
+    assert (image["image_url"], image["sha256"]) in source_image_rows
+    assert image["rights_status"] == "not_cleared"
+    assert "cache_path" not in image and "local_path" not in image
+    expected_status = "mapped_overlay" if (formation_id, image["image_url"]) in overlay_image_pairs else "source_link_only_not_georegistered"
+    assert image["placement_status"] == expected_status
+    mapped_catalog_relationships += expected_status == "mapped_overlay"
+assert catalog_metadata["mapped_catalog_image_count"] == mapped_catalog_relationships
 overlay = overlays_by_id["whiskey-hill-1998-user-registration"]
 assert overlay["formation_id"] == provisional["formation_id"]
 assert overlay["assertion_id"] == provisional["assertion_id"]
@@ -449,6 +481,10 @@ new_overlay_expectations = {
         "cc_380f14de702d", "iccra_8b50ef9c87fcc775",
         "provisional_source_gps_scene_placement",
     ),
+    "wausau-1997-usgs-followup-registration": (
+        "cc_5d10e918a4b4", "iccra_0f395c638d0a0d2c",
+        "provisional_historical_ortho_landmark_registration",
+    ),
 }
 for overlay_id, (formation_id, assertion_id, registration_status) in new_overlay_expectations.items():
     registered = overlays_by_id[overlay_id]
@@ -467,8 +503,10 @@ for overlay_id, (formation_id, assertion_id, registration_status) in new_overlay
     assert float(registered["coordinate_uncertainty_m"]) == float(
         formation["site_coordinate_uncertainty_m"]
     )
-    assert abs(float(registered["center"][0]) - float(formation["site_latitude"])) < 1e-8
-    assert abs(float(registered["center"][1]) - float(formation["site_longitude"])) < 1e-8
+    # Site CSV coordinates are serialized to seven decimal places; require the
+    # higher-precision overlay center to agree within a centimetre-scale bound.
+    assert abs(float(registered["center"][0]) - float(formation["site_latitude"])) < 5e-8
+    assert abs(float(registered["center"][1]) - float(formation["site_longitude"])) < 5e-8
     assert registered["formal_alignment_status"].startswith("excluded_pending_")
 
 kml_path = ROOT / "exports" / "crop_circle_atlas.kml"
@@ -478,7 +516,7 @@ kml_ns = {"k": "http://www.opengis.net/kml/2.2"}
 assert len(kml_root.findall(".//k:Point", kml_ns)) == len(geocoded)
 assert len(kml_root.findall(".//k:LineString", kml_ns)) == len(orientations) + len(provisional_rows)
 linked_overlays = kml_root.findall(".//k:GroundOverlay", kml_ns)
-assert len(linked_overlays) == 5
+assert len(linked_overlays) == 6
 assert all(item.find("k:visibility", kml_ns).text == "1" for item in linked_overlays)
 assert all(item.find("k:color", kml_ns).text == "adffffff" for item in linked_overlays)
 kml_text = kml_path.read_text(encoding="utf-8")
@@ -519,6 +557,11 @@ assert overlay_audit == [
         "status": "included_remote_link",
         "reason": "pixels_not_packaged_provisional",
     },
+    {
+        "asset_id": "wausau-1997-usgs-followup-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
 ]
 assert (ROOT / "web" / "downloads" / "crop_circle_atlas.kmz").read_bytes() == kmz_path.read_bytes()
 
@@ -541,9 +584,9 @@ with zipfile.ZipFile(workbook) as archive:
             table = ET.fromstring(archive.read(member))
             table_refs[table.attrib["displayName"]] = table.attrib["ref"]
     assert table_refs["FormationsTable"] == "A1:AP7746"
-    assert table_refs["FieldSiteReviewsTable"] == "A1:T5"
+    assert table_refs["FieldSiteReviewsTable"] == "A1:T11"
     assert table_refs["AliasReviewsTable"].endswith("5")
-    assert table_refs["OverlayAuditTable"] == "A1:C6"
+    assert table_refs["OverlayAuditTable"] == "A1:C7"
 
 for needed in (
     "index.html", "app.js", "styles.css", "favicon.svg", "methodology.html", "georef.html",
@@ -560,21 +603,27 @@ georef_html = (ROOT / "web" / "georef.html").read_text(encoding="utf-8")
 assert "Show rough locality references on map" in web_index
 assert "Load and zoom to registered image" in web_index
 assert "Registered aerial imagery" in web_index
+assert "Source image archive" in web_index
+assert 'id="sourceImageGallery"' in web_index
+assert 'id="toggleSourceImages"' in web_index
 assert "Export unqualified hypothesis KML" in web_index
 assert 'id="resultsList"' in web_index
 assert "unqualified_manual_hypothesis" in web_app
 assert "Provisional registered axes" in web_app
 assert "Registered aerial-photo footprints" in web_app
+assert "renderSourceImageGallery" in web_app
+assert "sourceImagesByFormation" in web_app
 assert "sitePointPane" in web_app and "localityPointPane" in web_app
-assert "radius: 5, color: '#f6ad55', weight: 2.25, opacity: 1, dashArray: '3 2'" in web_app
-assert "fillColor: '#f6ad55', fillOpacity: 0.08, renderer: localityRenderer" in web_app
-assert "fillColor: verified ? '#2d9e91' : '#f6ad55'" in web_app
-assert ".key-dot.reference { color:#f6ad55; background:transparent; border-style:dashed; }" in web_styles
+assert "radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2'" in web_app
+assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in web_app
+assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
+assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260721.3"' in web_index
-assert 'src="app.js?v=20260721.3"' in web_index
-assert "registered_overlays.json?v=20260721.3" in web_app
-assert "Five reviewed source-image placements are mapped" in web_index
+assert 'href="styles.css?v=20260721.5"' in web_index
+assert 'src="app.js?v=20260721.5"' in web_index
+assert "registered_overlays.json?v=20260721.5" in web_app
+assert "formation_images.json?v=20260721.5" in web_app
+assert "Six reviewed source-image placements are mapped" in web_index
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
 assert "map.closePopup()" in web_app

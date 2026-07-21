@@ -11,9 +11,9 @@ after four accepted report-alias merges. Every entity has one location role:
 
 | Location role | Count | Meaning |
 |---|---:|---|
-| Field candidates/sites | 8 | Two corroborated fields, one candidate field, and five source-coordinate registered sites |
-| Locality reference | 4,017 | Approximate place centroid retained for finding the report, not the field |
-| Unresolved | 3,720 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
+| Field candidates/sites | 14 | Two corroborated fields, seven candidate fields, and five source-coordinate registered sites |
+| Locality reference | 4,012 | Approximate place centroid retained for finding the report, not the field |
+| Unresolved | 3,719 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
 | Total | 7,745 | Complete location-work index |
 
 These counts describe evidence roles, not completion of 7,745 exact
@@ -23,7 +23,7 @@ field is supported by reviewed evidence; it does not necessarily mean every
 feature boundary or formation center is survey-grade. `candidate_field` is a
 bounded hypothesis. Unresolved records remain unresolved.
 
-The working queue is `data/location_work_queue.csv`. Reviewed field-level
+The working queue is `data/location_work_queue.csv`. Ten reviewed field-level
 decisions are recorded separately in `data/site_resolutions.csv`, so review,
 spatial confidence, and image-publication rights cannot be conflated.
 
@@ -70,6 +70,26 @@ uncertainty. It remains
 alignment calculations, and has no demonstrated predictive validity. The
 registration's automated inlier features are useful reconstruction evidence,
 but they are not a substitute for independently selected ground checkpoints.
+
+## Additional reviewed US candidates
+
+The current campaign adds six evidence-reviewed US cases. Only the Wausau
+August 13 follow-up image has sufficient scene controls for a provisional image
+placement; the other five records publish a bounded candidate point without
+inventing overlay corners.
+
+| Report | Published result | Uncertainty | Evidence boundary |
+|---|---|---:|---|
+| Wausau, Wisconsin, 1997-08-13 | Candidate field plus provisional follow-up-scene placement | 100 m | A contemporaneous investigator map is fitted to named road controls and checked against persistent roads, a farmstead, drainage, and field boundaries in the ICCRA-linked 1998 USGS frame; the formation is not clearly visible in that later frame |
+| Wausau, Wisconsin, 1997-08-16 | Candidate field | 100 m | The second symbol on the same investigator map constrains the field west of North 41st Street; no independent projective image fit is accepted |
+| Rockville 1, California, 2003-06-28 | Candidate field | 150 m | Named intersection plus road, field, and building pattern in the oblique aerial image; not a four-point registration |
+| Rockville 2, California, 2003-06-28 | Candidate field | 200 m | Solano Community College campus, adjacent roads, and field geometry constrain the scene; not a four-point registration |
+| Wavra Farm / Salem–Silver Creek Falls, Oregon, 1997-06-28 | Candidate field | 300 m | Named Highway 22 exit plus road, farmstead, and field pattern; oblique-view ambiguity remains |
+| Bedford, Indiana, 2008-09-13 | Candidate field/search scene | 1,200 m | The source's approximate location-map pin is fitted to named-community controls and checked against the Sandpit/Mitchell road clue; ground photographs do not support corners or orientation |
+
+These classifications are search improvements, not survey-grade formation
+coordinates. Their uncertainty values, evidence methods, and exclusions remain
+visible in the site ledger.
 
 ## US-first source hierarchy
 
@@ -189,24 +209,30 @@ visually distinct and excluded from formal alignment statistics.
 
 ## Source-photo display and publication rights
 
-The public site does not contain ICCRA photographs. Registered footprints are
-visible by default, but each source-photo overlay is disabled until a user
-explicitly chooses to show it. The browser then requests the image directly
-from the source host and applies the atlas's corner metadata locally. The
-footprints follow the active search, year, and country filters. Five reviewed
-placements are currently available: Whiskey Hill/Hubbard 1998 and 2000,
+The per-report archive exposes 480 unique ICCRA-linked source images across 266
+formations through 517 formation-image links. A source link is not a
+georegistration. The public site contains no packaged ICCRA photographs, and
+only defensibly registered images receive map footprints. Each source-photo
+overlay is disabled until a user explicitly chooses to show it; the browser
+then requests the rights-restricted image directly from the source host and
+applies the atlas's corner metadata locally. The footprints follow the active
+search, year, and country filters. Six reviewed placements are currently
+available: Whiskey Hill/Hubbard 1998 and 2000, Wausau 1997,
 Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. For Hubbard
 2000, `data/registered_overlay_observations.json` makes the approximate display
 geometry reproducible while recording that its 35 m detector-sensitivity
 envelope is not a confidence interval and that it lacks an independent ground
 checkpoint. Mayville and Howell retain provisional source-coordinate display
 geometry; Jupiter retains a coordinate anchor while explicitly leaving image
-orientation unresolved. The repository does not proxy, cache for publication,
-bundle, or redistribute those pixels. Cross-origin or source-host failure
-remains a visible failure; it is not bypassed.
+orientation unresolved. Wausau registers an ICCRA-linked USGS follow-up frame
+from the contemporaneous road map and persistent scene controls, but remains
+provisional because the formation is not clearly visible and no independent
+checkpoint set has reproduced the transform. The repository does not proxy,
+cache for publication, bundle, or redistribute those pixels. Cross-origin or
+source-host failure remains a visible failure; it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries five disabled provisional
+packages zero source-photo files and carries six disabled provisional
 GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,

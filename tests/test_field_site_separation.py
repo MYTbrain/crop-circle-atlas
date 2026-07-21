@@ -196,6 +196,29 @@ class FieldSiteSeparationTests(unittest.TestCase):
             {"a_bb14f2ae43a320", "iccra_c100c7083922d347"},
         )
 
+    def test_new_image_review_candidates_are_fields_not_locality_centroids(self):
+        expected = {
+            "cc_5d10e918a4b4": (44.9475495, -89.5679034, 100.0),
+            "cc_ca0e623b0480": (44.9473776, -89.5750174, 100.0),
+            "cc_ae1b8ee2ae1f": (38.2428, -122.1231, 150.0),
+            "cc_0ed8b56730be": (38.2401, -122.1225, 200.0),
+            "cc_f0f992d92db0": (44.8550, -122.8650, 300.0),
+            "cc_db1599385db5": (38.8226, -86.4968, 1200.0),
+        }
+        site_ids = {feature["properties"]["formation_id"] for feature in self.sites["features"]}
+        locality_ids = {
+            feature["properties"]["formation_id"] for feature in self.localities["features"]
+        }
+        for formation_id, (latitude, longitude, uncertainty_m) in expected.items():
+            row = self.by_id[formation_id]
+            self.assertEqual(row["site_status"], "candidate_field")
+            self.assertEqual(row["site_alignment_eligible"], "false")
+            self.assertAlmostEqual(float(row["site_latitude"]), latitude, places=6)
+            self.assertAlmostEqual(float(row["site_longitude"]), longitude, places=6)
+            self.assertEqual(float(row["site_coordinate_uncertainty_m"]), uncertainty_m)
+            self.assertIn(formation_id, site_ids)
+            self.assertNotIn(formation_id, locality_ids)
+
     def test_automatic_coordinate_methods_fail_closed(self):
         self.assertEqual(automatic_site_status({
             "formation_id": "allowed", "latitude": 1, "longitude": 2,

@@ -186,6 +186,7 @@ def validate_registered_overlay(root=ROOT):
         "regobs_mayville_2003_source_gps_v1",
         "regobs_howell_2003_source_gps_v1",
         "regobs_jupiter_2005_source_gps_v1",
+        "regobs_wausau_1997_usgs_followup_v1",
     ]
     for observation_id in local_observation_ids:
         local_observation = observations[observation_id]
@@ -228,6 +229,9 @@ def validate_registered_overlay(root=ROOT):
     assert observations["regobs_jupiter_2005_source_gps_v1"][
         "local_display_transform"
     ]["orientation_status"] == "unresolved_display_assumption"
+    assert observations["regobs_wausau_1997_usgs_followup_v1"]["quality"][
+        "status"
+    ] == "useful_provisional_landmark_registration"
     return observation
 
 

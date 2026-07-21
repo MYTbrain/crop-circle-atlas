@@ -13,9 +13,10 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 - 8,390 source assertions resolved into 7,745 conservative catalog entities
   after four evidence-reviewed report aliases were merged. Near matches remain
   separate, so this is not a claim of 7,745 physically distinct formations.
-- Location evidence is separated by role: eight field candidates/sites, 4,017
-  labeled locality references, and 3,720 unresolved entities. A locality
-  reference supports discovery and search; it is not presented as the field.
+- Location evidence is separated by role: 14 reviewed field candidates/sites,
+  4,012 labeled locality references, and 3,719 unresolved entities. Ten of the
+  field-level records are explicit reviewed overrides. A locality reference
+  supports discovery and search; it is not presented as the field.
 - 949 United States entities, plus one Puerto Rico record retained separately.
 - The bounded expansion contributes 639 metadata assertions. It contains 189
   exact baseline-key overlaps and 450 new normalized source keys; the latter
@@ -25,12 +26,15 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   accounted for in 607 canonical assertions. One indexed entity, Mount Airy,
   North Carolina (1965), has no surviving detail page because its ICCRA URL
   returns 404.
-- 681 non-navigation ICCRA image references inventoried. All 669 successfully
-  cached hosted images (526 unique SHA-256 values) were analyzed privately;
-  six external references were not fetched and six hosted URLs returned 404.
-  The public review queue is metadata-only because publication rights have not
-  been cleared. Its 157 high, 85 medium, and 86 low row-level tiers are
-  unvalidated review priorities, not confirmed straight components.
+- The normalized per-report archive exposes 480 unique ICCRA-linked source
+  images across 266 formations, represented by 517 formation-image links.
+  These are source links, not registered map overlays. The underlying crawl
+  inventoried 681 non-navigation references; all 669 successfully cached hosted
+  rows (526 unique SHA-256 values) were analyzed privately, six external
+  references were not fetched, and six hosted URLs returned 404. The public
+  review queue is metadata-only because publication rights have not been
+  cleared. Its 157 high, 85 medium, and 86 low row-level tiers are unvalidated
+  review priorities, not confirmed straight components.
 - All 5,978 supplied catalog diagrams analyzed for straight components: 974
   high, 344 medium, 1,925 low, and 2,735 none. On a 104-item internal
   convenience sample from six selected pages, the high-or-medium threshold
@@ -41,26 +45,30 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   formations. Their five long-distance extensions are clearly labeled
   experimental. The earlier 16 corridor matches came from rough locality
   centroids and are now excluded; accepted rays tested against the two currently
-  alignment-eligible sites produce zero corridor matches. The other six
+  alignment-eligible sites produce zero corridor matches. The other 12
   candidates/sites are excluded by the quality gate. Diagram angles remain
   image-space measurements and never become geographic bearings without
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero ICCRA image files because publication rights
-  have not been cleared. The web map and KML/KMZ contain five opt-in,
+  have not been cleared. The web map and KML/KMZ contain six opt-in,
   source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
-  Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. Mayville and
-  Howell have provisional display geometry tied to source coordinates; Jupiter
-  is explicitly a coordinate-anchored scene whose orientation remains
-  unresolved. Their footprints are visible on the web map, while the
-  repository contains and redistributes no source-photo pixels. Local-only
-  registration remains available.
+  Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005.
+  Wausau uses a contemporaneous investigator road map and an ICCRA-linked USGS
+  follow-up frame; Mayville and Howell have provisional display geometry tied
+  to source coordinates; Jupiter is explicitly a coordinate-anchored scene
+  whose orientation remains unresolved. Only images with defensible placement
+  evidence receive map footprints. Rights-restricted pixels are requested from
+  the source host only after an explicit user action; the repository contains
+  and redistributes no source-photo pixels. Local-only registration remains
+  available.
 
 ## Exact-field resolution status
 
 Exact-field work has begun, but it is not complete. The current ledger contains
-eight field candidates/sites; 4,017 other coordinates are explicitly labeled
-locality references and 3,720 entities remain unresolved.
+14 field candidates/sites; 4,012 other coordinates are explicitly labeled
+locality references and 3,719 entities remain unresolved. Ten field-level
+decisions are preserved as reviewed overrides.
 
 The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
 row was merged into the ICCRA 1998 entity, and the Crop Circle Center and Paul
@@ -88,6 +96,15 @@ longer treated as formation locations.
   from formal alignment calculations until independent checkpoints reproduce
   the registration; it has no demonstrated predictive validity.
 
+The next reviewed US pass registers the ICCRA-linked Wausau August 13, 1997
+USGS follow-up scene against a contemporaneous investigator road map and
+persistent road/field landmarks. The formation is not unambiguously visible in
+that later frame, so its center remains a candidate field and the placement is
+excluded from alignment tests. Wausau August 16, Rockville 1, Rockville 2,
+Wavra Farm, and Bedford are also published as bounded candidate fields or
+candidate scenes with explicit uncertainty. None of those five candidates has
+a defensible source-photo footprint, so no overlay is inferred from its point.
+
 The US-first resolution campaign uses official USGS and USDA imagery for
 repeatable evidence, with Google Earth as a manual verification surface only.
 See `docs/FIELD_RESOLUTION_CAMPAIGN.md` for the acceptance rules, imagery
@@ -108,6 +125,8 @@ sources, control-point requirements, and unresolved-state policy.
 - `data/straight_component_candidates.csv`: automated diagram review queue.
 - `data/iccra_image_straight_candidates.csv`: metadata-only, unvalidated ICCRA
   source-image review queue; no source or derived pixels are included.
+- `web/data/formation_images.json`: normalized per-report source-image archive,
+  with 480 unique images, 266 linked formations, and 517 formation-image links.
 - `data/orientation_observations.csv`: human-reviewed true-north bearings.
 - `data/alignment_hits.csv`: centerline corridor hits with coordinate and
   bearing-uncertainty eligibility fields.
@@ -115,7 +134,7 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  five disabled provisional GroundOverlay links to the source host. Packaged
+  six disabled provisional GroundOverlay links to the source host. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
