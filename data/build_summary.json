@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-07-21T06:30:53Z",
+  "pdf": {
+    "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
+    "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
+    "pages": 309,
+    "assertions": 5978
+  },
+  "assertions": {
+    "total": 7600,
+    "cropcirclecenter_pdf": 5978,
+    "cropcirclecenter_web": 1165,
+    "iccra": 457
+  },
+  "formations": 7160,
+  "geocoded": 3831,
+  "us_formations": 814,
+  "countries": 32,
+  "year_min": 815,
+  "year_max": 2026,
+  "top_countries": [
+    [
+      "England",
+      3632
+    ],
+    [
+      "United States",
+      814
+    ],
+    [
+      "Netherlands",
+      464
+    ],
+    [
+      "Germany",
+      442
+    ],
+    [
+      "Canada",
+      342
+    ],
+    [
+      "Italy",
+      256
+    ],
+    [
+      "Czechia",
+      218
+    ],
+    [
+      "Australia",
+      190
+    ],
+    [
+      "Poland",
+      90
+    ],
+    [
+      "France",
+      82
+    ],
+    [
+      "Switzerland",
+      81
+    ],
+    [
+      "Belgium",
+      73
+    ],
+    [
+      "Denmark",
+      47
+    ],
+    [
+      "Norway",
+      43
+    ],
+    [
+      "Brazil",
+      37
+    ]
+  ]
+}

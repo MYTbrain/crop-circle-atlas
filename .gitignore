@@ -1,0 +1,5 @@
+data/raw/
+tmp/
+node_modules/
+*.log
+*.inspect.ndjson

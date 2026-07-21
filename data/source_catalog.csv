@@ -1,0 +1,11 @@
+source_id,name,url,scope,access_status,robots_or_rights,ingestion_status,priority,next_action
+src_ccc,Crop Circle Center,https://www.cropcirclecenter.com/,Worldwide event catalog through 2026,public,Metadata linked; contributor images not redistributed,ingested,high,Monitor monthly pages
+src_iccra,ICCRA,https://iccra.org/,US formations and field reports,public,robots.txt allows crawl,ingested,high,Enrich exact locations from individual reports
+src_connector,Crop Circle Connector,https://cropcircleconnector.com/,UK and international seasons,partly public,Contributor image rights reserved,indexed,high,Cross-check new seasons and request image permissions
+src_cra,Crop Circle Research Archive,https://circleresearcharchive.com/mast/the-database/,2850 formations and 17000 linked items,descriptive access,Contact archive for bulk/database access,registered,high,Request structured research access
+src_blt,BLT Research,https://www.bltresearch.com/labreports.php,100 plus plant and soil lab reports,public pages,Copyright retained,registered,high,Link lab reports to formation entities
+src_dcca,Dutch Crop Circle Archive,https://www.dcca.nl/dcca.htm,Dutch and international records,public with terms,Attribution required; contact for publication particulars,registered,medium,Parse Dutch details after permission review
+src_vigay,Paul Vigay archive,https://www.vigay.com/cropcircles/articles/index.html,Articles and field reports,public,Copyright varies by item,registered,medium,Link contemporary UK reports
+src_cccrn,CCCRN news mirror,https://www.ufobc.ca/Supernatural/Cropcircles/cccrnnews.htm,Canadian formation reports,public mirror,Copyright varies,registered,medium,Enrich Canadian records
+src_decoder,CropDecoder,https://cropdecoder.com/,4739 classified formations through 2024,public UI,robots.txt disallows API crawl,registered,medium,Seek permitted export or citation-only use
+src_geonames,GeoNames,https://www.geonames.org/,Worldwide place gazetteer,public download,CC BY 4.0,ingested,high,Retain attribution and refresh periodically
