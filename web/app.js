@@ -317,12 +317,23 @@ function selectedHasQualifiedOrigin() {
     || (window.registeredRayFormationId === selected.formation_id && Array.isArray(window.registeredRayOrigin))));
 }
 
+function setRegisteredFootprintVisible(record, visible) {
+  const layers = overlayFootprintsByFormation.get(record?.formation_id);
+  if (!layers) return;
+  for (const layer of [layers.footprint, layers.marker]) {
+    if (visible) layer.addTo(registeredFootprintLayer);
+    else registeredFootprintLayer.removeLayer(layer);
+  }
+}
+
 function resetOverlaySelection() {
+  const previousRecord = activeOverlayRecord;
   if (activeOverlay) {
     activeOverlay.remove();
     activeOverlay = null;
     activeOverlayRecord = null;
   }
+  if (previousRecord) setRegisteredFootprintVisible(previousRecord, true);
   $('toggleOverlay').textContent = 'Load and zoom to registered image';
   $('overlayOpacityLabel').hidden = true;
 }
@@ -568,9 +579,10 @@ function toggleSelectedOverlay() {
   });
   activeOverlay.addTo(map);
   activeOverlay.bringToFront?.();
+  setRegisteredFootprintVisible(record, false);
   $('toggleOverlay').textContent = 'Hide registered image';
   $('overlayOpacityLabel').hidden = false;
-  map.fitBounds(activeOverlay.getBounds(), { padding: [35, 35], maxZoom: 16 });
+  map.fitBounds(activeOverlay.getBounds(), { padding: [35, 35], maxZoom: 18 });
 }
 
 window.showOverlayForFormation = async (id) => {

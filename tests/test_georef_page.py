@@ -82,6 +82,8 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("fillColor: verified ? '#2d9e91' : '#f6ad55'", javascript)
         self.assertIn("renderRegisteredFootprints(visibleIds)", javascript)
         self.assertIn("activeOverlayRecord && !visibleIds.has(activeOverlayRecord.formation_id)", javascript)
+        self.assertIn("setRegisteredFootprintVisible(record, false)", javascript)
+        self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
         self.assertRegex(html, r'<input id="showLocalities" type="checkbox">')
         self.assertIn("await selectFormation(id, true)", javascript)
