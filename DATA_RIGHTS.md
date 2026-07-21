@@ -13,13 +13,23 @@ third-party catalogs, reports, diagrams, or photographs.
   hosted images from that private cache and publishes metadata only: source URL,
   SHA-256, coverage status, diagnostics, and an unvalidated image-space review
   axis. It emits no source pixels, thumbnails, contact sheets, or derived images.
-  The public atlas links to sources rather than embedding them.
+  The public atlas records source links rather than bundling the pixels.
+- The map's registered-source-photo layer is opt-in. After a user explicitly
+  asks to show it, the browser requests the photograph directly from its remote
+  source and draws it with registration metadata stored by the atlas. The image
+  is off by default and is not proxied through this repository. The KML/KMZ
+  carries the same disabled remote URL and corner metadata, but packages no
+  photograph. Browser or linked display does not grant a reuse license, and the
+  source may decline or block the request.
 - A local image chosen in the registration lab is not uploaded. A public KML or
   KMZ overlay requires explicit permission, public-domain status, or an open
   license whose name and evidence are recorded and verified.
-- The current public atlas contains zero image overlays. An authorized future
-  GroundOverlay must carry the rights holder/creator, license, proof reference,
-  and source URL inside the KML as well as in the asset registry.
+- The current public KML/KMZ contains zero packaged image files and one
+  off-by-default, provisional GroundOverlay that links directly to the source
+  host. That is not pixel redistribution or publication authorization. An
+  authorized future packaged GroundOverlay must carry the rights holder/creator,
+  license, proof reference, and source URL inside the KML as well as in the
+  asset registry.
 - GeoNames data is CC BY 4.0. OpenStreetMap data is ODbL. Esri imagery is
   displayed with provider attribution and is not repackaged by this project.
 
@@ -27,3 +37,11 @@ Before publishing any registered aerial image, confirm the rights holder,
 license or written permission, explicit proof reference, permitted use, image
 hash, reviewer, and review date in the registration/asset record. A rights label
 without proof is not sufficient for combined-KMZ publication.
+
+Official USGS or USDA imagery used as positional evidence must retain its
+collection identifier, acquisition date, provider, access URL, and the
+item-specific use/rights statement. A general assumption that government-hosted
+imagery is public domain is not a substitute for checking the selected item.
+Google Earth is used only for manual historical-imagery verification; its
+basemap pixels are not scraped, downloaded into this repository, or
+redistributed as atlas assets.

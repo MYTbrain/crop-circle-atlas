@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-21T00:00:00Z",
+    "notice": "These registrations link to source-hosted pixels and do not redistribute the source photographs. Provisional registrations remain excluded from statistical alignment results until independent checkpoints are recorded."
+  },
+  "overlays": [
+    {
+      "overlay_id": "whiskey-hill-1998-user-registration",
+      "formation_id": "cc_e5724a3476de",
+      "assertion_id": "iccra_03aa54e9073ccbd8",
+      "title": "Whiskey Hill 1998 source-photo registration",
+      "source_image_url": "https://iccra.org/bystate/Oregon/images/whiskeyhill1998-2.jpg",
+      "source_page_url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Whiskey%20Hill-Hubbard,%20Clackamas%20County%20(July%2023,%201998).html",
+      "source_image_sha256": "6d80ba170805803507b66c2b2c0d596d8c16447301769240edc3b744982b98a8",
+      "corners": [
+        [45.17393962, -122.725750128],
+        [45.171739432, -122.724047306],
+        [45.169465999, -122.726583516],
+        [45.171650063, -122.728284595]
+      ],
+      "center": [45.171405556, -122.726497222],
+      "coordinate_uncertainty_m": 35,
+      "registration_status": "provisional_user_georeferenced_historical_imagery",
+      "reference_imagery": "Google Earth display of USGS imagery",
+      "reference_imagery_date": "2000-07-28",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "User-supplied north-up registration screenshot; source-photo-to-screenshot homography recovered from 18 inlier image features; screenshot-to-map scale anchored by the displayed formation coordinate and persistent roads.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "bearing_true_deg": 110.0,
+      "bearing_uncertainty_deg": 3.0,
+      "bearing_status": "provisional_user_demonstrated_axis",
+      "notes": "The source photo is intentionally loaded from ICCRA only after an explicit user action. The registration is visually useful but awaits independent ground-control checkpoints before acceptance."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+alias_formation_id,canonical_formation_id,review_status,reviewer,reviewed_at,reason
+cc_d85d5c118449,cc_e5724a3476de,accepted,User-supplied evidence review,2026-07-21,"Crop Circle Center's 1998-07-21 Whiskey Hill record is a date/place alias of ICCRA's 1998-07-23 Whiskey Hill / Hubbard formation; the automatic California locality match is false."
+cc_19fdee41af91,cc_80f4a64d3689,accepted,User-supplied evidence review,2026-07-21,"Crop Circle Center's 2000-08-05 Whiskey Hill record is the same formation as ICCRA's Hubbard / Woodburn / Whiskey Hill report; the automatic California locality match is false."
+cc_6ab089f895ba,cc_80f4a64d3689,accepted,User-supplied evidence review,2026-07-21,"The Vigay 2000-08-07 Whiskey Hill listing is a report/date alias of ICCRA's 2000-08-05 formation at the user-identified Oregon field."
+cc_969282bc2775,cc_8a68d8a0471b,accepted,Codex evidence review,2026-07-21,"The Crop Circle Center PDF and ICCRA entries have the same 1994-06-14 date and Aloha, Oregon place; ICCRA's Sunset Highway qualifier and source coordinate identify the more specific canonical record."

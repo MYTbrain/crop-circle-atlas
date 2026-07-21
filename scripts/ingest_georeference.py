@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_VERSION = "crop-circle-atlas/georeference-registration/v1"
 IMAGE_ASSET_FIELDS = [
     "asset_id", "formation_id", "source_url", "local_path", "sha256",
-    "rights_status", "rights_holder", "license", "rights_proof",
+    "rights_status", "rights_holder", "license", "rights_proof", "public_derivative_export_allowed",
     "control_points_json", "transform_rmse_m", "reviewer", "reviewed_at", "notes",
 ]
 
@@ -217,6 +217,7 @@ def build_asset_row(metadata: dict, warped_png: Path, repo_root: Path) -> tuple[
         "rights_holder": str(rights.get("holder", "")).strip(),
         "license": str(rights.get("license", "")).strip(),
         "rights_proof": str(rights.get("proof", "")).strip(),
+        "public_derivative_export_allowed": "true" if rights.get("public_derivative_export_allowed") is True else "false",
         "control_points_json": json.dumps(corners, sort_keys=True, separators=(",", ":")),
         "transform_rmse_m": format(float(transform.get("control_point_rmse_m", 0)), ".12g"),
         "reviewer": reviewer,

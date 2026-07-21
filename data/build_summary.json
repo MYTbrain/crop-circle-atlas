@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T08:24:50Z",
+  "generated_at": "2026-07-21T11:31:22Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -20,9 +20,28 @@
       "connector": 442
     }
   },
-  "formations": 7749,
-  "geocoded": 4027,
-  "us_formations": 953,
+  "formations": 7745,
+  "formation_aliases": {
+    "accepted_reviews": 4,
+    "merged_alias_entities": 4
+  },
+  "geocoded": 4025,
+  "site_resolutions": {
+    "reviewed_overrides": 4,
+    "status_counts": {
+      "locality_reference": 4017,
+      "unresolved": 3720,
+      "registered_site": 5,
+      "corroborated_field": 2,
+      "candidate_field": 1
+    },
+    "field_site_features": 8,
+    "locality_reference_features": 4017,
+    "unresolved_formations": 3720,
+    "full_index_records": 7745,
+    "location_work_queue_rows": 7745
+  },
+  "us_formations": 949,
   "countries": 36,
   "year_min": 815,
   "year_max": 2026,
@@ -33,7 +52,7 @@
     ],
     [
       "United States",
-      953
+      949
     ],
     [
       "Netherlands",
@@ -93,10 +112,10 @@
     "high": 950,
     "low": 1810,
     "medium": 333,
-    "not_analyzed": 2115
+    "not_analyzed": 2111
   },
   "iccra_image_straight_review": {
-    "no_linked_iccra_image_analysis": 7482,
+    "no_linked_iccra_image_analysis": 7478,
     "review_candidate_high": 68,
     "review_candidate_medium": 41,
     "review_candidate_low": 44,

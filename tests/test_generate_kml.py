@@ -1,14 +1,21 @@
 import json
 import unittest
+from xml.etree import ElementTree as ET
 
 from scripts.generate_kml import (
     bearing_lateral_uncertainty,
+    add_source_linked_provisional_overlays,
     cross_along_track,
     destination,
+    image_rights_qualification,
+    is_alignment_eligible_site,
+    is_actual_site,
     likely_same_event_alias,
+    location_role,
     orientation_qualification,
     orientation_evidence_qualification,
     parse_control_points,
+    q,
     temporal_relation,
 )
 
@@ -110,6 +117,66 @@ class OverlayTests(unittest.TestCase):
             parse_control_points(raw),
             [(40.1, -100.1), (40.1, -99.9), (39.9, -99.9), (39.9, -100.1)],
         )
+
+    def test_public_derivative_boolean_fails_closed(self):
+        valid, reasons = image_rights_qualification({
+            "rights_status": "permission_granted",
+            "public_derivative_export_allowed": "false",
+            "rights_proof": "written permission record",
+            "rights_holder": "Example holder",
+            "reviewer": "Reviewer",
+            "reviewed_at": "2026-07-21",
+        })
+        self.assertFalse(valid)
+        self.assertIn("public_derivative_export_not_allowed", reasons)
+
+    def test_remote_overlay_is_opt_in_at_folder_level_and_preserves_transparency(self):
+        document = ET.Element(q("Document"))
+        payload = {"overlays": [{
+            "overlay_id": "remote-test",
+            "formation_id": "formation-test",
+            "source_image_url": "https://example.org/source.jpg",
+            "default_opacity": 0.68,
+            "corners": [[40.1, -100.1], [40.1, -99.9], [39.9, -99.9], [39.9, -100.1]],
+        }]}
+        count, rejected, included = add_source_linked_provisional_overlays(
+            document, payload, {"formation-test"}
+        )
+        self.assertEqual((count, rejected, included), (1, [], {"remote-test"}))
+        folder = document.find(q("Folder"))
+        overlay = folder.find(q("GroundOverlay"))
+        self.assertEqual(folder.find(q("visibility")).text, "0")
+        self.assertEqual(overlay.find(q("visibility")).text, "1")
+        self.assertEqual(overlay.find(q("color")).text, "adffffff")
+
+    def test_folded_remote_overlay_is_rejected_and_not_audited_as_included(self):
+        document = ET.Element(q("Document"))
+        payload = {"overlays": [{
+            "overlay_id": "folded-test",
+            "formation_id": "formation-test",
+            "source_image_url": "https://example.org/source.jpg",
+            "corners": [[40.1, -100.1], [39.9, -99.9], [40.1, -99.9], [39.9, -100.1]],
+        }]}
+        count, rejected, included = add_source_linked_provisional_overlays(
+            document, payload, {"formation-test"}
+        )
+        self.assertEqual(count, 0)
+        self.assertEqual(included, set())
+        self.assertEqual(rejected[0]["reason"], "invalid_remote_overlay_corners")
+
+
+class LocationRoleTests(unittest.TestCase):
+    def test_formation_site_role_uses_evidence_status(self):
+        candidate = {"location_role": "formation_site", "location_status": "candidate_field"}
+        accepted = {"location_role": "formation_site", "location_status": "corroborated_field"}
+        self.assertEqual(location_role(candidate), "candidate_field")
+        self.assertEqual(location_role(accepted), "corroborated_field")
+        self.assertFalse(is_actual_site(candidate))
+        self.assertTrue(is_actual_site(accepted))
+
+    def test_alignment_eligibility_is_explicit_not_implied_by_registered_status(self):
+        self.assertFalse(is_alignment_eligible_site({"site_status": "registered_site"}))
+        self.assertTrue(is_alignment_eligible_site({"site_alignment_eligible": "true"}))
 
 
 class EntityAliasTests(unittest.TestCase):
