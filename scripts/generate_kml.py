@@ -485,11 +485,23 @@ def add_source_linked_provisional_overlays(doc, payload, formation_ids=None):
         text(overlay, "visibility", "1")
         opacity = min(1.0, max(0.0, as_float(item.get("default_opacity"), 0.68)))
         text(overlay, "color", f"{round(opacity * 255):02x}ffffff")
+        uncertainty_value = item.get("coordinate_uncertainty_m")
+        uncertainty_status = item.get("coordinate_uncertainty_status", "")
+        sensitivity_value = item.get("display_corner_sensitivity_envelope_m")
+        sensitivity_kind = item.get("display_corner_sensitivity_kind", "")
+        uncertainty_text = f"{uncertainty_value} m" if uncertainty_value is not None else (
+            uncertainty_status.replace("_", " ") or "not independently quantified"
+        )
+        if sensitivity_value is not None:
+            uncertainty_text += (
+                f"; display-corner sensitivity envelope: {sensitivity_value} m "
+                "(conditional detector sensitivity, not a confidence interval)"
+            )
         text(overlay, "description", (
             f'Registration status: {item.get("registration_status", "provisional")} | '
             f'rights: {item.get("rights_status", "unknown")} | source page: '
             f'{item.get("source_page_url", "")} | coordinate uncertainty: '
-            f'{item.get("coordinate_uncertainty_m", "?")} m | {item.get("notes", "")}'
+            f'{uncertainty_text} | {item.get("notes", "")}'
         ))
         extended_data(overlay, {
             "overlay_id": overlay_id,
@@ -500,6 +512,11 @@ def add_source_linked_provisional_overlays(doc, payload, formation_ids=None):
             "source_page_url": item.get("source_page_url", ""),
             "source_image_sha256": item.get("source_image_sha256", ""),
             "coordinate_uncertainty_m": item.get("coordinate_uncertainty_m", ""),
+            "coordinate_uncertainty_status": uncertainty_status,
+            "display_corner_sensitivity_envelope_m": sensitivity_value if sensitivity_value is not None else "",
+            "display_corner_sensitivity_kind": sensitivity_kind,
+            "display_geometry_status": item.get("display_geometry_status", ""),
+            "registration_observation_id": item.get("registration_observation_id", ""),
         })
         icon = ET.SubElement(overlay, q("Icon"))
         text(icon, "href", source_url)

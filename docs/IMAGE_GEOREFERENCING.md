@@ -107,9 +107,16 @@ hash, review, bounds, physical-unit, and transform checks. Its current public
 quality gate rejects control-point RMSE above 25 physical ground metres; use a
 tighter project-specific threshold when the intended analysis requires it.
 There are currently zero packaged ICCRA image files because no source-image
-publication rights have been cleared. The combined KML/KMZ contains one
-off-by-default provisional GroundOverlay that links to the source host and
-packages no source pixels.
+publication rights have been cleared. The combined KML/KMZ contains two
+off-by-default provisional GroundOverlays for Whiskey Hill/Hubbard 1998 and
+2000. They link to the source host and package no source pixels. The 2000
+close-up is an approximate visual three-lobe match.
+`data/registered_overlay_observations.json` preserves its image hashes,
+detector settings, lobe controls, affine matrix, manually read road controls,
+pixel-to-WGS84 formulas, orientation-permutation check, and sensitivity study.
+The stated 35 m is a conditional detector-sensitivity envelope, not a
+confidence interval; without an independent fourth ground-control point the
+overlay remains excluded from formal alignment analysis.
 
 ## Atlas integration hooks
 
