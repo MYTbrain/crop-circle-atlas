@@ -106,8 +106,10 @@ The publication packager independently repeats the path, formation, rights,
 hash, review, bounds, physical-unit, and transform checks. Its current public
 quality gate rejects control-point RMSE above 25 physical ground metres; use a
 tighter project-specific threshold when the intended analysis requires it.
-There are currently zero public ICCRA overlays because no source-image
-publication rights have been cleared.
+There are currently zero packaged ICCRA image files because no source-image
+publication rights have been cleared. The combined KML/KMZ contains one
+off-by-default provisional GroundOverlay that links to the source host and
+packages no source pixels.
 
 ## Atlas integration hooks
 

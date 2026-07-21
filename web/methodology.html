@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Methodology · Crop Circle Atlas</title>
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -21,8 +22,19 @@
     <p><a href="index.html">← Return to the map</a></p>
 
     <h2>Reports and coordinates</h2>
-    <p>Each source statement is retained separately before conservative entity merging. Dates retain their precision. Most map points are approximate locality centroids, not exact fields; every coordinate records its method and uncertainty.</p>
-    <p>The current build contains 8,390 assertions and 7,749 conservative catalog entities. The bounded source expansion preserves source geography and leaves 167 alias and 83 probable-overlap candidates unmerged; 450 new normalized keys are not claimed as 450 proven-new formations.</p>
+    <p>Each source statement is retained separately before conservative entity merging. Dates retain their precision. Four evidence-reviewed report aliases are now merged, leaving 8,390 assertions and 7,745 conservative catalog entities. This is not a claim of 7,745 physically distinct formations.</p>
+    <p>Location roles are deliberately separated. Eight records are field candidates or sites, 4,017 are approximate locality references, and 3,720 remain unresolved. Locality references help users find reports; they are not displayed as exact fields. Every accepted site records its method, uncertainty, evidence, review status, and rights status independently.</p>
+    <p>The bounded source expansion preserves source geography and leaves 167 alias and 83 probable-overlap candidates unmerged; 450 new normalized keys are not claimed as 450 proven-new formations.</p>
+
+    <h2>Whiskey Hill evidence correction</h2>
+    <p>The Crop Circle Center 1998 Whiskey Hill row was accepted as an alias of the ICCRA 1998 report. The Crop Circle Center and Paul Vigay rows for 2000 were accepted as aliases of the ICCRA 2000 report. These three merges removed two false automatic matches to Whiskey Hill, California while preserving every source assertion. A fourth accepted merge combines the same-date Crop Circle Center and ICCRA Aloha 1994 reports.</p>
+    <p>User-supplied historical-imagery and aerial-photo evidence places the 1998 and 2000 reports in the same Oregon field. The 2000 formation is directly visible in the supplied historical frame about 43.5 metres southeast of the registered 1998 center. The 1998 formation is corroborated by the photo registration and source statements but is not directly visible in that 2000 frame. ICCRA's 1999 report remains only a same-field candidate because its position within the field is unknown.</p>
+    <p>The white component marked in the user's north-up 1998 registration gives a provisional 110°/290° true-north axis with ±3° uncertainty. It awaits independent ground-control checkpoints, is excluded from formal alignment calculations, and has no demonstrated predictive validity.</p>
+
+    <h2>US-first field-resolution campaign</h2>
+    <p>The campaign ranks US reports by date precision, source-photo availability, road/farm/airport clues, and imagery coverage. Candidate discovery can be semi-automated, but a field is not accepted automatically. The primary evidence sources are <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-digital-orthophoto-quadrangle-doqs" target="_blank" rel="noreferrer">USGS DOQ</a>, <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-high-resolution-orthoimagery-hro" target="_blank" rel="noreferrer">USGS HRO</a>, <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames" target="_blank" rel="noreferrer">USGS Aerial Photo Single Frames</a>, and <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-national-agriculture-imagery-program-naip" target="_blank" rel="noreferrer">USGS-distributed NAIP</a>, supplemented by USDA's <a href="https://www.fpacbc.usda.gov/geospatial-services/geospatial-technology-coordination-and-project-execution/program-management" target="_blank" rel="noreferrer">NAIP program guidance</a>, <a href="https://www.fpacbc.usda.gov/geospatial-services/data-inspection-enhancement-and-delivery/production-services" target="_blank" rel="noreferrer">historical-film holdings</a>, and <a href="https://www.fsa.usda.gov/sites/default/files/documents/howtoorderaerialimagery-rev2021_02_.pdf" target="_blank" rel="noreferrer">aerial-imagery ordering guide</a>.</p>
+    <p>A standard registration uses 8–12 well-distributed control points plus independent checkpoints that are not used to solve the transform. Residuals, checkpoint error, source acquisition date, and uncertainty are recorded. Google Earth is used only for manual comparison under its <a href="https://support.google.com/earth/answer/15468379?hl=en" target="_blank" rel="noreferrer">historical-imagery guidance</a> and <a href="https://support.google.com/earth/answer/6327779?hl=en" target="_blank" rel="noreferrer">imagery-date guidance</a>; it is not scraped as a bulk source. When the evidence cannot isolate a field, the record remains unresolved.</p>
+    <p><a href="https://github.com/MYTbrain/crop-circle-atlas/blob/main/docs/FIELD_RESOLUTION_CAMPAIGN.md" target="_blank" rel="noreferrer">Read the full field-resolution protocol.</a></p>
 
     <h2>Straight components and orientation</h2>
     <ol>
@@ -31,15 +43,16 @@
       <li>A true azimuth is a geographic bearing clockwise from true north.</li>
       <li>Only a reviewed true azimuth with evidence and uncertainty can create an atlas projection.</li>
     </ol>
-    <p>The registration lab uses four to twelve paired landmarks to correct rotation, skew, and perspective locally in your browser. Two clicks along a component then produce a traceable true-north bearing, uncertainty, and export package.</p>
+    <p>The registration lab can solve a projective transform from four or more paired landmarks, but the campaign standard is 8–12 controls plus independent checkpoints. Two clicks along a component then produce a traceable true-north bearing, uncertainty, and export package.</p>
     <p>The evidence qualifies the local orientation, not its extension across hundreds of kilometres. Every long-distance line is labeled experimental and has no demonstrated predictive validity.</p>
 
     <h2>Alignment tests</h2>
     <p>Corridor hits use spherical cross-track and along-track distances. Statistical eligibility also requires origin, target-coordinate, and distance-dependent angular uncertainty to fit inside the corridor. All current results remain exploratory until the range, corridor, directionality, date ordering, quality rules, null model, and multiple-testing correction are preregistered. Useful nulls preserve spatial density, source coverage, country, and year.</p>
-    <p>The current five projections produce 16 centerline-corridor hits; none passes the combined coordinate-and-bearing uncertainty gate.</p>
+    <p>The earlier build reported 16 centerline-corridor matches against rough locality centroids. Those are not formation sites and are now excluded. Accepted rays tested against the two currently alignment-eligible sites produce zero corridor matches. The other six site/candidate records, unresolved reports, and locality references are excluded by the current quality gate.</p>
 
     <h2>Image rights</h2>
-    <p>Local image registration never uploads the selected file. Public KMZ overlays are included only when the asset record explicitly documents publication authorization, attribution, and four registered corners. The current public overlay count is zero because ICCRA image publication rights have not been cleared.</p>
+    <p>Local image registration never uploads the selected file. A registered source photo on the map is off by default and loads directly from the source website only after the user asks to see it. The atlas publishes the URL, hash, corners, and review metadata but does not copy or redistribute those pixels. A failed or blocked remote request remains failed closed.</p>
+    <p>The current KML/KMZ packages zero image files. It carries one off-by-default provisional GroundOverlay that points to the same source-hosted photograph and may fail if the host blocks the request. A future packaged KML/KMZ overlay is included only when the asset record explicitly documents publication authorization, attribution, and registered corners.</p>
   </article>
 </body>
 </html>

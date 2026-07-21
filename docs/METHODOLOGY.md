@@ -24,8 +24,9 @@ URL variants, and count-only placeholders instead of silently inventing detail.
 Dates retain `day`, `month`, `year`, or `qualified` precision. Coordinates
 retain method, confidence, and uncertainty. US locality geocoding fails closed
 when GeoNames’ state conflicts with the source state. Most points remain
-locality centroids. Four ICCRA assertions contain source-reported coordinate
-pairs; those carry their source conversion method and uncertainty separately.
+locality centroids. Four ICCRA coordinate pairs were parsed automatically; a
+fifth, Aloha, was recovered by evidence review and retained with 1.5 km
+uncertainty. All carry their source method and uncertainty separately.
 
 Locality centroids are appropriate for browsing and candidate retrieval, not a
 narrow-corridor spatial test. An evidence-qualified local orientation requires
@@ -82,8 +83,12 @@ Current hit rows are centerline-corridor candidates. Statistical eligibility
 also requires the sum of source-origin uncertainty, target-coordinate
 uncertainty, and distance-dependent lateral bearing uncertainty to fit inside
 the declared corridor. Rows that fail remain explicit exploratory results.
-The current five projections produce 16 corridor hits; all 16 fail the combined
-coordinate-and-bearing uncertainty gate and none is statistically eligible.
+The earlier mixed-coordinate build produced 16 corridor matches against rough
+locality centroids. Those points are not formation sites and are now excluded.
+The evidence-separated rebuild tests accepted rays only against the two
+currently alignment-eligible sites and produces zero corridor matches. The
+other six site/candidate records, unresolved reports, and locality references
+are excluded by the current quality gate.
 
 Before any prediction study, preregister range, corridor, directionality, date
 ordering, coordinate/orientation thresholds, duplicate-event handling, and the
@@ -106,6 +111,9 @@ in-repository path, matching hash, valid formation, reviewed transform, and
 explicit publication authorization with license or permission evidence. ICCRA
 source images are link-only/private-cache research inputs until rights holders
 authorize redistribution.
-The current public overlay count is zero. When an authorized overlay is added,
-the combined KML embeds its rights holder, license, proof reference, and source
-URL in both the description and ExtendedData.
+The current combined KML/KMZ packages zero image files. It contains one
+off-by-default provisional GroundOverlay whose URL points to the source host;
+that linked display is not publication authorization and may be blocked by the
+host. When an authorized packaged overlay is added, the combined KML embeds its
+rights holder, license, proof reference, and source URL in both the description
+and ExtendedData.

@@ -73,11 +73,13 @@ class GeorefPageContractTests(unittest.TestCase):
         html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
         javascript = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
         self.assertIn("Export unqualified hypothesis KML", html)
-        self.assertIn("Current public overlays: 0", html)
+        self.assertIn("Show rough locality references on map", html)
+        self.assertIn("Show linked registered overlay", html)
         self.assertIn('id="resultsList"', html)
         self.assertIn("unqualified_manual_hypothesis", javascript)
-        self.assertIn("predictive_validity:'none'", javascript)
-        self.assertIn("Experimental projection from documented orientation", javascript)
+        self.assertIn("predictive_validity: 'none'", javascript)
+        self.assertIn("Accepted local axes extended experimentally", javascript)
+        self.assertIn("Locality centroids and unresolved reports are excluded", javascript)
         self.assertNotIn("Documented projection ray", javascript)
 
 

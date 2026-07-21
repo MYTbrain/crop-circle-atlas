@@ -10,12 +10,13 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 
 ## Current build
 
-- 8,390 source assertions resolved into 7,749 conservative catalog entities.
-  Near matches remain separate, so this is not a claim of 7,749 physically
-  distinct formations.
-- 4,027 mapped entities: 4,023 labeled GeoNames locality centroids and four
-  source-reported ICCRA coordinates, all with method and uncertainty.
-- 953 United States entities, plus one Puerto Rico record retained separately.
+- 8,390 source assertions resolved into 7,745 conservative catalog entities
+  after four evidence-reviewed report aliases were merged. Near matches remain
+  separate, so this is not a claim of 7,745 physically distinct formations.
+- Location evidence is separated by role: eight field candidates/sites, 4,017
+  labeled locality references, and 3,720 unresolved entities. A locality
+  reference supports discovery and search; it is not presented as the field.
+- 949 United States entities, plus one Puerto Rico record retained separately.
 - The bounded expansion contributes 639 metadata assertions. It contains 189
   exact baseline-key overlaps and 450 new normalized source keys; the latter
   are not claimed as 450 proven-new formations. Another 167 alias and 83
@@ -38,17 +39,57 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   validation.
 - Five evidence-qualified local true-north observations across three
   formations. Their five long-distance extensions are clearly labeled
-  experimental: 16 catalog points enter a centerline corridor, but none passes
-  the declared coordinate-and-bearing uncertainty gate. Diagram angles remain
+  experimental. The earlier 16 corridor matches came from rough locality
+  centroids and are now excluded; accepted rays tested against the two currently
+  alignment-eligible sites produce zero corridor matches. The other six
+  candidates/sites are excluded by the quality gate. Diagram angles remain
   image-space measurements and never become geographic bearings without
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
-  but the public KMZ contains zero ICCRA image overlays because publication
-  rights have not been cleared. Local-only registration remains available.
+  but the public KMZ packages zero ICCRA image files because publication rights
+  have not been cleared. The web map and KML/KMZ contain one off-by-default,
+  provisional link to the source-hosted photograph; the repository contains
+  and redistributes no source-photo pixels. Local-only registration remains
+  available.
+
+## Exact-field resolution status
+
+Exact-field work has begun, but it is not complete. The current ledger contains
+eight field candidates/sites; 4,017 other coordinates are explicitly labeled
+locality references and 3,720 entities remain unresolved.
+
+The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
+row was merged into the ICCRA 1998 entity, and the Crop Circle Center and Paul
+Vigay rows for 2000 were merged into the ICCRA 2000 entity. A fourth accepted
+alias merge combines the same-date Crop Circle Center and ICCRA Aloha 1994
+reports. The erroneous automatic matches to Whiskey Hill, California are no
+longer treated as formation locations.
+
+- 1998 is a corroborated field location derived from the user-supplied
+  source-photo registration and same-field evidence; the formation itself is
+  not directly visible in the referenced 2000 historical frame.
+- 1999 is only a candidate field. ICCRA reports that the field hosted a 1999
+  formation, but no exact position within the field is established.
+- 2000 is directly visible in the supplied historical-imagery view and is
+  corroborated by the aerial source photo. It lies about 43.5 metres southeast
+  of the registered 1998 center.
+- The 1998 straight component is displayed provisionally on the 110°/290°
+  true-north axis with a conservative ±3° uncertainty. It is excluded
+  from formal alignment calculations until independent checkpoints reproduce
+  the registration; it has no demonstrated predictive validity.
+
+The US-first resolution campaign uses official USGS and USDA imagery for
+repeatable evidence, with Google Earth as a manual verification surface only.
+See `docs/FIELD_RESOLUTION_CAMPAIGN.md` for the acceptance rules, imagery
+sources, control-point requirements, and unresolved-state policy.
 
 ## Products
 
 - `data/formations.csv`: canonical formation entities.
+- `data/location_work_queue.csv`: every catalog entity classified as a field
+  candidate/site, locality reference, or unresolved work item.
+- `data/site_resolutions.csv`: reviewed field-level overrides with evidence,
+  uncertainty, review, and rights fields kept separate.
 - `data/source_assertions.csv`: loss-minimizing source statements.
 - `data/source_expansion_assertions.csv`: bounded metadata expansion, with
   non-merged overlap status and source geography preserved.
@@ -63,8 +104,9 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 - `web/`: static interactive atlas plus a local-only perspective-correct image
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
-  extensions from reviewed local orientations, and only rights-cleared
-  registered overlays.
+  extensions from reviewed local orientations, zero packaged image files, and
+  one disabled provisional GroundOverlay link to the source host. Packaged
+  overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
 ## Scientific boundary
@@ -98,8 +140,9 @@ Open <http://localhost:8000>. Raw source caches are excluded from Git. Public
 tables preserve URLs, hashes, retrieval timestamps, methods, and rights status.
 
 See `docs/METHODOLOGY.md`, `docs/ICCRA_RECONCILIATION.md`,
-`docs/SOURCE_EXPANSION.md`, and `docs/IMAGE_GEOREFERENCING.md` for the evidence,
-access, and qualification rules.
+`docs/SOURCE_EXPANSION.md`, `docs/IMAGE_GEOREFERENCING.md`, and
+`docs/FIELD_RESOLUTION_CAMPAIGN.md` for the evidence, access, resolution, and
+qualification rules.
 
 ## Scope boundary
 

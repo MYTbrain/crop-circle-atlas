@@ -22,11 +22,14 @@ robots-compliant access, a working host, or a permitted structured interface.
 
 ## Measured return
 
-- Current ingestion: 8,390 source assertions became 7,749 conservative catalog entities;
-  this is not a claim of 7,749 physically distinct formations.
-- 4,027 entities are mapped: 4,023 GeoNames locality centroids and four
-  source-reported ICCRA coordinates.
-- 953 entities are US reports; one Puerto Rico record is retained separately.
+- Current ingestion: 8,390 source assertions became 7,745 conservative catalog
+  entities after four evidence-reviewed report aliases were accepted and
+  merged; this is not a claim of 7,745 physically distinct formations. All
+  source assertions remain preserved.
+- Location evidence is separated into eight field candidates/sites, 4,017
+  locality references, and 3,720 unresolved entities. The locality references
+  are search aids, not claimed formation fields.
+- 949 entities are US reports; one Puerto Rico record is retained separately.
 - ICCRA reconciliation covers all 1,169 parsed index occurrences plus two
   count-only placeholders. Its by-year index states and parses 559 occurrences;
   state pages state 595 but contain 601 actual list items.
@@ -48,5 +51,7 @@ robots-compliant access, a working host, or a permitted structured interface.
   permitted bulk input.
 
 The next high-return work is permission/API acquisition plus targeted parsers,
-followed by exact field coordinates, licensed aerial images, field-report
-measurements, and reviewed true-north orientations.
+followed by the US-first field-resolution campaign, licensed aerial images,
+field-report measurements, and reviewed true-north orientations. Exact fields
+are not considered complete: unresolved reports remain unresolved until
+repeatable evidence supports a stronger location status.

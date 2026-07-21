@@ -23,6 +23,32 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
+SITE_RESOLUTIONS_PATH = ROOT / "data" / "site_resolutions.csv"
+FORMATION_ALIAS_REVIEWS_PATH = ROOT / "data" / "formation_alias_reviews.csv"
+SITE_STATUSES = {
+    "unresolved",
+    "locality_reference",
+    "candidate_field",
+    "corroborated_field",
+    "registered_site",
+}
+FIELD_SITE_STATUSES = {"candidate_field", "corroborated_field", "registered_site"}
+SOURCE_COORDINATE_METHODS = {
+    "report_source_degree_decimal_minutes_converted",
+    "source_decimal_degrees",
+    "source_degree_decimal_minutes_converted",
+}
+SITE_RESOLUTION_FIELDS = {
+    "formation_id", "site_status", "latitude", "longitude", "coordinate_uncertainty_m",
+    "coordinate_method", "directly_visible", "alignment_eligible", "site_cluster_id",
+    "search_aliases", "evidence_source_url", "evidence_artifact_ids",
+    "evidence_artifact_sha256s", "imagery_provider", "imagery_acquisition_date",
+    "review_status", "reviewer", "reviewed_at", "rights_status", "notes",
+}
+FORMATION_ALIAS_REVIEW_FIELDS = {
+    "alias_formation_id", "canonical_formation_id", "review_status", "reviewer",
+    "reviewed_at", "reason",
+}
 MONTHS = {name.lower(): index for index, name in enumerate(
     ["january", "february", "march", "april", "may", "june", "july",
      "august", "september", "october", "november", "december"], start=1)}
@@ -532,6 +558,320 @@ def build_entities(assertions, geonames_index):
     return result
 
 
+def parse_boolean(value: object, field: str) -> bool:
+    normalized = str(value).strip().lower()
+    if normalized in {"true", "1", "yes"}:
+        return True
+    if normalized in {"false", "0", "no"}:
+        return False
+    raise ValueError(f"{field} must be true or false, got {value!r}")
+
+
+def load_formation_alias_reviews(path: Path = FORMATION_ALIAS_REVIEWS_PATH) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if not reader.fieldnames:
+            raise ValueError("formation_alias_reviews.csv has no header")
+        missing = FORMATION_ALIAS_REVIEW_FIELDS - set(reader.fieldnames)
+        if missing:
+            raise ValueError("formation_alias_reviews.csv is missing fields: " + ", ".join(sorted(missing)))
+        rows = list(reader)
+    aliases = set()
+    for ordinal, row in enumerate(rows, 2):
+        alias_id = row.get("alias_formation_id", "").strip()
+        canonical_id = row.get("canonical_formation_id", "").strip()
+        if not alias_id or not canonical_id or alias_id == canonical_id:
+            raise ValueError(f"invalid formation alias at row {ordinal}")
+        if alias_id in aliases:
+            raise ValueError(f"duplicate formation alias review for {alias_id}")
+        if row.get("review_status", "").strip() != "accepted":
+            raise ValueError(f"formation alias {alias_id} is not accepted")
+        if not row.get("reviewer", "").strip() or not row.get("reviewed_at", "").strip():
+            raise ValueError(f"formation alias {alias_id} lacks review provenance")
+        aliases.add(alias_id)
+    canonical_ids = {row["canonical_formation_id"].strip() for row in rows}
+    if aliases & canonical_ids:
+        raise ValueError("formation alias reviews contain a chain or cycle")
+    return rows
+
+
+def _merge_semicolon_values(*values: object) -> str:
+    merged = []
+    for value in values:
+        for item in str(value or "").split("; "):
+            item = item.strip()
+            if item and item not in merged:
+                merged.append(item)
+    return "; ".join(merged)
+
+
+def apply_formation_alias_reviews(entities: list[dict], reviews: list[dict[str, str]]) -> list[dict]:
+    """Merge accepted report aliases while retaining every source assertion."""
+    if not reviews:
+        for entity in entities:
+            entity.update({"alias_of": "", "merged_alias_formation_ids": "", "alias_count": 0})
+        return entities
+    by_id = {entity["formation_id"]: entity for entity in entities}
+    reviewed_ids = {
+        value for row in reviews for value in (
+            row["alias_formation_id"].strip(), row["canonical_formation_id"].strip()
+        )
+    }
+    missing = sorted(reviewed_ids - set(by_id))
+    if missing:
+        raise ValueError("formation alias reviews reference unknown IDs: " + ", ".join(missing))
+    alias_ids = set()
+    for review in sorted(reviews, key=lambda row: row["alias_formation_id"]):
+        alias_id = review["alias_formation_id"].strip()
+        canonical_id = review["canonical_formation_id"].strip()
+        alias = by_id[alias_id]
+        canonical = by_id[canonical_id]
+        alias_ids.add(alias_id)
+        canonical["source_names"] = _merge_semicolon_values(canonical.get("source_names"), alias.get("source_names"))
+        canonical["source_urls"] = _merge_semicolon_values(canonical.get("source_urls"), alias.get("source_urls"))
+        canonical["assertion_ids"] = _merge_semicolon_values(canonical.get("assertion_ids"), alias.get("assertion_ids"))
+        canonical["source_count"] = len([value for value in canonical["assertion_ids"].split("; ") if value])
+        canonical["source_image_count"] = int(canonical.get("source_image_count") or 0) + int(alias.get("source_image_count") or 0)
+        canonical["has_source_images"] = (
+            "yes_linked_rights_unverified" if canonical["source_image_count"] else "no_linked_images"
+        )
+        for field in ("county", "crop", "size_text"):
+            canonical[field] = canonical.get(field) or alias.get(field, "")
+        canonical["merged_alias_formation_ids"] = _merge_semicolon_values(
+            canonical.get("merged_alias_formation_ids"), alias_id
+        )
+        canonical["alias_review_status"] = "accepted"
+        canonical["alias_reviewed_at"] = _merge_semicolon_values(
+            canonical.get("alias_reviewed_at"), review.get("reviewed_at", "")
+        )
+        canonical["alias_review_notes"] = _merge_semicolon_values(
+            canonical.get("alias_review_notes"), review.get("reason", "")
+        )
+    output = []
+    for entity in entities:
+        if entity["formation_id"] in alias_ids:
+            continue
+        entity.setdefault("alias_of", "")
+        entity.setdefault("merged_alias_formation_ids", "")
+        entity["alias_count"] = len([
+            value for value in entity["merged_alias_formation_ids"].split("; ") if value
+        ])
+        entity.setdefault("alias_review_status", "")
+        entity.setdefault("alias_reviewed_at", "")
+        entity.setdefault("alias_review_notes", "")
+        output.append(entity)
+    return output
+
+
+def load_site_resolutions(path: Path = SITE_RESOLUTIONS_PATH) -> dict[str, dict[str, object]]:
+    """Load reviewed field-location overrides without conflating review or rights.
+
+    The table is deliberately keyed by stable ``formation_id``.  Its
+    ``site_status`` describes spatial confidence only; ``review_status`` and
+    ``rights_status`` remain independent metadata and never change that tier.
+    """
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        if not reader.fieldnames:
+            raise ValueError("site_resolutions.csv has no header")
+        missing = SITE_RESOLUTION_FIELDS - set(reader.fieldnames)
+        if missing:
+            raise ValueError("site_resolutions.csv is missing fields: " + ", ".join(sorted(missing)))
+        rows = list(reader)
+    resolutions: dict[str, dict[str, object]] = {}
+    for ordinal, row in enumerate(rows, 2):
+        formation_id = row.get("formation_id", "").strip()
+        status = row.get("site_status", "").strip()
+        if not formation_id:
+            raise ValueError(f"site_resolutions.csv row {ordinal} has no formation_id")
+        if formation_id in resolutions:
+            raise ValueError(f"duplicate site resolution for {formation_id}")
+        if status not in SITE_STATUSES:
+            raise ValueError(f"invalid site_status for {formation_id}: {status!r}")
+        resolved: dict[str, object] = dict(row)
+        if status in FIELD_SITE_STATUSES:
+            try:
+                latitude = float(row.get("latitude", ""))
+                longitude = float(row.get("longitude", ""))
+                uncertainty_m = float(row.get("coordinate_uncertainty_m", ""))
+            except (TypeError, ValueError) as error:
+                raise ValueError(f"field site {formation_id} lacks numeric coordinates/uncertainty") from error
+            if not (-90 <= latitude <= 90 and -180 <= longitude <= 180):
+                raise ValueError(f"field site {formation_id} has invalid coordinates")
+            if not math.isfinite(uncertainty_m) or uncertainty_m <= 0:
+                raise ValueError(f"field site {formation_id} has invalid uncertainty")
+            if not row.get("coordinate_method", "").strip():
+                raise ValueError(f"field site {formation_id} has no coordinate_method")
+            required_evidence_fields = (
+                "evidence_source_url", "evidence_artifact_ids", "review_status",
+                "reviewer", "reviewed_at", "rights_status", "notes",
+            )
+            missing_evidence = [
+                field for field in required_evidence_fields if not row.get(field, "").strip()
+            ]
+            if missing_evidence:
+                raise ValueError(
+                    f"field site {formation_id} lacks reviewed evidence metadata: "
+                    + ", ".join(missing_evidence)
+                )
+            resolved.update({
+                "latitude": latitude,
+                "longitude": longitude,
+                "coordinate_uncertainty_m": uncertainty_m,
+                "directly_visible": parse_boolean(row.get("directly_visible", ""), "directly_visible"),
+                "alignment_eligible": parse_boolean(row.get("alignment_eligible", ""), "alignment_eligible"),
+            })
+            artifact_ids = [
+                value.strip() for value in row.get("evidence_artifact_ids", "").split(";") if value.strip()
+            ]
+            hashes = [value.strip() for value in row.get("evidence_artifact_sha256s", "").split(";") if value.strip()]
+            if not hashes or any(not re.fullmatch(r"[0-9a-f]{64}", value) for value in hashes):
+                raise ValueError(f"field site {formation_id} has invalid evidence artifact SHA-256 metadata")
+            if len(artifact_ids) != len(hashes):
+                raise ValueError(f"field site {formation_id} evidence artifact IDs/hashes do not pair")
+            if resolved["alignment_eligible"] and status not in {"corroborated_field", "registered_site"}:
+                raise ValueError(f"alignment-eligible site {formation_id} has insufficient spatial status")
+        resolutions[formation_id] = resolved
+    return resolutions
+
+
+def automatic_site_status(entity: dict) -> str:
+    if entity.get("latitude", "") == "" or entity.get("longitude", "") == "":
+        return "unresolved"
+    if entity.get("geocode_method") == "geonames_locality_centroid":
+        return "locality_reference"
+    if entity.get("geocode_method") not in SOURCE_COORDINATE_METHODS:
+        raise ValueError(
+            f"unsupported automatic source-coordinate method for {entity.get('formation_id')}: "
+            f"{entity.get('geocode_method')!r}"
+        )
+    return "registered_site"
+
+
+def apply_site_resolutions(entities: list[dict], resolutions: dict[str, dict[str, object]]) -> Counter:
+    """Classify every entity and apply reviewed field coordinates first.
+
+    Existing GeoNames coordinates are retained as locality references.  A
+    reviewed field resolution replaces the legacy canonical coordinate while
+    preserving the locality centroid in dedicated columns for audit/search.
+    """
+    by_id = {entity["formation_id"]: entity for entity in entities}
+    unknown = sorted(set(resolutions) - set(by_id))
+    if unknown:
+        raise ValueError("site resolutions reference unknown formation IDs: " + ", ".join(unknown))
+
+    counts: Counter = Counter()
+    for entity in entities:
+        baseline_status = automatic_site_status(entity)
+        baseline_latitude = entity.get("latitude", "")
+        baseline_longitude = entity.get("longitude", "")
+        baseline_method = entity.get("geocode_method", "")
+        baseline_uncertainty_km = entity.get("coordinate_uncertainty_km", "")
+        baseline_geoname_id = entity.get("geoname_id", "")
+        baseline_admin1 = entity.get("geocode_admin1", "")
+        entity.update({
+            "site_status": baseline_status,
+            "site_latitude": baseline_latitude if baseline_status == "registered_site" else "",
+            "site_longitude": baseline_longitude if baseline_status == "registered_site" else "",
+            "site_coordinate_method": baseline_method if baseline_status == "registered_site" else "",
+            "site_coordinate_uncertainty_m": (
+                float(baseline_uncertainty_km) * 1000
+                if baseline_status == "registered_site" and baseline_uncertainty_km not in (None, "") else ""
+            ),
+            "site_directly_visible": "",
+            "site_alignment_eligible": "false",
+            "site_cluster_id": "",
+            "site_search_aliases": "",
+            "site_evidence_source_url": "",
+            "site_evidence_artifact_ids": "",
+            "site_evidence_artifact_sha256s": "",
+            "site_imagery_provider": "",
+            "site_imagery_acquisition_date": "",
+            "site_review_status": "source_report_not_independently_reviewed" if baseline_status == "registered_site" else "not_reviewed",
+            "site_reviewer": "",
+            "site_reviewed_at": "",
+            "site_rights_status": "coordinate_metadata_only" if baseline_status == "registered_site" else "not_applicable",
+            "site_notes": "",
+            "site_resolution_source": "automatic_source_coordinate" if baseline_status == "registered_site" else (
+                "automatic_geonames_locality" if baseline_status == "locality_reference" else "automatic_unresolved"
+            ),
+            "locality_latitude": baseline_latitude if baseline_status == "locality_reference" else "",
+            "locality_longitude": baseline_longitude if baseline_status == "locality_reference" else "",
+            "locality_coordinate_method": baseline_method if baseline_status == "locality_reference" else "",
+            "locality_coordinate_uncertainty_km": baseline_uncertainty_km if baseline_status == "locality_reference" else "",
+            "locality_geoname_id": baseline_geoname_id if baseline_status == "locality_reference" else "",
+            "locality_admin1": baseline_admin1 if baseline_status == "locality_reference" else "",
+        })
+
+        override = resolutions.get(entity["formation_id"])
+        if override:
+            status = str(override["site_status"])
+            entity.update({
+                "site_status": status,
+                "site_alignment_eligible": "true" if override.get("alignment_eligible") else "false",
+                "site_cluster_id": str(override.get("site_cluster_id", "")),
+                "site_search_aliases": str(override.get("search_aliases", "")),
+                "site_evidence_source_url": str(override.get("evidence_source_url", "")),
+                "site_evidence_artifact_ids": str(override.get("evidence_artifact_ids", "")),
+                "site_evidence_artifact_sha256s": str(override.get("evidence_artifact_sha256s", "")),
+                "site_imagery_provider": str(override.get("imagery_provider", "")),
+                "site_imagery_acquisition_date": str(override.get("imagery_acquisition_date", "")),
+                "site_review_status": str(override.get("review_status", "")),
+                "site_reviewer": str(override.get("reviewer", "")),
+                "site_reviewed_at": str(override.get("reviewed_at", "")),
+                "site_rights_status": str(override.get("rights_status", "")),
+                "site_notes": str(override.get("notes", "")),
+                "site_resolution_source": "reviewed_override",
+            })
+            if status in FIELD_SITE_STATUSES:
+                latitude = float(override["latitude"])
+                longitude = float(override["longitude"])
+                uncertainty_m = float(override["coordinate_uncertainty_m"])
+                confidence = {"candidate_field": 0.65, "corroborated_field": 0.9, "registered_site": 0.95}[status]
+                entity.update({
+                    "site_latitude": latitude,
+                    "site_longitude": longitude,
+                    "site_coordinate_method": str(override["coordinate_method"]),
+                    "site_coordinate_uncertainty_m": uncertainty_m,
+                    "site_directly_visible": "true" if override["directly_visible"] else "false",
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "geocode_method": str(override["coordinate_method"]),
+                    "geocode_confidence": confidence,
+                    "coordinate_uncertainty_km": uncertainty_m / 1000,
+                    "geoname_id": "",
+                    "geocode_admin1": "",
+                })
+            elif status == "unresolved":
+                entity.update({
+                    "site_latitude": "", "site_longitude": "", "site_coordinate_method": "",
+                    "site_coordinate_uncertainty_m": "", "site_directly_visible": "",
+                    "latitude": "", "longitude": "", "geocode_method": "",
+                    "geocode_confidence": "", "coordinate_uncertainty_km": "",
+                    "geoname_id": "", "geocode_admin1": "",
+                })
+        status = entity["site_status"]
+        entity["location_status"] = status
+        entity["location_role"] = (
+            "formation_site" if status in FIELD_SITE_STATUSES else
+            "locality_reference" if status == "locality_reference" else "unresolved"
+        )
+        entity["accepted_site_latitude"] = entity.get("site_latitude", "") if status in {
+            "corroborated_field", "registered_site"
+        } else ""
+        entity["accepted_site_longitude"] = entity.get("site_longitude", "") if status in {
+            "corroborated_field", "registered_site"
+        } else ""
+        entity["locality_reference_latitude"] = entity.get("locality_latitude", "")
+        entity["locality_reference_longitude"] = entity.get("locality_longitude", "")
+        counts[entity["site_status"]] += 1
+    return counts
+
+
 def load_optional_csv(path: Path):
     if not path.exists():
         return []
@@ -708,31 +1048,184 @@ def write_csv(path: Path, rows):
         writer.writerows(rows)
 
 
-def write_geojson(path: Path, entities):
+GEOJSON_PROPERTY_FIELDS = (
+    "formation_id", "date_iso", "date_precision", "year", "place", "region", "country",
+    "country_code", "county", "crop", "classification", "coordinate_uncertainty_km",
+    "geocode_method", "geocode_admin1", "geocode_confidence", "source_count", "source_names", "source_urls",
+    "has_straight_component", "straight_component_tier", "straight_detector_score", "straight_candidate_id",
+    "diagram_angle_deg", "diagram_angle_uncertainty_deg", "diagram_angle_reference",
+    "straight_review_status", "orientation_status", "source_image_count", "has_source_images",
+    "source_image_straight_status", "source_image_straight_tier", "source_image_straight_score",
+    "source_image_straight_candidate_id", "source_image_axis_deg",
+    "source_image_axis_uncertainty_deg", "source_image_axis_reference",
+    "source_image_analysis_count", "source_image_candidate_count", "source_image_straight_caveat",
+    "site_status", "site_coordinate_method", "site_coordinate_uncertainty_m", "site_directly_visible",
+    "site_alignment_eligible", "site_cluster_id", "site_search_aliases", "site_evidence_source_url",
+    "site_evidence_artifact_ids", "site_evidence_artifact_sha256s", "site_imagery_provider", "site_imagery_acquisition_date",
+    "site_review_status", "site_reviewer", "site_reviewed_at", "site_rights_status", "site_notes",
+    "site_resolution_source", "locality_coordinate_method", "locality_coordinate_uncertainty_km",
+    "location_status", "location_role", "accepted_site_latitude", "accepted_site_longitude",
+    "locality_reference_latitude", "locality_reference_longitude", "alias_of",
+    "merged_alias_formation_ids", "alias_count", "alias_review_status", "alias_reviewed_at",
+    "alias_review_notes",
+)
+
+PUBLIC_INDEX_FIELDS = (
+    "formation_id", "date_iso", "date_precision", "year", "place", "region", "country",
+    "country_code", "county", "crop", "size_text", "classification", "latitude", "longitude",
+    "geocode_method", "coordinate_uncertainty_km", "source_count", "source_names", "source_urls",
+    "has_straight_component", "orientation_status", "source_image_count", "has_source_images",
+    "merged_alias_formation_ids", "alias_count", "alias_review_status", "site_status",
+    "site_coordinate_method", "site_coordinate_uncertainty_m", "site_directly_visible",
+    "site_alignment_eligible", "site_cluster_id", "site_search_aliases", "site_evidence_source_url",
+    "site_evidence_artifact_ids", "site_evidence_artifact_sha256s", "site_imagery_provider", "site_imagery_acquisition_date",
+    "site_review_status", "site_rights_status", "site_notes", "location_status", "location_role",
+    "straight_component_tier", "diagram_angle_deg", "source_image_straight_tier",
+    "source_image_axis_deg", "source_image_axis_uncertainty_deg",
+)
+
+SITE_GEOJSON_PROPERTY_FIELDS = PUBLIC_INDEX_FIELDS
+
+LOCALITY_GEOJSON_PROPERTY_FIELDS = (
+    "formation_id", "date_iso", "date_precision", "year", "place", "region", "country",
+    "country_code", "county", "source_count", "source_names", "source_urls",
+    "has_straight_component", "orientation_status", "source_image_count", "has_source_images",
+    "site_status", "locality_coordinate_method", "locality_coordinate_uncertainty_km",
+    "location_status", "location_role", "straight_component_tier", "diagram_angle_deg",
+    "source_image_straight_tier", "source_image_axis_deg", "source_image_axis_uncertainty_deg",
+)
+
+
+def compact_properties(row: dict, fields: tuple[str, ...]) -> dict:
+    """Keep the public payload complete for the UI while omitting empty repeated keys."""
+    return {
+        field: row.get(field)
+        for field in fields
+        if row.get(field) not in {"", None}
+    }
+
+
+def write_geojson(path: Path, entities, coordinate_role: str = "canonical"):
+    roles = {
+        "canonical": ("latitude", "longitude", None),
+        "site": ("site_latitude", "site_longitude", FIELD_SITE_STATUSES),
+        "locality": ("locality_latitude", "locality_longitude", {"locality_reference"}),
+    }
+    if coordinate_role not in roles:
+        raise ValueError(f"unsupported GeoJSON coordinate role: {coordinate_role}")
+    latitude_field, longitude_field, allowed_statuses = roles[coordinate_role]
     features = []
     for row in entities:
-        if row["latitude"] == "" or row["longitude"] == "":
+        if allowed_statuses is not None and row.get("site_status") not in allowed_statuses:
             continue
-        properties = {k: row[k] for k in (
-            "formation_id", "date_iso", "date_precision", "year", "place", "region", "country",
-            "country_code", "county", "crop", "classification", "coordinate_uncertainty_km",
-            "geocode_method", "geocode_admin1", "geocode_confidence", "source_count", "source_names", "source_urls", "has_straight_component",
-            "straight_component_tier", "straight_detector_score", "straight_candidate_id",
-            "diagram_angle_deg", "diagram_angle_uncertainty_deg", "diagram_angle_reference",
-            "straight_review_status", "orientation_status", "source_image_count", "has_source_images",
-            "source_image_straight_status", "source_image_straight_tier", "source_image_straight_score",
-            "source_image_straight_candidate_id", "source_image_axis_deg",
-            "source_image_axis_uncertainty_deg", "source_image_axis_reference",
-            "source_image_analysis_count", "source_image_candidate_count",
-            "source_image_straight_caveat")}
-        features.append({"type":"Feature", "geometry":{"type":"Point", "coordinates":[row["longitude"], row["latitude"]]}, "properties":properties})
-    method_counts = Counter(row["geocode_method"] for row in entities if row["latitude"] != "")
+        if row.get(latitude_field, "") == "" or row.get(longitude_field, "") == "":
+            continue
+        property_fields = GEOJSON_PROPERTY_FIELDS
+        if coordinate_role == "site":
+            property_fields = SITE_GEOJSON_PROPERTY_FIELDS
+        elif coordinate_role == "locality":
+            property_fields = LOCALITY_GEOJSON_PROPERTY_FIELDS
+        properties = compact_properties(row, property_fields)
+        features.append({
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [row[longitude_field], row[latitude_field]]},
+            "properties": properties,
+        })
+    method_field = "geocode_method" if coordinate_role == "canonical" else (
+        "site_coordinate_method" if coordinate_role == "site" else "locality_coordinate_method"
+    )
+    method_counts = Counter(feature["properties"].get(method_field, "") for feature in features)
+    notices = {
+        "canonical": "Backward-compatible mixed coordinate layer. Use formation_sites.geojson for field locations and locality_references.geojson only as search context.",
+        "site": "Field-location layer only. Candidate, corroborated, and registered tiers remain distinct; inspect uncertainty and review metadata.",
+        "locality": "Locality reference centroids are not crop-formation sites and must not be used as ray origins or alignment targets.",
+    }
     payload = {"type":"FeatureCollection", "features":features,
                "metadata":{"generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
-                           "coordinate_notice":"Coordinates mix source-reported field positions and approximate locality centroids. Inspect geocode_method and coordinate_uncertainty_km before spatial analysis.",
+                           "coordinate_role": coordinate_role,
+                           "coordinate_notice": notices[coordinate_role],
                            "coordinate_methods":dict(method_counts)}}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
+def write_formation_index(path: Path, entities: list[dict]) -> None:
+    payload = {
+        "metadata": {
+            "schema_version": "crop-circle-atlas/formation-index/v1",
+            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "record_count": len(entities),
+            "site_status_counts": dict(Counter(row["site_status"] for row in entities)),
+            "merged_alias_count": sum(int(row.get("alias_count") or 0) for row in entities),
+            "coordinate_notice": "Field sites, locality references, and unresolved reports are distinct. Locality references are not formation sites.",
+        },
+        "formations": [compact_properties(entity, PUBLIC_INDEX_FIELDS) for entity in entities],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
+def line_priority(entity: dict) -> int:
+    if entity.get("has_straight_component") == "yes_evidence_reviewed":
+        return 3
+    if (entity.get("has_straight_component") == "yes_candidate" or
+            entity.get("straight_component_tier") in {"high", "medium"} or
+            entity.get("source_image_straight_tier") in {"high", "medium"}):
+        return 2
+    if (entity.get("has_straight_component") == "possible_candidate" or
+            entity.get("straight_component_tier") == "low" or
+            entity.get("source_image_straight_tier") == "low"):
+        return 1
+    return 0
+
+
+def next_location_action(entity: dict, has_images: bool, line_level: int) -> str:
+    status = entity["site_status"]
+    if status == "unresolved":
+        return "research_exact_field_location"
+    if status == "locality_reference":
+        return "replace_locality_reference_with_field_evidence"
+    if status == "candidate_field":
+        return "corroborate_candidate_field"
+    if status == "corroborated_field":
+        return "register_source_image_and_review_components" if has_images else "seek_registration_evidence"
+    if line_level or has_images:
+        return "review_or_register_straight_components"
+    return "site_resolution_complete"
+
+
+def build_location_work_queue(entities: list[dict]) -> list[dict[str, object]]:
+    status_need = {
+        "unresolved": 4,
+        "locality_reference": 3,
+        "candidate_field": 2,
+        "corroborated_field": 1,
+        "registered_site": 0,
+    }
+    queue = []
+    for entity in entities:
+        is_us = entity.get("country_code") == "US"
+        has_images = int(entity.get("source_image_count") or 0) > 0
+        line_level = line_priority(entity)
+        score = (1000 if is_us else 0) + (100 if has_images else 0) + line_level * 10 + status_need[entity["site_status"]]
+        queue.append({
+            "formation_id": entity["formation_id"],
+            "date_iso": entity.get("date_iso", ""),
+            "place": entity.get("place", ""),
+            "region": entity.get("region", ""),
+            "country_code": entity.get("country_code", ""),
+            "site_status": entity["site_status"],
+            "us_priority": "yes" if is_us else "no",
+            "has_source_images": "yes" if has_images else "no",
+            "source_image_count": entity.get("source_image_count", 0),
+            "line_priority": line_level,
+            "priority_score": score,
+            "next_action": next_location_action(entity, has_images, line_level),
+        })
+    queue.sort(key=lambda row: (-int(row["priority_score"]), str(row["formation_id"])))
+    for rank, row in enumerate(queue, 1):
+        row["priority_rank"] = rank
+    return queue
 
 
 def main():
@@ -752,13 +1245,22 @@ def main():
         raise ValueError("Assertion IDs are not globally unique after source expansion")
     geonames_index = load_geonames()
     entities = build_entities(assertions, geonames_index)
+    formation_alias_reviews = load_formation_alias_reviews()
+    entities = apply_formation_alias_reviews(entities, formation_alias_reviews)
+    site_resolutions = load_site_resolutions()
+    site_status_counts = apply_site_resolutions(entities, site_resolutions)
     straight_counts = apply_straight_component_enrichment(entities)
     image_straight_counts = apply_iccra_image_straight_enrichment(entities)
     orientation_counts = apply_orientation_status(entities)
     image_straight_metrics = load_optional_json(ROOT / "outputs" / "straight-components" / "iccra_image_metrics.json")
+    location_work_queue = build_location_work_queue(entities)
     write_csv(ROOT / "data" / "source_assertions.csv", assertions)
     write_csv(ROOT / "data" / "formations.csv", entities)
-    write_geojson(ROOT / "web" / "data" / "formations.geojson", entities)
+    write_csv(ROOT / "data" / "location_work_queue.csv", location_work_queue)
+    write_formation_index(ROOT / "web" / "data" / "formation_index.json", entities)
+    write_geojson(ROOT / "web" / "data" / "formations.geojson", entities, "canonical")
+    write_geojson(ROOT / "web" / "data" / "formation_sites.geojson", entities, "site")
+    write_geojson(ROOT / "web" / "data" / "locality_references.geojson", entities, "locality")
     pdf_hash = hashlib.sha256(args.pdf.read_bytes()).hexdigest()
     summary = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
@@ -769,7 +1271,20 @@ def main():
                        "source_expansion_by_source": dict(Counter(
                            row.get("expansion_source_id", "unknown") for row in expansion_rows))},
         "formations": len(entities),
+        "formation_aliases": {
+            "accepted_reviews": len(formation_alias_reviews),
+            "merged_alias_entities": len(formation_alias_reviews),
+        },
         "geocoded": sum(1 for row in entities if row["latitude"] != ""),
+        "site_resolutions": {
+            "reviewed_overrides": len(site_resolutions),
+            "status_counts": dict(site_status_counts),
+            "field_site_features": sum(1 for row in entities if row["site_status"] in FIELD_SITE_STATUSES),
+            "locality_reference_features": site_status_counts["locality_reference"],
+            "unresolved_formations": site_status_counts["unresolved"],
+            "full_index_records": len(entities),
+            "location_work_queue_rows": len(location_work_queue),
+        },
         "us_formations": sum(1 for row in entities if row["country_code"] == "US"),
         "countries": len({row["country_code"] for row in entities if row["country_code"]}),
         "year_min": min(row["year"] for row in entities), "year_max": max(row["year"] for row in entities),

@@ -1,17 +1,1 @@
 ﻿source_formation_id,target_formation_id,azimuth_true_deg,along_track_km,cross_track_km,max_range_km,corridor_km,temporal_relation,source_origin_method,source_origin_uncertainty_m,target_coordinate_uncertainty_km,azimuth_uncertainty_deg,orientation_lateral_uncertainty_km,combined_spatial_uncertainty_km,hit_geometry,spatial_quality_status,eligible_for_statistical_test
-cc_af45ba1f38f5,cc_f2dc7f1f48d7,0.0,4.004,1.478,500.0,2.0,overlap_or_indeterminate,source_report_gps_dmm,50,5,11.25,0.781,5.831,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_af45ba1f38f5,cc_337e3a44cb3f,0.0,4.004,1.478,500.0,2.0,later,source_report_gps_dmm,50,5,11.25,0.781,5.831,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_af45ba1f38f5,cc_8476a8be2518,0.0,4.004,1.478,500.0,2.0,later,source_report_gps_dmm,50,5,11.25,0.781,5.831,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_af45ba1f38f5,cc_41a6829ba439,0.0,4.004,1.478,500.0,2.0,later,source_report_gps_dmm,50,5,11.25,0.781,5.831,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_801777bd00f0,cc_1bfdd3ca38c1,67.5,221.127,1.117,500.0,2.0,earlier,source_report_gps_dmm,50,5,22.5,84.607,89.657,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_801777bd00f0,cc_c4022b412744,67.5,5.67,1.552,500.0,2.0,later,source_report_gps_dmm,50,5,22.5,2.17,7.22,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_801777bd00f0,cc_badcad05eb48,67.5,21.107,1.967,500.0,2.0,later,source_report_gps_dmm,50,5,22.5,8.077,13.127,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_801777bd00f0,cc_ccead4ee7249,67.5,5.67,1.552,500.0,2.0,later,source_report_gps_dmm,50,5,22.5,2.17,7.22,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_12accab89939,0.0,127.361,1.474,500.0,5.0,earlier,source_report_degrees_minutes,1500,5,11.25,24.845,31.345,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_d886edf71986,0.0,127.361,1.474,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,24.845,31.345,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_592127d32b0f,0.0,127.361,1.474,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,24.845,31.345,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_00f57f147ae3,0.0,63.799,4.074,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,12.446,18.946,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_bf6ab350ec3c,0.0,0.692,0.506,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,0.135,6.635,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_50b9556da13d,0.0,133.384,2.213,500.0,5.0,earlier,source_report_degrees_minutes,1500,5,11.25,26.02,32.52,centerline_corridor,exploratory_bearing_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_bf6ab350ec3c,90.0,0.506,0.692,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,0.099,6.599,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
-cc_8a68d8a0471b,cc_400a786b8132,90.0,9.92,0.361,500.0,5.0,later,source_report_degrees_minutes,1500,5,11.25,1.935,8.435,centerline_corridor,exploratory_coordinate_uncertainty_exceeds_corridor,no
