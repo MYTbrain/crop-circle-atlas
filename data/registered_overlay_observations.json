@@ -283,6 +283,66 @@
         "status": "source_coordinate_scene_placement_only",
         "limitations": "The actual report coordinate and scale are useful, but the oblique frame is not yet oriented or projectively fit. Creek and tree relief introduce parallax; a 2005-era orthophoto match is required before promotion to a geometry registration."
       }
+    },
+    {
+      "observation_id": "regobs_wausau_1997_usgs_followup_v1",
+      "overlay_id": "wausau-1997-usgs-followup-registration",
+      "classification": "provisional_historical_ortho_landmark_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Wisconsin/images/Wasau%201998%20via%20sat.jpg",
+        "page_url": "https://iccra.org/bystate/Wisconsin/ICCRA%20-%20WI%20-%20Wausau,%20Marathon%20County%20(August%2013,%201997).html",
+        "sha256": "1700e2a5b70635e3e8864112d0fca843287cedd5f6de6b78c05ab5c5359d9ae4",
+        "width_px": 800,
+        "height_px": 600,
+        "pixel_boundary_extent_xy": [0, 0, 800, 600],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [44.94754948867359, -89.5679034162344],
+        "coordinate_uncertainty_m": 100,
+        "site_text": "August 13 symbol east of North 41st Street and north of Townline Road on the contemporaneous investigator map",
+        "secondary_report_url": "https://w-files.com/files/cc970813.htm",
+        "investigator_map_url": "https://w-files.com/graphics/wauccmap.gif",
+        "investigator_map_distribution": "remote_reference_only_not_packaged",
+        "historical_road_names": ["Highway N", "41st Street"],
+        "current_road_names": ["Townline Road", "Camp Phillips Road / County Road X"]
+      },
+      "landmark_controls": {
+        "road_crossing_source_xy": [40.0, 400.0],
+        "road_crossing_wgs84_lat_lon": [44.945397832773466, -89.573023775879378],
+        "road_crossing_source": "Marathon County Road Centerline layer",
+        "visual_matches": [
+          "Townline Road and Camp Phillips Road / County Road X crossing",
+          "farm entrance and hilltop farmstead",
+          "curved drainage and field access margin",
+          "persistent field boundaries"
+        ],
+        "candidate_center_source_xy": [455.9032130510178, 153.06975793659004],
+        "candidate_center_basis": "The August 13 symbol centroid from the contemporaneous investigator map after fitting Townline Road, North 41st Street, McIntosh Road, and Lahr Road controls, transferred into the matched USGS frame."
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_affine_about_landmark_candidate_center",
+        "anchor_pixel_xy": [455.9032130510178, 153.06975793659004],
+        "anchor_wgs84_lat_lon": [44.94754948867359, -89.5679034162344],
+        "meters_per_pixel": 0.97,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The mapped separation between the persistent road crossing and farm entrance is approximately 0.97 metres per source pixel; the frame is an ICCRA-linked USGS follow-up image.",
+        "orientation_basis": "The source frame is north-up and its east-west and north-south roads coincide with current county road centerlines and satellite imagery.",
+        "orientation_status": "north_up_historical_ortho_landmark_match",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [44.94888328013243, -89.57351633792503],
+        [44.94888328013243, -89.56366701634984],
+        [44.94365510909398, -89.56366701634984],
+        [44.94365510909398, -89.57351633792503]
+      ],
+      "quality": {
+        "status": "useful_provisional_landmark_registration",
+        "limitations": "The contemporaneous road map and persistent roads and farm scene support the candidate field and source-frame display geometry, but the circles are not unambiguously visible in the early-1998 image. The symbol-derived candidate center therefore retains 100 m uncertainty and is not an alignment target."
+      }
     }
   ]
 }

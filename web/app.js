@@ -52,6 +52,8 @@ let lastManualRay = null;
 let activeOverlay = null;
 let activeOverlayRecord = null;
 let overlayRecords = [];
+let sourceImageMetadata = {};
+let sourceImageLoadedFor = null;
 let siteCollection = { type: 'FeatureCollection', features: [] };
 let localityCollection = { type: 'FeatureCollection', features: [] };
 let provisionalCollection = { type: 'FeatureCollection', features: [] };
@@ -63,6 +65,7 @@ const localityFeaturesById = new Map();
 const renderedMarkersById = new Map();
 const overlayFootprintsByFormation = new Map();
 const provisionalByFormation = new Map();
+const sourceImagesByFormation = new Map();
 
 const ACTUAL_SITE_STATUSES = new Set([
   'corroborated_field', 'registered_site', 'exact_source_gps',
@@ -151,6 +154,105 @@ function straightNotes(record) {
   return notes.map((note) => `<p>${esc(note)}</p>`).join('');
 }
 
+function sourceImagesFor(formationId = selected?.formation_id) {
+  return sourceImagesByFormation.get(formationId) || [];
+}
+
+function resetSourceImageGallery() {
+  $('sourceImageGallery').replaceChildren();
+  $('sourceImageGallery').hidden = true;
+  sourceImageLoadedFor = null;
+}
+
+function updateSourceImageControls() {
+  const images = sourceImagesFor();
+  const count = images.length;
+  $('toggleSourceImages').disabled = !selected || !count;
+  $('toggleSourceImages').textContent = count
+    ? `Load ${count} source image${count === 1 ? '' : 's'}`
+    : 'No linked source images for this report';
+  if (!selected) {
+    $('sourceImageNotice').textContent = 'Select a report to inspect its source photographs, diagrams, and aerial images. Source pixels load from ICCRA only after you ask to see them; a source image is not automatically a mapped overlay.';
+    return;
+  }
+  const mapped = images.filter((image) => image.placement_status === 'mapped_overlay').length;
+  $('sourceImageNotice').textContent = count
+    ? `${selected.place || 'This report'} has ${count} formation-linked ICCRA source image${count === 1 ? '' : 's'}. ${mapped ? `${mapped} ${mapped === 1 ? 'is' : 'are'} connected to a mapped placement; ` : ''}the rest remain source evidence only until their location and orientation are independently resolved.`
+    : `No formation-linked ICCRA source images are cataloged for ${selected.place || 'this report'}.`;
+}
+
+function renderSourceImageGallery(images) {
+  const gallery = $('sourceImageGallery');
+  gallery.replaceChildren();
+  images.forEach((record, index) => {
+    const card = document.createElement('article');
+    card.className = 'source-image-card';
+
+    const status = document.createElement('span');
+    status.className = `image-status ${record.placement_status === 'mapped_overlay' ? 'mapped' : 'unmapped'}`;
+    status.textContent = record.placement_status === 'mapped_overlay' ? 'MAPPED PLACEMENT' : 'SOURCE ONLY';
+
+    const imageLink = document.createElement('a');
+    imageLink.className = 'source-image-preview';
+    imageLink.href = record.image_url;
+    imageLink.target = '_blank';
+    imageLink.rel = 'noreferrer';
+    imageLink.title = 'Open the source-hosted image at full size';
+
+    const image = document.createElement('img');
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.referrerPolicy = 'no-referrer';
+    image.alt = record.alt_text || record.title_text || `ICCRA source image ${index + 1} for ${selected?.place || 'selected report'}`;
+    image.src = record.image_url;
+    image.addEventListener('error', () => {
+      image.remove();
+      const failure = document.createElement('span');
+      failure.className = 'source-image-error';
+      failure.textContent = 'Source host did not return this image. Open it directly to retry.';
+      imageLink.appendChild(failure);
+    }, { once: true });
+    imageLink.appendChild(image);
+
+    const details = document.createElement('p');
+    details.className = 'source-image-meta';
+    const dimensions = record.width && record.height ? ` · ${record.width}×${record.height}` : '';
+    details.textContent = `${record.image_kind.replaceAll('_', ' ')}${dimensions} · rights ${record.rights_status.replaceAll('_', ' ')}`;
+
+    const source = document.createElement('a');
+    source.href = record.source_page_url;
+    source.target = '_blank';
+    source.rel = 'noreferrer';
+    source.textContent = 'Open source report';
+
+    card.append(status, imageLink, details, source);
+    gallery.appendChild(card);
+  });
+  gallery.hidden = false;
+  sourceImageLoadedFor = selected?.formation_id || null;
+  $('toggleSourceImages').textContent = `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+}
+
+function toggleSourceImages() {
+  const images = sourceImagesFor();
+  if (!selected || !images.length) return;
+  const gallery = $('sourceImageGallery');
+  if (sourceImageLoadedFor === selected.formation_id) {
+    gallery.hidden = !gallery.hidden;
+    $('toggleSourceImages').textContent = gallery.hidden
+      ? `Show ${images.length} loaded source image${images.length === 1 ? '' : 's'}`
+      : `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+    return;
+  }
+  renderSourceImageGallery(images);
+}
+
+window.showSourceImagesForFormation = async (id) => {
+  await selectFormation(id, true);
+  toggleSourceImages();
+  $('sourceImageSection').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
+
 function popupFor(records) {
   const multiple = records.length > 1;
   const body = records.map((record) => {
@@ -158,6 +260,7 @@ function popupFor(records) {
     const uncertainty = coordinateUncertaintyKm(record);
     const evidence = sourceLink(record);
     const hasOverlay = overlayRecords.some((overlay) => overlay.formation_id === record.formation_id);
+    const linkedImages = sourceImagesFor(record.formation_id);
     const canAlign = isAlignmentEligibleSite(record);
     const method = record.site_coordinate_method || record.location_method || record.geocode_method || 'not resolved';
     return `<article class="popup-record">
@@ -169,10 +272,11 @@ function popupFor(records) {
       <p>Review: ${esc(record.site_review_status || 'not reviewed')} · directly visible: ${esc(record.site_directly_visible || 'not recorded')} · alignment target: ${isAlignmentEligibleSite(record) ? 'eligible by current site-quality gate' : 'not eligible'}</p>
       ${record.site_notes || record.location_notes ? `<p>${esc(record.site_notes || record.location_notes)}</p>` : ''}
       ${straightNotes(record)}
-      ${Number(record.source_image_count) ? `<p>Source-page images: ${esc(record.source_image_count)}; publication rights not assumed.</p>` : ''}
+      ${linkedImages.length ? `<p>Formation-linked source images: ${linkedImages.length}; publication rights and georegistration are not assumed.</p>` : ''}
       <p>Sources: ${esc(record.source_names || '')}</p>
       ${evidence ? `<a href="${esc(evidence)}" target="_blank" rel="noreferrer">Open supporting source</a>` : ''}
       <button onclick="selectFormation('${esc(record.formation_id)}')" ${canAlign ? '' : 'disabled'}>Use in alignment lab</button>
+      ${linkedImages.length ? `<button class="secondary" onclick="showSourceImagesForFormation('${esc(record.formation_id)}')">Browse ${linkedImages.length} source image${linkedImages.length === 1 ? '' : 's'}</button>` : ''}
       ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">Load registered aerial image</button>` : ''}
       <button class="secondary" onclick="openGeorefForFormation('${esc(record.formation_id)}')">Register another aerial image</button>
     </article>`;
@@ -188,16 +292,16 @@ function markerStyle(record, reference = false) {
     || ['high', 'medium'].includes(record.source_image_straight_tier);
   if (reference || role === 'locality_reference') {
     return {
-      radius: 5, color: '#f6ad55', weight: 2.25, opacity: 1, dashArray: '3 2',
-      fillColor: '#f6ad55', fillOpacity: 0.08, renderer: localityRenderer,
+      radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2',
+      fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer,
     };
   }
   const verified = isActualSite(record);
   return {
-    radius: (verified ? 8 : 9) + (hasLine ? 1 : 0),
-    color: verified ? '#d8fff9' : '#fff4c7',
-    weight: hasLine ? 3.5 : 3,
-    fillColor: verified ? '#2d9e91' : '#f6ad55',
+    radius: (verified ? 8 : 10) + (hasLine ? 1 : 0),
+    color: verified ? '#d8fff9' : '#fffde7',
+    weight: verified ? (hasLine ? 3.5 : 3) : 4,
+    fillColor: verified ? '#2d9e91' : '#ffd84d',
     fillOpacity: 1,
     renderer: siteRenderer,
   };
@@ -262,8 +366,12 @@ function applyFilters() {
   if (selected && !visibleIds.has(selected.formation_id)) {
     $('toggleOverlay').disabled = true;
     $('overlayNotice').textContent = 'The selected formation and its source-photo overlay are hidden by the active filters. Change the filters or select a visible report.';
+    resetSourceImageGallery();
+    $('toggleSourceImages').disabled = true;
+    $('sourceImageNotice').textContent = 'The selected report and its source images are hidden by the active filters. Change the filters or select a visible report.';
   } else if (selected && !activeOverlay) {
     updateOverlayControls();
+    updateSourceImageControls();
   }
   siteLayer.clearLayers();
   localityLayer.clearLayers();
@@ -295,6 +403,13 @@ function applyFilters() {
       const badge = document.createElement('span');
       badge.className = 'result-badge';
       badge.textContent = 'REGISTERED IMAGE';
+      button.appendChild(badge);
+    }
+    const linkedImages = sourceImagesFor(record.formation_id);
+    if (linkedImages.length) {
+      const badge = document.createElement('span');
+      badge.className = 'result-badge source';
+      badge.textContent = `${linkedImages.length} SOURCE IMAGE${linkedImages.length === 1 ? '' : 'S'}`;
       button.appendChild(badge);
     }
     button.addEventListener('click', () => selectFormation(record.formation_id, true));
@@ -424,7 +539,9 @@ async function selectFormation(id, focus = false) {
     $('bearingUncertainty').value = '';
   }
   resetOverlaySelection();
+  resetSourceImageGallery();
   updateOverlayControls();
+  updateSourceImageControls();
   if (!applyProvisionalOrientation(selected)) {
     $('hitSummary').textContent = canAlign
       ? 'This reviewed field can originate an unqualified manual hypothesis. Enter a true bearing and uncertainty, then draw the line.'
@@ -591,6 +708,7 @@ window.showOverlayForFormation = async (id) => {
 $('drawRay').addEventListener('click', drawRay);
 $('exportRay').addEventListener('click', exportRay);
 $('toggleOverlay').addEventListener('click', toggleSelectedOverlay);
+$('toggleSourceImages').addEventListener('click', toggleSourceImages);
 $('overlayOpacity').addEventListener('input', () => activeOverlay?.setOpacity(Number($('overlayOpacity').value)));
 ['bearing', 'bearingUncertainty', 'range', 'corridor', 'bidirectional'].forEach((id) => $(id).addEventListener('input', () => {
   lastManualRay = null;
@@ -681,9 +799,10 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260721.3').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/registered_overlays.json?v=20260721.5').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260721.5').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
-]).then(([indexPayload, sites, overlays, provisionalRays]) => {
+]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
   allFormations.forEach((record) => formationsById.set(record.formation_id, record));
   siteCollection = sites;
@@ -691,6 +810,10 @@ Promise.all([
   siteCollection.features.forEach((feature) => siteFeaturesById.set(feature.properties.formation_id, feature));
   provisionalCollection.features.forEach((feature) => provisionalByFormation.set(feature.properties.formation_id, feature));
   overlayRecords = overlays.overlays || [];
+  sourceImageMetadata = sourceImages.metadata || {};
+  Object.entries(sourceImages.images_by_formation || {}).forEach(([formationId, images]) => {
+    sourceImagesByFormation.set(formationId, images);
+  });
   layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
 
   const years = allFormations.map((record) => Number(record.year)).filter(Number.isFinite);
@@ -702,6 +825,10 @@ Promise.all([
   $('siteCount').textContent = siteCollection.features.length.toLocaleString();
   $('referenceCount').textContent = Number(indexPayload.metadata?.site_status_counts?.locality_reference || 0).toLocaleString();
   $('unresolvedCount').textContent = allFormations.filter((record) => locationRole(record) === 'unresolved').length.toLocaleString();
+  $('sourceImageCount').textContent = Number(sourceImageMetadata.unique_image_count || 0).toLocaleString();
+  $('mappedImageCount').textContent = overlayRecords.length.toLocaleString();
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique ICCRA source files are linked to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} are attached to US reports. ${overlayRecords.length} currently have reviewed map placements.`;
+  updateSourceImageControls();
   applyFilters();
   addOrientationLayers();
 }).catch((error) => {

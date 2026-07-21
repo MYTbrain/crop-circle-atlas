@@ -159,6 +159,37 @@
       "formal_alignment_status": "excluded_pending_historical_ortho_ground_control",
       "quality_disclosure": "Coordinate-anchored scene placement, not a georegistration. It identifies the source-reported site vicinity and scale, but the oblique photograph's true orientation still requires a historical orthophoto match to the creek and tree controls.",
       "notes": "This is deliberately labeled as a scene placement: it uses the actual source GPS coordinate and measured formation size but does not claim that the image corners are final. It loads from ICCRA only after explicit user action and is excluded from alignment calculations."
+    },
+    {
+      "overlay_id": "wausau-1997-usgs-followup-registration",
+      "registration_observation_id": "regobs_wausau_1997_usgs_followup_v1",
+      "formation_id": "cc_5d10e918a4b4",
+      "assertion_id": "iccra_0f395c638d0a0d2c",
+      "title": "Wausau 1997 USGS follow-up scene registration",
+      "source_image_url": "https://iccra.org/bystate/Wisconsin/images/Wasau%201998%20via%20sat.jpg",
+      "source_page_url": "https://iccra.org/bystate/Wisconsin/ICCRA%20-%20WI%20-%20Wausau,%20Marathon%20County%20(August%2013,%201997).html",
+      "source_image_sha256": "1700e2a5b70635e3e8864112d0fca843287cedd5f6de6b78c05ab5c5359d9ae4",
+      "corners": [
+        [44.948883280132, -89.573516337925],
+        [44.948883280132, -89.56366701635],
+        [44.943655109094, -89.56366701635],
+        [44.943655109094, -89.573516337925]
+      ],
+      "center": [44.947549488674, -89.567903416234],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_historical_ortho_landmark_registration",
+      "display_geometry_status": "north_up_usgs_frame_scaled_from_persistent_road_and_farm_controls",
+      "reference_imagery": "Contemporaneous W-Files investigator map, Marathon County road centerlines, and current satellite imagery",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The contemporaneous W-Files investigator map places the August 13 formation east of North 41st Street and north of Townline Road. Its road grid was fitted to the present Townline/North 41st crossing, McIntosh Road, and Lahr Road. The early-1998 USGS frame independently matches the crossing, farm drive, farmstead, drainage margin, and field boundaries. The mapped symbol centroid supplies the candidate center; calculations and limitations are persisted in data/registered_overlay_observations.json.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Landmark-registered historical scene, not a survey georegistration. The contemporaneous road map locates the candidate field and persistent roads and farm features support the displayed USGS frame, but the 1997 formation is not clearly visible in that early-1998 image. The candidate center retains 100 m uncertainty and is excluded from formal alignment calculations.",
+      "notes": "This is the actual ICCRA-linked USGS follow-up frame, placed over the identified Wausau field scene. It loads from ICCRA only after explicit user action; the site marker and image footprint remain provisional."
     }
   ]
 }

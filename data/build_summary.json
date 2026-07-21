@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:31:22Z",
+  "generated_at": "2026-07-21T20:50:17Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -25,19 +25,19 @@
     "accepted_reviews": 4,
     "merged_alias_entities": 4
   },
-  "geocoded": 4025,
+  "geocoded": 4026,
   "site_resolutions": {
-    "reviewed_overrides": 4,
+    "reviewed_overrides": 10,
     "status_counts": {
-      "locality_reference": 4017,
-      "unresolved": 3720,
+      "locality_reference": 4012,
+      "unresolved": 3719,
       "registered_site": 5,
-      "corroborated_field": 2,
-      "candidate_field": 1
+      "candidate_field": 7,
+      "corroborated_field": 2
     },
-    "field_site_features": 8,
-    "locality_reference_features": 4017,
-    "unresolved_formations": 3720,
+    "field_site_features": 14,
+    "locality_reference_features": 4012,
+    "unresolved_formations": 3719,
     "full_index_records": 7745,
     "location_work_queue_rows": 7745
   },

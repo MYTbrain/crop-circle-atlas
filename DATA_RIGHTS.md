@@ -24,9 +24,9 @@ third-party catalogs, reports, diagrams, or photographs.
 - A local image chosen in the registration lab is not uploaded. A public KML or
   KMZ overlay requires explicit permission, public-domain status, or an open
   license whose name and evidence are recorded and verified.
-- The current public KML/KMZ contains zero packaged image files and one
-  off-by-default, provisional GroundOverlay that links directly to the source
-  host. That is not pixel redistribution or publication authorization. An
+- The current public KML/KMZ contains zero packaged image files and six
+  off-by-default, provisional GroundOverlays that link directly to the source
+  host. Those are not pixel redistribution or publication authorization. An
   authorized future packaged GroundOverlay must carry the rights holder/creator,
   license, proof reference, and source URL inside the KML as well as in the
   asset registry.

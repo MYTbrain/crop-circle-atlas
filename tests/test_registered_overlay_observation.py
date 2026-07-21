@@ -24,7 +24,7 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             )
         )
         observations = {row["observation_id"]: row for row in payload["observations"]}
-        self.assertEqual(len(observations), 4)
+        self.assertEqual(len(observations), 5)
         self.assertEqual(
             observations["regobs_mayville_2003_source_gps_v1"]["quality"]["status"],
             "useful_provisional_geometry_registration",
@@ -38,6 +38,10 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
                 "local_display_transform"
             ]["orientation_status"],
             "unresolved_display_assumption",
+        )
+        self.assertEqual(
+            observations["regobs_wausau_1997_usgs_followup_v1"]["quality"]["status"],
+            "useful_provisional_landmark_registration",
         )
 
 

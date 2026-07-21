@@ -26,8 +26,9 @@ robots-compliant access, a working host, or a permitted structured interface.
   entities after four evidence-reviewed report aliases were accepted and
   merged; this is not a claim of 7,745 physically distinct formations. All
   source assertions remain preserved.
-- Location evidence is separated into eight field candidates/sites, 4,017
-  locality references, and 3,720 unresolved entities. The locality references
+- Location evidence is separated into 14 field candidates/sites, 4,012
+  locality references, and 3,719 unresolved entities. Ten field-level records
+  are explicit reviewed overrides. The locality references
   are search aids, not claimed formation fields.
 - 949 entities are US reports; one Puerto Rico record is retained separately.
 - ICCRA reconciliation covers all 1,169 parsed index occurrences plus two
