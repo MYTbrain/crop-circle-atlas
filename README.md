@@ -6,6 +6,8 @@ catalog, current Crop Circle Center listings, an exhaustive reconciliation of
 the US-focused ICCRA archive, and bounded public metadata passes over Crop
 Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 
+**Live atlas:** https://mytbrain.github.io/crop-circle-atlas/
+
 ## Current build
 
 - 8,390 source assertions resolved into 7,749 conservative catalog entities.
