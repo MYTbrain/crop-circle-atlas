@@ -193,16 +193,20 @@ The public site does not contain ICCRA photographs. Registered footprints are
 visible by default, but each source-photo overlay is disabled until a user
 explicitly chooses to show it. The browser then requests the image directly
 from the source host and applies the atlas's corner metadata locally. The
-footprints follow the active search, year, and country filters. For Hubbard
+footprints follow the active search, year, and country filters. Five reviewed
+placements are currently available: Whiskey Hill/Hubbard 1998 and 2000,
+Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. For Hubbard
 2000, `data/registered_overlay_observations.json` makes the approximate display
 geometry reproducible while recording that its 35 m detector-sensitivity
 envelope is not a confidence interval and that it lacks an independent ground
-checkpoint. The repository does not proxy, cache for publication, bundle, or
-redistribute those pixels. Cross-origin or source-host failure remains a visible
-failure; it is not bypassed.
+checkpoint. Mayville and Howell retain provisional source-coordinate display
+geometry; Jupiter retains a coordinate anchor while explicitly leaving image
+orientation unresolved. The repository does not proxy, cache for publication,
+bundle, or redistribute those pixels. Cross-origin or source-host failure
+remains a visible failure; it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries two disabled provisional
+packages zero source-photo files and carries five disabled provisional
 GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,

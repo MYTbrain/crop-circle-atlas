@@ -141,6 +141,148 @@
         "published_rounded_envelope_m": 35,
         "interpretation": "Conditional detector-sensitivity envelope, not a confidence interval. It does not cover a wrong lobe permutation, semantic axis misinterpretation, or manual road-control error."
       }
+    },
+    {
+      "observation_id": "regobs_mayville_2003_source_gps_v1",
+      "overlay_id": "mayville-kekoskee-2003-source-gps-registration",
+      "classification": "provisional_source_gps_geometry_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/reports/images/mk_image002.jpg",
+        "page_url": "https://iccra.org/reports/wisconsin_mayville_kekoskee_7_4_2003.htm",
+        "sha256": "be4eb57fbc6fb68fc542f6a9b44b6c5f88b3e27c3621151c7a2aeefa24304435",
+        "width_px": 548,
+        "height_px": 358,
+        "pixel_boundary_extent_xy": [0, 0, 548, 358],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [43.53016667, -88.5265],
+        "coordinate_text": "43 degrees 31.81 minutes N, 88 degrees 31.59 minutes W",
+        "coordinate_confirmation": "ICCRA report states that two GPS units confirmed the location",
+        "coordinate_uncertainty_m": 100,
+        "orientation_text": "Aerial photo facing North",
+        "measured_circle_east_west_diameter_ft": 42,
+        "persistent_scene_clue": "The formation lies immediately north of the east-west County Road T West field boundary; the workshop/house remains across the road."
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_affine_about_source_coordinate",
+        "anchor_pixel_xy": [344.0, 225.0],
+        "anchor_wgs84_lat_lon": [43.53016667, -88.5265],
+        "meters_per_pixel": 0.23,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The two best-resolved approximately 42-foot circles span about 56 pixels in the source aerial image (12.8 m / 56 px = 0.229 m/px).",
+        "orientation_basis": "The report explicitly captions the frame as facing north; source image top is therefore treated as north and right as east.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [43.530631546033, -88.52748032026],
+        [43.530631546033, -88.525918647288],
+        [43.529891876612, -88.525918647288],
+        [43.529891876612, -88.52748032026]
+      ],
+      "quality": {
+        "status": "useful_provisional_geometry_registration",
+        "limitations": "The report does not say which point inside the three-circle group supplied the coordinate. The road/field boundary is a visual scale check, not a stored surveyed checkpoint, and aerial perspective is approximated locally."
+      }
+    },
+    {
+      "observation_id": "regobs_howell_2003_source_gps_v1",
+      "overlay_id": "howell-township-2003-source-gps-registration",
+      "classification": "provisional_source_gps_geometry_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Michigan/images/howell2003a.jpg",
+        "page_url": "https://iccra.org/bystate/Michigan/ICCRA%20-%20MI%20-%20Howell%20Township,%20Livingston%20County%20(July%2024,%202003).html",
+        "sha256": "56cf407c5e4287c1dc32b159775e4906187e9dc1aca09d8fc1d9b404ef107f09",
+        "width_px": 434,
+        "height_px": 281,
+        "pixel_boundary_extent_xy": [0, 0, 434, 281],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [42.60066667, -84.00066667],
+        "coordinate_text": "42 degrees 36.04 minutes N, 84 degrees 00.04 minutes W",
+        "coordinate_uncertainty_m": 100,
+        "site_text": "Wheat field at the corner of Mason and Burkhardt roads",
+        "measured_main_circle_diameter_ft_range": [48.17, 51.75],
+        "documented_pathway_axis_true_deg": 67.5,
+        "documented_pathway_axis_uncertainty_deg": 22.5
+      },
+      "image_axis_control": {
+        "candidate_id": "isc_c3074961ba4eda53",
+        "source_axis_image_deg": 124.4,
+        "source_axis_uncertainty_deg": 2.1,
+        "quality": "low_tier_automated_candidate_cross_checked_against_report_only",
+        "mapping": "The source x-axis bearing is set to 123.1 degrees so the 124.4-degree image axis maps onto the report's bidirectional 67.5/247.5-degree E/NE-W/SW axis."
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_affine_about_source_coordinate",
+        "anchor_pixel_xy": [217.0, 140.5],
+        "anchor_wgs84_lat_lon": [42.60066667, -84.00066667],
+        "meters_per_pixel": 0.12,
+        "source_x_axis_true_bearing_deg": 123.1,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The 48-52 foot main circle spans approximately 132 pixels in the source aerial image (about 0.12 m/px).",
+        "orientation_basis": "Low-tier image-axis candidate rotated onto the report's documented E/NE-W/SW pathway axis.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [42.600921291206, -84.000820522735],
+        [42.600665802613, -84.000288089025],
+        [42.600412048794, -84.000512817265],
+        [42.600667537387, -84.001045250975]
+      ],
+      "quality": {
+        "status": "useful_provisional_geometry_registration",
+        "limitations": "The source coordinate is precise enough to identify the surviving field, but the photograph lacks an independent persistent ground checkpoint. The image-axis match may follow crop rows rather than the pathway and must remain provisional."
+      }
+    },
+    {
+      "observation_id": "regobs_jupiter_2005_source_gps_v1",
+      "overlay_id": "jupiter-2005-source-gps-scene-placement",
+      "classification": "provisional_source_gps_scene_placement",
+      "formal_alignment_status": "excluded_pending_historical_ortho_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/North%20Carolina/images/jupiter2005a.jpg",
+        "page_url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Jupiter,%20Madison%20County%20(June%2021,%202005).html",
+        "sha256": "eb2332f966e407478e0d5342704bd887a8f438cb66fc6faccd69c226126ada22",
+        "width_px": 630,
+        "height_px": 426,
+        "pixel_boundary_extent_xy": [0, 0, 630, 426],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [35.822, -82.60283333],
+        "coordinate_text": "35 degrees 49.32 minutes N, 82 degrees 36.17 minutes W",
+        "coordinate_uncertainty_m": 100,
+        "elevation_ft": 2146,
+        "measured_oval_diameters_ft": {"north_south": 51.42, "east_west": 57.42, "north_east_south_west": 54.0, "north_west_south_east": 57.42},
+        "persistent_scene_clues": ["Eller Creek 20-30 feet from the formation", "creek crossing tracks", "tree clusters", "steep 500-foot incline"]
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_scene_placement_about_source_coordinate",
+        "anchor_pixel_xy": [358.0, 223.0],
+        "anchor_wgs84_lat_lon": [35.822, -82.60283333],
+        "meters_per_pixel": 0.23,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The reported approximately 57-foot oval spans about 76 pixels in the source aerial image (17.5 m / 76 px = 0.23 m/px).",
+        "orientation_basis": "Unresolved. North-up is used only as a neutral display convention until the creek/tree pattern is matched to historical orthophotography.",
+        "orientation_status": "unresolved_display_assumption",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [35.822460743802, -82.603745557068],
+        [35.822460743802, -82.602140241278],
+        [35.821580578512, -82.602140241278],
+        [35.821580578512, -82.603745557068]
+      ],
+      "quality": {
+        "status": "source_coordinate_scene_placement_only",
+        "limitations": "The actual report coordinate and scale are useful, but the oblique frame is not yet oriented or projectively fit. Creek and tree relief introduce parallax; a 2005-era orthophoto match is required before promotion to a geometry registration."
+      }
     }
   ]
 }

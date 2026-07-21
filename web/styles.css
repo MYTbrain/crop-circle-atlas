@@ -26,7 +26,7 @@ button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:tran
 .key-dot { width:10px; height:10px; border-radius:50%; display:inline-block; border:2px solid currentColor; }
 .key-dot.verified { color:#54d6c2; background:#54d6c2; }
 .key-dot.candidate { color:#f6ad55; background:#f6ad55; }
-.key-dot.reference { color:#b4c2be; background:transparent; border-style:dashed; }
+.key-dot.reference { color:#f6ad55; background:transparent; border-style:dashed; }
 .results { margin-top:12px; color:#cbd8d5; font-size:12px; }
 .results summary { cursor:pointer; color:#86e2d3; }
 .results-list { max-height:260px; overflow:auto; margin-top:8px; padding-right:3px; }
@@ -34,7 +34,7 @@ button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:tran
 .result-item small { display:block; color:var(--muted); font-size:10px; font-weight:500; margin-top:2px; }
 .result-badge { display:inline-block; margin-top:5px; border:1px solid #ffe08a; border-radius:999px; padding:1px 6px; color:#16100a; background:#ffe08a; font-size:8px; font-weight:850; letter-spacing:.08em; }
 .result-item[data-location-role="unresolved"] { border-left:3px solid #7c8d88; }
-.result-item[data-location-role="locality_reference"] { border-left:3px dashed #9fb3ad; }
+.result-item[data-location-role="locality_reference"] { border-left:3px dashed var(--accent); }
 .result-item[data-location-role="candidate_field"] { border-left:3px solid var(--accent); }
 .result-item[data-location-role="corroborated_field"],.result-item[data-location-role="registered_site"] { border-left:3px solid var(--teal); }
 .muted { color:var(--muted); font-size:12px; }

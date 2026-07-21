@@ -1,7 +1,7 @@
 {
   "metadata": {
     "generated_at": "2026-07-21T00:00:00Z",
-    "notice": "These registrations link to source-hosted pixels and do not redistribute the source photographs. Provisional registrations remain excluded from statistical alignment results until independent checkpoints are recorded."
+    "notice": "These placements link to source-hosted pixels and do not redistribute the source photographs. Provisional placements remain excluded from statistical alignment results until independent checkpoints are recorded."
   },
   "overlays": [
     {
@@ -66,6 +66,99 @@
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Approximate visual placement, not an accepted georegistration. Coordinate uncertainty is not independently quantified. The 35 m display-corner value is only a conditional detector-sensitivity envelope, not a confidence interval, and does not cover manual road-control error or semantic misidentification.",
       "notes": "Approximate visual-only provisional overlay. Threefold symmetry, manually read road controls, and the lack of an independent fourth checkpoint prevent acceptance as a georegistration. It is excluded from formal alignment calculations and loads from ICCRA only after an explicit user action."
+    },
+    {
+      "overlay_id": "mayville-kekoskee-2003-source-gps-registration",
+      "registration_observation_id": "regobs_mayville_2003_source_gps_v1",
+      "formation_id": "cc_af45ba1f38f5",
+      "assertion_id": "iccra_5f74cb1fb1dfed25",
+      "title": "Mayville / Kekoskee 2003 aerial-photo placement",
+      "source_image_url": "https://iccra.org/reports/images/mk_image002.jpg",
+      "source_page_url": "https://iccra.org/reports/wisconsin_mayville_kekoskee_7_4_2003.htm",
+      "source_image_sha256": "be4eb57fbc6fb68fc542f6a9b44b6c5f88b3e27c3621151c7a2aeefa24304435",
+      "corners": [
+        [43.530631546033, -88.52748032026],
+        [43.530631546033, -88.525918647288],
+        [43.529891876612, -88.525918647288],
+        [43.529891876612, -88.52748032026]
+      ],
+      "center": [43.53016667, -88.5265],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_source_gps_geometry_registration",
+      "display_geometry_status": "report_north_facing_photo_scaled_from_measured_42ft_circles",
+      "reference_imagery": "Current satellite visual cross-check of County Road T West and the persistent field boundary",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "ICCRA reports a coordinate confirmed with two GPS units, captions the aerial photograph as facing north, and records 42-foot east-west circle diameters. The source-image circle spans and southern road/field boundary were used to set a local display scale. Calculations and limitations are persisted in data/registered_overlay_observations.json.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Source-coordinate geometry placement, not a survey georegistration. The 100 m value is the conservative source-coordinate uncertainty; the photographed road boundary is a visual cross-check, not an independently surveyed ground-control point.",
+      "notes": "The full ICCRA aerial frame is anchored at the source-reported GPS location and oriented from the report's north-facing caption. It loads from ICCRA only after an explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "howell-township-2003-source-gps-registration",
+      "registration_observation_id": "regobs_howell_2003_source_gps_v1",
+      "formation_id": "cc_801777bd00f0",
+      "assertion_id": "iccra_09278c2f8bfe83d8",
+      "title": "Howell Township 2003 aerial-photo placement",
+      "source_image_url": "https://iccra.org/bystate/Michigan/images/howell2003a.jpg",
+      "source_page_url": "https://iccra.org/bystate/Michigan/ICCRA%20-%20MI%20-%20Howell%20Township,%20Livingston%20County%20(July%2024,%202003).html",
+      "source_image_sha256": "56cf407c5e4287c1dc32b159775e4906187e9dc1aca09d8fc1d9b404ef107f09",
+      "corners": [
+        [42.600921291206, -84.000820522735],
+        [42.600665802613, -84.000288089025],
+        [42.600412048794, -84.000512817265],
+        [42.600667537387, -84.001045250975]
+      ],
+      "center": [42.60066667, -84.00066667],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_source_gps_geometry_registration",
+      "display_geometry_status": "report_axis_and_measured_diameter_local_affine_placement",
+      "reference_imagery": "Current satellite visual cross-check of the surviving Mason Road field",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "ICCRA supplies the formation GPS coordinate, identifies the Mason and Burkhardt roads field, measures the main circle at 48-52 feet, and documents opposing E/NE and W/SW pathways. The image-space pathway candidate was rotated onto that documented axis and scaled from the measured diameter.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Source-coordinate geometry placement, not a survey georegistration. The image-axis control is an interpretation of a low-tier automated candidate cross-checked against the report; no independent photographic ground checkpoint is available.",
+      "notes": "The source aerial image is placed in the surviving report-identified field at the source GPS coordinate. The local scale and rotation are provisional, the image loads from ICCRA only after explicit user action, and it is excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "jupiter-2005-source-gps-scene-placement",
+      "registration_observation_id": "regobs_jupiter_2005_source_gps_v1",
+      "formation_id": "cc_380f14de702d",
+      "assertion_id": "iccra_8b50ef9c87fcc775",
+      "title": "Jupiter 2005 aerial scene placement",
+      "source_image_url": "https://iccra.org/bystate/North%20Carolina/images/jupiter2005a.jpg",
+      "source_page_url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Jupiter,%20Madison%20County%20(June%2021,%202005).html",
+      "source_image_sha256": "eb2332f966e407478e0d5342704bd887a8f438cb66fc6faccd69c226126ada22",
+      "corners": [
+        [35.822460743802, -82.603745557068],
+        [35.822460743802, -82.602140241278],
+        [35.821580578512, -82.602140241278],
+        [35.821580578512, -82.603745557068]
+      ],
+      "center": [35.822, -82.60283333],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_source_gps_scene_placement",
+      "display_geometry_status": "coordinate_anchored_scale_estimate_orientation_unresolved",
+      "reference_imagery": "Current satellite visual review of the source-coordinate vicinity",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "ICCRA gives a coordinate, measured N/S and E/W diameters, elevation, and a 20-30 foot offset from Eller Creek. The source aerial frame contains the formation, creek, tree clusters, and track crossing. The display scale is tied to the measured 57-foot oval; true image orientation is not yet independently resolved.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_historical_ortho_ground_control",
+      "quality_disclosure": "Coordinate-anchored scene placement, not a georegistration. It identifies the source-reported site vicinity and scale, but the oblique photograph's true orientation still requires a historical orthophoto match to the creek and tree controls.",
+      "notes": "This is deliberately labeled as a scene placement: it uses the actual source GPS coordinate and measured formation size but does not claim that the image corners are final. It loads from ICCRA only after explicit user action and is excluded from alignment calculations."
     }
   ]
 }

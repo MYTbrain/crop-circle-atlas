@@ -1,9 +1,9 @@
-"""Recalculate the persisted Hubbard 2000 approximate overlay footprint.
+"""Recalculate persisted public source-photo display footprints.
 
-This proves that the published display geometry follows from the recorded
-measurements. It does not promote the three-control visual match to an accepted
-georegistration; the observation record documents the missing independent
-checkpoint and other limitations.
+This proves that published display geometry follows from recorded measurements.
+It does not promote a provisional visual or source-coordinate placement to an
+accepted georegistration; each observation records its missing controls and
+other limitations.
 """
 
 from __future__ import annotations
@@ -66,6 +66,30 @@ def reference_pixel_to_wgs84(mapping, point):
         mapping["latitude_formula"]["origin_latitude"]
         - (y - mapping["latitude_formula"]["origin_y_px"])
         * mapping["latitude_formula"]["degrees_per_px_south"]
+    )
+    return [latitude, longitude]
+
+
+def local_pixel_to_wgs84(transform, point):
+    """Apply the recorded local square-pixel display transform."""
+    x, y = map(float, point)
+    anchor_x, anchor_y = map(float, transform["anchor_pixel_xy"])
+    anchor_latitude, anchor_longitude = map(
+        float, transform["anchor_wgs84_lat_lon"]
+    )
+    scale = float(transform["meters_per_pixel"])
+    x_bearing = math.radians(float(transform["source_x_axis_true_bearing_deg"]))
+    y_bearing = math.radians(
+        float(transform["source_x_axis_true_bearing_deg"])
+        + float(transform["source_y_axis_rotation_deg"])
+    )
+    x_metres = (x - anchor_x) * scale
+    y_metres = (y - anchor_y) * scale
+    east_metres = math.sin(x_bearing) * x_metres + math.sin(y_bearing) * y_metres
+    north_metres = math.cos(x_bearing) * x_metres + math.cos(y_bearing) * y_metres
+    latitude = anchor_latitude + north_metres / 111320.0
+    longitude = anchor_longitude + east_metres / (
+        111320.0 * math.cos(math.radians(anchor_latitude))
     )
     return [latitude, longitude]
 
@@ -157,6 +181,53 @@ def validate_registered_overlay(root=ROOT):
     assert overlay["display_corner_sensitivity_envelope_m"] >= calculated_envelope_m
     assert "not_confidence_interval" in overlay["display_corner_sensitivity_kind"]
     assert observation["affine_fit"]["independent_checkpoint_count"] == 0
+
+    local_observation_ids = [
+        "regobs_mayville_2003_source_gps_v1",
+        "regobs_howell_2003_source_gps_v1",
+        "regobs_jupiter_2005_source_gps_v1",
+    ]
+    for observation_id in local_observation_ids:
+        local_observation = observations[observation_id]
+        local_overlay = overlays[local_observation["overlay_id"]]
+        source = local_observation["source_evidence"]
+        transform = local_observation["local_display_transform"]
+        assert local_overlay["registration_observation_id"] == observation_id
+        assert local_overlay["registration_status"] == local_observation["classification"]
+        assert local_overlay["formal_alignment_status"] == local_observation["formal_alignment_status"]
+        assert local_overlay["source_image_url"] == source["url"]
+        assert local_overlay["source_image_sha256"] == source["sha256"]
+        assert local_overlay["source_photo_pixels"] == "remote_source_link_only"
+        assert local_overlay["rights_status"] == "not_cleared_for_redistribution"
+        assert local_overlay["show_by_default"] is False
+        assert transform["independent_ground_checkpoint_count"] == 0
+
+        left, top, right, bottom = source["pixel_boundary_extent_xy"]
+        source_corners = [[left, top], [right, top], [right, bottom], [left, bottom]]
+        local_corners = [local_pixel_to_wgs84(transform, point) for point in source_corners]
+        assert_points_close(
+            local_corners,
+            local_observation["computed_corners_wgs84_lat_lon"],
+            8e-12,
+            f"{observation_id} computed corners",
+        )
+        assert_points_close(
+            local_corners,
+            local_overlay["corners"],
+            8e-12,
+            f"{observation_id} published corners",
+        )
+        anchor = local_pixel_to_wgs84(transform, transform["anchor_pixel_xy"])
+        assert_points_close(
+            [anchor], [local_overlay["center"]], 2e-12, f"{observation_id} center"
+        )
+        assert local_overlay["coordinate_uncertainty_m"] == local_observation[
+            "source_report_controls"
+        ]["coordinate_uncertainty_m"]
+
+    assert observations["regobs_jupiter_2005_source_gps_v1"][
+        "local_display_transform"
+    ]["orientation_status"] == "unresolved_display_assumption"
     return observation
 
 
