@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "schema_version": "registered-overlay-observation-v1.0.0",
+    "generated_at": "2026-07-21T00:00:00Z",
+    "purpose": "Persist non-pixel measurements and calculations behind approximate public source-photo footprints. A reproducible calculation is not the same as an independently validated georegistration."
+  },
+  "observations": [
+    {
+      "observation_id": "regobs_hubbard_2000_three_lobe_v1",
+      "overlay_id": "hubbard-2000-three-lobe-registration",
+      "classification": "approximate_visual_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "software": {
+        "opencv_version": "4.13.0"
+      },
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Oregon/images/hubbard2000-2.jpg",
+        "sha256": "f98836559c52d2cf5fca0c366948f25137b3eff6172f90d0e380f4a8d85ecc6c",
+        "width_px": 274,
+        "height_px": 241,
+        "pixel_boundary_extent_xy": [0, 0, 274, 241],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "reference_evidence": {
+        "kind": "user_supplied_north_up_google_earth_display_of_usgs_historical_imagery",
+        "imagery_date": "2000-07-28",
+        "sha256": "07fc1139cd325aaadb787c10457cddc7fb9bc8eb24fbed227c4f2307d1dc39bd",
+        "width_px": 2093,
+        "height_px": 1350,
+        "distribution": "hash_and_measurements_only_reference_pixels_not_packaged",
+        "google_earth_status_bar_coordinate_used": false
+      },
+      "source_lobe_detection": {
+        "method": "OpenCV BGR to Lab; mask L greater than 180; 8-connected components; retain area at least 1000 pixels",
+        "components": [
+          {"area_px": 1022, "centroid_xy": [173.523483366, 107.600782779]},
+          {"area_px": 1092, "centroid_xy": [124.009157509, 137.604395604]},
+          {"area_px": 1071, "centroid_xy": [172.525676937, 162.954248366]}
+        ],
+        "fit_points_xy": [
+          [173.5, 107.6],
+          [124.0, 137.6],
+          [172.5, 163.0]
+        ]
+      },
+      "reference_lobe_detection": {
+        "method": "grayscale crop x 980:1140, y 570:730; GaussianBlur 5x5 sigma 1.2; HoughCircles dp 1, minDist 20, param1 80, param2 18, radius 8:30; retain global x greater than 1050",
+        "detected_circles_xyr": [
+          [1080.5, 684.5, 17.2000008],
+          [1074.5, 646.5, 21.6000004],
+          [1111.5, 665.5, 16.7999992]
+        ],
+        "fit_points_xy": [
+          [1074.5, 646.5],
+          [1080.5, 684.5],
+          [1111.5, 665.5]
+        ]
+      },
+      "control_pairs": [
+        {"source_xy": [173.5, 107.6], "reference_xy": [1074.5, 646.5]},
+        {"source_xy": [124.0, 137.6], "reference_xy": [1080.5, 684.5]},
+        {"source_xy": [172.5, 163.0], "reference_xy": [1111.5, 665.5]}
+      ],
+      "source_to_reference_affine": [
+        [0.2866939497843178, 0.6730450171441238, 952.3389558677131],
+        [-0.5660140839877589, 0.33274342808686447, 708.9002507097296],
+        [0.0, 0.0, 1.0]
+      ],
+      "affine_fit": {
+        "training_rmse_px": 0.0,
+        "training_max_residual_px": 0.0,
+        "independent_checkpoint_count": 0,
+        "interpretation": "Three controls exactly determine the six affine parameters. The zero training residual is not an accuracy or validation statistic."
+      },
+      "source_frame_corners_in_reference_xy": [
+        [952.3389558677131, 708.9002507097296],
+        [1030.8930981086162, 553.8123916970836],
+        [1193.0969472403501, 634.0035578660179],
+        [1114.542804999447, 789.091416878664]
+      ],
+      "orientation_disambiguation": {
+        "source_axis_image_deg": 148.3,
+        "source_axis_uncertainty_deg": 3.0,
+        "source_axis_quality": "low_tier_automated_candidate",
+        "selected_mapping_axis_reference_deg": 80.508759,
+        "reference_row_detection_method": "crop x 995:1160, y 410:1120; CLAHE clipLimit 2 tiles 8x8; Canny 40/100 L2; HoughLinesP rho 1 theta pi/720 threshold 35 minLineLength 55 maxLineGap 14; retain 65 to 115 degrees",
+        "reference_candidate_count": 330,
+        "reference_length_weighted_median_deg": 86.811331,
+        "reference_mad_deg": 1.370724,
+        "selected_residual_deg": 6.302572,
+        "other_handedness_preserving_cyclic_residuals_deg": [60.074739, 61.102407],
+        "limitation": "The numeric comparison is reproducible, but interpreting the low-tier source-image axis as field rows remains an inference."
+      },
+      "reference_to_wgs84": {
+        "model": "approximate_local_affine_square_pixel",
+        "manual_road_controls": [
+          {
+            "name": "Kenagy Road and South Whiskey Hill Road",
+            "reference_xy_approx": [479, 389],
+            "wgs84_lat_lon": [45.1727171, -122.7304766]
+          },
+          {
+            "name": "South Barlow Road and South Whiskey Hill Road",
+            "reference_xy_approx": [1578, 389],
+            "wgs84_lat_lon": [45.1726958, -122.7225262]
+          }
+        ],
+        "road_control_coordinate_source": "OpenStreetMap manual road-center comparison",
+        "horizontal_control_separation_m": 623.231856,
+        "horizontal_control_separation_px": 1099,
+        "horizontal_scale_m_per_px": 0.567089951,
+        "rounded_vertical_scale_m_per_px": 0.569,
+        "longitude_formula": {
+          "origin_x_px": 479.0,
+          "origin_longitude": -122.7304766,
+          "degrees_per_px": 0.000007234212920835833
+        },
+        "latitude_formula": {
+          "origin_y_px": 389.0,
+          "origin_latitude": 45.172725,
+          "degrees_per_px_south": 0.0000051200374329626025
+        },
+        "limitations": "Road-center pixels were manually read rather than stored as reviewed annotations; the latitude anchor is rounded; no independent fourth ground checkpoint exists."
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [45.171087098742, -122.72705236521],
+        [45.171881154385, -122.726484087819],
+        [45.171470572613, -122.725310670638],
+        [45.170676516969, -122.725878948028]
+      ],
+      "computed_lobe_centroid_wgs84_lat_lon": [45.17130930965, -122.72606493582],
+      "detector_sensitivity_envelope": {
+        "gaussian_sigma_values": [0.8, 1.0, 1.2, 1.4, 1.6],
+        "hough_param2_min": 16,
+        "hough_param2_max": 22,
+        "valid_three_circle_fits": 14,
+        "reference_centroid_std_xy_px": [2.1, 1.41],
+        "max_corner_displacement_px": 57.479916,
+        "scale_m_per_px": 0.567089951,
+        "max_corner_displacement_m": 32.6,
+        "published_rounded_envelope_m": 35,
+        "interpretation": "Conditional detector-sensitivity envelope, not a confidence interval. It does not cover a wrong lobe permutation, semantic axis misinterpretation, or manual road-control error."
+      }
+    }
+  ]
+}

@@ -189,16 +189,21 @@ visually distinct and excluded from formal alignment statistics.
 
 ## Source-photo display and publication rights
 
-The public site does not contain ICCRA photographs. A registered source-photo
-overlay is disabled by default. If a user explicitly chooses to show it, the
-browser requests the image directly from the source host and applies the
-atlas's corner metadata locally. The repository does not proxy, cache for
-publication, bundle, or redistribute those pixels. Cross-origin or source-host
-failure remains a visible failure; it is not bypassed.
+The public site does not contain ICCRA photographs. Registered footprints are
+visible by default, but each source-photo overlay is disabled until a user
+explicitly chooses to show it. The browser then requests the image directly
+from the source host and applies the atlas's corner metadata locally. The
+footprints follow the active search, year, and country filters. For Hubbard
+2000, `data/registered_overlay_observations.json` makes the approximate display
+geometry reproducible while recording that its 35 m detector-sensitivity
+envelope is not a confidence interval and that it lacks an independent ground
+checkpoint. The repository does not proxy, cache for publication, bundle, or
+redistribute those pixels. Cross-origin or source-host failure remains a visible
+failure; it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries one disabled provisional
-GroundOverlay URL to the source host. A packaged GroundOverlay remains excluded
+packages zero source-photo files and carries two disabled provisional
+GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,
 reviewer, and review date. Official USGS/USDA products also retain item-level

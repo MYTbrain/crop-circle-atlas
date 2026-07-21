@@ -47,10 +47,11 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero ICCRA image files because publication rights
-  have not been cleared. The web map and KML/KMZ contain one off-by-default,
-  provisional link to the source-hosted photograph; the repository contains
-  and redistributes no source-photo pixels. Local-only registration remains
-  available.
+  have not been cleared. The web map and KML/KMZ contain two opt-in,
+  source-hosted provisional registrations for Whiskey Hill/Hubbard 1998 and
+  2000; their footprints are visible on the web map, while the repository
+  contains and redistributes no source-photo pixels. Local-only registration
+  remains available.
 
 ## Exact-field resolution status
 
@@ -71,8 +72,14 @@ longer treated as formation locations.
 - 1999 is only a candidate field. ICCRA reports that the field hosted a 1999
   formation, but no exact position within the field is established.
 - 2000 is directly visible in the supplied historical-imagery view and is
-  corroborated by the aerial source photo. It lies about 43.5 metres southeast
-  of the registered 1998 center.
+  corroborated by the aerial source photo. Its close-up source photograph now
+  has an approximate visual overlay based on the three matching lobes, a
+  low-tier row-orientation comparison, and two manually read road controls.
+  `data/registered_overlay_observations.json` preserves the image hashes,
+  detected controls, affine matrix, pixel-to-WGS84 formulas, and sensitivity
+  envelope. Because no independent fourth ground-control point is available,
+  the 35 m figure is not a confidence interval and the overlay is excluded from
+  formal alignment analysis.
 - The 1998 straight component is displayed provisionally on the 110°/290°
   true-north axis with a conservative ±3° uncertainty. It is excluded
   from formal alignment calculations until independent checkpoints reproduce
@@ -105,7 +112,7 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  one disabled provisional GroundOverlay link to the source host. Packaged
+  two disabled provisional GroundOverlay links to the source host. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 

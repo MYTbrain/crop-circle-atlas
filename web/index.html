@@ -40,13 +40,24 @@
         <label class="check"><input id="usOnly" type="checkbox"> US reports only</label>
         <label class="check"><input id="straightOnly" type="checkbox"> PDF/source-image candidates or reviewed evidence only</label>
         <label class="check"><input id="showLocalities" type="checkbox"> Show rough locality references on map</label>
-        <p class="notice"><strong>Map truth:</strong> solid markers are field candidates, corroborated fields, or source-reported coordinates; each popup states its review status and uncertainty. Hollow gray markers are optional search anchors for towns—not crop-circle locations. Unresolved reports remain searchable without being placed on the map.</p>
+        <p class="notice"><strong>Map truth:</strong> bright yellow solid markers are candidate fields; teal solid markers are corroborated or registered sites. They are always drawn above the optional hollow gray town references. Unresolved reports remain searchable without being placed on the map.</p>
         <div class="map-key" aria-label="Location evidence legend">
           <span><i class="key-dot verified"></i>corroborated/registered</span>
           <span><i class="key-dot candidate"></i>candidate field</span>
           <span><i class="key-dot reference"></i>locality only</span>
         </div>
         <details class="results" open><summary>Matching reports</summary><div id="resultsList" class="results-list" role="list"></div></details>
+      </section>
+
+      <section class="overlay-section">
+        <h2>Registered aerial imagery</h2>
+        <p class="muted">Dashed amber footprints and <strong>IMG</strong> badges mark source photographs with reviewed display placements. They follow the search, year, and country filters. Click a badge or footprint to select the report, zoom to the field, and load the source-hosted photograph over the map; each record states whether its placement is accepted, provisional, or approximate.</p>
+        <p id="overlayNotice" class="notice">Whiskey Hill/Hubbard 1998 and 2000 registrations are mapped. Their footprints are visible by default; source pixels load only after you click, remain hosted by the source, and are not redistributed by this atlas.</p>
+        <button id="toggleOverlay" class="secondary" disabled>Load and zoom to registered image</button>
+        <label id="overlayOpacityLabel" hidden>Overlay opacity
+          <input id="overlayOpacity" type="range" min="0.1" max="1" step="0.05" value="0.68">
+        </label>
+        <button id="openGeoref" class="secondary" disabled>Register image for selected formation</button>
       </section>
 
       <section>
@@ -66,17 +77,6 @@
         <button id="drawRay" disabled>Draw and test ray</button>
         <button id="exportRay" class="secondary" disabled>Export unqualified hypothesis KML</button>
         <p id="hitSummary" class="notice">No ray drawn. Bearings must be tied to true north; a rotated diagram is not enough.</p>
-      </section>
-
-      <section>
-        <h2>Perspective-correct image overlay</h2>
-        <p class="muted">Register a local aerial image with four or more ground-control points, correct rotation/skew/perspective, and measure a true-north component bearing. Your image stays in your browser; human evidence review is required before the local orientation enters the atlas, and any long-distance extension remains experimental.</p>
-        <p id="overlayNotice" class="notice">Select a formation to inspect its registered source-photo footprint. Source pixels load only after you ask and remain hosted by the source; the atlas does not redistribute them.</p>
-        <button id="toggleOverlay" class="secondary" disabled>Show linked registered overlay</button>
-        <label id="overlayOpacityLabel" hidden>Overlay opacity
-          <input id="overlayOpacity" type="range" min="0.1" max="1" step="0.05" value="0.68">
-        </label>
-        <button id="openGeoref" class="secondary" disabled>Register image for selected formation</button>
       </section>
 
       <footer><a href="downloads/crop_circle_atlas.kmz">Download KMZ</a><span> · </span><a href="methodology.html">Methodology</a><span> · </span><a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames CC BY 4.0</a></footer>

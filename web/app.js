@@ -5,10 +5,17 @@ const map = L.map('map', { preferCanvas: true, zoomControl: false }).setView([38
 map.createPane('registeredImageryPane');
 map.getPane('registeredImageryPane').style.zIndex = '350';
 map.getPane('registeredImageryPane').style.pointerEvents = 'none';
+map.createPane('localityPointPane');
+map.getPane('localityPointPane').style.zIndex = '420';
+map.createPane('overlayFootprintPane');
+map.getPane('overlayFootprintPane').style.zIndex = '445';
 map.createPane('rayPane');
 map.getPane('rayPane').style.zIndex = '460';
 map.getPane('rayPane').style.pointerEvents = 'none';
-const pointRenderer = L.canvas({ padding: 0.5 });
+map.createPane('sitePointPane');
+map.getPane('sitePointPane').style.zIndex = '480';
+const localityRenderer = L.canvas({ pane: 'localityPointPane', padding: 0.5 });
+const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5 });
 L.control.zoom({ position: 'topright' }).addTo(map);
 
 const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -27,6 +34,7 @@ const layerControl = L.control.layers(
 
 const siteLayer = L.layerGroup().addTo(map);
 const localityLayer = L.layerGroup();
+const registeredFootprintLayer = L.layerGroup().addTo(map);
 layerControl.addOverlay(siteLayer, 'Field candidates and reviewed sites');
 layerControl.addOverlay(localityLayer, 'Rough locality references (not sites)');
 
@@ -53,6 +61,7 @@ const formationsById = new Map();
 const siteFeaturesById = new Map();
 const localityFeaturesById = new Map();
 const renderedMarkersById = new Map();
+const overlayFootprintsByFormation = new Map();
 const provisionalByFormation = new Map();
 
 const ACTUAL_SITE_STATUSES = new Set([
@@ -164,7 +173,7 @@ function popupFor(records) {
       <p>Sources: ${esc(record.source_names || '')}</p>
       ${evidence ? `<a href="${esc(evidence)}" target="_blank" rel="noreferrer">Open supporting source</a>` : ''}
       <button onclick="selectFormation('${esc(record.formation_id)}')" ${canAlign ? '' : 'disabled'}>Use in alignment lab</button>
-      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">Show registered source photo</button>` : ''}
+      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">Load registered aerial image</button>` : ''}
       <button class="secondary" onclick="openGeorefForFormation('${esc(record.formation_id)}')">Register another aerial image</button>
     </article>`;
   }).join(multiple ? '<hr>' : '');
@@ -179,18 +188,18 @@ function markerStyle(record, reference = false) {
     || ['high', 'medium'].includes(record.source_image_straight_tier);
   if (reference || role === 'locality_reference') {
     return {
-      radius: 4, color: '#9fb3ad', weight: 1.5, dashArray: '3 3',
-      fillColor: '#0b1717', fillOpacity: 0.08, renderer: pointRenderer,
+      radius: 4, color: '#b4c2be', weight: 1.5, opacity: 0.72, dashArray: '3 3',
+      fillColor: '#0b1717', fillOpacity: 0.06, renderer: localityRenderer,
     };
   }
   const verified = isActualSite(record);
   return {
-    radius: (verified ? 7 : 6) + (hasLine ? 1 : 0),
-    color: hasLine ? '#fff1b8' : verified ? '#8cf4e3' : '#ffd08b',
-    weight: hasLine ? 2.5 : 2,
-    fillColor: verified ? '#2d9e91' : '#e67f2e',
-    fillOpacity: 0.88,
-    renderer: pointRenderer,
+    radius: (verified ? 8 : 9) + (hasLine ? 1 : 0),
+    color: verified ? '#d8fff9' : '#fff4c7',
+    weight: hasLine ? 3.5 : 3,
+    fillColor: verified ? '#2d9e91' : '#f6ad55',
+    fillOpacity: 1,
+    renderer: siteRenderer,
   };
 }
 
@@ -202,7 +211,12 @@ function renderFeatures(features, targetLayer, reference = false) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(feature);
   }
-  for (const group of groups.values()) {
+  const orderedGroups = [...groups.values()].sort((left, right) => {
+    if (reference) return 0;
+    const priority = (group) => locationRole(fullRecord(group[0])) === 'candidate_field' ? 1 : 0;
+    return priority(left) - priority(right);
+  });
+  for (const group of orderedGroups) {
     const records = group.map(fullRecord);
     const feature = group[0];
     const [longitude, latitude] = feature.geometry.coordinates;
@@ -242,6 +256,15 @@ function applyFilters() {
   if (!allFormations.length) return;
   visibleFormations = filteredRows();
   const visibleIds = new Set(visibleFormations.map((record) => record.formation_id));
+  if (activeOverlayRecord && !visibleIds.has(activeOverlayRecord.formation_id)) {
+    resetOverlaySelection();
+  }
+  if (selected && !visibleIds.has(selected.formation_id)) {
+    $('toggleOverlay').disabled = true;
+    $('overlayNotice').textContent = 'The selected formation and its source-photo overlay are hidden by the active filters. Change the filters or select a visible report.';
+  } else if (selected && !activeOverlay) {
+    updateOverlayControls();
+  }
   siteLayer.clearLayers();
   localityLayer.clearLayers();
   renderedMarkersById.clear();
@@ -251,6 +274,7 @@ function applyFilters() {
   }
   if ($('showLocalities').checked && !map.hasLayer(localityLayer)) localityLayer.addTo(map);
   if (!$('showLocalities').checked && map.hasLayer(localityLayer)) map.removeLayer(localityLayer);
+  renderRegisteredFootprints(visibleIds);
   $('visibleCount').textContent = visibleFormations.length.toLocaleString();
 
   const results = $('resultsList');
@@ -267,6 +291,12 @@ function applyFilters() {
     const detail = document.createElement('small');
     detail.textContent = locationLabel(record);
     button.append(title, detail);
+    if (overlayRecords.some((overlay) => overlay.formation_id === record.formation_id)) {
+      const badge = document.createElement('span');
+      badge.className = 'result-badge';
+      badge.textContent = 'REGISTERED IMAGE';
+      button.appendChild(badge);
+    }
     button.addEventListener('click', () => selectFormation(record.formation_id, true));
     results.appendChild(button);
   });
@@ -293,7 +323,7 @@ function resetOverlaySelection() {
     activeOverlay = null;
     activeOverlayRecord = null;
   }
-  $('toggleOverlay').textContent = 'Show linked registered overlay';
+  $('toggleOverlay').textContent = 'Load and zoom to registered image';
   $('overlayOpacityLabel').hidden = true;
 }
 
@@ -307,7 +337,37 @@ function updateOverlayControls() {
     return;
   }
   $('overlayOpacity').value = String(match.default_opacity || 0.68);
-  $('overlayNotice').textContent = `${match.title}. ${match.registration_status.replaceAll('_', ' ')}; source pixels remain on the source website and load only on request.`;
+  const disclosure = match.quality_disclosure ? ` ${match.quality_disclosure}` : '';
+  $('overlayNotice').textContent = `${match.title}. ${match.registration_status.replaceAll('_', ' ')}.${disclosure} Click the button to load the source-hosted photograph over its mapped footprint.`;
+}
+
+function renderRegisteredFootprints(visibleIds = null) {
+  registeredFootprintLayer.clearLayers();
+  overlayFootprintsByFormation.clear();
+  for (const record of overlayRecords) {
+    if (visibleIds && !visibleIds.has(record.formation_id)) continue;
+    if (!Array.isArray(record.corners) || record.corners.length !== 4) continue;
+    const footprint = L.polygon(record.corners, {
+      pane: 'overlayFootprintPane', color: '#ffe08a', weight: 3,
+      opacity: 0.95, dashArray: '8 5', fillColor: '#f6ad55', fillOpacity: 0.12,
+    }).bindTooltip(`${record.title} — click to load the registered image`);
+    const center = Array.isArray(record.center) ? record.center : footprint.getBounds().getCenter();
+    const marker = L.marker(center, {
+      pane: 'overlayFootprintPane',
+      icon: L.divIcon({
+        className: 'registered-image-marker',
+        html: '<span aria-hidden="true">IMG</span>',
+        iconSize: [34, 24], iconAnchor: [17, 31], tooltipAnchor: [0, -25],
+      }),
+      title: `${record.title} — click to load`,
+    }).bindTooltip(`${record.title} — click to load the registered image`);
+    const load = () => window.showOverlayForFormation(record.formation_id);
+    footprint.on('click', load);
+    marker.on('click', load);
+    footprint.addTo(registeredFootprintLayer);
+    marker.addTo(registeredFootprintLayer);
+    overlayFootprintsByFormation.set(record.formation_id, { footprint, marker });
+  }
 }
 
 function applyProvisionalOrientation(record) {
@@ -491,6 +551,7 @@ function toggleSelectedOverlay() {
     map.removeLayer(streets);
     imagery.addTo(map);
   }
+  map.closePopup();
   activeOverlayRecord = record;
   activeOverlay = projectiveImageOverlay(record.source_image_url, record.corners, {
     opacity: Number($('overlayOpacity').value || record.default_opacity || 0.68),
@@ -507,13 +568,13 @@ function toggleSelectedOverlay() {
   });
   activeOverlay.addTo(map);
   activeOverlay.bringToFront?.();
-  $('toggleOverlay').textContent = 'Hide linked registered overlay';
+  $('toggleOverlay').textContent = 'Hide registered image';
   $('overlayOpacityLabel').hidden = false;
   map.fitBounds(activeOverlay.getBounds(), { padding: [35, 35], maxZoom: 16 });
 }
 
-window.showOverlayForFormation = (id) => {
-  selectFormation(id);
+window.showOverlayForFormation = async (id) => {
+  await selectFormation(id, true);
   toggleSelectedOverlay();
 };
 
@@ -620,6 +681,7 @@ Promise.all([
   siteCollection.features.forEach((feature) => siteFeaturesById.set(feature.properties.formation_id, feature));
   provisionalCollection.features.forEach((feature) => provisionalByFormation.set(feature.properties.formation_id, feature));
   overlayRecords = overlays.overlays || [];
+  layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
 
   const years = allFormations.map((record) => Number(record.year)).filter(Number.isFinite);
   $('yearMin').value = Math.min(...years);

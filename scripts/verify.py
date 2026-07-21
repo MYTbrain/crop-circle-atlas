@@ -11,6 +11,11 @@ from collections import Counter
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+try:
+    from .verify_registered_overlay import validate_registered_overlay
+except ImportError:
+    from verify_registered_overlay import validate_registered_overlay
+
 
 ROOT = Path(__file__).resolve().parents[1]
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -380,8 +385,14 @@ assert provisional["origin_uncertainty_m"] >= float(whiskey_1998["site_coordinat
 registered_overlays = json.loads(
     (ROOT / "web" / "data" / "registered_overlays.json").read_text(encoding="utf-8")
 )
-assert len(registered_overlays["overlays"]) == 1
-overlay = registered_overlays["overlays"][0]
+validate_registered_overlay(ROOT)
+assert len(registered_overlays["overlays"]) == 2
+overlays_by_id = {item["overlay_id"]: item for item in registered_overlays["overlays"]}
+assert set(overlays_by_id) == {
+    "whiskey-hill-1998-user-registration",
+    "hubbard-2000-three-lobe-registration",
+}
+overlay = overlays_by_id["whiskey-hill-1998-user-registration"]
 assert overlay["formation_id"] == provisional["formation_id"]
 assert overlay["assertion_id"] == provisional["assertion_id"]
 assert overlay["assertion_id"] in whiskey_1998["assertion_ids"].split("; ")
@@ -400,16 +411,38 @@ assert float(overlay["coordinate_uncertainty_m"]) == float(whiskey_1998["site_co
 assert float(overlay["bearing_true_deg"]) == float(provisional["azimuth_true_deg"])
 assert float(overlay["bearing_uncertainty_deg"]) == float(provisional["azimuth_uncertainty_deg"])
 
+hubbard_overlay = overlays_by_id["hubbard-2000-three-lobe-registration"]
+assert hubbard_overlay["formation_id"] == whiskey_2000["formation_id"]
+assert hubbard_overlay["assertion_id"] in whiskey_2000["assertion_ids"].split("; ")
+hubbard_assertion = next(row for row in iccra if row["assertion_id"] == hubbard_overlay["assertion_id"])
+assert hubbard_overlay["source_page_url"] == hubbard_assertion["source_record_url"]
+hubbard_image = next(row for row in iccra_images if row["image_url"] == hubbard_overlay["source_image_url"])
+assert hubbard_overlay["source_image_sha256"] == hubbard_image["sha256"]
+assert hubbard_image["public_redistribution_status"] == "not_cleared"
+assert hubbard_overlay["source_photo_pixels"] == "remote_source_link_only"
+assert hubbard_overlay["rights_status"] == "not_cleared_for_redistribution"
+assert hubbard_overlay["show_by_default"] is False
+assert "coordinate_uncertainty_m" not in hubbard_overlay
+assert hubbard_overlay["coordinate_uncertainty_status"] == "not_independently_quantified"
+assert hubbard_overlay["display_corner_sensitivity_envelope_m"] == 35
+assert hubbard_overlay["registration_status"] == "approximate_visual_registration"
+assert hubbard_overlay["display_geometry_status"] == "approximate_provisional_local_affine_placement"
+assert hubbard_overlay["display_corner_sensitivity_kind"] == "conditional_detector_sensitivity_envelope_not_confidence_interval"
+assert hubbard_overlay["registration_observation_id"] == "regobs_hubbard_2000_three_lobe_v1"
+assert abs(float(hubbard_overlay["center"][0]) - float(whiskey_2000["latitude"])) < 0.0005
+assert abs(float(hubbard_overlay["center"][1]) - float(whiskey_2000["longitude"])) < 0.0005
+assert hubbard_overlay["formal_alignment_status"] == "excluded_pending_independent_ground_control"
+
 kml_path = ROOT / "exports" / "crop_circle_atlas.kml"
 kml_tree = ET.parse(kml_path)
 kml_root = kml_tree.getroot()
 kml_ns = {"k": "http://www.opengis.net/kml/2.2"}
 assert len(kml_root.findall(".//k:Point", kml_ns)) == len(geocoded)
 assert len(kml_root.findall(".//k:LineString", kml_ns)) == len(orientations) + len(provisional_rows)
-assert len(kml_root.findall(".//k:GroundOverlay", kml_ns)) == 1
-linked_overlay = kml_root.find(".//k:GroundOverlay", kml_ns)
-assert linked_overlay.find("k:visibility", kml_ns).text == "1"
-assert linked_overlay.find("k:color", kml_ns).text == "adffffff"
+linked_overlays = kml_root.findall(".//k:GroundOverlay", kml_ns)
+assert len(linked_overlays) == 2
+assert all(item.find("k:visibility", kml_ns).text == "1" for item in linked_overlays)
+assert all(item.find("k:color", kml_ns).text == "adffffff" for item in linked_overlays)
 kml_text = kml_path.read_text(encoding="utf-8")
 assert "Experimental projections from documented orientations" in kml_text
 assert "no demonstrated predictive validity" in kml_text
@@ -422,11 +455,18 @@ with zipfile.ZipFile(kmz_path) as archive:
     assert archive.namelist() == ["doc.kml"]
     assert archive.read("doc.kml") == kml_path.read_bytes()
 overlay_audit = rows("image_overlay_audit.csv")
-assert overlay_audit == [{
-    "asset_id": "whiskey-hill-1998-user-registration",
-    "status": "included_remote_link",
-    "reason": "pixels_not_packaged_provisional",
-}]
+assert overlay_audit == [
+    {
+        "asset_id": "whiskey-hill-1998-user-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
+    {
+        "asset_id": "hubbard-2000-three-lobe-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
+]
 assert (ROOT / "web" / "downloads" / "crop_circle_atlas.kmz").read_bytes() == kmz_path.read_bytes()
 
 workbook = ROOT / "outputs" / "initial-build" / "crop_circle_atlas.xlsx"
@@ -450,7 +490,7 @@ with zipfile.ZipFile(workbook) as archive:
     assert table_refs["FormationsTable"] == "A1:AP7746"
     assert table_refs["FieldSiteReviewsTable"] == "A1:T5"
     assert table_refs["AliasReviewsTable"].endswith("5")
-    assert table_refs["OverlayAuditTable"] == "A1:C2"
+    assert table_refs["OverlayAuditTable"] == "A1:C3"
 
 for needed in (
     "index.html", "app.js", "styles.css", "favicon.svg", "methodology.html", "georef.html",
@@ -464,11 +504,17 @@ web_index = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
 web_app = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
 georef_html = (ROOT / "web" / "georef.html").read_text(encoding="utf-8")
 assert "Show rough locality references on map" in web_index
-assert "Show linked registered overlay" in web_index
+assert "Load and zoom to registered image" in web_index
+assert "Registered aerial imagery" in web_index
 assert "Export unqualified hypothesis KML" in web_index
 assert 'id="resultsList"' in web_index
 assert "unqualified_manual_hypothesis" in web_app
 assert "Provisional registered axes" in web_app
+assert "Registered aerial-photo footprints" in web_app
+assert "sitePointPane" in web_app and "localityPointPane" in web_app
+assert "fillColor: verified ? '#2d9e91' : '#f6ad55'" in web_app
+assert "await selectFormation(id, true)" in web_app
+assert "map.closePopup()" in web_app
 assert "Locality centroids and unresolved reports are excluded" in web_app
 assert "image/tiff" not in georef_html
 readme = (ROOT / "README.md").read_text(encoding="utf-8")

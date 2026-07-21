@@ -26,12 +26,13 @@ button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:tran
 .key-dot { width:10px; height:10px; border-radius:50%; display:inline-block; border:2px solid currentColor; }
 .key-dot.verified { color:#54d6c2; background:#54d6c2; }
 .key-dot.candidate { color:#f6ad55; background:#f6ad55; }
-.key-dot.reference { color:#9fb3ad; background:transparent; border-style:dashed; }
+.key-dot.reference { color:#b4c2be; background:transparent; border-style:dashed; }
 .results { margin-top:12px; color:#cbd8d5; font-size:12px; }
 .results summary { cursor:pointer; color:#86e2d3; }
 .results-list { max-height:260px; overflow:auto; margin-top:8px; padding-right:3px; }
 .result-item { display:block; margin:0 0 5px; padding:7px 8px; background:#101f1d; border-color:#36524c; color:var(--ink); text-align:left; font-size:11px; font-weight:600; }
 .result-item small { display:block; color:var(--muted); font-size:10px; font-weight:500; margin-top:2px; }
+.result-badge { display:inline-block; margin-top:5px; border:1px solid #ffe08a; border-radius:999px; padding:1px 6px; color:#16100a; background:#ffe08a; font-size:8px; font-weight:850; letter-spacing:.08em; }
 .result-item[data-location-role="unresolved"] { border-left:3px solid #7c8d88; }
 .result-item[data-location-role="locality_reference"] { border-left:3px dashed #9fb3ad; }
 .result-item[data-location-role="candidate_field"] { border-left:3px solid var(--accent); }
@@ -42,4 +43,7 @@ footer { color:var(--muted); font-size:11px; padding-top:4px; } a { color:#86e2d
 #map { height:100%; background:#091413; }
 .leaflet-popup-content-wrapper,.leaflet-popup-tip { background:#11211f; color:var(--ink); }
 .popup h3 { margin:0 0 5px; font-size:15px; }.popup p { margin:4px 0; }.popup button { margin-top:8px; padding:6px 8px; }
+.registered-image-marker { background:transparent; border:0; }
+.registered-image-marker span { display:flex; align-items:center; justify-content:center; width:34px; height:24px; border:2px solid #fff4c7; border-radius:6px; background:#f6ad55; color:#16100a; box-shadow:0 2px 8px #000b; font-size:9px; font-weight:900; letter-spacing:.06em; }
+.overlay-section { background:#0f211f; margin:0 -10px; padding:20px 10px; border-top-color:#6e552d; }
 @media (max-width:780px) { main { grid-template-columns:1fr; grid-template-rows:48% 52%; }.panel { grid-row:2; padding:18px; border-right:0; border-top:1px solid var(--line); }.panel header { display:none; } #map { grid-row:1; } }
