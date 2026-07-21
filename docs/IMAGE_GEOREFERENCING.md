@@ -107,16 +107,23 @@ hash, review, bounds, physical-unit, and transform checks. Its current public
 quality gate rejects control-point RMSE above 25 physical ground metres; use a
 tighter project-specific threshold when the intended analysis requires it.
 There are currently zero packaged ICCRA image files because no source-image
-publication rights have been cleared. The combined KML/KMZ contains two
-off-by-default provisional GroundOverlays for Whiskey Hill/Hubbard 1998 and
-2000. They link to the source host and package no source pixels. The 2000
-close-up is an approximate visual three-lobe match.
-`data/registered_overlay_observations.json` preserves its image hashes,
-detector settings, lobe controls, affine matrix, manually read road controls,
-pixel-to-WGS84 formulas, orientation-permutation check, and sensitivity study.
-The stated 35 m is a conditional detector-sensitivity envelope, not a
-confidence interval; without an independent fourth ground-control point the
-overlay remains excluded from formal alignment analysis.
+publication rights have been cleared. The combined KML/KMZ contains five
+off-by-default source-hosted GroundOverlays: Whiskey Hill/Hubbard 1998 and
+2000, Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. They link
+to the source host and package no source pixels. Mayville and Howell are
+provisional display registrations based on source GPS, report dimensions, and
+visible scene controls. Jupiter is deliberately classified only as a
+coordinate-anchored scene placement: its source GPS is retained, but image
+orientation remains unresolved pending historical-ortho ground controls.
+`data/registered_overlay_observations.json` preserves the source hashes,
+dimensions, anchors, transforms, corner coordinates, evidence, and limitations
+for the four placements with structured observation records; the user-supplied
+Whiskey Hill 1998 placement remains represented in the public overlay registry.
+The Hubbard 2000 stated 35 m is a conditional
+detector-sensitivity envelope, not a confidence interval; without an
+independent fourth ground-control point it remains excluded from formal
+alignment analysis. The three new placements are also excluded from formal
+alignment analysis until independent controls reproduce their geometry.
 
 ## Atlas integration hooks
 

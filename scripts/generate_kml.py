@@ -446,11 +446,11 @@ def add_rights_cleared_overlays(doc, image_assets, formation_ids=None):
 def add_source_linked_provisional_overlays(doc, payload, formation_ids=None):
     """Add opt-in remote overlays without copying source-image pixels into the KMZ."""
     folder = ET.SubElement(doc, q("Folder"))
-    text(folder, "name", "Linked provisional source-photo registrations (pixels not packaged)")
+    text(folder, "name", "Linked provisional source-photo placements (pixels not packaged)")
     text(folder, "visibility", "0")
     text(folder, "description", (
         "Remote source photographs load only when this folder is enabled. The KMZ does not contain "
-        "the source pixels. Registrations in this folder are provisional and excluded from formal "
+        "the source pixels. Placements in this folder are provisional and excluded from formal "
         "alignment-hit calculations until independent checkpoints are accepted."
     ))
     count = 0

@@ -386,11 +386,14 @@ registered_overlays = json.loads(
     (ROOT / "web" / "data" / "registered_overlays.json").read_text(encoding="utf-8")
 )
 validate_registered_overlay(ROOT)
-assert len(registered_overlays["overlays"]) == 2
+assert len(registered_overlays["overlays"]) == 5
 overlays_by_id = {item["overlay_id"]: item for item in registered_overlays["overlays"]}
 assert set(overlays_by_id) == {
     "whiskey-hill-1998-user-registration",
     "hubbard-2000-three-lobe-registration",
+    "mayville-kekoskee-2003-source-gps-registration",
+    "howell-township-2003-source-gps-registration",
+    "jupiter-2005-source-gps-scene-placement",
 }
 overlay = overlays_by_id["whiskey-hill-1998-user-registration"]
 assert overlay["formation_id"] == provisional["formation_id"]
@@ -433,6 +436,41 @@ assert abs(float(hubbard_overlay["center"][0]) - float(whiskey_2000["latitude"])
 assert abs(float(hubbard_overlay["center"][1]) - float(whiskey_2000["longitude"])) < 0.0005
 assert hubbard_overlay["formal_alignment_status"] == "excluded_pending_independent_ground_control"
 
+new_overlay_expectations = {
+    "mayville-kekoskee-2003-source-gps-registration": (
+        "cc_af45ba1f38f5", "iccra_5f74cb1fb1dfed25",
+        "provisional_source_gps_geometry_registration",
+    ),
+    "howell-township-2003-source-gps-registration": (
+        "cc_801777bd00f0", "iccra_09278c2f8bfe83d8",
+        "provisional_source_gps_geometry_registration",
+    ),
+    "jupiter-2005-source-gps-scene-placement": (
+        "cc_380f14de702d", "iccra_8b50ef9c87fcc775",
+        "provisional_source_gps_scene_placement",
+    ),
+}
+for overlay_id, (formation_id, assertion_id, registration_status) in new_overlay_expectations.items():
+    registered = overlays_by_id[overlay_id]
+    formation = formation_by_id[formation_id]
+    assert registered["formation_id"] == formation_id
+    assert registered["assertion_id"] == assertion_id
+    assert assertion_id in formation["assertion_ids"].split("; ")
+    source_image = next(row for row in iccra_images if row["image_url"] == registered["source_image_url"])
+    assert registered["source_image_sha256"] == source_image["sha256"]
+    assert registered["source_page_url"] == source_image["source_page_url"]
+    assert source_image["public_redistribution_status"] == "not_cleared"
+    assert registered["source_photo_pixels"] == "remote_source_link_only"
+    assert registered["rights_status"] == "not_cleared_for_redistribution"
+    assert registered["show_by_default"] is False
+    assert registered["registration_status"] == registration_status
+    assert float(registered["coordinate_uncertainty_m"]) == float(
+        formation["site_coordinate_uncertainty_m"]
+    )
+    assert abs(float(registered["center"][0]) - float(formation["site_latitude"])) < 1e-8
+    assert abs(float(registered["center"][1]) - float(formation["site_longitude"])) < 1e-8
+    assert registered["formal_alignment_status"].startswith("excluded_pending_")
+
 kml_path = ROOT / "exports" / "crop_circle_atlas.kml"
 kml_tree = ET.parse(kml_path)
 kml_root = kml_tree.getroot()
@@ -440,7 +478,7 @@ kml_ns = {"k": "http://www.opengis.net/kml/2.2"}
 assert len(kml_root.findall(".//k:Point", kml_ns)) == len(geocoded)
 assert len(kml_root.findall(".//k:LineString", kml_ns)) == len(orientations) + len(provisional_rows)
 linked_overlays = kml_root.findall(".//k:GroundOverlay", kml_ns)
-assert len(linked_overlays) == 2
+assert len(linked_overlays) == 5
 assert all(item.find("k:visibility", kml_ns).text == "1" for item in linked_overlays)
 assert all(item.find("k:color", kml_ns).text == "adffffff" for item in linked_overlays)
 kml_text = kml_path.read_text(encoding="utf-8")
@@ -463,6 +501,21 @@ assert overlay_audit == [
     },
     {
         "asset_id": "hubbard-2000-three-lobe-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
+    {
+        "asset_id": "mayville-kekoskee-2003-source-gps-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
+    {
+        "asset_id": "howell-township-2003-source-gps-registration",
+        "status": "included_remote_link",
+        "reason": "pixels_not_packaged_provisional",
+    },
+    {
+        "asset_id": "jupiter-2005-source-gps-scene-placement",
         "status": "included_remote_link",
         "reason": "pixels_not_packaged_provisional",
     },
@@ -490,7 +543,7 @@ with zipfile.ZipFile(workbook) as archive:
     assert table_refs["FormationsTable"] == "A1:AP7746"
     assert table_refs["FieldSiteReviewsTable"] == "A1:T5"
     assert table_refs["AliasReviewsTable"].endswith("5")
-    assert table_refs["OverlayAuditTable"] == "A1:C3"
+    assert table_refs["OverlayAuditTable"] == "A1:C6"
 
 for needed in (
     "index.html", "app.js", "styles.css", "favicon.svg", "methodology.html", "georef.html",
@@ -502,6 +555,7 @@ assert "GeoNames CC BY 4.0" in (ROOT / "web" / "index.html").read_text(encoding=
 assert "GeoNames under CC BY 4.0" in kml_path.read_text(encoding="utf-8")
 web_index = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
 web_app = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
+web_styles = (ROOT / "web" / "styles.css").read_text(encoding="utf-8")
 georef_html = (ROOT / "web" / "georef.html").read_text(encoding="utf-8")
 assert "Show rough locality references on map" in web_index
 assert "Load and zoom to registered image" in web_index
@@ -512,7 +566,16 @@ assert "unqualified_manual_hypothesis" in web_app
 assert "Provisional registered axes" in web_app
 assert "Registered aerial-photo footprints" in web_app
 assert "sitePointPane" in web_app and "localityPointPane" in web_app
+assert "radius: 5, color: '#f6ad55', weight: 2.25, opacity: 1, dashArray: '3 2'" in web_app
+assert "fillColor: '#f6ad55', fillOpacity: 0.08, renderer: localityRenderer" in web_app
 assert "fillColor: verified ? '#2d9e91' : '#f6ad55'" in web_app
+assert ".key-dot.reference { color:#f6ad55; background:transparent; border-style:dashed; }" in web_styles
+assert "hollow dashed yellow markers are rough locality references" in web_index
+assert 'href="styles.css?v=20260721.3"' in web_index
+assert 'src="app.js?v=20260721.3"' in web_index
+assert "registered_overlays.json?v=20260721.3" in web_app
+assert "Five reviewed source-image placements are mapped" in web_index
+assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
 assert "map.closePopup()" in web_app
 assert "Locality centroids and unresolved reports are excluded" in web_app

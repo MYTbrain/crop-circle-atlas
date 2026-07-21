@@ -188,8 +188,8 @@ function markerStyle(record, reference = false) {
     || ['high', 'medium'].includes(record.source_image_straight_tier);
   if (reference || role === 'locality_reference') {
     return {
-      radius: 4, color: '#b4c2be', weight: 1.5, opacity: 0.72, dashArray: '3 3',
-      fillColor: '#0b1717', fillOpacity: 0.06, renderer: localityRenderer,
+      radius: 5, color: '#f6ad55', weight: 2.25, opacity: 1, dashArray: '3 2',
+      fillColor: '#f6ad55', fillOpacity: 0.08, renderer: localityRenderer,
     };
   }
   const verified = isActualSite(record);
@@ -328,11 +328,9 @@ function setRegisteredFootprintVisible(record, visible) {
 
 function resetOverlaySelection() {
   const previousRecord = activeOverlayRecord;
-  if (activeOverlay) {
-    activeOverlay.remove();
-    activeOverlay = null;
-    activeOverlayRecord = null;
-  }
+  activeOverlay?.remove();
+  activeOverlay = null;
+  activeOverlayRecord = null;
   if (previousRecord) setRegisteredFootprintVisible(previousRecord, true);
   $('toggleOverlay').textContent = 'Load and zoom to registered image';
   $('overlayOpacityLabel').hidden = true;
@@ -683,7 +681,7 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/registered_overlays.json?v=20260721.3').then((response) => response.ok ? response.json() : { overlays: [] }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);

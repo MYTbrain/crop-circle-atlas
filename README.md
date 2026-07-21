@@ -47,11 +47,14 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero ICCRA image files because publication rights
-  have not been cleared. The web map and KML/KMZ contain two opt-in,
-  source-hosted provisional registrations for Whiskey Hill/Hubbard 1998 and
-  2000; their footprints are visible on the web map, while the repository
-  contains and redistributes no source-photo pixels. Local-only registration
-  remains available.
+  have not been cleared. The web map and KML/KMZ contain five opt-in,
+  source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
+  Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. Mayville and
+  Howell have provisional display geometry tied to source coordinates; Jupiter
+  is explicitly a coordinate-anchored scene whose orientation remains
+  unresolved. Their footprints are visible on the web map, while the
+  repository contains and redistributes no source-photo pixels. Local-only
+  registration remains available.
 
 ## Exact-field resolution status
 
@@ -112,7 +115,7 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  two disabled provisional GroundOverlay links to the source host. Packaged
+  five disabled provisional GroundOverlay links to the source host. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
