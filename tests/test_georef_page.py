@@ -85,6 +85,8 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("setRegisteredFootprintVisible(record, false)", javascript)
         self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
+        self.assertIn('href="styles.css?v=20260721.1"', html)
+        self.assertIn('src="app.js?v=20260721.1"', html)
         self.assertRegex(html, r'<input id="showLocalities" type="checkbox">')
         self.assertIn("await selectFormation(id, true)", javascript)
         self.assertIn("map.closePopup()", javascript)
