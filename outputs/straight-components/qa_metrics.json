@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-07-21T07:36:39Z",
+  "detector_version": "straight-components-v1.0.0",
+  "opencv_version": "4.13.0",
+  "pdf_path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
+  "pdf_sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
+  "pdf_assertions_processed": 5978,
+  "tier_counts": {
+    "high": 974,
+    "low": 1925,
+    "medium": 344,
+    "none": 2735
+  },
+  "diagram_status_counts": {
+    "blank": 1,
+    "diagram": 5352,
+    "no_diagram": 625
+  },
+  "validated_thresholds": {
+    "high_only": {
+      "tp": 16,
+      "fp": 1,
+      "tn": 66,
+      "fn": 21,
+      "n": 104,
+      "accuracy": 0.7885,
+      "precision": 0.9412,
+      "recall": 0.4324,
+      "specificity": 0.9851,
+      "f1": 0.5926
+    },
+    "high_or_medium": {
+      "tp": 24,
+      "fp": 3,
+      "tn": 64,
+      "fn": 13,
+      "n": 104,
+      "accuracy": 0.8462,
+      "precision": 0.8889,
+      "recall": 0.6486,
+      "specificity": 0.9552,
+      "f1": 0.75
+    },
+    "all_candidate_tiers": {
+      "tp": 34,
+      "fp": 32,
+      "tn": 35,
+      "fn": 3,
+      "n": 104,
+      "accuracy": 0.6635,
+      "precision": 0.5152,
+      "recall": 0.9189,
+      "specificity": 0.5224,
+      "f1": 0.6602
+    }
+  },
+  "labeled_sample": {
+    "total": 113,
+    "classification_rows": 104,
+    "manual_label_counts": {
+      "no_diagram": 9,
+      "no_straight": 67,
+      "straight": 37
+    },
+    "no_diagram_status_accuracy": 0.9912,
+    "pages": [
+      1,
+      50,
+      100,
+      200,
+      250,
+      309
+    ]
+  },
+  "angle_semantics": {
+    "reference": "image x-axis",
+    "zero": "right",
+    "direction": "clockwise in image coordinates",
+    "period_degrees": 180,
+    "geographic_interpretation": "none"
+  },
+  "threshold_notes": {
+    "high": "strong long or concentrated straight-segment evidence",
+    "medium": "moderate straight-segment evidence",
+    "low": "weak, short, or complex evidence retained for review",
+    "none": "no detector threshold met"
+  },
+  "contact_sheets": [
+    "outputs/straight-components/qa_labeled_sample_01.jpg",
+    "outputs/straight-components/qa_labeled_sample_02.jpg",
+    "outputs/straight-components/qa_labeled_sample_03.jpg",
+    "outputs/straight-components/qa_labeled_sample_04.jpg",
+    "outputs/straight-components/qa_all_tier_errors_01.jpg",
+    "outputs/straight-components/qa_all_tier_errors_02.jpg"
+  ]
+}

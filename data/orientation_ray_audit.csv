@@ -1,0 +1,6 @@
+﻿observation_id,formation_id,assertion_id,status,reasons
+oo_iccra_2003_mayville_ns,cc_af45ba1f38f5,iccra_5f74cb1fb1dfed25,qualified,
+oo_iccra_2003_howell_ene,cc_801777bd00f0,iccra_09278c2f8bfe83d8,qualified,
+oo_iccra_2003_howell_wsw,cc_801777bd00f0,iccra_09278c2f8bfe83d8,qualified,
+oo_iccra_1994_aloha_ns,cc_8a68d8a0471b,iccra_c100c7083922d347,qualified,
+oo_iccra_1994_aloha_ew,cc_8a68d8a0471b,iccra_c100c7083922d347,qualified,

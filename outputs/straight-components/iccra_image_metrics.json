@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-07-21T08:09:50Z",
+  "detector_version": "iccra-source-image-straight-v1.0.0",
+  "opencv_version": "4.13.0",
+  "input_inventory": "data/iccra_image_links.csv",
+  "input_inventory_rows": 681,
+  "successfully_cached_hosted_rows": 669,
+  "analyzed_rows": 669,
+  "cached_row_coverage": 1.0,
+  "unique_successfully_cached_sha256": 526,
+  "unique_pixel_sha256_analyzed": 526,
+  "private_pixel_decodes": 526,
+  "duplicate_rows_reusing_sha_analysis": 143,
+  "analysis_status_counts": {
+    "analyzed_private_cache": 669,
+    "external_not_fetched": 6,
+    "hosted_fetch_failed_http_404": 6
+  },
+  "tier_counts_by_inventory_row": {
+    "high": 157,
+    "low": 86,
+    "medium": 85,
+    "none": 341
+  },
+  "tier_counts_by_unique_pixel_sha256": {
+    "high": 107,
+    "low": 82,
+    "medium": 81,
+    "none": 256
+  },
+  "tier_counts_by_image_kind": {
+    "diagram": {
+      "high": 8,
+      "low": 7,
+      "medium": 4,
+      "none": 6
+    },
+    "map_or_aerial": {
+      "high": 48,
+      "low": 2,
+      "medium": 2,
+      "none": 3
+    },
+    "photograph_or_unspecified": {
+      "high": 101,
+      "low": 77,
+      "medium": 79,
+      "none": 332
+    }
+  },
+  "linked_assertion_coverage": {
+    "analyzed_image_rows_with_assertion_ids": 510,
+    "candidate_image_rows_with_assertion_ids": 241,
+    "unique_assertion_ids_with_analyzed_images": 267,
+    "unique_assertion_ids_with_candidate_images": 153
+  },
+  "angle_semantics": {
+    "reference": "image x-axis",
+    "zero": "right",
+    "direction": "clockwise in image coordinates",
+    "period_degrees": 180,
+    "geographic_interpretation": "none"
+  },
+  "qualification_boundary": {
+    "candidate_meaning": "automated review priority only; no manual validation",
+    "true_north_bearing_created": false,
+    "geographic_ray_eligible": false,
+    "source_pixel_output": false,
+    "derived_pixel_output": false,
+    "public_output": "metadata only"
+  }
+}

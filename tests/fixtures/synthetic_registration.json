@@ -1,0 +1,73 @@
+{
+  "schema_version": "crop-circle-atlas/georeference-registration/v1",
+  "registration_id": "synthetic-perspective-registration-v1",
+  "formation_id": "synthetic-formation",
+  "asset": {
+    "asset_id": "synthetic-perspective",
+    "source_url": "https://example.invalid/synthetic-test-only",
+    "original_filename": "synthetic-grid.png",
+    "rights": {
+      "status": "local_analysis_only",
+      "holder": "Crop Circle Atlas test fixture",
+      "license": "Synthetic test data",
+      "public_derivative_export_allowed": false
+    }
+  },
+  "source_image": {
+    "sha256": "",
+    "width_px": 320,
+    "height_px": 240,
+    "local_path": null,
+    "pixels_embedded": false
+  },
+  "control_points": [
+    {
+      "id": "cp1",
+      "image": { "x": 0, "y": 0 },
+      "geographic": { "longitude": -99.99999999999999, "latitude": 40.00000000000001, "crs": "EPSG:4326" }
+    },
+    {
+      "id": "cp2",
+      "image": { "x": 320, "y": 0 },
+      "geographic": { "longitude": -99.99885015643632, "latitude": 39.99988989600218, "crs": "EPSG:4326" }
+    },
+    {
+      "id": "cp3",
+      "image": { "x": 320, "y": 240 },
+      "geographic": { "longitude": -99.99866079761689, "latitude": 39.99912412120491, "crs": "EPSG:4326" }
+    },
+    {
+      "id": "cp4",
+      "image": { "x": 0, "y": 240 },
+      "geographic": { "longitude": -99.99996335477886, "latitude": 39.99924110800864, "crs": "EPSG:4326" }
+    }
+  ],
+  "transform": {
+    "type": "projective_homography",
+    "target_crs": "EPSG:3857",
+    "image_pixel_to_web_mercator": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "control_point_rmse_m": 0
+  },
+  "output": {
+    "crs": "EPSG:3857",
+    "width_px": 320,
+    "height_px": 240,
+    "bounds_wgs84": { "west": -100, "south": 39.999, "east": -99.998, "north": 40 },
+    "north_up": true
+  },
+  "straight_component": {
+    "endpoint_a": { "image": { "x": 80, "y": 120 } },
+    "endpoint_b": { "image": { "x": 250, "y": 120 } },
+    "ray_origin": {
+      "representative_point": "straight_component_midpoint",
+      "latitude": 0,
+      "longitude": 0,
+      "uncertainty_m": 5
+    },
+    "azimuth_uncertainty_deg": 1.5,
+    "directionality": "bidirectional",
+    "ray_range_km": 25,
+    "corridor_km": 1
+  },
+  "privacy": { "processing": "local_browser_only", "image_uploaded": false }
+}

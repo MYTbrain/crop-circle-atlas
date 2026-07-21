@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crop-circle-atlas.example/schemas/georeference-registration-v1.schema.json",
+  "title": "Crop Circle Atlas projective image registration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "registration_id",
+    "formation_id",
+    "asset",
+    "source_image",
+    "control_points",
+    "transform",
+    "output",
+    "privacy"
+  ],
+  "properties": {
+    "schema_version": { "const": "crop-circle-atlas/georeference-registration/v1" },
+    "registration_id": { "type": "string", "minLength": 1 },
+    "formation_id": { "type": "string" },
+    "asset": {
+      "type": "object",
+      "required": ["asset_id", "rights"],
+      "properties": {
+        "asset_id": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string" },
+        "original_filename": { "type": "string" },
+        "rights": {
+          "type": "object",
+          "required": ["status", "public_derivative_export_allowed"],
+          "properties": {
+            "status": {
+              "enum": [
+                "local_analysis_only", "permission_pending", "permission_granted",
+                "public_domain", "cc0", "cc_by", "cc_by_sa", "licensed",
+                "owner_supplied_publication_authorized"
+              ]
+            },
+            "holder": { "type": "string" },
+            "license": { "type": "string" },
+            "proof": { "type": "string" },
+            "public_derivative_export_allowed": { "type": "boolean" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "source_image": {
+      "type": "object",
+      "required": ["sha256", "width_px", "height_px", "pixels_embedded"],
+      "properties": {
+        "sha256": { "type": "string", "pattern": "^$|^[a-fA-F0-9]{64}$" },
+        "width_px": { "type": "integer", "minimum": 1 },
+        "height_px": { "type": "integer", "minimum": 1 },
+        "local_path": { "type": ["string", "null"] },
+        "pixels_embedded": { "const": false }
+      },
+      "additionalProperties": true
+    },
+    "control_points": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "#/$defs/controlPoint" }
+    },
+    "transform": {
+      "type": "object",
+      "required": ["type", "target_crs", "image_pixel_to_web_mercator", "control_point_rmse_m"],
+      "properties": {
+        "type": { "const": "projective_homography" },
+        "target_crs": { "const": "EPSG:3857" },
+        "image_pixel_to_web_mercator": { "$ref": "#/$defs/matrix3" },
+        "web_mercator_to_image_pixel": { "$ref": "#/$defs/matrix3" },
+        "control_point_rmse_m": { "type": "number", "minimum": 0 },
+        "distance_measurement": { "const": "spherical_geodesic_ground_metres" }
+      },
+      "additionalProperties": true
+    },
+    "output": {
+      "type": "object",
+      "required": ["crs", "width_px", "height_px", "bounds_wgs84", "north_up"],
+      "properties": {
+        "crs": { "const": "EPSG:3857" },
+        "width_px": { "type": "integer", "minimum": 1 },
+        "height_px": { "type": "integer", "minimum": 1 },
+        "bounds_wgs84": {
+          "type": "object",
+          "required": ["west", "south", "east", "north"]
+        },
+        "north_up": { "const": true }
+      },
+      "additionalProperties": true
+    },
+    "straight_component": {
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": [
+            "endpoint_a", "endpoint_b", "forward_azimuth_true_deg",
+            "reverse_azimuth_true_deg", "selected_azimuth_true_deg",
+            "azimuth_uncertainty_deg", "directionality"
+          ],
+          "properties": {
+            "directionality": { "enum": ["forward", "reverse", "bidirectional"] },
+            "selected_azimuth_true_deg": { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+            "azimuth_uncertainty_deg": { "type": "number", "minimum": 0, "maximum": 180 }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    "privacy": {
+      "type": "object",
+      "required": ["processing", "image_uploaded"],
+      "properties": {
+        "processing": { "const": "local_browser_only" },
+        "image_uploaded": { "const": false }
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "controlPoint": {
+      "type": "object",
+      "required": ["id", "image", "geographic"],
+      "properties": {
+        "id": { "type": "string" },
+        "image": {
+          "type": "object",
+          "required": ["x", "y"],
+          "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+        },
+        "geographic": {
+          "type": "object",
+          "required": ["latitude", "longitude", "crs"],
+          "properties": {
+            "latitude": { "type": "number", "minimum": -85.05112878, "maximum": 85.05112878 },
+            "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+            "crs": { "const": "EPSG:4326" }
+          }
+        }
+      }
+    },
+    "matrix3": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": { "type": "number" }
+      }
+    }
+  },
+  "additionalProperties": true
+}

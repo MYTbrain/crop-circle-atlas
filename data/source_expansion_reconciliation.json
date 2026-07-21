@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-21T08:24:27Z",
+  "parser_version": "source-expansion-v1",
+  "scope_statement": "Bounded public metadata pass, not a claim of global exhaustiveness.",
+  "crawl": {
+    "manifest_rows": 127,
+    "successful_snapshots": 121,
+    "failed_or_unavailable": 6,
+    "images_downloaded": 0,
+    "membership_or_api_requests": 0
+  },
+  "yield": {
+    "baseline_assertions": 7751,
+    "baseline_normalized_keys": 7299,
+    "expansion_assertions": 639,
+    "expansion_distinct_normalized_source_keys": 639,
+    "exact_overlap_normalized_keys": 189,
+    "new_normalized_source_keys_vs_baseline": 450,
+    "same_normalized_key_assertion_surplus": 0,
+    "match_statuses": {
+      "exact_overlap": 189,
+      "probable_overlap_not_merged": 83,
+      "new_exact_key": 200,
+      "alias_overlap_not_merged": 167
+    },
+    "per_source": {
+      "connector": {
+        "assertions": 442,
+        "distinct_normalized_source_keys": 442,
+        "exact_overlap_normalized_keys": 102,
+        "new_normalized_source_keys_vs_baseline": 340,
+        "exact_overlap_assertions": 102,
+        "alias_overlap_not_merged_assertions": 164,
+        "probable_overlap_not_merged_assertions": 29
+      },
+      "dcca": {
+        "assertions": 184,
+        "distinct_normalized_source_keys": 184,
+        "exact_overlap_normalized_keys": 83,
+        "new_normalized_source_keys_vs_baseline": 101,
+        "exact_overlap_assertions": 83,
+        "alias_overlap_not_merged_assertions": 3,
+        "probable_overlap_not_merged_assertions": 54
+      },
+      "cccrn": {
+        "assertions": 1,
+        "distinct_normalized_source_keys": 1,
+        "exact_overlap_normalized_keys": 1,
+        "new_normalized_source_keys_vs_baseline": 0,
+        "exact_overlap_assertions": 1,
+        "alias_overlap_not_merged_assertions": 0,
+        "probable_overlap_not_merged_assertions": 0
+      },
+      "vigay": {
+        "assertions": 12,
+        "distinct_normalized_source_keys": 12,
+        "exact_overlap_normalized_keys": 3,
+        "new_normalized_source_keys_vs_baseline": 9,
+        "exact_overlap_assertions": 3,
+        "alias_overlap_not_merged_assertions": 0,
+        "probable_overlap_not_merged_assertions": 0
+      },
+      "blt": {
+        "assertions": 0,
+        "distinct_normalized_source_keys": 0,
+        "exact_overlap_normalized_keys": 0,
+        "new_normalized_source_keys_vs_baseline": 0,
+        "exact_overlap_assertions": 0,
+        "alias_overlap_not_merged_assertions": 0,
+        "probable_overlap_not_merged_assertions": 0
+      }
+    }
+  },
+  "parse_coverage": {
+    "connector_event_like_unique_anchors": 447,
+    "connector_assertions_emitted": 442,
+    "connector_explicit_exclusions": 5,
+    "dcca_dated_unique_anchors": 178,
+    "dcca_assertions_emitted": 184,
+    "dcca_unparsed_dated_anchors": 0
+  },
+  "access": {
+    "connector": {
+      "assertions_emitted": 442,
+      "robots_http_status": "200",
+      "robots_decision": "policy_loaded",
+      "access_boundary": "membership archive and images excluded",
+      "rights_action": "metadata_only_no_images; contributor image rights retained"
+    },
+    "dcca": {
+      "assertions_emitted": 184,
+      "robots_http_status": "404",
+      "robots_decision": "missing_no_declared_restrictions",
+      "access_boundary": "only machine-enumerable dated anchors; no images",
+      "rights_action": "metadata_only_with_source_attribution; publication particulars require contact"
+    },
+    "cccrn": {
+      "assertions_emitted": 1,
+      "robots_http_status": "404",
+      "robots_decision": "missing_no_declared_restrictions",
+      "access_boundary": "newsletter date never substituted; multi-event undated pages excluded",
+      "rights_action": "metadata_only; mirrored newsletter copyright not assumed transferable"
+    },
+    "vigay": {
+      "assertions_emitted": 12,
+      "robots_http_status": "200",
+      "robots_decision": "policy_loaded",
+      "access_boundary": "article corpus is descriptive/enrichment, not bulk events",
+      "rights_action": "field-report index metadata only; articles and images not redistributed"
+    },
+    "blt": {
+      "assertions_emitted": 0,
+      "robots_http_status": "0",
+      "robots_decision": "unavailable_fail_closed",
+      "access_boundary": "DNS unavailable to reproducible local fetch; reports are enrichment, not a complete event catalog",
+      "rights_action": "lab-report citation metadata only; reports and images not redistributed"
+    }
+  },
+  "completeness_checks": {
+    "all_assertion_ids_unique": true,
+    "all_rows_have_provenance": true,
+    "all_rows_have_valid_dates": true,
+    "no_image_urls_emitted": true,
+    "bounded_scope_not_global_exhaustiveness": true
+  }
+}

@@ -1,0 +1,114 @@
+source_page,source_slot,manual_label,reviewer,reviewed_at,review_note
+1,1,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+1,2,no_straight,Codex visual review,2026-07-21,circular rings only
+1,3,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+1,4,no_straight,Codex visual review,2026-07-21,circular rings only
+1,5,no_straight,Codex visual review,2026-07-21,single circle
+1,6,no_straight,Codex visual review,2026-07-21,single circle
+1,7,no_straight,Codex visual review,2026-07-21,single circle
+1,8,straight,Codex visual review,2026-07-21,diamond has four explicit straight sides
+1,9,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+1,10,no_straight,Codex visual review,2026-07-21,single circle
+1,11,no_straight,Codex visual review,2026-07-21,single circle
+1,12,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+1,13,no_straight,Codex visual review,2026-07-21,aligned circles without an explicit connecting stroke
+1,14,no_straight,Codex visual review,2026-07-21,single circle
+1,15,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+1,16,no_straight,Codex visual review,2026-07-21,single circle
+1,17,no_straight,Codex visual review,2026-07-21,single circle
+1,18,no_straight,Codex visual review,2026-07-21,single circle
+1,19,no_straight,Codex visual review,2026-07-21,single circle
+1,20,no_straight,Codex visual review,2026-07-21,single circle
+50,1,no_straight,Codex visual review,2026-07-21,rings and satellite circles only
+50,2,straight,Codex visual review,2026-07-21,explicit horizontal connecting bar
+50,3,no_straight,Codex visual review,2026-07-21,separate circles
+50,4,no_straight,Codex visual review,2026-07-21,low-contrast rings and satellite circles only
+50,5,no_straight,Codex visual review,2026-07-21,single circle
+50,6,straight,Codex visual review,2026-07-21,horizontal bar and short parallel strokes
+50,7,no_straight,Codex visual review,2026-07-21,single circle
+50,8,no_straight,Codex visual review,2026-07-21,single circle
+50,9,no_straight,Codex visual review,2026-07-21,single circle
+50,10,no_straight,Codex visual review,2026-07-21,single circle
+50,11,no_straight,Codex visual review,2026-07-21,curved crescent only
+50,12,straight,Codex visual review,2026-07-21,short horizontal linear strokes in axial chain
+50,13,no_straight,Codex visual review,2026-07-21,single circle
+50,14,straight,Codex visual review,2026-07-21,fork has explicit straight prongs and stem
+50,15,straight,Codex visual review,2026-07-21,horizontal axis and fork strokes
+50,16,straight,Codex visual review,2026-07-21,long horizontal axis and parallel short strokes
+50,17,no_straight,Codex visual review,2026-07-21,single circle
+50,18,straight,Codex visual review,2026-07-21,short horizontal rectangular stem
+50,19,straight,Codex visual review,2026-07-21,thin radial spokes from rings to satellites
+50,20,no_straight,Codex visual review,2026-07-21,single circle
+100,1,straight,Codex visual review,2026-07-21,three explicit radial connecting bars
+100,2,straight,Codex visual review,2026-07-21,multiple explicit limb and antenna strokes
+100,3,straight,Codex visual review,2026-07-21,long vertical stem
+100,4,no_straight,Codex visual review,2026-07-21,comma spiral only
+100,5,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+100,6,no_straight,Codex visual review,2026-07-21,single circle
+100,7,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+100,8,no_straight,Codex visual review,2026-07-21,circles connected by a curved stroke
+100,9,straight,Codex visual review,2026-07-21,wedge has two explicit radial sides
+100,10,no_straight,Codex visual review,2026-07-21,ring and dots without connecting strokes
+100,11,straight,Codex visual review,2026-07-21,explicit horizontal connecting bars
+100,12,no_straight,Codex visual review,2026-07-21,circles and curved hooks only
+100,13,straight,Codex visual review,2026-07-21,rectilinear arrows and stems
+100,14,straight,Codex visual review,2026-07-21,long horizontal axis with angular detail
+100,15,straight,Codex visual review,2026-07-21,long diagonal tail
+100,16,no_straight,Codex visual review,2026-07-21,rings only
+100,17,no_straight,Codex visual review,2026-07-21,separate circles
+100,18,straight,Codex visual review,2026-07-21,long horizontal line through rings
+100,19,no_straight,Codex visual review,2026-07-21,arcs and circles only
+100,20,no_straight,Codex visual review,2026-07-21,single circle
+200,1,no_straight,Codex visual review,2026-07-21,separate circles
+200,2,straight,Codex visual review,2026-07-21,inscribed triangle and horizontal chord
+200,3,no_straight,Codex visual review,2026-07-21,overlapping circular arcs
+200,4,straight,Codex visual review,2026-07-21,explicit horizontal connecting bar
+200,5,straight,Codex visual review,2026-07-21,three explicit triangle sides
+200,6,no_straight,Codex visual review,2026-07-21,circles only
+200,7,no_straight,Codex visual review,2026-07-21,rings only
+200,8,no_straight,Codex visual review,2026-07-21,circular rings and satellites only
+200,9,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+200,10,no_straight,Codex visual review,2026-07-21,curved pinwheel and dotted tail
+200,11,straight,Codex visual review,2026-07-21,thin diagonal axis and angular arrowhead
+200,12,straight,Codex visual review,2026-07-21,horizontal line into rings
+200,13,no_straight,Codex visual review,2026-07-21,spirals and curved tail
+200,14,no_straight,Codex visual review,2026-07-21,touching circles only
+200,15,no_straight,Codex visual review,2026-07-21,rings and satellite circles without connecting strokes
+200,16,no_straight,Codex visual review,2026-07-21,three separate circles
+200,17,no_straight,Codex visual review,2026-07-21,circle and dotted tail
+200,18,straight,Codex visual review,2026-07-21,thick diagonal connecting bar and short radial bar
+200,19,no_straight,Codex visual review,2026-07-21,curved pinwheel only
+200,20,no_straight,Codex visual review,2026-07-21,separate circles
+250,1,no_straight,Codex visual review,2026-07-21,single circle
+250,2,no_straight,Codex visual review,2026-07-21,aligned circles without connecting strokes
+250,3,no_diagram,Codex visual review,2026-07-21,catalogue placeholder
+250,4,no_straight,Codex visual review,2026-07-21,curved petal motif
+250,5,no_straight,Codex visual review,2026-07-21,curved swirl motif
+250,6,no_straight,Codex visual review,2026-07-21,single circle
+250,7,no_straight,Codex visual review,2026-07-21,separate circles
+250,8,no_straight,Codex visual review,2026-07-21,separate circles
+250,9,straight,Codex visual review,2026-07-21,explicit angular polygonal elements
+250,10,no_straight,Codex visual review,2026-07-21,rings only
+250,11,no_straight,Codex visual review,2026-07-21,separate circles
+250,12,straight,Codex visual review,2026-07-21,short horizontal stem
+250,13,straight,Codex visual review,2026-07-21,thin horizontal connecting line
+250,14,no_straight,Codex visual review,2026-07-21,curved chain of circles
+250,15,no_straight,Codex visual review,2026-07-21,double spiral only
+250,16,no_straight,Codex visual review,2026-07-21,overlapping circular rings
+250,17,no_straight,Codex visual review,2026-07-21,single ring
+250,18,straight,Codex visual review,2026-07-21,long horizontal axis and vertical stem
+250,19,no_straight,Codex visual review,2026-07-21,curved pinwheel only
+250,20,no_straight,Codex visual review,2026-07-21,single ring
+309,1,straight,Codex visual review,2026-07-21,repeated triangular and radial straight elements
+309,2,straight,Codex visual review,2026-07-21,repeated grid and radial straight elements
+309,3,straight,Codex visual review,2026-07-21,horizontal and vertical axes
+309,4,no_straight,Codex visual review,2026-07-21,dots connected by curved arcs
+309,5,straight,Codex visual review,2026-07-21,radial lines through and outside circle
+309,6,straight,Codex visual review,2026-07-21,multiple radial spokes
+309,7,straight,Codex visual review,2026-07-21,horizontal connecting strokes between rings
+309,8,no_straight,Codex visual review,2026-07-21,circles only
+309,9,straight,Codex visual review,2026-07-21,arrowhead has explicit straight sides
+309,10,straight,Codex visual review,2026-07-21,radial bars and rectangular bands
+309,11,straight,Codex visual review,2026-07-21,connecting line segments in branching chain
+309,12,no_straight,Codex visual review,2026-07-21,chain of circles without explicit connecting strokes
+309,13,no_straight,Codex visual review,2026-07-21,separate circles

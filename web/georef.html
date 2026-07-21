@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Registration Lab | Crop Circle Atlas</title>
+  <meta name="description" content="Register a local crop-formation image to four mapped landmarks, derive true-north bearings, and export reproducible georeferencing artifacts.">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="georef.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Crop Circle Atlas</p>
+      <h1>Image registration lab</h1>
+    </div>
+    <p class="privacy"><strong>Local-only image handling.</strong> Image pixels remain in this browser session and are never uploaded by this tool.</p>
+    <a href="index.html" class="back">Back to atlas</a>
+  </header>
+
+  <main class="layout">
+    <aside class="controls" aria-label="Registration controls">
+      <section>
+        <h2>1. Identify the evidence</h2>
+        <label>Local aerial image
+          <input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp">
+        </label>
+        <label>Restore registration metadata
+          <input id="registrationFile" type="file" accept="application/json,.json">
+        </label>
+        <div class="two-col">
+          <label>Formation ID<input id="formationId" autocomplete="off" placeholder="cc-..."></label>
+          <label>Asset ID<input id="assetId" autocomplete="off" placeholder="generated after load"></label>
+        </div>
+        <label>Source page URL<input id="sourceUrl" type="url" autocomplete="url" placeholder="https://rights-holder.example/report"></label>
+        <label>Find catalog formation
+          <div class="inline"><input id="catalogSearch" autocomplete="off" placeholder="ID or place"><button id="findFormation" type="button" class="quiet">Find</button></div>
+        </label>
+        <label>Image rights status
+          <select id="rightsStatus">
+            <option value="local_analysis_only">Local analysis only</option>
+            <option value="permission_pending">Permission pending</option>
+            <option value="permission_granted">Permission granted</option>
+            <option value="public_domain">Public domain</option>
+            <option value="cc0">CC0</option>
+            <option value="cc_by">Creative Commons Attribution</option>
+            <option value="cc_by_sa">Creative Commons Attribution-ShareAlike</option>
+            <option value="licensed">Other publication license</option>
+            <option value="owner_supplied_publication_authorized">Owner supplied; publication authorized</option>
+          </select>
+        </label>
+        <div class="two-col">
+          <label>Rights holder<input id="rightsHolder" autocomplete="off"></label>
+          <label>License identifier<input id="license" autocomplete="off" placeholder="e.g. CC BY 4.0"></label>
+        </div>
+        <label>License / permission proof URL or reference<input id="rightsProof" autocomplete="off" placeholder="Required for any public derivative"></label>
+        <label>Reviewer<input id="reviewer" autocomplete="name"></label>
+        <p id="imageStatus" class="status">Choose a local image to begin.</p>
+      </section>
+
+      <section>
+        <h2>2. Match four or more landmarks</h2>
+        <p class="help">For each point, click a precise landmark in the image, then the same landmark on the map. Spread points around the formation; do not use the crop design itself unless its field position is independently known. Four pairs solve exactly; additional pairs provide a least-squares fit and useful residuals.</p>
+        <div class="two-col coordinate-entry">
+          <label>Latitude<input id="manualLat" type="number" step="any" min="-85.051128" max="85.051128"></label>
+          <label>Longitude<input id="manualLon" type="number" step="any" min="-180" max="180"></label>
+        </div>
+        <button id="useCoordinates" type="button" class="quiet" disabled>Use coordinates for pending point</button>
+        <ol id="controlPointList" class="point-list"><li>No pairs recorded.</li></ol>
+        <div class="button-row">
+          <button id="undoPoint" type="button" class="quiet" disabled>Undo</button>
+          <button id="resetPoints" type="button" class="quiet" disabled>Reset</button>
+          <button id="solveTransform" type="button" disabled>Solve registration</button>
+        </div>
+        <p id="registrationStatus" class="status">At least four complete pairs are required.</p>
+      </section>
+
+      <section>
+        <h2>3. Make a north-up overlay</h2>
+        <div class="two-col">
+          <label>Maximum pixels<input id="maxDimension" type="number" min="64" max="4096" step="64" value="2048"></label>
+          <label>Map opacity<input id="overlayOpacity" type="range" min="0" max="1" step="0.05" value="0.7"></label>
+        </div>
+        <button id="generateRaster" type="button" disabled>Generate north-up overlay</button>
+        <div class="button-row">
+          <button id="downloadPng" type="button" class="quiet" disabled>PNG</button>
+          <button id="downloadKml" type="button" class="quiet" disabled>KML sidecar</button>
+          <button id="downloadMetadata" type="button" class="quiet" disabled>Metadata</button>
+        </div>
+        <p id="rasterStatus" class="status">Registration is required first.</p>
+      </section>
+
+      <section>
+        <h2>4. Measure a straight component</h2>
+        <p class="help">After registration, mark endpoint A and endpoint B in the image. The direction choice is explicit; a visible line alone does not establish which way it points.</p>
+        <div class="two-col">
+          <label>Direction
+            <select id="directionality">
+              <option value="bidirectional">Both directions</option>
+              <option value="forward">A to B</option>
+              <option value="reverse">B to A</option>
+            </select>
+          </label>
+          <label>Ray range (km)<input id="rayRange" type="number" min="0.1" max="20000" step="0.1" value="500"></label>
+        </div>
+        <div class="two-col">
+          <label>Ground-control uncertainty (m)<input id="groundUncertainty" type="number" min="0" step="0.1" value="5"></label>
+          <label>Endpoint click uncertainty (px)<input id="clickUncertainty" type="number" min="0" step="0.1" value="2"></label>
+        </div>
+        <label>Alignment corridor (km)<input id="corridorKm" type="number" min="0.01" max="500" step="0.01" value="5"></label>
+        <div class="button-row">
+          <button id="markComponent" type="button" disabled>Mark endpoints</button>
+          <button id="resetComponent" type="button" class="quiet" disabled>Clear</button>
+        </div>
+        <output id="orientationResult" class="result">No component measured.</output>
+        <div class="button-row">
+          <button id="downloadOrientationCsv" type="button" class="quiet" disabled>Orientation CSV</button>
+          <button id="downloadOrientationKml" type="button" class="quiet" disabled>Ray KML</button>
+        </div>
+      </section>
+
+      <section class="safeguard">
+        <h2>Scientific and rights safeguards</h2>
+        <p>A projective transform from four or more points can correct rotation, skew, and perspective, but its control-point residual is not an independent accuracy test. Enter realistic landmark uncertainty and review the overlay against the basemap.</p>
+        <p id="publicationNotice">Current rights status permits local analysis only. Do not publish the image or its derivative overlay.</p>
+      </section>
+    </aside>
+
+    <div class="workspace">
+      <section class="pane image-pane" aria-label="Source image registration pane">
+        <div class="pane-title"><strong>Source image</strong><span id="imagePrompt">Load an image, then click landmark 1.</span></div>
+        <div class="canvas-wrap"><canvas id="imageCanvas" aria-label="Local source image"></canvas><div id="canvasEmpty" class="empty">No image loaded</div></div>
+      </section>
+      <section class="pane map-pane" aria-label="Map registration pane">
+        <div class="pane-title"><strong>Map</strong><span>Click the matching ground landmark or enter coordinates.</span></div>
+        <div id="georefMap" aria-label="Registration map"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script type="module" src="georef.js"></script>
+</body>
+</html>

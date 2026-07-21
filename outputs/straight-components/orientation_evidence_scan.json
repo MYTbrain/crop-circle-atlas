@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-21T07:28:51Z",
+  "snapshot_manifest": "data/iccra_snapshots_full.csv",
+  "snapshots_total": 740,
+  "http_200_html_pages": 676,
+  "missing_cache_files": 0,
+  "candidate_pages": 27,
+  "priority_counts": {
+    "coordinate_only": 1,
+    "high": 3,
+    "medium": 23
+  },
+  "qualified_rows_created_automatically": 0,
+  "reason": "all geographic azimuth rows require human evidence review"
+}

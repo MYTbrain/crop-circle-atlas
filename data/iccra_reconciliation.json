@@ -1,0 +1,1396 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-21T07:39:04Z",
+  "scope": "ICCRA by-year, by-state, reports, historical references, and news archive",
+  "robots_policy": "https://iccra.org/robots.txt explicitly allows /",
+  "status": "index_inventory_complete_with_unavailable_detail_pages",
+  "complete": false,
+  "totals": {
+    "byyear_index_stated_formations": 559,
+    "byyear_year_groups_with_counts": 60,
+    "byyear_list_and_direct_occurrences": 559,
+    "byyear_count_only_placeholders": 2,
+    "bystate_pages": 48,
+    "bystate_page_stated_sum": 595,
+    "bystate_parsed_list_items": 601,
+    "bystate_linked_list_items": 567,
+    "bystate_unlinked_list_items": 34,
+    "all_index_occurrences": 1171,
+    "parsed_index_occurrences_excluding_count_only_placeholders": 1169,
+    "canonical_assertions": 607,
+    "formation_detail_urls_discovered": 579,
+    "formation_detail_urls_http_success": 571,
+    "formation_detail_urls_failed": 8,
+    "index_entries_with_unresolved_detail": 2,
+    "actual_coordinate_pair_assertions": 4,
+    "coordinate_context_assertions": 6,
+    "report_coordinate_matches": 2,
+    "orientation_evidence_assertions": 22,
+    "rights_evidence_assertions": 571,
+    "image_references": 681,
+    "unique_image_urls": 548,
+    "iccra_hosted_image_references": 675,
+    "iccra_hosted_image_references_http_success": 669,
+    "excluded_repeated_ui_image_references": 3700,
+    "report_and_historical_documents": 48
+  },
+  "completeness_checks": {
+    "all_core_indexes_http_success": true,
+    "all_report_historical_news_documents_http_success": true,
+    "every_parsed_index_slot_accounted": true,
+    "index_inventory_complete": true,
+    "scope_inventory_complete": true,
+    "detail_pages_available": false,
+    "every_linked_index_entry_has_successful_detail": false,
+    "public_image_redistribution_cleared": false
+  },
+  "by_year": [
+    {
+      "year": 1847,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1883,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1909,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1919,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1920,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1927,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1932,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1935,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1941,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1945,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1950,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 0,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": -1,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1952,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1953,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1955,
+      "index_stated_count": 2,
+      "byyear_list_or_direct_count": 2,
+      "canonical_assertions_for_year": 2,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1956,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1957,
+      "index_stated_count": 3,
+      "byyear_list_or_direct_count": 3,
+      "canonical_assertions_for_year": 3,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1959,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1960,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 0,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": -1,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1964,
+      "index_stated_count": 6,
+      "byyear_list_or_direct_count": 6,
+      "canonical_assertions_for_year": 6,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1965,
+      "index_stated_count": 12,
+      "byyear_list_or_direct_count": 12,
+      "canonical_assertions_for_year": 12,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1966,
+      "index_stated_count": 7,
+      "byyear_list_or_direct_count": 7,
+      "canonical_assertions_for_year": 7,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1967,
+      "index_stated_count": 9,
+      "byyear_list_or_direct_count": 9,
+      "canonical_assertions_for_year": 10,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1968,
+      "index_stated_count": 6,
+      "byyear_list_or_direct_count": 6,
+      "canonical_assertions_for_year": 6,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1969,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1970,
+      "index_stated_count": 3,
+      "byyear_list_or_direct_count": 3,
+      "canonical_assertions_for_year": 3,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1971,
+      "index_stated_count": 4,
+      "byyear_list_or_direct_count": 4,
+      "canonical_assertions_for_year": 4,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1972,
+      "index_stated_count": 13,
+      "byyear_list_or_direct_count": 13,
+      "canonical_assertions_for_year": 13,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1973,
+      "index_stated_count": 15,
+      "byyear_list_or_direct_count": 15,
+      "canonical_assertions_for_year": 15,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1974,
+      "index_stated_count": 4,
+      "byyear_list_or_direct_count": 4,
+      "canonical_assertions_for_year": 4,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1975,
+      "index_stated_count": 13,
+      "byyear_list_or_direct_count": 13,
+      "canonical_assertions_for_year": 13,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1976,
+      "index_stated_count": 3,
+      "byyear_list_or_direct_count": 3,
+      "canonical_assertions_for_year": 3,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1977,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1978,
+      "index_stated_count": 6,
+      "byyear_list_or_direct_count": 6,
+      "canonical_assertions_for_year": 6,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1979,
+      "index_stated_count": 4,
+      "byyear_list_or_direct_count": 4,
+      "canonical_assertions_for_year": 4,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1980,
+      "index_stated_count": 3,
+      "byyear_list_or_direct_count": 3,
+      "canonical_assertions_for_year": 3,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1981,
+      "index_stated_count": 2,
+      "byyear_list_or_direct_count": 2,
+      "canonical_assertions_for_year": 2,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1982,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1983,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1984,
+      "index_stated_count": 1,
+      "byyear_list_or_direct_count": 1,
+      "canonical_assertions_for_year": 1,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1985,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1986,
+      "index_stated_count": 3,
+      "byyear_list_or_direct_count": 3,
+      "canonical_assertions_for_year": 3,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1987,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1988,
+      "index_stated_count": 5,
+      "byyear_list_or_direct_count": 5,
+      "canonical_assertions_for_year": 5,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1989,
+      "index_stated_count": 12,
+      "byyear_list_or_direct_count": 12,
+      "canonical_assertions_for_year": 12,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1990,
+      "index_stated_count": 26,
+      "byyear_list_or_direct_count": 26,
+      "canonical_assertions_for_year": 27,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1991,
+      "index_stated_count": 16,
+      "byyear_list_or_direct_count": 16,
+      "canonical_assertions_for_year": 16,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1992,
+      "index_stated_count": 21,
+      "byyear_list_or_direct_count": 21,
+      "canonical_assertions_for_year": 21,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1993,
+      "index_stated_count": 20,
+      "byyear_list_or_direct_count": 20,
+      "canonical_assertions_for_year": 20,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1994,
+      "index_stated_count": 28,
+      "byyear_list_or_direct_count": 28,
+      "canonical_assertions_for_year": 28,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1995,
+      "index_stated_count": 24,
+      "byyear_list_or_direct_count": 24,
+      "canonical_assertions_for_year": 25,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1996,
+      "index_stated_count": 31,
+      "byyear_list_or_direct_count": 32,
+      "canonical_assertions_for_year": 33,
+      "byyear_delta": 1,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1997,
+      "index_stated_count": 24,
+      "byyear_list_or_direct_count": 24,
+      "canonical_assertions_for_year": 24,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1998,
+      "index_stated_count": 23,
+      "byyear_list_or_direct_count": 24,
+      "canonical_assertions_for_year": 24,
+      "byyear_delta": 1,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 1999,
+      "index_stated_count": 13,
+      "byyear_list_or_direct_count": 13,
+      "canonical_assertions_for_year": 13,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2000,
+      "index_stated_count": 20,
+      "byyear_list_or_direct_count": 20,
+      "canonical_assertions_for_year": 20,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2001,
+      "index_stated_count": 12,
+      "byyear_list_or_direct_count": 12,
+      "canonical_assertions_for_year": 12,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2002,
+      "index_stated_count": 23,
+      "byyear_list_or_direct_count": 23,
+      "canonical_assertions_for_year": 23,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2003,
+      "index_stated_count": 40,
+      "byyear_list_or_direct_count": 40,
+      "canonical_assertions_for_year": 40,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2004,
+      "index_stated_count": 33,
+      "byyear_list_or_direct_count": 33,
+      "canonical_assertions_for_year": 33,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    },
+    {
+      "year": 2005,
+      "index_stated_count": 27,
+      "byyear_list_or_direct_count": 27,
+      "canonical_assertions_for_year": 28,
+      "byyear_delta": 0,
+      "captured_at_least_stated": true
+    }
+  ],
+  "by_state": [
+    {
+      "state_abbr": "AK",
+      "state": "Alaska",
+      "page_stated_count": 2,
+      "parsed_list_items": 2,
+      "linked_list_items": 2,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "AL",
+      "state": "Alabama",
+      "page_stated_count": 5,
+      "parsed_list_items": 5,
+      "linked_list_items": 5,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "AR",
+      "state": "Arkansas",
+      "page_stated_count": 5,
+      "parsed_list_items": 5,
+      "linked_list_items": 4,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "AZ",
+      "state": "Arizona",
+      "page_stated_count": 3,
+      "parsed_list_items": 3,
+      "linked_list_items": 2,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "CA",
+      "state": "California",
+      "page_stated_count": 25,
+      "parsed_list_items": 27,
+      "linked_list_items": 26,
+      "unlinked_list_items": 1,
+      "delta": 2
+    },
+    {
+      "state_abbr": "CO",
+      "state": "Colorado",
+      "page_stated_count": 8,
+      "parsed_list_items": 8,
+      "linked_list_items": 8,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "CT",
+      "state": "Connecticut",
+      "page_stated_count": 11,
+      "parsed_list_items": 11,
+      "linked_list_items": 11,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "DE",
+      "state": "Delaware",
+      "page_stated_count": 1,
+      "parsed_list_items": 1,
+      "linked_list_items": 1,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "FL",
+      "state": "Florida",
+      "page_stated_count": 12,
+      "parsed_list_items": 12,
+      "linked_list_items": 12,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "GA",
+      "state": "Georgia",
+      "page_stated_count": 4,
+      "parsed_list_items": 4,
+      "linked_list_items": 3,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "HI",
+      "state": "Hawaii",
+      "page_stated_count": 1,
+      "parsed_list_items": 1,
+      "linked_list_items": 1,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "IA",
+      "state": "Iowa",
+      "page_stated_count": 34,
+      "parsed_list_items": 34,
+      "linked_list_items": 34,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "ID",
+      "state": "Idaho",
+      "page_stated_count": 6,
+      "parsed_list_items": 6,
+      "linked_list_items": 6,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "IL",
+      "state": "Illinois",
+      "page_stated_count": 23,
+      "parsed_list_items": 22,
+      "linked_list_items": 19,
+      "unlinked_list_items": 3,
+      "delta": -1
+    },
+    {
+      "state_abbr": "IN",
+      "state": "Indiana",
+      "page_stated_count": 25,
+      "parsed_list_items": 25,
+      "linked_list_items": 24,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "KS",
+      "state": "Kansas",
+      "page_stated_count": 17,
+      "parsed_list_items": 17,
+      "linked_list_items": 14,
+      "unlinked_list_items": 3,
+      "delta": 0
+    },
+    {
+      "state_abbr": "KY",
+      "state": "Kentucky",
+      "page_stated_count": 10,
+      "parsed_list_items": 10,
+      "linked_list_items": 10,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "LA",
+      "state": "Louisiana",
+      "page_stated_count": 4,
+      "parsed_list_items": 4,
+      "linked_list_items": 3,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MA",
+      "state": "Massachusetts",
+      "page_stated_count": 12,
+      "parsed_list_items": 12,
+      "linked_list_items": 12,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MD",
+      "state": "Maryland",
+      "page_stated_count": 13,
+      "parsed_list_items": 13,
+      "linked_list_items": 13,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "ME",
+      "state": "Maine",
+      "page_stated_count": 8,
+      "parsed_list_items": 8,
+      "linked_list_items": 7,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MI",
+      "state": "Michigan",
+      "page_stated_count": 26,
+      "parsed_list_items": 26,
+      "linked_list_items": 19,
+      "unlinked_list_items": 7,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MN",
+      "state": "Minnesota",
+      "page_stated_count": 15,
+      "parsed_list_items": 15,
+      "linked_list_items": 15,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MO",
+      "state": "Missouri",
+      "page_stated_count": 22,
+      "parsed_list_items": 22,
+      "linked_list_items": 22,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "MT",
+      "state": "Montana",
+      "page_stated_count": 10,
+      "parsed_list_items": 10,
+      "linked_list_items": 10,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NC",
+      "state": "North Carolina",
+      "page_stated_count": 27,
+      "parsed_list_items": 27,
+      "linked_list_items": 27,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "ND",
+      "state": "North Dakota",
+      "page_stated_count": 9,
+      "parsed_list_items": 9,
+      "linked_list_items": 9,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NE",
+      "state": "Nebraska",
+      "page_stated_count": 10,
+      "parsed_list_items": 10,
+      "linked_list_items": 9,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NH",
+      "state": "New Hampshire",
+      "page_stated_count": 9,
+      "parsed_list_items": 9,
+      "linked_list_items": 9,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NJ",
+      "state": "New Jersey",
+      "page_stated_count": 10,
+      "parsed_list_items": 10,
+      "linked_list_items": 10,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NM",
+      "state": "New Mexico",
+      "page_stated_count": 2,
+      "parsed_list_items": 2,
+      "linked_list_items": 1,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "NY",
+      "state": "New York",
+      "page_stated_count": 25,
+      "parsed_list_items": 25,
+      "linked_list_items": 25,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "OH",
+      "state": "Ohio",
+      "page_stated_count": 41,
+      "parsed_list_items": 44,
+      "linked_list_items": 37,
+      "unlinked_list_items": 7,
+      "delta": 3
+    },
+    {
+      "state_abbr": "OK",
+      "state": "Oklahoma",
+      "page_stated_count": 4,
+      "parsed_list_items": 4,
+      "linked_list_items": 4,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "OR",
+      "state": "Oregon",
+      "page_stated_count": 19,
+      "parsed_list_items": 19,
+      "linked_list_items": 18,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "PA",
+      "state": "Pennsylvania",
+      "page_stated_count": 22,
+      "parsed_list_items": 21,
+      "linked_list_items": 20,
+      "unlinked_list_items": 1,
+      "delta": -1
+    },
+    {
+      "state_abbr": "PR",
+      "state": "Puerto Rico",
+      "page_stated_count": 1,
+      "parsed_list_items": 1,
+      "linked_list_items": 1,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "SC",
+      "state": "South Carolina",
+      "page_stated_count": 6,
+      "parsed_list_items": 6,
+      "linked_list_items": 6,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "SD",
+      "state": "South Dakota",
+      "page_stated_count": 6,
+      "parsed_list_items": 7,
+      "linked_list_items": 7,
+      "unlinked_list_items": 0,
+      "delta": 1
+    },
+    {
+      "state_abbr": "TN",
+      "state": "Tennessee",
+      "page_stated_count": 13,
+      "parsed_list_items": 13,
+      "linked_list_items": 12,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "TX",
+      "state": "Texas",
+      "page_stated_count": 13,
+      "parsed_list_items": 13,
+      "linked_list_items": 12,
+      "unlinked_list_items": 1,
+      "delta": 0
+    },
+    {
+      "state_abbr": "UT",
+      "state": "Utah",
+      "page_stated_count": 14,
+      "parsed_list_items": 14,
+      "linked_list_items": 14,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "VA",
+      "state": "Virginia",
+      "page_stated_count": 12,
+      "parsed_list_items": 12,
+      "linked_list_items": 12,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "VT",
+      "state": "Vermont",
+      "page_stated_count": 2,
+      "parsed_list_items": 2,
+      "linked_list_items": 2,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "WA",
+      "state": "Washington",
+      "page_stated_count": 20,
+      "parsed_list_items": 21,
+      "linked_list_items": 20,
+      "unlinked_list_items": 1,
+      "delta": 1
+    },
+    {
+      "state_abbr": "WI",
+      "state": "Wisconsin",
+      "page_stated_count": 23,
+      "parsed_list_items": 23,
+      "linked_list_items": 23,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "WV",
+      "state": "West Virginia",
+      "page_stated_count": 4,
+      "parsed_list_items": 4,
+      "linked_list_items": 4,
+      "unlinked_list_items": 0,
+      "delta": 0
+    },
+    {
+      "state_abbr": "WY",
+      "state": "Wyoming",
+      "page_stated_count": 1,
+      "parsed_list_items": 2,
+      "linked_list_items": 2,
+      "unlinked_list_items": 0,
+      "delta": 1
+    }
+  ],
+  "failed_formation_urls": [
+    {
+      "url": "https://iccra.org/bystate/Arkansas/ICCRA%20-%20AR%20-%20Elkins-Elking,%C2%A0Washington%20County(1955).htm",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Elkins, Washington County [Elking] (1955)",
+      "discovered_from": "https://iccra.org/bystate/Arkansas/ICCRA_AR.htm",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Mount%20Airy,%20Surry%20County%20(August%2019,%201965).htm",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "August 19, 1965 - Mount Airy, Surry County, NC | Mount Airy, Surry County, NC (August 19, 1965)",
+      "discovered_from": "https://iccra.org/bystate/North%20Carolina/ICCRA_NC.htm;https://iccra.org/byyear/ICCRA_1965.htm",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Forest%20Grove,%20Washington%20County%C2%A0(July%204,%202002).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Forest Grove, Washington County (July 4, 2002)",
+      "discovered_from": "https://iccra.org/bystate/Oregon/ICCRA_OR.htm",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/bystate/West%20Virginia/ICCRA%20-%20WV%20-%20Point%20Pleasant,%20Mason%20County%C2%A0(July%208,%202002).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "County (July 8, 2002)",
+      "discovered_from": "https://iccra.org/bystate/West%20Virginia/ICCRA_WV.htm",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/ICCRA%20-%20CA%20-%20Greenfield,%20Monterey%20County-Bakersfield,%20Kern%20County%20(June%2022,%202010).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Greenfield, Monterey County/ Bakersfield, Kern County, CA",
+      "discovered_from": "https://iccra.org/news-2010.html",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/ICCRA%20-%20CA%20-%20Hidden%20Valley%20Lake,%20Lake%20County%20(May%2017,%202010).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Hidden Valley Lake, Lake County, CA",
+      "discovered_from": "https://iccra.org/news-2010.html",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/ICCRA%20-%20Ohio%20-%20Moscow,%20Clermont%20County%20(June%206,%202010).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Moscow, Clermont County, OH",
+      "discovered_from": "https://iccra.org/news-2010.html",
+      "error": ""
+    },
+    {
+      "url": "https://iccra.org/ICCRA%20-%20Ohio%20-%20Owensville,%20Clermont%20County%20(June%2024,%202010).html",
+      "http_status": "404",
+      "roles": "formation_detail",
+      "anchor_text": "Owensville, Clermont County, OH",
+      "discovered_from": "https://iccra.org/news-2010.html",
+      "error": ""
+    }
+  ],
+  "unresolved_index_entries": [
+    {
+      "index_entry_id": "iccra_idx_c22338781b8f8baf",
+      "assertion_id": "iccra_7b938b590f76c90d",
+      "index_url": "https://iccra.org/bystate/North%20Carolina/ICCRA_NC.htm",
+      "ordinal": 4,
+      "label": "Mount Airy, Surry County, NC (August 19, 1965)",
+      "record_url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Mount%20Airy,%20Surry%20County%20(August%2019,%201965).htm",
+      "record_http_status": "404"
+    },
+    {
+      "index_entry_id": "iccra_idx_5ed859be26d3ffce",
+      "assertion_id": "iccra_7b938b590f76c90d",
+      "index_url": "https://iccra.org/byyear/ICCRA_1965.htm",
+      "ordinal": 7,
+      "label": "August 19, 1965 - Mount Airy, Surry County, NC",
+      "record_url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Mount%20Airy,%20Surry%20County%20(August%2019,%201965).htm",
+      "record_http_status": "404"
+    }
+  ],
+  "unlinked_index_entries": [
+    {
+      "index_entry_id": "iccra_idx_41b454efecdb7372",
+      "assertion_id": "iccra_e3b180b0b6408985",
+      "index_url": "https://iccra.org/bystate/Arizona/ICCRA_AZ.htm",
+      "ordinal": 3,
+      "label": "Chandler, Maricopa County (March 25, 2007)",
+      "state_abbr": "AZ",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_fbbc06c819a77690",
+      "assertion_id": "iccra_c8c156053ac15fb1",
+      "index_url": "https://iccra.org/bystate/Arkansas/ICCRA_AR.htm",
+      "ordinal": 5,
+      "label": "(Northeastern) [*Location withheld by BLT, Inc.], (June 14, 2007)",
+      "state_abbr": "AR",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_c5d02adff21de281",
+      "assertion_id": "iccra_f70cd772729acc3a",
+      "index_url": "https://iccra.org/bystate/California/ICCRA_CA.htm",
+      "ordinal": 25,
+      "label": "Red Bluff, Tehama County (May 11, 2007)",
+      "state_abbr": "CA",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_dafec680c90c13fc",
+      "assertion_id": "iccra_6c57257121b432f8",
+      "index_url": "https://iccra.org/bystate/Georgia/ICCRA_GA.htm",
+      "ordinal": 4,
+      "label": "Cairo , Grady County (April, 1995)",
+      "state_abbr": "GA",
+      "year": 1995
+    },
+    {
+      "index_entry_id": "iccra_idx_30ab0c51b107d476",
+      "assertion_id": "iccra_65807745bc77ebd5",
+      "index_url": "https://iccra.org/bystate/Illinois/ICCRA_IL.htm",
+      "ordinal": 20,
+      "label": "Belleville, St. Clair County (July 29, 2006)",
+      "state_abbr": "IL",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_5f7d7ce19f57f185",
+      "assertion_id": "iccra_c1872990e562be20",
+      "index_url": "https://iccra.org/bystate/Illinois/ICCRA_IL.htm",
+      "ordinal": 21,
+      "label": "Geneseo, Henry County (August 17, 2006)",
+      "state_abbr": "IL",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_99b51a5a90a8d872",
+      "assertion_id": "iccra_13b115934e924827",
+      "index_url": "https://iccra.org/bystate/Illinois/ICCRA_IL.htm",
+      "ordinal": 22,
+      "label": "St. Clair County (*exact location withheld by ICCRA) (August 20, 2006)",
+      "state_abbr": "IL",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_2a14d9237036c17b",
+      "assertion_id": "iccra_09b17f954c31afbe",
+      "index_url": "https://iccra.org/bystate/Indiana/ICCRA_IN.htm",
+      "ordinal": 24,
+      "label": "Huntingburg, Dubois County (June 26, 2006)",
+      "state_abbr": "IN",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_171fe18c40327437",
+      "assertion_id": "iccra_0ab7e14deb038cbf",
+      "index_url": "https://iccra.org/bystate/Kansas/ICCRA_KS.htm",
+      "ordinal": 15,
+      "label": "Herington, Morris County (June 2, 2006) - Off site Report",
+      "state_abbr": "KS",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_8d39db503e323732",
+      "assertion_id": "iccra_f9295148ecd9a713",
+      "index_url": "https://iccra.org/bystate/Kansas/ICCRA_KS.htm",
+      "ordinal": 16,
+      "label": "Beloit, Mitchell County (September 10, 2006)",
+      "state_abbr": "KS",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_8ad265ad1e3bfa7e",
+      "assertion_id": "iccra_b040ae9afa648b3b",
+      "index_url": "https://iccra.org/bystate/Kansas/ICCRA_KS.htm",
+      "ordinal": 17,
+      "label": "Mission, Johnson County (May 21, 2007)",
+      "state_abbr": "KS",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_21ed8b60ca6365c4",
+      "assertion_id": "iccra_cbbf1dda73dc5da8",
+      "index_url": "https://iccra.org/bystate/Louisiana/ICCRA_LA.htm",
+      "ordinal": 4,
+      "label": "Epps, West Carroll County (May 10, 2007)",
+      "state_abbr": "LA",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_9f3fd6d8bb989b22",
+      "assertion_id": "iccra_be0d9999c3124293",
+      "index_url": "https://iccra.org/bystate/Maine/ICCRA_ME.htm",
+      "ordinal": 8,
+      "label": "Waldo County (December 26, 2005)",
+      "state_abbr": "ME",
+      "year": 2005
+    },
+    {
+      "index_entry_id": "iccra_idx_779e6254ea3dc09d",
+      "assertion_id": "iccra_d8cf55f5091006cf",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 20,
+      "label": "New Lothrop, Shiawassee County (June 28, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_3823f16fbeb339ed",
+      "assertion_id": "iccra_1ce45b9b45b1eb92",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 21,
+      "label": "Holt, Ingham County (June 28, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_4efcb098e422a961",
+      "assertion_id": "iccra_01821152e394ace6",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 22,
+      "label": "Hartland, Livingston County (June 28, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_961b76cb73ce3e27",
+      "assertion_id": "iccra_7f883ca48f49f41d",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 23,
+      "label": "Dowling, Barry County (August 5, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_8dd9860a87db1627",
+      "assertion_id": "iccra_c228f7abda096f5f",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 24,
+      "label": "Howell, Livingston County (October 14, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_41a17acad7dd1cdb",
+      "assertion_id": "iccra_b0e00cb0f707453a",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 25,
+      "label": "Amasa, Iron County (December, 2006)",
+      "state_abbr": "MI",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_e86ac8672a8d6e29",
+      "assertion_id": "iccra_9a5ae28a035e6b98",
+      "index_url": "https://iccra.org/bystate/Michigan/ICCRA_MI.htm",
+      "ordinal": 26,
+      "label": "New Haven Township, Shiawassee County (October 19, 2007)",
+      "state_abbr": "MI",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_012beb89fcef9681",
+      "assertion_id": "iccra_d9bc3d4704519b6b",
+      "index_url": "https://iccra.org/bystate/Nebraska/ICCRA_NE.htm",
+      "ordinal": 10,
+      "label": "Hoag, Gage County (September 7, 2006)",
+      "state_abbr": "NE",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_d79701e08540f52e",
+      "assertion_id": "iccra_9462d5172ae6f68d",
+      "index_url": "https://iccra.org/bystate/New%20Mexico/ICCRA_NM.htm",
+      "ordinal": 2,
+      "label": "(near Edgewood), Torrance County (July 14, 2008)",
+      "state_abbr": "NM",
+      "year": 2008
+    },
+    {
+      "index_entry_id": "iccra_idx_ca75a037c09099c5",
+      "assertion_id": "iccra_405ed52c5e4a8dd8",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 17,
+      "label": "Paulding / Jackson Township, Paulding County (July 4, 1996)",
+      "state_abbr": "OH",
+      "year": 1996
+    },
+    {
+      "index_entry_id": "iccra_idx_5b4801f6f45f100b",
+      "assertion_id": "iccra_514070effcfce20c",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 36,
+      "label": "Fairfax, Highland County (April 21, 2006)",
+      "state_abbr": "OH",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_f153a8df3f803707",
+      "assertion_id": "iccra_ed824751514e343a",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 37,
+      "label": "Eagle Township, Brown County (May 21, 2006)",
+      "state_abbr": "OH",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_b868e765284f397e",
+      "assertion_id": "iccra_ceb01a1ae2819301",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 38,
+      "label": "Newbury, Geauga County (July 7, 2006)",
+      "state_abbr": "OH",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_abd031a23cd32c70",
+      "assertion_id": "iccra_320fdd2524fc3e1d",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 39,
+      "label": "Sandyville, Tuscarawas County (July 22, 2006)",
+      "state_abbr": "OH",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_79582640684adf54",
+      "assertion_id": "iccra_5e585c5c633379fd",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 40,
+      "label": "Bucyrus, Crawford County (August 31, 2006)",
+      "state_abbr": "OH",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_8e7c86f7c3e46731",
+      "assertion_id": "iccra_c4597e47fad6f667",
+      "index_url": "https://iccra.org/bystate/Ohio/ICCRA_Ohio.htm",
+      "ordinal": 41,
+      "label": "Madisonburg, Wayne County (September 1, 2007)",
+      "state_abbr": "OH",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_71d7e30043f7b451",
+      "assertion_id": "iccra_2fd14c6a9a4fd76d",
+      "index_url": "https://iccra.org/bystate/Oregon/ICCRA_OR.htm",
+      "ordinal": 19,
+      "label": "Ashland, Jackson County (2007)",
+      "state_abbr": "OR",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_d5b600228c230584",
+      "assertion_id": "iccra_9e55ae44d5dfc6f6",
+      "index_url": "https://iccra.org/bystate/Pennsylvania/ICCRA_PA.html",
+      "ordinal": 21,
+      "label": "[Central PA, near Harrisburg] (*location withheld by BLT, Inc.) (October 28, 2006)",
+      "state_abbr": "PA",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_1438dea082c0e7d9",
+      "assertion_id": "iccra_3086c875657e2de3",
+      "index_url": "https://iccra.org/bystate/Tennessee/ICCRA_TN.htm",
+      "ordinal": 11,
+      "label": "[South-Central TN], (Fall 2006)",
+      "state_abbr": "TN",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_a074eef46007a5d4",
+      "assertion_id": "iccra_30a8c194ed997c46",
+      "index_url": "https://iccra.org/bystate/Texas/ICCRA_TX.htm",
+      "ordinal": 13,
+      "label": "Rio Hondo, Cameron County (September 7, 2006)",
+      "state_abbr": "TX",
+      "year": 2006
+    },
+    {
+      "index_entry_id": "iccra_idx_6f0558533e941855",
+      "assertion_id": "iccra_14c1f047da624267",
+      "index_url": "https://iccra.org/bystate/Washington/ICCRA_WA.htm",
+      "ordinal": 20,
+      "label": "Wilbur, Lincoln County (June 27, 2007)",
+      "state_abbr": "WA",
+      "year": 2007
+    },
+    {
+      "index_entry_id": "iccra_idx_870c6b800b642881",
+      "assertion_id": "iccra_405ed52c5e4a8dd8",
+      "index_url": "https://iccra.org/byyear/ICCRA_1996.html",
+      "ordinal": 10,
+      "label": "July 4, 1996 - Paulding / Jackson Township, Paulding County, OH",
+      "state_abbr": "OH",
+      "year": 1996
+    },
+    {
+      "index_entry_id": "iccra_idx_79666e564dcc2456",
+      "assertion_id": "iccra_4a2c6b170ced691c",
+      "index_url": "https://iccra.org/byyear/usaformations-byyear.htm",
+      "ordinal": 29500,
+      "label": "[ICCRA count-only formation; no listing or link] (1950)",
+      "state_abbr": "",
+      "year": 1950
+    }
+  ],
+  "report_coordinate_matches": [
+    {
+      "assertion_id": "iccra_09278c2f8bfe83d8",
+      "report_url": "https://iccra.org/reports/michigan_howell_7_29_2003.htm",
+      "latitude": "42.60066667",
+      "longitude": "-84.00066667"
+    },
+    {
+      "assertion_id": "iccra_5f74cb1fb1dfed25",
+      "report_url": "https://iccra.org/reports/wisconsin_mayville_kekoskee_7_4_2003.htm",
+      "latitude": "43.53016667",
+      "longitude": "-88.5265"
+    }
+  ],
+  "artifacts": {
+    "assertions": "data/iccra_assertions_full.csv",
+    "index_entries": "data/iccra_index_entries_full.csv",
+    "snapshots": "data/iccra_snapshots_full.csv",
+    "images": "data/iccra_image_links.csv",
+    "reports": "data/iccra_report_links_full.csv"
+  }
+}

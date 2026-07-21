@@ -1,2 +1,1 @@
-asset_id,formation_id,source_url,local_path,sha256,rights_status,rights_holder,license,control_points_json,transform_rmse_m,reviewer,reviewed_at,notes
-
+asset_id,formation_id,source_url,local_path,sha256,rights_status,rights_holder,license,rights_proof,control_points_json,transform_rmse_m,reviewer,reviewed_at,notes

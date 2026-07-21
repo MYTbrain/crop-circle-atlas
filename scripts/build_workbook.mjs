@@ -13,6 +13,23 @@ const formationsCsv = await fs.readFile(path.join(dataDir, "formations.csv"), "u
 const assertionsCsv = await fs.readFile(path.join(dataDir, "source_assertions.csv"), "utf8");
 const summaryJson = JSON.parse(await fs.readFile(path.join(dataDir, "build_summary.json"), "utf8"));
 
+function columnName(number) {
+  let value = number;
+  let name = "";
+  while (value > 0) {
+    value -= 1;
+    name = String.fromCharCode(65 + (value % 26)) + name;
+    value = Math.floor(value / 26);
+  }
+  return name;
+}
+
+function csvShape(csv) {
+  const lines = csv.replace(/^\uFEFF/, "").trimEnd().split(/\r?\n/);
+  const columns = (lines[0] || "").split(",").length;
+  return { rows: lines.length, columns, endColumn: columnName(columns) };
+}
+
 const workbook = await Workbook.fromCSV(formationsCsv, { sheetName: "Formations" });
 await workbook.fromCSV(assertionsCsv, { sheetName: "Source Assertions" });
 const summary = workbook.worksheets.add("Summary");
@@ -20,40 +37,101 @@ const readme = workbook.worksheets.add("Read Me");
 const formations = workbook.worksheets.getItem("Formations");
 const assertions = workbook.worksheets.getItem("Source Assertions");
 
+const optionalSheetSpecs = [
+  ["straight_component_candidates.csv", "Straight Candidates", "StraightCandidatesTable"],
+  ["orientation_observations.csv", "Reviewed Orientations", "ReviewedOrientationsTable"],
+  ["image_assets.csv", "Image Assets", "ImageAssetsTable"],
+  ["alignment_hits.csv", "Alignment Hits", "AlignmentHitsTable"],
+  ["iccra_index_entries_full.csv", "ICCRA Index Entries", "IccraIndexEntriesTable"],
+  ["iccra_image_links.csv", "ICCRA Image Links", "IccraImageLinksTable"],
+  ["iccra_image_straight_candidates.csv", "ICCRA Image Straight Review", "IccraImageStraightCandidatesTable"],
+  ["orientation_evidence_review.csv", "Orientation Evidence", "OrientationEvidenceTable"],
+  ["source_expansion_assertions.csv", "Expansion Assertions", "ExpansionAssertionsTable"],
+  ["source_expansion_access.csv", "Expansion Access", "ExpansionAccessTable"],
+  ["source_expansion_crawl_manifest.csv", "Expansion Manifest", "ExpansionManifestTable"],
+  ["source_expansion_parse_exclusions.csv", "Expansion Exclusions", "ExpansionExclusionsTable"],
+];
+const optionalSheets = [];
+for (const [fileName, sheetName, tableName] of optionalSheetSpecs) {
+  const filePath = path.join(dataDir, fileName);
+  try {
+    const csv = await fs.readFile(filePath, "utf8");
+    const shape = csvShape(csv);
+    if (!shape.columns) continue;
+    await workbook.fromCSV(csv, { sheetName });
+    optionalSheets.push({ sheet: workbook.worksheets.getItem(sheetName), sheetName, tableName, shape });
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+}
+
 workbook.comments.setSelf({ displayName: "User" });
 
 const formationRows = summaryJson.formations + 1;
 const assertionRows = summaryJson.assertions.total + 1;
+const formationShape = csvShape(formationsCsv);
+const assertionShape = csvShape(assertionsCsv);
 const colors = { dark: "#0E2825", teal: "#2A9D8F", pale: "#DDF3EE", orange: "#F4A261", ink: "#18312D", muted: "#5E746F", white: "#FFFFFF" };
 
-for (const sheet of [formations, assertions, summary, readme]) sheet.showGridLines = false;
+for (const sheet of [formations, assertions, summary, readme, ...optionalSheets.map(item => item.sheet)]) sheet.showGridLines = false;
 
 formations.freezePanes.freezeRows(1);
 formations.freezePanes.freezeColumns(2);
-formations.getRange(`A1:Z1`).format = { fill: colors.dark, font: { bold: true, color: colors.white }, wrapText: true };
-formations.getRange(`A1:Z${formationRows}`).format.font = { name: "Aptos", size: 9, color: colors.ink };
-formations.getRange(`A1:Z1`).format.font = { name: "Aptos Display", size: 9, bold: true, color: colors.white };
+formations.getRange(`A1:${formationShape.endColumn}1`).format = { fill: colors.dark, font: { bold: true, color: colors.white }, wrapText: true };
+formations.getRange(`A1:${formationShape.endColumn}${formationRows}`).format.font = { name: "Aptos", size: 9, color: colors.ink };
+formations.getRange(`A1:${formationShape.endColumn}1`).format.font = { name: "Aptos Display", size: 9, bold: true, color: colors.white };
 formations.getRange(`D2:F${formationRows}`).format.numberFormat = "0";
 formations.getRange(`O2:P${formationRows}`).format.numberFormat = "0.00000";
 formations.getRange(`R2:S${formationRows}`).format.numberFormat = "0.00";
-formations.getRange("A:Z").format.columnWidth = 14;
+formations.getRange(`A:${formationShape.endColumn}`).format.columnWidth = 14;
 formations.getRange("A:A").format.columnWidth = 18;
 formations.getRange("B:B").format.columnWidth = 13;
 formations.getRange("G:I").format.columnWidth = 20;
 formations.getRange("K:N").format.columnWidth = 18;
 formations.getRange("V:X").format.columnWidth = 34;
-formations.tables.add(`A1:Z${formationRows}`, true, "FormationsTable").style = "TableStyleMedium2";
+formations.tables.add(`A1:${formationShape.endColumn}${formationRows}`, true, "FormationsTable").style = "TableStyleMedium2";
 
 assertions.freezePanes.freezeRows(1);
 assertions.freezePanes.freezeColumns(2);
-assertions.getRange(`A1:AB1`).format = { fill: "#334E68", font: { bold: true, color: colors.white }, wrapText: true };
-assertions.getRange(`A1:AB${assertionRows}`).format.font = { name: "Aptos", size: 9, color: colors.ink };
-assertions.getRange(`A1:AB1`).format.font = { name: "Aptos Display", size: 9, bold: true, color: colors.white };
-assertions.getRange("A:AB").format.columnWidth = 14;
+assertions.getRange(`A1:${assertionShape.endColumn}1`).format = { fill: "#334E68", font: { bold: true, color: colors.white }, wrapText: true };
+assertions.getRange(`A1:${assertionShape.endColumn}${assertionRows}`).format.font = { name: "Aptos", size: 9, color: colors.ink };
+assertions.getRange(`A1:${assertionShape.endColumn}1`).format.font = { name: "Aptos Display", size: 9, bold: true, color: colors.white };
+assertions.getRange(`A:${assertionShape.endColumn}`).format.columnWidth = 14;
 assertions.getRange("B:D").format.columnWidth = 28;
 assertions.getRange("O:R").format.columnWidth = 20;
-assertions.getRange("AB:AB").format.columnWidth = 34;
-assertions.tables.add(`A1:AB${assertionRows}`, true, "SourceAssertionsTable").style = "TableStyleMedium4";
+assertions.getRange(`${assertionShape.endColumn}:${assertionShape.endColumn}`).format.columnWidth = 34;
+assertions.tables.add(`A1:${assertionShape.endColumn}${assertionRows}`, true, "SourceAssertionsTable").style = "TableStyleMedium4";
+
+for (const { sheet, tableName, shape } of optionalSheets) {
+  sheet.freezePanes.freezeRows(1);
+  sheet.getRange(`A1:${shape.endColumn}1`).format = { fill: "#46675F", font: { name: "Aptos Display", size: 9, bold: true, color: colors.white }, wrapText: true };
+  sheet.getRange(`A1:${shape.endColumn}${shape.rows}`).format.font = { name: "Aptos", size: 9, color: colors.ink };
+  sheet.getRange(`A:${shape.endColumn}`).format.columnWidth = 16;
+  sheet.getRange(`${shape.endColumn}:${shape.endColumn}`).format.columnWidth = 32;
+  if (shape.rows > 1) sheet.tables.add(`A1:${shape.endColumn}${shape.rows}`, true, tableName).style = "TableStyleMedium2";
+}
+
+const optionalWidthPlans = {
+  "Reviewed Orientations": [["A:C",24],["D:I",18],["J:L",38]],
+  "Alignment Hits": [["A:B",22],["C:G",16],["H:P",23]],
+  "ICCRA Index Entries": [["A:B",24],["C:C",18],["D:D",38],["F:F",34],["J:K",40]],
+  "ICCRA Image Links": [["A:B",24],["C:E",38],["F:I",24]],
+  "ICCRA Image Straight Review": [["A:C",24],["D:F",38],["G:J",23]],
+  "Orientation Evidence": [["A:A",24],["B:D",38],["E:G",22],["H:K",34]],
+  "Expansion Assertions": [["A:B",24],["C:D",38],["E:G",18]],
+  "Expansion Access": [["A:B",24],["C:D",38],["E:F",22],["G:J",32],["K:L",20]],
+  "Expansion Manifest": [["A:A",16],["B:B",42],["C:F",20],["G:G",22],["H:H",36],["I:J",18],["K:L",42]],
+  "Expansion Exclusions": [["A:A",16],["B:D",42],["E:E",28]],
+};
+for (const [sheetName, plan] of Object.entries(optionalWidthPlans)) {
+  const item = optionalSheets.find(candidate => candidate.sheetName === sheetName);
+  if (!item) continue;
+  for (const [range, width] of plan) item.sheet.getRange(range).format.columnWidth = width;
+}
+const expansionManifestItem = optionalSheets.find(item => item.sheetName === "Expansion Manifest");
+if (expansionManifestItem) {
+  expansionManifestItem.sheet.getRange(`G2:G${expansionManifestItem.shape.rows}`).format.numberFormat = "yyyy-mm-dd hh:mm:ss";
+}
 
 summary.getRange("A1:F1").merge();
 summary.getRange("A1").values = [["Crop Circle Atlas - Research Catalog"]];
@@ -61,7 +139,8 @@ summary.getRange("A1:F1").format = { fill: colors.dark, font: { name: "Aptos Dis
 summary.getRange("A2:F2").merge();
 summary.getRange("A2").values = [["Provenance-first entities, approximate locality geocodes, and orientation-safe analysis"]];
 summary.getRange("A2:F2").format = { fill: colors.pale, font: { color: colors.ink, italic: true }, rowHeight: 24 };
-summary.getRange("A4:A10").values = [["Distinct formations"],["Source assertions"],["Mapped locality centroids"],["United States formations"],["Earliest report year"],["Latest report year"],["Countries represented"]];
+const reviewedOrientationSheet = optionalSheets.find(item => item.sheetName === "Reviewed Orientations");
+summary.getRange("A4:A16").values = [["Catalog entities (not proven distinct)"],["Source assertions"],["Mapped coordinates"],["United States catalog entities"],["Earliest report year"],["Latest report year"],["Countries represented"],["ICCRA assertions reconciled"],["Likely PDF straight-component entities"],["ICCRA source-image review candidates"],["Reviewed local orientation rows"],["ICCRA image references inventoried"],["Bounded source-expansion assertions"]];
 summary.getRange("B4").formulas = [[`=COUNTA('Formations'!$A$2:$A$${formationRows})`]];
 summary.getRange("B5").formulas = [[`=COUNTA('Source Assertions'!$A$2:$A$${assertionRows})`]];
 summary.getRange("B6").formulas = [[`=COUNT('Formations'!$O$2:$O$${formationRows})`]];
@@ -69,9 +148,15 @@ summary.getRange("B7").formulas = [[`=COUNTIF('Formations'!$J$2:$J$${formationRo
 summary.getRange("B8").formulas = [[`=MIN('Formations'!$D$2:$D$${formationRows})`]];
 summary.getRange("B9").formulas = [[`=MAX('Formations'!$D$2:$D$${formationRows})`]];
 summary.getRange("B10").values = [[summaryJson.countries]];
-summary.getRange("A4:B10").format = { fill: "#F5FAF8", borders: { preset: "inside", style: "thin", color: "#CCE0DB" } };
-summary.getRange("A4:A10").format.font = { bold: true, color: colors.muted };
-summary.getRange("B4:B10").format = { fill: colors.pale, font: { bold: true, size: 14, color: colors.ink }, numberFormat: "#,##0" };
+summary.getRange("B11").values = [[summaryJson.assertions.iccra]];
+summary.getRange("B12").values = [[(summaryJson.straight_components?.high || 0) + (summaryJson.straight_components?.medium || 0)]];
+summary.getRange("B13").values = [[(summaryJson.iccra_image_straight_review?.review_candidate_high || 0) + (summaryJson.iccra_image_straight_review?.review_candidate_medium || 0)]];
+summary.getRange("B14").values = [[reviewedOrientationSheet ? Math.max(0, reviewedOrientationSheet.shape.rows - 1) : 0]];
+summary.getRange("B15").values = [[summaryJson.images?.iccra_image_references || 0]];
+summary.getRange("B16").values = [[summaryJson.assertions?.source_expansion || 0]];
+summary.getRange("A4:B16").format = { fill: "#F5FAF8", borders: { preset: "inside", style: "thin", color: "#CCE0DB" } };
+summary.getRange("A4:A16").format.font = { bold: true, color: colors.muted };
+summary.getRange("B4:B16").format = { fill: colors.pale, font: { bold: true, size: 14, color: colors.ink }, numberFormat: "#,##0" };
 
 summary.getRange("D4:E4").values = [["Country", "Formation count"]];
 const topCountries = summaryJson.top_countries.slice(0, 12);
@@ -83,39 +168,54 @@ summary.getRange("A19:F19").merge();
 summary.getRange("A19").values = [["Coordinate and orientation guardrails"]];
 summary.getRange("A19:F19").format = { fill: colors.orange, font: { bold: true, color: "#2B1A08" } };
 summary.getRange("A20:F23").merge(true);
-summary.getRange("A20:A23").values = [["Coordinates are GeoNames locality centroids, not field coordinates."],["A visible straight segment is not a geographic bearing."],["Projection rays require a reviewed true-north azimuth and uncertainty."],["Alignment hits are exploratory until tested against stratified null models."]];
+summary.getRange("A20:A23").values = [["Most coordinates are GeoNames locality centroids; inspect method and uncertainty before analysis."],["A visible straight segment is not a geographic bearing."],["A reviewed true-north azimuth qualifies the local orientation, not its long-distance extension."],["All projections and alignment hits are exploratory until tested against preregistered stratified null models."]];
 summary.getRange("A20:F23").format = { fill: "#FFF7ED", font: { color: "#5B3413" }, wrapText: true };
 summary.getRange("A:F").format.columnWidth = 18;
-summary.getRange("A:A").format.columnWidth = 28;
+summary.getRange("A:A").format.columnWidth = 42;
 summary.getRange("D:D").format.columnWidth = 22;
 summary.freezePanes.freezeRows(2);
 
 readme.getRange("A1:F1").merge();
 readme.getRange("A1").values = [["How to use this workbook"]];
 readme.getRange("A1:F1").format = { fill: colors.dark, font: { name: "Aptos Display", size: 18, bold: true, color: colors.white }, rowHeight: 32 };
-readme.getRange("A3:B10").values = [
+readme.getRange("A3:B23").values = [
   ["Sheet", "Purpose"],
   ["Summary", "Auditable overview; formula-linked to the catalog sheets."],
   ["Formations", "One row per derived formation entity. Filter by country, year, crop, and coordinate quality."],
   ["Source Assertions", "One row per statement from a source. Use this sheet to audit merges and discrepancies."],
+  ["Straight Candidates", "Automated diagram detections with confidence and diagram-space angles; these are not true-north bearings."],
+  ["Reviewed Orientations", "Documented local true-north bearings. Long-distance projections remain experimental and have no demonstrated predictive validity."],
+  ["Image Assets", "Rights and 4-12 point registration metadata for aerial-image overlays."],
+  ["Alignment Hits", "Centerline corridor intersections from experimental projections, with coordinate and bearing uncertainty eligibility."],
+  ["ICCRA Index Entries", "Every parsed ICCRA index occurrence and its reconciled assertion identity."],
+  ["ICCRA Image Links", "Rights-aware inventory of source-page images; cached pixels are not public workbook content."],
+  ["ICCRA Image Straight Review", "Metadata-only automated review queue for ICCRA source images. Axes are image-space only, unvalidated, and never true-north bearings."],
+  ["Orientation Evidence", "Reviewed source passages, including qualified bearings and explicit exclusions."],
+  ["Expansion Assertions", "Metadata-only event rows from the bounded public archive pass. New normalized keys are not automatically proven-new formations."],
+  ["Expansion Access", "Robots, rights, and explicit access boundaries for every evaluated expansion source."],
+  ["Expansion Manifest", "One hashed row per bounded HTML or robots request; no image or membership/API requests."],
+  ["Expansion Exclusions", "Five Connector anchors excluded from assertion output with an explicit reason and preserved source text."],
   ["Coordinate method", "geonames_locality_centroid means approximate town/place coordinates, never an exact field."],
-  ["Images", "Third-party photos are linked at source and are not redistributed in this workbook."],
+  ["GeoNames attribution", "Locality coordinates use GeoNames under CC BY 4.0: https://www.geonames.org/"],
+  ["Images", "Third-party photos are linked at source and are not redistributed. Current public registered-overlay count: 0."],
   ["Directions", "Reviewed geographic bearings live in data/orientation_observations.csv in the repository."],
   ["Reproducibility", `Generated ${summaryJson.generated_at}; source PDF SHA-256 ${summaryJson.pdf.sha256}.`],
 ];
 readme.getRange("A3:B3").format = { fill: colors.teal, font: { bold: true, color: colors.white } };
-readme.getRange("A3:B10").format.borders = { preset: "inside", style: "thin", color: "#D5E5E1" };
-readme.getRange("A4:B10").format.wrapText = true;
+readme.getRange("A3:B23").format.borders = { preset: "inside", style: "thin", color: "#D5E5E1" };
+readme.getRange("A4:B23").format.wrapText = true;
 readme.getRange("A:A").format.columnWidth = 24;
 readme.getRange("B:B").format.columnWidth = 80;
-readme.getRange("4:10").format.rowHeight = 34;
+readme.getRange("4:23").format.rowHeight = 34;
 
 const summaryInspect = await workbook.inspect({ kind: "table", range: "Summary!A1:F23", include: "values,formulas", tableMaxRows: 25, tableMaxCols: 8 });
 console.log(summaryInspect.ndjson);
 const errors = await workbook.inspect({ kind: "match", searchTerm: "#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A", options: { useRegex: true, maxResults: 100 }, summary: "final formula error scan" });
 console.log(errors.ndjson);
 
-for (const [sheetName, range] of [["Summary","A1:F23"],["Formations","A1:M25"],["Source Assertions","A1:L25"],["Read Me","A1:F10"]]) {
+const renderRanges = [["Summary","A1:F23"],["Formations","A1:M25"],["Source Assertions","A1:L25"],["Read Me","A1:F23"]];
+for (const { sheetName, shape } of optionalSheets) renderRanges.push([sheetName, `A1:${columnName(Math.min(shape.columns, 12))}${Math.min(shape.rows, 25)}`]);
+for (const [sheetName, range] of renderRanges) {
   const preview = await workbook.render({ sheetName, range, scale: 1.2, format: "png" });
   await fs.writeFile(path.join(previewDir, `${sheetName.replaceAll(" ", "_")}.png`), new Uint8Array(await preview.arrayBuffer()));
 }

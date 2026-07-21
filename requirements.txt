@@ -1,0 +1,5 @@
+lxml==6.0.2
+numpy==2.3.5
+opencv-python-headless==4.13.0.92
+Pillow==12.2.0
+pypdf==6.10.0

@@ -10,7 +10,7 @@ h1 { font:700 32px/1.05 Georgia,serif; margin:0; letter-spacing:-.02em; }
 section { padding:20px 0; border-top:1px solid var(--line); }
 h2 { font-size:14px; margin:0 0 12px; letter-spacing:.02em; }
 .badge { color:#16100a; background:var(--accent); font-size:9px; text-transform:uppercase; padding:3px 6px; border-radius:10px; vertical-align:2px; margin-left:4px; }
-.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.stats { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
 .stats div { background:#132825; border:1px solid #284740; border-radius:10px; padding:10px; }
 .stats strong,.stats span { display:block; }.stats strong { font-size:18px; }.stats span { color:var(--muted); font-size:11px; }
 label { display:block; color:#cbd8d5; font-size:12px; margin:10px 0; }
@@ -21,10 +21,14 @@ input:focus,select:focus,button:focus { outline:2px solid #54d6c280; outline-off
 button { cursor:pointer; border-color:#c87e34; background:var(--accent); color:#16100a; font-weight:750; }
 button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:transparent; color:var(--ink); border-color:#46675f; }
 .notice { background:#10201e; border-left:3px solid var(--teal); border-radius:3px; color:#b9cbc6; padding:9px 10px; font-size:11px; }
+.results { margin-top:12px; color:#cbd8d5; font-size:12px; }
+.results summary { cursor:pointer; color:#86e2d3; }
+.results-list { max-height:260px; overflow:auto; margin-top:8px; padding-right:3px; }
+.result-item { display:block; margin:0 0 5px; padding:7px 8px; background:#101f1d; border-color:#36524c; color:var(--ink); text-align:left; font-size:11px; font-weight:600; }
 .muted { color:var(--muted); font-size:12px; }
 footer { color:var(--muted); font-size:11px; padding-top:4px; } a { color:#86e2d3; }
+.lab-link { display:block; width:100%; border:1px solid #46675f; border-radius:7px; padding:9px 10px; color:var(--ink); text-align:center; text-decoration:none; font-weight:700; }
 #map { height:100%; background:#091413; }
 .leaflet-popup-content-wrapper,.leaflet-popup-tip { background:#11211f; color:var(--ink); }
 .popup h3 { margin:0 0 5px; font-size:15px; }.popup p { margin:4px 0; }.popup button { margin-top:8px; padding:6px 8px; }
 @media (max-width:780px) { main { grid-template-columns:1fr; grid-template-rows:48% 52%; }.panel { grid-row:2; padding:18px; border-right:0; border-top:1px solid var(--line); }.panel header { display:none; } #map { grid-row:1; } }
-

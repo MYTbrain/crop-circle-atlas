@@ -1,0 +1,6 @@
+﻿source_id,source_url,source_record_url,source_listing_text,exclusion_reason
+connector,https://cropcircleconnector.com/2014/May2014.html,https://cropcircleconnector.com/2014/loosebottom/loosebottom2014a.html,"Loose Bottom, Nr Falmer, East Sussex, United Kingdom. Reported",no_usable_occurrence_date
+connector,https://cropcircleconnector.com/2015/June2015.html,https://cropcircleconnector.com/2015/Tierra/Tierra2015.html,Spain. Reported 25th June.,no_usable_locality
+connector,https://cropcircleconnector.com/2015/June2015.html,https://cropcircleconnector.com/2015/Strzelno/Strzelno2015a.html,. Reported 30th June.,no_usable_locality
+connector,https://cropcircleconnector.com/2016/May2016.html,https://cropcircleconnector.com/2016/Brandenbug/Brandenbug2016a.html,", Germany. Reported 15th May.",no_usable_locality
+connector,https://cropcircleconnector.com/2020/July2020.html,https://cropcircleconnector.com/2020/Kiskanizsa/Kiskanizsa2020a.html,Hungary. Reported 2nd July,no_usable_locality

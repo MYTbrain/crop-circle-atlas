@@ -16,12 +16,14 @@
         <p class="eyebrow">Open research workbench</p>
         <h1>Crop Circle Atlas</h1>
         <p class="lede">Reported formations, source lineage, image registration, and testable alignment hypotheses.</p>
+        <a class="lab-link" href="georef.html">Open four-point image registration lab</a>
       </header>
 
       <section class="stats" aria-label="Dataset summary">
         <div><strong id="visibleCount">—</strong><span>visible</span></div>
         <div><strong id="totalCount">—</strong><span>mapped</span></div>
-        <div><strong id="usCount">—</strong><span>US</span></div>
+        <div><strong id="usCount">—</strong><span>US mapped</span></div>
+        <div><strong id="straightCount">—</strong><span>line/axis review set</span></div>
       </section>
 
       <section>
@@ -35,7 +37,9 @@
         </div>
         <label>Country<select id="country"><option value="">All countries</option></select></label>
         <label class="check"><input id="usOnly" type="checkbox"> US reports only</label>
-        <p class="notice">Coordinates are approximate locality centroids, not field locations.</p>
+        <label class="check"><input id="straightOnly" type="checkbox"> PDF/source-image candidates or reviewed evidence only</label>
+        <p class="notice">Most coordinates are approximate locality centroids. A small number are source-reported field positions; inspect method and uncertainty before analysis.</p>
+        <details class="results"><summary>Keyboard-accessible visible results</summary><div id="resultsList" class="results-list" role="list"></div></details>
       </section>
 
       <section>
@@ -43,31 +47,33 @@
         <p id="selectedLabel" class="muted">Select a marker, then choose “Use in alignment lab.”</p>
         <div class="two-col">
           <label>True bearing (°)<input id="bearing" type="number" min="0" max="359.999" step="0.1" value="90"></label>
-          <label>Range (km)<input id="range" type="number" min="1" max="20000" value="500"></label>
+          <label>Bearing uncertainty (°)<input id="bearingUncertainty" type="number" min="0" max="90" step="0.1" placeholder="required for eligibility"></label>
         </div>
         <div class="two-col">
+          <label>Range (km)<input id="range" type="number" min="1" max="20000" value="500"></label>
           <label>Corridor (km)<input id="corridor" type="number" min="0.1" max="500" step="0.1" value="5"></label>
+        </div>
+        <div class="two-col">
           <label class="check bottom"><input id="bidirectional" type="checkbox" checked> both directions</label>
         </div>
         <button id="drawRay" disabled>Draw and test ray</button>
-        <button id="exportRay" class="secondary" disabled>Export selected ray as KML</button>
+        <button id="exportRay" class="secondary" disabled>Export unqualified hypothesis KML</button>
         <p id="hitSummary" class="notice">No ray drawn. Bearings must be tied to true north; a rotated diagram is not enough.</p>
       </section>
 
       <section>
-        <h2>Local image overlay</h2>
-        <p class="muted">Load a licensed image locally, then click its southwest and northeast corners on the map. The file never uploads.</p>
-        <input id="overlayFile" type="file" accept="image/*">
-        <label>Opacity<input id="overlayOpacity" type="range" min="0" max="1" step="0.05" value="0.65"></label>
-        <button id="clearOverlay" class="secondary">Clear overlay</button>
-        <p id="overlayStatus" class="notice">No image loaded.</p>
+        <h2>Perspective-correct image overlay</h2>
+        <p class="muted">Register a local aerial image with four or more ground-control points, correct rotation/skew/perspective, and measure a true-north component bearing. Your image stays in your browser; human evidence review is required before the local orientation enters the atlas, and any long-distance extension remains experimental.</p>
+        <p class="notice">Current public overlays: 0. ICCRA source-image publication rights have not been cleared, so the downloadable KMZ contains catalog points and experimental rays but no ICCRA aerial-image pixels.</p>
+        <button id="openGeoref" class="secondary" disabled>Register image for selected formation</button>
       </section>
 
-      <footer><a href="../exports/crop_circle_atlas.kmz">Download KMZ</a><span> · </span><a href="../docs/METHODOLOGY.md">Methodology</a></footer>
+      <footer><a href="downloads/crop_circle_atlas.kmz">Download KMZ</a><span> · </span><a href="methodology.html">Methodology</a><span> · </span><a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames CC BY 4.0</a></footer>
     </aside>
     <div id="map" aria-label="Interactive crop circle map"></div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="atlas-georef-integration.mjs"></script>
 </body>
 </html>
