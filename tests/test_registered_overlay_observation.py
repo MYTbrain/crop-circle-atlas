@@ -86,6 +86,27 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
         self.assertEqual(commons["source_evidence"]["sha256"], "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0")
         self.assertEqual(commons["projective_display_transform"]["independent_ground_checkpoint_count"], 0)
 
+        horhausen = observations["regobs_commons_horhausen_20090712_geometry_v1"]
+        self.assertEqual(
+            horhausen["classification"],
+            "provisional_documented_size_crop_geometry_rectification",
+        )
+        self.assertEqual(
+            horhausen["source_evidence"]["sha256"],
+            "3ad01ee7895475c756069090904e162b81860bf93e5efdb02c682ba81f94279c",
+        )
+        self.assertEqual(
+            horhausen["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            horhausen["formal_alignment_status"],
+            "excluded_pending_independent_ground_control",
+        )
+        self.assertIn("zero independent", horhausen["quality"]["limitations"])
+
 
 if __name__ == "__main__":
     unittest.main()

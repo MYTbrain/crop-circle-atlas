@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INPUT_PATH = ROOT / "data" / "provisional_image_scene_placements.json"
 COMMONS_DRAFT_PATH = ROOT / "data" / "commons_scene_placements_draft.json"
 COMMONS_SAME_FLIGHT_PATH = ROOT / "data" / "commons_same_flight_scene_placements.json"
+COMMONS_REVIEWED_GEOMETRY_PATH = ROOT / "data" / "commons_reviewed_geometry_placements.json"
 CATALOG_PATH = ROOT / "web" / "data" / "formation_images.json"
 OVERLAYS_PATH = ROOT / "web" / "data" / "registered_overlays.json"
 OBSERVATIONS_PATH = ROOT / "data" / "registered_overlay_observations.json"
@@ -204,6 +205,11 @@ def _commons_specs() -> list[dict]:
             COMMONS_SAME_FLIGHT_PATH.read_text(encoding="utf-8")
         )
         result.extend(same_flight.get("placements", []))
+    if COMMONS_REVIEWED_GEOMETRY_PATH.exists():
+        reviewed_geometry = json.loads(
+            COMMONS_REVIEWED_GEOMETRY_PATH.read_text(encoding="utf-8")
+        )
+        result.extend(reviewed_geometry.get("placements", []))
     return result
 
 

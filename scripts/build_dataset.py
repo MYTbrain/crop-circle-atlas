@@ -802,7 +802,10 @@ def apply_complete_source_image_counts(
             encoding="utf-8-sig", newline=""
         ) as handle:
             for row in csv.DictReader(handle):
-                if row.get("match_status", "").strip() != "exact_place_and_date":
+                if row.get("match_status", "").strip() not in {
+                    "exact_place_and_date",
+                    "reviewed_same_event_later_documentation",
+                }:
                     continue
                 formation_id = row.get("matched_formation_id", "").strip()
                 image_url = commons_by_id.get(

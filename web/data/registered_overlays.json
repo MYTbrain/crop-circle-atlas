@@ -1718,6 +1718,93 @@
           "pixels_packaged": false
         }
       }
+    },
+    {
+      "overlay_id": "commons-horhausen-20090712-aerial-crop-geometry",
+      "registration_observation_id": "regobs_commons_horhausen_20090712_geometry_v1",
+      "formation_id": "cc_07d6c67ff4d4",
+      "assertion_id": "commons_assertion_11c82705d56cd4b2",
+      "title": "Hörhausen 2009 open-license aerial crop-geometry placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Swiss_Crop_Circle_2009_Aerial_%283766687033%29.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Swiss_Crop_Circle_2009_Aerial_(3766687033).jpg",
+      "source_image_sha256": "3ad01ee7895475c756069090904e162b81860bf93e5efdb02c682ba81f94279c",
+      "corners": [
+        [
+          47.647548579663,
+          8.976464511113
+        ],
+        [
+          47.646407601783,
+          8.979332270272
+        ],
+        [
+          47.644948097521,
+          8.97702952351
+        ],
+        [
+          47.646538245419,
+          8.975784647999
+        ]
+      ],
+      "center": [
+        47.646504,
+        8.976892
+      ],
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Esri World Imagery plus Wikimedia Commons geotags",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "Same-event later documentation, two nearby open-license geotags, a documented 120 metre size, and field-row orientation constrain a useful display placement without claiming persistent-landmark validation.",
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "rights_status": "CC BY 2.0",
+      "rights_attribution": "Kecko / Wikimedia Commons, CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "embedding_allowed": true,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Provisional crop-geometry rectification, not an exact landmark georegistration. Event identity and field vicinity are well supported; the precise center, rotation, scale, and four projected corners remain uncertain and are excluded from alignment calculations.",
+      "notes": "The CC BY 2.0 aerial loads from Wikimedia Commons only after explicit user action. The related ground photograph is linked in the report image archive. This display placement cannot originate or validate an alignment ray.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_image_sha1": "58b16199e862593185361dc53372749ee859a3e9",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "3ad01ee7895475c756069090904e162b81860bf93e5efdb02c682ba81f94279c",
+        "corner_uncertainty_m": 140,
+        "documented_size_m": 120,
+        "source_geometry_control_pixels": [
+          [
+            650,
+            1146
+          ],
+          [
+            2104,
+            257
+          ],
+          [
+            2821,
+            906
+          ],
+          [
+            1830,
+            1984
+          ]
+        ],
+        "target_geometry_bearings_true_deg": [
+          310,
+          40,
+          130,
+          220
+        ],
+        "target_geometry_radius_m": 60,
+        "quality_gate": {
+          "independent_ground_checkpoint_count": 0,
+          "alignment_eligible": false,
+          "reason": "crop geometry and approximate geotags are not independent persistent ground control"
+        }
+      }
     }
   ]
 }

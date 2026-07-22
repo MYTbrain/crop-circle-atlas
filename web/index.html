@@ -8,7 +8,7 @@
   <meta name="description" content="A provenance-first map of reported crop formations and an experimental geographic alignment lab.">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=20260722.1">
+  <link rel="stylesheet" href="styles.css?v=20260722.2">
 </head>
 <body>
   <main>
@@ -97,10 +97,13 @@
 
       <footer><a href="downloads/crop_circle_atlas.kmz">Download KMZ</a><span> · </span><a href="methodology.html">Methodology</a><span> · </span><a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames CC BY 4.0</a></footer>
     </aside>
+    <div id="panelResizer" class="panel-resizer" role="separator" aria-label="Resize information panel" aria-orientation="vertical" aria-valuemin="300" aria-valuemax="960" aria-valuenow="370" tabindex="0">
+      <span aria-hidden="true"></span>
+    </div>
     <div id="map" aria-label="Interactive crop circle map"></div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script type="module" src="app.js?v=20260722.1"></script>
+  <script type="module" src="app.js?v=20260722.2"></script>
   <script type="module" src="atlas-georef-integration.mjs"></script>
 </body>
 </html>
