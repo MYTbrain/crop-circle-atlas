@@ -15,7 +15,21 @@
       "region": "Idaho",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/Teton2002.html",
       "match_basis": "Archive detail page names Teton, Idaho and the same report date.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/idahocropcirclebig.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/idahocropcirclebig.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/idahocropcirclebig.jpg",
+          "width": 600,
+          "height": 425,
+          "byte_count": 34643,
+          "sha256": "cf0b2672c0819d0533cd531ecab81df0901b0e5274b888e9ca793a793b8119ac",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:21.150Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_24e959df4a14",
@@ -25,7 +39,21 @@
       "region": "Illinois",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/Naperville2002a.html",
       "match_basis": "Archive detail page identifies the Molex property in Naperville and the same event date.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/naperville2002a.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/naperville2002a.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/naperville2002a.jpg",
+          "width": 310,
+          "height": 178,
+          "byte_count": 20104,
+          "sha256": "0b4a80100a95bc328afc00816ba2c6e1b74196cd5c02108410c2d2037c09c0d2",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:21.779Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_2152af98e2d7",
@@ -38,6 +66,28 @@
       "image_urls": [
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA%202003.JPG",
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA.JPG"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA%202003.JPG",
+          "width": 600,
+          "height": 431,
+          "byte_count": 53640,
+          "sha256": "0a967c8a8d2cb4fccaf88af0bc3852546217bcb868d5ae08441c17786a436240",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:22.712Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA.JPG",
+          "width": 600,
+          "height": 429,
+          "byte_count": 59335,
+          "sha256": "653d7bcb1bfa2e49b7eb00027d3d48e61a52dca4c5ea7320f712e6fb9ece3eee",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:23.623Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -51,6 +101,28 @@
       "image_urls": [
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Serpent%20Mound%20context%20%20near%20Brush%20Creek%20%20Peebles%20%20Ohio%20USA%202003.JPG",
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Serpent%20Mound%20CC%20soybeans%202003%20sent%20to%20Mark%20Fussell.JPG"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Serpent%20Mound%20context%20%20near%20Brush%20Creek%20%20Peebles%20%20Ohio%20USA%202003.JPG",
+          "width": 600,
+          "height": 431,
+          "byte_count": 70957,
+          "sha256": "ff9387251c50289017fd9e15f9872d9db3382c6c96b1af6fa6d664d9c26e3481",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:24.536Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Serpent%20Mound%20CC%20soybeans%202003%20sent%20to%20Mark%20Fussell.JPG",
+          "width": 600,
+          "height": 428,
+          "byte_count": 84819,
+          "sha256": "555dd03ef63db7127f4c0f6e2ff7448b52d2c7f0db0471d342a4d51703555671",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:25.461Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -65,6 +137,38 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20detail1.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20prime1.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20wideshot.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20detail1.jpg",
+          "width": 580,
+          "height": 384,
+          "byte_count": 61514,
+          "sha256": "02f993e53e9c643046e69fe06f0f3c36a54cc1969d73f2d3aff62806424b5b11",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:26.379Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20prime1.jpg",
+          "width": 287,
+          "height": 420,
+          "byte_count": 20202,
+          "sha256": "3ed7962aeed2dfc4c987e6a4a69e11f1b293663760447b121dcd94e3c6e3a0db",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:27.019Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20wideshot.jpg",
+          "width": 580,
+          "height": 415,
+          "byte_count": 47269,
+          "sha256": "17f692767e3f2339b3d6262ce52661ea1c0bef3a3df8ee5e510ed49b44dea6d6",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:27.950Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -75,7 +179,21 @@
       "region": "Arkansas",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/northamerica2003.html",
       "match_basis": "Archive caption names Knobel, Arkansas and the June 2003 event.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Knobel2003a.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Knobel2003a.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Knobel2003a.jpg",
+          "width": 500,
+          "height": 455,
+          "byte_count": 85726,
+          "sha256": "f92cedb8b7b3453d6fbd836464905008820c66a2482380c5dbbdca2fd1db1c1c",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:28.868Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_3fb745fb7416",
@@ -89,6 +207,38 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Corn%20%20Miamisburg%20Mound%20%20Miamisburg%20Ohio%20USA%202004.JPG",
         "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg4.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg2004a.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Corn%20%20Miamisburg%20Mound%20%20Miamisburg%20Ohio%20USA%202004.JPG",
+          "width": 600,
+          "height": 431,
+          "byte_count": 99486,
+          "sha256": "84ccefde66190069fdccd372ff7767ea99629474f4b68a7af63589e81d090204",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:29.785Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg4.jpg",
+          "width": 555,
+          "height": 337,
+          "byte_count": 139444,
+          "sha256": "a701cfed775ec937cd5540d8b41ff6db100324358d8655a66b05b97b2cc8fe6f",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:30.709Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg2004a.jpg",
+          "width": 400,
+          "height": 319,
+          "byte_count": 45650,
+          "sha256": "614e89ce44d3ab63d203d3add3d50a7ca27a604b8d1c49b8b82e6ac3957844ff",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:31.620Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -99,7 +249,21 @@
       "region": "Minnesota",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies Cottage Grove, Minnesota and the August 2004 report.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/CG-cropcircles_01.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/CG-cropcircles_01.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/CG-cropcircles_01.jpg",
+          "width": 200,
+          "height": 150,
+          "byte_count": 9158,
+          "sha256": "4fc975873e1507a10d57432a94d59a0310cc5a81fb5483db6eb6b5c3415c60aa",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:32.270Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_a20bb389770e",
@@ -109,7 +273,21 @@
       "region": "Wisconsin",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies Tilden near Chippewa Falls, Wisconsin.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/tildennews1.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/tildennews1.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/tildennews1.jpg",
+          "width": 250,
+          "height": 163,
+          "byte_count": 22655,
+          "sha256": "0b1519c5af0704beab9dde3aa7441c1a2ed5e965839cbe1fc4e9c2a49441c0fe",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:32.917Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_d47dd2c50510",
@@ -119,7 +297,21 @@
       "region": "Iowa",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies the Eagle Grove, Iowa event.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/IowaOne.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/IowaOne.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/IowaOne.jpg",
+          "width": 320,
+          "height": 240,
+          "byte_count": 38471,
+          "sha256": "25e3aaa3268571efdc33354d72d665440c21852c35c798ecd2d3a048cf7d9aff",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:33.847Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_ad68564a4282",
@@ -129,7 +321,21 @@
       "region": "California",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies Cordelia near Fairfield in Solano County.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Solano2004a.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Solano2004a.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Solano2004a.jpg",
+          "width": 500,
+          "height": 323,
+          "byte_count": 59156,
+          "sha256": "7ab3bd65ed60d3b1141fa44383c9cadb99a33fe80fca6a2dc6778e254b0b8283",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:34.772Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_c8e2401c7fbf",
@@ -139,7 +345,21 @@
       "region": "Utah",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies Spanish Fork, Utah and the June 2004 event.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/06_28_04_crop_circle.sized.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/06_28_04_crop_circle.sized.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/06_28_04_crop_circle.sized.jpg",
+          "width": 500,
+          "height": 330,
+          "byte_count": 33921,
+          "sha256": "a5ab7858e8a4b97cc049b942bb6d2599b1bcd7788dddb03d15bafee15c3e33e5",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:35.711Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_b1906f05d532",
@@ -149,7 +369,21 @@
       "region": "Arkansas",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
       "match_basis": "Archive caption identifies Peach Orchard, Arkansas and the May 2004 event.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Arkansas2004a.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Arkansas2004a.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Arkansas2004a.jpg",
+          "width": 600,
+          "height": 513,
+          "byte_count": 63040,
+          "sha256": "f787a3bf098189099d85e322e51744906de51a31254fe26011a521c45b8dd3d9",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:36.641Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_c3c841d2f230",
@@ -159,7 +393,21 @@
       "region": "Texas",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
       "match_basis": "Archive caption identifies the Port Arthur/Sabine Pass, Texas report.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Pt.-Arthur-11.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Pt.-Arthur-11.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Pt.-Arthur-11.jpg",
+          "width": 500,
+          "height": 333,
+          "byte_count": 66263,
+          "sha256": "1db8904162434bde24995cb3bc8e8abb392c43a8824af19085dd7aff5d5d0d67",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:37.565Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_289dd87e4b7c",
@@ -176,6 +424,68 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles%20Cty,%20IL%20aerial%20(8_21_05)1.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles1.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles2.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/rog8edit_sm%20copy4.jpg",
+          "width": 636,
+          "height": 430,
+          "byte_count": 380669,
+          "sha256": "6ff4363c1080696e496b945c80de98fa6fda4a978a1311bdfd903f7f6cadc949",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:39.330Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Node%20Damage1%20copy5.jpg",
+          "width": 630,
+          "height": 425,
+          "byte_count": 305036,
+          "sha256": "000333aac74cf33c3b4ba616388d3dce71d93df25862c569bb167812b4e253f2",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:40.815Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Node%20Damage%2026.jpg",
+          "width": 614,
+          "height": 461,
+          "byte_count": 357328,
+          "sha256": "3ecc26c7316e52a62e826fbbe9e74ab6bbe055e45a1e9d45c526b47477afb36a",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:42.279Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles%20Cty,%20IL%20aerial%20(8_21_05)1.jpg",
+          "width": 320,
+          "height": 212,
+          "byte_count": 17959,
+          "sha256": "b4d85bec50fcc4353fdbbf731e22e64d779db300d31fb67eaf266d5c279eb661",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:42.918Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles1.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 107352,
+          "sha256": "f9dd9cd9a95dc215b1f182c64a815fb751c1fb9c4434f42ec2f5cf3211ec812f",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:43.828Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles2.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 105038,
+          "sha256": "dafc3069d9b03f4065c395bb2a03efe4a7357e2c479f6fe59fef4ac45d6cb00a",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:44.751Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -193,6 +503,68 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDariel13.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/clip_image0028.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ND-aerial2.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDaerial11.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 59519,
+          "sha256": "688e3c09f5d0de3de049c78f2522f2761c3269e465ad56c64770033a8f6e75f9",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:45.391Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDlay2.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 114615,
+          "sha256": "c81bd1e59b2c6368b4ca981b7d526db493fb155584580f0ef439f9faeca81fcf",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:46.312Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/ND-centerswirl3.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 121579,
+          "sha256": "9c80dfbec8a9d8c71ab3e4a7acb34b3fb1b64ce34fd4e4fb292431f6624b56ff",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:47.227Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDariel13.jpg",
+          "width": 555,
+          "height": 416,
+          "byte_count": 38685,
+          "sha256": "d64549fe20f344422fe1355b5d17f4f7983555af81ae2d0661b9a512e665f9bd",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:47.866Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/clip_image0028.jpg",
+          "width": 214,
+          "height": 188,
+          "byte_count": 10173,
+          "sha256": "e99e11d5d94fa89f5b005c5715c8aef7b2592def8c893a5e3d6aeda07c6c0b87",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:48.489Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ND-aerial2.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 52938,
+          "sha256": "cedc1f845781cd49b80b5355c901d9bb0d5699d07ae45dcfb0687d26635decfc",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:49.135Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -203,7 +575,21 @@
       "region": "Colorado",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
       "match_basis": "Archive caption identifies the northern Colorado report; ambiguous neighboring images are intentionally excluded.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Colorado1.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Colorado1.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Colorado1.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 106006,
+          "sha256": "8cbff55e4b3a58a2e6993f4108d65c836d1655a8978655c3894cf21094ac97f4",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:50.042Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_a414d0cd9fcf",
@@ -213,7 +599,21 @@
       "region": "Kansas",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
       "match_basis": "Archive groups the photograph with the Beloit, Kansas September 2006 report.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/crop-circle-2.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/crop-circle-2.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/crop-circle-2.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 81918,
+          "sha256": "c97089f6dc61755921c5a5c858ac69706bab55d66dc34afebbba8f047ec401b5",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:50.681Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_74854ad00686",
@@ -227,6 +627,38 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-(8_16_06.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-farmer-Jim-Stah.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/DSC00423.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-(8_16_06.jpg",
+          "width": 409,
+          "height": 240,
+          "byte_count": 17824,
+          "sha256": "0b01249b7d513933e39e1994ec63fdbf6fde46aebf5086d9f38fe66a30d5eadf",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:51.314Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-farmer-Jim-Stah.jpg",
+          "width": 409,
+          "height": 273,
+          "byte_count": 40171,
+          "sha256": "b1c9811391deed1f78dfbfed968276038b56cebb7d74a575c2e3109645a1f817",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:51.955Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/DSC00423.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 57892,
+          "sha256": "19af2ca27630e0bc920ddae8683c9124144486d812734fa238469d7cf2ce2ceb",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:52.594Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -237,7 +669,21 @@
       "region": "Illinois",
       "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
       "match_basis": "Archive caption identifies the Belleville, Illinois aerial.",
-      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Belleville--IL-aerial-enhan.jpg"]
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Belleville--IL-aerial-enhan.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Belleville--IL-aerial-enhan.jpg",
+          "width": 500,
+          "height": 334,
+          "byte_count": 70765,
+          "sha256": "c6ba9d9edfdd884bde538b7eec1f84db1d35226612e5814dee408bf79316eec3",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:53.223Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
+      ]
     },
     {
       "formation_id": "cc_d77797cdea69",
@@ -254,6 +700,68 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-003.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-006.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-007.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Sandyville%20%20OH-7_22_06.jpg",
+          "width": 296,
+          "height": 197,
+          "byte_count": 13063,
+          "sha256": "51c06f39b18421fb5271c01b5349cd5c81a1b867f452565518eb3b017bd1628c",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:53.866Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-002.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 73254,
+          "sha256": "c9dbc35eb9803c1db16494cc1ec6f9ea005151dd82e75e27100ff10dcb8b36c9",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:54.509Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-001.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 74131,
+          "sha256": "aaf2dfb3208620ddc10703ce97713c5d7845514c2a896b2893f5d278a4b0f006",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:55.151Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-003.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 65411,
+          "sha256": "df2a2102f8378a00f444d82177c1635a2d61898b7449eec00a88dd5f7f30110c",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:56.105Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-006.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 83900,
+          "sha256": "40048f9ec29691c7faf76c201cca42801b06aba549081a03af763e621681f411",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:57.619Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-007.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 71542,
+          "sha256": "1a259eb99a5dfad51739a314dbb596c74047193ce10d45897485d1c7b307e12b",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:58.623Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -273,6 +781,88 @@
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot004.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot005.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Huntingburg--closeup-best-B.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/image00hun11.jpg",
+          "width": 414,
+          "height": 466,
+          "byte_count": 29638,
+          "sha256": "f1c75a57a7b462e774178b6223db272d7a05f7db8130f2425398bafd9a5fa344",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:07:59.640Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/image00hun22.jpg",
+          "width": 414,
+          "height": 466,
+          "byte_count": 15734,
+          "sha256": "d8ac1f827060e154b82bd7ba37d868bd07598534f478ce10aaf317cbf30c824f",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:03.154Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot001.jpg",
+          "width": 400,
+          "height": 300,
+          "byte_count": 15340,
+          "sha256": "502d669fae5093275c7c63571a076c9916960fe3df31d255cd8f377ae56aa26f",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:05.273Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot002.jpg",
+          "width": 397,
+          "height": 295,
+          "byte_count": 13942,
+          "sha256": "ab6365bbe0f289052cd4b81970387c66e1076f2338e4b374ce2e84ff60cb6d06",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:06.472Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot003.jpg",
+          "width": 397,
+          "height": 296,
+          "byte_count": 30925,
+          "sha256": "9374ab5b796b990caca285af7a612130c99ef2e1cacfa01e64f70b2265126ab2",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:08.536Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot004.jpg",
+          "width": 397,
+          "height": 296,
+          "byte_count": 20852,
+          "sha256": "8d3e93726349b7fd77857a78252d7d12020c1f18f0d9725cc2b4f094c9b2515e",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:10.078Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot005.jpg",
+          "width": 398,
+          "height": 298,
+          "byte_count": 13504,
+          "sha256": "8391c570566078db827d69a9b000b4a22eb482ecdb57c5739d98f62f19775542",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:11.496Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Huntingburg--closeup-best-B.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 84899,
+          "sha256": "49e7bfc00da4d18557cd953b64a9632f58aa92f97d4a66f50d9d5e3fbf5de4eb",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:12.483Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     },
     {
@@ -286,6 +876,28 @@
       "image_urls": [
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas%2C-6_06-2-circles.jpg",
         "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas-2006%2C-plant-heights2.jpg"
+      ],
+      "source_image_metadata": [
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas%2C-6_06-2-circles.jpg",
+          "width": 500,
+          "height": 375,
+          "byte_count": 97117,
+          "sha256": "d6b7e6c59134ca51bf913fb10476f1d608a6f234f5e74666ec9e0caf5ac79804",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:14.020Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        },
+        {
+          "url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas-2006%2C-plant-heights2.jpg",
+          "width": 500,
+          "height": 215,
+          "byte_count": 48683,
+          "sha256": "cf49feb06515753c2c72b1bbe7b3d8536558481431ecf147e84dd1d754f39f29",
+          "http_status": 200,
+          "retrieved_at": "2026-07-22T18:08:15.069Z",
+          "rights_status": "link_only_archive_images_not_redistributed"
+        }
       ]
     }
   ]

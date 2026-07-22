@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T13:47:06Z",
+  "generated_at": "2026-07-22T21:09:40Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -28,18 +28,18 @@
   },
   "geocoded": 4302,
   "site_resolutions": {
-    "reviewed_overrides": 20,
+    "reviewed_overrides": 23,
     "global_source_map_candidates": 384,
-    "combined_overrides": 404,
+    "combined_overrides": 407,
     "status_counts": {
-      "locality_reference": 3894,
+      "locality_reference": 3891,
       "unresolved": 3443,
-      "candidate_field": 398,
+      "candidate_field": 401,
       "registered_site": 6,
       "corroborated_field": 4
     },
-    "field_site_features": 408,
-    "locality_reference_features": 3894,
+    "field_site_features": 411,
+    "locality_reference_features": 3891,
     "unresolved_formations": 3443,
     "full_index_records": 7745,
     "location_work_queue_rows": 7745

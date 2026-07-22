@@ -1338,6 +1338,571 @@
       }
     },
     {
+      "observation_id": "regobs_naperville_2002_diehl_road_affine_v1",
+      "overlay_id": "naperville-2002-diehl-road-affine-scene-placement",
+      "classification": "provisional_three_control_affine_parking_field_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Illinois/images/naperville2002.png",
+        "page_url": "https://iccra.org/bystate/Illinois/ICCRA%20-%20IL%20-%20Naperville,%20Du%20Page%20County%20(July%2026,%202002).html",
+        "sha256": "a1d2dac98f9d44c92466650009ee47dd35a16d6a9c6ae08e9a8fb5eecf4bff0c",
+        "width_px": 310,
+        "height_px": 178,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          310,
+          178
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          41.8001875,
+          -88.129498388402
+        ],
+        "coordinate_uncertainty_m": 75,
+        "site_text": "The source report places the six-to-eight-acre soybean field off Diehl Road on Molex property and in the shadow of an apartment complex. The source photograph matches the surviving Iroquois Club building and north parking geometry, with corporate parking on the opposite side of the field.",
+        "reported_road": "Diehl Road",
+        "reported_property": "Molex property",
+        "reported_farmer": "Steve Berning",
+        "reported_field_area_acres": "6 to 8",
+        "reported_context": "apartment complex and corporate office buildings"
+      },
+      "landmark_controls": {
+        "control_model": "exact_three_point_affine",
+        "controls": [
+          {
+            "name": "Iroquois Club north parking boundary east end",
+            "source_xy": [
+              0,
+              67
+            ],
+            "wgs84_lat_lon": [
+              41.79925,
+              -88.12790625
+            ]
+          },
+          {
+            "name": "Iroquois Club north parking boundary west end",
+            "source_xy": [
+              309,
+              67
+            ],
+            "wgs84_lat_lon": [
+              41.79925,
+              -88.1305
+            ]
+          },
+          {
+            "name": "northern office parking corner",
+            "source_xy": [
+              215,
+              160
+            ],
+            "wgs84_lat_lon": [
+              41.8011875,
+              -88.1303125
+            ]
+          }
+        ],
+        "visual_matches": [
+          "Iroquois Club four-story apartment complex",
+          "apartment parking boundary",
+          "parking islands and tree row",
+          "opposite corporate parking",
+          "six-to-eight-acre field footprint"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            310,
+            0
+          ],
+          [
+            310,
+            178
+          ],
+          [
+            0,
+            178
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            41.797854166667,
+            -88.127472884478
+          ],
+          [
+            41.797854166667,
+            -88.130075028491
+          ],
+          [
+            41.8015625,
+            -88.131226357788
+          ],
+          [
+            41.8015625,
+            -88.128624213775
+          ]
+        ],
+        "basis": "Exact three-control affine display transform from the 310 by 178 source frame to the official Illinois 2005 Chicago Urban Area orthophoto. The controls are the two ends of the Iroquois Club north parking boundary and the northern office-parking corner visible at the opposite side of the field.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          310,
+          178
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            -1.343042071197411,
+            -1.0349027386296419,
+            1844.338483488186
+          ],
+          [
+            0.0,
+            -3.3333333333333326,
+            1223.3333333333333
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -88.139,
+          41.795,
+          -88.124,
+          41.8055
+        ],
+        "reference_export_size_px": [
+          2400,
+          1680
+        ],
+        "reference_service_url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_CUA_2005/ImageServer",
+        "reference_export_sha256": "ad57f1a34872f5ff0193611085566669e98e08dead386a2acd1dbdb6fae89a5e",
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          41.797854166667,
+          -88.127472884478
+        ],
+        [
+          41.797854166667,
+          -88.130075028491
+        ],
+        [
+          41.8015625,
+          -88.131226357788
+        ],
+        [
+          41.8015625,
+          -88.128624213775
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_three_control_affine_registration",
+        "limitations": "The low-resolution source is strongly oblique. All three controls solve the affine transform, leaving no independent residual or held-out checkpoint; building height and outer corners may retain perspective error."
+      }
+    },
+    {
+      "observation_id": "regobs_paint_creek_island_2003_projective_v1",
+      "overlay_id": "paint-creek-island-2003-projective-scene-placement",
+      "classification": "provisional_four_control_projective_island_field_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Ohio/images/paintcreekisland2003b.jpg",
+        "page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Paint%20Creek%20Island,%20Bainbridge,%20Ross%20County%20(September%2025,%202003).htm",
+        "sha256": "f23f9fd7c0e61be0aa99467c30a7927d58f067dd0d0e76adb690d0b20a58a06a",
+        "width_px": 275,
+        "height_px": 184,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          275,
+          184
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          39.237992769449,
+          -83.25067993951
+        ],
+        "coordinate_uncertainty_m": 100,
+        "site_text": "The investigation places the formation on a tree-surrounded island in Paint Creek, at least one-half mile from a road and less than two miles from Seip Earthworks. The wide 2003 aerial independently matches Bainbridge, the creek loop, the island, and the Seip vicinity; the display frame matches the four persistent island boundaries.",
+        "reported_landform": "island in Paint Creek surrounded by a wide band of trees",
+        "reported_nearest_road_distance": "at least one-half mile",
+        "reported_seip_distance": "less than two miles",
+        "reported_diameter_ft": 280,
+        "nps_seip_wgs84_lat_lon": [
+          39.242136111111,
+          -83.221105555556
+        ],
+        "companion_wide_aerial_sha256": "0a967c8a8d2cb4fccaf88af0bc3852546217bcb868d5ae08441c17786a436240"
+      },
+      "landmark_controls": {
+        "control_model": "exact_four_point_projective",
+        "controls": [
+          {
+            "name": "northeast island tree-line boundary",
+            "source_xy": [
+              77,
+              66
+            ],
+            "reference_export_xy": [
+              1115,
+              790
+            ],
+            "wgs84_lat_lon": [
+              39.240380289234,
+              -83.2481875
+            ]
+          },
+          {
+            "name": "northwest island creek-tree boundary",
+            "source_xy": [
+              195,
+              59
+            ],
+            "reference_export_xy": [
+              975,
+              790
+            ],
+            "wgs84_lat_lon": [
+              39.240380289234,
+              -83.2534375
+            ]
+          },
+          {
+            "name": "southwest island tree-line corner",
+            "source_xy": [
+              211,
+              129
+            ],
+            "reference_export_xy": [
+              970,
+              893
+            ],
+            "wgs84_lat_lon": [
+              39.236518478843,
+              -83.253625
+            ]
+          },
+          {
+            "name": "southeast island tree-line corner",
+            "source_xy": [
+              73,
+              132
+            ],
+            "reference_export_xy": [
+              1110,
+              890
+            ],
+            "wgs84_lat_lon": [
+              39.236630958757,
+              -83.248375
+            ]
+          }
+        ],
+        "visual_matches": [
+          "tree-ringed Paint Creek island",
+          "creek channel immediately northwest of the island",
+          "Bainbridge town edge in the companion wide aerial",
+          "Seip Earthworks vicinity in the companion wide aerial",
+          "persistent adjacent field boundaries"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            275,
+            0
+          ],
+          [
+            275,
+            184
+          ],
+          [
+            0,
+            184
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            39.246199453783,
+            -83.243226858559
+          ],
+          [
+            39.24425349399,
+            -83.257676182695
+          ],
+          [
+            39.234159595217,
+            -83.25537503365
+          ],
+          [
+            39.234402726127,
+            -83.24591314421
+          ]
+        ],
+        "basis": "Exact four-control projective display transform from the 275 by 184 ICCRA frame to the surviving Paint Creek island boundary. The controls are four non-collinear intersections of the persistent creek-side tree line and the enclosed field boundary.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          275,
+          184
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            -0.9150155215890178,
+            3.219587331567757,
+            1247.2837717704074
+          ],
+          [
+            0.576014169104055,
+            4.624452082410236,
+            634.7945683904097
+          ],
+          [
+            0.0005639777823341697,
+            0.0030697109388398524,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -83.29,
+          39.2,
+          -83.2,
+          39.27
+        ],
+        "reference_export_size_px": [
+          2400,
+          1867
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "17739b0ff47c9555a93b93b7daebd05ef9e0d542cd12e2f0678e6447e07aab10",
+        "control_count": 4,
+        "independent_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          39.246199453783,
+          -83.243226858559
+        ],
+        [
+          39.24425349399,
+          -83.257676182695
+        ],
+        [
+          39.234159595217,
+          -83.25537503365
+        ],
+        [
+          39.234402726127,
+          -83.24591314421
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_four_control_projective_registration",
+        "limitations": "All four controls participate in the exact projective solution, leaving no independent held-out ground checkpoint. Tree growth, river migration, low source resolution, and extrapolation near the outer frame limit corner precision."
+      }
+    },
+    {
+      "observation_id": "regobs_serpent_mound_locust_grove_2003_affine_v1",
+      "overlay_id": "serpent-mound-locust-grove-2003-affine-scene-placement",
+      "classification": "provisional_road_aligned_affine_field_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Ohio/images/locustgrove2003d.jpg",
+        "page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Locust%20Grove,%20Adams%20County%20(August%2024,%202003).htm",
+        "sha256": "47852cd5b193e54c1b714f40a77470765a0a6c0846fc28d26a85692d7f6f64ce",
+        "width_px": 274,
+        "height_px": 183,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          274,
+          183
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          39.02236,
+          -83.43575
+        ],
+        "coordinate_uncertainty_m": 100,
+        "site_text": "The formation was reported across from the Serpent Mound entrance on Ohio 73 and along Brush Creek. The ICCRA mapping slide shows the formation, road, creek, entrance, and mound in one frame; those controls resolve the field southwest of the entrance. The direct ICCRA aerial's visible road segment supports a provisional display fit in that field.",
+        "reported_road": "Ohio 73",
+        "reported_context": "across from the entrance of Serpent Mound",
+        "reported_waterway": "Brush Creek",
+        "reported_mound_distance": "less than 2,000 feet",
+        "reported_diameter_range_ft": "approximately 200 to 300 across the surviving reports",
+        "iccra_facts_pdf_sha256": "b1f5cc499172eda0098d1b7d1c5a482275fccea52698f98d5314e0095e39098f",
+        "companion_wide_aerial_sha256": "ff9387251c50289017fd9e15f9872d9db3382c6c96b1af6fa6d664d9c26e3481",
+        "contemporary_article_url": "https://www.maysville-online.com/news/5583/soybean-field-a-bit-too-popular-since-design-discovered"
+      },
+      "landmark_controls": {
+        "control_model": "two_road_points_plus_historical_mapping_anchor_affine",
+        "controls": [
+          {
+            "name": "Ohio 73 source-frame west road point",
+            "source_xy": [
+              150,
+              0
+            ],
+            "wgs84_lat_lon": [
+              39.023249328063,
+              -83.435396179546
+            ]
+          },
+          {
+            "name": "Ohio 73 source-frame east road point",
+            "source_xy": [
+              274,
+              50
+            ],
+            "wgs84_lat_lon": [
+              39.022845088034,
+              -83.434421207626
+            ]
+          },
+          {
+            "name": "formation center from ICCRA mapping aerial",
+            "source_xy": [
+              105,
+              110
+            ],
+            "wgs84_lat_lon": [
+              39.02236,
+              -83.43575
+            ]
+          }
+        ],
+        "visual_matches": [
+          "Ohio 73 road curvature and direction",
+          "field immediately southwest of the Serpent Mound entrance",
+          "Brush Creek crossing and tree corridor",
+          "ICCRA mapping-aerial formation position",
+          "direct formation-to-mound alignment shown in the ICCRA case PDF"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            274,
+            0
+          ],
+          [
+            274,
+            183
+          ],
+          [
+            0,
+            183
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            39.023249328063,
+            -83.436575581061
+          ],
+          [
+            39.023249328063,
+            -83.434421207626
+          ],
+          [
+            39.021769809558,
+            -83.434421207626
+          ],
+          [
+            39.021769809558,
+            -83.436575581061
+          ]
+        ],
+        "basis": "Road-aligned anisotropic affine display fit from the 274 by 183 ICCRA frame. The visible Ohio 73 segment is matched at two separated points, while the source-frame formation anchor is placed within the uniquely resolved field shown by the ICCRA mapping slide.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "manual_road_aligned_anisotropic_affine_scene_registration",
+        "source_frame_size_px": [
+          274,
+          183
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            0.3774084848174661,
+            0.0,
+            1124.3721090939473
+          ],
+          [
+            0.0,
+            0.3880704275952002,
+            804.0322529646675
+          ]
+        ],
+        "meters_per_source_pixel_xy": [
+          0.68,
+          0.9
+        ],
+        "reference_export_bbox_wgs84": [
+          -83.46,
+          39.005,
+          -83.41,
+          39.04
+        ],
+        "reference_export_size_px": [
+          2400,
+          1680
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "a20003e20c3aca247709af2f4a8568b432af0daa094c5e9ce6a132ad28433577",
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          39.023249328063,
+          -83.436575581061
+        ],
+        [
+          39.023249328063,
+          -83.434421207626
+        ],
+        [
+          39.021769809558,
+          -83.434421207626
+        ],
+        [
+          39.021769809558,
+          -83.436575581061
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_road_aligned_affine_registration",
+        "limitations": "The direct 274 by 183 frame is oblique and exposes only a short road segment. The formation anchor comes from the companion mapping aerial rather than a surveyed coordinate, the source reports disagree on overall diameter, and no independent held-out checkpoint validates scale or corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

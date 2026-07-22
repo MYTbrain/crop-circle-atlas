@@ -249,7 +249,10 @@ def validate_registered_overlay(root=ROOT):
             )
             assert projective_overlay["rights_attribution"]
         else:
-            assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
+            assert projective_overlay["source_photo_pixels"] in {
+                "remote_source_link_only",
+                "remote_source_on_explicit_user_action",
+            }
             assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
             assert projective_overlay["embedding_allowed"] is True
         assert projective_overlay["show_by_default"] is False
