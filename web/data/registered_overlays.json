@@ -878,6 +878,265 @@
       }
     },
     {
+      "overlay_id": "chesterton-windmill-2018-three-control-affine-scene-placement",
+      "registration_observation_id": "regobs_chesterton_windmill_2018_affine_v1",
+      "formation_id": "cc_a9e3e7e22ed9",
+      "assertion_id": "sx_connector_e5af573c0a4099b1",
+      "title": "Chesterton Windmill 2018 field placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/Chesterton/DJI_0034.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/Chesterton/Chesterton2018a.html",
+      "source_image_sha256": "d865d269d583f0810175815cb6110772f7a317a40052401ccaf7b2cfc5423c8d",
+      "corners": [
+        [
+          52.232527632751,
+          -1.491344827118
+        ],
+        [
+          52.231204774628,
+          -1.490292999878
+        ],
+        [
+          52.230963265381,
+          -1.491118854828
+        ],
+        [
+          52.232286123581,
+          -1.492170681915
+        ]
+      ],
+      "center": [
+        52.23209766,
+        -1.49151189
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_three_control_affine_windmill_field_registration",
+      "display_geometry_status": "four_corner_affine_windmill_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, OpenStreetMap Chesterton Windmill building geometry, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher map target identifies the formation center to 25 m, while the windmill building and its distinctive surrounding grass island persist in current imagery. Three non-collinear controls reproduce the source rotation, scale, and shear and place the complete near-nadir frame over the unique field.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Three-control affine field registration, not a survey georegistration. The unique field and source orientation are strongly supported; the footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          800,
+          306
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            0.5259135220268677,
+            -1.0795487749864692,
+            862.069152508593
+          ],
+          [
+            0.6614290589484046,
+            0.3156983040065101,
+            348.94689958474606
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.4935,
+          52.2302,
+          -1.4895,
+          52.2334
+        ],
+        "reference_export_size_px": [
+          1600,
+          1280
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ab1485684690a6e53a1b2528e7024e9e188b0a081fe8455909d7dfaff9a0c5b4",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "osm_windmill_way_id": 560090333
+      }
+    },
+    {
+      "overlay_id": "figsbury-ring-2016-four-control-projective-scene-placement",
+      "registration_observation_id": "regobs_figsbury_ring_2016_projective_v1",
+      "formation_id": "cc_d336da75d722",
+      "assertion_id": "sx_connector_11c7258898167fe1",
+      "title": "Figsbury Ring 2016 hillfort-aligned field placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/FigsburyRing/dji_0012_27886236953_o.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/FigsburyRing/FigsburyRing2016a.html",
+      "source_image_sha256": "78dc3128e84dcd066c8a1af3e1d92a6dea96b6cf1f5ec3705a47d9637ca8977e",
+      "corners": [
+        [
+          51.108227175095,
+          -1.736219498444
+        ],
+        [
+          51.110482824097,
+          -1.726352632141
+        ],
+        [
+          51.0994618573,
+          -1.731986998291
+        ],
+        [
+          51.100314035645,
+          -1.735115527649
+        ]
+      ],
+      "center": [
+        51.1012653,
+        -1.73390652
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "provisional_four_control_projective_hillfort_registration",
+      "display_geometry_status": "four_corner_projective_hillfort_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, the persistent Figsbury Ring earthwork, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The exact publisher map target identifies the formation center and the wide source aerial independently contains the complete persistent Figsbury Ring enclosure. Three distributed hillfort controls plus the formation anchor define a projective display fit; a held-out southern earthwork point provides an approximately 37 m residual check.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Four-control projective field registration, not a survey georegistration. The unique field and orientation are strongly supported; the full-frame footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          449
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            0.6599190925528349,
+            1.1738480165554261,
+            178.0501572292081
+          ],
+          [
+            -0.1845849978100323,
+            4.395485049526366,
+            27.482490851372038
+          ],
+          [
+            -0.0004923337053871538,
+            0.003217138971669606,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.738,
+          51.098,
+          -1.716,
+          51.1085
+        ],
+        "reference_export_size_px": [
+          2200,
+          1050
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "170d4456a85526b5e6775e39374aad71f96cdf42369c1e8a6815587b1b663570",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 37.04
+      }
+    },
+    {
+      "overlay_id": "yarnbury-castle-2018-four-control-projective-scene-placement",
+      "registration_observation_id": "regobs_yarnbury_castle_2018_projective_v1",
+      "formation_id": "cc_2d94a3a4b7c6",
+      "assertion_id": "sx_connector_e0b9d35b1c56512b",
+      "title": "Yarnbury Castle 2018 earthwork-aligned field placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/yarnburycastle/DJI_0016.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/yarnburycastle/yarnburycastle2018a.html",
+      "source_image_sha256": "06a27b607d6ac5fd56b9f469b26d59b478f081d28762cbf69e26764b4865f07f",
+      "corners": [
+        [
+          51.163078353628,
+          -1.960798766073
+        ],
+        [
+          51.166305638568,
+          -1.950592130025
+        ],
+        [
+          51.159940030416,
+          -1.942315071615
+        ],
+        [
+          51.157227144368,
+          -1.944816780599
+        ]
+      ],
+      "center": [
+        51.15930113,
+        -1.94419495
+      ],
+      "coordinate_uncertainty_m": 30,
+      "registration_status": "provisional_four_control_projective_castle_field_registration",
+      "display_geometry_status": "four_corner_projective_castle_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, the persistent Yarnbury Castle earthwork and A303, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The exact publisher map target identifies the formation center and the wide source aerial independently contains Yarnbury Castle and the A303. Three distributed earthwork controls plus the formation anchor define a projective display fit; a held-out southeastern earthwork point has an approximately 13 m residual and the transformed road follows the reference A303.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Four-control projective field registration, not a survey georegistration. The unique field, earthwork, and road orientation are strongly supported; the full-frame footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          1139
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            2.0989166231713936,
+            3.6128271168605015,
+            -335.85194281770214
+          ],
+          [
+            -0.545856677409102,
+            1.8269839477079097,
+            290.597561225006
+          ],
+          [
+            0.0006388714791955529,
+            0.001219375836985083,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.958,
+          51.156,
+          -1.938,
+          51.1655
+        ],
+        "reference_export_size_px": [
+          2400,
+          1140
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "aadc8cafe51c81fdef3cebca97a94e1a506bbcd5f2474daafb5342a90467f60d",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 13.22
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

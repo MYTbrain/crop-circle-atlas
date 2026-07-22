@@ -1903,6 +1903,637 @@
       }
     },
     {
+      "observation_id": "regobs_chesterton_windmill_2018_affine_v1",
+      "overlay_id": "chesterton-windmill-2018-three-control-affine-scene-placement",
+      "classification": "provisional_three_control_affine_windmill_field_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/Chesterton/DJI_0034.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/Chesterton/Chesterton2018a.html",
+        "sha256": "d865d269d583f0810175815cb6110772f7a317a40052401ccaf7b2cfc5423c8d",
+        "width_px": 800,
+        "height_px": 306,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          306
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          52.23209766,
+          -1.49151189
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher coordinate places the formation in the field immediately northwest of Chesterton Windmill. The near-nadir source frame contains the formation, the windmill, and the distinctive persistent grass island surrounding the monument in one scene.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          52.23209766,
+          -1.49151189
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=434825&y=259444&z=0&sv=52.232104,+-1.491507&st=7&mapp=map.srf&searchp=ids.srf",
+        "reported_landmark": "Chesterton Windmill",
+        "source_report_url": "https://cropcircleconnector.com/2018/Chesterton/Chesterton2018a.html"
+      },
+      "landmark_controls": {
+        "control_model": "exact_three_point_affine",
+        "controls": [
+          {
+            "name": "publisher-mapped formation center",
+            "source_xy": [
+              187,
+              153
+            ],
+            "wgs84_lat_lon": [
+              52.23209766,
+              -1.49151189
+            ]
+          },
+          {
+            "name": "Chesterton Windmill building centroid",
+            "source_xy": [
+              678,
+              185
+            ],
+            "wgs84_lat_lon": [
+              52.231260500183,
+              -1.490952695007
+            ]
+          },
+          {
+            "name": "northern windmill-island crop-boundary intersection",
+            "source_xy": [
+              499,
+              0
+            ],
+            "wgs84_lat_lon": [
+              52.2317025,
+              -1.49068875
+            ]
+          }
+        ],
+        "visual_matches": [
+          "Chesterton Windmill tower and sail hub",
+          "distinctive hooked grass island surrounding the windmill",
+          "formation field immediately northwest of the monument",
+          "persistent island and field-edge curvature",
+          "publisher coordinate at the formation center"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            306
+          ],
+          [
+            0,
+            306
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            52.232527632751,
+            -1.491344827118
+          ],
+          [
+            52.231204774628,
+            -1.490292999878
+          ],
+          [
+            52.230963265381,
+            -1.491118854828
+          ],
+          [
+            52.232286123581,
+            -1.492170681915
+          ]
+        ],
+        "basis": "Exact three-control affine display transform from the 800 by 306 source frame to an Esri World Imagery export. Controls are the publisher-mapped formation center, the persistent Chesterton Windmill building centroid, and the northern windmill-island crop-boundary intersection.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          800,
+          306
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            0.5259135220268677,
+            -1.0795487749864692,
+            862.069152508593
+          ],
+          [
+            0.6614290589484046,
+            0.3156983040065101,
+            348.94689958474606
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.4935,
+          52.2302,
+          -1.4895,
+          52.2334
+        ],
+        "reference_export_size_px": [
+          1600,
+          1280
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ab1485684690a6e53a1b2528e7024e9e188b0a081fe8455909d7dfaff9a0c5b4",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "osm_windmill_way_id": 560090333
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          52.232527632751,
+          -1.491344827118
+        ],
+        [
+          52.231204774628,
+          -1.490292999878
+        ],
+        [
+          52.230963265381,
+          -1.491118854828
+        ],
+        [
+          52.232286123581,
+          -1.492170681915
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_three_control_affine_registration",
+        "limitations": "All three controls participate in the exact affine solution, leaving no independent held-out checkpoint. Seasonal crop tracks differ between the 2018 source and current imagery, and the outer source-frame corners retain perspective and source-coordinate uncertainty."
+      }
+    },
+    {
+      "observation_id": "regobs_figsbury_ring_2016_projective_v1",
+      "overlay_id": "figsbury-ring-2016-four-control-projective-scene-placement",
+      "classification": "provisional_four_control_projective_hillfort_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2016/FigsburyRing/dji_0012_27886236953_o.jpg",
+        "page_url": "https://cropcircleconnector.com/2016/FigsburyRing/FigsburyRing2016a.html",
+        "sha256": "78dc3128e84dcd066c8a1af3e1d92a6dea96b6cf1f5ec3705a47d9637ca8977e",
+        "width_px": 800,
+        "height_px": 449,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          449
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.1012653,
+          -1.73390652
+        ],
+        "coordinate_uncertainty_m": 40,
+        "site_text": "The publisher coordinate places the formation in the arable field immediately southwest of Figsbury Ring. A wide source aerial contains the full formation and the complete persistent hillfort in one frame, uniquely resolving the field and scene orientation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.1012653,
+          -1.73390652
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=418728&y=133585&z=0&sv=51.101272,+-1.733895&st=7&mapp=map.srf&searchp=ids.srf",
+        "reported_landmark": "Figsbury Ring",
+        "source_report_url": "https://cropcircleconnector.com/2016/FigsburyRing/FigsburyRing2016a.html"
+      },
+      "landmark_controls": {
+        "control_model": "exact_four_point_projective_with_one_held_out_hillfort_checkpoint",
+        "controls": [
+          {
+            "name": "publisher-mapped formation center",
+            "source_xy": [
+              320,
+              310
+            ],
+            "reference_export_xy": [
+              409.3548,
+              723.47
+            ],
+            "wgs84_lat_lon": [
+              51.1012653,
+              -1.733906452
+            ]
+          },
+          {
+            "name": "Figsbury Ring northern outer earthwork",
+            "source_xy": [
+              430,
+              91
+            ],
+            "reference_export_xy": [
+              526,
+              322
+            ],
+            "wgs84_lat_lon": [
+              51.10528,
+              -1.73274
+            ]
+          },
+          {
+            "name": "Figsbury Ring eastern outer earthwork",
+            "source_xy": [
+              772,
+              147
+            ],
+            "reference_export_xy": [
+              787,
+              486
+            ],
+            "wgs84_lat_lon": [
+              51.10364,
+              -1.73013
+            ]
+          },
+          {
+            "name": "Figsbury Ring western outer earthwork",
+            "source_xy": [
+              13,
+              159
+            ],
+            "reference_export_xy": [
+              248,
+              481
+            ],
+            "wgs84_lat_lon": [
+              51.10369,
+              -1.73552
+            ]
+          }
+        ],
+        "held_out_checkpoints": [
+          {
+            "name": "Figsbury Ring southern outer earthwork",
+            "source_xy": [
+              525,
+              253
+            ],
+            "expected_reference_export_xy": [
+              550,
+              640
+            ],
+            "transformed_reference_export_xy": [
+              528.1336,
+              670.3049
+            ],
+            "residual_m": 37.04
+          }
+        ],
+        "visual_matches": [
+          "complete Figsbury Ring outer earthwork",
+          "hillfort interior and encircling track",
+          "formation field immediately southwest of the hillfort",
+          "tree-lined hillfort boundary",
+          "publisher coordinate at the formation center"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            449
+          ],
+          [
+            0,
+            449
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.108227175095,
+            -1.736219498444
+          ],
+          [
+            51.110482824097,
+            -1.726352632141
+          ],
+          [
+            51.0994618573,
+            -1.731986998291
+          ],
+          [
+            51.100314035645,
+            -1.735115527649
+          ]
+        ],
+        "basis": "Exact four-control projective display transform from the 800 by 449 source frame. The publisher-mapped formation center and three distributed points on the persistent Figsbury Ring earthwork constrain the field, rotation, perspective, and scale.",
+        "independent_ground_checkpoint_count": 1
+      },
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          449
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            0.6599190925528349,
+            1.1738480165554261,
+            178.0501572292081
+          ],
+          [
+            -0.1845849978100323,
+            4.395485049526366,
+            27.482490851372038
+          ],
+          [
+            -0.0004923337053871538,
+            0.003217138971669606,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.738,
+          51.098,
+          -1.716,
+          51.1085
+        ],
+        "reference_export_size_px": [
+          2200,
+          1050
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "170d4456a85526b5e6775e39374aad71f96cdf42369c1e8a6815587b1b663570",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 37.04
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.108227175095,
+          -1.736219498444
+        ],
+        [
+          51.110482824097,
+          -1.726352632141
+        ],
+        [
+          51.0994618573,
+          -1.731986998291
+        ],
+        [
+          51.100314035645,
+          -1.735115527649
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_four_control_projective_registration",
+        "limitations": "The source is oblique and the hillfort has real terrain relief, so one planar transform cannot eliminate parallax across the full frame. The controls were manually selected, the held-out earthwork checkpoint has a 37 m residual, and no surveyed ground control validates the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_yarnbury_castle_2018_projective_v1",
+      "overlay_id": "yarnbury-castle-2018-four-control-projective-scene-placement",
+      "classification": "provisional_four_control_projective_castle_field_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/yarnburycastle/DJI_0016.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/yarnburycastle/yarnburycastle2018a.html",
+        "sha256": "06a27b607d6ac5fd56b9f469b26d59b478f081d28762cbf69e26764b4865f07f",
+        "width_px": 800,
+        "height_px": 1139,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          1139
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.15930113,
+          -1.94419495
+        ],
+        "coordinate_uncertainty_m": 30,
+        "site_text": "The publisher coordinate places the formation in the arable field southeast of Yarnbury Castle and south of the A303. The selected source aerial contains the complete formation, A303, and the full persistent earthwork in one frame, uniquely resolving the field and orientation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.15930113,
+          -1.94419495
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=403999&y=140007&z=0&sv=51.159306,+-1.944194&st=7&mapp=map.srf&searchp=ids.srf",
+        "reported_landmark": "Yarnbury Castle",
+        "source_report_url": "https://cropcircleconnector.com/2018/yarnburycastle/yarnburycastle2018a.html"
+      },
+      "landmark_controls": {
+        "control_model": "exact_four_point_projective_with_one_held_out_earthwork_checkpoint",
+        "controls": [
+          {
+            "name": "publisher-mapped formation center",
+            "source_xy": [
+              430,
+              970
+            ],
+            "reference_export_xy": [
+              1656.606,
+              743.8644
+            ],
+            "wgs84_lat_lon": [
+              51.15930113,
+              -1.94419495
+            ]
+          },
+          {
+            "name": "Yarnbury Castle northwestern outer earthwork",
+            "source_xy": [
+              400,
+              20
+            ],
+            "reference_export_xy": [
+              450,
+              85
+            ],
+            "wgs84_lat_lon": [
+              51.164791666667,
+              -1.95425
+            ]
+          },
+          {
+            "name": "Yarnbury Castle northeastern outer earthwork",
+            "source_xy": [
+              760,
+              180
+            ],
+            "reference_export_xy": [
+              1120,
+              120
+            ],
+            "wgs84_lat_lon": [
+              51.1645,
+              -1.948666666667
+            ]
+          },
+          {
+            "name": "Yarnbury Castle southwestern outer earthwork",
+            "source_xy": [
+              40,
+              180
+            ],
+            "reference_export_xy": [
+              320,
+              480
+            ],
+            "wgs84_lat_lon": [
+              51.1615,
+              -1.955333333333
+            ]
+          }
+        ],
+        "held_out_checkpoints": [
+          {
+            "name": "Yarnbury Castle southeastern outer earthwork",
+            "source_xy": [
+              450,
+              410
+            ],
+            "expected_reference_export_xy": [
+              1190,
+              450
+            ],
+            "transformed_reference_export_xy": [
+              1169.2275,
+              444.2259
+            ],
+            "residual_m": 13.22
+          }
+        ],
+        "visual_matches": [
+          "complete Yarnbury Castle outer earthwork",
+          "distinctive southeastern entrance earthworks",
+          "A303 alignment between the earthwork and formation",
+          "formation field southeast of the hillfort",
+          "publisher coordinate at the formation center"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            1139
+          ],
+          [
+            0,
+            1139
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.163078353628,
+            -1.960798766073
+          ],
+          [
+            51.166305638568,
+            -1.950592130025
+          ],
+          [
+            51.159940030416,
+            -1.942315071615
+          ],
+          [
+            51.157227144368,
+            -1.944816780599
+          ]
+        ],
+        "basis": "Exact four-control projective display transform from the 800 by 1139 source frame. The publisher-mapped formation center and three distributed points on the persistent Yarnbury Castle earthwork constrain the unique field, scene rotation, perspective, and scale.",
+        "independent_ground_checkpoint_count": 1
+      },
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          1139
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            2.0989166231713936,
+            3.6128271168605015,
+            -335.85194281770214
+          ],
+          [
+            -0.545856677409102,
+            1.8269839477079097,
+            290.597561225006
+          ],
+          [
+            0.0006388714791955529,
+            0.001219375836985083,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.958,
+          51.156,
+          -1.938,
+          51.1655
+        ],
+        "reference_export_size_px": [
+          2400,
+          1140
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "aadc8cafe51c81fdef3cebca97a94e1a506bbcd5f2474daafb5342a90467f60d",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 13.22
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.163078353628,
+          -1.960798766073
+        ],
+        [
+          51.166305638568,
+          -1.950592130025
+        ],
+        [
+          51.159940030416,
+          -1.942315071615
+        ],
+        [
+          51.157227144368,
+          -1.944816780599
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_four_control_projective_registration",
+        "limitations": "The source is oblique and the earthwork has terrain relief, so a planar transform cannot eliminate all parallax across the frame. Controls were manually selected and no surveyed ground control validates the footprint corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

@@ -254,7 +254,19 @@ def validate_registered_overlay(root=ROOT):
                 "remote_source_on_explicit_user_action",
             }
             assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
-            assert projective_overlay["embedding_allowed"] is True
+            if projective_overlay["embedding_allowed"] is True:
+                assert (
+                    projective_overlay["source_photo_pixels"]
+                    == "remote_source_on_explicit_user_action"
+                    or projective_overlay["source_image_url"].startswith(
+                        "https://iccra.org/"
+                    )
+                )
+            else:
+                assert (
+                    projective_overlay["source_photo_pixels"]
+                    == "remote_source_link_only"
+                )
         assert projective_overlay["show_by_default"] is False
         left, top, right, bottom = source["pixel_boundary_extent_xy"]
         assert transform["source_frame_corners_xy"] == [

@@ -93,6 +93,102 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_003c3da5c31b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact 2018-06-23 publisher target, the earlier 2018-06-09 "
+            "formation coordinate visible in the same wide frame, the Hackpen White "
+            "Horse, and the road junction identify one candidate field. Tests across "
+            "the long oblique scene produced incompatible local and terrain transforms, "
+            "so no single defensible full-frame footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_5d5c33e3e3cf": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher map target, field shape, road, parking/access geometry, "
+            "wooded Danebury earthworks, and multiple wide aerials identify one "
+            "candidate field. Strong perspective and terrain parallax leave only the "
+            "formation anchor defensible; tested projective fits were unstable, so no "
+            "image footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_029cf09b5162": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Westbury map target and the road, escarpment, and White Horse "
+            "scene identify one candidate field. The wide source frames are strongly "
+            "oblique and the additional controls are compressed, near-collinear, or "
+            "affected by terrain parallax; the near-nadir frames contain no persistent "
+            "landmarks, so no image footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_70a65215ef96": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Stonehenge publisher target identifies one candidate field and "
+            "the wide source aerials show the A303 scene. The road segment lacks unique "
+            "distributed intersections in the source frame and the remaining views are "
+            "formation-tight; no defensible third affine or fourth projective control "
+            "was found, so no image footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_c125d1c37d59": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher map target and the persistent Cerne Abbas Giant, road, "
+            "and field pattern identify one candidate field. The surviving source "
+            "frames are strongly oblique or tightly cropped and do not expose three "
+            "defensible distributed affine controls or four projective controls, so "
+            "no image footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_ec30f3c01b4d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact publisher target and the Winchester Science Centre campus, "
+            "road junction, tree block, and surrounding fields identify one candidate "
+            "field. Elevated-roof parallax and nearly collinear controls make the "
+            "tested full-frame projective fits unstable, so no image footprint is "
+            "published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_30c270c0d791": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Oakvale source coordinate constrains a candidate field, but the only "
+            "surviving 273 by 204 source photograph is a tight ground view without "
+            "persistent surrounding landmarks. It is unsuitable for a defensible "
+            "image registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_8a68d8a0471b": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Aloha coordinate is minute-rounded with approximately 1.5 km "
+            "uncertainty, while the surviving aerial is tightly cropped around the "
+            "formation and exposes no persistent surrounding landmarks. No unique "
+            "field or defensible registration can be selected."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_db1599385db5": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Bedford report and map pin constrain the Sandpit Road / Mitchell Road "
+            "vicinity, but the linked archive consists of ground photographs and the "
+            "reported point leaves multiple adjacent fields plausible. No unique field "
+            "or image registration is published."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_72e3a77239de": {
         "processing_status": "clues_reviewed",
         "reason": (
