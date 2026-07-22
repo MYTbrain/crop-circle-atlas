@@ -8,6 +8,12 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 
 **Live atlas:** https://mytbrain.github.io/crop-circle-atlas/
 
+## Exact-field geolocator MVP
+
+The repository now includes a local, fail-closed exact-field research worker under `services/geolocator/` and an integrated reviewer at `web/geolocation-review.html`. It searches only bounded polygons, normalizes historical imagery metadata, generates physical tiles, ranks candidates, proposes SIFT/RANSAC registrations, validates independent checkpoints in metres, persists explicit human decisions, and generates rights-gated local KML/KMZ overlays. Machine output never mutates canonical atlas coordinates.
+
+Start with [setup](docs/GEOLOCATOR_SETUP.md), then read the [architecture](docs/GEOLOCATOR_ARCHITECTURE.md), [evidence rules](docs/GEOLOCATOR_EVIDENCE_RULES.md), [benchmark](docs/GEOLOCATOR_BENCHMARK.md), and [license audit](docs/GEOLOCATOR_LICENSES.md). The benchmark currently proves synthetic mathematics only; it does not establish real-world crop-circle geolocation effectiveness.
+
 ## Current build
 
 - 8,391 source assertions resolved into 7,745 conservative catalog entities

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Exact-field Geolocation Reviewer | Crop Circle Atlas</title>
+  <meta name="description" content="Review bounded imagery searches and machine-proposed crop-circle image registrations without promoting locality centroids.">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="geolocation-review.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">Crop Circle Atlas · local research worker</p><h1>Exact-field geolocation reviewer</h1></div>
+    <p id="connectionStatus" class="connection offline">Local service not connected. The public atlas remains fully usable; processing and saved decisions require the localhost worker.</p>
+    <nav><a href="georef.html">Four-point lab</a><a href="index.html">Back to atlas</a></nav>
+  </header>
+
+  <main class="review-layout">
+    <aside class="review-panel" aria-label="Geolocation review controls">
+      <section>
+        <h2>1. Formation and job</h2>
+        <label>Local API URL<input id="apiUrl" value="http://127.0.0.1:8765" spellcheck="false"></label>
+        <button id="connectApi" type="button" class="quiet">Connect to local worker</button>
+        <label>Search the catalog<input id="formationSearch" placeholder="Whiskey Hill, Wavra, formation ID"></label>
+        <div id="formationResults" class="search-results" aria-live="polite"></div>
+        <label>Formation ID<input id="formationId" value="cc_e5724a3476de" spellcheck="false"></label>
+        <div class="button-row"><button id="loadFormation" type="button">Load report</button><button id="createJob" type="button" class="quiet">Create job</button></div>
+        <label>Existing job ID<input id="jobId" placeholder="frj_…" spellcheck="false"></label>
+        <button id="loadJob" type="button" class="quiet">Load job</button>
+        <div id="jobState" class="state-card">No job loaded.</div>
+      </section>
+
+      <section>
+        <h2>Report clues and assertions</h2>
+        <div id="formationContext" class="evidence-card">Select a formation to inspect its source lineage.</div>
+        <label>Structured clues (JSON)<textarea id="cluesJson" rows="6">[]</textarea></label>
+        <button id="saveClues" type="button" class="quiet">Save cited clues</button>
+      </section>
+
+      <section>
+        <h2>2. Bounded search area</h2>
+        <p class="help warning">This polygon is a <strong>locality search area</strong>, never the crop-formation field. Use the map view or supply reviewed GeoJSON.</p>
+        <label>Search polygon GeoJSON<textarea id="searchPolygon" rows="7"></textarea></label>
+        <div class="button-row"><button id="useMapBounds" type="button" class="quiet">Use map view</button><button id="saveSearchArea" type="button">Save area</button></div>
+        <label>Exclusion polygons (JSON)<textarea id="exclusionsJson" rows="3">[]</textarea></label>
+      </section>
+
+      <section>
+        <h2>3. Imagery and candidate tiles</h2>
+        <div class="two-col">
+          <label>Provider<select id="provider"><option value="local_raster">Local GeoTIFF/COG</option><option value="planetary_computer">Planetary Computer</option><option value="stac">Other STAC</option><option value="usgs_m2m">USGS M2M</option></select></label>
+          <label>Collection / dataset<input id="collection" placeholder="optional"></label>
+        </div>
+        <label>Raster folder or STAC endpoint<input id="providerLocation" placeholder="C:\imagery or https://…"></label>
+        <div class="two-col"><label>Start date<input id="dateStart" type="date"></label><label>End date<input id="dateEnd" type="date"></label></div>
+        <button id="searchImagery" type="button">Search bounded imagery</button>
+        <label>Reference imagery vintage<select id="imageryVintage"><option>No imagery loaded</option></select></label>
+        <div class="two-col"><label>Tile size (m)<input id="tileSize" type="number" min="64" max="5000" value="512"></label><label>Overlap<input id="tileOverlap" type="number" min="0" max="0.9" step="0.05" value="0.25"></label></div>
+        <button id="generateTiles" type="button" class="quiet">Generate selected-item tiles</button>
+        <label>Source image path for worker<input id="sourceImagePath" placeholder="Local path used by the Python worker"></label>
+        <label>Preview source image in this browser only<input id="sourceImageFile" type="file" accept="image/png,image/jpeg,image/webp"></label>
+        <div class="two-col"><label>Top K<input id="topK" type="number" min="1" max="50" value="20"></label><label>Overlay opacity<input id="overlayOpacity" type="range" min="0" max="1" step="0.05" value="0.7"></label></div>
+        <button id="rankTiles" type="button">Rank candidate tiles</button>
+      </section>
+
+      <section>
+        <h2>4. Registration evidence</h2>
+        <div id="candidateSheet" class="candidate-sheet"><p>No ranked candidates.</p></div>
+        <button id="matchCandidate" type="button">Match selected candidate</button>
+        <div class="metric-grid" id="registrationMetrics"><span>Controls —</span><span>Checkpoints —</span><span>Uncertainty —</span></div>
+        <details open><summary>Feature correspondences</summary><div id="correspondences" class="correspondences">No machine match loaded.</div></details>
+        <label>Editable homography<textarea id="homographyJson" rows="4" spellcheck="false">[]</textarea></label>
+        <label>Editable image corners<textarea id="cornerJson" rows="4" spellcheck="false">[]</textarea></label>
+        <label>Control points (JSON)<textarea id="controlsJson" rows="7">[]</textarea></label>
+        <label>Held-out checkpoints (JSON)<textarea id="checkpointsJson" rows="7">[]</textarea></label>
+        <div class="button-row"><button id="addCheckpoint" type="button" class="quiet">Add map checkpoint</button><button id="validateRegistration" type="button">Validate</button></div>
+        <p class="help">Control residuals and independent checkpoint errors are displayed separately. Fit residual is never presented as accuracy.</p>
+      </section>
+
+      <section>
+        <h2>5. Human decision</h2>
+        <div class="two-col"><label>Reviewer<input id="reviewer" autocomplete="name"></label><label>Decision<select id="decision"><option value="accepted">Accept</option><option value="downgraded">Downgrade</option><option value="rejected">Reject</option><option value="deferred">Defer</option><option value="unresolved">Unresolved</option></select></label></div>
+        <label>Spatial classification<select id="classification"><option value="candidate_field">Candidate field</option><option value="corroborated_field">Corroborated field</option><option value="registered_site">Registered site</option><option value="unresolved">Unresolved</option><option value="locality_reference">Locality reference</option></select></label>
+        <div class="two-col"><label>Compatible evidence types<input id="evidenceTypes" placeholder="photo registration, historical imagery"></label><label>Source coordinate method<input id="coordinateMethod" placeholder="required for registered site"></label></div>
+        <div class="two-col"><label>Coordinate uncertainty (m)<input id="uncertainty" type="number" min="0" step="0.1"></label><label>Rights status<select id="rightsStatus"><option value="local_analysis_only">Local analysis only</option><option value="public_domain">Public domain</option><option value="cc0">CC0</option><option value="cc_by">CC BY</option><option value="cc_by_sa">CC BY-SA</option><option value="permission_granted">Permission granted</option></select></label></div>
+        <label>Rights holder<input id="rightsHolder"></label><label>License identifier<input id="license"></label><label>License / permission proof<input id="rightsProof"></label>
+        <label><input id="derivativeAllowed" type="checkbox"> Public derivative explicitly allowed</label>
+        <label><input id="publicationEligible" type="checkbox"> Request publication eligibility (fails closed without rights)</label>
+        <label>Review notes<textarea id="reviewNotes" rows="4"></textarea></label>
+        <div class="button-row"><button id="saveReview" type="button">Save decision</button><button id="exportReview" type="button" class="quiet">Export review JSON</button></div>
+        <div class="button-row"><button id="generateKmz" type="button" class="quiet">Generate local KML/KMZ</button><button id="openKmz" type="button" class="quiet" disabled>Download KMZ</button></div>
+        <div id="rightsNotice" class="rights-notice">Local analysis only. No source photograph or derivative is publication-authorized.</div>
+      </section>
+    </aside>
+
+    <section class="review-workspace">
+      <div class="map-toolbar"><strong>Search, imagery, registration, and checkpoints</strong><span id="mapHint">Drag the divider to resize this panel. Map clicks can create held-out checkpoints.</span></div>
+      <div id="reviewMap" aria-label="Geolocation review map"></div>
+      <div class="inspection-drawer">
+        <figure><figcaption>Selected candidate tile</figcaption><img id="tilePreview" alt="Selected candidate tile preview"></figure>
+        <figure><figcaption>Source image (browser-local preview)</figcaption><img id="sourcePreview" alt="Source aerial image preview"></figure>
+        <div><h3>Review audit</h3><pre id="auditLog">Connect to begin. No canonical location has been changed.</pre></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script type="module" src="geolocation-review.mjs"></script>
+</body>
+</html>

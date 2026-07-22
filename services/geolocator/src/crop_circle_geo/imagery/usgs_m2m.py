@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import os
+import json
 from typing import Any, Protocol
+from urllib.request import Request, urlopen
 
 from ..provenance import canonical_json, sha256_bytes, stable_id, utc_now
 from .base import ImageryProvider
@@ -11,6 +13,24 @@ from .base import ImageryProvider
 
 class JsonTransport(Protocol):
     def post(self, path: str, payload: dict[str, Any], api_key: str | None = None) -> dict[str, Any]: ...
+
+
+class UsgsHttpTransport:
+    """Minimal standard-library transport; credentials never enter browser state."""
+
+    def __init__(self, endpoint: str = "https://m2m.cr.usgs.gov/api/api/json/stable"):
+        self.endpoint = endpoint.rstrip("/")
+
+    def post(self, path: str, payload: dict[str, Any], api_key: str | None = None) -> dict[str, Any]:
+        headers = {"Content-Type": "application/json", "Accept": "application/json"}
+        if api_key:
+            headers["X-Auth-Token"] = api_key
+        request = Request(
+            f"{self.endpoint}/{path.lstrip('/')}",
+            data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST",
+        )
+        with urlopen(request, timeout=60) as response:  # noqa: S310 - fixed HTTPS default, explicit overrides are operator-controlled
+            return json.loads(response.read().decode("utf-8"))
 
 
 class UsgsM2MProvider(ImageryProvider):

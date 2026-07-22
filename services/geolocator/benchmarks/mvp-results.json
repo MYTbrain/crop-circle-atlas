@@ -1,0 +1,64 @@
+{
+  "real_world_manifest": {
+    "case_count": 9,
+    "metadata_only_cases": 8,
+    "open_license_pixel_cases": 1,
+    "warning": "Manifest description is not a performance result; evaluator coordinates remain isolated."
+  },
+  "synthetic_result": {
+    "cache": {
+      "hit_rate": 0.5,
+      "hits": 9,
+      "misses": 9
+    },
+    "device": "cpu",
+    "false_acceptance_rate": "not_measured_no_negative_synthetic_cases",
+    "generated_at": "2026-07-22T15:49:05Z",
+    "imagery_items_searched": 1,
+    "performance_claim_eligible": false,
+    "processing_time_seconds": {
+      "fixture_generation": 0.105596,
+      "imagery_search": 0.01013,
+      "matching": 0.04751,
+      "retrieval": 0.037348,
+      "tile_generation": 0.169854
+    },
+    "registration": {
+      "center_error_m_at_1m_gsd": 0.042369,
+      "checkpoint_maximum_m_at_1m_gsd": 0.190322,
+      "checkpoint_median_m_at_1m_gsd": 0.121591,
+      "checkpoint_rmse_m_at_1m_gsd": 0.131853,
+      "footprint_corner_max_error_m_at_1m_gsd": 0.492662,
+      "footprint_corner_mean_error_m_at_1m_gsd": 0.327789,
+      "inlier_count": 117,
+      "inlier_ratio": 0.59390863,
+      "machine_status": "review_required",
+      "matcher": {
+        "name": "opencv_sift_ransac",
+        "version": "1.0.0"
+      }
+    },
+    "result_kind": "synthetic_positive_mathematics_only",
+    "retrieval": {
+      "correct_tile_rank": 1,
+      "top_10_recall": 1.0,
+      "top_1_recall": 1.0,
+      "top_50_recall": 1.0,
+      "top_5_recall": 1.0
+    },
+    "retriever": {
+      "name": "cpu_edge_gradient_descriptor",
+      "version": "1.0.0"
+    },
+    "schema_version": "crop-circle-atlas/geolocator-benchmark-result/v1",
+    "tiles_searched": 4,
+    "transformations": [
+      "projective",
+      "crop",
+      "blur",
+      "contrast_and_brightness_change"
+    ],
+    "unresolved_or_defer_rate": 0.0,
+    "warning": "Synthetic performance validates implementation mathematics only and is not evidence of real-world geolocation effectiveness."
+  }
+}

@@ -1,0 +1,25 @@
+services:
+  geolocator:
+    build:
+      context: .
+      dockerfile: services/geolocator/Dockerfile
+    environment:
+      CROP_CIRCLE_ATLAS_ROOT: /app
+      CROP_CIRCLE_GEO_CACHE: /cache
+      CROP_CIRCLE_GEO_API_HOST: 0.0.0.0
+      CROP_CIRCLE_GEO_API_PORT: 8765
+      CROP_CIRCLE_GEO_ALLOW_CONTAINER_BIND: "true"
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - geolocator-cache:/cache
+      - ./local-imagery:/imagery:ro
+    read_only: true
+    tmpfs:
+      - /tmp
+
+volumes:
+  geolocator-cache:
