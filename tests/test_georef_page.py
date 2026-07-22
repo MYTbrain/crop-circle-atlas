@@ -77,6 +77,7 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("Show rough locality references on map", html)
         self.assertIn("Load and zoom to registered image", html)
         self.assertIn("Mapped source-image overlays", html)
+        self.assertIn('id="overlayChoice"', html)
         self.assertIn("Source image archive", html)
         self.assertIn('id="sourceImageGallery"', html)
         self.assertIn('id="toggleSourceImages"', html)
@@ -96,6 +97,9 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("reviewed image placement", html)
         self.assertIn("only mean source photographs are available", html)
         self.assertIn("sitePointPane", javascript)
+        self.assertIn("padding: 0.5, tolerance: 7", javascript)
+        self.assertIn(">Open report details</button>", javascript)
+        self.assertIn("void selectFormation(records[0].formation_id)", javascript)
         self.assertIn("localityPointPane", javascript)
         self.assertIn("radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2'", javascript)
         self.assertIn("fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer", javascript)
@@ -106,16 +110,20 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
         self.assertIn("hollow dashed yellow markers are rough locality references", html)
-        self.assertIn('href="styles.css?v=20260721.9"', html)
-        self.assertIn('src="app.js?v=20260721.9"', html)
-        self.assertIn("registered_overlays.json?v=20260721.9", javascript)
-        self.assertIn("formation_images.json?v=20260721.9", javascript)
+        self.assertIn('href="styles.css?v=20260722.1"', html)
+        self.assertIn('src="app.js?v=20260722.1"', html)
+        self.assertIn("registered_overlays.json?v=20260722.1", javascript)
+        self.assertIn("formation_images.json?v=20260722.1", javascript)
         self.assertIn("LINK ONLY", javascript)
         self.assertIn("sourcePixelsMayDisplay", javascript)
         self.assertIn("overlayPixelsMayDisplay", javascript)
+        self.assertIn("function overlaysFor", javascript)
+        self.assertIn("function selectedOverlayRecord", javascript)
+        self.assertIn("records.length > 1 ? ` ×${records.length}`", javascript)
         self.assertIn("reviewed footprint; pixels rights-gated", html)
         self.assertIn("Mapped source-image overlays", html)
         self.assertIn("overlayRecords.length.toLocaleString()", javascript)
+        self.assertIn("mapped placements covering ${overlayRecords.length} reviewed frames", javascript)
         self.assertIn("activeOverlay?.remove()", javascript)
         self.assertIn("activeOverlayRecord = null", javascript)
         self.assertRegex(html, r'<input id="showLocalities" type="checkbox">')
@@ -132,6 +140,7 @@ class GeorefPageContractTests(unittest.TestCase):
             r"\.source-image-gallery\[hidden\]\s*\{\s*display\s*:\s*none\s*;\s*\}",
             "the author-level grid rule must not override the native hidden attribute",
         )
+        self.assertIn("#overlayChoiceLabel[hidden] { display:none; }", stylesheet)
 
     def test_source_photo_badge_coverage_uses_only_available_coordinates(self):
         index_payload = json.loads((ROOT / "web" / "data" / "formation_index.json").read_text(encoding="utf-8"))
@@ -153,6 +162,38 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertGreater(len(located_ids - overlay_ids), 0, "the PIC layer should contain coordinate-referenced reports")
         self.assertGreater(len(image_ids - located_ids), 0, "unlocated image reports must remain off-map")
         self.assertEqual(len(image_ids), len(located_ids) + len(image_ids - located_ids))
+
+    def test_same_flight_overlays_remain_provisional_and_alignment_excluded(self):
+        overlay_payload = json.loads(
+            (ROOT / "web" / "data" / "registered_overlays.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        transfers = [
+            record
+            for record in overlay_payload["overlays"]
+            if record["registration_status"]
+            == "provisional_same_flight_similarity_transfer"
+        ]
+        self.assertEqual(len(transfers), 8)
+        self.assertEqual(len({record["source_image_url"] for record in transfers}), 8)
+        self.assertTrue(all(record["embedding_allowed"] for record in transfers))
+        self.assertTrue(
+            all(
+                record["formal_alignment_status"]
+                == "excluded_pending_independent_ground_control"
+                for record in transfers
+            )
+        )
+        self.assertTrue(
+            all(
+                record["source_registration"]["quality_gate"][
+                    "independent_ground_checkpoint_count"
+                ]
+                == 0
+                for record in transfers
+            )
+        )
 
 
 if __name__ == "__main__":

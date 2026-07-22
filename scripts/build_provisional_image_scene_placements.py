@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_PATH = ROOT / "data" / "provisional_image_scene_placements.json"
 COMMONS_DRAFT_PATH = ROOT / "data" / "commons_scene_placements_draft.json"
+COMMONS_SAME_FLIGHT_PATH = ROOT / "data" / "commons_same_flight_scene_placements.json"
 CATALOG_PATH = ROOT / "web" / "data" / "formation_images.json"
 OVERLAYS_PATH = ROOT / "web" / "data" / "registered_overlays.json"
 OBSERVATIONS_PATH = ROOT / "data" / "registered_overlay_observations.json"
@@ -198,6 +199,11 @@ def _commons_specs() -> list[dict]:
                 },
             }
         )
+    if COMMONS_SAME_FLIGHT_PATH.exists():
+        same_flight = json.loads(
+            COMMONS_SAME_FLIGHT_PATH.read_text(encoding="utf-8")
+        )
+        result.extend(same_flight.get("placements", []))
     return result
 
 
@@ -411,12 +417,36 @@ def build(root: Path = ROOT) -> tuple[int, int]:
     observations_payload["observations"] = _replace_managed(
         observations_payload["observations"], generated_observations, "observation_id"
     )
+    catalog_payload = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    overlay_by_source = {
+        (overlay["formation_id"], overlay["source_image_url"]): overlay
+        for overlay in overlays_payload["overlays"]
+    }
+    mapped_catalog_images = 0
+    for formation_id, images in catalog_payload["images_by_formation"].items():
+        for image in images:
+            overlay = overlay_by_source.get((formation_id, image["image_url"]))
+            if overlay:
+                image["sha256"] = overlay["source_image_sha256"]
+                image["placement_status"] = "mapped_overlay"
+                image["overlay_id"] = overlay["overlay_id"]
+                image["registration_status"] = overlay["registration_status"]
+            if image.get("placement_status") == "mapped_overlay":
+                mapped_catalog_images += 1
+    catalog_payload["metadata"]["mapped_catalog_image_count"] = mapped_catalog_images
+    catalog_payload["metadata"]["overlay_placement_count"] = len(
+        overlays_payload["overlays"]
+    )
     OVERLAYS_PATH.write_text(
         json.dumps(overlays_payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
     OBSERVATIONS_PATH.write_text(
         json.dumps(observations_payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    CATALOG_PATH.write_text(
+        json.dumps(catalog_payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
     return len(generated_overlays), len(overlays_payload["overlays"])

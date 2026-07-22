@@ -1,0 +1,1110 @@
+{
+  "metadata": {
+    "schema_version": "crop-circle-atlas/commons-same-flight-placements/v1",
+    "reviewed_at": "2026-07-22",
+    "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+    "method": "same_flight_similarity_transfer_with_center_constraint",
+    "notice": "All placements are provisional display geometry, retain zero independent ground checkpoints, and are excluded from alignment analysis."
+  },
+  "placements": [
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164420",
+      "observation_id": "regobs_commons_diessenhofen_164420_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:44:20 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-20.JPG",
+      "source_image_sha256": "bc465b3071245cd6479a73a73244750faf9350710d52190177cd2aac410ef19e",
+      "anchor_pixel_xy": [
+        800,
+        800
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.687157816197,
+          8.725167810692
+        ],
+        [
+          47.688335042157,
+          8.721801938866
+        ],
+        [
+          47.69032471501,
+          8.723921401815
+        ],
+        [
+          47.688924333824,
+          8.727290227415
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:44:20",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (5 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (5 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "0be41653d0fc873a8d578f8ae6a5eae1dac658d6",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "bc465b3071245cd6479a73a73244750faf9350710d52190177cd2aac410ef19e",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 85,
+          "ransac_inlier_count": 5,
+          "ransac_inlier_fraction": 0.058824,
+          "source_roi_match_pixels": [
+            100,
+            250,
+            1700,
+            1250
+          ],
+          "parent_roi_match_pixels": [
+            430,
+            610,
+            1050,
+            1050
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              -0.234853299874,
+              0.107776133004,
+              938.248019946348
+            ],
+            [
+              -0.107776133004,
+              -0.234853299874,
+              1088.612447781819
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_acedd0a59403fee4",
+          "manual_center_original_pixels": [
+            800,
+            800
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.234853299874,
+              0.107776133004,
+              801.661733495964
+            ],
+            [
+              -0.107776133004,
+              -0.234853299874,
+              1104.103546301652
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164623",
+      "observation_id": "regobs_commons_diessenhofen_164623_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:46:23 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-23.JPG",
+      "source_image_sha256": "a9cfb69717b4a587ae700ac29a61cca2bc83dee72d1329af872b6ca486355405",
+      "anchor_pixel_xy": [
+        800,
+        1550
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.685257983692,
+          8.724327854874
+        ],
+        [
+          47.686118041432,
+          8.720209979549
+        ],
+        [
+          47.690229052867,
+          8.723823445493
+        ],
+        [
+          47.688905621949,
+          8.728129531193
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:46:23",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (27 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (27 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "d71e2ab55ee40918bbe2726581382600f79c9caa",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "a9cfb69717b4a587ae700ac29a61cca2bc83dee72d1329af872b6ca486355405",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 319,
+          "ransac_inlier_count": 27,
+          "ransac_inlier_fraction": 0.084639,
+          "source_roi_match_pixels": [
+            250,
+            1050,
+            1400,
+            2048
+          ],
+          "parent_roi_match_pixels": [
+            100,
+            250,
+            1700,
+            1250
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              1.582181380943,
+              0.16462462304,
+              -844.55829278969
+            ],
+            [
+              -0.16462462304,
+              1.582181380943,
+              -1627.657887508399
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_1dfd99f84c449652",
+          "manual_center_original_pixels": [
+            800,
+            1550
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.389323123581,
+              0.131858754987,
+              807.077428635324
+            ],
+            [
+              -0.131858754987,
+              -0.389323123581,
+              1538.937845540465
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164415",
+      "observation_id": "regobs_commons_diessenhofen_164415_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:44:15 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-15.JPG",
+      "source_image_sha256": "287e0df87a419907ea647bf65b66761ba9b2cdd284c03a6964ee7a43b7cb3ba1",
+      "anchor_pixel_xy": [
+        800,
+        900
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.686964470463,
+          8.725687403347
+        ],
+        [
+          47.687617947368,
+          8.721209009694
+        ],
+        [
+          47.690101301922,
+          8.722792472981
+        ],
+        [
+          47.689212947269,
+          8.72749558545
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:44:15",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (17 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (17 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "9a8d1c7e87e0a53788d43c4009c3d1e432957b45",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "287e0df87a419907ea647bf65b66761ba9b2cdd284c03a6964ee7a43b7cb3ba1",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 250,
+          "ransac_inlier_count": 17,
+          "ransac_inlier_fraction": 0.068,
+          "source_roi_match_pixels": [
+            150,
+            350,
+            1650,
+            1300
+          ],
+          "parent_roi_match_pixels": [
+            100,
+            250,
+            1700,
+            1250
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              1.137876791545,
+              0.27063117812,
+              -356.757402496436
+            ],
+            [
+              -0.27063117812,
+              1.137876791545,
+              -107.56374786712
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_1dfd99f84c449652",
+          "manual_center_original_pixels": [
+            800,
+            900
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.296401701192,
+              0.059077335197,
+              883.951759276023
+            ],
+            [
+              -0.059077335197,
+              -0.296401701192,
+              1144.023399230442
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164633",
+      "observation_id": "regobs_commons_diessenhofen_164633_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:46:33 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-33.JPG",
+      "source_image_sha256": "f64faa9a58e0bef9d8ad1d4f46beaffa2bd30b45a21bcc9f9ccf710d4cc7a7b9",
+      "anchor_pixel_xy": [
+        735,
+        1200
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.687547106992,
+          8.72262159075
+        ],
+        [
+          47.689392608192,
+          8.722882745017
+        ],
+        [
+          47.689600737261,
+          8.726819062646
+        ],
+        [
+          47.687790701205,
+          8.726309242076
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:46:33",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (5 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (5 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "a06b64597dabb8f601948c50ccb1a7e780b88c4b",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "f64faa9a58e0bef9d8ad1d4f46beaffa2bd30b45a21bcc9f9ccf710d4cc7a7b9",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 125,
+          "ransac_inlier_count": 5,
+          "ransac_inlier_fraction": 0.04,
+          "source_roi_match_pixels": [
+            50,
+            500,
+            1500,
+            1900
+          ],
+          "parent_roi_match_pixels": [
+            250,
+            1050,
+            1400,
+            2048
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              0.246399262109,
+              -0.493756803698,
+              1401.897741000593
+            ],
+            [
+              0.493756803698,
+              0.246399262109,
+              922.950847110829
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_fbcc84da2be5d83d",
+          "manual_center_original_pixels": [
+            735,
+            1200
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.03082277297,
+              0.224720841037,
+              452.989728889092
+            ],
+            [
+              -0.224720841037,
+              -0.03082277297,
+              1032.157145726354
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164435",
+      "observation_id": "regobs_commons_diessenhofen_164435_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:44:35 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-35.JPG",
+      "source_image_sha256": "00f9d15ef7ea3dca08747d96cd54525175edf5fe5b07564a4626334c25cee7e7",
+      "anchor_pixel_xy": [
+        700,
+        750
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.687673455826,
+          8.7239366095
+        ],
+        [
+          47.689117891324,
+          8.72370242616
+        ],
+        [
+          47.689738571691,
+          8.726967839295
+        ],
+        [
+          47.688268217091,
+          8.727014743228
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:44:35",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (21 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (21 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "97f788c4eeb76c722c641cc45cbd74adad6d6d90",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "00f9d15ef7ea3dca08747d96cd54525175edf5fe5b07564a4626334c25cee7e7",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 352,
+          "ransac_inlier_count": 21,
+          "ransac_inlier_fraction": 0.059659,
+          "source_roi_match_pixels": [
+            0,
+            100,
+            1536,
+            1600
+          ],
+          "parent_roi_match_pixels": [
+            50,
+            500,
+            1500,
+            1900
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              0.81167801307,
+              0.174667677349,
+              17.844782263023
+            ],
+            [
+              -0.174667677349,
+              0.81167801307,
+              780.038593053473
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_c92c8820e1e86db3",
+          "manual_center_original_pixels": [
+            700,
+            750
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.064269634478,
+              0.177017223584,
+              612.225826446402
+            ],
+            [
+              -0.177017223584,
+              -0.064269634478,
+              1002.114282366884
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164441",
+      "observation_id": "regobs_commons_diessenhofen_164441_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:44:41 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-41.JPG",
+      "source_image_sha256": "baa35db05a359902ea18d7adab6a084180cb349a0e8446e0dd37dc10ad31c523",
+      "anchor_pixel_xy": [
+        610,
+        450
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.688207725515,
+          8.723080606254
+        ],
+        [
+          47.689822279748,
+          8.725551475705
+        ],
+        [
+          47.688822255581,
+          8.726999569881
+        ],
+        [
+          47.687323544159,
+          8.72459818863
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:44:41",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (14 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (14 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "3131f653476751e5e492f638377c83c5c506e663",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "baa35db05a359902ea18d7adab6a084180cb349a0e8446e0dd37dc10ad31c523",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 174,
+          "ransac_inlier_count": 14,
+          "ransac_inlier_fraction": 0.08046,
+          "source_roi_match_pixels": [
+            20,
+            20,
+            1210,
+            940
+          ],
+          "parent_roi_match_pixels": [
+            50,
+            500,
+            1500,
+            1900
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              0.97781386866,
+              -0.925890751527,
+              648.788245918045
+            ],
+            [
+              0.925890751527,
+              0.97781386866,
+              381.510242523445
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_c92c8820e1e86db3",
+          "manual_center_original_pixels": [
+            610,
+            450
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              0.17792801351,
+              0.248273675372,
+              479.740757841218
+            ],
+            [
+              -0.248273675372,
+              0.17792801351,
+              901.379335897444
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164650",
+      "observation_id": "regobs_commons_diessenhofen_164650_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:46:50 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-50.JPG",
+      "source_image_sha256": "1dcb395f86783bc2c4a93d5f222768c14f07bb36817b1f64bedbf539fdf627ae",
+      "anchor_pixel_xy": [
+        820,
+        900
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.688387534808,
+          8.728764009935
+        ],
+        [
+          47.685619571497,
+          8.723183555673
+        ],
+        [
+          47.687657697113,
+          8.720281663712
+        ],
+        [
+          47.690922388913,
+          8.726379554255
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 90,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:46:50",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a constrained SIFT similarity transfer (6 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a constrained SIFT similarity transfer (6 RANSAC inliers on its final edge) from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "5f9afd0ec896fc4d1f9a8f18736b7201b263ac52",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "1dcb395f86783bc2c4a93d5f222768c14f07bb36817b1f64bedbf539fdf627ae",
+        "corner_uncertainty_m": 180,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 110,
+          "ransac_inlier_count": 6,
+          "ransac_inlier_fraction": 0.054545,
+          "source_roi_match_pixels": [
+            450,
+            600,
+            1250,
+            1250
+          ],
+          "parent_roi_match_pixels": [
+            50,
+            500,
+            1500,
+            1900
+          ],
+          "source_to_parent_original_pixel_matrix": [
+            [
+              -1.137904651734,
+              1.406693270673,
+              379.789007671953
+            ],
+            [
+              -1.406693270673,
+              -1.137904651734,
+              3761.485422175398
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "method": "sift_ransac_similarity_then_center_constraint",
+          "parent_image_id": "commons_img_c92c8820e1e86db3",
+          "manual_center_original_pixels": [
+            820,
+            900
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              -0.281039918124,
+              -0.299069077678,
+              1199.614902771972
+            ],
+            [
+              0.299069077678,
+              -0.281039918124,
+              837.699282615745
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164346",
+      "observation_id": "regobs_commons_diessenhofen_164346_transfer_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:43:46 same-flight aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Approaching_the_Crop_Circle_of_Diessenhofen_15.07.2008_16-43-46.JPG",
+      "source_image_sha256": "f049ad845ee81203c2d082d85b8715d041591c64a092e568e67c263b94a0bbb7",
+      "anchor_pixel_xy": [
+        800,
+        800
+      ],
+      "anchor_wgs84_lat_lon": [
+        47.6885338,
+        8.7249956
+      ],
+      "corners_wgs84": [
+        [
+          47.694104506826,
+          8.719237981544
+        ],
+        [
+          47.692607142251,
+          8.737182315549
+        ],
+        [
+          47.685208069117,
+          8.731596451505
+        ],
+        [
+          47.685093532582,
+          8.717503198675
+        ]
+      ],
+      "corner_basis": "Same-flight similarity transfer to the manually controlled Diessenhofen reference frame, constrained at the reviewed formation center; full-frame corners are extrapolated.",
+      "coordinate_uncertainty_m": 120,
+      "registration_status": "provisional_same_flight_similarity_transfer",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The frame depicts the same Diessenhofen formation and field during the same documented 2008-07-15 aerial sequence.",
+      "source_report_controls": {
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:43:46",
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Same-flight transfer to the accepted reference scene plus a manual formation-center constraint.",
+      "quality_status": "same_event_center_checked_display_warp_provisional",
+      "quality_limitations": "This same-flight frame uses a manually centered, same-scale scene transfer from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "quality_disclosure": "This same-flight frame uses a manually centered, same-scale scene transfer from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations.",
+      "notes": "Openly licensed source pixels load only after explicit user action. This placement is display-only.",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "source_distribution": "remote_open_license_link_not_packaged",
+      "source_registration": {
+        "kind": "same_flight_similarity_transfer_with_center_constraint",
+        "source_image_sha1": "31c4583f51f59d4be1f39aa1a61e8205c98b5645",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "f049ad845ee81203c2d082d85b8715d041591c64a092e568e67c263b94a0bbb7",
+        "corner_uncertainty_m": 240,
+        "reference_overlay_id": "commons-diessenhofen-20080715-164408",
+        "transfer": {
+          "candidate_match_count": 0,
+          "ransac_inlier_count": 0,
+          "ransac_inlier_fraction": 0.0,
+          "method": "manual_same_scale_center_constraint",
+          "parent_image_id": "commons_img_acedd0a59403fee4",
+          "manual_center_original_pixels": [
+            800,
+            800
+          ],
+          "center_constraint_reference_pixels": [
+            700,
+            830
+          ],
+          "support_to_reference_original_pixel_matrix": [
+            [
+              1.0,
+              0.0,
+              -100.0
+            ],
+            [
+              0.0,
+              1.0,
+              30.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "quality_gate": {
+          "formal_alignment_status": "excluded_pending_independent_ground_control",
+          "independent_ground_checkpoint_count": 0
+        },
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
+    }
+  ]
+}

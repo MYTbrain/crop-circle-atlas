@@ -416,7 +416,18 @@ commons_scene_specs = json.loads(
 commons_scene_ids = {
     item["overlay_id"].removesuffix("-draft") for item in commons_scene_specs
 }
-assert set(overlays_by_id) == core_overlay_ids | scene_placement_ids | commons_scene_ids
+commons_same_flight_specs = json.loads(
+    (ROOT / "data" / "commons_same_flight_scene_placements.json").read_text(
+        encoding="utf-8"
+    )
+)["placements"]
+commons_same_flight_ids = {
+    item["overlay_id"] for item in commons_same_flight_specs
+}
+assert set(overlays_by_id) == (
+    core_overlay_ids | scene_placement_ids | commons_scene_ids
+    | commons_same_flight_ids
+)
 assert len(registered_overlays["overlays"]) >= 9
 assert any(
     formation_by_id[item["formation_id"]]["country_code"] not in {"", "US"}
@@ -651,10 +662,10 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260721.9"' in web_index
-assert 'src="app.js?v=20260721.9"' in web_index
-assert "registered_overlays.json?v=20260721.9" in web_app
-assert "formation_images.json?v=20260721.9" in web_app
+assert 'href="styles.css?v=20260722.1"' in web_index
+assert 'src="app.js?v=20260722.1"' in web_index
+assert "registered_overlays.json?v=20260722.1" in web_app
+assert "formation_images.json?v=20260722.1" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
