@@ -217,9 +217,12 @@ def build_catalog() -> dict:
                 image, assertion_id, overlay, source_kind="commons"
             )
     for assertion in commons_assertions:
-        # Only an exact place-and-date relationship is published as formation-linked.
-        # Broader candidates remain in the research CSV and are not silently promoted.
-        if assertion.get("match_status") != "exact_place_and_date":
+        # Publish only exact event links or a separately reviewed later photograph of
+        # that event. Broader place/year candidates remain research-only.
+        if assertion.get("match_status") not in {
+            "exact_place_and_date",
+            "reviewed_same_event_later_documentation",
+        }:
             continue
         formation_id = assertion.get("matched_formation_id", "")
         image = commons_by_id.get(assertion.get("commons_image_id", ""))

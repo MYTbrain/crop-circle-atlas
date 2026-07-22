@@ -2886,6 +2886,148 @@
         "status": "same_event_center_checked_display_warp_provisional",
         "limitations": "This same-flight frame uses a manually centered, same-scale scene transfer from the reviewed Diessenhofen reference frame. The formation center was visually checked, but oblique parallax, extrapolated frame corners, and the absence of independent ground checkpoints make the display warp provisional and exclude it from alignment calculations."
       }
+    },
+    {
+      "observation_id": "regobs_commons_horhausen_20090712_geometry_v1",
+      "overlay_id": "commons-horhausen-20090712-aerial-crop-geometry",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Swiss_Crop_Circle_2009_Aerial_%283766687033%29.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Swiss_Crop_Circle_2009_Aerial_(3766687033).jpg",
+        "sha256": "3ad01ee7895475c756069090904e162b81860bf93e5efdb02c682ba81f94279c",
+        "width_px": 3501,
+        "height_px": 2334,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          3501,
+          2334
+        ],
+        "distribution": "remote_open_license_link_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          47.646504,
+          8.976892
+        ],
+        "coordinate_uncertainty_m": 90,
+        "site_text": "The 2009-07-27 aerial and 2009-07-25 ground photograph document the Hörhausen formation discovered on 2009-07-12. Their geotags constrain the same Tägermoos field vicinity; the later aerial states that the formation was 15 days old.",
+        "event_date": "2009-07-12",
+        "aerial_capture_date": "2009-07-27",
+        "ground_capture_date": "2009-07-25",
+        "aerial_geotag_wgs84_lat_lon": [
+          47.646504,
+          8.976892
+        ],
+        "ground_photo_geotag_wgs84_lat_lon": [
+          47.646135,
+          8.977482
+        ],
+        "documented_formation_size_m": 120,
+        "reported_place": "Tägermoos between Steckborn and Hörhausen, Thurgau, Switzerland"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            3501,
+            0
+          ],
+          [
+            3501,
+            2334
+          ],
+          [
+            0,
+            2334
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            47.647548579663,
+            8.976464511113
+          ],
+          [
+            47.646407601783,
+            8.979332270272
+          ],
+          [
+            47.644948097521,
+            8.97702952351
+          ],
+          [
+            47.646538245419,
+            8.975784647999
+          ]
+        ],
+        "basis": "Four crop-geometry extremities in the oblique aerial were rectified to the documented 120 metre formation envelope. The source-row direction was aligned to the approximately 130 degree true field-row direction visible in current reference imagery. Full-frame corners are extrapolated from that display transform.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_image_sha1": "58b16199e862593185361dc53372749ee859a3e9",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "source_image_sha256": "3ad01ee7895475c756069090904e162b81860bf93e5efdb02c682ba81f94279c",
+        "corner_uncertainty_m": 140,
+        "documented_size_m": 120,
+        "source_geometry_control_pixels": [
+          [
+            650,
+            1146
+          ],
+          [
+            2104,
+            257
+          ],
+          [
+            2821,
+            906
+          ],
+          [
+            1830,
+            1984
+          ]
+        ],
+        "target_geometry_bearings_true_deg": [
+          310,
+          40,
+          130,
+          220
+        ],
+        "target_geometry_radius_m": 60,
+        "quality_gate": {
+          "independent_ground_checkpoint_count": 0,
+          "alignment_eligible": false,
+          "reason": "crop geometry and approximate geotags are not independent persistent ground control"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          47.647548579663,
+          8.976464511113
+        ],
+        [
+          47.646407601783,
+          8.979332270272
+        ],
+        [
+          47.644948097521,
+          8.97702952351
+        ],
+        [
+          47.646538245419,
+          8.975784647999
+        ]
+      ],
+      "quality": {
+        "status": "same_event_geotag_and_size_constrained_display_rectification",
+        "limitations": "The source frame is oblique and close-cropped, the two geotags may represent photographer or camera positions rather than surveyed formation control, no 2009 orthophoto was available in the public workflow, and zero independent persistent-landmark checkpoints validate the projected corners."
+      }
     }
   ]
 }

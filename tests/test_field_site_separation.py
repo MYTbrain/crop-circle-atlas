@@ -146,6 +146,11 @@ class FieldSiteSeparationTests(unittest.TestCase):
         self.assertEqual(rows["cc_69ae8f9bae18"]["coordinate_method"], "same_field_source_statement")
         self.assertEqual(rows["cc_69ae8f9bae18"]["coordinate_uncertainty_m"], "200")
         self.assertEqual(rows["cc_80f4a64d3689"]["directly_visible"], "true")
+        swiss = rows["cc_07d6c67ff4d4"]
+        self.assertEqual(swiss["site_status"], "candidate_field")
+        self.assertEqual(swiss["coordinate_uncertainty_m"], "90")
+        self.assertEqual(swiss["alignment_eligible"], "false")
+        self.assertIn("no persistent-landmark checkpoint", swiss["notes"])
 
     def test_whiskey_cluster_aliases_and_alignment_eligibility_are_explicit(self):
         expected_aliases = "Whiskey Hill; Hubbard; Woodburn"

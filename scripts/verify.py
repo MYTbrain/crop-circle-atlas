@@ -71,16 +71,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4301, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4302, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
     "locality_reference": 3894,
-    "unresolved": 3444,
+    "unresolved": 3443,
     "corroborated_field": 4,
-    "candidate_field": 397,
+    "candidate_field": 398,
     "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 19
+assert summary["site_resolutions"]["reviewed_overrides"] == 20
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -219,7 +219,7 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 407
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 408
 assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3894
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
@@ -424,9 +424,17 @@ commons_same_flight_specs = json.loads(
 commons_same_flight_ids = {
     item["overlay_id"] for item in commons_same_flight_specs
 }
+commons_reviewed_geometry_specs = json.loads(
+    (ROOT / "data" / "commons_reviewed_geometry_placements.json").read_text(
+        encoding="utf-8"
+    )
+)["placements"]
+commons_reviewed_geometry_ids = {
+    item["overlay_id"] for item in commons_reviewed_geometry_specs
+}
 assert set(overlays_by_id) == (
     core_overlay_ids | scene_placement_ids | commons_scene_ids
-    | commons_same_flight_ids
+    | commons_same_flight_ids | commons_reviewed_geometry_ids
 )
 assert len(registered_overlays["overlays"]) >= 9
 assert any(
@@ -657,15 +665,15 @@ assert "Registered aerial-photo footprints" in web_app
 assert "renderSourceImageGallery" in web_app
 assert "sourceImagesByFormation" in web_app
 assert "sitePointPane" in web_app and "localityPointPane" in web_app
-assert "radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2'" in web_app
+assert "radius: 6, color: '#ffd84d', weight: 2.5, opacity: 1, dashArray: '3 2'" in web_app
 assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in web_app
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260722.1"' in web_index
-assert 'src="app.js?v=20260722.1"' in web_index
-assert "registered_overlays.json?v=20260722.1" in web_app
-assert "formation_images.json?v=20260722.1" in web_app
+assert 'href="styles.css?v=20260722.2"' in web_index
+assert 'src="app.js?v=20260722.2"' in web_index
+assert "registered_overlays.json?v=20260722.2" in web_app
+assert "formation_images.json?v=20260722.2" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app

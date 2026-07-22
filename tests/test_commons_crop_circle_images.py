@@ -73,7 +73,12 @@ class CommonsCropCircleImageTests(unittest.TestCase):
                 matched_image_ids.add(row["commons_image_id"])
                 self.assertIn(
                     row["match_method"],
-                    {"exact_place_and_date", "place_and_year_candidate", "coordinate_and_date_candidate"},
+                    {
+                        "exact_place_and_date",
+                        "place_and_year_candidate",
+                        "coordinate_and_date_candidate",
+                        "reviewed_same_event_later_documentation",
+                    },
                 )
             else:
                 self.assertEqual(row["match_status"], "no_defensible_existing_formation_match")

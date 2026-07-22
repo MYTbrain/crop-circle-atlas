@@ -8,16 +8,18 @@ map.getPane('registeredImageryPane').style.pointerEvents = 'none';
 map.createPane('localityPointPane');
 map.getPane('localityPointPane').style.zIndex = '420';
 map.createPane('sourcePhotoPane');
-map.getPane('sourcePhotoPane').style.zIndex = '438';
+map.getPane('sourcePhotoPane').style.zIndex = '510';
 map.createPane('overlayFootprintPane');
-map.getPane('overlayFootprintPane').style.zIndex = '445';
+map.getPane('overlayFootprintPane').style.zIndex = '520';
 map.createPane('rayPane');
 map.getPane('rayPane').style.zIndex = '460';
 map.getPane('rayPane').style.pointerEvents = 'none';
 map.createPane('sitePointPane');
 map.getPane('sitePointPane').style.zIndex = '480';
-const localityRenderer = L.canvas({ pane: 'localityPointPane', padding: 0.5 });
-const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 7 });
+const pointRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 12 });
+const localityRenderer = pointRenderer;
+const siteRenderer = pointRenderer;
+const overlayFootprintRenderer = L.svg({ pane: 'overlayFootprintPane', padding: 0.5 });
 L.control.zoom({ position: 'topright' }).addTo(map);
 
 const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -69,6 +71,66 @@ const renderedMarkersById = new Map();
 const overlayFootprintsByFormation = new Map();
 const provisionalByFormation = new Map();
 const sourceImagesByFormation = new Map();
+const PANEL_WIDTH_STORAGE_KEY = 'crop-circle-atlas:panel-width';
+const PANEL_MIN_WIDTH = 300;
+
+function maximumPanelWidth() {
+  return Math.max(PANEL_MIN_WIDTH, Math.min(960, Math.floor(window.innerWidth * 0.72)));
+}
+
+function setPanelWidth(width, persist = false) {
+  const value = Math.max(PANEL_MIN_WIDTH, Math.min(maximumPanelWidth(), Math.round(Number(width) || 370)));
+  document.documentElement.style.setProperty('--panel-width', `${value}px`);
+  $('panelResizer').setAttribute('aria-valuenow', String(value));
+  $('panelResizer').setAttribute('aria-valuemax', String(maximumPanelWidth()));
+  if (persist) localStorage.setItem(PANEL_WIDTH_STORAGE_KEY, String(value));
+  window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+  return value;
+}
+
+function initializePanelResizer() {
+  const resizer = $('panelResizer');
+  setPanelWidth(localStorage.getItem(PANEL_WIDTH_STORAGE_KEY) || 370);
+  let startX = 0;
+  let startWidth = 370;
+  let dragging = false;
+  const move = (event) => {
+    if (!dragging) return;
+    setPanelWidth(startWidth + event.clientX - startX);
+  };
+  const finish = (event) => {
+    if (!dragging) return;
+    dragging = false;
+    if (resizer.hasPointerCapture?.(event.pointerId)) resizer.releasePointerCapture(event.pointerId);
+    resizer.classList.remove('dragging');
+    document.body.classList.remove('resizing-panel');
+    setPanelWidth(document.querySelector('.panel').getBoundingClientRect().width, true);
+  };
+  resizer.addEventListener('pointerdown', (event) => {
+    startX = event.clientX;
+    startWidth = document.querySelector('.panel').getBoundingClientRect().width;
+    dragging = true;
+    try {
+      resizer.setPointerCapture?.(event.pointerId);
+    } catch {
+      // Window-level listeners below keep dragging functional when capture is unavailable.
+    }
+    resizer.classList.add('dragging');
+    document.body.classList.add('resizing-panel');
+    event.preventDefault();
+  });
+  window.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', finish);
+  window.addEventListener('pointercancel', finish);
+  resizer.addEventListener('keydown', (event) => {
+    const current = document.querySelector('.panel').getBoundingClientRect().width;
+    const widths = { ArrowLeft: current - 32, ArrowRight: current + 32, Home: PANEL_MIN_WIDTH, End: maximumPanelWidth() };
+    if (!(event.key in widths)) return;
+    event.preventDefault();
+    setPanelWidth(widths[event.key], true);
+  });
+  window.addEventListener('resize', () => setPanelWidth(document.querySelector('.panel').getBoundingClientRect().width));
+}
 
 const ACTUAL_SITE_STATUSES = new Set([
   'corroborated_field', 'registered_site', 'exact_source_gps',
@@ -352,7 +414,7 @@ function markerStyle(record, reference = false) {
     || ['high', 'medium'].includes(record.source_image_straight_tier);
   if (reference || role === 'locality_reference') {
     return {
-      radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2',
+      radius: 6, color: '#ffd84d', weight: 2.5, opacity: 1, dashArray: '3 2',
       fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer,
     };
   }
@@ -386,9 +448,7 @@ function renderFeatures(features, targetLayer, reference = false) {
     const [longitude, latitude] = feature.geometry.coordinates;
     const marker = L.circleMarker([latitude, longitude], markerStyle(records[0], reference));
     marker.bindPopup(popupFor(records), { maxWidth: 360 });
-    if (records.length === 1) {
-      marker.on('click', () => { void selectFormation(records[0].formation_id); });
-    }
+    marker.on('click', () => { void selectFormation(records[0].formation_id); });
     marker.addTo(targetLayer);
     records.forEach((record) => renderedMarkersById.set(record.formation_id, marker));
   }
@@ -449,23 +509,24 @@ function renderSourcePhotoAvailability(visibleIds = null) {
     records.sort((left, right) => String(left.date_iso).localeCompare(String(right.date_iso)));
     const imageCount = records.reduce((total, record) => total + sourceImagesFor(record.formation_id).length, 0);
     const label = records.length > 1 ? `PIC ${records.length}` : 'PIC';
+    const hitboxWidth = Math.max(44, label.length * 8 + 18);
     const marker = L.marker(coordinates, {
       pane: 'sourcePhotoPane',
       icon: L.divIcon({
         className: 'source-photo-marker',
-        html: `<span aria-hidden="true">${label}</span>`,
-        iconSize: [records.length > 1 ? 34 : 27, 18],
-        iconAnchor: [3, 22],
-        tooltipAnchor: [13, -18],
+        html: `<span aria-hidden="true">${label}</span><i class="source-photo-anchor-target" aria-hidden="true"></i>`,
+        iconSize: [hitboxWidth + 16, 48],
+        iconAnchor: [8, 40],
+        tooltipAnchor: [Math.round(hitboxWidth / 2), -28],
       }),
       title: `${records.length} report${records.length === 1 ? '' : 's'} with ${imageCount} linked source image${imageCount === 1 ? '' : 's'} — availability only`,
     });
+    marker.bindPopup(sourcePhotoChoicePopup(records), { maxWidth: 360 });
     if (records.length === 1) {
       const record = records[0];
       marker.bindTooltip(`${record.place || 'Report'}: ${imageCount} source image${imageCount === 1 ? '' : 's'} available — not a mapped placement`);
       marker.on('click', () => window.showSourceImagesForFormation(record.formation_id));
     } else {
-      marker.bindPopup(sourcePhotoChoicePopup(records), { maxWidth: 360 });
       marker.bindTooltip(`${records.length} reports with source images share this coordinate — click to choose`);
     }
     marker.addTo(sourcePhotoLayer);
@@ -655,6 +716,7 @@ function renderRegisteredFootprints(visibleIds = null) {
     const footprint = L.polygon(record.corners, {
       pane: 'overlayFootprintPane', color: '#ffe08a', weight: 3,
       opacity: 0.95, dashArray: '8 5', fillColor: '#f6ad55', fillOpacity: 0.12,
+      renderer: overlayFootprintRenderer,
     }).bindTooltip(`${record.title}${countLabel} — click to ${canDisplay ? 'browse the registered images' : 'inspect the reviewed footprint'}`);
     const center = Array.isArray(record.center) ? record.center : footprint.getBounds().getCenter();
     const marker = L.marker(center, {
@@ -898,6 +960,7 @@ window.showOverlayForFormation = async (id, overlayId = null) => {
   toggleSelectedOverlay();
 };
 
+initializePanelResizer();
 $('drawRay').addEventListener('click', drawRay);
 $('exportRay').addEventListener('click', exportRay);
 $('toggleOverlay').addEventListener('click', toggleSelectedOverlay);
@@ -998,8 +1061,8 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260722.1').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260722.1').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260722.2').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260722.2').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);

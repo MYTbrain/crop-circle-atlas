@@ -242,9 +242,12 @@ def validate_registered_overlay(root=ROOT):
         assert projective_overlay["source_image_sha256"] == source["sha256"]
         if "wikimedia.org" in projective_overlay["source_image_url"]:
             assert projective_overlay["source_photo_pixels"] == "remote_open_license_source_link_only"
-            assert projective_overlay["rights_status"] == "CC BY-SA 3.0"
+            assert projective_overlay["rights_status"] in {"CC BY-SA 3.0", "CC BY 2.0"}
             assert projective_overlay["embedding_allowed"] is True
-            assert projective_overlay["license_url"] == "https://creativecommons.org/licenses/by-sa/3.0"
+            assert projective_overlay["license_url"].startswith(
+                "https://creativecommons.org/licenses/by"
+            )
+            assert projective_overlay["rights_attribution"]
         else:
             assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
             assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
