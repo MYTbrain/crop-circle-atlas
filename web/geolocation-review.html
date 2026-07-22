@@ -8,7 +8,7 @@
   <meta name="description" content="Review bounded imagery searches and machine-proposed crop-circle image registrations without promoting locality centroids.">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="geolocation-review.css">
+  <link rel="stylesheet" href="geolocation-review.css?v=20260722.4">
 </head>
 <body>
   <header class="topbar">
@@ -23,6 +23,15 @@
         <h2>1. Formation and job</h2>
         <label>Local API URL<input id="apiUrl" value="http://127.0.0.1:8765" spellcheck="false"></label>
         <button id="connectApi" type="button" class="quiet">Connect to local worker</button>
+        <div id="localWorkerHelp" class="local-worker-help">
+          <strong>Local geolocation worker not connected</strong>
+          <span>From the repository root, start the worker:</span>
+          <code>python -m crop_circle_geo.cli serve-api</code>
+          <span>Serve the local reviewer:</span>
+          <code>python -m http.server 8000 --directory web</code>
+          <a href="http://127.0.0.1:8000/geolocation-review.html">Open local reviewer</a>
+          <span>Source images, imagery credentials, and all processing remain on this computer.</span>
+        </div>
         <label>Search the catalog<input id="formationSearch" placeholder="Whiskey Hill, Wavra, formation ID"></label>
         <div id="formationResults" class="search-results" aria-live="polite"></div>
         <label>Formation ID<input id="formationId" value="cc_e5724a3476de" spellcheck="false"></label>
@@ -106,6 +115,6 @@
     </section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script type="module" src="geolocation-review.mjs"></script>
+  <script type="module" src="geolocation-review.mjs?v=20260722.4"></script>
 </body>
 </html>

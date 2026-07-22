@@ -27,7 +27,10 @@ class GeolocationReviewerContractTests(unittest.TestCase):
         self.assertEqual(len(parser.ids), len(set(parser.ids)))
         referenced = set(re.findall(r'\$\("([A-Za-z][A-Za-z0-9_-]*)"\)', js))
         self.assertEqual(set(), referenced - set(parser.ids))
-        self.assertIn(("geolocation-review.mjs", "module"), parser.scripts)
+        self.assertTrue(any(
+            src.partition("?")[0] == "geolocation-review.mjs" and script_type == "module"
+            for src, script_type in parser.scripts
+        ))
         self.assertIn("georef.html", parser.links)
         for required in (
             "formationId", "jobId", "searchPolygon", "candidateSheet", "imageryVintage",
