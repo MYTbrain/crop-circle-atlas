@@ -24,6 +24,13 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 SITE_RESOLUTIONS_PATH = ROOT / "data" / "site_resolutions.csv"
+GLOBAL_SITE_CANDIDATES_PATH = ROOT / "data" / "global_source_site_candidates.csv"
+GLOBAL_SOURCE_IMAGES_PATH = ROOT / "data" / "global_source_image_links.csv"
+ICCRA_IMAGES_PATH = ROOT / "data" / "iccra_image_links.csv"
+COMMONS_EVENT_ASSERTIONS_PATH = ROOT / "data" / "commons_crop_circle_event_assertions.csv"
+COMMONS_IMAGES_PATH = ROOT / "data" / "commons_crop_circle_images.csv"
+COMMONS_ASSERTIONS_PATH = ROOT / "data" / "commons_crop_circle_assertions.csv"
+REGISTERED_OVERLAYS_PATH = ROOT / "web" / "data" / "registered_overlays.json"
 FORMATION_ALIAS_REVIEWS_PATH = ROOT / "data" / "formation_alias_reviews.csv"
 SITE_STATUSES = {
     "unresolved",
@@ -391,6 +398,68 @@ def load_source_expansion():
     return rows
 
 
+def load_commons_event_assertions(
+    path: Path = COMMONS_EVENT_ASSERTIONS_PATH,
+    images_path: Path = COMMONS_IMAGES_PATH,
+) -> list[dict[str, object]]:
+    """Load human-reviewed, openly licensed events missing from the base corpus."""
+    if not path.is_file():
+        return []
+    event_rows = load_optional_csv(path)
+    image_rows = {
+        row.get("commons_image_id", ""): row for row in load_optional_csv(images_path)
+        if row.get("commons_image_id")
+    }
+    assertions: list[dict[str, object]] = []
+    for ordinal, row in enumerate(event_rows, 1):
+        if row.get("review_status") != "accepted_distinct_same_place_event":
+            raise ValueError(f"Commons event assertion row {ordinal} is not accepted")
+        image_ids = [value.strip() for value in row.get("commons_image_ids", "").split(";") if value.strip()]
+        if not image_ids or any(image_id not in image_rows for image_id in image_ids):
+            raise ValueError(f"Commons event assertion row {ordinal} has unknown image IDs")
+        images = [image_rows[image_id] for image_id in image_ids]
+        if any(image.get("open_license_verified", "").lower() != "true" for image in images):
+            raise ValueError(f"Commons event assertion row {ordinal} includes a non-open image")
+        if any(image.get("captured_at") != row.get("date_iso") for image in images):
+            raise ValueError(f"Commons event assertion row {ordinal} has inconsistent image dates")
+        expected_key = entity_key(row)
+        expected_formation_id = "cc_" + hashlib.sha1("|".join(expected_key).encode()).hexdigest()[:12]
+        if row.get("formation_id") != expected_formation_id:
+            raise ValueError(
+                f"Commons event assertion row {ordinal} formation ID is not stable: "
+                f"expected {expected_formation_id}"
+            )
+        image_urls = [image["original_file_url"] for image in images]
+        assertions.append({
+            "assertion_id": row["assertion_id"],
+            "source_name": "Wikimedia Commons",
+            "source_url": row["source_url"],
+            "source_record_url": row["source_record_url"],
+            "retrieved_at": "2026-07-21",
+            "source_page": row["source_record_url"],
+            "source_slot": ordinal,
+            "year": int(row["year"]),
+            "month": int(row["month"]),
+            "day": int(row["day"]),
+            "date_iso": row["date_iso"],
+            "date_precision": row["date_precision"],
+            "date_qualifier": "",
+            "place": row["place"],
+            "region": row["region"],
+            "country": row["country"],
+            "country_code": row["country_code"],
+            "county": "",
+            "crop": "",
+            "size_text": "",
+            "classification": "open_license_aerial_event_assertion",
+            "thumbnail_url": image_urls[0],
+            "image_urls": ";".join(image_urls),
+            "notes": row["notes"],
+            "rights_scope": row["rights_status"],
+        })
+    return assertions
+
+
 def load_geonames():
     admin_names = {}
     admin_path = RAW / "geonames" / "admin1CodesASCII.txt"
@@ -665,6 +734,105 @@ def apply_formation_alias_reviews(entities: list[dict], reviews: list[dict[str, 
     return output
 
 
+def apply_complete_source_image_counts(
+    entities: list[dict], assertions: list[dict]
+) -> None:
+    """Count all catalog relationships, not only images embedded in assertions.
+
+    The global archive and Commons inventories are intentionally built as
+    separate provenance tables.  Join them here by assertion/formation so the
+    public entity records and location-work queue do not incorrectly claim that
+    image-bearing international reports have no photographs.
+    """
+    urls_by_assertion: dict[str, set[str]] = defaultdict(set)
+    urls_by_formation: dict[str, set[str]] = defaultdict(set)
+    for assertion in assertions:
+        assertion_id = assertion.get("assertion_id", "")
+        for value in str(assertion.get("image_urls", "")).split(";"):
+            url = value.strip()
+            if assertion_id and url:
+                urls_by_assertion[assertion_id].add(url)
+
+    if GLOBAL_SOURCE_IMAGES_PATH.is_file():
+        with GLOBAL_SOURCE_IMAGES_PATH.open(
+            encoding="utf-8-sig", newline=""
+        ) as handle:
+            for row in csv.DictReader(handle):
+                assertion_id = row.get("assertion_id", "").strip()
+                image_url = row.get("image_url", "").strip()
+                if assertion_id and image_url:
+                    urls_by_assertion[assertion_id].add(image_url)
+
+    if ICCRA_IMAGES_PATH.is_file():
+        with ICCRA_IMAGES_PATH.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                if row.get("http_status", "").strip() != "200":
+                    continue
+                image_url = row.get("image_url", "").strip()
+                for assertion_id in str(row.get("assertion_ids", "")).split(";"):
+                    assertion_id = assertion_id.strip()
+                    if assertion_id and image_url:
+                        urls_by_assertion[assertion_id].add(image_url)
+
+    commons_by_id: dict[str, str] = {}
+    if COMMONS_IMAGES_PATH.is_file():
+        with COMMONS_IMAGES_PATH.open(encoding="utf-8-sig", newline="") as handle:
+            commons_by_id = {
+                row.get("commons_image_id", "").strip(): row.get(
+                    "original_file_url", ""
+                ).strip()
+                for row in csv.DictReader(handle)
+                if row.get("commons_image_id", "").strip()
+                and row.get("original_file_url", "").strip()
+            }
+
+    if COMMONS_EVENT_ASSERTIONS_PATH.is_file():
+        with COMMONS_EVENT_ASSERTIONS_PATH.open(
+            encoding="utf-8-sig", newline=""
+        ) as handle:
+            for row in csv.DictReader(handle):
+                assertion_id = row.get("assertion_id", "").strip()
+                for image_id in str(row.get("commons_image_ids", "")).split(";"):
+                    image_url = commons_by_id.get(image_id.strip(), "")
+                    if assertion_id and image_url:
+                        urls_by_assertion[assertion_id].add(image_url)
+
+    if COMMONS_ASSERTIONS_PATH.is_file():
+        with COMMONS_ASSERTIONS_PATH.open(
+            encoding="utf-8-sig", newline=""
+        ) as handle:
+            for row in csv.DictReader(handle):
+                if row.get("match_status", "").strip() != "exact_place_and_date":
+                    continue
+                formation_id = row.get("matched_formation_id", "").strip()
+                image_url = commons_by_id.get(
+                    row.get("commons_image_id", "").strip(), ""
+                )
+                if formation_id and image_url:
+                    urls_by_formation[formation_id].add(image_url)
+
+    if REGISTERED_OVERLAYS_PATH.is_file():
+        overlay_payload = json.loads(
+            REGISTERED_OVERLAYS_PATH.read_text(encoding="utf-8")
+        )
+        for overlay in overlay_payload.get("overlays", []):
+            formation_id = str(overlay.get("formation_id", "")).strip()
+            image_url = str(overlay.get("source_image_url", "")).strip()
+            if formation_id and image_url:
+                urls_by_formation[formation_id].add(image_url)
+
+    for entity in entities:
+        image_urls = set(urls_by_formation.get(entity["formation_id"], set()))
+        for alias_id in str(entity.get("merged_alias_formation_ids", "")).split("; "):
+            image_urls.update(urls_by_formation.get(alias_id.strip(), set()))
+        for assertion_id in str(entity.get("assertion_ids", "")).split("; "):
+            image_urls.update(urls_by_assertion.get(assertion_id.strip(), set()))
+        entity["source_image_count"] = len(image_urls)
+        entity["has_source_images"] = (
+            "yes_linked_rights_unverified" if image_urls else "no_linked_images"
+        )
+
+
 def load_site_resolutions(path: Path = SITE_RESOLUTIONS_PATH) -> dict[str, dict[str, object]]:
     """Load reviewed field-location overrides without conflating review or rights.
 
@@ -736,6 +904,123 @@ def load_site_resolutions(path: Path = SITE_RESOLUTIONS_PATH) -> dict[str, dict[
             if resolved["alignment_eligible"] and status not in {"corroborated_field", "registered_site"}:
                 raise ValueError(f"alignment-eligible site {formation_id} has insufficient spatial status")
         resolutions[formation_id] = resolved
+    return resolutions
+
+
+def load_global_source_site_resolutions(
+    path: Path = GLOBAL_SITE_CANDIDATES_PATH,
+) -> dict[str, dict[str, object]]:
+    """Promote explicit source-map targets to visible, non-accepted candidates.
+
+    These rows are useful search loci, not independent image/landmark matches.
+    They therefore remain yellow ``candidate_field`` points, are never eligible
+    for alignment tests, and cannot override a curated site resolution.
+    """
+    if not path.is_file():
+        return {}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+    required = {
+        "site_candidate_id", "source_name", "formation_id", "place", "region",
+        "country_code", "latitude", "longitude", "coordinate_method",
+        "coordinate_reference_text", "coordinate_uncertainty_m",
+        "coordinate_source_url", "source_page_sha256", "source_page_http_status",
+        "linked_image_count", "rights_status", "review_status",
+    }
+    if rows and not required <= set(rows[0]):
+        raise ValueError(
+            "global_source_site_candidates.csv is missing fields: "
+            + ", ".join(sorted(required - set(rows[0])))
+        )
+    supported_methods = {
+        "streetmap_bng_pointer_to_wgs84",
+        "streetmap_os_grid_reference_to_wgs84",
+        "reported_os_grid_reference_to_wgs84",
+        "google_maps_dms_target",
+        "google_maps_place_target",
+        "google_maps_query_coordinate",
+        "google_maps_satellite_view_center",
+    }
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for ordinal, row in enumerate(rows, 2):
+        formation_id = row.get("formation_id", "").strip()
+        if not formation_id:
+            continue
+        method = row.get("coordinate_method", "").strip()
+        if method not in supported_methods:
+            continue
+        if row.get("source_page_http_status", "").strip() != "200":
+            continue
+        if int(row.get("linked_image_count", "0") or 0) < 1:
+            continue
+        try:
+            latitude = float(row.get("latitude", ""))
+            longitude = float(row.get("longitude", ""))
+            uncertainty_m = float(row.get("coordinate_uncertainty_m", ""))
+        except ValueError as error:
+            raise ValueError(f"global site candidate row {ordinal} has invalid numbers") from error
+        if not (-90 <= latitude <= 90 and -180 <= longitude <= 180 and uncertainty_m > 0):
+            raise ValueError(f"global site candidate row {ordinal} is outside WGS84")
+        if "grid" in method or "bng" in method:
+            if row.get("country_code", "").strip() != "GB":
+                raise ValueError(f"non-GB row {ordinal} was parsed as a British grid reference")
+            if not (49 <= latitude <= 61 and -9 <= longitude <= 3):
+                raise ValueError(f"British grid row {ordinal} converted outside Great Britain")
+        page_hash = row.get("source_page_sha256", "").strip().lower()
+        if not re.fullmatch(r"[0-9a-f]{64}", page_hash):
+            raise ValueError(f"global site candidate row {ordinal} lacks a page SHA-256")
+        normalized = dict(row)
+        normalized.update({
+            "latitude": latitude,
+            "longitude": longitude,
+            "coordinate_uncertainty_m": uncertainty_m,
+            "source_page_sha256": page_hash,
+        })
+        grouped[formation_id].append(normalized)
+
+    resolutions: dict[str, dict[str, object]] = {}
+    for formation_id, candidates in grouped.items():
+        best = min(
+            candidates,
+            key=lambda row: (
+                float(row["coordinate_uncertainty_m"]),
+                0 if str(row["coordinate_method"]).startswith("google_maps_") else 1,
+                str(row["site_candidate_id"]),
+            ),
+        )
+        source_name = str(best["source_name"])
+        reference = str(best["coordinate_reference_text"])
+        resolutions[formation_id] = {
+            "formation_id": formation_id,
+            "site_status": "candidate_field",
+            "latitude": best["latitude"],
+            "longitude": best["longitude"],
+            "coordinate_uncertainty_m": max(25.0, float(best["coordinate_uncertainty_m"])),
+            "coordinate_method": f"source_map_target_{best['coordinate_method']}",
+            "directly_visible": False,
+            "alignment_eligible": False,
+            "site_cluster_id": "",
+            "search_aliases": "; ".join(
+                value for value in (best.get("place", ""), best.get("region", "")) if value
+            ),
+            "evidence_source_url": best["coordinate_source_url"],
+            "evidence_artifact_ids": best["site_candidate_id"],
+            "evidence_artifact_sha256s": best["source_page_sha256"],
+            "imagery_provider": f"{source_name} source map link",
+            "imagery_acquisition_date": "",
+            "review_status": "source_map_target_not_landmark_validated",
+            "reviewer": "Automated source-map extraction with geographic sanity gates",
+            "reviewed_at": "2026-07-21",
+            "rights_status": "coordinate_metadata_only; source pixels follow archive policy",
+            "resolution_source": "global_source_map_candidate_queue",
+            "notes": (
+                f"The source report exposes an explicit map coordinate or grid target ({reference}). "
+                "It is published as a candidate search field, not an accepted formation site: "
+                "the aerial source image has not yet been independently matched to roads, tree lines, "
+                "field edges, buildings, or historical imagery. It is excluded from alignment tests."
+            ),
+        }
     return resolutions
 
 
@@ -825,7 +1110,9 @@ def apply_site_resolutions(entities: list[dict], resolutions: dict[str, dict[str
                 "site_reviewed_at": str(override.get("reviewed_at", "")),
                 "site_rights_status": str(override.get("rights_status", "")),
                 "site_notes": str(override.get("notes", "")),
-                "site_resolution_source": "reviewed_override",
+                "site_resolution_source": str(
+                    override.get("resolution_source", "reviewed_override")
+                ),
             })
             if status in FIELD_SITE_STATUSES:
                 latitude = float(override["latitude"])
@@ -1239,7 +1526,8 @@ def main():
     if iccra_rows is None:
         iccra_rows = parse_iccra()
     expansion_rows = load_source_expansion()
-    assertions = pdf_rows + web_rows + iccra_rows + expansion_rows
+    commons_event_rows = load_commons_event_assertions()
+    assertions = pdf_rows + web_rows + iccra_rows + expansion_rows + commons_event_rows
     assertion_ids = [row["assertion_id"] for row in assertions]
     if len(assertion_ids) != len(set(assertion_ids)):
         raise ValueError("Assertion IDs are not globally unique after source expansion")
@@ -1247,7 +1535,13 @@ def main():
     entities = build_entities(assertions, geonames_index)
     formation_alias_reviews = load_formation_alias_reviews()
     entities = apply_formation_alias_reviews(entities, formation_alias_reviews)
-    site_resolutions = load_site_resolutions()
+    apply_complete_source_image_counts(entities, assertions)
+    curated_site_resolutions = load_site_resolutions()
+    global_source_site_resolutions = load_global_source_site_resolutions()
+    site_resolutions = {
+        **global_source_site_resolutions,
+        **curated_site_resolutions,
+    }
     site_status_counts = apply_site_resolutions(entities, site_resolutions)
     straight_counts = apply_straight_component_enrichment(entities)
     image_straight_counts = apply_iccra_image_straight_enrichment(entities)
@@ -1268,6 +1562,7 @@ def main():
         "assertions": {"total": len(assertions), "cropcirclecenter_pdf": len(pdf_rows),
                        "cropcirclecenter_web": len(web_rows), "iccra": len(iccra_rows),
                        "iccra_mode": iccra_mode, "source_expansion": len(expansion_rows),
+                       "commons_open_event_assertions": len(commons_event_rows),
                        "source_expansion_by_source": dict(Counter(
                            row.get("expansion_source_id", "unknown") for row in expansion_rows))},
         "formations": len(entities),
@@ -1277,7 +1572,9 @@ def main():
         },
         "geocoded": sum(1 for row in entities if row["latitude"] != ""),
         "site_resolutions": {
-            "reviewed_overrides": len(site_resolutions),
+            "reviewed_overrides": len(curated_site_resolutions),
+            "global_source_map_candidates": len(global_source_site_resolutions),
+            "combined_overrides": len(site_resolutions),
             "status_counts": dict(site_status_counts),
             "field_site_features": sum(1 for row in entities if row["site_status"] in FIELD_SITE_STATUSES),
             "locality_reference_features": site_status_counts["locality_reference"],

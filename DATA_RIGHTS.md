@@ -14,6 +14,14 @@ third-party catalogs, reports, diagrams, or photographs.
   SHA-256, coverage status, diagnostics, and an unvalidated image-space review
   axis. It emits no source pixels, thumbnails, contact sheets, or derived images.
   The public atlas records source links rather than bundling the pixels.
+- The global publisher pass enumerates 7,398 unique Crop Circle Center,
+  Crop Circle Connector, and DCCA image URLs. Their pixels were not fetched,
+  copied, or redistributed; the public catalog marks the links unverified and
+  rights-gated. Missing permission fails closed to a source-record link.
+- Eleven Diessenhofen/Commons report-image relationships are open-license. The
+  one mapped frame is attributed to Hansueli Krapf under CC BY-SA 3.0 and loads
+  from Wikimedia Commons only after explicit user action; no pixels are
+  packaged in the repository or KMZ.
 - The map's registered-source-photo layer is opt-in. After a user explicitly
   asks to show it, the browser requests the photograph directly from its remote
   source and draws it with registration metadata stored by the atlas. The image
@@ -24,7 +32,7 @@ third-party catalogs, reports, diagrams, or photographs.
 - A local image chosen in the registration lab is not uploaded. A public KML or
   KMZ overlay requires explicit permission, public-domain status, or an open
   license whose name and evidence are recorded and verified.
-- The current public KML/KMZ contains zero packaged image files and six
+- The current public KML/KMZ contains zero packaged image files and thirteen
   off-by-default, provisional GroundOverlays that link directly to the source
   host. Those are not pixel redistribution or publication authorization. An
   authorized future packaged GroundOverlay must carry the rights holder/creator,

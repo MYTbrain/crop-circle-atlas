@@ -161,6 +161,16 @@ function sourceImagesFor(formationId = selected?.formation_id) {
   return sourceImagesByFormation.get(formationId) || [];
 }
 
+function sourcePixelsMayDisplay(record) {
+  return record?.embedding_allowed === true
+    || record?.embedding_allowed === 'true'
+    || record?.pixel_display_policy === 'remote_source_on_explicit_user_action';
+}
+
+function overlayPixelsMayDisplay(record) {
+  return record?.embedding_allowed === true || record?.embedding_allowed === 'true';
+}
+
 function resetSourceImageGallery() {
   $('sourceImageGallery').replaceChildren();
   $('sourceImageGallery').hidden = true;
@@ -172,16 +182,18 @@ function updateSourceImageControls() {
   const count = images.length;
   $('toggleSourceImages').disabled = !selected || !count;
   $('toggleSourceImages').textContent = count
-    ? `Load ${count} source image${count === 1 ? '' : 's'}`
+    ? `Show ${count} source image record${count === 1 ? '' : 's'}`
     : 'No linked source images for this report';
   if (!selected) {
-    $('sourceImageNotice').textContent = 'Select a report to inspect its source photographs, diagrams, and aerial images. Source pixels load from ICCRA only after you ask to see them; a source image is not automatically a mapped overlay.';
+    $('sourceImageNotice').textContent = 'Select a report to inspect its photographs, diagrams, and aerial-image links. Openly licensed or explicitly enabled pixels load only after you ask; rights-gated records remain links. An image record is not automatically a mapped overlay.';
     return;
   }
   const mapped = images.filter((image) => image.placement_status === 'mapped_overlay').length;
+  const displayable = images.filter(sourcePixelsMayDisplay).length;
+  const linkOnly = count - displayable;
   $('sourceImageNotice').textContent = count
-    ? `${selected.place || 'This report'} has ${count} formation-linked ICCRA source image${count === 1 ? '' : 's'}. ${mapped ? `${mapped} ${mapped === 1 ? 'is' : 'are'} connected to a mapped placement; ` : ''}the rest remain source evidence only until their location and orientation are independently resolved.`
-    : `No formation-linked ICCRA source images are cataloged for ${selected.place || 'this report'}.`;
+    ? `${selected.place || 'This report'} has ${count} formation-linked source image record${count === 1 ? '' : 's'} from the atlas archives. ${displayable} ${displayable === 1 ? 'is' : 'are'} configured for an on-demand source-hosted preview; ${linkOnly} ${linkOnly === 1 ? 'is' : 'are'} link-only under the recorded rights policy. ${mapped ? `${mapped} ${mapped === 1 ? 'has' : 'have'} a reviewed map placement; ` : ''}unmapped records remain source evidence until their location and orientation are independently resolved.`
+    : `No formation-linked source images are cataloged for ${selected.place || 'this report'}.`;
 }
 
 function renderSourceImageGallery(images) {
@@ -197,43 +209,63 @@ function renderSourceImageGallery(images) {
 
     const imageLink = document.createElement('a');
     imageLink.className = 'source-image-preview';
-    imageLink.href = record.image_url;
+    imageLink.href = record.image_url || record.source_page_url;
     imageLink.target = '_blank';
     imageLink.rel = 'noreferrer';
     imageLink.title = 'Open the source-hosted image at full size';
 
-    const image = document.createElement('img');
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    image.referrerPolicy = 'no-referrer';
-    image.alt = record.alt_text || record.title_text || `ICCRA source image ${index + 1} for ${selected?.place || 'selected report'}`;
-    image.src = record.image_url;
-    image.addEventListener('error', () => {
-      image.remove();
-      const failure = document.createElement('span');
-      failure.className = 'source-image-error';
-      failure.textContent = 'Source host did not return this image. Open it directly to retry.';
-      imageLink.appendChild(failure);
-    }, { once: true });
-    imageLink.appendChild(image);
+    if (sourcePixelsMayDisplay(record)) {
+      const image = document.createElement('img');
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.referrerPolicy = 'no-referrer';
+      image.alt = record.alt_text || record.title_text || `Source image ${index + 1} for ${selected?.place || 'selected report'}`;
+      image.src = record.image_url;
+      image.addEventListener('error', () => {
+        image.remove();
+        const failure = document.createElement('span');
+        failure.className = 'source-image-error';
+        failure.textContent = 'Source host did not return this image. Open it directly to retry.';
+        imageLink.appendChild(failure);
+      }, { once: true });
+      imageLink.appendChild(image);
+    } else {
+      const linkOnly = document.createElement('span');
+      linkOnly.className = 'source-image-link-only';
+      linkOnly.textContent = 'LINK ONLY — this publisher has not cleared image embedding. Open the source-hosted image in a new tab.';
+      imageLink.appendChild(linkOnly);
+    }
 
     const details = document.createElement('p');
     details.className = 'source-image-meta';
     const dimensions = record.width && record.height ? ` · ${record.width}×${record.height}` : '';
-    details.textContent = `${record.image_kind.replaceAll('_', ' ')}${dimensions} · rights ${record.rights_status.replaceAll('_', ' ')}`;
+    const archive = record.source_name || record.source_id || 'source archive';
+    const license = record.license_short_name || record.license || record.rights_status || 'not recorded';
+    details.append(`${archive} · ${record.image_kind.replaceAll('_', ' ')}${dimensions} · rights `);
+    if (record.license_url) {
+      const licenseLink = document.createElement('a');
+      licenseLink.href = record.license_url;
+      licenseLink.target = '_blank';
+      licenseLink.rel = 'noreferrer';
+      licenseLink.textContent = String(license).replaceAll('_', ' ');
+      details.appendChild(licenseLink);
+    } else {
+      details.append(String(license).replaceAll('_', ' '));
+    }
+    if (record.author) details.append(` · creator ${record.author}`);
 
     const source = document.createElement('a');
-    source.href = record.source_page_url;
+    source.href = record.source_page_url || record.source_record_url || record.image_url;
     source.target = '_blank';
     source.rel = 'noreferrer';
-    source.textContent = 'Open source report';
+    source.textContent = 'Open source record';
 
     card.append(status, imageLink, details, source);
     gallery.appendChild(card);
   });
   gallery.hidden = false;
   sourceImageLoadedFor = selected?.formation_id || null;
-  $('toggleSourceImages').textContent = `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+  $('toggleSourceImages').textContent = `Hide ${images.length} source image record${images.length === 1 ? '' : 's'}`;
 }
 
 function showSourceImages() {
@@ -245,7 +277,7 @@ function showSourceImages() {
     return;
   }
   gallery.hidden = false;
-  $('toggleSourceImages').textContent = `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+  $('toggleSourceImages').textContent = `Hide ${images.length} source image record${images.length === 1 ? '' : 's'}`;
 }
 
 function toggleSourceImages() {
@@ -255,8 +287,8 @@ function toggleSourceImages() {
   if (sourceImageLoadedFor === selected.formation_id) {
     gallery.hidden = !gallery.hidden;
     $('toggleSourceImages').textContent = gallery.hidden
-      ? `Show ${images.length} loaded source image${images.length === 1 ? '' : 's'}`
-      : `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+      ? `Show ${images.length} source image record${images.length === 1 ? '' : 's'}`
+      : `Hide ${images.length} source image record${images.length === 1 ? '' : 's'}`;
     return;
   }
   showSourceImages();
@@ -274,7 +306,8 @@ function popupFor(records) {
     const role = locationRole(record);
     const uncertainty = coordinateUncertaintyKm(record);
     const evidence = sourceLink(record);
-    const hasOverlay = overlayRecords.some((overlay) => overlay.formation_id === record.formation_id);
+    const overlay = overlayRecords.find((candidate) => candidate.formation_id === record.formation_id);
+    const hasOverlay = Boolean(overlay);
     const linkedImages = sourceImagesFor(record.formation_id);
     const canAlign = isAlignmentEligibleSite(record);
     const method = record.site_coordinate_method || record.location_method || record.geocode_method || 'not resolved';
@@ -292,7 +325,7 @@ function popupFor(records) {
       ${evidence ? `<a href="${esc(evidence)}" target="_blank" rel="noreferrer">Open supporting source</a>` : ''}
       <button onclick="selectFormation('${esc(record.formation_id)}')" ${canAlign ? '' : 'disabled'}>Use in alignment lab</button>
       ${linkedImages.length ? `<button class="secondary" onclick="showSourceImagesForFormation('${esc(record.formation_id)}')">Browse ${linkedImages.length} source image${linkedImages.length === 1 ? '' : 's'}</button>` : ''}
-      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">Load registered aerial image</button>` : ''}
+      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">${overlayPixelsMayDisplay(overlay) ? 'Load registered aerial image' : 'Inspect reviewed image footprint'}</button>` : ''}
       <button class="secondary" onclick="openGeorefForFormation('${esc(record.formation_id)}')">Register another aerial image</button>
     </article>`;
   }).join(multiple ? '<hr>' : '');
@@ -569,7 +602,13 @@ function updateOverlayControls() {
   }
   $('overlayOpacity').value = String(match.default_opacity || 0.68);
   const disclosure = match.quality_disclosure ? ` ${match.quality_disclosure}` : '';
-  $('overlayNotice').textContent = `${match.title}. ${match.registration_status.replaceAll('_', ' ')}.${disclosure} Click the button to load the source-hosted photograph over its mapped footprint.`;
+  const action = overlayPixelsMayDisplay(match)
+    ? 'Click the button to load the source-hosted photograph over its mapped footprint.'
+    : 'The reviewed footprint can be inspected here, but this publisher has not cleared image embedding; open the source record to view its pixels.';
+  $('toggleOverlay').textContent = overlayPixelsMayDisplay(match)
+    ? 'Load and zoom to registered image'
+    : 'Zoom to reviewed image footprint';
+  $('overlayNotice').textContent = `${match.title}. ${match.registration_status.replaceAll('_', ' ')}.${disclosure} ${action}`;
 }
 
 function renderRegisteredFootprints(visibleIds = null) {
@@ -578,20 +617,21 @@ function renderRegisteredFootprints(visibleIds = null) {
   for (const record of overlayRecords) {
     if (visibleIds && !visibleIds.has(record.formation_id)) continue;
     if (!Array.isArray(record.corners) || record.corners.length !== 4) continue;
+    const canDisplay = overlayPixelsMayDisplay(record);
     const footprint = L.polygon(record.corners, {
       pane: 'overlayFootprintPane', color: '#ffe08a', weight: 3,
       opacity: 0.95, dashArray: '8 5', fillColor: '#f6ad55', fillOpacity: 0.12,
-    }).bindTooltip(`${record.title} — click to load the registered image`);
+    }).bindTooltip(`${record.title} — click to ${canDisplay ? 'load the registered image' : 'inspect the reviewed footprint'}`);
     const center = Array.isArray(record.center) ? record.center : footprint.getBounds().getCenter();
     const marker = L.marker(center, {
       pane: 'overlayFootprintPane',
       icon: L.divIcon({
         className: 'registered-image-marker',
-        html: '<span aria-hidden="true">IMG</span>',
+        html: `<span aria-hidden="true">${canDisplay ? 'IMG' : 'GEO'}</span>`,
         iconSize: [34, 24], iconAnchor: [17, 31], tooltipAnchor: [0, -25],
       }),
-      title: `${record.title} — click to load`,
-    }).bindTooltip(`${record.title} — click to load the registered image`);
+      title: `${record.title} — click to ${canDisplay ? 'load' : 'inspect'}`,
+    }).bindTooltip(`${record.title} — click to ${canDisplay ? 'load the registered image' : 'inspect the reviewed footprint'}`);
     const load = () => window.showOverlayForFormation(record.formation_id);
     footprint.on('click', load);
     marker.on('click', load);
@@ -774,6 +814,14 @@ function exportRay() {
 function toggleSelectedOverlay() {
   const record = overlayRecords.find((overlay) => overlay.formation_id === selected?.formation_id);
   if (!record) return;
+  if (!overlayPixelsMayDisplay(record)) {
+    resetOverlaySelection();
+    const footprint = overlayFootprintsByFormation.get(record.formation_id)?.footprint;
+    if (footprint) map.fitBounds(footprint.getBounds(), { padding: [35, 35], maxZoom: 18 });
+    $('toggleOverlay').textContent = 'Zoom to reviewed image footprint';
+    $('overlayNotice').textContent = `${record.title}: the reviewed footprint is shown, but the source publisher has not cleared image embedding. Use the supporting source link to inspect the original pixels.`;
+    return;
+  }
   if (activeOverlay && activeOverlayRecord?.overlay_id === record.overlay_id) {
     resetOverlaySelection();
     updateOverlayControls();
@@ -906,8 +954,8 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260721.7').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260721.7').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260721.9').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260721.9').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
@@ -936,9 +984,15 @@ Promise.all([
   $('unresolvedCount').textContent = allFormations.filter((record) => locationRole(record) === 'unresolved').length.toLocaleString();
   $('sourceImageCount').textContent = Number(sourceImageMetadata.unique_image_count || 0).toLocaleString();
   $('mappedImageCount').textContent = overlayRecords.length.toLocaleString();
-  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. Click an amber IMG badge or dashed footprint to load the actual source photograph over its reviewed display placement. These are distinct from cyan PIC badges, which only indicate source-photo availability.`;
+  const displayableOverlayCount = overlayRecords.filter(overlayPixelsMayDisplay).length;
+  const rightsGatedOverlayCount = overlayRecords.length - displayableOverlayCount;
+  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} IMG placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels; ${rightsGatedOverlayCount.toLocaleString()} GEO footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Cyan PIC badges indicate source-photo availability without a reviewed footprint.`;
   const unlocatedImageReports = Number(sourceImageMetadata.formation_count || 0) - sourcePhotoCounts.located;
-  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique ICCRA source files are linked to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} are attached to US reports. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} amber IMG badges have reviewed map placements, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
+  const nonUsImages = Number(sourceImageMetadata.non_us_unique_image_count || 0);
+  const unknownCountryImages = Number(sourceImageMetadata.unknown_country_unique_image_count || 0);
+  const unverifiedLinks = Number(sourceImageMetadata.unverified_unique_image_link_count || 0);
+  const rightsGated = Number(sourceImageMetadata.rights_gated_unique_image_count || 0);
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} reviewed image footprints are mapped, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
   updateSourceImageControls();
   applyFilters();
   addOrientationLayers();

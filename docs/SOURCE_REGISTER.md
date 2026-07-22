@@ -8,12 +8,12 @@ robots-compliant access, a working host, or a permitted structured interface.
 
 | Source | Approximate scope | Unique value | Current treatment |
 |---|---:|---|---|
-| Crop Circle Center | 7,152 listed records, historical through 2026 | Broadest event backbone and diagrams | 309-page supplied catalog plus 2010-2026 monthly pages ingested |
+| Crop Circle Center | 7,152 listed records, historical through 2026 | Broadest event backbone and diagrams | 309-page supplied catalog plus 2010-2026 monthly pages ingested; 2,393 rights-gated image relationships enumerated |
 | ICCRA | 607 canonical assertions from 1,171 index rows; 681 non-UI image references | County/state detail, reports, coordinates, orientation evidence, and aerial images | All parsed index occurrences reconciled; one entity has only a dead detail URL; images are link-only pending rights |
-| Crop Circle Connector | Public 2014-2026 seasons; older picture archive membership-gated | Current-season cross-checks, aerial photographs, field access notes | 442 metadata assertions ingested from 447 event-like anchors; five exclusions documented; images not copied |
+| Crop Circle Connector | Public 2014-2026 seasons; older picture archive membership-gated | Current-season cross-checks, aerial photographs, field access notes | 442 metadata assertions ingested from 447 event-like anchors; five exclusions documented; 4,956 rights-gated image relationships enumerated, pixels not copied |
 | Crop Circle Research Archive | About 2,850 formations and nearly 17,000 linked items | Surveys, first-hand reports, science, correspondence, ~8,000 photos | High-value enrichment target; database is not exposed as an open bulk table |
 | BLT Research | More than 100 plant/soil lab reports | Physical measurement enrichment | DNS unavailable in the reproducible pass; failed closed; not treated as a bulk event catalog |
-| Dutch Crop Circle Archive (DCCA) | Netherlands and international archive | Dutch reports and literature with attribution terms | 184 dated metadata assertions ingested; source geography and numbered event designators preserved; images excluded |
+| Dutch Crop Circle Archive (DCCA) | Netherlands and international archive | Dutch reports and literature with attribution terms | 184 dated metadata assertions and 184 rights-gated image relationships ingested; source geography and numbered event designators preserved; pixels not copied |
 | Paul Vigay archive | Articles and field reports | Contemporary UK analysis and historical context | 12 dated field-report index assertions ingested; articles and images excluded |
 | CCCRN mirror | Canadian news and formation reports | Canada-specific detail | One explicit single-event occurrence assertion ingested; newsletter dates never substituted |
 | CropDecoder | 4,739 records through 2024 | Classification and node-anomaly claims | Public UI evaluated; `/api/` is disallowed by robots.txt and was not crawled |
@@ -22,13 +22,14 @@ robots-compliant access, a working host, or a permitted structured interface.
 
 ## Measured return
 
-- Current ingestion: 8,390 source assertions became 7,745 conservative catalog
+- Current ingestion: 8,391 source assertions became 7,745 conservative catalog
   entities after four evidence-reviewed report aliases were accepted and
   merged; this is not a claim of 7,745 physically distinct formations. All
   source assertions remain preserved.
-- Location evidence is separated into 22 field candidates/sites, 4,004
-  locality references, and 3,719 unresolved entities. Eighteen field-level records
-  are explicit reviewed overrides. The locality references
+- Location evidence is separated into 407 field candidates/sites, 3,894
+  locality references, and 3,444 unresolved entities. Nineteen field-level
+  records are explicit reviewed overrides; 384 additional rows are explicit
+  publisher map targets retained as non-accepted candidates. The locality references
   are search aids, not claimed formation fields.
 - 949 entities are US reports; one Puerto Rico record is retained separately.
 - ICCRA reconciliation covers all 1,169 parsed index occurrences plus two
@@ -39,9 +40,16 @@ robots-compliant access, a working host, or a permitted structured interface.
   SHA-256 values), six external references were not fetched, and six hosted
   references returned 404. Public analysis is metadata-only and redistribution
   is not cleared.
+- The worldwide image-link pass enumerated 7,398 unique publisher image URLs
+  from Crop Circle Center, Crop Circle Connector, and DCCA detail pages. These
+  are rights-gated, link-only records and their image URLs were not independently
+  fetched. Combined with ICCRA and eleven open-license Commons relationships,
+  the public catalog contains 7,889 unique image links and 8,042 report-image
+  relationships across 1,913 reports: 512 US, 7,313 known non-US, and 64 with
+  country still unresolved.
 - The bounded expansion emitted 639 assertions from four additional archives:
-  442 Connector, 184 DCCA, 12 Vigay, and one CCCRN. There are 189 exact
-  normalized-key overlaps and 450 new normalized source keys. The latter are
+  442 Connector, 184 DCCA, 12 Vigay, and one CCCRN. There are 190 exact
+  normalized-key overlaps and 449 new normalized source keys. The latter are
   not confirmed-new formations; 167 alias candidates and 83 probable overlaps
   remain deliberately unmerged. The 127-request manifest records 121 successes
   and six failed/unavailable requests, with zero images or membership/API calls.

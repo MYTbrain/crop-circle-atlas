@@ -6,7 +6,7 @@ import math
 import unittest
 from pathlib import Path
 
-from scripts.build_dataset import automatic_site_status
+from scripts.build_dataset import automatic_site_status, load_global_source_site_resolutions
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -202,7 +202,7 @@ class FieldSiteSeparationTests(unittest.TestCase):
             "cc_ca0e623b0480": (44.9473776, -89.5750174, 100.0),
             "cc_ae1b8ee2ae1f": (38.2428, -122.1231, 60.0),
             "cc_0ed8b56730be": (38.2401, -122.1225, 60.0),
-            "cc_f0f992d92db0": (44.8865602, -122.8979914, 75.0),
+            "cc_f0f992d92db0": (44.8737785, -122.8962105, 20.0),
             "cc_db1599385db5": (38.8226, -86.4968, 1200.0),
             "cc_3fb745fb7416": (39.6201, -84.2705778, 20.0),
             "cc_73d09b214763": (39.3577689, -83.0871928, 120.0),
@@ -219,7 +219,10 @@ class FieldSiteSeparationTests(unittest.TestCase):
         }
         for formation_id, (latitude, longitude, uncertainty_m) in expected.items():
             row = self.by_id[formation_id]
-            self.assertIn(row["site_status"], {"candidate_field", "registered_site"})
+            self.assertIn(
+                row["site_status"],
+                {"candidate_field", "corroborated_field", "registered_site"},
+            )
             self.assertEqual(row["site_alignment_eligible"], "false")
             self.assertAlmostEqual(float(row["site_latitude"]), latitude, places=6)
             self.assertAlmostEqual(float(row["site_longitude"]), longitude, places=6)
@@ -237,6 +240,17 @@ class FieldSiteSeparationTests(unittest.TestCase):
                 "formation_id": "unsupported", "latitude": 1, "longitude": 2,
                 "geocode_method": "unreviewed_scraper_guess",
             })
+
+    def test_global_source_map_targets_are_visible_candidates_not_accepted_sites(self):
+        resolutions = load_global_source_site_resolutions()
+        self.assertGreaterEqual(len(resolutions), 380)
+        self.assertEqual(len(resolutions), len(set(resolutions)))
+        for row in resolutions.values():
+            self.assertEqual(row["site_status"], "candidate_field")
+            self.assertFalse(row["directly_visible"])
+            self.assertFalse(row["alignment_eligible"])
+            self.assertEqual(row["resolution_source"], "global_source_map_candidate_queue")
+            self.assertIn("not an accepted formation site", row["notes"])
 
 
 if __name__ == "__main__":

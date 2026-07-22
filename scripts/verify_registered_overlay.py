@@ -240,8 +240,15 @@ def validate_registered_overlay(root=ROOT):
         assert projective_overlay["formal_alignment_status"] == projective_observation["formal_alignment_status"]
         assert projective_overlay["source_image_url"] == source["url"]
         assert projective_overlay["source_image_sha256"] == source["sha256"]
-        assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
-        assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
+        if "wikimedia.org" in projective_overlay["source_image_url"]:
+            assert projective_overlay["source_photo_pixels"] == "remote_open_license_source_link_only"
+            assert projective_overlay["rights_status"] == "CC BY-SA 3.0"
+            assert projective_overlay["embedding_allowed"] is True
+            assert projective_overlay["license_url"] == "https://creativecommons.org/licenses/by-sa/3.0"
+        else:
+            assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
+            assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
+            assert projective_overlay["embedding_allowed"] is True
         assert projective_overlay["show_by_default"] is False
         left, top, right, bottom = source["pixel_boundary_extent_xy"]
         assert transform["source_frame_corners_xy"] == [

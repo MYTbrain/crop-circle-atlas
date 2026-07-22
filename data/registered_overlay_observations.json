@@ -622,7 +622,7 @@
     {
       "observation_id": "regobs_wavra_farm_1997_landmark_v1",
       "overlay_id": "wavra-farm-1997-landmark-scene-placement",
-      "classification": "provisional_landmark_scene_registration",
+      "classification": "user_supplied_google_earth_kmz_landmark_registration",
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "source_evidence": {
         "url": "https://iccra.org/bystate/Oregon/images/WavraFarm1997-1.jpg",
@@ -640,32 +640,26 @@
       },
       "source_report_controls": {
         "coordinate_wgs84_lat_lon": [
-          44.886560157,
-          -122.897991423
+          44.8737784854097,
+          -122.89621050563028
         ],
-        "coordinate_uncertainty_m": 75,
-        "site_text": "The report names Wavra Farm; the long-running farm's 7882 Jordan Street SE address and the aerial road/drive pattern place the formation in the field immediately southeast of the farm entrance.",
-        "venue_address": "7882 Jordan Street SE, Salem, Oregon 97317",
-        "venue_address_wgs84_lat_lon": [
-          44.883642986,
-          -122.89941651
+        "coordinate_uncertainty_m": 20,
+        "site_text": "The user matched the ICCRA aerial to the field south of the divided-highway corridor using the road and drive geometry, tree rows, farm boundaries, buildings, and curved access roads visible in the 2000 historical frame.",
+        "reported_place": "Wavra Farm, Salem / Silver Creek Falls, Marion County",
+        "formation_anchor_source_xy": [
+          181,
+          126
         ]
       },
       "landmark_controls": {
-        "farm_drive_source_xy": [
-          36,
-          64
-        ],
-        "farm_drive_wgs84_lat_lon": [
-          44.8874,
-          -122.89945
-        ],
         "visual_matches": [
-          "Jordan Street field edge",
-          "farm entrance and house cluster",
+          "divided-highway corridor",
+          "curved access roads",
           "tree rows",
-          "field corners"
-        ]
+          "farm buildings",
+          "field boundaries"
+        ],
+        "historical_imagery_date": "2000-07-23"
       },
       "projective_display_transform": {
         "model": "four_corner_projective_scene_placement",
@@ -689,46 +683,62 @@
         ],
         "corners_wgs84_lat_lon": [
           [
-            44.888003154,
-            -122.899652934
+            44.87153998909242,
+            -122.89766937722305
           ],
           [
-            44.887197964,
-            -122.895676467
+            44.8737644058229,
+            -122.89960432096206
           ],
           [
-            44.885225037,
-            -122.89647233
+            44.87584385168213,
+            -122.89484428508177
           ],
           [
-            44.886030227,
-            -122.900448797
+            44.873619201401276,
+            -122.89290932219285
           ]
         ],
-        "basis": "Manual four-corner display fit seeded by the persistent Jordan Street edge, Wavra farm drive, house cluster, field corners, and tree rows visible in the source aerial and the 1995 Oregon orthophoto.",
+        "basis": "Exact projective conversion of the user-supplied Google Earth Pro GroundOverlay LatLonBox. The raw KML box and rotation are retained as the authoritative display geometry.",
         "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "google_earth_ground_overlay_lat_lon_box",
+        "artifact_name": "wavrafarm overlay.kmz",
+        "artifact_sha256": "8c435a670ff869efa9fa0907aa41eb51012a6edc599fa75b0a0df07ea4987970",
+        "kml_document_sha256": "cfd011629b7c2d079bb3278926f660cd8db6e4aad0d9b685c6d3888c9fcd5c74",
+        "authoring_application": "Google Earth Pro 7.3.7.1155",
+        "lat_lon_box": {
+          "north": 44.87567322232745,
+          "south": 44.87171057483808,
+          "east": -122.8944130799795,
+          "west": -122.8981005857119,
+          "rotation_ccw_deg": 121.6502227783203
+        },
+        "kml_color": "80ffffff",
+        "kml_opacity": 0.5019607843
       },
       "computed_corners_wgs84_lat_lon": [
         [
-          44.888003154,
-          -122.899652934
+          44.87153998909242,
+          -122.89766937722305
         ],
         [
-          44.887197964,
-          -122.895676467
+          44.8737644058229,
+          -122.89960432096206
         ],
         [
-          44.885225037,
-          -122.89647233
+          44.87584385168213,
+          -122.89484428508177
         ],
         [
-          44.886030227,
-          -122.900448797
+          44.873619201401276,
+          -122.89290932219285
         ]
       ],
       "quality": {
-        "status": "useful_provisional_landmark_scene_registration",
-        "limitations": "The source image is oblique and the four display corners remain a manual fit without an independent withheld checkpoint. The 75 m site uncertainty and formal-analysis exclusion are retained."
+        "status": "user_registered_historical_landmark_scene",
+        "limitations": "The registration is user-authored and has no independent withheld checkpoint set. The source image is oblique and the KML deliberately applies unequal horizontal and vertical scale."
       }
     },
     {
@@ -1275,6 +1285,235 @@
       "quality": {
         "status": "useful_provisional_venue_field_registration",
         "limitations": "The 2002 frame is low resolution and oblique; corner precision is limited and no independent withheld checkpoint set is available."
+      }
+    },
+    {
+      "observation_id": "regobs_commons_diessenhofen_20080715_v1",
+      "overlay_id": "commons-diessenhofen-20080715-164408",
+      "classification": "provisional_four_control_landmark_scene_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+        "sha256": "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0",
+        "width_px": 2048,
+        "height_px": 1536,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          2048,
+          1536
+        ],
+        "distribution": "remote_open_license_link_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          47.6885338,
+          8.7249956
+        ],
+        "coordinate_uncertainty_m": 60,
+        "site_text": "The Diessenhofen field is identified by the Rhine, both river-bank alignments, the southern transport corridor, persistent tree lines, buildings, farm tracks, and the surrounding field boundaries.",
+        "reported_place": "Diessenhofen, Thurgau, Switzerland",
+        "captured_at": "2008-07-15T16:44:08",
+        "source_coordinate_review": {
+          "published_commons_coordinate_lat_lon": [
+            47.68403611,
+            8.72366944
+          ],
+          "interpretation": "search_envelope_only_not_a_formation_control",
+          "copied_to_anchor": false
+        }
+      },
+      "landmark_controls": [
+        {
+          "name": "northwest formation-field edge",
+          "source_pixel_xy": [
+            220,
+            700
+          ],
+          "reference_pixel_xy": [
+            600,
+            300
+          ],
+          "reference_wgs84_lat_lon": [
+            47.6893768,
+            8.72125
+          ],
+          "control_type": "persistent_field_edge_and_tree_wedge"
+        },
+        {
+          "name": "northeast formation-field farm-track boundary",
+          "source_pixel_xy": [
+            980,
+            590
+          ],
+          "reference_pixel_xy": [
+            950,
+            280
+          ],
+          "reference_wgs84_lat_lon": [
+            47.6897516,
+            8.7278125
+          ],
+          "control_type": "persistent_farm_track_and_field_edge"
+        },
+        {
+          "name": "southeast field boundary at southern transport corridor",
+          "source_pixel_xy": [
+            1260,
+            1360
+          ],
+          "reference_pixel_xy": [
+            950,
+            480
+          ],
+          "reference_wgs84_lat_lon": [
+            47.6860028,
+            8.7278125
+          ],
+          "control_type": "field_edge_and_rail_road_corridor"
+        },
+        {
+          "name": "southwest field edge at southern transport corridor",
+          "source_pixel_xy": [
+            380,
+            1535
+          ],
+          "reference_pixel_xy": [
+            600,
+            520
+          ],
+          "reference_wgs84_lat_lon": [
+            47.685253,
+            8.72125
+          ],
+          "control_type": "field_edge_and_rail_road_corridor"
+        }
+      ],
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            2048,
+            0
+          ],
+          [
+            2048,
+            1536
+          ],
+          [
+            0,
+            1536
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            47.694252,
+            8.7203522
+          ],
+          [
+            47.6927338,
+            8.7380304
+          ],
+          [
+            47.6853256,
+            8.7322674
+          ],
+          [
+            47.6852341,
+            8.7183275
+          ]
+        ],
+        "basis": "Manual correspondences on four persistent boundaries surrounding the formation field, checked against the Rhine, tree lines, buildings, farm tracks, and southern transport corridor in the wider source scene.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_placement",
+        "source_image_sha1": "f8fb3daf138c26bfd22ccf3de3bc81a73cc9793d",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "corner_uncertainty_m": 120,
+        "transform": {
+          "model": "four_point_projective_transform_source_pixels_to_reference_export_pixels",
+          "homography_matrix": [
+            [
+              0.623081386885,
+              0.033899005367,
+              552.096895035228
+            ],
+            [
+              0.052731941873,
+              0.435800311296,
+              39.790806834591
+            ],
+            [
+              0.000108689977,
+              0.000234659588,
+              1.0
+            ]
+          ],
+          "reference_pixel_to_wgs84": "lon = 8.710 + x / 1600 * 0.030; lat = 47.695 - y / 1067 * 0.020",
+          "source_extent_px": [
+            [
+              0,
+              0
+            ],
+            [
+              2047,
+              0
+            ],
+            [
+              2047,
+              1535
+            ],
+            [
+              0,
+              1535
+            ]
+          ],
+          "basis": "Manual correspondences on four persistent boundaries surrounding the formation field, checked against the Rhine, tree lines, buildings, farm tracks, and southern transport corridor in the wider source scene."
+        },
+        "scene_identity_evidence": [
+          "Rhine river channel and both bank alignments",
+          "south-bank tree line",
+          "road and building group north of the river",
+          "isolated tree cluster and green wedge immediately northwest of the formation field",
+          "west crop boundary and east farm-track boundary",
+          "southern railway/road corridor, including the train visible in the source frame"
+        ],
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          47.694252,
+          8.7203522
+        ],
+        [
+          47.6927338,
+          8.7380304
+        ],
+        [
+          47.6853256,
+          8.7322674
+        ],
+        [
+          47.6852341,
+          8.7183275
+        ]
+      ],
+      "quality": {
+        "status": "field_identity_strong_display_warp_provisional",
+        "limitations": "The transform was measured manually against an undated current mosaic. The source is oblique, distant portions of the frame are not coplanar with the formation field, field boundaries may have changed since 2008, and no withheld checkpoint set validates the corners. Corner uncertainty is therefore larger than anchor uncertainty."
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T01:34:37Z",
+  "generated_at": "2026-07-22T04:50:26Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -7,12 +7,13 @@
     "assertions": 5978
   },
   "assertions": {
-    "total": 8390,
+    "total": 8391,
     "cropcirclecenter_pdf": 5978,
     "cropcirclecenter_web": 1166,
     "iccra": 607,
     "iccra_mode": "exhaustive_reconciled",
     "source_expansion": 639,
+    "commons_open_event_assertions": 1,
     "source_expansion_by_source": {
       "dcca": 184,
       "vigay": 12,
@@ -25,19 +26,21 @@
     "accepted_reviews": 4,
     "merged_alias_entities": 4
   },
-  "geocoded": 4026,
+  "geocoded": 4301,
   "site_resolutions": {
-    "reviewed_overrides": 18,
+    "reviewed_overrides": 19,
+    "global_source_map_candidates": 384,
+    "combined_overrides": 403,
     "status_counts": {
-      "locality_reference": 4004,
-      "unresolved": 3719,
-      "candidate_field": 14,
+      "locality_reference": 3894,
+      "unresolved": 3444,
+      "candidate_field": 397,
       "registered_site": 6,
-      "corroborated_field": 2
+      "corroborated_field": 4
     },
-    "field_site_features": 22,
-    "locality_reference_features": 4004,
-    "unresolved_formations": 3719,
+    "field_site_features": 407,
+    "locality_reference_features": 3894,
+    "unresolved_formations": 3444,
     "full_index_records": 7745,
     "location_work_queue_rows": 7745
   },
@@ -48,7 +51,7 @@
   "top_countries": [
     [
       "England",
-      3859
+      3858
     ],
     [
       "United States",
@@ -88,7 +91,7 @@
     ],
     [
       "Switzerland",
-      86
+      87
     ],
     [
       "Belgium",
@@ -130,7 +133,7 @@
   },
   "images": {
     "iccra_image_references": 681,
-    "formations_with_linked_images": 267,
+    "formations_with_linked_images": 1914,
     "iccra_straight_analysis": {
       "successfully_cached_hosted_rows": 669,
       "analyzed_rows": 669,

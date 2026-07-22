@@ -6,10 +6,11 @@ projective homography from four or more control points. It does not upload the
 selected image.
 
 The public per-report archive and the map overlay registry serve different
-purposes. The archive contains 480 unique ICCRA-linked source images across 266
-formations, represented by 517 formation-image links. Those links make the
-actual source imagery available for review; they do not imply that an image has
-been oriented, scaled, or located. Twelve images currently have placement
+purposes. The archive contains 7,889 unique image links across 1,913 reports,
+represented by 8,042 report-image relationships. Of those, 7,398 global
+publisher URLs are rights-gated and were not independently image-fetched.
+Those links make source imagery discoverable for review; they do not imply that
+an image has been oriented, scaled, or located. Thirteen images currently have placement
 evidence strong enough for an opt-in map footprint.
 
 ## Reviewer workflow
@@ -113,12 +114,12 @@ The publication packager independently repeats the path, formation, rights,
 hash, review, bounds, physical-unit, and transform checks. Its current public
 quality gate rejects control-point RMSE above 25 physical ground metres; use a
 tighter project-specific threshold when the intended analysis requires it.
-There are currently zero packaged ICCRA image files because no source-image
-publication rights have been cleared. The combined KML/KMZ contains twelve
+There are currently zero packaged image files. The combined KML/KMZ contains thirteen
 off-by-default source-hosted GroundOverlays: Whiskey Hill/Hubbard 1998 and
 2000, Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter
 2005, Wavra Farm 1997, Rockville 1 and 2 from 2003, Miamisburg 2004,
-Hopewell/Chillicothe 2012, and Albion/Starr 2002. They link to the source host
+Hopewell/Chillicothe 2012, Albion/Starr 2002, and the CC BY-SA 3.0
+Diessenhofen, Switzerland aerial from 2008-07-15. They link to the source host
 and package no source pixels. The Wausau
 placement registers an ICCRA-linked USGS follow-up frame to persistent roads
 and fields identified through a contemporaneous investigator map; the circles
@@ -130,8 +131,12 @@ scene placement: its source GPS is retained, but image orientation remains
 unresolved pending historical-ortho ground controls.
 `data/registered_overlay_observations.json` preserves the source hashes,
 dimensions, anchors, transforms, corner coordinates, evidence, and limitations
-for the eleven placements with structured observation records; the user-supplied
+for the twelve placements with structured observation records; the user-supplied
 Whiskey Hill 1998 placement remains represented in the public overlay registry.
+The Wavra record reproduces the supplied Google Earth KMZ LatLonBox, rotation,
+source-pixel anchor, 2000-07-23 imagery date, and opacity. The Diessenhofen
+record preserves the four landmark controls, Commons attribution/license, and
+the absence of an independent checkpoint set.
 The Hubbard 2000 stated 35 m is a conditional
 detector-sensitivity envelope, not a confidence interval; without an
 independent fourth ground-control point it remains excluded from formal
@@ -224,9 +229,10 @@ or an applicable license and its proof are documented in
 `data/image_assets.csv`. The registration metadata contains no image pixels or
 local source path.
 
-The per-report archive may show a source-linked preview for any of its 480
-images. That is not a map overlay or a grant of publication rights. For the twelve
-registered placements, rights-restricted pixels remain off by default and the
-browser requests them directly from the source host only after an explicit user
-action. A blocked or unavailable remote request fails closed; the atlas does
+The per-report archive exposes 7,889 unique image links. That is not a map
+overlay or a grant of publication rights. For the thirteen registered
+placements, source pixels remain off by default and the browser requests them
+directly from the source host only after an explicit user action when the
+overlay record permits it. The open-license Diessenhofen frame carries creator
+and CC BY-SA 3.0 attribution. A blocked or unavailable remote request fails closed; the atlas does
 not proxy around it.

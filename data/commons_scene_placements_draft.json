@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "schema_version": "crop-circle-atlas/commons-scene-placement-draft/v1",
+    "generated_at": "2026-07-21",
+    "candidate_scope": "Bounded forensic review of Lucy Pringle Pi 2008, the nine-image Diessenhofen 2008-07-15 sequence, and Steckborn/Horhausen 2009.",
+    "candidate_count": 11,
+    "placement_count": 1,
+    "rejection_count": 10,
+    "notice": "Draft display geometry only. The accepted draft is a manually controlled projective scene placement, not a survey georegistration, and is excluded from alignment calculations pending independent checkpoints.",
+    "pixel_policy": "All source and reference pixels remain remotely hosted; this file packages URLs and measurements only.",
+    "camera_coordinate_policy": "Commons/EXIF camera or point-of-view coordinates were used only to bound the visual search. They were never copied into a formation anchor or image corner.",
+    "fail_closed_rule": "A candidate was rejected unless four spatially distributed, persistent scene controls supported a reproducible transform. Crop geometry, tramlines, temporary crop marks, and camera coordinates were not accepted as ground controls."
+  },
+  "rights_profiles": {
+    "commons_hansueli_krapf_cc_by_sa_3": {
+      "author": "Hansueli Krapf",
+      "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "pixels_packaged": false
+    },
+    "commons_sirk_nala_cc_by_3": {
+      "author": "sirk_nala",
+      "attribution": "sirk_nala / Wikimedia Commons, CC BY 3.0",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "embedding_allowed": true,
+      "pixels_packaged": false
+    },
+    "commons_kecko_cc_by_2": {
+      "author": "Kecko",
+      "attribution": "Kecko / Wikimedia Commons, CC BY 2.0",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "embedding_allowed": true,
+      "pixels_packaged": false
+    }
+  },
+  "placements": [
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "formation_id": "cc_2deeb6879ebf",
+      "commons_image_id": "commons_img_acedd0a59403fee4",
+      "title": "Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement",
+      "captured_at": "2008-07-15T16:44:08",
+      "reported_place": "Diessenhofen, Thurgau, Switzerland",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+      "source_image_sha1": "f8fb3daf138c26bfd22ccf3de3bc81a73cc9793d",
+      "source_dimensions_px": [2048, 1536],
+      "anchor_pixel_xy": [700, 830],
+      "anchor_wgs84_lat_lon": [47.6885338, 8.7249956],
+      "anchor_uncertainty_m": 60,
+      "corners_wgs84": [
+        [47.6942520, 8.7203522],
+        [47.6927338, 8.7380304],
+        [47.6853256, 8.7322674],
+        [47.6852341, 8.7183275]
+      ],
+      "corner_order": "source top-left, top-right, bottom-right, bottom-left; latitude then longitude",
+      "corner_uncertainty_m": 120,
+      "registration_status": "provisional_four_control_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "analysis_eligibility": "display_only_excluded_from_alignment_calculations",
+      "reference_imagery": {
+        "provider": "Esri World Imagery",
+        "service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "export_bbox_wgs84_west_south_east_north": [8.710, 47.675, 8.740, 47.695],
+        "export_size_px": [1600, 1067],
+        "imagery_date_status": "undated_current_mosaic",
+        "historical_imagery_status": "No independently licensed dated-2008 orthophoto was available in this bounded pass.",
+        "pixels_packaged": false
+      },
+      "scene_identity_evidence": [
+        "Rhine river channel and both bank alignments",
+        "south-bank tree line",
+        "road and building group north of the river",
+        "isolated tree cluster and green wedge immediately northwest of the formation field",
+        "west crop boundary and east farm-track boundary",
+        "southern railway/road corridor, including the train visible in the source frame"
+      ],
+      "landmark_controls": [
+        {
+          "name": "northwest formation-field edge",
+          "source_pixel_xy": [220, 700],
+          "reference_pixel_xy": [600, 300],
+          "reference_wgs84_lat_lon": [47.6893768, 8.7212500],
+          "control_type": "persistent_field_edge_and_tree_wedge"
+        },
+        {
+          "name": "northeast formation-field farm-track boundary",
+          "source_pixel_xy": [980, 590],
+          "reference_pixel_xy": [950, 280],
+          "reference_wgs84_lat_lon": [47.6897516, 8.7278125],
+          "control_type": "persistent_farm_track_and_field_edge"
+        },
+        {
+          "name": "southeast field boundary at southern transport corridor",
+          "source_pixel_xy": [1260, 1360],
+          "reference_pixel_xy": [950, 480],
+          "reference_wgs84_lat_lon": [47.6860028, 8.7278125],
+          "control_type": "field_edge_and_rail_road_corridor"
+        },
+        {
+          "name": "southwest field edge at southern transport corridor",
+          "source_pixel_xy": [380, 1535],
+          "reference_pixel_xy": [600, 520],
+          "reference_wgs84_lat_lon": [47.6852530, 8.7212500],
+          "control_type": "field_edge_and_rail_road_corridor"
+        }
+      ],
+      "transform": {
+        "model": "four_point_projective_transform_source_pixels_to_reference_export_pixels",
+        "homography_matrix": [
+          [0.623081386885, 0.033899005367, 552.096895035228],
+          [0.052731941873, 0.435800311296, 39.790806834591],
+          [0.000108689977, 0.000234659588, 1.0]
+        ],
+        "reference_pixel_to_wgs84": "lon = 8.710 + x / 1600 * 0.030; lat = 47.695 - y / 1067 * 0.020",
+        "source_extent_px": [[0, 0], [2047, 0], [2047, 1535], [0, 1535]],
+        "basis": "Manual correspondences on four persistent boundaries surrounding the formation field, checked against the Rhine, tree lines, buildings, farm tracks, and southern transport corridor in the wider source scene."
+      },
+      "source_coordinate_review": {
+        "published_commons_coordinate_lat_lon": [47.68403611, 8.72366944],
+        "interpretation": "search_envelope_only_not_a_formation_control",
+        "copied_to_anchor": false
+      },
+      "supporting_images": [
+        "commons_img_c50349097c37912c",
+        "commons_img_1dfd99f84c449652",
+        "commons_img_ef8b5a93a8a0be9f",
+        "commons_img_f77e3ebef9abf039",
+        "commons_img_fbcc84da2be5d83d",
+        "commons_img_c92c8820e1e86db3",
+        "commons_img_59ad520d1c270f8e",
+        "commons_img_5f41071b079087fa"
+      ],
+      "independent_ground_checkpoint_count": 0,
+      "quality_status": "field_identity_strong_display_warp_provisional",
+      "quality_limitations": "The transform was measured manually against an undated current mosaic. The source is oblique, distant portions of the frame are not coplanar with the formation field, field boundaries may have changed since 2008, and no withheld checkpoint set validates the corners. Corner uncertainty is therefore larger than anchor uncertainty.",
+      "quality_disclosure": "The correct Diessenhofen field is strongly supported by the multi-landmark scene, but the displayed four-corner warp remains provisional and must not be used as evidence for long-distance alignments.",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3",
+      "rights": {
+        "author": "Hansueli Krapf",
+        "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "embedding_allowed": true,
+        "pixels_packaged": false
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "commons_image_id": "commons_img_76e2c4d74439fb7d",
+      "title": "Lucy Pringle Aerial Shot of Pi Crop Circle",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Lucy_Pringle_Aerial_Shot_of_Pi_Crop_Circle_-_panoramio.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lucy_Pringle_Aerial_Shot_of_Pi_Crop_Circle_-_panoramio.jpg",
+      "source_dimensions_px": [800, 512],
+      "captured_at": "2008-06-01",
+      "reported_place": "Barbury Castle, Wiltshire, United Kingdom",
+      "decision": "rejected_no_defensible_four_corner_placement",
+      "reason": "The frame is tightly cropped to the formation and tramlines. It contains no field corner, road, tree line, building, or other persistent landmark from which scale, orientation, skew, and position can be independently solved.",
+      "source_coordinate_review": {
+        "published_commons_coordinate_lat_lon": [51.488695, -1.771926],
+        "commons_semantics": "camera_or_point_of_view",
+        "copied_to_formation_or_corners": false
+      },
+      "rights_profile": "commons_sirk_nala_cc_by_3"
+    },
+    {
+      "commons_image_id": "commons_img_7b2aa79d06f65644",
+      "title": "Swiss Crop Circle 2009 Aerial",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Swiss_Crop_Circle_2009_Aerial_(3766687033).jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Swiss_Crop_Circle_2009_Aerial_%283766687033%29.jpg",
+      "source_dimensions_px": [3501, 2334],
+      "captured_at": "2009-07-27",
+      "reported_place": "Tagermoos between Steckborn and Horhausen, Thurgau, Switzerland",
+      "decision": "rejected_no_defensible_four_corner_placement",
+      "reason": "The aerial shows the formation, tramlines, and only a narrow strip of one field margin. It lacks four persistent, distributed controls such as intersecting roads, field corners, buildings, or tree groups. The camera geotag cannot substitute for formation coordinates.",
+      "source_coordinate_review": {
+        "published_commons_coordinate_lat_lon": [47.646504, 8.976892],
+        "commons_semantics": "camera_or_point_of_view",
+        "copied_to_formation_or_corners": false
+      },
+      "rights_profile": "commons_kecko_cc_by_2"
+    },
+    {
+      "commons_image_id": "commons_img_c50349097c37912c",
+      "title": "Diessenhofen 2008-07-15 16:44:15",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-15.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-15.JPG",
+      "source_dimensions_px": [2048, 1536],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "This near-duplicate confirms the formation, field track, hedge, and isolated tree group, but those controls occupy one side of the frame and do not independently constrain four source corners. Registering it from the accepted frame would not be an independent solution.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_1dfd99f84c449652",
+      "title": "Diessenhofen 2008-07-15 16:44:20",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-20.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-20.JPG",
+      "source_dimensions_px": [2048, 1536],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The frame contains the formation, tramlines, and one field margin but no four persistent distributed controls, so projective orientation and scale are underdetermined.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_ef8b5a93a8a0be9f",
+      "title": "Diessenhofen 2008-07-15 16:44:35",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-35.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-35.JPG",
+      "source_dimensions_px": [1536, 2048],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The formation-only crop has no stable scene landmarks beyond agricultural tramlines; tramlines are temporary and were not accepted as map controls.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_f77e3ebef9abf039",
+      "title": "Diessenhofen 2008-07-15 16:44:41",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-41.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-41.JPG",
+      "source_dimensions_px": [1236, 954],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The crop is limited to the formation and tramlines with no persistent field-edge or infrastructure control network.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_fbcc84da2be5d83d",
+      "title": "Diessenhofen 2008-07-15 16:46:23",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-23.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-23.JPG",
+      "source_dimensions_px": [1536, 2048],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The Rhine, south-bank facility, field track, and tree island strongly confirm the scene, but the controls and formation span different depth/elevation planes in a strongly oblique frame. No four coplanar controls were measured for an independent whole-frame warp.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_c92c8820e1e86db3",
+      "title": "Diessenhofen 2008-07-15 16:46:33",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-33.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-33.JPG",
+      "source_dimensions_px": [1536, 2048],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The formation and one hedge/field boundary are visible, but a single linear boundary cannot constrain translation, scale, rotation, and projective skew.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_59ad520d1c270f8e",
+      "title": "Diessenhofen 2008-07-15 16:46:50",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-50.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-46-50.JPG",
+      "source_dimensions_px": [2048, 1536],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "Aircraft wing and struts occlude most of the wider scene; the remaining image is dominated by the formation and crop texture, leaving no distributed persistent control set.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    },
+    {
+      "commons_image_id": "commons_img_5f41071b079087fa",
+      "title": "Approaching Diessenhofen 2008-07-15 16:43:46",
+      "commons_page_url": "https://commons.wikimedia.org/wiki/File:Approaching_the_Crop_Circle_of_Diessenhofen_15.07.2008_16-43-46.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Approaching_the_Crop_Circle_of_Diessenhofen_15.07.2008_16-43-46.JPG",
+      "source_dimensions_px": [2048, 1536],
+      "decision": "supporting_evidence_only_no_independent_overlay",
+      "reason": "The wide frame strongly confirms the Rhine, transport corridor, field, forests, and settlement pattern, but it is highly oblique and includes major depth/topographic parallax. A single planar whole-frame transform was rejected without dated orthophoto control and independent checkpoints.",
+      "supports_overlay_id": "commons-diessenhofen-20080715-164408-draft",
+      "rights_profile": "commons_hansueli_krapf_cc_by_sa_3"
+    }
+  ]
+}

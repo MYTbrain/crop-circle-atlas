@@ -47,7 +47,8 @@
       "bearing_true_deg": 110.0,
       "bearing_uncertainty_deg": 3.0,
       "bearing_status": "provisional_user_demonstrated_axis",
-      "notes": "The source photo is intentionally loaded from ICCRA only after an explicit user action. The registration is visually useful but awaits independent ground-control checkpoints before acceptance."
+      "notes": "The source photo is intentionally loaded from ICCRA only after an explicit user action. The registration is visually useful but awaits independent ground-control checkpoints before acceptance.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "hubbard-2000-three-lobe-registration",
@@ -95,7 +96,8 @@
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Approximate visual placement, not an accepted georegistration. Coordinate uncertainty is not independently quantified. The 35 m display-corner value is only a conditional detector-sensitivity envelope, not a confidence interval, and does not cover manual road-control error or semantic misidentification.",
-      "notes": "Approximate visual-only provisional overlay. Threefold symmetry, manually read road controls, and the lack of an independent fourth checkpoint prevent acceptance as a georegistration. It is excluded from formal alignment calculations and loads from ICCRA only after an explicit user action."
+      "notes": "Approximate visual-only provisional overlay. Threefold symmetry, manually read road controls, and the lack of an independent fourth checkpoint prevent acceptance as a georegistration. It is excluded from formal alignment calculations and loads from ICCRA only after an explicit user action.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "mayville-kekoskee-2003-source-gps-registration",
@@ -141,7 +143,8 @@
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Source-coordinate geometry placement, not a survey georegistration. The 100 m value is the conservative source-coordinate uncertainty; the photographed road boundary is a visual cross-check, not an independently surveyed ground-control point.",
-      "notes": "The full ICCRA aerial frame is anchored at the source-reported GPS location and oriented from the report's north-facing caption. It loads from ICCRA only after an explicit user action and remains excluded from formal alignment calculations."
+      "notes": "The full ICCRA aerial frame is anchored at the source-reported GPS location and oriented from the report's north-facing caption. It loads from ICCRA only after an explicit user action and remains excluded from formal alignment calculations.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "howell-township-2003-source-gps-registration",
@@ -187,7 +190,8 @@
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Source-coordinate geometry placement, not a survey georegistration. The image-axis control is an interpretation of a low-tier automated candidate cross-checked against the report; no independent photographic ground checkpoint is available.",
-      "notes": "The source aerial image is placed in the surviving report-identified field at the source GPS coordinate. The local scale and rotation are provisional, the image loads from ICCRA only after explicit user action, and it is excluded from formal alignment calculations."
+      "notes": "The source aerial image is placed in the surviving report-identified field at the source GPS coordinate. The local scale and rotation are provisional, the image loads from ICCRA only after explicit user action, and it is excluded from formal alignment calculations.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "jupiter-2005-source-gps-scene-placement",
@@ -233,7 +237,8 @@
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_historical_ortho_ground_control",
       "quality_disclosure": "Coordinate-anchored scene placement, not a georegistration. It identifies the source-reported site vicinity and scale, but the oblique photograph's true orientation still requires a historical orthophoto match to the creek and tree controls.",
-      "notes": "This is deliberately labeled as a scene placement: it uses the actual source GPS coordinate and measured formation size but does not claim that the image corners are final. It loads from ICCRA only after explicit user action and is excluded from alignment calculations."
+      "notes": "This is deliberately labeled as a scene placement: it uses the actual source GPS coordinate and measured formation size but does not claim that the image corners are final. It loads from ICCRA only after explicit user action and is excluded from alignment calculations.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "wausau-1997-usgs-followup-registration",
@@ -279,7 +284,8 @@
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Landmark-registered historical scene, not a survey georegistration. The contemporaneous road map locates the candidate field and persistent roads and farm features support the displayed USGS frame, but the 1997 formation is not clearly visible in that early-1998 image. The candidate center retains 100 m uncertainty and is excluded from formal alignment calculations.",
-      "notes": "This is the actual ICCRA-linked USGS follow-up frame, placed over the identified Wausau field scene. It loads from ICCRA only after explicit user action; the site marker and image footprint remain provisional."
+      "notes": "This is the actual ICCRA-linked USGS follow-up frame, placed over the identified Wausau field scene. It loads from ICCRA only after explicit user action; the site marker and image footprint remain provisional.",
+      "embedding_allowed": true
     },
     {
       "overlay_id": "wavra-farm-1997-landmark-scene-placement",
@@ -292,40 +298,59 @@
       "source_image_sha256": "e7f8a43ae8dd1338c958e386ed0f74edd4b1dcfb45083ad5180d862006ce0aa9",
       "corners": [
         [
-          44.888003154,
-          -122.899652934
+          44.87153998909242,
+          -122.89766937722305
         ],
         [
-          44.887197964,
-          -122.895676467
+          44.8737644058229,
+          -122.89960432096206
         ],
         [
-          44.885225037,
-          -122.89647233
+          44.87584385168213,
+          -122.89484428508177
         ],
         [
-          44.886030227,
-          -122.900448797
+          44.873619201401276,
+          -122.89290932219285
         ]
       ],
       "center": [
-        44.886560157,
-        -122.897991423
+        44.8737784854097,
+        -122.89621050563028
       ],
-      "coordinate_uncertainty_m": 75,
-      "registration_status": "provisional_landmark_scene_registration",
-      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
-      "reference_imagery": "1995 Oregon orthophoto and current Esri World Imagery",
-      "reference_imagery_date": "1995 and 2026-07-21",
+      "coordinate_uncertainty_m": 20,
+      "registration_status": "user_supplied_google_earth_kmz_landmark_registration",
+      "display_geometry_status": "four_corner_kml_latlonbox_scene_placement",
+      "reference_imagery": "Google Earth / USGS historical imagery",
+      "reference_imagery_date": "2000-07-23",
       "reviewed_at": "2026-07-21",
-      "review_basis": "The previous Highway 22 seed was rejected. The named farm address, a 1995 orthophoto, and the source aerial's road, drive, houses, field corners, and tree rows support this replacement projective scene placement.",
+      "review_basis": "The user supplied the actual Google Earth Pro registration and a historical-imagery screenshot. The previous Jordan Street placement is rejected: its anchor was 1,428 metres from the supplied formation anchor and did not match the highway, drives, tree rows, buildings, or field edges.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
-      "default_opacity": 0.68,
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
+      "default_opacity": 0.5019607843,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
-      "quality_disclosure": "Projective landmark scene placement, not a survey georegistration. Persistent farm and road features support the field and display orientation, but no independent checkpoint validates the four image corners.",
-      "notes": "The actual ICCRA aerial frame loads only after explicit user action. It is mapped to the corrected Wavra Farm field vicinity and remains excluded from alignment calculations."
+      "quality_disclosure": "User-supplied Google Earth landmark registration. The raw KML geometry and historical-imagery date are preserved; the placement remains excluded from formal alignment calculations pending independent checkpoints.",
+      "notes": "The ICCRA aerial loads only after explicit user action. This record reproduces the supplied KMZ instead of the rejected Jordan Street placement.",
+      "source_registration": {
+        "kind": "google_earth_ground_overlay_lat_lon_box",
+        "artifact_name": "wavrafarm overlay.kmz",
+        "artifact_sha256": "8c435a670ff869efa9fa0907aa41eb51012a6edc599fa75b0a0df07ea4987970",
+        "kml_document_sha256": "cfd011629b7c2d079bb3278926f660cd8db6e4aad0d9b685c6d3888c9fcd5c74",
+        "authoring_application": "Google Earth Pro 7.3.7.1155",
+        "lat_lon_box": {
+          "north": 44.87567322232745,
+          "south": 44.87171057483808,
+          "east": -122.8944130799795,
+          "west": -122.8981005857119,
+          "rotation_ccw_deg": 121.6502227783203
+        },
+        "kml_color": "80ffffff",
+        "kml_opacity": 0.5019607843
+      }
     },
     {
       "overlay_id": "rockville-1-2003-landmark-scene-placement",
@@ -367,6 +392,9 @@
       "review_basis": "The named road scene and multiple persistent aerial landmarks constrain the correct field. A two-control similarity seed supplies the display scale and rotation; the full oblique frame is shown with projective corners.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
@@ -413,6 +441,9 @@
       "review_basis": "The distinctive campus, tennis courts, parking, road, and field geometry identify the scene. A two-control similarity seed supplies scale and rotation for the projective display footprint.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
@@ -459,6 +490,9 @@
       "review_basis": "The investigation's degree-minute-second coordinate, named mound, measured formation length, and documented alignment provide a reproducible center and display orientation.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
@@ -505,6 +539,9 @@
       "review_basis": "Five persistent geographic controls and three report distances identify the correct field and support an explicitly provisional projective display footprint.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
@@ -551,11 +588,125 @@
       "review_basis": "The named Starr venue and distinctive triangular field bounded by two persistent transport corridors identify the scene and support a provisional footprint.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Venue-field landmark placement, not a survey georegistration. The scene match is strong; precise corner geometry remains provisional.",
       "notes": "The source-hosted image loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "commons-diessenhofen-20080715-164408",
+      "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
+      "formation_id": "cc_2deeb6879ebf",
+      "assertion_id": "commons_event_diessenhofen_20080715",
+      "title": "Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_the_Crop_Circle_in_Diessenhofen_15.07.2008_16-44-08.JPG",
+      "source_image_sha256": "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0",
+      "corners": [
+        [
+          47.694252,
+          8.7203522
+        ],
+        [
+          47.6927338,
+          8.7380304
+        ],
+        [
+          47.6853256,
+          8.7322674
+        ],
+        [
+          47.6852341,
+          8.7183275
+        ]
+      ],
+      "center": [
+        47.6885338,
+        8.7249956
+      ],
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_four_control_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "Manual correspondences on four persistent boundaries surrounding the formation field, checked against the Rhine, tree lines, buildings, farm tracks, and southern transport corridor in the wider source scene.",
+      "source_photo_pixels": "remote_open_license_source_link_only",
+      "rights_status": "CC BY-SA 3.0",
+      "rights_attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "embedding_allowed": true,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "The correct Diessenhofen field is strongly supported by the multi-landmark scene, but the displayed four-corner warp remains provisional and must not be used as evidence for long-distance alignments.",
+      "notes": "Openly licensed source pixels load only after explicit user action. The placement is excluded from formal alignment calculations.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_placement",
+        "source_image_sha1": "f8fb3daf138c26bfd22ccf3de3bc81a73cc9793d",
+        "source_image_sha1_algorithm": "SHA-1 (Wikimedia original-file revision)",
+        "corner_uncertainty_m": 120,
+        "transform": {
+          "model": "four_point_projective_transform_source_pixels_to_reference_export_pixels",
+          "homography_matrix": [
+            [
+              0.623081386885,
+              0.033899005367,
+              552.096895035228
+            ],
+            [
+              0.052731941873,
+              0.435800311296,
+              39.790806834591
+            ],
+            [
+              0.000108689977,
+              0.000234659588,
+              1.0
+            ]
+          ],
+          "reference_pixel_to_wgs84": "lon = 8.710 + x / 1600 * 0.030; lat = 47.695 - y / 1067 * 0.020",
+          "source_extent_px": [
+            [
+              0,
+              0
+            ],
+            [
+              2047,
+              0
+            ],
+            [
+              2047,
+              1535
+            ],
+            [
+              0,
+              1535
+            ]
+          ],
+          "basis": "Manual correspondences on four persistent boundaries surrounding the formation field, checked against the Rhine, tree lines, buildings, farm tracks, and southern transport corridor in the wider source scene."
+        },
+        "scene_identity_evidence": [
+          "Rhine river channel and both bank alignments",
+          "south-bank tree line",
+          "road and building group north of the river",
+          "isolated tree cluster and green wedge immediately northwest of the formation field",
+          "west crop boundary and east farm-track boundary",
+          "southern railway/road corridor, including the train visible in the source frame"
+        ],
+        "rights": {
+          "author": "Hansueli Krapf",
+          "attribution": "Hansueli Krapf / Wikimedia Commons, CC BY-SA 3.0",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "embedding_allowed": true,
+          "pixels_packaged": false
+        }
+      }
     }
   ]
 }

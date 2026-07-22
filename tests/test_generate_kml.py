@@ -136,6 +136,7 @@ class OverlayTests(unittest.TestCase):
             "overlay_id": "remote-test",
             "formation_id": "formation-test",
             "source_image_url": "https://example.org/source.jpg",
+            "embedding_allowed": True,
             "default_opacity": 0.68,
             "corners": [[40.1, -100.1], [40.1, -99.9], [39.9, -99.9], [39.9, -100.1]],
         }]}
@@ -148,6 +149,24 @@ class OverlayTests(unittest.TestCase):
         self.assertEqual(folder.find(q("visibility")).text, "0")
         self.assertEqual(overlay.find(q("visibility")).text, "1")
         self.assertEqual(overlay.find(q("color")).text, "adffffff")
+
+    def test_remote_overlay_without_explicit_embedding_permission_fails_closed(self):
+        document = ET.Element(q("Document"))
+        payload = {"overlays": [{
+            "overlay_id": "missing-rights-test",
+            "formation_id": "formation-test",
+            "source_image_url": "https://example.org/source.jpg",
+            "corners": [[40.1, -100.1], [40.1, -99.9], [39.9, -99.9], [39.9, -100.1]],
+        }]}
+        count, rejected, included = add_source_linked_provisional_overlays(
+            document, payload, {"formation-test"}
+        )
+        self.assertEqual((count, rejected, included), (1, [], {"missing-rights-test"}))
+        folder = document.find(q("Folder"))
+        self.assertIsNone(folder.find(q("GroundOverlay")))
+        placemark = folder.find(q("Placemark"))
+        self.assertIsNotNone(placemark)
+        self.assertIsNotNone(placemark.find(q("Polygon")))
 
     def test_folded_remote_overlay_is_rejected_and_not_audited_as_included(self):
         document = ET.Element(q("Document"))
@@ -163,6 +182,28 @@ class OverlayTests(unittest.TestCase):
         self.assertEqual(count, 0)
         self.assertEqual(included, set())
         self.assertEqual(rejected[0]["reason"], "invalid_remote_overlay_corners")
+
+    def test_rights_gated_registration_exports_a_footprint_not_remote_pixels(self):
+        document = ET.Element(q("Document"))
+        payload = {"overlays": [{
+            "overlay_id": "rights-gated-test",
+            "formation_id": "formation-test",
+            "source_image_url": "https://example.org/copyrighted.jpg",
+            "source_page_url": "https://example.org/report",
+            "embedding_allowed": False,
+            "rights_status": "permission_required",
+            "corners": [[40.1, -100.1], [40.1, -99.9], [39.9, -99.9], [39.9, -100.1]],
+        }]}
+        count, rejected, included = add_source_linked_provisional_overlays(
+            document, payload, {"formation-test"}
+        )
+        self.assertEqual((count, rejected, included), (1, [], {"rights-gated-test"}))
+        folder = document.find(q("Folder"))
+        self.assertIsNone(folder.find(q("GroundOverlay")))
+        placemark = folder.find(q("Placemark"))
+        self.assertIsNotNone(placemark)
+        self.assertIsNotNone(placemark.find(q("Polygon")))
+        self.assertIn("rights-gated", placemark.find(q("name")).text)
 
 
 class LocationRoleTests(unittest.TestCase):

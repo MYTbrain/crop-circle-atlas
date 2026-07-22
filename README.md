@@ -10,25 +10,31 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 
 ## Current build
 
-- 8,390 source assertions resolved into 7,745 conservative catalog entities
+- 8,391 source assertions resolved into 7,745 conservative catalog entities
   after four evidence-reviewed report aliases were merged. Near matches remain
   separate, so this is not a claim of 7,745 physically distinct formations.
-- Location evidence is separated by role: 22 reviewed field candidates/sites,
-  4,004 labeled locality references, and 3,719 unresolved entities. Eighteen of the
-  field-level records are explicit reviewed overrides. A locality reference
+- Location evidence is separated by role: 407 field candidates/sites,
+  3,894 labeled locality references, and 3,444 unresolved entities. Nineteen of the
+  field-level records are explicit reviewed overrides; 384 more are publisher
+  map targets retained as non-accepted candidate fields. A locality reference
   supports discovery and search; it is not presented as the field.
 - 949 United States entities, plus one Puerto Rico record retained separately.
-- The bounded expansion contributes 639 metadata assertions. It contains 189
-  exact baseline-key overlaps and 450 new normalized source keys; the latter
-  are not claimed as 450 proven-new formations. Another 167 alias and 83
+- The bounded expansion contributes 639 metadata assertions. It contains 190
+  exact baseline-key overlaps and 449 new normalized source keys; the latter
+  are not claimed as 449 proven-new formations. Another 167 alias and 83
   probable overlaps remain explicitly unmerged for review.
 - Every 1,169 parsed ICCRA index occurrence and two count-only placeholders is
   accounted for in 607 canonical assertions. One indexed entity, Mount Airy,
   North Carolina (1965), has no surviving detail page because its ICCRA URL
   returns 404.
-- The normalized per-report archive exposes 480 unique ICCRA-linked source
-  images across 266 formations, represented by 517 formation-image links.
-  These are source links, not registered map overlays. The underlying crawl
+- The normalized per-report archive exposes 7,889 unique image links across
+  1,913 reports, represented by 8,042 formation-image relationships. Of those,
+  512 belong to US reports, 7,313 to known non-US reports, and 64 still lack a
+  country assignment. The 7,398 global publisher links were enumerated from
+  report pages but their image URLs were not independently fetched; they are
+  explicitly counted as unverified, rights-gated links rather than copied
+  images or registered overlays. Eleven Wikimedia Commons relationships are
+  open-license records. The underlying ICCRA crawl
   inventoried 681 non-navigation references; all 669 successfully cached hosted
   rows (526 unique SHA-256 values) were analyzed privately, six external
   references were not fetched, and six hosted URLs returned 404. The public
@@ -50,12 +56,13 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   image-space measurements and never become geographic bearings without
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
-  but the public KMZ packages zero ICCRA image files because publication rights
-  have not been cleared. The web map and KML/KMZ contain twelve opt-in,
+  but the public KMZ packages zero image files. The web map and KML/KMZ contain
+  thirteen opt-in,
   source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
   Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005,
   Wavra Farm 1997, both Rockville 2003 formations, Miamisburg 2004,
-  Hopewell/Chillicothe 2012, and Albion/Starr 2002.
+  Hopewell/Chillicothe 2012, Albion/Starr 2002, and the openly licensed
+  Diessenhofen, Switzerland formation of 2008-07-15.
   Wausau uses a contemporaneous investigator road map and an ICCRA-linked USGS
   follow-up frame; Mayville and Howell have provisional display geometry tied
   to source coordinates; Jupiter is explicitly a coordinate-anchored scene
@@ -68,8 +75,8 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 ## Exact-field resolution status
 
 Exact-field work has begun, but it is not complete. The current ledger contains
-22 field candidates/sites; 4,004 other coordinates are explicitly labeled
-locality references and 3,719 entities remain unresolved. Eighteen field-level
+407 field candidates/sites; 3,894 other coordinates are explicitly labeled
+locality references and 3,444 entities remain unresolved. Nineteen field-level
 decisions are preserved as reviewed overrides.
 
 The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
@@ -110,6 +117,12 @@ plus Miamisburg, Hopewell/Chillicothe, and Albion/Starr. Bedford and Wausau
 August 16 remain point/search evidence only. Fresno, Vacaville, New Park,
 Northwood, and Burnsville now have bounded candidate search areas but no
 invented image corners where a unique landmark match could not be reproduced.
+Wavra now reproduces the user-supplied Google Earth KMZ exactly: its rotated
+LatLonBox, source-pixel anchor, 2000-07-23 historical-imagery date, and 50.2%
+opacity replace the rejected placement 1,428 metres away. The international
+wave also adds nine exact publisher map references as candidate fields and one
+four-control, open-license Diessenhofen display overlay; image corners were
+rejected for the nine rights-restricted cases that lacked sufficient controls.
 
 The US-first resolution campaign uses official USGS and USDA imagery for
 repeatable evidence, with Google Earth as a manual verification surface only.
@@ -132,7 +145,8 @@ sources, control-point requirements, and unresolved-state policy.
 - `data/iccra_image_straight_candidates.csv`: metadata-only, unvalidated ICCRA
   source-image review queue; no source or derived pixels are included.
 - `web/data/formation_images.json`: normalized per-report source-image archive,
-  with 480 unique images, 266 linked formations, and 517 formation-image links.
+  with 7,889 unique image links, 1,913 linked reports, 8,042 relationships,
+  rights/display policy, and link-verification status.
 - `data/orientation_observations.csv`: human-reviewed true-north bearings.
 - `data/alignment_hits.csv`: centerline corridor hits with coordinate and
   bearing-uncertainty eligibility fields.
@@ -140,7 +154,8 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  twelve disabled provisional GroundOverlay links to the source host. Packaged
+  thirteen disabled provisional GroundOverlay links to source-hosted images,
+  including one CC BY-SA 3.0 international placement. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
@@ -160,9 +175,12 @@ powershell -ExecutionPolicy Bypass -File scripts/fetch_sources.ps1
 powershell -ExecutionPolicy Bypass -File scripts/fetch_iccra_full.ps1
 python scripts/parse_iccra_full.py
 python scripts/source_expansion.py
+python scripts/build_global_source_image_links.py --live-details --allow-source-invalid-chain
+python scripts/build_commons_crop_circle_images.py
 python scripts/detect_straight_components.py --pdf "C:\path\to\COMBINED.pdf"
 python scripts/detect_iccra_image_straight_components.py
 python scripts/build_dataset.py --pdf "C:\path\to\COMBINED.pdf"
+python scripts/build_formation_image_catalog.py
 python scripts/build_provisional_image_scene_placements.py
 python scripts/build_formation_image_catalog.py
 python scripts/merge_snapshots.py
@@ -189,6 +207,6 @@ assertions: Crop Circle Center, ICCRA, Crop Circle Connector, DCCA, Paul Vigay's
 archive, and the CCCRN mirror. Other high-value holdings remain permission-,
 membership-, robots-, DNS-, or interface-limited. The accessible expansion
 showed sharply lower yield at Vigay/CCCRN after the Connector and DCCA indexes,
-but 450 new normalized keys means global diminishing returns have not been
+but 449 new normalized keys means global diminishing returns have not been
 proved. The source register states each boundary rather than implying complete
 coverage of inaccessible holdings.

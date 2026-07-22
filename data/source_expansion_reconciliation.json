@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-21T08:24:27Z",
+  "generated_at": "2026-07-22T04:33:32Z",
   "parser_version": "source-expansion-v1",
   "scope_statement": "Bounded public metadata pass, not a claim of global exhaustiveness.",
   "crawl": {
@@ -11,28 +11,30 @@
     "membership_or_api_requests": 0
   },
   "yield": {
-    "baseline_assertions": 7751,
-    "baseline_normalized_keys": 7299,
+    "baseline_assertions": 7752,
+    "baseline_normalized_keys": 7300,
     "expansion_assertions": 639,
     "expansion_distinct_normalized_source_keys": 639,
-    "exact_overlap_normalized_keys": 189,
-    "new_normalized_source_keys_vs_baseline": 450,
+    "exact_overlap_normalized_keys": 190,
+    "new_normalized_source_keys_vs_baseline": 449,
     "same_normalized_key_assertion_surplus": 0,
     "match_statuses": {
       "exact_overlap": 189,
       "probable_overlap_not_merged": 83,
-      "new_exact_key": 200,
-      "alias_overlap_not_merged": 167
+      "new_exact_key": 199,
+      "alias_overlap_not_merged": 167,
+      "baseline_geography_correction": 1
     },
     "per_source": {
       "connector": {
         "assertions": 442,
         "distinct_normalized_source_keys": 442,
-        "exact_overlap_normalized_keys": 102,
-        "new_normalized_source_keys_vs_baseline": 340,
+        "exact_overlap_normalized_keys": 103,
+        "new_normalized_source_keys_vs_baseline": 339,
         "exact_overlap_assertions": 102,
         "alias_overlap_not_merged_assertions": 164,
-        "probable_overlap_not_merged_assertions": 29
+        "probable_overlap_not_merged_assertions": 29,
+        "baseline_geography_correction_assertions": 1
       },
       "dcca": {
         "assertions": 184,
@@ -41,7 +43,8 @@
         "new_normalized_source_keys_vs_baseline": 101,
         "exact_overlap_assertions": 83,
         "alias_overlap_not_merged_assertions": 3,
-        "probable_overlap_not_merged_assertions": 54
+        "probable_overlap_not_merged_assertions": 54,
+        "baseline_geography_correction_assertions": 0
       },
       "cccrn": {
         "assertions": 1,
@@ -50,7 +53,8 @@
         "new_normalized_source_keys_vs_baseline": 0,
         "exact_overlap_assertions": 1,
         "alias_overlap_not_merged_assertions": 0,
-        "probable_overlap_not_merged_assertions": 0
+        "probable_overlap_not_merged_assertions": 0,
+        "baseline_geography_correction_assertions": 0
       },
       "vigay": {
         "assertions": 12,
@@ -59,7 +63,8 @@
         "new_normalized_source_keys_vs_baseline": 9,
         "exact_overlap_assertions": 3,
         "alias_overlap_not_merged_assertions": 0,
-        "probable_overlap_not_merged_assertions": 0
+        "probable_overlap_not_merged_assertions": 0,
+        "baseline_geography_correction_assertions": 0
       },
       "blt": {
         "assertions": 0,
@@ -68,7 +73,8 @@
         "new_normalized_source_keys_vs_baseline": 0,
         "exact_overlap_assertions": 0,
         "alias_overlap_not_merged_assertions": 0,
-        "probable_overlap_not_merged_assertions": 0
+        "probable_overlap_not_merged_assertions": 0,
+        "baseline_geography_correction_assertions": 0
       }
     }
   },
