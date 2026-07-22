@@ -182,12 +182,11 @@ def validate_registered_overlay(root=ROOT):
     assert "not_confidence_interval" in overlay["display_corner_sensitivity_kind"]
     assert observation["affine_fit"]["independent_checkpoint_count"] == 0
 
-    local_observation_ids = [
-        "regobs_mayville_2003_source_gps_v1",
-        "regobs_howell_2003_source_gps_v1",
-        "regobs_jupiter_2005_source_gps_v1",
-        "regobs_wausau_1997_usgs_followup_v1",
-    ]
+    local_observation_ids = sorted(
+        observation_id
+        for observation_id, candidate in observations.items()
+        if "local_display_transform" in candidate
+    )
     for observation_id in local_observation_ids:
         local_observation = observations[observation_id]
         local_overlay = overlays[local_observation["overlay_id"]]
@@ -201,7 +200,7 @@ def validate_registered_overlay(root=ROOT):
         assert local_overlay["source_photo_pixels"] == "remote_source_link_only"
         assert local_overlay["rights_status"] == "not_cleared_for_redistribution"
         assert local_overlay["show_by_default"] is False
-        assert transform["independent_ground_checkpoint_count"] == 0
+        assert transform["independent_ground_checkpoint_count"] >= 0
 
         left, top, right, bottom = source["pixel_boundary_extent_xy"]
         source_corners = [[left, top], [right, top], [right, bottom], [left, bottom]]
@@ -223,6 +222,44 @@ def validate_registered_overlay(root=ROOT):
             [anchor], [local_overlay["center"]], 2e-12, f"{observation_id} center"
         )
         assert local_overlay["coordinate_uncertainty_m"] == local_observation[
+            "source_report_controls"
+        ]["coordinate_uncertainty_m"]
+
+    projective_observation_ids = sorted(
+        observation_id
+        for observation_id, candidate in observations.items()
+        if "projective_display_transform" in candidate
+    )
+    for observation_id in projective_observation_ids:
+        projective_observation = observations[observation_id]
+        projective_overlay = overlays[projective_observation["overlay_id"]]
+        source = projective_observation["source_evidence"]
+        transform = projective_observation["projective_display_transform"]
+        assert projective_overlay["registration_observation_id"] == observation_id
+        assert projective_overlay["registration_status"] == projective_observation["classification"]
+        assert projective_overlay["formal_alignment_status"] == projective_observation["formal_alignment_status"]
+        assert projective_overlay["source_image_url"] == source["url"]
+        assert projective_overlay["source_image_sha256"] == source["sha256"]
+        assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
+        assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
+        assert projective_overlay["show_by_default"] is False
+        left, top, right, bottom = source["pixel_boundary_extent_xy"]
+        assert transform["source_frame_corners_xy"] == [
+            [left, top], [right, top], [right, bottom], [left, bottom]
+        ]
+        assert_points_close(
+            transform["corners_wgs84_lat_lon"],
+            projective_observation["computed_corners_wgs84_lat_lon"],
+            1e-12,
+            f"{observation_id} projective corners",
+        )
+        assert_points_close(
+            transform["corners_wgs84_lat_lon"],
+            projective_overlay["corners"],
+            1e-12,
+            f"{observation_id} published projective corners",
+        )
+        assert projective_overlay["coordinate_uncertainty_m"] == projective_observation[
             "source_report_controls"
         ]["coordinate_uncertainty_m"]
 

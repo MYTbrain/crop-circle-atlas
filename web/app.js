@@ -7,6 +7,8 @@ map.getPane('registeredImageryPane').style.zIndex = '350';
 map.getPane('registeredImageryPane').style.pointerEvents = 'none';
 map.createPane('localityPointPane');
 map.getPane('localityPointPane').style.zIndex = '420';
+map.createPane('sourcePhotoPane');
+map.getPane('sourcePhotoPane').style.zIndex = '438';
 map.createPane('overlayFootprintPane');
 map.getPane('overlayFootprintPane').style.zIndex = '445';
 map.createPane('rayPane');
@@ -34,6 +36,7 @@ const layerControl = L.control.layers(
 
 const siteLayer = L.layerGroup().addTo(map);
 const localityLayer = L.layerGroup();
+const sourcePhotoLayer = L.layerGroup().addTo(map);
 const registeredFootprintLayer = L.layerGroup().addTo(map);
 layerControl.addOverlay(siteLayer, 'Field candidates and reviewed sites');
 layerControl.addOverlay(localityLayer, 'Rough locality references (not sites)');
@@ -233,6 +236,18 @@ function renderSourceImageGallery(images) {
   $('toggleSourceImages').textContent = `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
 }
 
+function showSourceImages() {
+  const images = sourceImagesFor();
+  if (!selected || !images.length) return;
+  const gallery = $('sourceImageGallery');
+  if (sourceImageLoadedFor !== selected.formation_id) {
+    renderSourceImageGallery(images);
+    return;
+  }
+  gallery.hidden = false;
+  $('toggleSourceImages').textContent = `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
+}
+
 function toggleSourceImages() {
   const images = sourceImagesFor();
   if (!selected || !images.length) return;
@@ -244,12 +259,12 @@ function toggleSourceImages() {
       : `Hide ${images.length} loaded source image${images.length === 1 ? '' : 's'}`;
     return;
   }
-  renderSourceImageGallery(images);
+  showSourceImages();
 }
 
 window.showSourceImagesForFormation = async (id) => {
   await selectFormation(id, true);
-  toggleSourceImages();
+  showSourceImages();
   $('sourceImageSection').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
 
@@ -331,6 +346,97 @@ function renderFeatures(features, targetLayer, reference = false) {
   }
 }
 
+function sourcePhotoCoordinates(record) {
+  const feature = siteFeaturesById.get(record.formation_id)
+    || localityFeaturesById.get(record.formation_id);
+  if (feature?.geometry?.type === 'Point') {
+    const [longitude, latitude] = feature.geometry.coordinates.map(Number);
+    if (Number.isFinite(latitude) && Number.isFinite(longitude)) return [latitude, longitude];
+  }
+  if (record.latitude == null || record.latitude === ''
+      || record.longitude == null || record.longitude === '') return null;
+  const latitude = Number(record.latitude);
+  const longitude = Number(record.longitude);
+  if (!Number.isFinite(latitude) || !Number.isFinite(longitude)
+      || Math.abs(latitude) > 90 || Math.abs(longitude) > 180) return null;
+  return [latitude, longitude];
+}
+
+function sourcePhotoChoicePopup(records) {
+  const popup = document.createElement('div');
+  popup.className = 'popup source-photo-popup';
+  const title = document.createElement('h3');
+  title.textContent = `${records.length} image-bearing reports share this coordinate reference`;
+  const disclosure = document.createElement('p');
+  disclosure.textContent = 'Choose a report to load its source-image archive. This badge shows image availability, not a registered photograph or formation placement.';
+  popup.append(title, disclosure);
+  records.forEach((record) => {
+    const images = sourceImagesFor(record.formation_id);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'secondary source-photo-choice';
+    button.textContent = `${record.date_iso} — ${record.place || 'Unnamed report'} (${images.length} image${images.length === 1 ? '' : 's'})`;
+    button.addEventListener('click', () => window.showSourceImagesForFormation(record.formation_id));
+    popup.appendChild(button);
+  });
+  return popup;
+}
+
+function renderSourcePhotoAvailability(visibleIds = null) {
+  sourcePhotoLayer.clearLayers();
+  const mappedOverlayIds = new Set(overlayRecords.map((record) => record.formation_id));
+  const groups = new Map();
+  for (const formationId of sourceImagesByFormation.keys()) {
+    if (visibleIds && !visibleIds.has(formationId)) continue;
+    if (mappedOverlayIds.has(formationId)) continue;
+    const record = formationsById.get(formationId);
+    if (!record) continue;
+    const coordinates = sourcePhotoCoordinates(record);
+    if (!coordinates) continue;
+    const key = `${coordinates[0].toFixed(7)},${coordinates[1].toFixed(7)}`;
+    if (!groups.has(key)) groups.set(key, { coordinates, records: [] });
+    groups.get(key).records.push(record);
+  }
+  for (const { coordinates, records } of groups.values()) {
+    records.sort((left, right) => String(left.date_iso).localeCompare(String(right.date_iso)));
+    const imageCount = records.reduce((total, record) => total + sourceImagesFor(record.formation_id).length, 0);
+    const label = records.length > 1 ? `PIC ${records.length}` : 'PIC';
+    const marker = L.marker(coordinates, {
+      pane: 'sourcePhotoPane',
+      icon: L.divIcon({
+        className: 'source-photo-marker',
+        html: `<span aria-hidden="true">${label}</span>`,
+        iconSize: [records.length > 1 ? 34 : 27, 18],
+        iconAnchor: [3, 22],
+        tooltipAnchor: [13, -18],
+      }),
+      title: `${records.length} report${records.length === 1 ? '' : 's'} with ${imageCount} linked source image${imageCount === 1 ? '' : 's'} — availability only`,
+    });
+    if (records.length === 1) {
+      const record = records[0];
+      marker.bindTooltip(`${record.place || 'Report'}: ${imageCount} source image${imageCount === 1 ? '' : 's'} available — not a mapped placement`);
+      marker.on('click', () => window.showSourceImagesForFormation(record.formation_id));
+    } else {
+      marker.bindPopup(sourcePhotoChoicePopup(records), { maxWidth: 360 });
+      marker.bindTooltip(`${records.length} reports with source images share this coordinate — click to choose`);
+    }
+    marker.addTo(sourcePhotoLayer);
+  }
+}
+
+function sourcePhotoLocationCounts() {
+  const mappedOverlayIds = new Set(overlayRecords.map((record) => record.formation_id));
+  let located = 0;
+  let registered = 0;
+  for (const formationId of sourceImagesByFormation.keys()) {
+    const record = formationsById.get(formationId);
+    if (!record || !sourcePhotoCoordinates(record)) continue;
+    located += 1;
+    if (mappedOverlayIds.has(formationId)) registered += 1;
+  }
+  return { located, registered, picReports: located - registered };
+}
+
 function lineOrAxis(record) {
   return record.has_straight_component === 'yes_evidence_reviewed'
     || provisionalByFormation.has(record.formation_id)
@@ -382,6 +488,7 @@ function applyFilters() {
   }
   if ($('showLocalities').checked && !map.hasLayer(localityLayer)) localityLayer.addTo(map);
   if (!$('showLocalities').checked && map.hasLayer(localityLayer)) map.removeLayer(localityLayer);
+  renderSourcePhotoAvailability(visibleIds);
   renderRegisteredFootprints(visibleIds);
   $('visibleCount').textContent = visibleFormations.length.toLocaleString();
 
@@ -799,8 +906,8 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260721.5').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260721.5').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260721.7').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260721.7').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
@@ -814,6 +921,8 @@ Promise.all([
   Object.entries(sourceImages.images_by_formation || {}).forEach(([formationId, images]) => {
     sourceImagesByFormation.set(formationId, images);
   });
+  const sourcePhotoCounts = sourcePhotoLocationCounts();
+  layerControl.addOverlay(sourcePhotoLayer, `Source-photo availability (${sourcePhotoCounts.picReports} reports)`);
   layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
 
   const years = allFormations.map((record) => Number(record.year)).filter(Number.isFinite);
@@ -827,7 +936,9 @@ Promise.all([
   $('unresolvedCount').textContent = allFormations.filter((record) => locationRole(record) === 'unresolved').length.toLocaleString();
   $('sourceImageCount').textContent = Number(sourceImageMetadata.unique_image_count || 0).toLocaleString();
   $('mappedImageCount').textContent = overlayRecords.length.toLocaleString();
-  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique ICCRA source files are linked to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} are attached to US reports. ${overlayRecords.length} currently have reviewed map placements.`;
+  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. Click an amber IMG badge or dashed footprint to load the actual source photograph over its reviewed display placement. These are distinct from cyan PIC badges, which only indicate source-photo availability.`;
+  const unlocatedImageReports = Number(sourceImageMetadata.formation_count || 0) - sourcePhotoCounts.located;
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique ICCRA source files are linked to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} are attached to US reports. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} amber IMG badges have reviewed map placements, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
   updateSourceImageControls();
   applyFilters();
   addOrientationLayers();

@@ -11,8 +11,8 @@ after four accepted report-alias merges. Every entity has one location role:
 
 | Location role | Count | Meaning |
 |---|---:|---|
-| Field candidates/sites | 14 | Two corroborated fields, seven candidate fields, and five source-coordinate registered sites |
-| Locality reference | 4,012 | Approximate place centroid retained for finding the report, not the field |
+| Field candidates/sites | 22 | Two corroborated fields, fourteen candidate fields, and six registered sites |
+| Locality reference | 4,004 | Approximate place centroid retained for finding the report, not the field |
 | Unresolved | 3,719 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
 | Total | 7,745 | Complete location-work index |
 
@@ -23,7 +23,7 @@ field is supported by reviewed evidence; it does not necessarily mean every
 feature boundary or formation center is survey-grade. `candidate_field` is a
 bounded hypothesis. Unresolved records remain unresolved.
 
-The working queue is `data/location_work_queue.csv`. Ten reviewed field-level
+The working queue is `data/location_work_queue.csv`. Eighteen reviewed field-level
 decisions are recorded separately in `data/site_resolutions.csv`, so review,
 spatial confidence, and image-publication rights cannot be conflated.
 
@@ -73,23 +73,29 @@ but they are not a substitute for independently selected ground checkpoints.
 
 ## Additional reviewed US candidates
 
-The current campaign adds six evidence-reviewed US cases. Only the Wausau
-August 13 follow-up image has sufficient scene controls for a provisional image
-placement; the other five records publish a bounded candidate point without
-inventing overlay corners.
+The first campaign pass added six evidence-reviewed US cases. A second bounded
+image-placement wave promoted Wavra Farm and both Rockville cases to explicit,
+reproducible provisional scene overlays while retaining their formal-analysis
+exclusions.
 
 | Report | Published result | Uncertainty | Evidence boundary |
 |---|---|---:|---|
 | Wausau, Wisconsin, 1997-08-13 | Candidate field plus provisional follow-up-scene placement | 100 m | A contemporaneous investigator map is fitted to named road controls and checked against persistent roads, a farmstead, drainage, and field boundaries in the ICCRA-linked 1998 USGS frame; the formation is not clearly visible in that later frame |
 | Wausau, Wisconsin, 1997-08-16 | Candidate field | 100 m | The second symbol on the same investigator map constrains the field west of North 41st Street; no independent projective image fit is accepted |
-| Rockville 1, California, 2003-06-28 | Candidate field | 150 m | Named intersection plus road, field, and building pattern in the oblique aerial image; not a four-point registration |
-| Rockville 2, California, 2003-06-28 | Candidate field | 200 m | Solano Community College campus, adjacent roads, and field geometry constrain the scene; not a four-point registration |
-| Wavra Farm / Salem–Silver Creek Falls, Oregon, 1997-06-28 | Candidate field | 300 m | Named Highway 22 exit plus road, farmstead, and field pattern; oblique-view ambiguity remains |
+| Rockville 1, California, 2003-06-28 | Candidate field plus provisional source-photo placement | 60 m | Named intersection plus road, field, parking, roof, and tree controls support a two-control similarity display fit; no independent checkpoint |
+| Rockville 2, California, 2003-06-28 | Candidate field plus provisional source-photo placement | 60 m | Solano Community College tennis courts, campus buildings, parking, arterial road, and field corner constrain the oblique scene; no independent checkpoint |
+| Wavra Farm / Salem–Silver Creek Falls, Oregon, 1997-06-28 | Candidate field plus provisional source-photo placement | 75 m | The named farm address and 1995 orthophoto replace the rejected Highway 22 seed; persistent road, drive, houses, tree rows, and field corners support the scene fit |
 | Bedford, Indiana, 2008-09-13 | Candidate field/search scene | 1,200 m | The source's approximate location-map pin is fitted to named-community controls and checked against the Sandpit/Mitchell road clue; ground photographs do not support corners or orientation |
 
 These classifications are search improvements, not survey-grade formation
 coordinates. Their uncertainty values, evidence methods, and exclusions remain
 visible in the site ledger.
+
+The second wave also adds photo footprints for Miamisburg 2004,
+Hopewell/Chillicothe 2012, and Albion/Starr 2002. It narrows Fresno, Vacaville,
+New Park, Northwood, and Burnsville to candidate search areas while deliberately
+leaving their source photographs at PIC-only status because the visible
+landmarks did not select a unique field and transform.
 
 ## US-first source hierarchy
 
@@ -216,9 +222,11 @@ only defensibly registered images receive map footprints. Each source-photo
 overlay is disabled until a user explicitly chooses to show it; the browser
 then requests the rights-restricted image directly from the source host and
 applies the atlas's corner metadata locally. The footprints follow the active
-search, year, and country filters. Six reviewed placements are currently
+search, year, and country filters. Twelve reviewed placements are currently
 available: Whiskey Hill/Hubbard 1998 and 2000, Wausau 1997,
-Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005. For Hubbard
+Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005, Wavra Farm 1997,
+both Rockville 2003 reports, Miamisburg 2004, Hopewell/Chillicothe 2012, and
+Albion/Starr 2002. For Hubbard
 2000, `data/registered_overlay_observations.json` makes the approximate display
 geometry reproducible while recording that its 35 m detector-sensitivity
 envelope is not a confidence interval and that it lacks an independent ground
@@ -232,7 +240,7 @@ cache for publication, bundle, or redistribute those pixels. Cross-origin or
 source-host failure remains a visible failure; it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries six disabled provisional
+packages zero source-photo files and carries twelve disabled provisional
 GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,

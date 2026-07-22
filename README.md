@@ -13,8 +13,8 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 - 8,390 source assertions resolved into 7,745 conservative catalog entities
   after four evidence-reviewed report aliases were merged. Near matches remain
   separate, so this is not a claim of 7,745 physically distinct formations.
-- Location evidence is separated by role: 14 reviewed field candidates/sites,
-  4,012 labeled locality references, and 3,719 unresolved entities. Ten of the
+- Location evidence is separated by role: 22 reviewed field candidates/sites,
+  4,004 labeled locality references, and 3,719 unresolved entities. Eighteen of the
   field-level records are explicit reviewed overrides. A locality reference
   supports discovery and search; it is not presented as the field.
 - 949 United States entities, plus one Puerto Rico record retained separately.
@@ -45,15 +45,17 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   formations. Their five long-distance extensions are clearly labeled
   experimental. The earlier 16 corridor matches came from rough locality
   centroids and are now excluded; accepted rays tested against the two currently
-  alignment-eligible sites produce zero corridor matches. The other 12
+  alignment-eligible sites produce zero corridor matches. The other 20
   candidates/sites are excluded by the quality gate. Diagram angles remain
   image-space measurements and never become geographic bearings without
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero ICCRA image files because publication rights
-  have not been cleared. The web map and KML/KMZ contain six opt-in,
+  have not been cleared. The web map and KML/KMZ contain twelve opt-in,
   source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
-  Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter 2005.
+  Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005,
+  Wavra Farm 1997, both Rockville 2003 formations, Miamisburg 2004,
+  Hopewell/Chillicothe 2012, and Albion/Starr 2002.
   Wausau uses a contemporaneous investigator road map and an ICCRA-linked USGS
   follow-up frame; Mayville and Howell have provisional display geometry tied
   to source coordinates; Jupiter is explicitly a coordinate-anchored scene
@@ -66,8 +68,8 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 ## Exact-field resolution status
 
 Exact-field work has begun, but it is not complete. The current ledger contains
-14 field candidates/sites; 4,012 other coordinates are explicitly labeled
-locality references and 3,719 entities remain unresolved. Ten field-level
+22 field candidates/sites; 4,004 other coordinates are explicitly labeled
+locality references and 3,719 entities remain unresolved. Eighteen field-level
 decisions are preserved as reviewed overrides.
 
 The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
@@ -102,8 +104,12 @@ persistent road/field landmarks. The formation is not unambiguously visible in
 that later frame, so its center remains a candidate field and the placement is
 excluded from alignment tests. Wausau August 16, Rockville 1, Rockville 2,
 Wavra Farm, and Bedford are also published as bounded candidate fields or
-candidate scenes with explicit uncertainty. None of those five candidates has
-a defensible source-photo footprint, so no overlay is inferred from its point.
+candidate scenes with explicit uncertainty. The current placement wave adds
+reproducible, opt-in photo footprints for Wavra Farm and both Rockville cases,
+plus Miamisburg, Hopewell/Chillicothe, and Albion/Starr. Bedford and Wausau
+August 16 remain point/search evidence only. Fresno, Vacaville, New Park,
+Northwood, and Burnsville now have bounded candidate search areas but no
+invented image corners where a unique landmark match could not be reproduced.
 
 The US-first resolution campaign uses official USGS and USDA imagery for
 repeatable evidence, with Google Earth as a manual verification surface only.
@@ -134,7 +140,7 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  six disabled provisional GroundOverlay links to the source host. Packaged
+  twelve disabled provisional GroundOverlay links to the source host. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
@@ -157,6 +163,8 @@ python scripts/source_expansion.py
 python scripts/detect_straight_components.py --pdf "C:\path\to\COMBINED.pdf"
 python scripts/detect_iccra_image_straight_components.py
 python scripts/build_dataset.py --pdf "C:\path\to\COMBINED.pdf"
+python scripts/build_provisional_image_scene_placements.py
+python scripts/build_formation_image_catalog.py
 python scripts/merge_snapshots.py
 python scripts/generate_kml.py
 $env:NODE_OPTIONS='--max-old-space-size=8192'

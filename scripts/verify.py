@@ -74,13 +74,13 @@ assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
 assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8390, 7745, 4026, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
-    "locality_reference": 4012,
+    "locality_reference": 4004,
     "unresolved": 3719,
     "corroborated_field": 2,
-    "candidate_field": 7,
-    "registered_site": 5,
+    "candidate_field": 14,
+    "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 10
+assert summary["site_resolutions"]["reviewed_overrides"] == 18
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -211,8 +211,8 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 14
-assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 4012
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 22
+assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 4004
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
 assert all(feature["properties"]["site_status"] in FIELD_SITE_STATUSES for feature in site_geojson["features"])
@@ -389,9 +389,8 @@ formation_images = json.loads(
     (ROOT / "web" / "data" / "formation_images.json").read_text(encoding="utf-8")
 )
 validate_registered_overlay(ROOT)
-assert len(registered_overlays["overlays"]) == 6
 overlays_by_id = {item["overlay_id"]: item for item in registered_overlays["overlays"]}
-assert set(overlays_by_id) == {
+core_overlay_ids = {
     "whiskey-hill-1998-user-registration",
     "hubbard-2000-three-lobe-registration",
     "mayville-kekoskee-2003-source-gps-registration",
@@ -399,6 +398,12 @@ assert set(overlays_by_id) == {
     "jupiter-2005-source-gps-scene-placement",
     "wausau-1997-usgs-followup-registration",
 }
+scene_placement_specs = json.loads(
+    (ROOT / "data" / "provisional_image_scene_placements.json").read_text(encoding="utf-8")
+)["placements"]
+scene_placement_ids = {item["overlay_id"] for item in scene_placement_specs}
+assert set(overlays_by_id) == core_overlay_ids | scene_placement_ids
+assert len(registered_overlays["overlays"]) >= 9
 image_relationships = [
     (formation_id, image)
     for formation_id, images in formation_images["images_by_formation"].items()
@@ -516,7 +521,7 @@ kml_ns = {"k": "http://www.opengis.net/kml/2.2"}
 assert len(kml_root.findall(".//k:Point", kml_ns)) == len(geocoded)
 assert len(kml_root.findall(".//k:LineString", kml_ns)) == len(orientations) + len(provisional_rows)
 linked_overlays = kml_root.findall(".//k:GroundOverlay", kml_ns)
-assert len(linked_overlays) == 6
+assert len(linked_overlays) == len(registered_overlays["overlays"])
 assert all(item.find("k:visibility", kml_ns).text == "1" for item in linked_overlays)
 assert all(item.find("k:color", kml_ns).text == "adffffff" for item in linked_overlays)
 kml_text = kml_path.read_text(encoding="utf-8")
@@ -533,35 +538,11 @@ with zipfile.ZipFile(kmz_path) as archive:
 overlay_audit = rows("image_overlay_audit.csv")
 assert overlay_audit == [
     {
-        "asset_id": "whiskey-hill-1998-user-registration",
+        "asset_id": item["overlay_id"],
         "status": "included_remote_link",
         "reason": "pixels_not_packaged_provisional",
-    },
-    {
-        "asset_id": "hubbard-2000-three-lobe-registration",
-        "status": "included_remote_link",
-        "reason": "pixels_not_packaged_provisional",
-    },
-    {
-        "asset_id": "mayville-kekoskee-2003-source-gps-registration",
-        "status": "included_remote_link",
-        "reason": "pixels_not_packaged_provisional",
-    },
-    {
-        "asset_id": "howell-township-2003-source-gps-registration",
-        "status": "included_remote_link",
-        "reason": "pixels_not_packaged_provisional",
-    },
-    {
-        "asset_id": "jupiter-2005-source-gps-scene-placement",
-        "status": "included_remote_link",
-        "reason": "pixels_not_packaged_provisional",
-    },
-    {
-        "asset_id": "wausau-1997-usgs-followup-registration",
-        "status": "included_remote_link",
-        "reason": "pixels_not_packaged_provisional",
-    },
+    }
+    for item in registered_overlays["overlays"]
 ]
 assert (ROOT / "web" / "downloads" / "crop_circle_atlas.kmz").read_bytes() == kmz_path.read_bytes()
 
@@ -584,9 +565,9 @@ with zipfile.ZipFile(workbook) as archive:
             table = ET.fromstring(archive.read(member))
             table_refs[table.attrib["displayName"]] = table.attrib["ref"]
     assert table_refs["FormationsTable"] == "A1:AP7746"
-    assert table_refs["FieldSiteReviewsTable"] == "A1:T11"
+    assert table_refs["FieldSiteReviewsTable"] == f"A1:T{len(site_resolution_rows) + 1}"
     assert table_refs["AliasReviewsTable"].endswith("5")
-    assert table_refs["OverlayAuditTable"] == "A1:C7"
+    assert table_refs["OverlayAuditTable"] == f"A1:C{len(overlay_audit) + 1}"
 
 for needed in (
     "index.html", "app.js", "styles.css", "favicon.svg", "methodology.html", "georef.html",
@@ -602,7 +583,7 @@ web_styles = (ROOT / "web" / "styles.css").read_text(encoding="utf-8")
 georef_html = (ROOT / "web" / "georef.html").read_text(encoding="utf-8")
 assert "Show rough locality references on map" in web_index
 assert "Load and zoom to registered image" in web_index
-assert "Registered aerial imagery" in web_index
+assert "Mapped source-image overlays" in web_index
 assert "Source image archive" in web_index
 assert 'id="sourceImageGallery"' in web_index
 assert 'id="toggleSourceImages"' in web_index
@@ -619,11 +600,11 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260721.5"' in web_index
-assert 'src="app.js?v=20260721.5"' in web_index
-assert "registered_overlays.json?v=20260721.5" in web_app
-assert "formation_images.json?v=20260721.5" in web_app
-assert "Six reviewed source-image placements are mapped" in web_index
+assert 'href="styles.css?v=20260721.7"' in web_index
+assert 'src="app.js?v=20260721.7"' in web_index
+assert "registered_overlays.json?v=20260721.7" in web_app
+assert "formation_images.json?v=20260721.7" in web_app
+assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
 assert "map.closePopup()" in web_app

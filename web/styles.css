@@ -27,6 +27,9 @@ button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:tran
 .key-dot.verified { color:#54d6c2; background:#54d6c2; }
 .key-dot.candidate { color:var(--candidate); background:var(--candidate); box-shadow:0 0 0 1px #fffde7; }
 .key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }
+.key-image-badge { display:inline-flex; align-items:center; justify-content:center; min-width:24px; height:15px; padding:0 3px; border:1px solid currentColor; border-radius:4px; font-size:7px; font-style:normal; font-weight:900; letter-spacing:.04em; line-height:1; }
+.key-image-badge.source { color:#d8fff9; background:#146b67; }
+.key-image-badge.mapped { color:#16100a; background:#f6ad55; border-color:#fff4c7; }
 .results { margin-top:12px; color:#cbd8d5; font-size:12px; }
 .results summary { cursor:pointer; color:#86e2d3; }
 .results-list { max-height:260px; overflow:auto; margin-top:8px; padding-right:3px; }
@@ -47,8 +50,12 @@ footer { color:var(--muted); font-size:11px; padding-top:4px; } a { color:#86e2d
 .popup h3 { margin:0 0 5px; font-size:15px; }.popup p { margin:4px 0; }.popup button { margin-top:8px; padding:6px 8px; }
 .registered-image-marker { background:transparent; border:0; }
 .registered-image-marker span { display:flex; align-items:center; justify-content:center; width:34px; height:24px; border:2px solid #fff4c7; border-radius:6px; background:#f6ad55; color:#16100a; box-shadow:0 2px 8px #000b; font-size:9px; font-weight:900; letter-spacing:.06em; }
+.source-photo-marker { background:transparent; border:0; }
+.source-photo-marker span { display:flex; align-items:center; justify-content:center; width:max-content; min-width:27px; height:18px; padding:0 4px; border:1px solid #d8fff9; border-radius:4px; background:#146b67; color:#effffa; box-shadow:0 1px 5px #000a; font-size:7px; font-weight:900; letter-spacing:.04em; line-height:1; }
+.source-photo-popup .source-photo-choice { margin-top:6px; text-align:left; font-size:11px; }
 .source-image-section { background:#0d1d1b; margin:0 -10px; padding:20px 10px; border-top-color:#35665e; }
 .source-image-gallery { display:grid; grid-template-columns:1fr; gap:10px; max-height:620px; overflow:auto; margin-top:12px; padding-right:4px; }
+.source-image-gallery[hidden] { display:none; }
 .source-image-card { min-width:0; padding:9px; border:1px solid #35534d; border-radius:8px; background:#091513; }
 .source-image-preview { display:flex; align-items:center; justify-content:center; min-height:90px; max-height:280px; margin-top:7px; overflow:hidden; border-radius:5px; background:#030807; }
 .source-image-preview img { display:block; max-width:100%; max-height:280px; width:auto; height:auto; object-fit:contain; }
