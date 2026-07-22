@@ -1,0 +1,292 @@
+{
+  "schema_version": "crop-circle-atlas/reviewed-archive-images/v1",
+  "reviewed_at": "2026-07-22",
+  "source_id": "crop_circle_archives_us",
+  "source_name": "Crop Circle Archives",
+  "rights_status": "link_only_archive_images_not_redistributed",
+  "embedding_allowed": false,
+  "pixel_bytes_packaged": false,
+  "reports": [
+    {
+      "formation_id": "cc_104e3b95dd75",
+      "assertion_id": "iccra_b14c2fc23329b3f3",
+      "date_iso": "2002-08-10",
+      "place": "Teton",
+      "region": "Idaho",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/Teton2002.html",
+      "match_basis": "Archive detail page names Teton, Idaho and the same report date.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/idahocropcirclebig.jpg"]
+    },
+    {
+      "formation_id": "cc_24e959df4a14",
+      "assertion_id": "iccra_33ace4c96a8fd62e",
+      "date_iso": "2002-07-26",
+      "place": "Naperville",
+      "region": "Illinois",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/Naperville2002a.html",
+      "match_basis": "Archive detail page identifies the Molex property in Naperville and the same event date.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2002/northamerica/naperville2002a.jpg"]
+    },
+    {
+      "formation_id": "cc_2152af98e2d7",
+      "assertion_id": "iccra_23c2d921613cfda1",
+      "date_iso": "2003-08-23",
+      "place": "Bainbridge / Paint Creek",
+      "region": "Ohio",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/northamerica2003.html",
+      "match_basis": "Archive labels the images as the soybean formation near Seip Mound at Paint Creek, Bainbridge, Ohio.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA%202003.JPG",
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Near%20Seip%20Mound%20%20Paint%20Creek%20%20Bainbridge%20Ohio%20USA.JPG"
+      ]
+    },
+    {
+      "formation_id": "cc_7cdb63cfe429",
+      "assertion_id": "iccra_8f83eadb098b0eb6",
+      "date_iso": "2003-08-24",
+      "place": "Locust Grove / Serpent Mound",
+      "region": "Ohio",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/northamerica2003.html",
+      "match_basis": "Archive labels both images as the 2003 Serpent Mound soybean formation near Locust Grove.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Soybeans%20Serpent%20Mound%20context%20%20near%20Brush%20Creek%20%20Peebles%20%20Ohio%20USA%202003.JPG",
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Serpent%20Mound%20CC%20soybeans%202003%20sent%20to%20Mark%20Fussell.JPG"
+      ]
+    },
+    {
+      "formation_id": "cc_ae1b8ee2ae1f",
+      "assertion_id": "iccra_b9bb80819738fef7",
+      "date_iso": "2003-06-28",
+      "place": "Rockville (1)",
+      "region": "California",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/northamerica2003.html",
+      "match_basis": "Archive section names Rockville, Solano County and shows the same formation geometry.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20detail1.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20prime1.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Rockville%20wideshot.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_7337f014661c",
+      "assertion_id": "iccra_2426a774b4821032",
+      "date_iso": "2003-06-08",
+      "place": "Knobel",
+      "region": "Arkansas",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/northamerica2003.html",
+      "match_basis": "Archive caption names Knobel, Arkansas and the June 2003 event.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2003/northamerica/Knobel2003a.jpg"]
+    },
+    {
+      "formation_id": "cc_3fb745fb7416",
+      "assertion_id": "iccra_31349f7aca5a4bf2",
+      "date_iso": "2004-08-24",
+      "place": "Miamisburg",
+      "region": "Ohio",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive groups the images under the Miamisburg Mound, Ohio report.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Corn%20%20Miamisburg%20Mound%20%20Miamisburg%20Ohio%20USA%202004.JPG",
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg4.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Miamisburg2004a.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_64e65753ca3c",
+      "assertion_id": "iccra_b6e33099f1f17316",
+      "date_iso": "2004-08-15",
+      "place": "Cottage Grove",
+      "region": "Minnesota",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies Cottage Grove, Minnesota and the August 2004 report.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/CG-cropcircles_01.jpg"]
+    },
+    {
+      "formation_id": "cc_a20bb389770e",
+      "assertion_id": "iccra_163dce3c08512525",
+      "date_iso": "2004-07-05",
+      "place": "Tilden / Chippewa Falls",
+      "region": "Wisconsin",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies Tilden near Chippewa Falls, Wisconsin.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/tildennews1.jpg"]
+    },
+    {
+      "formation_id": "cc_d47dd2c50510",
+      "assertion_id": "iccra_1a3503da7ed13f38",
+      "date_iso": "2004-07-04",
+      "place": "Eagle Grove",
+      "region": "Iowa",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies the Eagle Grove, Iowa event.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/IowaOne.jpg"]
+    },
+    {
+      "formation_id": "cc_ad68564a4282",
+      "assertion_id": "iccra_5ad53aa30468a7fb",
+      "date_iso": "2004-07-03",
+      "place": "Cordelia / Fairfield",
+      "region": "California",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies Cordelia near Fairfield in Solano County.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Solano2004a.jpg"]
+    },
+    {
+      "formation_id": "cc_c8e2401c7fbf",
+      "assertion_id": "iccra_718acbe82c9ea0ec",
+      "date_iso": "2004-06-28",
+      "place": "Spanish Fork",
+      "region": "Utah",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies Spanish Fork, Utah and the June 2004 event.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/06_28_04_crop_circle.sized.jpg"]
+    },
+    {
+      "formation_id": "cc_b1906f05d532",
+      "assertion_id": "iccra_2fe58cae09f0241c",
+      "date_iso": "2004-05-19",
+      "place": "Peach Orchard",
+      "region": "Arkansas",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/northamerica2004.html",
+      "match_basis": "Archive caption identifies Peach Orchard, Arkansas and the May 2004 event.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2004/northamerica/Arkansas2004a.jpg"]
+    },
+    {
+      "formation_id": "cc_c3c841d2f230",
+      "assertion_id": "iccra_1aed3a656ba57fd7",
+      "date_iso": "2005-11-30",
+      "place": "Port Arthur / Sabine Pass",
+      "region": "Texas",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
+      "match_basis": "Archive caption identifies the Port Arthur/Sabine Pass, Texas report.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Pt.-Arthur-11.jpg"]
+    },
+    {
+      "formation_id": "cc_289dd87e4b7c",
+      "assertion_id": "iccra_d7d762dedb981318",
+      "date_iso": "2005-08-18",
+      "place": "Coles County",
+      "region": "Illinois",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
+      "match_basis": "Archive groups aerial, field, and node photographs under the Coles County, Illinois report.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/rog8edit_sm%20copy4.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Node%20Damage1%20copy5.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Node%20Damage%2026.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles%20Cty,%20IL%20aerial%20(8_21_05)1.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles1.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Coles2.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_72e3a77239de",
+      "assertion_id": "iccra_e0848d4a79aae3f5",
+      "date_iso": "2005-08-10",
+      "place": "Northwood",
+      "region": "North Dakota",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
+      "match_basis": "Archive groups aerial and ground photographs under the 2005 Northwood, North Dakota report; the later archive page explicitly labels its additional aerial as the same 2005 event.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDaerial11.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDlay2.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/ND-centerswirl3.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/NDariel13.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/clip_image0028.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ND-aerial2.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_eb8ed861eac4",
+      "assertion_id": "iccra_ed7ced5b1427f371",
+      "date_iso": "2005-08-18",
+      "place": "Northern Colorado",
+      "region": "Colorado",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/northamerica2005.html",
+      "match_basis": "Archive caption identifies the northern Colorado report; ambiguous neighboring images are intentionally excluded.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2005/northamerica/Colorado1.jpg"]
+    },
+    {
+      "formation_id": "cc_a414d0cd9fcf",
+      "assertion_id": "iccra_f9295148ecd9a713",
+      "date_iso": "2006-09-09",
+      "place": "Beloit",
+      "region": "Kansas",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive groups the photograph with the Beloit, Kansas September 2006 report.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/crop-circle-2.jpg"]
+    },
+    {
+      "formation_id": "cc_74854ad00686",
+      "assertion_id": "iccra_c1872990e562be20",
+      "date_iso": "2006-08-16",
+      "place": "Geneseo",
+      "region": "Illinois",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive groups all three photographs under the Geneseo, Illinois August 2006 report.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-(8_16_06.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Geneseo--IL-farmer-Jim-Stah.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/DSC00423.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_7e1b225d2395",
+      "assertion_id": "iccra_65807745bc77ebd5",
+      "date_iso": "2006-07-30",
+      "place": "Belleville",
+      "region": "Illinois",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive caption identifies the Belleville, Illinois aerial.",
+      "image_urls": ["https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Belleville--IL-aerial-enhan.jpg"]
+    },
+    {
+      "formation_id": "cc_d77797cdea69",
+      "assertion_id": "iccra_320fdd2524fc3e1d",
+      "date_iso": "2006-07-22",
+      "place": "Sandyville",
+      "region": "Ohio",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive groups the six photographs under the Sandyville, Ohio July 2006 report; two ambiguous generic files are excluded.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Sandyville%20%20OH-7_22_06.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-002.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-001.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-003.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-006.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Crop-Circles-007.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_cee3a40aace5",
+      "assertion_id": "iccra_09b17f954c31afbe",
+      "date_iso": "2006-06-29",
+      "place": "Huntingburg",
+      "region": "Indiana",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive groups eight photographs under the Huntingburg, Indiana report.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/image00hun11.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/image00hun22.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot001.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot002.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot003.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot004.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/ScreenShot005.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Huntingburg--closeup-best-B.jpg"
+      ]
+    },
+    {
+      "formation_id": "cc_27e66142db39",
+      "assertion_id": "iccra_0ab7e14deb038cbf",
+      "date_iso": "2006-06-18",
+      "place": "Herington",
+      "region": "Kansas",
+      "source_record_url": "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/northamerica2006.html",
+      "match_basis": "Archive groups both photographs under the Herington, Kansas report; ambiguous generic files are excluded.",
+      "image_urls": [
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas%2C-6_06-2-circles.jpg",
+        "https://www.cropcirclearchives.co.uk/archives/inter2006/northamerica/Kansas-2006%2C-plant-heights2.jpg"
+      ]
+    }
+  ]
+}

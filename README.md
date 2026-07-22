@@ -57,7 +57,7 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero image files. The web map and KML/KMZ contain
-  twenty-one opt-in,
+  twenty-two opt-in,
   source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
   Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005,
   Wavra Farm 1997, both Rockville 2003 formations, Miamisburg 2004,
@@ -75,8 +75,8 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 ## Exact-field resolution status
 
 Exact-field work has begun, but it is not complete. The current ledger contains
-407 field candidates/sites; 3,894 other coordinates are explicitly labeled
-locality references and 3,444 entities remain unresolved. Nineteen field-level
+408 field candidates/sites; 3,894 other coordinates are explicitly labeled
+locality references and 3,443 entities remain unresolved. Twenty field-level
 decisions are preserved as reviewed overrides.
 
 The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
@@ -125,6 +125,18 @@ open-license Diessenhofen display overlays: one four-control reference frame
 and eight center-constrained same-flight transfers. All remain provisional and
 excluded from alignment calculations; image corners were
 rejected for the nine rights-restricted cases that lacked sufficient controls.
+
+Rockville 1's earlier two-point similarity display fit has now been rejected and
+replaced with a three-control affine road registration. It aligns both approaches
+to the Rockville Road/Suisun Valley Road intersection and permits the shear and
+unequal scale visible in the oblique aerial photograph, but remains provisional
+because no independent checkpoint or same-date orthophoto is available.
+
+The source-image catalog also includes 54 live-checked, link-only photographs
+from 23 specifically matched U.S. reports in the Crop Circle Archives 2002â€“2006
+North America pages. These additions raise the catalog to 7,945 unique image
+links, including 566 associated with U.S. reports. They create source-evidence
+PIC records, not image overlays or exact site claims.
 
 The US-first resolution campaign uses official USGS and USDA imagery for
 repeatable evidence, with Google Earth as a manual verification surface only.

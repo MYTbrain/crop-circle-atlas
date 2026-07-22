@@ -68,37 +68,60 @@
       "assertion_id": "iccra_b9bb80819738fef7",
       "title": "Rockville 1 2003 aerial landmark placement",
       "source_image_url": "https://iccra.org/bystate/California/images/rockville2003-1a.jpg",
-      "anchor_pixel_xy": [370, 330],
-      "anchor_wgs84_lat_lon": [38.2428, -122.1231],
-      "meters_per_pixel": 0.606022925,
-      "source_x_axis_true_bearing_deg": 104.227549,
+      "anchor_pixel_xy": [285, 270],
+      "anchor_wgs84_lat_lon": [38.242977375075, -122.125294687955],
       "corners_wgs84": [
-        [38.245036461, -122.125023812],
-        [38.24426043, -122.121126849],
-        [38.242070479, -122.121833835],
-        [38.24284651, -122.125730798]
+        [38.244922841631, -122.123978339737],
+        [38.244609172775, -122.120924952978],
+        [38.241855798216, -122.125254354862],
+        [38.242169478951, -122.128307741621]
       ],
-      "corner_basis": "Similarity transform from the source formation anchor and the persistent Rockville Road/Suisun Valley Road scene, published as four projective display corners for the oblique frame.",
-      "coordinate_uncertainty_m": 60,
-      "registration_status": "provisional_two_control_landmark_scene_placement",
-      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
-      "reference_imagery": "Current Esri street and satellite basemaps",
-      "site_text": "The formation field is matched to the named Rockville Road and Suisun Valley Road scene using the source aerial's intersection, roofs, parking, trees, and field boundaries.",
+      "corner_basis": "Three-point affine registration from non-collinear persistent road controls: western Rockville Road, the Rockville Road/Suisun Valley Road intersection, and Suisun Valley Road south of the intersection. The affine model solves rotation, scale, shear, and unequal axis scale for the oblique frame.",
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "provisional_three_control_affine_road_registration",
+      "display_geometry_status": "four_corner_affine_road_control_scene_placement",
+      "reference_imagery": "Current Esri World Imagery, checked against the source road and parcel scene",
+      "reference_imagery_date": "current_mosaic_reviewed_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The source scene is registered southwest of Rockville Road and Suisun Valley Road using three non-collinear road controls. The corrected footprint aligns the named intersection and both road approaches instead of forcing an unskewed two-point similarity fit.",
       "landmark_controls": {
-        "formation_anchor_source_xy": [370, 330],
-        "road_intersection_source_xy": [439, 58],
-        "road_intersection_wgs84_lat_lon": [38.24414302, -122.122173022],
-        "visual_matches": ["road intersection", "commercial roofs", "parking geometry", "tree line", "field boundaries"]
+        "control_model": "exact_three_point_affine",
+        "controls": [
+          {
+            "name": "Rockville Road western control",
+            "source_xy": [0, 65],
+            "wgs84_lat_lon": [38.244491598942, -122.124656438828]
+          },
+          {
+            "name": "Rockville Road and Suisun Valley Road intersection",
+            "source_xy": [370, 45],
+            "wgs84_lat_lon": [38.24442418951, -122.12249994278]
+          },
+          {
+            "name": "Suisun Valley Road southern control",
+            "source_xy": [565, 165],
+            "wgs84_lat_lon": [38.243522582342, -122.122725248337]
+          }
+        ],
+        "visual_matches": ["Rockville Road alignment", "Suisun Valley Road alignment", "named intersection", "commercial roofs", "parking geometry", "field edge"]
       },
-      "scale_basis": "The formation anchor and named-intersection control produce a 0.606022925 m/px similarity scale.",
-      "orientation_basis": "The formation-to-intersection source vector was mapped to the corresponding WGS84 vector, yielding source +x at 104.227549 degrees true.",
-      "orientation_status": "two_control_similarity_orientation",
       "independent_ground_checkpoint_count": 0,
-      "review_basis": "The named road scene and multiple persistent aerial landmarks constrain the correct field. A two-control similarity seed supplies the display scale and rotation; the full oblique frame is shown with projective corners.",
-      "quality_status": "useful_provisional_landmark_scene_registration",
-      "quality_limitations": "The oblique source image has only one landmark pair beyond the formation anchor and no independent withheld checkpoint. Perspective and manual-control error remain.",
-      "quality_disclosure": "Two-control landmark scene placement, not a survey georegistration. The correct field and scene are well supported, while the displayed four-corner warp remains provisional.",
-      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+      "review_basis": "The named road scene and persistent intersection geometry constrain the correct field. Three non-collinear road controls replace the rejected two-point similarity fit and reproduce the visible shear of the oblique aerial frame.",
+      "quality_status": "useful_provisional_affine_road_registration",
+      "quality_limitations": "The three controls solve the affine transform exactly, so no residual can be estimated from them. No independent withheld checkpoint or same-date orthophoto is available, and relief/perspective outside the road-control triangle can still distort the frame.",
+      "quality_disclosure": "Three-control affine road registration, not a survey georegistration. The roads and intersection are aligned, while the crop center and outer corners retain 75 m provisional uncertainty.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations.",
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [580, 415],
+        "affine_source_xy_to_esri_z18_mosaic_xy": [
+          [0.98136646, -1.9447205, 776.4068323],
+          [0.128364389, 1.5747412, 447.64182195]
+        ],
+        "esri_mosaic_tile_origin_z18": [42141, 100888],
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      }
     },
     {
       "overlay_id": "rockville-2-2003-campus-scene-placement",

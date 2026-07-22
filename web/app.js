@@ -1061,8 +1061,8 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260722.2').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260722.2').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260722.3').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260722.3').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
@@ -1077,6 +1077,17 @@ Promise.all([
     sourceImagesByFormation.set(formationId, images);
   });
   const sourcePhotoCounts = sourcePhotoLocationCounts();
+  const usLocalityReports = allFormations.filter(
+    (record) => record.country_code === 'US' && locationRole(record) === 'locality_reference',
+  );
+  const usLocalityPhotoReports = usLocalityReports.filter(
+    (record) => sourceImagesByFormation.has(record.formation_id),
+  );
+  layerControl.removeLayer(localityLayer);
+  layerControl.addOverlay(
+    localityLayer,
+    `Rough locality references (not sites; ${usLocalityPhotoReports.length} US have photos)`,
+  );
   layerControl.addOverlay(sourcePhotoLayer, `Source-photo availability (${sourcePhotoCounts.picReports} reports)`);
   layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
 
@@ -1091,6 +1102,7 @@ Promise.all([
   $('unresolvedCount').textContent = allFormations.filter((record) => locationRole(record) === 'unresolved').length.toLocaleString();
   $('sourceImageCount').textContent = Number(sourceImageMetadata.unique_image_count || 0).toLocaleString();
   $('mappedImageCount').textContent = overlayRecords.length.toLocaleString();
+  $('localityPhotoCoverage').textContent = `Of ${usLocalityReports.length.toLocaleString()} US rough-locality reports, ${usLocalityPhotoReports.length.toLocaleString()} currently have linked source photos; the photo evidence does not by itself make those coordinates exact.`;
   const displayableOverlayCount = overlayRecords.filter(overlayPixelsMayDisplay).length;
   const rightsGatedOverlayCount = overlayRecords.length - displayableOverlayCount;
   $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} IMG placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels; ${rightsGatedOverlayCount.toLocaleString()} GEO footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Cyan PIC badges indicate source-photo availability without a reviewed footprint.`;

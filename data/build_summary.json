@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T11:25:25Z",
+  "generated_at": "2026-07-22T13:47:06Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -133,7 +133,7 @@
   },
   "images": {
     "iccra_image_references": 681,
-    "formations_with_linked_images": 1915,
+    "formations_with_linked_images": 1921,
     "iccra_straight_analysis": {
       "successfully_cached_hosted_rows": 669,
       "analyzed_rows": 669,

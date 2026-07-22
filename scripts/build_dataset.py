@@ -26,6 +26,7 @@ RAW = ROOT / "data" / "raw"
 SITE_RESOLUTIONS_PATH = ROOT / "data" / "site_resolutions.csv"
 GLOBAL_SITE_CANDIDATES_PATH = ROOT / "data" / "global_source_site_candidates.csv"
 GLOBAL_SOURCE_IMAGES_PATH = ROOT / "data" / "global_source_image_links.csv"
+REVIEWED_US_ARCHIVE_IMAGES_PATH = ROOT / "data" / "reviewed_us_archive_image_links.json"
 ICCRA_IMAGES_PATH = ROOT / "data" / "iccra_image_links.csv"
 COMMONS_EVENT_ASSERTIONS_PATH = ROOT / "data" / "commons_crop_circle_event_assertions.csv"
 COMMONS_IMAGES_PATH = ROOT / "data" / "commons_crop_circle_images.csv"
@@ -760,6 +761,20 @@ def apply_complete_source_image_counts(
             for row in csv.DictReader(handle):
                 assertion_id = row.get("assertion_id", "").strip()
                 image_url = row.get("image_url", "").strip()
+                if assertion_id and image_url:
+                    urls_by_assertion[assertion_id].add(image_url)
+
+    if REVIEWED_US_ARCHIVE_IMAGES_PATH.is_file():
+        reviewed_archive = json.loads(
+            REVIEWED_US_ARCHIVE_IMAGES_PATH.read_text(encoding="utf-8")
+        )
+        for report in reviewed_archive.get("reports", []):
+            formation_id = str(report.get("formation_id", "")).strip()
+            assertion_id = str(report.get("assertion_id", "")).strip()
+            for value in report.get("image_urls", []):
+                image_url = str(value).strip()
+                if formation_id and image_url:
+                    urls_by_formation[formation_id].add(image_url)
                 if assertion_id and image_url:
                     urls_by_assertion[assertion_id].add(image_url)
 
