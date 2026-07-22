@@ -93,6 +93,14 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("Source-photo availability", javascript)
         self.assertIn("PIC badges", javascript)
         self.assertIn("source-photo-marker", stylesheet)
+        self.assertIn(
+            ".source-photo-marker { position:absolute!important;",
+            stylesheet,
+        )
+        self.assertNotIn(
+            ".source-photo-marker { position:relative!important;",
+            stylesheet,
+        )
         self.assertIn("source photos available", html)
         self.assertIn("reviewed image placement", html)
         self.assertIn("only mean source photographs are available", html)
@@ -117,10 +125,12 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
         self.assertIn("hollow dashed yellow markers are rough locality references", html)
-        self.assertIn('href="styles.css?v=20260722.2"', html)
-        self.assertIn('src="app.js?v=20260722.2"', html)
-        self.assertIn("registered_overlays.json?v=20260722.2", javascript)
-        self.assertIn("formation_images.json?v=20260722.2", javascript)
+        self.assertIn('href="styles.css?v=20260722.3"', html)
+        self.assertIn('src="app.js?v=20260722.3"', html)
+        self.assertIn("registered_overlays.json?v=20260722.3", javascript)
+        self.assertIn("formation_images.json?v=20260722.3", javascript)
+        self.assertIn('id="localityPhotoCoverage"', html)
+        self.assertIn("usLocalityPhotoReports", javascript)
         self.assertIn("LINK ONLY", javascript)
         self.assertIn("sourcePixelsMayDisplay", javascript)
         self.assertIn("overlayPixelsMayDisplay", javascript)
@@ -213,6 +223,34 @@ class GeorefPageContractTests(unittest.TestCase):
                 for record in transfers
             )
         )
+
+    def test_rockville_uses_skew_capable_three_control_registration(self):
+        overlay_payload = json.loads(
+            (ROOT / "web" / "data" / "registered_overlays.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        rockville = next(
+            record
+            for record in overlay_payload["overlays"]
+            if record["overlay_id"] == "rockville-1-2003-landmark-scene-placement"
+        )
+        self.assertEqual(
+            rockville["registration_status"],
+            "provisional_three_control_affine_road_registration",
+        )
+        self.assertEqual(
+            rockville["display_geometry_status"],
+            "four_corner_affine_road_control_scene_placement",
+        )
+        self.assertEqual(
+            rockville["source_registration"]["kind"],
+            "manual_three_control_affine_scene_registration",
+        )
+        self.assertEqual(rockville["source_registration"]["control_count"], 3)
+        self.assertEqual(rockville["source_registration"]["independent_checkpoint_count"], 0)
+        self.assertEqual(len(rockville["corners"]), 4)
+        self.assertEqual(rockville["coordinate_uncertainty_m"], 75)
 
 
 if __name__ == "__main__":

@@ -458,6 +458,7 @@ assert catalog_metadata["unknown_country_unique_image_count"] >= 0
 assert catalog_metadata["unverified_unique_image_link_count"] >= 1
 assert catalog_metadata["rights_gated_unique_image_count"] >= 2500
 assert catalog_metadata["source_link_counts"]["Wikimedia Commons"] >= 11
+assert catalog_metadata["source_link_counts"]["Crop Circle Archives"] == 54
 assert catalog_metadata["overlay_placement_count"] == len(registered_overlays["overlays"])
 source_image_rows = {(row["image_url"], row["sha256"]) for row in iccra_images}
 overlay_image_pairs = {
@@ -524,6 +525,19 @@ assert hubbard_overlay["registration_observation_id"] == "regobs_hubbard_2000_th
 assert abs(float(hubbard_overlay["center"][0]) - float(whiskey_2000["latitude"])) < 0.0005
 assert abs(float(hubbard_overlay["center"][1]) - float(whiskey_2000["longitude"])) < 0.0005
 assert hubbard_overlay["formal_alignment_status"] == "excluded_pending_independent_ground_control"
+
+rockville_overlay = overlays_by_id["rockville-1-2003-landmark-scene-placement"]
+rockville_formation = formation_by_id["cc_ae1b8ee2ae1f"]
+assert rockville_overlay["registration_status"] == "provisional_three_control_affine_road_registration"
+assert rockville_overlay["display_geometry_status"] == "four_corner_affine_road_control_scene_placement"
+assert rockville_overlay["source_registration"]["kind"] == "manual_three_control_affine_scene_registration"
+assert rockville_overlay["source_registration"]["control_count"] == 3
+assert rockville_overlay["source_registration"]["independent_checkpoint_count"] == 0
+assert len(rockville_overlay["corners"]) == 4
+assert abs(float(rockville_overlay["center"][0]) - float(rockville_formation["site_latitude"])) < 5e-10
+assert abs(float(rockville_overlay["center"][1]) - float(rockville_formation["site_longitude"])) < 5e-10
+assert float(rockville_overlay["coordinate_uncertainty_m"]) == 75
+assert rockville_overlay["formal_alignment_status"] == "excluded_pending_independent_ground_control"
 
 new_overlay_expectations = {
     "mayville-kekoskee-2003-source-gps-registration": (
@@ -670,10 +684,10 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260722.2"' in web_index
-assert 'src="app.js?v=20260722.2"' in web_index
-assert "registered_overlays.json?v=20260722.2" in web_app
-assert "formation_images.json?v=20260722.2" in web_app
+assert 'href="styles.css?v=20260722.3"' in web_index
+assert 'src="app.js?v=20260722.3"' in web_index
+assert "registered_overlays.json?v=20260722.3" in web_app
+assert "formation_images.json?v=20260722.3" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -10,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FORMATIONS_PATH = ROOT / "data" / "formations.csv"
 ICCRA_IMAGES_PATH = ROOT / "data" / "iccra_image_links.csv"
 GLOBAL_IMAGES_PATH = ROOT / "data" / "global_source_image_links.csv"
+REVIEWED_US_ARCHIVE_IMAGES_PATH = ROOT / "data" / "reviewed_us_archive_image_links.json"
 COMMONS_IMAGES_PATH = ROOT / "data" / "commons_crop_circle_images.csv"
 COMMONS_ASSERTIONS_PATH = ROOT / "data" / "commons_crop_circle_assertions.csv"
 COMMONS_EVENT_ASSERTIONS_PATH = ROOT / "data" / "commons_crop_circle_event_assertions.csv"
@@ -27,6 +29,43 @@ def load_csv(path: Path) -> list[dict[str, str]]:
         return []
     with path.open(newline="", encoding="utf-8-sig") as handle:
         return list(csv.DictReader(handle))
+
+
+def load_reviewed_us_archive_images() -> list[dict[str, str]]:
+    """Expand the human-reviewed U.S. archive seed into link-only image rows."""
+    if not REVIEWED_US_ARCHIVE_IMAGES_PATH.is_file():
+        return []
+    payload = json.loads(REVIEWED_US_ARCHIVE_IMAGES_PATH.read_text(encoding="utf-8"))
+    rows: list[dict[str, str]] = []
+    for report in payload.get("reports", []):
+        for image_url in report.get("image_urls", []):
+            link_id = "rimg_" + hashlib.sha256(image_url.encode("utf-8")).hexdigest()[:20]
+            rows.append(
+                {
+                    "image_link_id": link_id,
+                    "assertion_id": report.get("assertion_id", ""),
+                    "formation_id": report.get("formation_id", ""),
+                    "source_id": payload.get("source_id", "crop_circle_archives_us"),
+                    "source_name": payload.get("source_name", "Crop Circle Archives"),
+                    "source_record_url": report.get("source_record_url", ""),
+                    "image_url": image_url,
+                    "image_kind": "photograph_or_unspecified",
+                    "alt_text": f"Source photograph for {report.get('place', 'U.S. crop-circle report')}",
+                    "title_text": report.get("match_basis", ""),
+                    "image_http_status": "200",
+                    "rights_status": payload.get(
+                        "rights_status", "link_only_archive_images_not_redistributed"
+                    ),
+                    "embedding_allowed": str(
+                        bool(payload.get("embedding_allowed", False))
+                    ).lower(),
+                    "pixel_bytes_packaged": str(
+                        bool(payload.get("pixel_bytes_packaged", False))
+                    ).lower(),
+                    "placement_status": "source_link_only_not_georegistered",
+                }
+            )
+    return rows
 
 
 def text_bool(value: object) -> bool:
@@ -143,7 +182,7 @@ def public_image_entry(
 def build_catalog() -> dict:
     formations = load_csv(FORMATIONS_PATH)
     iccra_images = load_csv(ICCRA_IMAGES_PATH)
-    global_images = load_csv(GLOBAL_IMAGES_PATH)
+    global_images = load_csv(GLOBAL_IMAGES_PATH) + load_reviewed_us_archive_images()
     commons_images = load_csv(COMMONS_IMAGES_PATH)
     commons_assertions = load_csv(COMMONS_ASSERTIONS_PATH)
     commons_event_assertions = load_csv(COMMONS_EVENT_ASSERTIONS_PATH)

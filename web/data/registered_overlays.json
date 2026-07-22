@@ -363,33 +363,33 @@
       "source_image_sha256": "c5121e667c03e3139781fd9b56a5b1bbff4c254716e980d81cd4c679c3adb65c",
       "corners": [
         [
-          38.245036461,
-          -122.125023812
+          38.244922841631,
+          -122.123978339737
         ],
         [
-          38.24426043,
-          -122.121126849
+          38.244609172775,
+          -122.120924952978
         ],
         [
-          38.242070479,
-          -122.121833835
+          38.241855798216,
+          -122.125254354862
         ],
         [
-          38.24284651,
-          -122.125730798
+          38.242169478951,
+          -122.128307741621
         ]
       ],
       "center": [
-        38.2428,
-        -122.1231
+        38.242977375075,
+        -122.125294687955
       ],
-      "coordinate_uncertainty_m": 60,
-      "registration_status": "provisional_two_control_landmark_scene_placement",
-      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
-      "reference_imagery": "Current Esri street and satellite basemaps",
-      "reference_imagery_date": "2026-07-21",
-      "reviewed_at": "2026-07-21",
-      "review_basis": "The named road scene and multiple persistent aerial landmarks constrain the correct field. A two-control similarity seed supplies the display scale and rotation; the full oblique frame is shown with projective corners.",
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "provisional_three_control_affine_road_registration",
+      "display_geometry_status": "four_corner_affine_road_control_scene_placement",
+      "reference_imagery": "Current Esri World Imagery, checked against the source road and parcel scene",
+      "reference_imagery_date": "current_mosaic_reviewed_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The named road scene and persistent intersection geometry constrain the correct field. Three non-collinear road controls replace the rejected two-point similarity fit and reproduce the visible shear of the oblique aerial frame.",
       "source_photo_pixels": "remote_source_link_only",
       "rights_status": "not_cleared_for_redistribution",
       "rights_attribution": "",
@@ -398,8 +398,33 @@
       "default_opacity": 0.68,
       "show_by_default": false,
       "formal_alignment_status": "excluded_pending_independent_ground_control",
-      "quality_disclosure": "Two-control landmark scene placement, not a survey georegistration. The correct field and scene are well supported, while the displayed four-corner warp remains provisional.",
-      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+      "quality_disclosure": "Three-control affine road registration, not a survey georegistration. The roads and intersection are aligned, while the crop center and outer corners retain 75 m provisional uncertainty.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations.",
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          580,
+          415
+        ],
+        "affine_source_xy_to_esri_z18_mosaic_xy": [
+          [
+            0.98136646,
+            -1.9447205,
+            776.4068323
+          ],
+          [
+            0.128364389,
+            1.5747412,
+            447.64182195
+          ]
+        ],
+        "esri_mosaic_tile_origin_z18": [
+          42141,
+          100888
+        ],
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      }
     },
     {
       "overlay_id": "rockville-2-2003-campus-scene-placement",

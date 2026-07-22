@@ -81,6 +81,26 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             ],
         )
 
+        rockville = observations["regobs_rockville_1_2003_landmark_v1"]
+        self.assertEqual(
+            rockville["classification"],
+            "provisional_three_control_affine_road_registration",
+        )
+        self.assertEqual(
+            rockville["source_registration"]["kind"],
+            "manual_three_control_affine_scene_registration",
+        )
+        self.assertEqual(len(rockville["landmark_controls"]["controls"]), 3)
+        self.assertEqual(
+            rockville["computed_corners_wgs84_lat_lon"],
+            [
+                [38.244922841631, -122.123978339737],
+                [38.244609172775, -122.120924952978],
+                [38.241855798216, -122.125254354862],
+                [38.242169478951, -122.128307741621],
+            ],
+        )
+
         commons = observations["regobs_commons_diessenhofen_20080715_v1"]
         self.assertEqual(commons["classification"], "provisional_four_control_landmark_scene_placement")
         self.assertEqual(commons["source_evidence"]["sha256"], "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0")
