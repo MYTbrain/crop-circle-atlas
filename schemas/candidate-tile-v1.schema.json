@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crop-circle-atlas.example/schemas/candidate-tile-v1.schema.json",
+  "title": "Candidate raster tile",
+  "type": "object",
+  "required": ["schema_version", "candidate_tile_id", "imagery_item_id", "bounds", "dimensions_px", "crs", "physical_footprint", "overlap", "scale", "rotation_deg", "representation", "raster_sha256", "embedding", "cache_key", "local_path"],
+  "properties": {
+    "schema_version": {"const": "crop-circle-atlas/candidate-tile/v1"}, "candidate_tile_id": {"type": "string", "pattern": "^tile_[a-f0-9]{20}$"}, "imagery_item_id": {"type": "string"},
+    "bounds": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}}, "dimensions_px": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 1}}, "crs": {"type": "string"}, "physical_footprint": {"type": "object"},
+    "overlap": {"type": "number", "minimum": 0, "exclusiveMaximum": 1}, "scale": {"type": "number", "exclusiveMinimum": 0}, "rotation_deg": {"type": "number"}, "representation": {"enum": ["color", "grayscale", "edge", "gradient"]},
+    "raster_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "embedding": {"type": "object", "required": ["model", "version"], "properties": {"model": {"type": "string"}, "version": {"type": "string"}}, "additionalProperties": false}, "cache_key": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "local_path": {"type": "string"}
+  }, "additionalProperties": false
+}

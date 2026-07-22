@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crop-circle-atlas.example/schemas/registration-candidate-v1.schema.json",
+  "title": "Machine registration candidate",
+  "type": "object",
+  "required": ["schema_version", "registration_candidate_id", "source_image_sha256", "candidate_tile_id", "matcher", "transform_type", "homography", "matches", "inlier_mask", "metrics", "proposed_image_corners", "proposed_formation_center", "preliminary_uncertainty_m", "machine_score", "machine_status", "rights_status", "limitations"],
+  "properties": {
+    "schema_version": {"const": "crop-circle-atlas/registration-candidate/v1"}, "registration_candidate_id": {"type": "string", "pattern": "^reg_[a-f0-9]{20}$"}, "source_image_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "candidate_tile_id": {"type": "string"},
+    "matcher": {"type": "object", "required": ["name", "version"], "properties": {"name": {"type": "string"}, "version": {"type": "string"}}, "additionalProperties": false}, "transform_type": {"const": "projective_homography"}, "homography": {"$ref": "#/$defs/matrix3"},
+    "matches": {"type": "array", "items": {"type": "object", "required": ["source", "destination", "distance"], "properties": {"source": {"$ref": "#/$defs/point"}, "destination": {"$ref": "#/$defs/point"}, "distance": {"type": "number"}}, "additionalProperties": false}}, "inlier_mask": {"type": "array", "items": {"type": "boolean"}},
+    "metrics": {"type": "object", "required": ["inlier_count", "inlier_ratio", "spatial_distribution", "reprojection_rmse_px", "homography_condition", "degenerate"], "properties": {"inlier_count": {"type": "integer", "minimum": 0}, "inlier_ratio": {"type": "number", "minimum": 0, "maximum": 1}, "spatial_distribution": {"type": "number", "minimum": 0, "maximum": 1}, "reprojection_rmse_px": {"type": "number", "minimum": 0}, "homography_condition": {"type": "number", "minimum": 0}, "degenerate": {"type": "boolean"}}, "additionalProperties": true},
+    "proposed_image_corners": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/point"}}, "proposed_formation_center": {"$ref": "#/$defs/point"}, "preliminary_uncertainty_m": {"type": ["number", "null"], "minimum": 0}, "machine_score": {"type": "number"}, "machine_status": {"enum": ["review_required", "rejected_degenerate", "insufficient_matches"]}, "rights_status": {"type": "string"}, "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {"point": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}, "matrix3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}}}}, "additionalProperties": false
+}

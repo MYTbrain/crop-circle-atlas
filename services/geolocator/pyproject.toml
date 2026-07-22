@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crop-circle-geolocator"
+version = "0.1.0"
+description = "Deterministic exact-field candidate search and reviewed image registration for Crop Circle Atlas"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+  "affine==2.4.0",
+  "jsonschema==4.26.0",
+  "numpy==2.3.5",
+  "opencv-python-headless==4.13.0.92",
+  "Pillow==12.2.0",
+  "pyproj==3.7.2",
+  "rasterio==1.5.0",
+  "shapely==2.1.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2", "pytest-cov==7.0.0"]
+server = ["fastapi==0.133.1", "mcp>=1.28.1,<2", "uvicorn==0.41.0"]
+stac = ["planetary-computer==1.0.0", "pystac-client==0.9.0"]
+retrieval = []
+gpu = []
+all = [
+  "pytest==9.0.2",
+  "pytest-cov==7.0.0",
+  "fastapi==0.133.1",
+  "mcp>=1.28.1,<2",
+  "uvicorn==0.41.0",
+  "planetary-computer==1.0.0",
+  "pystac-client==0.9.0",
+]
+
+[project.scripts]
+crop-circle-geo = "crop_circle_geo.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crop_circle_geo"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
