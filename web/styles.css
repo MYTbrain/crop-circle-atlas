@@ -30,6 +30,7 @@ button:disabled { opacity:.45; cursor:not-allowed; }.secondary { background:tran
 .key-image-badge { display:inline-flex; align-items:center; justify-content:center; min-width:24px; height:15px; padding:0 3px; border:1px solid currentColor; border-radius:4px; font-size:7px; font-style:normal; font-weight:900; letter-spacing:.04em; line-height:1; }
 .key-image-badge.source { color:#d8fff9; background:#146b67; }
 .key-image-badge.mapped { color:#16100a; background:#f6ad55; border-color:#fff4c7; }
+.key-image-badge.georef { color:#ffe08a; background:#513918; border-color:#ffe08a; }
 .results { margin-top:12px; color:#cbd8d5; font-size:12px; }
 .results summary { cursor:pointer; color:#86e2d3; }
 .results-list { max-height:260px; overflow:auto; margin-top:8px; padding-right:3px; }
@@ -59,6 +60,7 @@ footer { color:var(--muted); font-size:11px; padding-top:4px; } a { color:#86e2d
 .source-image-card { min-width:0; padding:9px; border:1px solid #35534d; border-radius:8px; background:#091513; }
 .source-image-preview { display:flex; align-items:center; justify-content:center; min-height:90px; max-height:280px; margin-top:7px; overflow:hidden; border-radius:5px; background:#030807; }
 .source-image-preview img { display:block; max-width:100%; max-height:280px; width:auto; height:auto; object-fit:contain; }
+.source-image-link-only { max-width:240px; padding:22px 16px; color:#ffe08a; font-size:10px; font-weight:800; line-height:1.5; text-align:center; letter-spacing:.03em; }
 .image-status { display:inline-block; border-radius:999px; padding:2px 7px; font-size:8px; font-weight:850; letter-spacing:.08em; }
 .image-status.mapped { color:#16100a; background:#f6ad55; }
 .image-status.unmapped { color:#b9cbc6; border:1px solid #46675f; }

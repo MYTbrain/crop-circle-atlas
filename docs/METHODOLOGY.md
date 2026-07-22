@@ -9,9 +9,9 @@ and formation identifiers are unique and all relationships are verified as
 foreign keys.
 
 The bounded expansion preserves each source's place, region, country, and event
-designator. Only 189 exact normalized keys merge automatically. The 167 alias
-and 83 probable-overlap candidates remain separate, and the 450 new normalized
-source keys are not promoted to a claim of 450 proven-new physical formations.
+designator. Only 190 exact normalized keys merge automatically. The 167 alias
+and 83 probable-overlap candidates remain separate, and the 449 new normalized
+source keys are not promoted to a claim of 449 proven-new physical formations.
 
 The ICCRA inventory reconciles its by-year and by-state indexes at occurrence
 level. “Index inventory complete” does not imply that every old page still
@@ -111,7 +111,7 @@ in-repository path, matching hash, valid formation, reviewed transform, and
 explicit publication authorization with license or permission evidence. ICCRA
 source images are link-only/private-cache research inputs until rights holders
 authorize redistribution.
-The current combined KML/KMZ packages zero image files. It contains twelve
+The current combined KML/KMZ packages zero image files. It contains thirteen
 off-by-default provisional GroundOverlays whose URLs point to the source host;
 those linked displays are not publication authorization and may be blocked by
 the host. When an authorized packaged overlay is added, the combined KML embeds its

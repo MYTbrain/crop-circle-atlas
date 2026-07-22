@@ -444,14 +444,15 @@ def add_rights_cleared_overlays(doc, image_assets, formation_ids=None):
 
 
 def add_source_linked_provisional_overlays(doc, payload, formation_ids=None):
-    """Add opt-in remote overlays without copying source-image pixels into the KMZ."""
+    """Add remote overlays or rights-gated footprints without packaging pixels."""
     folder = ET.SubElement(doc, q("Folder"))
-    text(folder, "name", "Linked provisional source-photo placements (pixels not packaged)")
+    text(folder, "name", "Reviewed source-photo placements (pixels not packaged)")
     text(folder, "visibility", "0")
     text(folder, "description", (
-        "Remote source photographs load only when this folder is enabled. The KMZ does not contain "
-        "the source pixels. Placements in this folder are provisional and excluded from formal "
-        "alignment-hit calculations until independent checkpoints are accepted."
+        "The KMZ contains no source pixels. Embedding-enabled source photographs load only when "
+        "this folder is enabled; rights-gated records are drawn as footprints with source links. "
+        "Provisional placements remain excluded from formal alignment-hit calculations until "
+        "independent checkpoints are accepted."
     ))
     count = 0
     rejected = []
@@ -479,6 +480,45 @@ def add_source_linked_provisional_overlays(doc, payload, formation_ids=None):
             normalized.append((lat, lon))
         if len(normalized) != 4 or not is_convex_geodetic_quad(normalized):
             rejected.append({"asset_id": overlay_id, "status": "excluded", "reason": "invalid_remote_overlay_corners"})
+            continue
+        embedding_allowed = str(item.get("embedding_allowed", "false")).strip().lower() in {
+            "true", "1", "yes"
+        }
+        if not embedding_allowed:
+            placemark = ET.SubElement(folder, q("Placemark"))
+            text(placemark, "name", (item.get("title") or overlay_id) + " [image rights-gated]")
+            text(placemark, "visibility", "1")
+            text(placemark, "description", (
+                f'Reviewed image footprint; source pixels are not embedded or remotely loaded. '
+                f'Rights: {item.get("rights_status", "unknown")} | source page: '
+                f'{item.get("source_page_url", "")} | {item.get("notes", "")}'
+            ))
+            extended_data(placemark, {
+                "overlay_id": overlay_id,
+                "formation_id": formation_id,
+                "registration_status": item.get("registration_status", ""),
+                "rights_status": item.get("rights_status", ""),
+                "embedding_allowed": "false",
+                "pixel_distribution": "not_packaged_not_remotely_loaded",
+                "source_page_url": item.get("source_page_url", ""),
+                "display_geometry_status": item.get("display_geometry_status", ""),
+                "registration_observation_id": item.get("registration_observation_id", ""),
+            })
+            style = ET.SubElement(placemark, q("Style"))
+            line_style = ET.SubElement(style, q("LineStyle"))
+            text(line_style, "color", "ff55adf6")
+            text(line_style, "width", "3")
+            poly_style = ET.SubElement(style, q("PolyStyle"))
+            text(poly_style, "color", "3055adf6")
+            polygon = ET.SubElement(placemark, q("Polygon"))
+            text(polygon, "tessellate", "1")
+            boundary = ET.SubElement(polygon, q("outerBoundaryIs"))
+            ring = ET.SubElement(boundary, q("LinearRing"))
+            top_left, top_right, bottom_right, bottom_left = normalized
+            ordered = (bottom_left, bottom_right, top_right, top_left, bottom_left)
+            text(ring, "coordinates", " ".join(f"{lon},{lat},0" for lat, lon in ordered))
+            count += 1
+            included_ids.add(overlay_id)
             continue
         overlay = ET.SubElement(folder, q("GroundOverlay"))
         text(overlay, "name", item.get("title") or overlay_id)

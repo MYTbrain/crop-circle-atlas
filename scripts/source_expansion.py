@@ -832,6 +832,47 @@ def entity_key(row: dict) -> tuple[str, str, str, str, str, str]:
             norm(row.get("place", "")), norm(row.get("region", "")), row.get("country_code", ""))
 
 
+def connector_country_was_defaulted(row: dict) -> bool:
+    """Return whether Connector parsing supplied its England fallback.
+
+    Crop Circle Connector usually omits ``England`` from domestic listings,
+    so England remains the parser's default.  A non-English regional label can
+    therefore be silently misclassified as GB when an international listing
+    also omits its country.  This helper reconstructs whether the last source
+    component supplied any explicit country or recognized national region; it
+    does not infer a replacement country by itself.
+    """
+
+    if row.get("expansion_source_id") != "connector":
+        return False
+    listing = clean_text(row.get("source_listing_text", ""))
+    date_match = CONNECTOR_DATE_RE.search(listing) or CONNECTOR_QUALIFIED_DATE_RE.search(listing)
+    location = listing[:date_match.start()] if date_match else listing
+    # Country/default evidence only needs the final comma-delimited component;
+    # avoid the legacy page parser's mojibake-tolerant sentence splitter here.
+    parts = [clean_text(part).strip(" .") for part in location.split(",")]
+    parts = [part for part in parts if part]
+    if not parts:
+        return False
+    last_norm = norm(parts[-1])
+    has_explicit_country = (
+        last_norm in COUNTRIES
+        or last_norm.endswith(" holland")
+        or any(last_norm.endswith(" " + alias) for alias in COUNTRIES)
+    )
+    has_recognized_national_region = (
+        last_norm in ENGLISH_COUNTIES
+        or last_norm in CANADIAN_PROVINCES
+        or last_norm in US_REGIONS
+    )
+    return (
+        row.get("country_code") == "GB"
+        and norm(row.get("country", "")) == "england"
+        and not has_explicit_country
+        and not has_recognized_national_region
+    )
+
+
 def place_similarity(left: str, right: str) -> float:
     left_norm, right_norm = norm(left), norm(right)
     if not left_norm or not right_norm:
@@ -846,14 +887,45 @@ def reconcile_rows(rows: list[dict], baseline: list[dict]) -> dict:
     exact_index: dict[tuple, list[dict]] = defaultdict(list)
     date_region_index: dict[tuple, list[dict]] = defaultdict(list)
     date_country_index: dict[tuple, list[dict]] = defaultdict(list)
+    date_place_index: dict[tuple, list[dict]] = defaultdict(list)
     for item in baseline:
         exact_index[entity_key(item)].append(item)
         date_region_index[(str(item.get("year", "")), str(item.get("month", "")), str(item.get("day", "")),
                            norm(item.get("region", "")), item.get("country_code", ""))].append(item)
         date_country_index[(str(item.get("year", "")), str(item.get("month", "")), str(item.get("day", "")),
                             item.get("country_code", ""))].append(item)
+        date_place_index[(str(item.get("year", "")), str(item.get("month", "")), str(item.get("day", "")),
+                          norm(item.get("place", "")))].append(item)
 
     for row in rows:
+        # Correct only a parser-supplied country fallback, never an explicit
+        # source country.  The independent baseline must contain exactly one
+        # normalized geography for the same full date and place.  Copying its
+        # administrative region makes the two assertions share one entity;
+        # the source's original informal geography remains verbatim in
+        # source_listing_text for auditability.
+        if connector_country_was_defaulted(row):
+            same_place = date_place_index.get((
+                str(row.get("year", "")),
+                str(row.get("month", "")),
+                str(row.get("day", "")),
+                norm(row.get("place", "")),
+            ), [])
+            normalized_geographies = {entity_key(item) for item in same_place}
+            if len(normalized_geographies) == 1 and same_place:
+                baseline_match = same_place[0]
+                if baseline_match.get("country_code") and baseline_match.get("country_code") != row.get("country_code"):
+                    row["country"] = baseline_match.get("country", "")
+                    row["country_code"] = baseline_match.get("country_code", "")
+                    row["region"] = baseline_match.get("region", "")
+                    row["canonical_match_status"] = "baseline_geography_correction"
+                    row["matched_baseline_assertion_id"] = baseline_match.get("assertion_id", "")
+                    row["notes"] = (
+                        row.get("notes", "").rstrip(". ")
+                        + ". Parser-default country and administrative region corrected from the unique "
+                          "same-date, same-place baseline assertion; original source listing retained."
+                    )
+                    continue
         matches = exact_index.get(entity_key(row), [])
         if matches:
             row["canonical_match_status"] = "exact_overlap"
@@ -899,6 +971,7 @@ def reconcile_rows(rows: list[dict], baseline: list[dict]) -> dict:
             "exact_overlap_assertions": sum(row["canonical_match_status"] == "exact_overlap" for row in source_rows),
             "alias_overlap_not_merged_assertions": sum(row["canonical_match_status"] == "alias_overlap_not_merged" for row in source_rows),
             "probable_overlap_not_merged_assertions": sum(row["canonical_match_status"] == "probable_overlap_not_merged" for row in source_rows),
+            "baseline_geography_correction_assertions": sum(row["canonical_match_status"] == "baseline_geography_correction" for row in source_rows),
         }
     return {
         "baseline_assertions": len(baseline),

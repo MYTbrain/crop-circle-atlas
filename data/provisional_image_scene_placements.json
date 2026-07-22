@@ -13,40 +13,53 @@
       "title": "Wavra Farm 1997 aerial landmark placement",
       "source_image_url": "https://iccra.org/bystate/Oregon/images/WavraFarm1997-1.jpg",
       "anchor_pixel_xy": [181, 126],
-      "anchor_wgs84_lat_lon": [44.886560157, -122.897991423],
-      "meters_per_pixel": 0.94,
-      "source_x_axis_true_bearing_deg": 105.95,
+      "anchor_wgs84_lat_lon": [44.8737784854097, -122.89621050563028],
       "corners_wgs84": [
-        [44.888003154, -122.899652934],
-        [44.887197964, -122.895676467],
-        [44.885225037, -122.89647233],
-        [44.886030227, -122.900448797]
+        [44.87153998909242, -122.89766937722305],
+        [44.8737644058229, -122.89960432096206],
+        [44.87584385168213, -122.89484428508177],
+        [44.873619201401276, -122.89290932219285]
       ],
-      "corner_basis": "Manual four-corner display fit seeded by the persistent Jordan Street edge, Wavra farm drive, house cluster, field corners, and tree rows visible in the source aerial and the 1995 Oregon orthophoto.",
-      "coordinate_uncertainty_m": 75,
-      "registration_status": "provisional_landmark_scene_registration",
-      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
-      "reference_imagery": "1995 Oregon orthophoto and current Esri World Imagery",
-      "reference_imagery_date": "1995 and 2026-07-21",
-      "site_text": "The report names Wavra Farm; the long-running farm's 7882 Jordan Street SE address and the aerial road/drive pattern place the formation in the field immediately southeast of the farm entrance.",
+      "corner_basis": "Exact projective conversion of the user-supplied Google Earth Pro GroundOverlay LatLonBox. The raw KML box and rotation are retained as the authoritative display geometry.",
+      "coordinate_uncertainty_m": 20,
+      "registration_status": "user_supplied_google_earth_kmz_landmark_registration",
+      "display_geometry_status": "four_corner_kml_latlonbox_scene_placement",
+      "reference_imagery": "Google Earth / USGS historical imagery",
+      "reference_imagery_date": "2000-07-23",
+      "site_text": "The user matched the ICCRA aerial to the field south of the divided-highway corridor using the road and drive geometry, tree rows, farm boundaries, buildings, and curved access roads visible in the 2000 historical frame.",
       "source_report_controls": {
-        "venue_address": "7882 Jordan Street SE, Salem, Oregon 97317",
-        "venue_address_wgs84_lat_lon": [44.883642986, -122.89941651]
+        "reported_place": "Wavra Farm, Salem / Silver Creek Falls, Marion County",
+        "formation_anchor_source_xy": [181, 126]
       },
       "landmark_controls": {
-        "farm_drive_source_xy": [36, 64],
-        "farm_drive_wgs84_lat_lon": [44.8874, -122.89945],
-        "visual_matches": ["Jordan Street field edge", "farm entrance and house cluster", "tree rows", "field corners"]
+        "visual_matches": ["divided-highway corridor", "curved access roads", "tree rows", "farm buildings", "field boundaries"],
+        "historical_imagery_date": "2000-07-23"
       },
-      "scale_basis": "A 0.94 m/px provisional scene scale was estimated from the persistent road width, farm drive, and field span.",
-      "orientation_basis": "The source road/drive vector was rotated onto the matched Jordan Street and farm-drive geometry; source +x is 105.95 degrees true for the display fit.",
-      "orientation_status": "manual_landmark_orientation_candidate",
+      "scale_basis": "The user-authored KML is anisotropic: approximately 0.83736 m/px across the source x-axis and 1.81328 m/px down the source y-axis.",
+      "orientation_basis": "Google Earth Pro stores the image in a LatLonBox rotated 121.6502227783203 degrees counterclockwise; the derived source +x bearing is 328.3497772216797 degrees true.",
+      "orientation_status": "user_supplied_google_earth_kml_rotation",
       "independent_ground_checkpoint_count": 0,
-      "review_basis": "The previous Highway 22 seed was rejected. The named farm address, a 1995 orthophoto, and the source aerial's road, drive, houses, field corners, and tree rows support this replacement projective scene placement.",
-      "quality_status": "useful_provisional_landmark_scene_registration",
-      "quality_limitations": "The source image is oblique and the four display corners remain a manual fit without an independent withheld checkpoint. The 75 m site uncertainty and formal-analysis exclusion are retained.",
-      "quality_disclosure": "Projective landmark scene placement, not a survey georegistration. Persistent farm and road features support the field and display orientation, but no independent checkpoint validates the four image corners.",
-      "notes": "The actual ICCRA aerial frame loads only after explicit user action. It is mapped to the corrected Wavra Farm field vicinity and remains excluded from alignment calculations."
+      "review_basis": "The user supplied the actual Google Earth Pro registration and a historical-imagery screenshot. The previous Jordan Street placement is rejected: its anchor was 1,428 metres from the supplied formation anchor and did not match the highway, drives, tree rows, buildings, or field edges.",
+      "quality_status": "user_registered_historical_landmark_scene",
+      "quality_limitations": "The registration is user-authored and has no independent withheld checkpoint set. The source image is oblique and the KML deliberately applies unequal horizontal and vertical scale.",
+      "quality_disclosure": "User-supplied Google Earth landmark registration. The raw KML geometry and historical-imagery date are preserved; the placement remains excluded from formal alignment calculations pending independent checkpoints.",
+      "notes": "The ICCRA aerial loads only after explicit user action. This record reproduces the supplied KMZ instead of the rejected Jordan Street placement.",
+      "source_registration": {
+        "kind": "google_earth_ground_overlay_lat_lon_box",
+        "artifact_name": "wavrafarm overlay.kmz",
+        "artifact_sha256": "8c435a670ff869efa9fa0907aa41eb51012a6edc599fa75b0a0df07ea4987970",
+        "kml_document_sha256": "cfd011629b7c2d079bb3278926f660cd8db6e4aad0d9b685c6d3888c9fcd5c74",
+        "authoring_application": "Google Earth Pro 7.3.7.1155",
+        "lat_lon_box": {
+          "north": 44.87567322232745,
+          "south": 44.87171057483808,
+          "east": -122.8944130799795,
+          "west": -122.8981005857119,
+          "rotation_ccw_deg": 121.6502227783203
+        },
+        "kml_color": "80ffffff",
+        "kml_opacity": 0.5019607843
+      }
     },
     {
       "overlay_id": "rockville-1-2003-landmark-scene-placement",

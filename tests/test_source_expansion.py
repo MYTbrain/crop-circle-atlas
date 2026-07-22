@@ -74,6 +74,42 @@ class SourceExpansionParserTests(unittest.TestCase):
         )
         self.assertEqual({"RS", "BG"}, {row["country_code"] for row in connector})
 
+    def test_connector_default_country_is_corrected_by_unique_baseline_geography(self):
+        body = b"""
+        <html><body><a href='Rauwiller/Rauwiller2015a.html'>
+        Rauwiller, nr Sarrebourg, Alsace Bossue. Reported 11th June.
+        </a></body></html>
+        """
+        rows = sx.parse_connector_page(
+            body,
+            "https://cropcircleconnector.com/2015/June2015.html",
+        )
+        self.assertEqual(1, len(rows))
+        self.assertEqual("GB", rows[0]["country_code"])
+        baseline = [{
+            "assertion_id": "a_rauwiller_fr",
+            "year": "2015",
+            "month": "6",
+            "day": "11",
+            "place": "Rauwiller",
+            "region": "Bas-Rhin",
+            "country": "France",
+            "country_code": "FR",
+        }]
+        sx.reconcile_rows(rows, baseline)
+        self.assertEqual("France", rows[0]["country"])
+        self.assertEqual("FR", rows[0]["country_code"])
+        self.assertEqual("Bas-Rhin", rows[0]["region"])
+        self.assertEqual(
+            "baseline_geography_correction",
+            rows[0]["canonical_match_status"],
+        )
+        self.assertEqual(
+            "a_rauwiller_fr",
+            rows[0]["matched_baseline_assertion_id"],
+        )
+        self.assertIn("Alsace Bossue", rows[0]["source_listing_text"])
+
     def test_committed_artifacts_are_internally_consistent(self):
         assertions_path = ROOT / "data" / "source_expansion_assertions.csv"
         reconciliation_path = ROOT / "data" / "source_expansion_reconciliation.json"

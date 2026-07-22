@@ -71,16 +71,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8390, 7745, 4026, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4301, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
-    "locality_reference": 4004,
-    "unresolved": 3719,
-    "corroborated_field": 2,
-    "candidate_field": 14,
+    "locality_reference": 3894,
+    "unresolved": 3444,
+    "corroborated_field": 4,
+    "candidate_field": 397,
     "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 18
+assert summary["site_resolutions"]["reviewed_overrides"] == 19
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -99,8 +99,8 @@ assert all(not row.get("thumbnail_url") and not row.get("image_urls") for row in
 assert all(expansion_checks[name] is True for name in (
     "all_assertion_ids_unique", "all_rows_have_provenance", "all_rows_have_valid_dates", "no_image_urls_emitted",
 ))
-assert expansion_yield["exact_overlap_normalized_keys"] == 189
-assert expansion_yield["new_normalized_source_keys_vs_baseline"] == 450
+assert expansion_yield["exact_overlap_normalized_keys"] == 190
+assert expansion_yield["new_normalized_source_keys_vs_baseline"] == 449
 assert expansion_yield["same_normalized_key_assertion_surplus"] == 0
 assert Counter(row["expansion_source_id"] for row in expansion) == Counter({
     "connector": 442, "dcca": 184, "vigay": 12, "cccrn": 1,
@@ -164,6 +164,14 @@ for row in geocoded:
             assert row["site_alignment_eligible"] == "false"
             assert row["site_review_status"] == "source_report_not_independently_reviewed"
             assert row["site_rights_status"] == "coordinate_metadata_only"
+        elif row["site_resolution_source"] == "global_source_map_candidate_queue":
+            assert status == "candidate_field"
+            assert row["site_alignment_eligible"] == "false"
+            assert row["site_directly_visible"] == "false"
+            assert row["site_review_status"] == "source_map_target_not_landmark_validated"
+            assert row["site_rights_status"].startswith("coordinate_metadata_only")
+            assert row["site_evidence_artifact_ids"].startswith("gsite_")
+            assert HEX64.fullmatch(row["site_evidence_artifact_sha256s"])
         else:
             assert row["site_resolution_source"] == "reviewed_override"
             assert row["formation_id"] in site_resolution_by_id
@@ -211,8 +219,8 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 22
-assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 4004
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 407
+assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3894
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
 assert all(feature["properties"]["site_status"] in FIELD_SITE_STATUSES for feature in site_geojson["features"])
@@ -402,8 +410,18 @@ scene_placement_specs = json.loads(
     (ROOT / "data" / "provisional_image_scene_placements.json").read_text(encoding="utf-8")
 )["placements"]
 scene_placement_ids = {item["overlay_id"] for item in scene_placement_specs}
-assert set(overlays_by_id) == core_overlay_ids | scene_placement_ids
+commons_scene_specs = json.loads(
+    (ROOT / "data" / "commons_scene_placements_draft.json").read_text(encoding="utf-8")
+)["placements"]
+commons_scene_ids = {
+    item["overlay_id"].removesuffix("-draft") for item in commons_scene_specs
+}
+assert set(overlays_by_id) == core_overlay_ids | scene_placement_ids | commons_scene_ids
 assert len(registered_overlays["overlays"]) >= 9
+assert any(
+    formation_by_id[item["formation_id"]]["country_code"] not in {"", "US"}
+    for item in registered_overlays["overlays"]
+)
 image_relationships = [
     (formation_id, image)
     for formation_id, images in formation_images["images_by_formation"].items()
@@ -411,11 +429,16 @@ image_relationships = [
 ]
 unique_source_image_urls = {image["image_url"] for _, image in image_relationships}
 catalog_metadata = formation_images["metadata"]
-assert catalog_metadata["schema_version"] == "crop-circle-atlas/formation-images/v1"
-assert catalog_metadata["unique_image_count"] == len(unique_source_image_urls) == 480
-assert catalog_metadata["formation_image_link_count"] == len(image_relationships) == 517
-assert catalog_metadata["formation_count"] == len(formation_images["images_by_formation"]) == 266
-assert catalog_metadata["us_unique_image_count"] == 479
+assert catalog_metadata["schema_version"] == "crop-circle-atlas/formation-images/v2"
+assert catalog_metadata["unique_image_count"] == len(unique_source_image_urls) >= 3000
+assert catalog_metadata["formation_image_link_count"] == len(image_relationships) >= 3100
+assert catalog_metadata["formation_count"] == len(formation_images["images_by_formation"]) >= 1800
+assert catalog_metadata["us_unique_image_count"] >= 479
+assert catalog_metadata["non_us_unique_image_count"] >= 2500
+assert catalog_metadata["unknown_country_unique_image_count"] >= 0
+assert catalog_metadata["unverified_unique_image_link_count"] >= 1
+assert catalog_metadata["rights_gated_unique_image_count"] >= 2500
+assert catalog_metadata["source_link_counts"]["Wikimedia Commons"] >= 11
 assert catalog_metadata["overlay_placement_count"] == len(registered_overlays["overlays"])
 source_image_rows = {(row["image_url"], row["sha256"]) for row in iccra_images}
 overlay_image_pairs = {
@@ -425,11 +448,21 @@ overlay_image_pairs = {
 mapped_catalog_relationships = 0
 for formation_id, image in image_relationships:
     assert formation_id in formation_by_id
-    assert (image["image_url"], image["sha256"]) in source_image_rows
-    assert image["rights_status"] == "not_cleared"
+    assert image["image_url"].startswith("https://")
     assert "cache_path" not in image and "local_path" not in image
+    assert image["pixel_bytes_packaged"] is False
     expected_status = "mapped_overlay" if (formation_id, image["image_url"]) in overlay_image_pairs else "source_link_only_not_georegistered"
     assert image["placement_status"] == expected_status
+    if image["source_name"] == "ICCRA":
+        assert (image["image_url"], image["sha256"]) in source_image_rows
+        assert image["rights_status"] == "not_cleared"
+        assert image["pixel_display_policy"] == "remote_source_on_explicit_user_action"
+    elif image["source_name"] == "Wikimedia Commons":
+        assert image["embedding_allowed"] is True
+        assert image["license_url"].startswith("https://")
+    else:
+        assert image["embedding_allowed"] is False
+        assert image["pixel_display_policy"] == "link_only_rights_gated"
     mapped_catalog_relationships += expected_status == "mapped_overlay"
 assert catalog_metadata["mapped_catalog_image_count"] == mapped_catalog_relationships
 overlay = overlays_by_id["whiskey-hill-1998-user-registration"]
@@ -514,6 +547,16 @@ for overlay_id, (formation_id, assertion_id, registration_status) in new_overlay
     assert abs(float(registered["center"][1]) - float(formation["site_longitude"])) < 5e-8
     assert registered["formal_alignment_status"].startswith("excluded_pending_")
 
+commons_overlay = overlays_by_id["commons-diessenhofen-20080715-164408"]
+assert commons_overlay["formation_id"] == "cc_2deeb6879ebf"
+assert commons_overlay["assertion_id"] == "commons_event_diessenhofen_20080715"
+assert commons_overlay["source_image_sha256"] == "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0"
+assert commons_overlay["rights_status"] == "CC BY-SA 3.0"
+assert commons_overlay["embedding_allowed"] is True
+assert commons_overlay["license_url"] == "https://creativecommons.org/licenses/by-sa/3.0"
+assert commons_overlay["formal_alignment_status"].startswith("excluded_pending_")
+assert len(formation_images["images_by_formation"]["cc_2deeb6879ebf"]) == 9
+
 kml_path = ROOT / "exports" / "crop_circle_atlas.kml"
 kml_tree = ET.parse(kml_path)
 kml_root = kml_tree.getroot()
@@ -521,15 +564,23 @@ kml_ns = {"k": "http://www.opengis.net/kml/2.2"}
 assert len(kml_root.findall(".//k:Point", kml_ns)) == len(geocoded)
 assert len(kml_root.findall(".//k:LineString", kml_ns)) == len(orientations) + len(provisional_rows)
 linked_overlays = kml_root.findall(".//k:GroundOverlay", kml_ns)
-assert len(linked_overlays) == len(registered_overlays["overlays"])
+expected_remote_overlays = [
+    item for item in registered_overlays["overlays"] if item.get("embedding_allowed") is True
+]
+assert len(linked_overlays) == len(expected_remote_overlays)
 assert all(item.find("k:visibility", kml_ns).text == "1" for item in linked_overlays)
-assert all(item.find("k:color", kml_ns).text == "adffffff" for item in linked_overlays)
+assert all(
+    re.fullmatch(r"[0-9a-f]{8}", item.find("k:color", kml_ns).text)
+    for item in linked_overlays
+)
 kml_text = kml_path.read_text(encoding="utf-8")
 assert "Experimental projections from documented orientations" in kml_text
 assert "no demonstrated predictive validity" in kml_text
 assert "Reference localities (not formation sites)" in kml_text
 assert "Provisional user-demonstrated axes" in kml_text
 assert "remote_source_link_only_not_packaged" in kml_text
+assert "commons-diessenhofen-20080715-164408" in kml_text
+assert "44.8737785" in kml_text
 kmz_path = ROOT / "exports" / "crop_circle_atlas.kmz"
 with zipfile.ZipFile(kmz_path) as archive:
     assert archive.testzip() is None
@@ -600,10 +651,10 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260721.7"' in web_index
-assert 'src="app.js?v=20260721.7"' in web_index
-assert "registered_overlays.json?v=20260721.7" in web_app
-assert "formation_images.json?v=20260721.7" in web_app
+assert 'href="styles.css?v=20260721.9"' in web_index
+assert 'src="app.js?v=20260721.9"' in web_index
+assert "registered_overlays.json?v=20260721.9" in web_app
+assert "formation_images.json?v=20260721.9" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
@@ -612,7 +663,7 @@ assert "Locality centroids and unresolved reports are excluded" in web_app
 assert "image/tiff" not in georef_html
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 source_register_text = (ROOT / "docs" / "SOURCE_REGISTER.md").read_text(encoding="utf-8")
-for phrase in ("8,390 source assertions", "7,745", "450 new normalized source keys"):
+for phrase in ("8,391 source assertions", "7,745", "449 new normalized source keys"):
     assert phrase in readme
     assert phrase in source_register_text
 for needed in (

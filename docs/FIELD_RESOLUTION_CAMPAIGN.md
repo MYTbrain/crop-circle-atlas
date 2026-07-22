@@ -6,14 +6,14 @@ the formation site.
 
 ## Current evidence boundary
 
-The catalog contains 8,390 source assertions and 7,745 conservative entities
+The catalog contains 8,391 source assertions and 7,745 conservative entities
 after four accepted report-alias merges. Every entity has one location role:
 
 | Location role | Count | Meaning |
 |---|---:|---|
-| Field candidates/sites | 22 | Two corroborated fields, fourteen candidate fields, and six registered sites |
-| Locality reference | 4,004 | Approximate place centroid retained for finding the report, not the field |
-| Unresolved | 3,719 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
+| Field candidates/sites | 407 | Four corroborated fields, 397 candidate fields, and six registered sites |
+| Locality reference | 3,894 | Approximate place centroid retained for finding the report, not the field |
+| Unresolved | 3,444 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
 | Total | 7,745 | Complete location-work index |
 
 These counts describe evidence roles, not completion of 7,745 exact
@@ -23,8 +23,10 @@ field is supported by reviewed evidence; it does not necessarily mean every
 feature boundary or formation center is survey-grade. `candidate_field` is a
 bounded hypothesis. Unresolved records remain unresolved.
 
-The working queue is `data/location_work_queue.csv`. Eighteen reviewed field-level
-decisions are recorded separately in `data/site_resolutions.csv`, so review,
+The working queue is `data/location_work_queue.csv`. Nineteen reviewed field-level
+decisions are recorded separately in `data/site_resolutions.csv`; 384 more
+candidate points come from explicit publisher map targets and remain
+non-accepted. Review,
 spatial confidence, and image-publication rights cannot be conflated.
 
 ## Whiskey Hill correction and demonstration case
@@ -84,7 +86,7 @@ exclusions.
 | Wausau, Wisconsin, 1997-08-16 | Candidate field | 100 m | The second symbol on the same investigator map constrains the field west of North 41st Street; no independent projective image fit is accepted |
 | Rockville 1, California, 2003-06-28 | Candidate field plus provisional source-photo placement | 60 m | Named intersection plus road, field, parking, roof, and tree controls support a two-control similarity display fit; no independent checkpoint |
 | Rockville 2, California, 2003-06-28 | Candidate field plus provisional source-photo placement | 60 m | Solano Community College tennis courts, campus buildings, parking, arterial road, and field corner constrain the oblique scene; no independent checkpoint |
-| Wavra Farm / Salem–Silver Creek Falls, Oregon, 1997-06-28 | Candidate field plus provisional source-photo placement | 75 m | The named farm address and 1995 orthophoto replace the rejected Highway 22 seed; persistent road, drive, houses, tree rows, and field corners support the scene fit |
+| Wavra Farm / Salem–Silver Creek Falls, Oregon, 1997-06-28 | Corroborated field plus user-supplied Google Earth KMZ registration | 20 m | The exact rotated KML LatLonBox, source-pixel anchor, 2000-07-23 historical frame, highway, curved drives, tree rows, buildings, and field edges replace the rejected placement 1,428 metres away |
 | Bedford, Indiana, 2008-09-13 | Candidate field/search scene | 1,200 m | The source's approximate location-map pin is fitted to named-community controls and checked against the Sandpit/Mitchell road clue; ground photographs do not support corners or orientation |
 
 These classifications are search improvements, not survey-grade formation
@@ -96,6 +98,13 @@ Hopewell/Chillicothe 2012, and Albion/Starr 2002. It narrows Fresno, Vacaville,
 New Park, Northwood, and Burnsville to candidate search areas while deliberately
 leaving their source photographs at PIC-only status because the visible
 landmarks did not select a unique field and transform.
+
+The first worldwide placement wave adds nine exact publisher map references as
+candidate fields and a distinct Diessenhofen, Switzerland event dated
+2008-07-15. Nine open-license Commons aerials document that event; one frame has
+a four-control landmark display registration. The remaining international
+images keep null corners where historical imagery and visible controls did not
+support a reproducible projective transform.
 
 ## US-first source hierarchy
 
@@ -240,7 +249,7 @@ cache for publication, bundle, or redistribute those pixels. Cross-origin or
 source-host failure remains a visible failure; it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries twelve disabled provisional
+packages zero source-photo files and carries thirteen disabled provisional
 GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,

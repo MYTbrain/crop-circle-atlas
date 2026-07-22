@@ -7,18 +7,18 @@ claim that every crop-circle archive on the web has been exhausted.
 
 | Source | Assertions | Exact normalized-key overlaps | New normalized source keys | Boundary |
 |---|---:|---:|---:|---|
-| Crop Circle Connector, public 2014-2026 season indexes | 442 | 102 | 340 | Membership archive and all images excluded |
+| Crop Circle Connector, public 2014-2026 season indexes | 442 | 103 | 339 | Membership archive and all images excluded |
 | Dutch Crop Circle Archive linked year tables | 184 | 83 | 101 | Dated machine-enumerable rows only; images excluded |
 | CCCRN newsletter mirror | 1 | 1 | 0 | Only an explicit single-event occurrence date; newsletter dates are never substituted |
 | Paul Vigay field-report index | 12 | 3 | 9 | Dated field-report index rows only; articles/images excluded |
 | BLT Research | 0 | 0 | 0 | DNS was unavailable to the reproducible local fetch; registered as enrichment, not invented as events |
-| **Total** | **639** | **189** | **450** | 639 distinct normalized source keys |
+| **Total** | **639** | **190** | **449** | 639 distinct normalized source keys |
 
-The 450 new normalized source keys are not asserted to be 450 proven-new
+The 449 new normalized source keys are not asserted to be 449 proven-new
 formations. Of the 639 assertions, 167 have a documented alias-overlap candidate
 and 83 have a probable overlap; neither class is auto-merged. Source place,
 region, country, and occurrence designators such as `(1)`, `(2)`, `(1C)`, and
-`(2S)` are preserved. Only 189 exact normalized-key matches merge automatically.
+`(2S)` are preserved. Only 190 exact normalized-key matches merge automatically.
 
 The Connector coverage inventory found 447 unique event-like anchors: 442 were
 emitted and five were explicitly excluded for missing a usable occurrence date

@@ -61,6 +61,31 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
                 placement["source_image_url"],
             )
 
+        wavra = observations["regobs_wavra_farm_1997_landmark_v1"]
+        registration = wavra["source_registration"]
+        self.assertEqual(
+            registration["artifact_sha256"],
+            "8c435a670ff869efa9fa0907aa41eb51012a6edc599fa75b0a0df07ea4987970",
+        )
+        self.assertEqual(
+            registration["lat_lon_box"]["rotation_ccw_deg"],
+            121.6502227783203,
+        )
+        self.assertEqual(
+            wavra["computed_corners_wgs84_lat_lon"],
+            [
+                [44.87153998909242, -122.89766937722305],
+                [44.8737644058229, -122.89960432096206],
+                [44.87584385168213, -122.89484428508177],
+                [44.873619201401276, -122.89290932219285],
+            ],
+        )
+
+        commons = observations["regobs_commons_diessenhofen_20080715_v1"]
+        self.assertEqual(commons["classification"], "provisional_four_control_landmark_scene_placement")
+        self.assertEqual(commons["source_evidence"]["sha256"], "67c44d76a64373becbab575f92bb3f44213c2b77a4c96b5c4d4c4af11dd930f0")
+        self.assertEqual(commons["projective_display_transform"]["independent_ground_checkpoint_count"], 0)
+
 
 if __name__ == "__main__":
     unittest.main()
