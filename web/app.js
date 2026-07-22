@@ -17,7 +17,7 @@ map.getPane('rayPane').style.pointerEvents = 'none';
 map.createPane('sitePointPane');
 map.getPane('sitePointPane').style.zIndex = '480';
 const localityRenderer = L.canvas({ pane: 'localityPointPane', padding: 0.5 });
-const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5 });
+const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 7 });
 L.control.zoom({ position: 'topright' }).addTo(map);
 
 const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -171,6 +171,16 @@ function overlayPixelsMayDisplay(record) {
   return record?.embedding_allowed === true || record?.embedding_allowed === 'true';
 }
 
+function overlaysFor(formationId = selected?.formation_id) {
+  return overlayRecords.filter((record) => record.formation_id === formationId);
+}
+
+function selectedOverlayRecord() {
+  const matches = overlaysFor();
+  const overlayId = $('overlayChoice')?.value;
+  return matches.find((record) => record.overlay_id === overlayId) || matches[0] || null;
+}
+
 function resetSourceImageGallery() {
   $('sourceImageGallery').replaceChildren();
   $('sourceImageGallery').hidden = true;
@@ -306,7 +316,8 @@ function popupFor(records) {
     const role = locationRole(record);
     const uncertainty = coordinateUncertaintyKm(record);
     const evidence = sourceLink(record);
-    const overlay = overlayRecords.find((candidate) => candidate.formation_id === record.formation_id);
+    const overlays = overlaysFor(record.formation_id);
+    const overlay = overlays[0];
     const hasOverlay = Boolean(overlay);
     const linkedImages = sourceImagesFor(record.formation_id);
     const canAlign = isAlignmentEligibleSite(record);
@@ -323,9 +334,10 @@ function popupFor(records) {
       ${linkedImages.length ? `<p>Formation-linked source images: ${linkedImages.length}; publication rights and georegistration are not assumed.</p>` : ''}
       <p>Sources: ${esc(record.source_names || '')}</p>
       ${evidence ? `<a href="${esc(evidence)}" target="_blank" rel="noreferrer">Open supporting source</a>` : ''}
-      <button onclick="selectFormation('${esc(record.formation_id)}')" ${canAlign ? '' : 'disabled'}>Use in alignment lab</button>
+      <button onclick="selectFormation('${esc(record.formation_id)}')">Open report details</button>
+      <button class="secondary" onclick="selectFormation('${esc(record.formation_id)}')" ${canAlign ? '' : 'disabled'}>Use in alignment lab</button>
       ${linkedImages.length ? `<button class="secondary" onclick="showSourceImagesForFormation('${esc(record.formation_id)}')">Browse ${linkedImages.length} source image${linkedImages.length === 1 ? '' : 's'}</button>` : ''}
-      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">${overlayPixelsMayDisplay(overlay) ? 'Load registered aerial image' : 'Inspect reviewed image footprint'}</button>` : ''}
+      ${hasOverlay ? `<button class="secondary" onclick="showOverlayForFormation('${esc(record.formation_id)}')">${overlayPixelsMayDisplay(overlay) ? `Browse ${overlays.length} mapped aerial image${overlays.length === 1 ? '' : 's'}` : 'Inspect reviewed image footprint'}</button>` : ''}
       <button class="secondary" onclick="openGeorefForFormation('${esc(record.formation_id)}')">Register another aerial image</button>
     </article>`;
   }).join(multiple ? '<hr>' : '');
@@ -374,6 +386,9 @@ function renderFeatures(features, targetLayer, reference = false) {
     const [longitude, latitude] = feature.geometry.coordinates;
     const marker = L.circleMarker([latitude, longitude], markerStyle(records[0], reference));
     marker.bindPopup(popupFor(records), { maxWidth: 360 });
+    if (records.length === 1) {
+      marker.on('click', () => { void selectFormation(records[0].formation_id); });
+    }
     marker.addTo(targetLayer);
     records.forEach((record) => renderedMarkersById.set(record.formation_id, marker));
   }
@@ -592,7 +607,19 @@ function resetOverlaySelection() {
 }
 
 function updateOverlayControls() {
-  const match = overlayRecords.find((overlay) => overlay.formation_id === selected?.formation_id);
+  const matches = overlaysFor();
+  const choice = $('overlayChoice');
+  const priorChoice = choice.value;
+  choice.replaceChildren();
+  matches.forEach((record, index) => {
+    const option = document.createElement('option');
+    option.value = record.overlay_id;
+    option.textContent = `${index + 1}. ${record.title}`;
+    choice.appendChild(option);
+  });
+  if (matches.some((record) => record.overlay_id === priorChoice)) choice.value = priorChoice;
+  $('overlayChoiceLabel').hidden = matches.length < 2;
+  const match = selectedOverlayRecord();
   $('toggleOverlay').disabled = !match;
   if (!match) {
     $('overlayNotice').textContent = selected
@@ -614,25 +641,32 @@ function updateOverlayControls() {
 function renderRegisteredFootprints(visibleIds = null) {
   registeredFootprintLayer.clearLayers();
   overlayFootprintsByFormation.clear();
+  const grouped = new Map();
   for (const record of overlayRecords) {
-    if (visibleIds && !visibleIds.has(record.formation_id)) continue;
+    if (!grouped.has(record.formation_id)) grouped.set(record.formation_id, []);
+    grouped.get(record.formation_id).push(record);
+  }
+  for (const [formationId, records] of grouped) {
+    if (visibleIds && !visibleIds.has(formationId)) continue;
+    const record = records[0];
     if (!Array.isArray(record.corners) || record.corners.length !== 4) continue;
-    const canDisplay = overlayPixelsMayDisplay(record);
+    const canDisplay = records.some(overlayPixelsMayDisplay);
+    const countLabel = records.length > 1 ? ` (${records.length} mapped images)` : '';
     const footprint = L.polygon(record.corners, {
       pane: 'overlayFootprintPane', color: '#ffe08a', weight: 3,
       opacity: 0.95, dashArray: '8 5', fillColor: '#f6ad55', fillOpacity: 0.12,
-    }).bindTooltip(`${record.title} — click to ${canDisplay ? 'load the registered image' : 'inspect the reviewed footprint'}`);
+    }).bindTooltip(`${record.title}${countLabel} — click to ${canDisplay ? 'browse the registered images' : 'inspect the reviewed footprint'}`);
     const center = Array.isArray(record.center) ? record.center : footprint.getBounds().getCenter();
     const marker = L.marker(center, {
       pane: 'overlayFootprintPane',
       icon: L.divIcon({
         className: 'registered-image-marker',
-        html: `<span aria-hidden="true">${canDisplay ? 'IMG' : 'GEO'}</span>`,
-        iconSize: [34, 24], iconAnchor: [17, 31], tooltipAnchor: [0, -25],
+        html: `<span aria-hidden="true">${canDisplay ? 'IMG' : 'GEO'}${records.length > 1 ? ` ×${records.length}` : ''}</span>`,
+        iconSize: [records.length > 1 ? 48 : 34, 24], iconAnchor: [records.length > 1 ? 24 : 17, 31], tooltipAnchor: [0, -25],
       }),
-      title: `${record.title} — click to ${canDisplay ? 'load' : 'inspect'}`,
-    }).bindTooltip(`${record.title} — click to ${canDisplay ? 'load the registered image' : 'inspect the reviewed footprint'}`);
-    const load = () => window.showOverlayForFormation(record.formation_id);
+      title: `${record.title}${countLabel} — click to ${canDisplay ? 'browse' : 'inspect'}`,
+    }).bindTooltip(`${record.title}${countLabel} — click to ${canDisplay ? 'browse the registered images' : 'inspect the reviewed footprint'}`);
+    const load = () => window.showOverlayForFormation(record.formation_id, record.overlay_id);
     footprint.on('click', load);
     marker.on('click', load);
     footprint.addTo(registeredFootprintLayer);
@@ -812,7 +846,7 @@ function exportRay() {
 }
 
 function toggleSelectedOverlay() {
-  const record = overlayRecords.find((overlay) => overlay.formation_id === selected?.formation_id);
+  const record = selectedOverlayRecord();
   if (!record) return;
   if (!overlayPixelsMayDisplay(record)) {
     resetOverlaySelection();
@@ -855,14 +889,24 @@ function toggleSelectedOverlay() {
   map.fitBounds(activeOverlay.getBounds(), { padding: [35, 35], maxZoom: 18 });
 }
 
-window.showOverlayForFormation = async (id) => {
+window.showOverlayForFormation = async (id, overlayId = null) => {
   await selectFormation(id, true);
+  if (overlayId && overlaysFor(id).some((record) => record.overlay_id === overlayId)) {
+    $('overlayChoice').value = overlayId;
+    updateOverlayControls();
+  }
   toggleSelectedOverlay();
 };
 
 $('drawRay').addEventListener('click', drawRay);
 $('exportRay').addEventListener('click', exportRay);
 $('toggleOverlay').addEventListener('click', toggleSelectedOverlay);
+$('overlayChoice').addEventListener('change', () => {
+  const wasVisible = Boolean(activeOverlay);
+  resetOverlaySelection();
+  updateOverlayControls();
+  if (wasVisible) toggleSelectedOverlay();
+});
 $('toggleSourceImages').addEventListener('click', toggleSourceImages);
 $('overlayOpacity').addEventListener('input', () => activeOverlay?.setOpacity(Number($('overlayOpacity').value)));
 ['bearing', 'bearingUncertainty', 'range', 'corridor', 'bidirectional'].forEach((id) => $(id).addEventListener('input', () => {
@@ -954,8 +998,8 @@ Promise.all([
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260721.9').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260721.9').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260722.1').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260722.1').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
@@ -992,7 +1036,7 @@ Promise.all([
   const unknownCountryImages = Number(sourceImageMetadata.unknown_country_unique_image_count || 0);
   const unverifiedLinks = Number(sourceImageMetadata.unverified_unique_image_link_count || 0);
   const rightsGated = Number(sourceImageMetadata.rights_gated_unique_image_count || 0);
-  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} reviewed image footprints are mapped, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} image-bearing reports have mapped placements covering ${overlayRecords.length} reviewed frames, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
   updateSourceImageControls();
   applyFilters();
   addOrientationLayers();

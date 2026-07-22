@@ -8,7 +8,7 @@
   <meta name="description" content="A provenance-first map of reported crop formations and an experimental geographic alignment lab.">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=20260721.9">
+  <link rel="stylesheet" href="styles.css?v=20260722.1">
 </head>
 <body>
   <main>
@@ -66,6 +66,9 @@
         <h2>Mapped source-image overlays</h2>
         <p class="muted">Dashed amber footprints mark source photographs with reviewed display placements. <strong>IMG</strong> badges can load permitted source-hosted pixels; <strong>GEO</strong> badges preserve a reviewed footprint while keeping publisher-controlled pixels link-only. They follow the search, year, and country filters, and every record states whether its placement is accepted, provisional, or approximate.</p>
         <p id="overlayNotice" class="notice">Reviewed source-image footprints are visible by default. Click a badge or dashed footprint to inspect the mapped field; actual pixels load only where the recorded rights policy permits embedding.</p>
+        <label id="overlayChoiceLabel" hidden>Mapped aerial image
+          <select id="overlayChoice"></select>
+        </label>
         <button id="toggleOverlay" class="secondary" disabled>Load and zoom to registered image</button>
         <label id="overlayOpacityLabel" hidden>Overlay opacity
           <input id="overlayOpacity" type="range" min="0.1" max="1" step="0.05" value="0.68">
@@ -97,7 +100,7 @@
     <div id="map" aria-label="Interactive crop circle map"></div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script type="module" src="app.js?v=20260721.9"></script>
+  <script type="module" src="app.js?v=20260722.1"></script>
   <script type="module" src="atlas-georef-integration.mjs"></script>
 </body>
 </html>

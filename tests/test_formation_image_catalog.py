@@ -57,7 +57,7 @@ class FormationImageCatalogTests(unittest.TestCase):
         self.assertEqual(len(diessenhofen), 9)
         self.assertEqual(
             sum(image["placement_status"] == "mapped_overlay" for image in diessenhofen),
-            1,
+            9,
         )
 
         rights_gated = [

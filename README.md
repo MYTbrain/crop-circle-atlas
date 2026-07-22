@@ -57,12 +57,12 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
   but the public KMZ packages zero image files. The web map and KML/KMZ contain
-  thirteen opt-in,
+  twenty-one opt-in,
   source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
   Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005,
   Wavra Farm 1997, both Rockville 2003 formations, Miamisburg 2004,
-  Hopewell/Chillicothe 2012, Albion/Starr 2002, and the openly licensed
-  Diessenhofen, Switzerland formation of 2008-07-15.
+  Hopewell/Chillicothe 2012, Albion/Starr 2002, and nine openly licensed
+  same-flight frames of the Diessenhofen, Switzerland formation of 2008-07-15.
   Wausau uses a contemporaneous investigator road map and an ICCRA-linked USGS
   follow-up frame; Mayville and Howell have provisional display geometry tied
   to source coordinates; Jupiter is explicitly a coordinate-anchored scene
@@ -120,8 +120,10 @@ invented image corners where a unique landmark match could not be reproduced.
 Wavra now reproduces the user-supplied Google Earth KMZ exactly: its rotated
 LatLonBox, source-pixel anchor, 2000-07-23 historical-imagery date, and 50.2%
 opacity replace the rejected placement 1,428 metres away. The international
-wave also adds nine exact publisher map references as candidate fields and one
-four-control, open-license Diessenhofen display overlay; image corners were
+wave also adds nine exact publisher map references as candidate fields and nine
+open-license Diessenhofen display overlays: one four-control reference frame
+and eight center-constrained same-flight transfers. All remain provisional and
+excluded from alignment calculations; image corners were
 rejected for the nine rights-restricted cases that lacked sufficient controls.
 
 The US-first resolution campaign uses official USGS and USDA imagery for
@@ -154,8 +156,8 @@ sources, control-point requirements, and unresolved-state policy.
   registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  thirteen disabled provisional GroundOverlay links to source-hosted images,
-  including one CC BY-SA 3.0 international placement. Packaged
+  twenty-one disabled provisional GroundOverlay links to source-hosted images,
+  including nine CC BY-SA 3.0 international placements. Packaged
   overlays remain rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
