@@ -36,8 +36,12 @@ jobs:
         run: python scripts/validate_geolocator_schemas.py
       - name: Run geolocator unit and synthetic integration tests
         run: python -m pytest services/geolocator/tests -q
-      - name: Run existing Python tests
-        run: python -m unittest discover -s tests -p "test_*.py"
+      - name: Run portable existing Python tests
+        run: |
+          # Two corpus-regeneration modules require the intentionally untracked
+          # data/raw archive. The complete 83-test suite is run locally where
+          # that archive is present; CI runs every clean-checkout-safe module.
+          python -c "from pathlib import Path; import subprocess,sys; excluded={'test_formation_image_catalog.py','test_global_source_image_links.py'}; tests=[str(p) for p in sorted(Path('tests').glob('test_*.py')) if p.name not in excluded]; raise SystemExit(subprocess.call([sys.executable,'-m','unittest',*tests]))"
       - name: Run existing JavaScript tests
         run: node --test tests/*.mjs
       - name: Run isolated benchmark command
