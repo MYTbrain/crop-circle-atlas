@@ -1,13 +1,13 @@
 {
   "metadata": {
     "schema_version": "crop-circle-atlas/formation-images/v1",
-    "generated_at": "2026-07-21T20:50:17Z",
+    "generated_at": "2026-07-22T01:34:37Z",
     "unique_image_count": 480,
     "formation_image_link_count": 517,
     "formation_count": 266,
     "us_unique_image_count": 479,
-    "mapped_catalog_image_count": 6,
-    "overlay_placement_count": 6,
+    "mapped_catalog_image_count": 12,
+    "overlay_placement_count": 12,
     "rights_notice": "Source pixels are not packaged by the atlas. Images load from ICCRA only after an explicit user action. A source link is not a georegistration or publication-rights grant."
   },
   "images_by_formation": {
@@ -292,7 +292,9 @@
         "height": 400,
         "sha256": "af0034a51810beb97eebb142c3c51d6925457a8e9dc9f323b3ad920223aea372",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "rockville-2-2003-campus-scene-placement",
+        "registration_status": "provisional_campus_landmark_scene_placement"
       },
       {
         "image_link_id": "iccra_img_ac1d60d0d37474ac",
@@ -1740,7 +1742,9 @@
         "height": 395,
         "sha256": "85dc138915aa1833cfd88c53b7dbc7df321977fbcae7e6c9de563014ab2cc59e",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "miamisburg-2004-report-coordinate-placement",
+        "registration_status": "provisional_report_coordinate_orientation_placement"
       },
       {
         "image_link_id": "iccra_img_4e16bce9bc01f66c",
@@ -3268,7 +3272,9 @@
         "height": 371,
         "sha256": "b64320ab8ac4c956481fe35e24a522609dd46c36bc29e0fb61284d2cb51de471",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "hopewell-2012-landmark-scene-placement",
+        "registration_status": "provisional_multi_landmark_oblique_scene_placement"
       },
       {
         "image_link_id": "iccra_img_8a0b57c715c5bb4b",
@@ -3910,7 +3916,9 @@
         "height": 155,
         "sha256": "08c25d53c0aba3f74cec7b3048491a36ca4ceada72b0602eb1f40e7ba959be68",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "albion-starr-2002-landmark-scene-placement",
+        "registration_status": "provisional_venue_field_landmark_scene_placement"
       }
     ],
     "cc_8a68d8a0471b": [
@@ -5104,7 +5112,9 @@
         "height": 415,
         "sha256": "c5121e667c03e3139781fd9b56a5b1bbff4c254716e980d81cd4c679c3adb65c",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "rockville-1-2003-landmark-scene-placement",
+        "registration_status": "provisional_two_control_landmark_scene_placement"
       },
       {
         "image_link_id": "iccra_img_392b874293112778",
@@ -7122,7 +7132,9 @@
         "height": 243,
         "sha256": "e7f8a43ae8dd1338c958e386ed0f74edd4b1dcfb45083ad5180d862006ce0aa9",
         "rights_status": "not_cleared",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "wavra-farm-1997-landmark-scene-placement",
+        "registration_status": "provisional_landmark_scene_registration"
       },
       {
         "image_link_id": "iccra_img_d2f85bcfed091120",

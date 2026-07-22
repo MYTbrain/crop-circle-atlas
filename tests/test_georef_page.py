@@ -72,16 +72,29 @@ class GeorefPageContractTests(unittest.TestCase):
     def test_atlas_manual_export_is_unambiguously_unqualified(self):
         html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
         javascript = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
+        stylesheet = (ROOT / "web" / "styles.css").read_text(encoding="utf-8")
         self.assertIn("Export unqualified hypothesis KML", html)
         self.assertIn("Show rough locality references on map", html)
         self.assertIn("Load and zoom to registered image", html)
-        self.assertIn("Registered aerial imagery", html)
+        self.assertIn("Mapped source-image overlays", html)
         self.assertIn("Source image archive", html)
         self.assertIn('id="sourceImageGallery"', html)
         self.assertIn('id="toggleSourceImages"', html)
         self.assertIn("Registered aerial-photo footprints", javascript)
         self.assertIn("renderSourceImageGallery", javascript)
         self.assertIn("sourceImagesByFormation", javascript)
+        self.assertIn("sourcePhotoLayer", javascript)
+        self.assertIn("renderSourcePhotoAvailability(visibleIds)", javascript)
+        self.assertIn("sourcePhotoCoordinates", javascript)
+        self.assertIn("record.latitude == null || record.latitude === ''", javascript)
+        self.assertIn("mappedOverlayIds.has(formationId)", javascript)
+        self.assertIn("window.showSourceImagesForFormation(record.formation_id)", javascript)
+        self.assertIn("Source-photo availability", javascript)
+        self.assertIn("PIC badges", javascript)
+        self.assertIn("source-photo-marker", stylesheet)
+        self.assertIn("source photos available", html)
+        self.assertIn("reviewed image placement", html)
+        self.assertIn("only mean source photographs are available", html)
         self.assertIn("sitePointPane", javascript)
         self.assertIn("localityPointPane", javascript)
         self.assertIn("radius: 5, color: '#ffd84d', weight: 2.25, opacity: 1, dashArray: '3 2'", javascript)
@@ -93,11 +106,12 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
         self.assertIn("hollow dashed yellow markers are rough locality references", html)
-        self.assertIn('href="styles.css?v=20260721.5"', html)
-        self.assertIn('src="app.js?v=20260721.5"', html)
-        self.assertIn("registered_overlays.json?v=20260721.5", javascript)
-        self.assertIn("formation_images.json?v=20260721.5", javascript)
-        self.assertIn("Six reviewed source-image placements are mapped", html)
+        self.assertIn('href="styles.css?v=20260721.7"', html)
+        self.assertIn('src="app.js?v=20260721.7"', html)
+        self.assertIn("registered_overlays.json?v=20260721.7", javascript)
+        self.assertIn("formation_images.json?v=20260721.7", javascript)
+        self.assertIn("Mapped source-image overlays", html)
+        self.assertIn("overlayRecords.length.toLocaleString()", javascript)
         self.assertIn("activeOverlay?.remove()", javascript)
         self.assertIn("activeOverlayRecord = null", javascript)
         self.assertRegex(html, r'<input id="showLocalities" type="checkbox">')
@@ -109,6 +123,32 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("Accepted local axes extended experimentally", javascript)
         self.assertIn("Locality centroids and unresolved reports are excluded", javascript)
         self.assertNotIn("Documented projection ray", javascript)
+        self.assertRegex(
+            stylesheet,
+            r"\.source-image-gallery\[hidden\]\s*\{\s*display\s*:\s*none\s*;\s*\}",
+            "the author-level grid rule must not override the native hidden attribute",
+        )
+
+    def test_source_photo_badge_coverage_uses_only_available_coordinates(self):
+        index_payload = json.loads((ROOT / "web" / "data" / "formation_index.json").read_text(encoding="utf-8"))
+        image_payload = json.loads((ROOT / "web" / "data" / "formation_images.json").read_text(encoding="utf-8"))
+        site_payload = json.loads((ROOT / "web" / "data" / "formation_sites.geojson").read_text(encoding="utf-8"))
+        overlay_payload = json.loads((ROOT / "web" / "data" / "registered_overlays.json").read_text(encoding="utf-8"))
+        records = {record["formation_id"]: record for record in index_payload["formations"]}
+        image_ids = set(image_payload["images_by_formation"])
+        site_ids = {feature["properties"]["formation_id"] for feature in site_payload["features"]}
+        located_ids = {
+            formation_id for formation_id in image_ids
+            if formation_id in site_ids or (
+                records[formation_id].get("latitude") not in (None, "")
+                and records[formation_id].get("longitude") not in (None, "")
+            )
+        }
+        overlay_ids = {overlay["formation_id"] for overlay in overlay_payload["overlays"]}
+        self.assertTrue(overlay_ids <= located_ids)
+        self.assertGreater(len(located_ids - overlay_ids), 0, "the PIC layer should contain coordinate-referenced reports")
+        self.assertGreater(len(image_ids - located_ids), 0, "unlocated image reports must remain off-map")
+        self.assertEqual(len(image_ids), len(located_ids) + len(image_ids - located_ids))
 
 
 if __name__ == "__main__":

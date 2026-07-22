@@ -13,12 +13,27 @@
       "source_page_url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Whiskey%20Hill-Hubbard,%20Clackamas%20County%20(July%2023,%201998).html",
       "source_image_sha256": "6d80ba170805803507b66c2b2c0d596d8c16447301769240edc3b744982b98a8",
       "corners": [
-        [45.17393962, -122.725750128],
-        [45.171739432, -122.724047306],
-        [45.169465999, -122.726583516],
-        [45.171650063, -122.728284595]
+        [
+          45.17393962,
+          -122.725750128
+        ],
+        [
+          45.171739432,
+          -122.724047306
+        ],
+        [
+          45.169465999,
+          -122.726583516
+        ],
+        [
+          45.171650063,
+          -122.728284595
+        ]
       ],
-      "center": [45.171405556, -122.726497222],
+      "center": [
+        45.171405556,
+        -122.726497222
+      ],
       "coordinate_uncertainty_m": 35,
       "registration_status": "provisional_user_georeferenced_historical_imagery",
       "reference_imagery": "Google Earth display of USGS imagery",
@@ -44,12 +59,27 @@
       "source_page_url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Whiskey%20Hill-Hubbard-Woodburn,%20Clackamas%20County%20(August%205,%202000).html",
       "source_image_sha256": "f98836559c52d2cf5fca0c366948f25137b3eff6172f90d0e380f4a8d85ecc6c",
       "corners": [
-        [45.171087098742, -122.72705236521],
-        [45.171881154385, -122.726484087819],
-        [45.171470572613, -122.725310670638],
-        [45.170676516969, -122.725878948028]
+        [
+          45.171087098742,
+          -122.72705236521
+        ],
+        [
+          45.171881154385,
+          -122.726484087819
+        ],
+        [
+          45.171470572613,
+          -122.725310670638
+        ],
+        [
+          45.170676516969,
+          -122.725878948028
+        ]
       ],
-      "center": [45.17130930965, -122.72606493582],
+      "center": [
+        45.17130930965,
+        -122.72606493582
+      ],
       "coordinate_uncertainty_status": "not_independently_quantified",
       "display_corner_sensitivity_envelope_m": 35,
       "display_corner_sensitivity_kind": "conditional_detector_sensitivity_envelope_not_confidence_interval",
@@ -77,12 +107,27 @@
       "source_page_url": "https://iccra.org/reports/wisconsin_mayville_kekoskee_7_4_2003.htm",
       "source_image_sha256": "be4eb57fbc6fb68fc542f6a9b44b6c5f88b3e27c3621151c7a2aeefa24304435",
       "corners": [
-        [43.530631546033, -88.52748032026],
-        [43.530631546033, -88.525918647288],
-        [43.529891876612, -88.525918647288],
-        [43.529891876612, -88.52748032026]
+        [
+          43.530631546033,
+          -88.52748032026
+        ],
+        [
+          43.530631546033,
+          -88.525918647288
+        ],
+        [
+          43.529891876612,
+          -88.525918647288
+        ],
+        [
+          43.529891876612,
+          -88.52748032026
+        ]
       ],
-      "center": [43.53016667, -88.5265],
+      "center": [
+        43.53016667,
+        -88.5265
+      ],
       "coordinate_uncertainty_m": 100,
       "registration_status": "provisional_source_gps_geometry_registration",
       "display_geometry_status": "report_north_facing_photo_scaled_from_measured_42ft_circles",
@@ -108,12 +153,27 @@
       "source_page_url": "https://iccra.org/bystate/Michigan/ICCRA%20-%20MI%20-%20Howell%20Township,%20Livingston%20County%20(July%2024,%202003).html",
       "source_image_sha256": "56cf407c5e4287c1dc32b159775e4906187e9dc1aca09d8fc1d9b404ef107f09",
       "corners": [
-        [42.600921291206, -84.000820522735],
-        [42.600665802613, -84.000288089025],
-        [42.600412048794, -84.000512817265],
-        [42.600667537387, -84.001045250975]
+        [
+          42.600921291206,
+          -84.000820522735
+        ],
+        [
+          42.600665802613,
+          -84.000288089025
+        ],
+        [
+          42.600412048794,
+          -84.000512817265
+        ],
+        [
+          42.600667537387,
+          -84.001045250975
+        ]
       ],
-      "center": [42.60066667, -84.00066667],
+      "center": [
+        42.60066667,
+        -84.00066667
+      ],
       "coordinate_uncertainty_m": 100,
       "registration_status": "provisional_source_gps_geometry_registration",
       "display_geometry_status": "report_axis_and_measured_diameter_local_affine_placement",
@@ -139,12 +199,27 @@
       "source_page_url": "https://iccra.org/bystate/North%20Carolina/ICCRA%20-%20NC%20-%20Jupiter,%20Madison%20County%20(June%2021,%202005).html",
       "source_image_sha256": "eb2332f966e407478e0d5342704bd887a8f438cb66fc6faccd69c226126ada22",
       "corners": [
-        [35.822460743802, -82.603745557068],
-        [35.822460743802, -82.602140241278],
-        [35.821580578512, -82.602140241278],
-        [35.821580578512, -82.603745557068]
+        [
+          35.822460743802,
+          -82.603745557068
+        ],
+        [
+          35.822460743802,
+          -82.602140241278
+        ],
+        [
+          35.821580578512,
+          -82.602140241278
+        ],
+        [
+          35.821580578512,
+          -82.603745557068
+        ]
       ],
-      "center": [35.822, -82.60283333],
+      "center": [
+        35.822,
+        -82.60283333
+      ],
       "coordinate_uncertainty_m": 100,
       "registration_status": "provisional_source_gps_scene_placement",
       "display_geometry_status": "coordinate_anchored_scale_estimate_orientation_unresolved",
@@ -170,12 +245,27 @@
       "source_page_url": "https://iccra.org/bystate/Wisconsin/ICCRA%20-%20WI%20-%20Wausau,%20Marathon%20County%20(August%2013,%201997).html",
       "source_image_sha256": "1700e2a5b70635e3e8864112d0fca843287cedd5f6de6b78c05ab5c5359d9ae4",
       "corners": [
-        [44.948883280132, -89.573516337925],
-        [44.948883280132, -89.56366701635],
-        [44.943655109094, -89.56366701635],
-        [44.943655109094, -89.573516337925]
+        [
+          44.948883280132,
+          -89.573516337925
+        ],
+        [
+          44.948883280132,
+          -89.56366701635
+        ],
+        [
+          44.943655109094,
+          -89.56366701635
+        ],
+        [
+          44.943655109094,
+          -89.573516337925
+        ]
       ],
-      "center": [44.947549488674, -89.567903416234],
+      "center": [
+        44.947549488674,
+        -89.567903416234
+      ],
       "coordinate_uncertainty_m": 100,
       "registration_status": "provisional_historical_ortho_landmark_registration",
       "display_geometry_status": "north_up_usgs_frame_scaled_from_persistent_road_and_farm_controls",
@@ -190,6 +280,282 @@
       "formal_alignment_status": "excluded_pending_independent_ground_control",
       "quality_disclosure": "Landmark-registered historical scene, not a survey georegistration. The contemporaneous road map locates the candidate field and persistent roads and farm features support the displayed USGS frame, but the 1997 formation is not clearly visible in that early-1998 image. The candidate center retains 100 m uncertainty and is excluded from formal alignment calculations.",
       "notes": "This is the actual ICCRA-linked USGS follow-up frame, placed over the identified Wausau field scene. It loads from ICCRA only after explicit user action; the site marker and image footprint remain provisional."
+    },
+    {
+      "overlay_id": "wavra-farm-1997-landmark-scene-placement",
+      "registration_observation_id": "regobs_wavra_farm_1997_landmark_v1",
+      "formation_id": "cc_f0f992d92db0",
+      "assertion_id": "iccra_2d1e986d5685c2ba",
+      "title": "Wavra Farm 1997 aerial landmark placement",
+      "source_image_url": "https://iccra.org/bystate/Oregon/images/WavraFarm1997-1.jpg",
+      "source_page_url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Wavr%20Farm,%20Salem-Silver%20Creek%20Falls,%20Marion%20County%20(June%2028,%201997).html",
+      "source_image_sha256": "e7f8a43ae8dd1338c958e386ed0f74edd4b1dcfb45083ad5180d862006ce0aa9",
+      "corners": [
+        [
+          44.888003154,
+          -122.899652934
+        ],
+        [
+          44.887197964,
+          -122.895676467
+        ],
+        [
+          44.885225037,
+          -122.89647233
+        ],
+        [
+          44.886030227,
+          -122.900448797
+        ]
+      ],
+      "center": [
+        44.886560157,
+        -122.897991423
+      ],
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "provisional_landmark_scene_registration",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "1995 Oregon orthophoto and current Esri World Imagery",
+      "reference_imagery_date": "1995 and 2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The previous Highway 22 seed was rejected. The named farm address, a 1995 orthophoto, and the source aerial's road, drive, houses, field corners, and tree rows support this replacement projective scene placement.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Projective landmark scene placement, not a survey georegistration. Persistent farm and road features support the field and display orientation, but no independent checkpoint validates the four image corners.",
+      "notes": "The actual ICCRA aerial frame loads only after explicit user action. It is mapped to the corrected Wavra Farm field vicinity and remains excluded from alignment calculations."
+    },
+    {
+      "overlay_id": "rockville-1-2003-landmark-scene-placement",
+      "registration_observation_id": "regobs_rockville_1_2003_landmark_v1",
+      "formation_id": "cc_ae1b8ee2ae1f",
+      "assertion_id": "iccra_b9bb80819738fef7",
+      "title": "Rockville 1 2003 aerial landmark placement",
+      "source_image_url": "https://iccra.org/bystate/California/images/rockville2003-1a.jpg",
+      "source_page_url": "https://iccra.org/bystate/California/ICCRA%20-%20CA%20-%20Rockville%20(1),%20Solano%20County%20(June%2028,%202003).html",
+      "source_image_sha256": "c5121e667c03e3139781fd9b56a5b1bbff4c254716e980d81cd4c679c3adb65c",
+      "corners": [
+        [
+          38.245036461,
+          -122.125023812
+        ],
+        [
+          38.24426043,
+          -122.121126849
+        ],
+        [
+          38.242070479,
+          -122.121833835
+        ],
+        [
+          38.24284651,
+          -122.125730798
+        ]
+      ],
+      "center": [
+        38.2428,
+        -122.1231
+      ],
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_two_control_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
+      "reference_imagery": "Current Esri street and satellite basemaps",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The named road scene and multiple persistent aerial landmarks constrain the correct field. A two-control similarity seed supplies the display scale and rotation; the full oblique frame is shown with projective corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Two-control landmark scene placement, not a survey georegistration. The correct field and scene are well supported, while the displayed four-corner warp remains provisional.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "rockville-2-2003-campus-scene-placement",
+      "registration_observation_id": "regobs_rockville_2_2003_campus_v1",
+      "formation_id": "cc_0ed8b56730be",
+      "assertion_id": "iccra_352fca1747e2add1",
+      "title": "Rockville 2 2003 campus landmark placement",
+      "source_image_url": "https://iccra.org/bystate/California/images/rockville2003-2a.jpg",
+      "source_page_url": "https://iccra.org/bystate/California/ICCRA%20-%20CA%20-%20Rockville%20(2),%20Solano%20County%20(June%2028,%202003).html",
+      "source_image_sha256": "af0034a51810beb97eebb142c3c51d6925457a8e9dc9f323b3ad920223aea372",
+      "corners": [
+        [
+          38.235857061,
+          -122.119320444
+        ],
+        [
+          38.235435635,
+          -122.124373037
+        ],
+        [
+          38.240726871,
+          -122.125088448
+        ],
+        [
+          38.241148297,
+          -122.120035855
+        ]
+      ],
+      "center": [
+        38.2401,
+        -122.1225
+      ],
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_campus_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
+      "reference_imagery": "Current Esri World Imagery of Solano Community College",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The distinctive campus, tennis courts, parking, road, and field geometry identify the scene. A two-control similarity seed supplies scale and rotation for the projective display footprint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Campus landmark scene placement, not a survey georegistration. Multiple persistent features identify the field, but the precise four-corner warp remains provisional.",
+      "notes": "The actual ICCRA aerial frame loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "miamisburg-2004-report-coordinate-placement",
+      "registration_observation_id": "regobs_miamisburg_2004_report_coordinate_v1",
+      "formation_id": "cc_3fb745fb7416",
+      "assertion_id": "iccra_31349f7aca5a4bf2",
+      "title": "Miamisburg 2004 report-coordinate image placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/miamisburg2004a.jpg",
+      "source_page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Miamisburg,%20Montgomery%20County%20(August%2024,%202004).htm",
+      "source_image_sha256": "85dc138915aa1833cfd88c53b7dbc7df321977fbcae7e6c9de563014ab2cc59e",
+      "corners": [
+        [
+          39.62073215,
+          -84.27078398
+        ],
+        [
+          39.62018467,
+          -84.27141678
+        ],
+        [
+          39.61947681,
+          -84.27038464
+        ],
+        [
+          39.62002429,
+          -84.26975185
+        ]
+      ],
+      "center": [
+        39.6201,
+        -84.27057778
+      ],
+      "coordinate_uncertainty_m": 20,
+      "registration_status": "provisional_report_coordinate_orientation_placement",
+      "display_geometry_status": "four_corner_report_coordinate_scene_placement",
+      "reference_imagery": "Historical Google Earth coordinate and alignment documented in the ICCRA investigation report",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The investigation's degree-minute-second coordinate, named mound, measured formation length, and documented alignment provide a reproducible center and display orientation.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Report-coordinate image placement, not a survey georegistration. The center and named-landmark orientation are documented; the four image corners remain a provisional reconstruction.",
+      "notes": "The source-hosted formation image loads only after explicit user action and is excluded from formal alignment calculations pending independent checkpoints."
+    },
+    {
+      "overlay_id": "hopewell-2012-landmark-scene-placement",
+      "registration_observation_id": "regobs_hopewell_2012_landmark_v1",
+      "formation_id": "cc_73d09b214763",
+      "assertion_id": "iccra_d0f334bbe26d6aaa",
+      "title": "Hopewell / Chillicothe 2012 landmark scene placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/hopewell3.jpg",
+      "source_page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Chillicothe,%20Ross%20County%20(Mid%20Sept%202012).html",
+      "source_image_sha256": "b64320ab8ac4c956481fe35e24a522609dd46c36bc29e0fb61284d2cb51de471",
+      "corners": [
+        [
+          39.3594,
+          -83.0855556
+        ],
+        [
+          39.3576,
+          -83.0845833
+        ],
+        [
+          39.3558,
+          -83.0923611
+        ],
+        [
+          39.358,
+          -83.0952778
+        ]
+      ],
+      "center": [
+        39.35776893,
+        -83.08719279
+      ],
+      "coordinate_uncertainty_m": 120,
+      "registration_status": "provisional_multi_landmark_oblique_scene_placement",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "Current Esri imagery and NPS Hopewell Mound Group site geography",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "Five persistent geographic controls and three report distances identify the correct field and support an explicitly provisional projective display footprint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Multi-landmark scene placement, not a surveyed registration. The field is well constrained by the report and terrain, while the precise four-corner warp remains provisional.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "albion-starr-2002-landmark-scene-placement",
+      "registration_observation_id": "regobs_albion_starr_2002_landmark_v1",
+      "formation_id": "cc_8a63f6cf9215",
+      "assertion_id": "iccra_ea95cee11e8269e2",
+      "title": "Albion / Starr Earthworks 2002 landmark scene placement",
+      "source_image_url": "https://iccra.org/bystate/Michigan/images/albion2002-1b.jpg",
+      "source_page_url": "https://iccra.org/bystate/Michigan/ICCRA%20-%20MI%20-%20Albion,%20Calhoun%20County%20(September%2029,%202002).html",
+      "source_image_sha256": "08c25d53c0aba3f74cec7b3048491a36ca4ceada72b0602eb1f40e7ba959be68",
+      "corners": [
+        [
+          42.2786,
+          -84.804
+        ],
+        [
+          42.2768,
+          -84.793
+        ],
+        [
+          42.282,
+          -84.7895
+        ],
+        [
+          42.2837,
+          -84.801
+        ]
+      ],
+      "center": [
+        42.28020389,
+        -84.79653526
+      ],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_venue_field_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "Current Esri imagery and Starr Commonwealth campus geography",
+      "reference_imagery_date": "2026-07-21",
+      "reviewed_at": "2026-07-21",
+      "review_basis": "The named Starr venue and distinctive triangular field bounded by two persistent transport corridors identify the scene and support a provisional footprint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Venue-field landmark placement, not a survey georegistration. The scene match is strong; precise corner geometry remains provisional.",
+      "notes": "The source-hosted image loads only after explicit user action and remains excluded from formal alignment calculations."
     }
   ]
 }

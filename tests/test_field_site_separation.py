@@ -200,10 +200,18 @@ class FieldSiteSeparationTests(unittest.TestCase):
         expected = {
             "cc_5d10e918a4b4": (44.9475495, -89.5679034, 100.0),
             "cc_ca0e623b0480": (44.9473776, -89.5750174, 100.0),
-            "cc_ae1b8ee2ae1f": (38.2428, -122.1231, 150.0),
-            "cc_0ed8b56730be": (38.2401, -122.1225, 200.0),
-            "cc_f0f992d92db0": (44.8550, -122.8650, 300.0),
+            "cc_ae1b8ee2ae1f": (38.2428, -122.1231, 60.0),
+            "cc_0ed8b56730be": (38.2401, -122.1225, 60.0),
+            "cc_f0f992d92db0": (44.8865602, -122.8979914, 75.0),
             "cc_db1599385db5": (38.8226, -86.4968, 1200.0),
+            "cc_3fb745fb7416": (39.6201, -84.2705778, 20.0),
+            "cc_73d09b214763": (39.3577689, -83.0871928, 120.0),
+            "cc_8a63f6cf9215": (42.2802039, -84.7965353, 100.0),
+            "cc_b670486b7829": (39.7795, -76.4665, 800.0),
+            "cc_111e3cdced4f": (36.8292, -119.7226, 700.0),
+            "cc_fba8a8655b8a": (38.3857, -121.9723, 850.0),
+            "cc_72e3a77239de": (47.7293, -97.596, 600.0),
+            "cc_6bc118741f7e": (35.889, -82.2875, 900.0),
         }
         site_ids = {feature["properties"]["formation_id"] for feature in self.sites["features"]}
         locality_ids = {
@@ -211,7 +219,7 @@ class FieldSiteSeparationTests(unittest.TestCase):
         }
         for formation_id, (latitude, longitude, uncertainty_m) in expected.items():
             row = self.by_id[formation_id]
-            self.assertEqual(row["site_status"], "candidate_field")
+            self.assertIn(row["site_status"], {"candidate_field", "registered_site"})
             self.assertEqual(row["site_alignment_eligible"], "false")
             self.assertAlmostEqual(float(row["site_latitude"]), latitude, places=6)
             self.assertAlmostEqual(float(row["site_longitude"]), longitude, places=6)

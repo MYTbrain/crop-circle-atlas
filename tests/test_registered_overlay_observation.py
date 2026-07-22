@@ -24,7 +24,7 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             )
         )
         observations = {row["observation_id"]: row for row in payload["observations"]}
-        self.assertEqual(len(observations), 5)
+        self.assertGreaterEqual(len(observations), 8)
         self.assertEqual(
             observations["regobs_mayville_2003_source_gps_v1"]["quality"]["status"],
             "useful_provisional_geometry_registration",
@@ -43,6 +43,23 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             observations["regobs_wausau_1997_usgs_followup_v1"]["quality"]["status"],
             "useful_provisional_landmark_registration",
         )
+        placements = json.loads(
+            (root / "data" / "provisional_image_scene_placements.json").read_text(
+                encoding="utf-8"
+            )
+        )["placements"]
+        for placement in placements:
+            observation = observations[placement["observation_id"]]
+            self.assertEqual(observation["overlay_id"], placement["overlay_id"])
+            self.assertTrue(
+                observation["formal_alignment_status"].startswith(
+                    "excluded_pending_"
+                )
+            )
+            self.assertEqual(
+                observation["source_evidence"]["url"],
+                placement["source_image_url"],
+            )
 
 
 if __name__ == "__main__":

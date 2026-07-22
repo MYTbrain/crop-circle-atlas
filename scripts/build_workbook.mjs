@@ -12,6 +12,7 @@ await fs.mkdir(previewDir, { recursive: true });
 const formationIndex = JSON.parse(await fs.readFile(path.join(root, "web", "data", "formation_index.json"), "utf8"));
 const assertionsCsv = await fs.readFile(path.join(dataDir, "source_assertions.csv"), "utf8");
 const summaryJson = JSON.parse(await fs.readFile(path.join(dataDir, "build_summary.json"), "utf8"));
+const registeredOverlays = JSON.parse(await fs.readFile(path.join(root, "web", "data", "registered_overlays.json"), "utf8"));
 
 const workbookFormationFields = [
   "formation_id", "date_iso", "date_precision", "year", "place", "region", "country", "country_code",
@@ -231,7 +232,7 @@ readme.getRange("A3:B28").values = [
   ["Expansion Exclusions", "Five Connector anchors excluded from assertion output with an explicit reason and preserved source text."],
   ["Coordinate method", "geonames_locality_centroid means approximate town/place coordinates, never an exact field."],
   ["GeoNames attribution", "Locality coordinates use GeoNames under CC BY 4.0: https://www.geonames.org/"],
-  ["Images", "Third-party photos are not redistributed. The KMZ packages zero image files and carries six disabled remote source links."],
+  ["Images", `Third-party photos are not redistributed. The KMZ packages zero image files and carries ${registeredOverlays.overlays.length} disabled remote source links.`],
   ["Directions", "Reviewed geographic bearings live in data/orientation_observations.csv in the repository."],
   ["Reproducibility", `Generated ${summaryJson.generated_at}; source PDF SHA-256 ${summaryJson.pdf.sha256}.`],
 ];

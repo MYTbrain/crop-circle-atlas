@@ -18,7 +18,12 @@
         "sha256": "f98836559c52d2cf5fca0c366948f25137b3eff6172f90d0e380f4a8d85ecc6c",
         "width_px": 274,
         "height_px": 241,
-        "pixel_boundary_extent_xy": [0, 0, 274, 241],
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          274,
+          241
+        ],
         "distribution": "remote_source_link_only_not_packaged"
       },
       "reference_evidence": {
@@ -33,38 +38,125 @@
       "source_lobe_detection": {
         "method": "OpenCV BGR to Lab; mask L greater than 180; 8-connected components; retain area at least 1000 pixels",
         "components": [
-          {"area_px": 1022, "centroid_xy": [173.523483366, 107.600782779]},
-          {"area_px": 1092, "centroid_xy": [124.009157509, 137.604395604]},
-          {"area_px": 1071, "centroid_xy": [172.525676937, 162.954248366]}
+          {
+            "area_px": 1022,
+            "centroid_xy": [
+              173.523483366,
+              107.600782779
+            ]
+          },
+          {
+            "area_px": 1092,
+            "centroid_xy": [
+              124.009157509,
+              137.604395604
+            ]
+          },
+          {
+            "area_px": 1071,
+            "centroid_xy": [
+              172.525676937,
+              162.954248366
+            ]
+          }
         ],
         "fit_points_xy": [
-          [173.5, 107.6],
-          [124.0, 137.6],
-          [172.5, 163.0]
+          [
+            173.5,
+            107.6
+          ],
+          [
+            124.0,
+            137.6
+          ],
+          [
+            172.5,
+            163.0
+          ]
         ]
       },
       "reference_lobe_detection": {
         "method": "grayscale crop x 980:1140, y 570:730; GaussianBlur 5x5 sigma 1.2; HoughCircles dp 1, minDist 20, param1 80, param2 18, radius 8:30; retain global x greater than 1050",
         "detected_circles_xyr": [
-          [1080.5, 684.5, 17.2000008],
-          [1074.5, 646.5, 21.6000004],
-          [1111.5, 665.5, 16.7999992]
+          [
+            1080.5,
+            684.5,
+            17.2000008
+          ],
+          [
+            1074.5,
+            646.5,
+            21.6000004
+          ],
+          [
+            1111.5,
+            665.5,
+            16.7999992
+          ]
         ],
         "fit_points_xy": [
-          [1074.5, 646.5],
-          [1080.5, 684.5],
-          [1111.5, 665.5]
+          [
+            1074.5,
+            646.5
+          ],
+          [
+            1080.5,
+            684.5
+          ],
+          [
+            1111.5,
+            665.5
+          ]
         ]
       },
       "control_pairs": [
-        {"source_xy": [173.5, 107.6], "reference_xy": [1074.5, 646.5]},
-        {"source_xy": [124.0, 137.6], "reference_xy": [1080.5, 684.5]},
-        {"source_xy": [172.5, 163.0], "reference_xy": [1111.5, 665.5]}
+        {
+          "source_xy": [
+            173.5,
+            107.6
+          ],
+          "reference_xy": [
+            1074.5,
+            646.5
+          ]
+        },
+        {
+          "source_xy": [
+            124.0,
+            137.6
+          ],
+          "reference_xy": [
+            1080.5,
+            684.5
+          ]
+        },
+        {
+          "source_xy": [
+            172.5,
+            163.0
+          ],
+          "reference_xy": [
+            1111.5,
+            665.5
+          ]
+        }
       ],
       "source_to_reference_affine": [
-        [0.2866939497843178, 0.6730450171441238, 952.3389558677131],
-        [-0.5660140839877589, 0.33274342808686447, 708.9002507097296],
-        [0.0, 0.0, 1.0]
+        [
+          0.2866939497843178,
+          0.6730450171441238,
+          952.3389558677131
+        ],
+        [
+          -0.5660140839877589,
+          0.33274342808686447,
+          708.9002507097296
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
       ],
       "affine_fit": {
         "training_rmse_px": 0.0,
@@ -73,10 +165,22 @@
         "interpretation": "Three controls exactly determine the six affine parameters. The zero training residual is not an accuracy or validation statistic."
       },
       "source_frame_corners_in_reference_xy": [
-        [952.3389558677131, 708.9002507097296],
-        [1030.8930981086162, 553.8123916970836],
-        [1193.0969472403501, 634.0035578660179],
-        [1114.542804999447, 789.091416878664]
+        [
+          952.3389558677131,
+          708.9002507097296
+        ],
+        [
+          1030.8930981086162,
+          553.8123916970836
+        ],
+        [
+          1193.0969472403501,
+          634.0035578660179
+        ],
+        [
+          1114.542804999447,
+          789.091416878664
+        ]
       ],
       "orientation_disambiguation": {
         "source_axis_image_deg": 148.3,
@@ -88,7 +192,10 @@
         "reference_length_weighted_median_deg": 86.811331,
         "reference_mad_deg": 1.370724,
         "selected_residual_deg": 6.302572,
-        "other_handedness_preserving_cyclic_residuals_deg": [60.074739, 61.102407],
+        "other_handedness_preserving_cyclic_residuals_deg": [
+          60.074739,
+          61.102407
+        ],
         "limitation": "The numeric comparison is reproducible, but interpreting the low-tier source-image axis as field rows remains an inference."
       },
       "reference_to_wgs84": {
@@ -96,13 +203,25 @@
         "manual_road_controls": [
           {
             "name": "Kenagy Road and South Whiskey Hill Road",
-            "reference_xy_approx": [479, 389],
-            "wgs84_lat_lon": [45.1727171, -122.7304766]
+            "reference_xy_approx": [
+              479,
+              389
+            ],
+            "wgs84_lat_lon": [
+              45.1727171,
+              -122.7304766
+            ]
           },
           {
             "name": "South Barlow Road and South Whiskey Hill Road",
-            "reference_xy_approx": [1578, 389],
-            "wgs84_lat_lon": [45.1726958, -122.7225262]
+            "reference_xy_approx": [
+              1578,
+              389
+            ],
+            "wgs84_lat_lon": [
+              45.1726958,
+              -122.7225262
+            ]
           }
         ],
         "road_control_coordinate_source": "OpenStreetMap manual road-center comparison",
@@ -113,28 +232,52 @@
         "longitude_formula": {
           "origin_x_px": 479.0,
           "origin_longitude": -122.7304766,
-          "degrees_per_px": 0.000007234212920835833
+          "degrees_per_px": 7.234212920835833e-06
         },
         "latitude_formula": {
           "origin_y_px": 389.0,
           "origin_latitude": 45.172725,
-          "degrees_per_px_south": 0.0000051200374329626025
+          "degrees_per_px_south": 5.1200374329626025e-06
         },
         "limitations": "Road-center pixels were manually read rather than stored as reviewed annotations; the latitude anchor is rounded; no independent fourth ground checkpoint exists."
       },
       "computed_corners_wgs84_lat_lon": [
-        [45.171087098742, -122.72705236521],
-        [45.171881154385, -122.726484087819],
-        [45.171470572613, -122.725310670638],
-        [45.170676516969, -122.725878948028]
+        [
+          45.171087098742,
+          -122.72705236521
+        ],
+        [
+          45.171881154385,
+          -122.726484087819
+        ],
+        [
+          45.171470572613,
+          -122.725310670638
+        ],
+        [
+          45.170676516969,
+          -122.725878948028
+        ]
       ],
-      "computed_lobe_centroid_wgs84_lat_lon": [45.17130930965, -122.72606493582],
+      "computed_lobe_centroid_wgs84_lat_lon": [
+        45.17130930965,
+        -122.72606493582
+      ],
       "detector_sensitivity_envelope": {
-        "gaussian_sigma_values": [0.8, 1.0, 1.2, 1.4, 1.6],
+        "gaussian_sigma_values": [
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6
+        ],
         "hough_param2_min": 16,
         "hough_param2_max": 22,
         "valid_three_circle_fits": 14,
-        "reference_centroid_std_xy_px": [2.1, 1.41],
+        "reference_centroid_std_xy_px": [
+          2.1,
+          1.41
+        ],
         "max_corner_displacement_px": 57.479916,
         "scale_m_per_px": 0.567089951,
         "max_corner_displacement_m": 32.6,
@@ -153,11 +296,19 @@
         "sha256": "be4eb57fbc6fb68fc542f6a9b44b6c5f88b3e27c3621151c7a2aeefa24304435",
         "width_px": 548,
         "height_px": 358,
-        "pixel_boundary_extent_xy": [0, 0, 548, 358],
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          548,
+          358
+        ],
         "distribution": "remote_source_link_only_not_packaged"
       },
       "source_report_controls": {
-        "coordinate_wgs84_lat_lon": [43.53016667, -88.5265],
+        "coordinate_wgs84_lat_lon": [
+          43.53016667,
+          -88.5265
+        ],
         "coordinate_text": "43 degrees 31.81 minutes N, 88 degrees 31.59 minutes W",
         "coordinate_confirmation": "ICCRA report states that two GPS units confirmed the location",
         "coordinate_uncertainty_m": 100,
@@ -167,8 +318,14 @@
       },
       "local_display_transform": {
         "model": "local_square_pixel_affine_about_source_coordinate",
-        "anchor_pixel_xy": [344.0, 225.0],
-        "anchor_wgs84_lat_lon": [43.53016667, -88.5265],
+        "anchor_pixel_xy": [
+          344.0,
+          225.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          43.53016667,
+          -88.5265
+        ],
         "meters_per_pixel": 0.23,
         "source_x_axis_true_bearing_deg": 90.0,
         "source_y_axis_rotation_deg": 90.0,
@@ -177,10 +334,22 @@
         "independent_ground_checkpoint_count": 0
       },
       "computed_corners_wgs84_lat_lon": [
-        [43.530631546033, -88.52748032026],
-        [43.530631546033, -88.525918647288],
-        [43.529891876612, -88.525918647288],
-        [43.529891876612, -88.52748032026]
+        [
+          43.530631546033,
+          -88.52748032026
+        ],
+        [
+          43.530631546033,
+          -88.525918647288
+        ],
+        [
+          43.529891876612,
+          -88.525918647288
+        ],
+        [
+          43.529891876612,
+          -88.52748032026
+        ]
       ],
       "quality": {
         "status": "useful_provisional_geometry_registration",
@@ -198,15 +367,26 @@
         "sha256": "56cf407c5e4287c1dc32b159775e4906187e9dc1aca09d8fc1d9b404ef107f09",
         "width_px": 434,
         "height_px": 281,
-        "pixel_boundary_extent_xy": [0, 0, 434, 281],
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          434,
+          281
+        ],
         "distribution": "remote_source_link_only_not_packaged"
       },
       "source_report_controls": {
-        "coordinate_wgs84_lat_lon": [42.60066667, -84.00066667],
+        "coordinate_wgs84_lat_lon": [
+          42.60066667,
+          -84.00066667
+        ],
         "coordinate_text": "42 degrees 36.04 minutes N, 84 degrees 00.04 minutes W",
         "coordinate_uncertainty_m": 100,
         "site_text": "Wheat field at the corner of Mason and Burkhardt roads",
-        "measured_main_circle_diameter_ft_range": [48.17, 51.75],
+        "measured_main_circle_diameter_ft_range": [
+          48.17,
+          51.75
+        ],
         "documented_pathway_axis_true_deg": 67.5,
         "documented_pathway_axis_uncertainty_deg": 22.5
       },
@@ -219,8 +399,14 @@
       },
       "local_display_transform": {
         "model": "local_square_pixel_affine_about_source_coordinate",
-        "anchor_pixel_xy": [217.0, 140.5],
-        "anchor_wgs84_lat_lon": [42.60066667, -84.00066667],
+        "anchor_pixel_xy": [
+          217.0,
+          140.5
+        ],
+        "anchor_wgs84_lat_lon": [
+          42.60066667,
+          -84.00066667
+        ],
         "meters_per_pixel": 0.12,
         "source_x_axis_true_bearing_deg": 123.1,
         "source_y_axis_rotation_deg": 90.0,
@@ -229,10 +415,22 @@
         "independent_ground_checkpoint_count": 0
       },
       "computed_corners_wgs84_lat_lon": [
-        [42.600921291206, -84.000820522735],
-        [42.600665802613, -84.000288089025],
-        [42.600412048794, -84.000512817265],
-        [42.600667537387, -84.001045250975]
+        [
+          42.600921291206,
+          -84.000820522735
+        ],
+        [
+          42.600665802613,
+          -84.000288089025
+        ],
+        [
+          42.600412048794,
+          -84.000512817265
+        ],
+        [
+          42.600667537387,
+          -84.001045250975
+        ]
       ],
       "quality": {
         "status": "useful_provisional_geometry_registration",
@@ -250,21 +448,45 @@
         "sha256": "eb2332f966e407478e0d5342704bd887a8f438cb66fc6faccd69c226126ada22",
         "width_px": 630,
         "height_px": 426,
-        "pixel_boundary_extent_xy": [0, 0, 630, 426],
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          630,
+          426
+        ],
         "distribution": "remote_source_link_only_not_packaged"
       },
       "source_report_controls": {
-        "coordinate_wgs84_lat_lon": [35.822, -82.60283333],
+        "coordinate_wgs84_lat_lon": [
+          35.822,
+          -82.60283333
+        ],
         "coordinate_text": "35 degrees 49.32 minutes N, 82 degrees 36.17 minutes W",
         "coordinate_uncertainty_m": 100,
         "elevation_ft": 2146,
-        "measured_oval_diameters_ft": {"north_south": 51.42, "east_west": 57.42, "north_east_south_west": 54.0, "north_west_south_east": 57.42},
-        "persistent_scene_clues": ["Eller Creek 20-30 feet from the formation", "creek crossing tracks", "tree clusters", "steep 500-foot incline"]
+        "measured_oval_diameters_ft": {
+          "north_south": 51.42,
+          "east_west": 57.42,
+          "north_east_south_west": 54.0,
+          "north_west_south_east": 57.42
+        },
+        "persistent_scene_clues": [
+          "Eller Creek 20-30 feet from the formation",
+          "creek crossing tracks",
+          "tree clusters",
+          "steep 500-foot incline"
+        ]
       },
       "local_display_transform": {
         "model": "local_square_pixel_scene_placement_about_source_coordinate",
-        "anchor_pixel_xy": [358.0, 223.0],
-        "anchor_wgs84_lat_lon": [35.822, -82.60283333],
+        "anchor_pixel_xy": [
+          358.0,
+          223.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          35.822,
+          -82.60283333
+        ],
         "meters_per_pixel": 0.23,
         "source_x_axis_true_bearing_deg": 90.0,
         "source_y_axis_rotation_deg": 90.0,
@@ -274,10 +496,22 @@
         "independent_ground_checkpoint_count": 0
       },
       "computed_corners_wgs84_lat_lon": [
-        [35.822460743802, -82.603745557068],
-        [35.822460743802, -82.602140241278],
-        [35.821580578512, -82.602140241278],
-        [35.821580578512, -82.603745557068]
+        [
+          35.822460743802,
+          -82.603745557068
+        ],
+        [
+          35.822460743802,
+          -82.602140241278
+        ],
+        [
+          35.821580578512,
+          -82.602140241278
+        ],
+        [
+          35.821580578512,
+          -82.603745557068
+        ]
       ],
       "quality": {
         "status": "source_coordinate_scene_placement_only",
@@ -295,22 +529,42 @@
         "sha256": "1700e2a5b70635e3e8864112d0fca843287cedd5f6de6b78c05ab5c5359d9ae4",
         "width_px": 800,
         "height_px": 600,
-        "pixel_boundary_extent_xy": [0, 0, 800, 600],
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          600
+        ],
         "distribution": "remote_source_link_only_not_packaged"
       },
       "source_report_controls": {
-        "coordinate_wgs84_lat_lon": [44.94754948867359, -89.5679034162344],
+        "coordinate_wgs84_lat_lon": [
+          44.94754948867359,
+          -89.5679034162344
+        ],
         "coordinate_uncertainty_m": 100,
         "site_text": "August 13 symbol east of North 41st Street and north of Townline Road on the contemporaneous investigator map",
         "secondary_report_url": "https://w-files.com/files/cc970813.htm",
         "investigator_map_url": "https://w-files.com/graphics/wauccmap.gif",
         "investigator_map_distribution": "remote_reference_only_not_packaged",
-        "historical_road_names": ["Highway N", "41st Street"],
-        "current_road_names": ["Townline Road", "Camp Phillips Road / County Road X"]
+        "historical_road_names": [
+          "Highway N",
+          "41st Street"
+        ],
+        "current_road_names": [
+          "Townline Road",
+          "Camp Phillips Road / County Road X"
+        ]
       },
       "landmark_controls": {
-        "road_crossing_source_xy": [40.0, 400.0],
-        "road_crossing_wgs84_lat_lon": [44.945397832773466, -89.573023775879378],
+        "road_crossing_source_xy": [
+          40.0,
+          400.0
+        ],
+        "road_crossing_wgs84_lat_lon": [
+          44.945397832773466,
+          -89.57302377587938
+        ],
         "road_crossing_source": "Marathon County Road Centerline layer",
         "visual_matches": [
           "Townline Road and Camp Phillips Road / County Road X crossing",
@@ -318,13 +572,22 @@
           "curved drainage and field access margin",
           "persistent field boundaries"
         ],
-        "candidate_center_source_xy": [455.9032130510178, 153.06975793659004],
+        "candidate_center_source_xy": [
+          455.9032130510178,
+          153.06975793659004
+        ],
         "candidate_center_basis": "The August 13 symbol centroid from the contemporaneous investigator map after fitting Townline Road, North 41st Street, McIntosh Road, and Lahr Road controls, transferred into the matched USGS frame."
       },
       "local_display_transform": {
         "model": "local_square_pixel_affine_about_landmark_candidate_center",
-        "anchor_pixel_xy": [455.9032130510178, 153.06975793659004],
-        "anchor_wgs84_lat_lon": [44.94754948867359, -89.5679034162344],
+        "anchor_pixel_xy": [
+          455.9032130510178,
+          153.06975793659004
+        ],
+        "anchor_wgs84_lat_lon": [
+          44.94754948867359,
+          -89.5679034162344
+        ],
         "meters_per_pixel": 0.97,
         "source_x_axis_true_bearing_deg": 90.0,
         "source_y_axis_rotation_deg": 90.0,
@@ -334,14 +597,684 @@
         "independent_ground_checkpoint_count": 0
       },
       "computed_corners_wgs84_lat_lon": [
-        [44.94888328013243, -89.57351633792503],
-        [44.94888328013243, -89.56366701634984],
-        [44.94365510909398, -89.56366701634984],
-        [44.94365510909398, -89.57351633792503]
+        [
+          44.94888328013243,
+          -89.57351633792503
+        ],
+        [
+          44.94888328013243,
+          -89.56366701634984
+        ],
+        [
+          44.94365510909398,
+          -89.56366701634984
+        ],
+        [
+          44.94365510909398,
+          -89.57351633792503
+        ]
       ],
       "quality": {
         "status": "useful_provisional_landmark_registration",
         "limitations": "The contemporaneous road map and persistent roads and farm scene support the candidate field and source-frame display geometry, but the circles are not unambiguously visible in the early-1998 image. The symbol-derived candidate center therefore retains 100 m uncertainty and is not an alignment target."
+      }
+    },
+    {
+      "observation_id": "regobs_wavra_farm_1997_landmark_v1",
+      "overlay_id": "wavra-farm-1997-landmark-scene-placement",
+      "classification": "provisional_landmark_scene_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Oregon/images/WavraFarm1997-1.jpg",
+        "page_url": "https://iccra.org/bystate/Oregon/ICCRA%20-%20OR%20-%20Wavr%20Farm,%20Salem-Silver%20Creek%20Falls,%20Marion%20County%20(June%2028,%201997).html",
+        "sha256": "e7f8a43ae8dd1338c958e386ed0f74edd4b1dcfb45083ad5180d862006ce0aa9",
+        "width_px": 347,
+        "height_px": 243,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          347,
+          243
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          44.886560157,
+          -122.897991423
+        ],
+        "coordinate_uncertainty_m": 75,
+        "site_text": "The report names Wavra Farm; the long-running farm's 7882 Jordan Street SE address and the aerial road/drive pattern place the formation in the field immediately southeast of the farm entrance.",
+        "venue_address": "7882 Jordan Street SE, Salem, Oregon 97317",
+        "venue_address_wgs84_lat_lon": [
+          44.883642986,
+          -122.89941651
+        ]
+      },
+      "landmark_controls": {
+        "farm_drive_source_xy": [
+          36,
+          64
+        ],
+        "farm_drive_wgs84_lat_lon": [
+          44.8874,
+          -122.89945
+        ],
+        "visual_matches": [
+          "Jordan Street field edge",
+          "farm entrance and house cluster",
+          "tree rows",
+          "field corners"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            347,
+            0
+          ],
+          [
+            347,
+            243
+          ],
+          [
+            0,
+            243
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            44.888003154,
+            -122.899652934
+          ],
+          [
+            44.887197964,
+            -122.895676467
+          ],
+          [
+            44.885225037,
+            -122.89647233
+          ],
+          [
+            44.886030227,
+            -122.900448797
+          ]
+        ],
+        "basis": "Manual four-corner display fit seeded by the persistent Jordan Street edge, Wavra farm drive, house cluster, field corners, and tree rows visible in the source aerial and the 1995 Oregon orthophoto.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          44.888003154,
+          -122.899652934
+        ],
+        [
+          44.887197964,
+          -122.895676467
+        ],
+        [
+          44.885225037,
+          -122.89647233
+        ],
+        [
+          44.886030227,
+          -122.900448797
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_landmark_scene_registration",
+        "limitations": "The source image is oblique and the four display corners remain a manual fit without an independent withheld checkpoint. The 75 m site uncertainty and formal-analysis exclusion are retained."
+      }
+    },
+    {
+      "observation_id": "regobs_rockville_1_2003_landmark_v1",
+      "overlay_id": "rockville-1-2003-landmark-scene-placement",
+      "classification": "provisional_two_control_landmark_scene_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/California/images/rockville2003-1a.jpg",
+        "page_url": "https://iccra.org/bystate/California/ICCRA%20-%20CA%20-%20Rockville%20(1),%20Solano%20County%20(June%2028,%202003).html",
+        "sha256": "c5121e667c03e3139781fd9b56a5b1bbff4c254716e980d81cd4c679c3adb65c",
+        "width_px": 580,
+        "height_px": 415,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          580,
+          415
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          38.2428,
+          -122.1231
+        ],
+        "coordinate_uncertainty_m": 60,
+        "site_text": "The formation field is matched to the named Rockville Road and Suisun Valley Road scene using the source aerial's intersection, roofs, parking, trees, and field boundaries."
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [
+          370,
+          330
+        ],
+        "road_intersection_source_xy": [
+          439,
+          58
+        ],
+        "road_intersection_wgs84_lat_lon": [
+          38.24414302,
+          -122.122173022
+        ],
+        "visual_matches": [
+          "road intersection",
+          "commercial roofs",
+          "parking geometry",
+          "tree line",
+          "field boundaries"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            580,
+            0
+          ],
+          [
+            580,
+            415
+          ],
+          [
+            0,
+            415
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            38.245036461,
+            -122.125023812
+          ],
+          [
+            38.24426043,
+            -122.121126849
+          ],
+          [
+            38.242070479,
+            -122.121833835
+          ],
+          [
+            38.24284651,
+            -122.125730798
+          ]
+        ],
+        "basis": "Similarity transform from the source formation anchor and the persistent Rockville Road/Suisun Valley Road scene, published as four projective display corners for the oblique frame.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          38.245036461,
+          -122.125023812
+        ],
+        [
+          38.24426043,
+          -122.121126849
+        ],
+        [
+          38.242070479,
+          -122.121833835
+        ],
+        [
+          38.24284651,
+          -122.125730798
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_landmark_scene_registration",
+        "limitations": "The oblique source image has only one landmark pair beyond the formation anchor and no independent withheld checkpoint. Perspective and manual-control error remain."
+      }
+    },
+    {
+      "observation_id": "regobs_rockville_2_2003_campus_v1",
+      "overlay_id": "rockville-2-2003-campus-scene-placement",
+      "classification": "provisional_campus_landmark_scene_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/California/images/rockville2003-2a.jpg",
+        "page_url": "https://iccra.org/bystate/California/ICCRA%20-%20CA%20-%20Rockville%20(2),%20Solano%20County%20(June%2028,%202003).html",
+        "sha256": "af0034a51810beb97eebb142c3c51d6925457a8e9dc9f323b3ad920223aea372",
+        "width_px": 300,
+        "height_px": 400,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          300,
+          400
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          38.2401,
+          -122.1225
+        ],
+        "coordinate_uncertainty_m": 60,
+        "site_text": "The source aerial is matched to the Solano Community College field using the tennis courts, campus buildings, parking geometry, arterial road, and exact field corner."
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [
+          153,
+          337
+        ],
+        "tennis_court_center_source_xy": [
+          102,
+          24
+        ],
+        "tennis_court_center_wgs84_lat_lon": [
+          38.23603125,
+          -122.12108125
+        ],
+        "visual_matches": [
+          "tennis courts",
+          "campus buildings",
+          "parking geometry",
+          "arterial road",
+          "field corner"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            300,
+            0
+          ],
+          [
+            300,
+            400
+          ],
+          [
+            0,
+            400
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            38.235857061,
+            -122.119320444
+          ],
+          [
+            38.235435635,
+            -122.124373037
+          ],
+          [
+            38.240726871,
+            -122.125088448
+          ],
+          [
+            38.241148297,
+            -122.120035855
+          ]
+        ],
+        "basis": "Similarity transform from the source formation anchor and the persistent Solano Community College tennis-court control, published as four projective display corners for the oblique frame.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          38.235857061,
+          -122.119320444
+        ],
+        [
+          38.235435635,
+          -122.124373037
+        ],
+        [
+          38.240726871,
+          -122.125088448
+        ],
+        [
+          38.241148297,
+          -122.120035855
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_campus_landmark_registration",
+        "limitations": "The tennis-court target was read manually from current imagery and may carry roughly 15-30 m error; the source frame is oblique and lacks an independent checkpoint."
+      }
+    },
+    {
+      "observation_id": "regobs_miamisburg_2004_report_coordinate_v1",
+      "overlay_id": "miamisburg-2004-report-coordinate-placement",
+      "classification": "provisional_report_coordinate_orientation_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Ohio/images/miamisburg2004a.jpg",
+        "page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Miamisburg,%20Montgomery%20County%20(August%2024,%202004).htm",
+        "sha256": "85dc138915aa1833cfd88c53b7dbc7df321977fbcae7e6c9de563014ab2cc59e",
+        "width_px": 272,
+        "height_px": 395,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          272,
+          395
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          39.6201,
+          -84.27057778
+        ],
+        "coordinate_uncertainty_m": 20,
+        "site_text": "The ICCRA investigation records the formation at 39 degrees 37 minutes 12.36 seconds north, 84 degrees 16 minutes 14.08 seconds west and documents its southeast position relative to Miamisburg Mound.",
+        "reported_coordinate_wgs84_lat_lon": [
+          39.6201,
+          -84.27057778
+        ],
+        "reported_length_ft": 220,
+        "mound_alignment_bearing_true_deg": 131.68
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [
+          136,
+          200
+        ],
+        "miamisburg_mound_wgs84_lat_lon": [
+          39.62728,
+          -84.28133
+        ],
+        "visual_matches": [
+          "formation center",
+          "reported mound alignment",
+          "reported 220-foot extent"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            272,
+            0
+          ],
+          [
+            272,
+            395
+          ],
+          [
+            0,
+            395
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            39.62073215,
+            -84.27078398
+          ],
+          [
+            39.62018467,
+            -84.27141678
+          ],
+          [
+            39.61947681,
+            -84.27038464
+          ],
+          [
+            39.62002429,
+            -84.26975185
+          ]
+        ],
+        "basis": "The source frame was centered on the historical Google Earth coordinate recorded in the ICCRA investigation and oriented along the report's measured line toward Miamisburg Mound.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          39.62073215,
+          -84.27078398
+        ],
+        [
+          39.62018467,
+          -84.27141678
+        ],
+        [
+          39.61947681,
+          -84.27038464
+        ],
+        [
+          39.62002429,
+          -84.26975185
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_report_coordinate_registration",
+        "limitations": "The transform is reconstructed from the report coordinate, length, and mound alignment rather than a withheld multi-point ground-control set."
+      }
+    },
+    {
+      "observation_id": "regobs_hopewell_2012_landmark_v1",
+      "overlay_id": "hopewell-2012-landmark-scene-placement",
+      "classification": "provisional_multi_landmark_oblique_scene_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Ohio/images/hopewell3.jpg",
+        "page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Chillicothe,%20Ross%20County%20(Mid%20Sept%202012).html",
+        "sha256": "b64320ab8ac4c956481fe35e24a522609dd46c36bc29e0fb61284d2cb51de471",
+        "width_px": 630,
+        "height_px": 371,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          630,
+          371
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          39.35776893,
+          -83.08719279
+        ],
+        "coordinate_uncertainty_m": 120,
+        "site_text": "The report distances place the formation south of the Hopewell enclosure, north of North Fork Paint Creek, and east of the power-line corridor; persistent field and farm landmarks constrain this scene.",
+        "south_of_earthwork_yd": 100,
+        "north_of_paint_creek_yd": 160,
+        "east_of_power_lines_yd": 330
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [
+          414,
+          100
+        ],
+        "visual_matches": [
+          "southern Hopewell enclosure",
+          "North Fork Paint Creek",
+          "Sulphur Lick corridor",
+          "farm buildings",
+          "power-line corridor"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            630,
+            0
+          ],
+          [
+            630,
+            371
+          ],
+          [
+            0,
+            371
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            39.3594,
+            -83.0855556
+          ],
+          [
+            39.3576,
+            -83.0845833
+          ],
+          [
+            39.3558,
+            -83.0923611
+          ],
+          [
+            39.358,
+            -83.0952778
+          ]
+        ],
+        "basis": "Manual four-point scene fit to the southern Hopewell earthwork boundary, Sulphur Lick corridor, North Fork Paint Creek, farm buildings, and the power-line corridor.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          39.3594,
+          -83.0855556
+        ],
+        [
+          39.3576,
+          -83.0845833
+        ],
+        [
+          39.3558,
+          -83.0923611
+        ],
+        [
+          39.358,
+          -83.0952778
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_multi_landmark_scene_registration",
+        "limitations": "The source image is oblique, the formation anchor is approximate to about 15 pixels, and no independent withheld checkpoint set validates the four corners."
+      }
+    },
+    {
+      "observation_id": "regobs_albion_starr_2002_landmark_v1",
+      "overlay_id": "albion-starr-2002-landmark-scene-placement",
+      "classification": "provisional_venue_field_landmark_scene_placement",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://iccra.org/bystate/Michigan/images/albion2002-1b.jpg",
+        "page_url": "https://iccra.org/bystate/Michigan/ICCRA%20-%20MI%20-%20Albion,%20Calhoun%20County%20(September%2029,%202002).html",
+        "sha256": "08c25d53c0aba3f74cec7b3048491a36ca4ceada72b0602eb1f40e7ba959be68",
+        "width_px": 273,
+        "height_px": 155,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          273,
+          155
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          42.28020389,
+          -84.79653526
+        ],
+        "coordinate_uncertainty_m": 100,
+        "site_text": "The source aerial's triangular field, road edges, interstate corridor, and campus tree line match the Starr Commonwealth campus scene east of Albion."
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [
+          145,
+          77
+        ],
+        "visual_matches": [
+          "26 Mile Road boundary",
+          "Interstate 94 corridor",
+          "triangular field",
+          "campus tree line"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            273,
+            0
+          ],
+          [
+            273,
+            155
+          ],
+          [
+            0,
+            155
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            42.2786,
+            -84.804
+          ],
+          [
+            42.2768,
+            -84.793
+          ],
+          [
+            42.282,
+            -84.7895
+          ],
+          [
+            42.2837,
+            -84.801
+          ]
+        ],
+        "basis": "Manual scene fit to the triangular Starr Commonwealth field bounded by 26 Mile Road, Interstate 94, and the persistent campus tree line.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          42.2786,
+          -84.804
+        ],
+        [
+          42.2768,
+          -84.793
+        ],
+        [
+          42.282,
+          -84.7895
+        ],
+        [
+          42.2837,
+          -84.801
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_venue_field_registration",
+        "limitations": "The 2002 frame is low resolution and oblique; corner precision is limited and no independent withheld checkpoint set is available."
       }
     }
   ]

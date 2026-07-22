@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "schema_version": "crop-circle-atlas/provisional-image-scene-placement/v1",
+    "generated_at": "2026-07-21T00:00:00Z",
+    "notice": "Every entry is a reviewed display placement of a remote source image. None is an accepted survey georegistration or an alignment-analysis target."
+  },
+  "placements": [
+    {
+      "overlay_id": "wavra-farm-1997-landmark-scene-placement",
+      "observation_id": "regobs_wavra_farm_1997_landmark_v1",
+      "formation_id": "cc_f0f992d92db0",
+      "assertion_id": "iccra_2d1e986d5685c2ba",
+      "title": "Wavra Farm 1997 aerial landmark placement",
+      "source_image_url": "https://iccra.org/bystate/Oregon/images/WavraFarm1997-1.jpg",
+      "anchor_pixel_xy": [181, 126],
+      "anchor_wgs84_lat_lon": [44.886560157, -122.897991423],
+      "meters_per_pixel": 0.94,
+      "source_x_axis_true_bearing_deg": 105.95,
+      "corners_wgs84": [
+        [44.888003154, -122.899652934],
+        [44.887197964, -122.895676467],
+        [44.885225037, -122.89647233],
+        [44.886030227, -122.900448797]
+      ],
+      "corner_basis": "Manual four-corner display fit seeded by the persistent Jordan Street edge, Wavra farm drive, house cluster, field corners, and tree rows visible in the source aerial and the 1995 Oregon orthophoto.",
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "provisional_landmark_scene_registration",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "1995 Oregon orthophoto and current Esri World Imagery",
+      "reference_imagery_date": "1995 and 2026-07-21",
+      "site_text": "The report names Wavra Farm; the long-running farm's 7882 Jordan Street SE address and the aerial road/drive pattern place the formation in the field immediately southeast of the farm entrance.",
+      "source_report_controls": {
+        "venue_address": "7882 Jordan Street SE, Salem, Oregon 97317",
+        "venue_address_wgs84_lat_lon": [44.883642986, -122.89941651]
+      },
+      "landmark_controls": {
+        "farm_drive_source_xy": [36, 64],
+        "farm_drive_wgs84_lat_lon": [44.8874, -122.89945],
+        "visual_matches": ["Jordan Street field edge", "farm entrance and house cluster", "tree rows", "field corners"]
+      },
+      "scale_basis": "A 0.94 m/px provisional scene scale was estimated from the persistent road width, farm drive, and field span.",
+      "orientation_basis": "The source road/drive vector was rotated onto the matched Jordan Street and farm-drive geometry; source +x is 105.95 degrees true for the display fit.",
+      "orientation_status": "manual_landmark_orientation_candidate",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The previous Highway 22 seed was rejected. The named farm address, a 1995 orthophoto, and the source aerial's road, drive, houses, field corners, and tree rows support this replacement projective scene placement.",
+      "quality_status": "useful_provisional_landmark_scene_registration",
+      "quality_limitations": "The source image is oblique and the four display corners remain a manual fit without an independent withheld checkpoint. The 75 m site uncertainty and formal-analysis exclusion are retained.",
+      "quality_disclosure": "Projective landmark scene placement, not a survey georegistration. Persistent farm and road features support the field and display orientation, but no independent checkpoint validates the four image corners.",
+      "notes": "The actual ICCRA aerial frame loads only after explicit user action. It is mapped to the corrected Wavra Farm field vicinity and remains excluded from alignment calculations."
+    },
+    {
+      "overlay_id": "rockville-1-2003-landmark-scene-placement",
+      "observation_id": "regobs_rockville_1_2003_landmark_v1",
+      "formation_id": "cc_ae1b8ee2ae1f",
+      "assertion_id": "iccra_b9bb80819738fef7",
+      "title": "Rockville 1 2003 aerial landmark placement",
+      "source_image_url": "https://iccra.org/bystate/California/images/rockville2003-1a.jpg",
+      "anchor_pixel_xy": [370, 330],
+      "anchor_wgs84_lat_lon": [38.2428, -122.1231],
+      "meters_per_pixel": 0.606022925,
+      "source_x_axis_true_bearing_deg": 104.227549,
+      "corners_wgs84": [
+        [38.245036461, -122.125023812],
+        [38.24426043, -122.121126849],
+        [38.242070479, -122.121833835],
+        [38.24284651, -122.125730798]
+      ],
+      "corner_basis": "Similarity transform from the source formation anchor and the persistent Rockville Road/Suisun Valley Road scene, published as four projective display corners for the oblique frame.",
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_two_control_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
+      "reference_imagery": "Current Esri street and satellite basemaps",
+      "site_text": "The formation field is matched to the named Rockville Road and Suisun Valley Road scene using the source aerial's intersection, roofs, parking, trees, and field boundaries.",
+      "landmark_controls": {
+        "formation_anchor_source_xy": [370, 330],
+        "road_intersection_source_xy": [439, 58],
+        "road_intersection_wgs84_lat_lon": [38.24414302, -122.122173022],
+        "visual_matches": ["road intersection", "commercial roofs", "parking geometry", "tree line", "field boundaries"]
+      },
+      "scale_basis": "The formation anchor and named-intersection control produce a 0.606022925 m/px similarity scale.",
+      "orientation_basis": "The formation-to-intersection source vector was mapped to the corresponding WGS84 vector, yielding source +x at 104.227549 degrees true.",
+      "orientation_status": "two_control_similarity_orientation",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The named road scene and multiple persistent aerial landmarks constrain the correct field. A two-control similarity seed supplies the display scale and rotation; the full oblique frame is shown with projective corners.",
+      "quality_status": "useful_provisional_landmark_scene_registration",
+      "quality_limitations": "The oblique source image has only one landmark pair beyond the formation anchor and no independent withheld checkpoint. Perspective and manual-control error remain.",
+      "quality_disclosure": "Two-control landmark scene placement, not a survey georegistration. The correct field and scene are well supported, while the displayed four-corner warp remains provisional.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "rockville-2-2003-campus-scene-placement",
+      "observation_id": "regobs_rockville_2_2003_campus_v1",
+      "formation_id": "cc_0ed8b56730be",
+      "assertion_id": "iccra_352fca1747e2add1",
+      "title": "Rockville 2 2003 campus landmark placement",
+      "source_image_url": "https://iccra.org/bystate/California/images/rockville2003-2a.jpg",
+      "anchor_pixel_xy": [153, 337],
+      "anchor_wgs84_lat_lon": [38.2401, -122.1225],
+      "meters_per_pixel": 1.480830976,
+      "source_x_axis_true_bearing_deg": 263.938213,
+      "corners_wgs84": [
+        [38.235857061, -122.119320444],
+        [38.235435635, -122.124373037],
+        [38.240726871, -122.125088448],
+        [38.241148297, -122.120035855]
+      ],
+      "corner_basis": "Similarity transform from the source formation anchor and the persistent Solano Community College tennis-court control, published as four projective display corners for the oblique frame.",
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_campus_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_similarity_scene_placement",
+      "reference_imagery": "Current Esri World Imagery of Solano Community College",
+      "site_text": "The source aerial is matched to the Solano Community College field using the tennis courts, campus buildings, parking geometry, arterial road, and exact field corner.",
+      "landmark_controls": {
+        "formation_anchor_source_xy": [153, 337],
+        "tennis_court_center_source_xy": [102, 24],
+        "tennis_court_center_wgs84_lat_lon": [38.23603125, -122.12108125],
+        "visual_matches": ["tennis courts", "campus buildings", "parking geometry", "arterial road", "field corner"]
+      },
+      "scale_basis": "The formation anchor and tennis-court control produce a 1.480830976 m/px similarity scale.",
+      "orientation_basis": "The formation-to-tennis-court source vector was mapped to the corresponding WGS84 vector, yielding source +x at 263.938213 degrees true.",
+      "orientation_status": "two_control_similarity_orientation",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The distinctive campus, tennis courts, parking, road, and field geometry identify the scene. A two-control similarity seed supplies scale and rotation for the projective display footprint.",
+      "quality_status": "useful_provisional_campus_landmark_registration",
+      "quality_limitations": "The tennis-court target was read manually from current imagery and may carry roughly 15-30 m error; the source frame is oblique and lacks an independent checkpoint.",
+      "quality_disclosure": "Campus landmark scene placement, not a survey georegistration. Multiple persistent features identify the field, but the precise four-corner warp remains provisional.",
+      "notes": "The actual ICCRA aerial frame loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "miamisburg-2004-report-coordinate-placement",
+      "observation_id": "regobs_miamisburg_2004_report_coordinate_v1",
+      "formation_id": "cc_3fb745fb7416",
+      "assertion_id": "iccra_31349f7aca5a4bf2",
+      "title": "Miamisburg 2004 report-coordinate image placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/miamisburg2004a.jpg",
+      "anchor_pixel_xy": [136, 200],
+      "anchor_wgs84_lat_lon": [39.6201, -84.27057778],
+      "meters_per_pixel": 0.3,
+      "source_x_axis_true_bearing_deg": 221.68,
+      "source_y_axis_rotation_deg": -90,
+      "corners_wgs84": [
+        [39.62073215, -84.27078398],
+        [39.62018467, -84.27141678],
+        [39.61947681, -84.27038464],
+        [39.62002429, -84.26975185]
+      ],
+      "corner_basis": "The source frame was centered on the historical Google Earth coordinate recorded in the ICCRA investigation and oriented along the report's measured line toward Miamisburg Mound.",
+      "coordinate_uncertainty_m": 20,
+      "registration_status": "provisional_report_coordinate_orientation_placement",
+      "display_geometry_status": "four_corner_report_coordinate_scene_placement",
+      "reference_imagery": "Historical Google Earth coordinate and alignment documented in the ICCRA investigation report",
+      "site_text": "The ICCRA investigation records the formation at 39 degrees 37 minutes 12.36 seconds north, 84 degrees 16 minutes 14.08 seconds west and documents its southeast position relative to Miamisburg Mound.",
+      "source_report_controls": {
+        "reported_coordinate_wgs84_lat_lon": [39.6201, -84.27057778],
+        "reported_length_ft": 220,
+        "mound_alignment_bearing_true_deg": 131.68
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [136, 200],
+        "miamisburg_mound_wgs84_lat_lon": [39.62728, -84.28133],
+        "visual_matches": ["formation center", "reported mound alignment", "reported 220-foot extent"]
+      },
+      "scale_basis": "A provisional 0.30 m/px display scale is consistent with the report's 220-foot formation length across the source frame.",
+      "orientation_basis": "The report-coordinate-to-mound relationship fixes the image y-down axis near 131.68 degrees true and the source x-right axis near 221.68 degrees true.",
+      "orientation_status": "report_coordinate_and_named_landmark_orientation",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The investigation's degree-minute-second coordinate, named mound, measured formation length, and documented alignment provide a reproducible center and display orientation.",
+      "quality_status": "useful_provisional_report_coordinate_registration",
+      "quality_limitations": "The transform is reconstructed from the report coordinate, length, and mound alignment rather than a withheld multi-point ground-control set.",
+      "quality_disclosure": "Report-coordinate image placement, not a survey georegistration. The center and named-landmark orientation are documented; the four image corners remain a provisional reconstruction.",
+      "notes": "The source-hosted formation image loads only after explicit user action and is excluded from formal alignment calculations pending independent checkpoints."
+    },
+    {
+      "overlay_id": "hopewell-2012-landmark-scene-placement",
+      "observation_id": "regobs_hopewell_2012_landmark_v1",
+      "formation_id": "cc_73d09b214763",
+      "assertion_id": "iccra_d0f334bbe26d6aaa",
+      "title": "Hopewell / Chillicothe 2012 landmark scene placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/hopewell3.jpg",
+      "anchor_pixel_xy": [414, 100],
+      "anchor_wgs84_lat_lon": [39.35776893, -83.08719279],
+      "meters_per_pixel": 1.2,
+      "source_x_axis_true_bearing_deg": 145,
+      "corners_wgs84": [
+        [39.3594, -83.0855556],
+        [39.3576, -83.0845833],
+        [39.3558, -83.0923611],
+        [39.358, -83.0952778]
+      ],
+      "corner_basis": "Manual four-point scene fit to the southern Hopewell earthwork boundary, Sulphur Lick corridor, North Fork Paint Creek, farm buildings, and the power-line corridor.",
+      "coordinate_uncertainty_m": 120,
+      "registration_status": "provisional_multi_landmark_oblique_scene_placement",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "Current Esri imagery and NPS Hopewell Mound Group site geography",
+      "site_text": "The report distances place the formation south of the Hopewell enclosure, north of North Fork Paint Creek, and east of the power-line corridor; persistent field and farm landmarks constrain this scene.",
+      "source_report_controls": {
+        "south_of_earthwork_yd": 100,
+        "north_of_paint_creek_yd": 160,
+        "east_of_power_lines_yd": 330
+      },
+      "landmark_controls": {
+        "formation_anchor_source_xy": [414, 100],
+        "visual_matches": ["southern Hopewell enclosure", "North Fork Paint Creek", "Sulphur Lick corridor", "farm buildings", "power-line corridor"]
+      },
+      "scale_basis": "The oblique frame is anisotropic; the reported distances and persistent field span support the published four-corner fit rather than a uniform metric scale.",
+      "orientation_basis": "The scene was rotated to the creek, enclosure, road, farm, and power-line configuration; source x is approximately 145 degrees true near the formation.",
+      "orientation_status": "manual_multi_landmark_projective_orientation",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Five persistent geographic controls and three report distances identify the correct field and support an explicitly provisional projective display footprint.",
+      "quality_status": "useful_provisional_multi_landmark_scene_registration",
+      "quality_limitations": "The source image is oblique, the formation anchor is approximate to about 15 pixels, and no independent withheld checkpoint set validates the four corners.",
+      "quality_disclosure": "Multi-landmark scene placement, not a surveyed registration. The field is well constrained by the report and terrain, while the precise four-corner warp remains provisional.",
+      "notes": "The source-hosted aerial loads only after explicit user action and remains excluded from formal alignment calculations."
+    },
+    {
+      "overlay_id": "albion-starr-2002-landmark-scene-placement",
+      "observation_id": "regobs_albion_starr_2002_landmark_v1",
+      "formation_id": "cc_8a63f6cf9215",
+      "assertion_id": "iccra_ea95cee11e8269e2",
+      "title": "Albion / Starr Earthworks 2002 landmark scene placement",
+      "source_image_url": "https://iccra.org/bystate/Michigan/images/albion2002-1b.jpg",
+      "anchor_pixel_xy": [145, 77],
+      "anchor_wgs84_lat_lon": [42.28020389, -84.79653526],
+      "meters_per_pixel": 3.7,
+      "source_x_axis_true_bearing_deg": 103,
+      "corners_wgs84": [
+        [42.2786, -84.804],
+        [42.2768, -84.793],
+        [42.282, -84.7895],
+        [42.2837, -84.801]
+      ],
+      "corner_basis": "Manual scene fit to the triangular Starr Commonwealth field bounded by 26 Mile Road, Interstate 94, and the persistent campus tree line.",
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_venue_field_landmark_scene_placement",
+      "display_geometry_status": "four_corner_projective_landmark_scene_placement",
+      "reference_imagery": "Current Esri imagery and Starr Commonwealth campus geography",
+      "site_text": "The source aerial's triangular field, road edges, interstate corridor, and campus tree line match the Starr Commonwealth campus scene east of Albion.",
+      "landmark_controls": {
+        "formation_anchor_source_xy": [145, 77],
+        "visual_matches": ["26 Mile Road boundary", "Interstate 94 corridor", "triangular field", "campus tree line"]
+      },
+      "scale_basis": "A provisional local scale near 3.7 m/px was estimated from the persistent triangular field and road-to-tree-line span.",
+      "orientation_basis": "The field and road geometry place source x near 103 degrees true; the four published corners retain the oblique scene perspective.",
+      "orientation_status": "manual_venue_field_projective_orientation",
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The named Starr venue and distinctive triangular field bounded by two persistent transport corridors identify the scene and support a provisional footprint.",
+      "quality_status": "useful_provisional_venue_field_registration",
+      "quality_limitations": "The 2002 frame is low resolution and oblique; corner precision is limited and no independent withheld checkpoint set is available.",
+      "quality_disclosure": "Venue-field landmark placement, not a survey georegistration. The scene match is strong; precise corner geometry remains provisional.",
+      "notes": "The source-hosted image loads only after explicit user action and remains excluded from formal alignment calculations."
+    }
+  ]
+}

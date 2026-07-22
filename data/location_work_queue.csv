@@ -20,102 +20,102 @@ cc_0d50be88569a,2005-04,Albion,Indiana,US,locality_reference,yes,yes,1,2,1123,re
 cc_0fdb69ce93fa,2005-08-12,Yellow Springs,Ohio,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,19
 cc_104e3b95dd75,2002-08-10,Teton,Idaho,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,20
 cc_1083b200c52a,1996-10-12,Albion,Illinois,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,21
-cc_111e3cdced4f,2002-08-11,Fresno,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,22
-cc_19598cfe904a,1996-08-08,Watertown,South Dakota,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,23
-cc_1b3fe293aab8,1997-07-07,Richmond,Utah,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,24
-cc_20d3f6035a13,2003-07-11,Fairfield,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,25
-cc_21676d452aae,2000-07-24,Langdon,North Dakota,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,26
-cc_21af57d1799f,1998-07-10,Washington Township,New Jersey,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,27
-cc_22e2e0155b0f,1991-01-15,Waltham (Charles River),Massachusetts,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,28
-cc_24cc5e687d9f,2003-04-15,Defiance,Missouri,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,29
-cc_24e959df4a14,2002-07-26,Naperville,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,30
-cc_2689b91e6d38,2003-05-25,Lancaster County,Pennsylvania,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,31
-cc_27e635ece51a,1996-08-10,Gilroy,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,32
-cc_289dd87e4b7c,2005-08-21,Coles County (*exact location withheld by ICCRA),Illinois,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,33
-cc_2de1e38cfbe3,1999-07,Lafayette,Ohio,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,34
-cc_303480234622,1998-07-20,Star,Idaho,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,35
-cc_3190d24d88de,2003-05-20,Easton / Hills Point / Roe,Maryland,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,36
-cc_34e34d71f251,2001-09,Fremont,New York,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,37
-cc_3d18d8b5c616,1969-07-12,Van Horne / Garrison,Iowa,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,38
-cc_3d276f4ca1e0,1995-06-16,Inman,Kansas,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,39
-cc_3dcefe163f29,2003-08-11,Burlington,North Dakota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,40
-cc_3e5e0b843661,2005-06-21,Leicester,North Carolina,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,41
-cc_3e8a4808bf9e,2001-07-19,Weedsport,New York,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,42
-cc_3fb745fb7416,2004-08-24,Miamisburg,Ohio,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,43
-cc_40bdcf50c342,2003-07-03,Dexter,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,44
-cc_41a6829ba439,2005-07-06,Mayville,Wisconsin,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,45
-cc_4bacd5f6ddc3,1991-07-05,Medina / Shelby,New York,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,46
-cc_4bfb1336c2f3,2003-05,Hill Top / Flemingsburg,Kentucky,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,47
-cc_4c4fee8066bc,2002-08-27,Eaton Rapids,Michigan,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,48
-cc_565eaab6e689,2004-07-14,New Milford,Connecticut,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,49
-cc_5c448cca02f1,1992-02-01,Flemington,New Jersey,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,50
-cc_611483f164f9,2002-08-09,Montour,Iowa,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,51
-cc_620bd006ce8d,2004-05-26,Dudley,North Carolina,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,52
-cc_6359e4d2425e,2003-05-05,Anderson,South Carolina,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,53
-cc_63c9b87a69a5,1997-07-03,Lawrence Township,New Jersey,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,54
-cc_64e65753ca3c,2004-07-24,Cottage Grove,Minnesota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,55
-cc_698976b1338a,1994-08-23,Lompoc,California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,56
-cc_6ba6015dc330,1992-05-17,Chino Valley,Arizona,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,57
-cc_6e5cda727fde,1998-07-24,Cove,Utah,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,58
-cc_704bdfe4ec46,1980-07,Woodman,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,59
-cc_7217cb2ba00a,2002-09-03,Tyhee,Idaho,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,60
-cc_72e3a77239de,2005-08-19,Northwood,North Dakota,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,61
-cc_73d09b214763,2012-09,Chillicothe,Ohio,US,locality_reference,yes,yes,12,2,1123,replace_locality_reference_with_field_evidence,62
-cc_750c81a22992,2005-06-11,Green Mountain,North Carolina,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,63
-cc_76aa935eca59,2003-09-06,Bourneville / Bainbridge,Ohio,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,64
-cc_7a7f001002bb,1998-03-28,Huntingburg,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,65
-cc_7cdb63cfe429,2003-08-24,Locust Grove,Ohio,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,66
-cc_7cff00586fad,1998-05-26,"Coupeville (1), Whidbey Island",Washington,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,67
-cc_8476a8be2518,2003-08-09,Mayville,Wisconsin,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,68
-cc_8d2d2790dbe4,1995-07-05,Long Lake,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,69
-cc_8e15bdf7b35a,2003-06-12,Prince George County,Virginia,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,70
-cc_92f169037d72,1996-07-21,Butte,Nebraska,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,71
-cc_93df34ac1e90,2010-06-24,Owensville,Ohio,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,72
-cc_95b82c50e0d0,1996-08-01,Sugar Creek Township / Elida,Ohio,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,73
-cc_9d4fa067af32,2004-08-24,Lawton,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,74
-cc_9fcf21caee4d,2005-05-18,Tolleson,Arizona,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,75
-cc_a0ca8842053a,2002-08-16,Colts Neck,New Jersey,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,76
-cc_a290a2690404,2005-08-12,Canisteo,New York,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,77
-cc_a39f0b31d258,1998-10-11,Klamath Falls,Oregon,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,78
-cc_a4065ba8cb0b,1970-07-04,Port Monmouth,New Jersey,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,79
-cc_a50a11bf0944,1997-07,Whitley County,Indiana,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,80
-cc_a8ca5c88871a,1952-08-19,West Palm Beach,Florida,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,81
-cc_ad68564a4282,2004-06-16,Cordelia / Fairfield,California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,82
-cc_b3d35d628a81,1997-07-06,Waverly,Nebraska,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,83
-cc_bfadf3862630,1996-07-20,Washington Center / Washington Township,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,84
-cc_c61f7e759561,2000-07-17,Spencer / Owen Valley,Indiana,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,85
-cc_d0898ca82002,1996-08-23,Logan,Utah,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,86
-cc_d47dd2c50510,2004-07-03,Eagle Grove,Iowa,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,87
-cc_d635b79b2876,1998-07-20,Nampa,Idaho,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,88
-cc_d6b8a43dd85b,2000-07-20,Langdon,North Dakota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,89
-cc_d847a08a29e6,1996-06-07,Simi Valley,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,90
-cc_d886edf71986,1994-07-08,Chehalis,Washington,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,91
-cc_d9803fc42586,1996-03-09,"Laguna Canyon, Laguna Beach",California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,92
-cc_de15592eedb8,2000-06-29,Bainbridge,Ohio,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,93
-cc_df63615134ee,2003-07-11,Theresa,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,94
-cc_e6129d4180c8,2003-10-24,West Union,Ohio,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,95
-cc_e717ca3b56a8,1998-07-04,Pendleton,Oregon,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,96
-cc_e77618d4ba17,2003-10-03,University of Illinois - Urbana-Champaign,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,97
-cc_ed25fbcc5d2e,2004-07-10,Rockford,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,98
-cc_ef652e1c319a,1996-07-01,Indian Village,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,99
-cc_efc51086eea1,2010-06-22,Greenfield,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,100
-cc_f26e3b0fd61d,2010-06-06,Moscow,Ohio,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,101
-cc_f3d23df34d86,2004-10-10,Grand Coteau,Louisiana,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,102
-cc_f5e912104b23,2003-03-11,Norwalk,Connecticut,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,103
-cc_f6c7487031e4,1995-04,Worthington,Ohio,US,locality_reference,yes,yes,8,2,1123,replace_locality_reference_with_field_evidence,104
-cc_f70271bbfb6b,1996-07,Whitley County,Indiana,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,105
-cc_f8f77cb0e97b,2003-10,Mason Township,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,106
-cc_fba8a8655b8a,2003-07-06,Vacaville,California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,107
-cc_ff1eb8180e38,1973-07-08,Clarion,Iowa,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,108
-cc_ffbf191f02f8,1999-09-04,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,109
-cc_0ed8b56730be,2003-06-28,Rockville (2),California,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,110
-cc_5d10e918a4b4,1997-08-13,Wausau,Wisconsin,US,candidate_field,yes,yes,3,2,1122,corroborate_candidate_field,111
-cc_ae1b8ee2ae1f,2003-06-28,Rockville (1),California,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,112
-cc_ca0e623b0480,1997-08-16,Wausau,Wisconsin,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,113
-cc_db1599385db5,2008-09-13,Bedford,Indiana,US,candidate_field,yes,yes,11,2,1122,corroborate_candidate_field,114
-cc_f0f992d92db0,1997-06-28,"Wavra Farm, Salem / Silver Creek Falls",Oregon,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,115
-cc_80f4a64d3689,2000-08-05,Hubbard / Woodburn / Whiskey Hill,Oregon,US,corroborated_field,yes,yes,2,2,1121,register_source_image_and_review_components,116
-cc_e5724a3476de,1998-07-23,Whiskey Hill / Hubbard,Oregon,US,corroborated_field,yes,yes,3,2,1121,register_source_image_and_review_components,117
+cc_19598cfe904a,1996-08-08,Watertown,South Dakota,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,22
+cc_1b3fe293aab8,1997-07-07,Richmond,Utah,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,23
+cc_20d3f6035a13,2003-07-11,Fairfield,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,24
+cc_21676d452aae,2000-07-24,Langdon,North Dakota,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,25
+cc_21af57d1799f,1998-07-10,Washington Township,New Jersey,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,26
+cc_22e2e0155b0f,1991-01-15,Waltham (Charles River),Massachusetts,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,27
+cc_24cc5e687d9f,2003-04-15,Defiance,Missouri,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,28
+cc_24e959df4a14,2002-07-26,Naperville,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,29
+cc_2689b91e6d38,2003-05-25,Lancaster County,Pennsylvania,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,30
+cc_27e635ece51a,1996-08-10,Gilroy,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,31
+cc_289dd87e4b7c,2005-08-21,Coles County (*exact location withheld by ICCRA),Illinois,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,32
+cc_2de1e38cfbe3,1999-07,Lafayette,Ohio,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,33
+cc_303480234622,1998-07-20,Star,Idaho,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,34
+cc_3190d24d88de,2003-05-20,Easton / Hills Point / Roe,Maryland,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,35
+cc_34e34d71f251,2001-09,Fremont,New York,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,36
+cc_3d18d8b5c616,1969-07-12,Van Horne / Garrison,Iowa,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,37
+cc_3d276f4ca1e0,1995-06-16,Inman,Kansas,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,38
+cc_3dcefe163f29,2003-08-11,Burlington,North Dakota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,39
+cc_3e5e0b843661,2005-06-21,Leicester,North Carolina,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,40
+cc_3e8a4808bf9e,2001-07-19,Weedsport,New York,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,41
+cc_40bdcf50c342,2003-07-03,Dexter,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,42
+cc_41a6829ba439,2005-07-06,Mayville,Wisconsin,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,43
+cc_4bacd5f6ddc3,1991-07-05,Medina / Shelby,New York,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,44
+cc_4bfb1336c2f3,2003-05,Hill Top / Flemingsburg,Kentucky,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,45
+cc_4c4fee8066bc,2002-08-27,Eaton Rapids,Michigan,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,46
+cc_565eaab6e689,2004-07-14,New Milford,Connecticut,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,47
+cc_5c448cca02f1,1992-02-01,Flemington,New Jersey,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,48
+cc_611483f164f9,2002-08-09,Montour,Iowa,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,49
+cc_620bd006ce8d,2004-05-26,Dudley,North Carolina,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,50
+cc_6359e4d2425e,2003-05-05,Anderson,South Carolina,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,51
+cc_63c9b87a69a5,1997-07-03,Lawrence Township,New Jersey,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,52
+cc_64e65753ca3c,2004-07-24,Cottage Grove,Minnesota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,53
+cc_698976b1338a,1994-08-23,Lompoc,California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,54
+cc_6ba6015dc330,1992-05-17,Chino Valley,Arizona,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,55
+cc_6e5cda727fde,1998-07-24,Cove,Utah,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,56
+cc_704bdfe4ec46,1980-07,Woodman,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,57
+cc_7217cb2ba00a,2002-09-03,Tyhee,Idaho,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,58
+cc_750c81a22992,2005-06-11,Green Mountain,North Carolina,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,59
+cc_76aa935eca59,2003-09-06,Bourneville / Bainbridge,Ohio,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,60
+cc_7a7f001002bb,1998-03-28,Huntingburg,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,61
+cc_7cdb63cfe429,2003-08-24,Locust Grove,Ohio,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,62
+cc_7cff00586fad,1998-05-26,"Coupeville (1), Whidbey Island",Washington,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,63
+cc_8476a8be2518,2003-08-09,Mayville,Wisconsin,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,64
+cc_8d2d2790dbe4,1995-07-05,Long Lake,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,65
+cc_8e15bdf7b35a,2003-06-12,Prince George County,Virginia,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,66
+cc_92f169037d72,1996-07-21,Butte,Nebraska,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,67
+cc_93df34ac1e90,2010-06-24,Owensville,Ohio,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,68
+cc_95b82c50e0d0,1996-08-01,Sugar Creek Township / Elida,Ohio,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,69
+cc_9d4fa067af32,2004-08-24,Lawton,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,70
+cc_9fcf21caee4d,2005-05-18,Tolleson,Arizona,US,locality_reference,yes,yes,5,2,1123,replace_locality_reference_with_field_evidence,71
+cc_a0ca8842053a,2002-08-16,Colts Neck,New Jersey,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,72
+cc_a290a2690404,2005-08-12,Canisteo,New York,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,73
+cc_a39f0b31d258,1998-10-11,Klamath Falls,Oregon,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,74
+cc_a4065ba8cb0b,1970-07-04,Port Monmouth,New Jersey,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,75
+cc_a50a11bf0944,1997-07,Whitley County,Indiana,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,76
+cc_a8ca5c88871a,1952-08-19,West Palm Beach,Florida,US,locality_reference,yes,yes,7,2,1123,replace_locality_reference_with_field_evidence,77
+cc_ad68564a4282,2004-06-16,Cordelia / Fairfield,California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,78
+cc_b3d35d628a81,1997-07-06,Waverly,Nebraska,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,79
+cc_bfadf3862630,1996-07-20,Washington Center / Washington Township,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,80
+cc_c61f7e759561,2000-07-17,Spencer / Owen Valley,Indiana,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,81
+cc_d0898ca82002,1996-08-23,Logan,Utah,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,82
+cc_d47dd2c50510,2004-07-03,Eagle Grove,Iowa,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,83
+cc_d635b79b2876,1998-07-20,Nampa,Idaho,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,84
+cc_d6b8a43dd85b,2000-07-20,Langdon,North Dakota,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,85
+cc_d847a08a29e6,1996-06-07,Simi Valley,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,86
+cc_d886edf71986,1994-07-08,Chehalis,Washington,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,87
+cc_d9803fc42586,1996-03-09,"Laguna Canyon, Laguna Beach",California,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,88
+cc_de15592eedb8,2000-06-29,Bainbridge,Ohio,US,locality_reference,yes,yes,3,2,1123,replace_locality_reference_with_field_evidence,89
+cc_df63615134ee,2003-07-11,Theresa,Wisconsin,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,90
+cc_e6129d4180c8,2003-10-24,West Union,Ohio,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,91
+cc_e717ca3b56a8,1998-07-04,Pendleton,Oregon,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,92
+cc_e77618d4ba17,2003-10-03,University of Illinois - Urbana-Champaign,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,93
+cc_ed25fbcc5d2e,2004-07-10,Rockford,Illinois,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,94
+cc_ef652e1c319a,1996-07-01,Indian Village,Indiana,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,95
+cc_efc51086eea1,2010-06-22,Greenfield,California,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,96
+cc_f26e3b0fd61d,2010-06-06,Moscow,Ohio,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,97
+cc_f3d23df34d86,2004-10-10,Grand Coteau,Louisiana,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,98
+cc_f5e912104b23,2003-03-11,Norwalk,Connecticut,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,99
+cc_f6c7487031e4,1995-04,Worthington,Ohio,US,locality_reference,yes,yes,8,2,1123,replace_locality_reference_with_field_evidence,100
+cc_f70271bbfb6b,1996-07,Whitley County,Indiana,US,locality_reference,yes,yes,4,2,1123,replace_locality_reference_with_field_evidence,101
+cc_f8f77cb0e97b,2003-10,Mason Township,Michigan,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,102
+cc_ff1eb8180e38,1973-07-08,Clarion,Iowa,US,locality_reference,yes,yes,2,2,1123,replace_locality_reference_with_field_evidence,103
+cc_ffbf191f02f8,1999-09-04,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,2,1123,replace_locality_reference_with_field_evidence,104
+cc_0ed8b56730be,2003-06-28,Rockville (2),California,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,105
+cc_111e3cdced4f,2002-08-11,Fresno,California,US,candidate_field,yes,yes,1,2,1122,corroborate_candidate_field,106
+cc_5d10e918a4b4,1997-08-13,Wausau,Wisconsin,US,candidate_field,yes,yes,3,2,1122,corroborate_candidate_field,107
+cc_72e3a77239de,2005-08-19,Northwood,North Dakota,US,candidate_field,yes,yes,4,2,1122,corroborate_candidate_field,108
+cc_73d09b214763,2012-09,Chillicothe,Ohio,US,candidate_field,yes,yes,12,2,1122,corroborate_candidate_field,109
+cc_ae1b8ee2ae1f,2003-06-28,Rockville (1),California,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,110
+cc_ca0e623b0480,1997-08-16,Wausau,Wisconsin,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,111
+cc_db1599385db5,2008-09-13,Bedford,Indiana,US,candidate_field,yes,yes,11,2,1122,corroborate_candidate_field,112
+cc_f0f992d92db0,1997-06-28,"Wavra Farm, Salem / Silver Creek Falls",Oregon,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,113
+cc_fba8a8655b8a,2003-07-06,Vacaville,California,US,candidate_field,yes,yes,2,2,1122,corroborate_candidate_field,114
+cc_80f4a64d3689,2000-08-05,Hubbard / Woodburn / Whiskey Hill,Oregon,US,corroborated_field,yes,yes,2,2,1121,register_source_image_and_review_components,115
+cc_e5724a3476de,1998-07-23,Whiskey Hill / Hubbard,Oregon,US,corroborated_field,yes,yes,3,2,1121,register_source_image_and_review_components,116
+cc_3fb745fb7416,2004-08-24,Miamisburg,Ohio,US,registered_site,yes,yes,4,2,1120,review_or_register_straight_components,117
 cc_1249b0533691,2005-07-05,Patterson’s Corner,Ohio,US,unresolved,yes,yes,2,1,1114,research_exact_field_location,118
 cc_27f81c218d3d,1973,"Point Dume State Preserve, Malibu",California,US,unresolved,yes,yes,1,1,1114,research_exact_field_location,119
 cc_5efa25a69190,1847,General area of the Midwestern USA,,US,unresolved,yes,yes,1,1,1114,research_exact_field_location,120
@@ -202,68 +202,68 @@ cc_5e852e0c8e7a,1998,Smithfield,Utah,US,locality_reference,yes,yes,1,0,1103,repl
 cc_632f8c2c5019,1978-10-08,Jenkins,Missouri,US,locality_reference,yes,yes,4,0,1103,replace_locality_reference_with_field_evidence,201
 cc_63c02db1cc7f,1994-10-16,Adna (1),Washington,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,202
 cc_6ad21db2652f,1995-07,Adrian Township,Michigan,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,203
-cc_6bc118741f7e,2005-07-02,Burnsville,North Carolina,US,locality_reference,yes,yes,3,0,1103,replace_locality_reference_with_field_evidence,204
-cc_6d041339e500,1989-11-11,Millersburg,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,205
-cc_6dcedd6aa642,1994-07-26,Gaston,Oregon,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,206
-cc_7a83fde5305d,1952-09-12,Flatwoods,West Virginia,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,207
-cc_7a89b40c831c,1979,Oak Harbor,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,208
-cc_7be600c4fd1e,2000-08-09,Thompson,North Dakota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,209
-cc_7c29510e2454,1975-02-14,"Annadale, Staten Island",New York,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,210
-cc_7de9702e8388,1994-06-09,McBee,South Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,211
-cc_7e47048902d8,1995-05-17,Cherry Hill / Elkton,Maryland,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,212
-cc_832d34feb555,1995-08-15,Arlington,Iowa,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,213
-cc_834c6954bdac,1968,Williston,Florida,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,214
-cc_862db4328fef,1967-06-15,Harrisburg - Manor Hill,Pennsylvania,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,215
-cc_8695394dd6ac,1986,Helena,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,216
-cc_87566a56d34a,2005-10-14,Mendon,New York,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,217
-cc_88f1427b3480,1996-08,Burlington County,New Jersey,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,218
-cc_8a63f6cf9215,2002-08,Albion,Michigan,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,219
-cc_8b6bdef7af72,2002-07-08,Point Pleasant,West Virginia,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,220
-cc_8cda394be2fb,1994-06-17,Black Mountain,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,221
-cc_8d9594f155d7,2004-09-15,Rarden,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,222
-cc_94d43f246ad6,1999-10-03,Verona,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,223
-cc_957507b84517,1998-07,Cache Valley,Utah,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,224
-cc_96914a395b0e,1999-07-11,Hamel,Minnesota,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,225
-cc_98af90ac67c6,1968,Meigs County,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,226
-cc_98ce79f0b764,1995-04,Santa Rosa,California,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,227
-cc_9e24b20abfd8,2002-06-24,Careytown,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,228
-cc_9f5c212449ec,1995-09-06,Springfield,Missouri,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,229
-cc_a01f18f3f7b8,1965-08-11,Veblen Township,South Dakota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,230
-cc_a20bb389770e,2004-07-19,Tilden / Chippewa Falls,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,231
-cc_a831dd3ae5ba,1975-01-04,Mariemont,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,232
-cc_ac9d9c53f1ba,1989-11-15,Gulf Breeze / South Shoreline Park,Florida,US,locality_reference,yes,yes,5,0,1103,replace_locality_reference_with_field_evidence,233
-cc_b1cd3d9eb266,1992-03-20,Dundee,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,234
-cc_b1dc844b5504,1967-08-15,Southbury,Connecticut,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,235
-cc_b29603fb7dee,2004-08-11,Spring Hill,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,236
-cc_b624507e96ab,2000-08-14,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,237
-cc_b670486b7829,2004-06,New Park,Pennsylvania,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,238
-cc_b961bc700ce8,2003-05-26,Shreveport,Louisiana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,239
-cc_bccd87a97242,1982,"Oscoda, Tuttle Marsh Wildlife Area",Michigan,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,240
-cc_bdeb99a31a77,2004-07-11,Chuckey,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,241
-cc_be0c9b2cb1cc,2005-06-15,West Topsham,Vermont,US,locality_reference,yes,yes,3,0,1103,replace_locality_reference_with_field_evidence,242
-cc_bf31f2707f6a,1997-06-11,Hertford,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,243
-cc_c04e8166dd63,1999-06-18,Brentwood,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,244
-cc_c04ee2e67ee6,1998-06-26,Waverly,Nebraska,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,245
-cc_c328e2051123,2004-08-08,Charles City,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,246
-cc_c52fff759e1c,1998-08-25,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,247
-cc_c8e2401c7fbf,2004-06-27,Spanish Fork,Utah,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,248
-cc_cac817079dad,1990-10-16,Milan - Rock Island,Illinois,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,249
-cc_d01693d04dd9,2005-06-21,Trevor,Wisconsin,US,locality_reference,yes,yes,5,0,1103,replace_locality_reference_with_field_evidence,250
-cc_d3ae02e4f542,2005-07-05,Leicester,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,251
-cc_d44d7a089e61,1991-02,Millersburg,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,252
-cc_d7cf57a1ceb5,1972-07,Boone,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,253
-cc_d8b01f3a4f03,1990-06-27,Warsaw,Indiana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,254
-cc_d946549dde33,1973-10,Mount Pleasant,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,255
-cc_dc40d8a17a37,1968,Rush County,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,256
-cc_dc6a0b24fd4a,1993-08-05,Chelmsford,Massachusetts,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,257
-cc_dcda15bc0f98,1998-05-09,Unionville,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,258
-cc_de26119a1b47,1994-06-21,Garnett,Kansas,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,259
-cc_e7342e0521b5,1996-09-05,Pease,Minnesota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,260
-cc_eb3a85a44f7d,1991-09-28,Highland,Kansas,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,261
-cc_f2dc7f1f48d7,2003-07,Mayville,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,262
-cc_f3939cfc9f0e,2002-06-30,Sardinia,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,263
-cc_fbba3ae7b72e,1977,Lancaster,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,264
-cc_fcf6d6c75a8b,1998-07-10,Port Washington,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,265
+cc_6d041339e500,1989-11-11,Millersburg,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,204
+cc_6dcedd6aa642,1994-07-26,Gaston,Oregon,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,205
+cc_7a83fde5305d,1952-09-12,Flatwoods,West Virginia,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,206
+cc_7a89b40c831c,1979,Oak Harbor,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,207
+cc_7be600c4fd1e,2000-08-09,Thompson,North Dakota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,208
+cc_7c29510e2454,1975-02-14,"Annadale, Staten Island",New York,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,209
+cc_7de9702e8388,1994-06-09,McBee,South Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,210
+cc_7e47048902d8,1995-05-17,Cherry Hill / Elkton,Maryland,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,211
+cc_832d34feb555,1995-08-15,Arlington,Iowa,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,212
+cc_834c6954bdac,1968,Williston,Florida,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,213
+cc_862db4328fef,1967-06-15,Harrisburg - Manor Hill,Pennsylvania,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,214
+cc_8695394dd6ac,1986,Helena,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,215
+cc_87566a56d34a,2005-10-14,Mendon,New York,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,216
+cc_88f1427b3480,1996-08,Burlington County,New Jersey,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,217
+cc_8b6bdef7af72,2002-07-08,Point Pleasant,West Virginia,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,218
+cc_8cda394be2fb,1994-06-17,Black Mountain,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,219
+cc_8d9594f155d7,2004-09-15,Rarden,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,220
+cc_94d43f246ad6,1999-10-03,Verona,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,221
+cc_957507b84517,1998-07,Cache Valley,Utah,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,222
+cc_96914a395b0e,1999-07-11,Hamel,Minnesota,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,223
+cc_98af90ac67c6,1968,Meigs County,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,224
+cc_98ce79f0b764,1995-04,Santa Rosa,California,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,225
+cc_9e24b20abfd8,2002-06-24,Careytown,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,226
+cc_9f5c212449ec,1995-09-06,Springfield,Missouri,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,227
+cc_a01f18f3f7b8,1965-08-11,Veblen Township,South Dakota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,228
+cc_a20bb389770e,2004-07-19,Tilden / Chippewa Falls,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,229
+cc_a831dd3ae5ba,1975-01-04,Mariemont,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,230
+cc_ac9d9c53f1ba,1989-11-15,Gulf Breeze / South Shoreline Park,Florida,US,locality_reference,yes,yes,5,0,1103,replace_locality_reference_with_field_evidence,231
+cc_b1cd3d9eb266,1992-03-20,Dundee,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,232
+cc_b1dc844b5504,1967-08-15,Southbury,Connecticut,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,233
+cc_b29603fb7dee,2004-08-11,Spring Hill,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,234
+cc_b624507e96ab,2000-08-14,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,235
+cc_b961bc700ce8,2003-05-26,Shreveport,Louisiana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,236
+cc_bccd87a97242,1982,"Oscoda, Tuttle Marsh Wildlife Area",Michigan,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,237
+cc_bdeb99a31a77,2004-07-11,Chuckey,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,238
+cc_be0c9b2cb1cc,2005-06-15,West Topsham,Vermont,US,locality_reference,yes,yes,3,0,1103,replace_locality_reference_with_field_evidence,239
+cc_bf31f2707f6a,1997-06-11,Hertford,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,240
+cc_c04e8166dd63,1999-06-18,Brentwood,Tennessee,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,241
+cc_c04ee2e67ee6,1998-06-26,Waverly,Nebraska,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,242
+cc_c328e2051123,2004-08-08,Charles City,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,243
+cc_c52fff759e1c,1998-08-25,Kalispell / Whitefish,Montana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,244
+cc_c8e2401c7fbf,2004-06-27,Spanish Fork,Utah,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,245
+cc_cac817079dad,1990-10-16,Milan - Rock Island,Illinois,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,246
+cc_d01693d04dd9,2005-06-21,Trevor,Wisconsin,US,locality_reference,yes,yes,5,0,1103,replace_locality_reference_with_field_evidence,247
+cc_d3ae02e4f542,2005-07-05,Leicester,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,248
+cc_d44d7a089e61,1991-02,Millersburg,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,249
+cc_d7cf57a1ceb5,1972-07,Boone,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,250
+cc_d8b01f3a4f03,1990-06-27,Warsaw,Indiana,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,251
+cc_d946549dde33,1973-10,Mount Pleasant,Iowa,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,252
+cc_dc40d8a17a37,1968,Rush County,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,253
+cc_dc6a0b24fd4a,1993-08-05,Chelmsford,Massachusetts,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,254
+cc_dcda15bc0f98,1998-05-09,Unionville,North Carolina,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,255
+cc_de26119a1b47,1994-06-21,Garnett,Kansas,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,256
+cc_e7342e0521b5,1996-09-05,Pease,Minnesota,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,257
+cc_eb3a85a44f7d,1991-09-28,Highland,Kansas,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,258
+cc_f2dc7f1f48d7,2003-07,Mayville,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,259
+cc_f3939cfc9f0e,2002-06-30,Sardinia,Ohio,US,locality_reference,yes,yes,2,0,1103,replace_locality_reference_with_field_evidence,260
+cc_fbba3ae7b72e,1977,Lancaster,Ohio,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,261
+cc_fcf6d6c75a8b,1998-07-10,Port Washington,Wisconsin,US,locality_reference,yes,yes,1,0,1103,replace_locality_reference_with_field_evidence,262
+cc_6bc118741f7e,2005-07-02,Burnsville,North Carolina,US,candidate_field,yes,yes,3,0,1102,corroborate_candidate_field,263
+cc_8a63f6cf9215,2002-08,Albion,Michigan,US,candidate_field,yes,yes,2,0,1102,corroborate_candidate_field,264
+cc_b670486b7829,2004-06,New Park,Pennsylvania,US,candidate_field,yes,yes,1,0,1102,corroborate_candidate_field,265
 cc_380f14de702d,2005-06-21,Jupiter,North Carolina,US,registered_site,yes,yes,3,0,1100,review_or_register_straight_components,266
 cc_0376d454e3ea,1998,,Wisconsin,US,unresolved,yes,no,0,2,1024,research_exact_field_location,267
 cc_0d60ad020222,1998-07-06,Latty Township,Pennsylvania,US,unresolved,yes,no,0,2,1024,research_exact_field_location,268

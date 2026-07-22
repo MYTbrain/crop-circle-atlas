@@ -9,7 +9,7 @@ The public per-report archive and the map overlay registry serve different
 purposes. The archive contains 480 unique ICCRA-linked source images across 266
 formations, represented by 517 formation-image links. Those links make the
 actual source imagery available for review; they do not imply that an image has
-been oriented, scaled, or located. Only six images currently have placement
+been oriented, scaled, or located. Twelve images currently have placement
 evidence strong enough for an opt-in map footprint.
 
 ## Reviewer workflow
@@ -114,10 +114,12 @@ hash, review, bounds, physical-unit, and transform checks. Its current public
 quality gate rejects control-point RMSE above 25 physical ground metres; use a
 tighter project-specific threshold when the intended analysis requires it.
 There are currently zero packaged ICCRA image files because no source-image
-publication rights have been cleared. The combined KML/KMZ contains six
+publication rights have been cleared. The combined KML/KMZ contains twelve
 off-by-default source-hosted GroundOverlays: Whiskey Hill/Hubbard 1998 and
 2000, Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, and Jupiter
-2005. They link to the source host and package no source pixels. The Wausau
+2005, Wavra Farm 1997, Rockville 1 and 2 from 2003, Miamisburg 2004,
+Hopewell/Chillicothe 2012, and Albion/Starr 2002. They link to the source host
+and package no source pixels. The Wausau
 placement registers an ICCRA-linked USGS follow-up frame to persistent roads
 and fields identified through a contemporaneous investigator map; the circles
 are not unambiguously visible in the later frame, so it remains provisional and
@@ -128,7 +130,7 @@ scene placement: its source GPS is retained, but image orientation remains
 unresolved pending historical-ortho ground controls.
 `data/registered_overlay_observations.json` preserves the source hashes,
 dimensions, anchors, transforms, corner coordinates, evidence, and limitations
-for the five placements with structured observation records; the user-supplied
+for the eleven placements with structured observation records; the user-supplied
 Whiskey Hill 1998 placement remains represented in the public overlay registry.
 The Hubbard 2000 stated 35 m is a conditional
 detector-sensitivity envelope, not a confidence interval; without an
@@ -223,7 +225,7 @@ or an applicable license and its proof are documented in
 local source path.
 
 The per-report archive may show a source-linked preview for any of its 480
-images. That is not a map overlay or a grant of publication rights. For the six
+images. That is not a map overlay or a grant of publication rights. For the twelve
 registered placements, rights-restricted pixels remain off by default and the
 browser requests them directly from the source host only after an explicit user
 action. A blocked or unavailable remote request fails closed; the atlas does
