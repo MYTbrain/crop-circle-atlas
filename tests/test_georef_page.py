@@ -126,9 +126,11 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("approximate", html)
         self.assertIn("hollow dashed yellow markers are rough locality references", html)
         self.assertIn('href="styles.css?v=20260722.4"', html)
-        self.assertIn('src="app.js?v=20260722.4"', html)
-        self.assertIn("registered_overlays.json?v=20260722.3", javascript)
-        self.assertIn("formation_images.json?v=20260722.3", javascript)
+        self.assertIn('src="app.js?v=20260722.5"', html)
+        self.assertIn("formation_index.json?v=20260722.5", javascript)
+        self.assertIn("formation_sites.geojson?v=20260722.5", javascript)
+        self.assertIn("registered_overlays.json?v=20260722.5", javascript)
+        self.assertIn("formation_images.json?v=20260722.5", javascript)
         self.assertIn('id="localityPhotoCoverage"', html)
         self.assertIn("usLocalityPhotoReports", javascript)
         self.assertIn("LINK ONLY", javascript)
@@ -223,6 +225,50 @@ class GeorefPageContractTests(unittest.TestCase):
                 for record in transfers
             )
         )
+
+    def test_five_event_coordinate_geometry_batch_fails_closed(self):
+        expected_ids = {
+            "cc_270dae67472f",  # Etchilhampton
+            "cc_e1045cdcfe11",  # Ridgeway / Hackpen
+            "cc_a24651bbc437",  # Roundway Hill
+            "cc_d165b4ccc092",  # Ansty
+            "cc_d6b8ded1f85e",  # Ranscomb Bottom
+        }
+        overlay_payload = json.loads(
+            (ROOT / "web" / "data" / "registered_overlays.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        batch = [
+            record
+            for record in overlay_payload["overlays"]
+            if record["formation_id"] in expected_ids
+        ]
+        self.assertEqual({record["formation_id"] for record in batch}, expected_ids)
+        self.assertEqual(len(batch), 5)
+        for record in batch:
+            self.assertEqual(
+                record["registration_status"],
+                "coordinate_size_geometry_provisional",
+            )
+            self.assertEqual(
+                record["source_registration"]["kind"],
+                "coordinate_size_orientation_constrained_display_placement",
+            )
+            self.assertEqual(
+                record["formal_alignment_status"],
+                "excluded_pending_independent_ground_control",
+            )
+            self.assertFalse(record["embedding_allowed"])
+            self.assertEqual(record["rights_status"], "not_cleared_for_redistribution")
+            self.assertIn(
+                "not an independently validated image-to-ground registration",
+                record["quality_disclosure"],
+            )
+            self.assertIn(
+                "not a real-world accuracy benchmark",
+                record["quality_disclosure"],
+            )
 
     def test_rockville_uses_skew_capable_three_control_registration(self):
         overlay_payload = json.loads(

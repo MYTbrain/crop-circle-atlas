@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T21:09:40Z",
+  "generated_at": "2026-07-23T03:02:44Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -28,7 +28,7 @@
   },
   "geocoded": 4302,
   "site_resolutions": {
-    "reviewed_overrides": 23,
+    "reviewed_overrides": 28,
     "global_source_map_candidates": 384,
     "combined_overrides": 407,
     "status_counts": {

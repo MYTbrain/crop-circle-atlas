@@ -1053,16 +1053,16 @@ async function ensureLocalities() {
 }
 
 Promise.all([
-  fetch('data/formation_index.json').then((response) => {
+  fetch('data/formation_index.json?v=20260722.5').then((response) => {
     if (!response.ok) throw new Error(`formation index HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/formation_sites.geojson').then((response) => {
+  fetch('data/formation_sites.geojson?v=20260722.5').then((response) => {
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260722.3').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260722.3').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260722.5').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260722.5').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
