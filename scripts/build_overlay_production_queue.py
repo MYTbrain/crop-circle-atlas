@@ -114,6 +114,83 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_5d34291524c4": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's precise BNG target and wide aerial resolve one "
+            "Luxenborough field using the rectangular scrub patch, road, field "
+            "boundaries, and wider Salisbury Plain context. The reviewed source "
+            "pages provide no defensible formation size, the wide frame includes "
+            "the camera horizon, and the tight frame contains no distributed "
+            "persistent ground controls. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_813dd47361b7": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 80-foot (24 metre) "
+            "diameter, and same-event village, lake, pasture, field-boundary, and "
+            "tramline context resolve the Woodway Bridge field. Four outer-ring "
+            "controls place the tight frame, but they are crop geometry rather "
+            "than independent ground control. The footprint remains unaccepted, "
+            "rights-gated, and excluded from formal alignment. Explicit outcome: "
+            "provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_260e8f52da4e": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 110-foot (33.5 metre) "
+            "diameter, and same-flight woodland, road, boundary, and row context "
+            "resolve the Hackpen Hill (3) field. Four outer-ring controls place "
+            "the tight frame, but they are crop geometry rather than independent "
+            "ground control. The footprint remains unaccepted, rights-gated, and "
+            "excluded from formal alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_044207cd1b0d": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 180-foot (55 metre) "
+            "diameter, and same-flight hedgerow, town-edge, field-shape, and row "
+            "context resolve the Nursteed Farm field. Four outer-ring controls "
+            "place the tight frame, but they are crop geometry rather than "
+            "independent ground control. The footprint remains unaccepted, "
+            "rights-gated, and excluded from formal alignment. Explicit outcome: "
+            "provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_a52fc2811092": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 180-foot (55 metre) "
+            "diameter, and multiple same-flight views resolve the Rodfield Lane "
+            "field against the woodland, road, curving boundary, houses, and rows. "
+            "Four outer-ring controls place the tight frame, but they are crop "
+            "geometry rather than independent ground control. The footprint remains "
+            "unaccepted, rights-gated, and excluded from formal alignment. Explicit "
+            "outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_b7f8add97942": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 180-foot (55 metre) "
+            "diameter, and same-flight road, hedge-junction, field-boundary, "
+            "woodland, and row context resolve the Longwood Warren field. Four "
+            "outer-ring controls place the tight frame, but they are crop geometry "
+            "rather than independent ground control. The footprint remains "
+            "unaccepted, rights-gated, and excluded from formal alignment. Explicit "
+            "outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_4fab9c03a8ea": {
         "processing_status": "provisional_registration",
         "reason": (

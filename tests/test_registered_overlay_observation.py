@@ -201,6 +201,11 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             "regobs_cley_hill_20200711_crop_geometry_v1",
             "regobs_battlebury_hill_20170705_crop_geometry_v1",
             "regobs_thorn_hill_20170626_crop_geometry_v1",
+            "regobs_woodway_bridge_20160824_crop_geometry_v1",
+            "regobs_hackpen_hill_3_20180729_crop_geometry_v1",
+            "regobs_nursteed_farm_20160817_crop_geometry_v1",
+            "regobs_rodfield_lane_20190716_crop_geometry_v1",
+            "regobs_longwood_warren_20210704_crop_geometry_v1",
         }
         overlays = {
             row["registration_observation_id"]: row
@@ -249,6 +254,11 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             "cc_706b58141f82",
             "cc_591f610ce045",
             "cc_87b940bfa1c8",
+            "cc_813dd47361b7",
+            "cc_260e8f52da4e",
+            "cc_044207cd1b0d",
+            "cc_a52fc2811092",
+            "cc_b7f8add97942",
         }:
             self.assertEqual(
                 queue[formation_id]["processing_status"],
@@ -258,6 +268,15 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
                 "Explicit outcome: provisional_registration.",
                 queue[formation_id]["blocker_or_rejection_reason"],
             )
+
+        self.assertEqual(
+            queue["cc_5d34291524c4"]["processing_status"],
+            "candidate_field",
+        )
+        self.assertIn(
+            "Explicit outcome: candidate_field.",
+            queue["cc_5d34291524c4"]["blocker_or_rejection_reason"],
+        )
 
         legacy_expected = {
             "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1": (

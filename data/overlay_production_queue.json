@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-23T16:19:02.719786Z",
+  "generated_at": "2026-07-23T17:29:52.647179Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 20,
+    "candidate_field": 21,
     "clues_reviewed": 2,
-    "provisional_registration": 46,
-    "queued": 1844,
+    "provisional_registration": 51,
+    "queued": 1838,
     "source_image_acquired": 11,
     "unresolved": 3
   },
@@ -13081,6 +13081,79 @@
       "review_date": "2026-07-22"
     },
     {
+      "formation_id": "cc_260e8f52da4e",
+      "assertion_ids": [
+        "sx_connector_ef50438c82da7eba"
+      ],
+      "event_date": "2018-07-29",
+      "place": "Hackpen Hill (3)",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://cropcircleconnector.com/2018/hackpenhill3/hackpenhill2018c.html"
+      ],
+      "source_image_urls": [
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0003.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0009-2.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0015.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0076.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0111.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/150.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/DJ009-2.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst62A.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst87A.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst88A.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst89A.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3146A.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3146B.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_000601.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00632.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00663.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00684.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00695.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/hack3-26ac-800.jpg",
+        "https://cropcircleconnector.com/2018/hackpenhill3/vlcsnap-2018-07-29-23h05m08.jpg"
+      ],
+      "source_image_count": 20,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.47157664,
+      "current_longitude": -1.81405458,
+      "current_coordinate_uncertainty_m": 25.0,
+      "source_coordinate_availability": "yes",
+      "publisher_map_target_availability": "yes",
+      "named_geographic_clues": [
+        "Hackpen Hill (3)",
+        "Wiltshire",
+        "Broad Hinton"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Hackpen Hill (3)",
+        "Broad Hinton",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "800x449",
+        "800x790",
+        "800x530",
+        "150x149",
+        "800x826",
+        "800x534",
+        "800x551",
+        "800x583",
+        "800x450",
+        "800x800"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2225,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 110-foot (33.5 metre) diameter, and same-flight woodland, road, boundary, and row context resolve the Hackpen Hill (3) field. Four outer-ring controls place the tight frame, but they are crop geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
+      "selected_overlay_id": "hackpen-hill-3-2018-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
       "formation_id": "cc_38d9441f0182",
       "assertion_ids": [
         "sx_connector_b16220557fdb24bc"
@@ -13242,6 +13315,94 @@
       "review_date": "2026-07-22"
     },
     {
+      "formation_id": "cc_5d34291524c4",
+      "assertion_ids": [
+        "a_d34644776db625",
+        "sx_connector_443ddaa8318cc795"
+      ],
+      "event_date": "2020-07-16",
+      "place": "Luxenborough",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A.html",
+        "https://cropcircleconnector.com/2020/luxenborough/luxenborough2020a.html"
+      ],
+      "source_image_urls": [
+        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A_F.jpg",
+        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A_G.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0611-Pano.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0622.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0630.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0631.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0634-Pano.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/DJI_0642-Pano.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/16072020b.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020a.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020b.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020e.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020g.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020a.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020b.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020c.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020d.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020e.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020f.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020g.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020d.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020e.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020r.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/niel17072020c.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/niel17072020d.jpg",
+        "https://cropcircleconnector.com/2020/luxenborough/niel17072020e.jpg"
+      ],
+      "source_image_count": 26,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.17205243,
+      "current_longitude": -1.81978,
+      "current_coordinate_uncertainty_m": 25.0,
+      "source_coordinate_availability": "yes",
+      "publisher_map_target_availability": "yes",
+      "named_geographic_clues": [
+        "Luxenborough",
+        "Wiltshire",
+        "Salisbury Plain"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Luxenborough",
+        "Salisbury Plain",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "570x415",
+        "800x1308",
+        "800x716",
+        "800x810",
+        "800x578",
+        "800x953",
+        "800x1319",
+        "150x155",
+        "800x534",
+        "800x449",
+        "800x450",
+        "800x625",
+        "800x651",
+        "800x1200",
+        "800x777",
+        "800x563",
+        "800x533"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2225,
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target and wide aerial resolve one Luxenborough field using the rectangular scrub patch, road, field boundaries, and wider Salisbury Plain context. The reviewed source pages provide no defensible formation size, the wide frame includes the camera horizon, and the tight frame contains no distributed persistent ground controls. No source-photo footprint is published. Explicit outcome: candidate_field.",
+      "selected_overlay_id": "",
+      "registration_classification": "",
+      "review_date": "2026-07-22"
+    },
+    {
       "formation_id": "cc_706b58141f82",
       "assertion_ids": [
         "sx_connector_fa54800fecd6502d"
@@ -13315,6 +13476,89 @@
       "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 100-foot (30.5 metre) size, and same-flight wide and hilltop context resolve the 2020 Cley Hill formation field. Four outer-ring controls place the tight overhead frame, but they are formation geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
       "selected_overlay_id": "cley-hill-2020-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_813dd47361b7",
+      "assertion_ids": [
+        "a_a98eb52a4b88b8",
+        "sx_connector_2f7c5c2924fafe38"
+      ],
+      "event_date": "2016-08-24",
+      "place": "Woodway Bridge",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A.html",
+        "https://cropcircleconnector.com/2016/woodwaybridge/woodwaybridge2016a.html"
+      ],
+      "source_image_urls": [
+        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A_F.jpg",
+        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A_G.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings-dst417A.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings-dst424A.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings362A.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings372A.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings381A.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-13c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-14c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-16c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-17c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-18c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-19c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-3c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-5c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-6c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-7c.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0048749bbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0048783JKLbbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0048783bbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0048800bbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0048804bbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0058874bbb.jpg",
+        "https://cropcircleconnector.com/2016/woodwaybridge/G0058881bbb.jpg"
+      ],
+      "source_image_count": 24,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.36061782,
+      "current_longitude": -1.90093647,
+      "current_coordinate_uncertainty_m": 25.0,
+      "source_coordinate_availability": "yes",
+      "publisher_map_target_availability": "yes",
+      "named_geographic_clues": [
+        "Woodway Bridge",
+        "Wiltshire",
+        "All Cannings"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Woodway Bridge",
+        "All Cannings",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "570x415",
+        "800x1044",
+        "800x559",
+        "800x553",
+        "800x588",
+        "800x501",
+        "800x450",
+        "800x799",
+        "150x151",
+        "800x801",
+        "800x683",
+        "800x600",
+        "800x840",
+        "800x500"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2225,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 80-foot (24 metre) diameter, and same-event village, lake, pasture, field-boundary, and tramline context resolve the Woodway Bridge field. Four outer-ring controls place the tight frame, but they are crop geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
+      "selected_overlay_id": "woodway-bridge-2016-documented-size-crop-geometry-placement",
       "registration_classification": "provisional_registration",
       "review_date": "2026-07-22"
     },
@@ -13914,6 +14158,81 @@
       "review_date": "2026-07-22"
     },
     {
+      "formation_id": "cc_044207cd1b0d",
+      "assertion_ids": [
+        "sx_connector_186079f77073b9e8"
+      ],
+      "event_date": "2016-08-17",
+      "place": "Nursteed Farm",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://cropcircleconnector.com/2016/nursteed/nursteed2016a.html"
+      ],
+      "source_image_urls": [
+        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes-18th-Au.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes2-18th-A.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes3-18th-A.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018633bbb.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018644bbb.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018647bbb.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018664.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018664bbb.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/G0018670bbb.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/NursteedA106A---Copy.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/NursteedA109.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/NursteedAdst15Ads.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-1-of-7_29204.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-2-of-7_29126.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-3-of-7_28584.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-4-of-7_29170.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-5-of-7_28916.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-6-of-7_28916.jpg",
+        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-7-of-7_29204.jpg"
+      ],
+      "source_image_count": 19,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.34499889,
+      "current_longitude": -1.96208997,
+      "current_coordinate_uncertainty_m": 25.0,
+      "source_coordinate_availability": "yes",
+      "publisher_map_target_availability": "yes",
+      "named_geographic_clues": [
+        "Nursteed Farm",
+        "Wiltshire",
+        "Devizes"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Nursteed Farm",
+        "Devizes",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "800x452",
+        "800x450",
+        "800x674",
+        "800x941",
+        "800x889",
+        "150x151",
+        "800x876",
+        "800x794",
+        "800x525",
+        "800x534",
+        "800x1087",
+        "800x532",
+        "800x800"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2222,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 180-foot (55 metre) diameter, and same-flight hedgerow, town-edge, field-shape, and row context resolve the Nursteed Farm field. Four outer-ring controls place the tight frame, but they are crop geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
+      "selected_overlay_id": "nursteed-farm-2016-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
       "formation_id": "cc_591f610ce045",
       "assertion_ids": [
         "sx_connector_ad14a588d28da51c"
@@ -13989,6 +14308,86 @@
       "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 200 by 200-foot (61 by 61 metre) extent, and same-flight Battlebury Hill context resolve the formation field. Four outer-loop controls place the tight overhead frame, but they are formation geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
       "selected_overlay_id": "battlebury-hill-2017-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_a52fc2811092",
+      "assertion_ids": [
+        "sx_connector_ed2b844991a8943b"
+      ],
+      "event_date": "2019-07-16",
+      "place": "Rodfield Lane",
+      "region": "Hampshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://cropcircleconnector.com/2019/Rodfield/Rodfield2019a.html"
+      ],
+      "source_image_urls": [
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_000313.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_000615.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_001110.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_00138.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0026.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0044.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0051.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0063.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0071-Pano.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0118-HDR-Pano.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/DJI_0184-HDR-Pano.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/1500063.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/67968726_2655917084419826_5.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/68383190_2655916954419839_1.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/AA69781F-43A4-46BE-80D2-21E.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/CC-Science-Day101-copy---Co.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/Tichborne-77B3.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/Tichborne-dst435.jpg",
+        "https://cropcircleconnector.com/2019/Rodfield/Tichborneopy2.jpg"
+      ],
+      "source_image_count": 19,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.06883071,
+      "current_longitude": -1.2047569,
+      "current_coordinate_uncertainty_m": 25.0,
+      "source_coordinate_availability": "yes",
+      "publisher_map_target_availability": "yes",
+      "named_geographic_clues": [
+        "Rodfield Lane",
+        "Hampshire",
+        "Tichborne"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Rodfield Lane",
+        "Tichborne",
+        "Hampshire"
+      ],
+      "source_image_dimensions": [
+        "800x609",
+        "800x715",
+        "800x624",
+        "800x625",
+        "800x450",
+        "800x279",
+        "800x760",
+        "800x1253",
+        "800x776",
+        "800x730",
+        "150x149",
+        "800x534",
+        "640x960",
+        "800x799",
+        "800x567",
+        "800x605",
+        "800x1205",
+        "800x527"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2222,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 180-foot (55 metre) diameter, and multiple same-flight views resolve the Rodfield Lane field against the woodland, road, curving boundary, houses, and rows. Four outer-ring controls place the tight frame, but they are crop geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
+      "selected_overlay_id": "rodfield-lane-2019-documented-size-crop-geometry-placement",
       "registration_classification": "provisional_registration",
       "review_date": "2026-07-22"
     },
@@ -14218,77 +14617,6 @@
       "selected_overlay_id": "",
       "registration_classification": "",
       "review_date": "2026-07-22"
-    },
-    {
-      "formation_id": "cc_260e8f52da4e",
-      "assertion_ids": [
-        "sx_connector_ef50438c82da7eba"
-      ],
-      "event_date": "2018-07-29",
-      "place": "Hackpen Hill (3)",
-      "region": "Wiltshire",
-      "country": "England",
-      "source_report_urls": [
-        "https://cropcircleconnector.com/2018/hackpenhill3/hackpenhill2018c.html"
-      ],
-      "source_image_urls": [
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0003.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0009-2.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0015.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0076.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0111.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/150.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/DJ009-2.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst62A.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst87A.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst88A.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3-dst89A.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3146A.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/Hackpen-3146B.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_000601.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00632.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00663.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00684.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/P4P_00695.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/hack3-26ac-800.jpg",
-        "https://cropcircleconnector.com/2018/hackpenhill3/vlcsnap-2018-07-29-23h05m08.jpg"
-      ],
-      "source_image_count": 20,
-      "current_location_role": "formation_site",
-      "current_latitude": 51.47157664,
-      "current_longitude": -1.81405458,
-      "current_coordinate_uncertainty_m": 25.0,
-      "source_coordinate_availability": "yes",
-      "publisher_map_target_availability": "yes",
-      "named_geographic_clues": [
-        "Hackpen Hill (3)",
-        "Wiltshire"
-      ],
-      "identifiable_persistent_landmarks": [
-        "Hackpen Hill (3)",
-        "Wiltshire"
-      ],
-      "source_image_dimensions": [
-        "800x449",
-        "800x790",
-        "800x530",
-        "150x149",
-        "800x826",
-        "800x534",
-        "800x551",
-        "800x583",
-        "800x450",
-        "800x800"
-      ],
-      "display_rights": "link_only_rights_gated",
-      "publication_rights": "not_cleared_for_redistribution",
-      "straight_component_likelihood": "unknown",
-      "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
     },
     {
       "formation_id": "cc_2d94a3a4b7c6",
@@ -14597,92 +14925,6 @@
         "800x800",
         "800x858",
         "800x961"
-      ],
-      "display_rights": "link_only_rights_gated",
-      "publication_rights": "not_cleared_for_redistribution",
-      "straight_component_likelihood": "unknown",
-      "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
-    },
-    {
-      "formation_id": "cc_5d34291524c4",
-      "assertion_ids": [
-        "a_d34644776db625",
-        "sx_connector_443ddaa8318cc795"
-      ],
-      "event_date": "2020-07-16",
-      "place": "Luxenborough",
-      "region": "Wiltshire",
-      "country": "England",
-      "source_report_urls": [
-        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A.html",
-        "https://cropcircleconnector.com/2020/luxenborough/luxenborough2020a.html"
-      ],
-      "source_image_urls": [
-        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A_F.jpg",
-        "https://www.cropcirclecenter.com/ccdata/2020/07/16/UK20200716_A_G.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0611-Pano.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0622.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0630.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0631.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0634-Pano.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/DJI_0642-Pano.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/16072020b.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020a.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020b.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020e.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hampshire16072020g.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020a.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020b.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020c.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020d.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020e.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020f.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/hugh17072020g.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020d.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020e.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/lucy21072020r.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/niel17072020c.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/niel17072020d.jpg",
-        "https://cropcircleconnector.com/2020/luxenborough/niel17072020e.jpg"
-      ],
-      "source_image_count": 26,
-      "current_location_role": "formation_site",
-      "current_latitude": 51.17205243,
-      "current_longitude": -1.81978,
-      "current_coordinate_uncertainty_m": 25.0,
-      "source_coordinate_availability": "yes",
-      "publisher_map_target_availability": "yes",
-      "named_geographic_clues": [
-        "Luxenborough",
-        "Wiltshire"
-      ],
-      "identifiable_persistent_landmarks": [
-        "Luxenborough",
-        "Wiltshire"
-      ],
-      "source_image_dimensions": [
-        "570x415",
-        "800x1308",
-        "800x716",
-        "800x810",
-        "800x578",
-        "800x953",
-        "800x1319",
-        "150x155",
-        "800x534",
-        "800x449",
-        "800x450",
-        "800x625",
-        "800x651",
-        "800x1200",
-        "800x777",
-        "800x563",
-        "800x533"
       ],
       "display_rights": "link_only_rights_gated",
       "publication_rights": "not_cleared_for_redistribution",
@@ -15015,87 +15257,6 @@
       "selected_overlay_id": "cocum-farm-2019-documented-size-crop-geometry-placement",
       "registration_classification": "provisional_registration",
       "review_date": "2026-07-22"
-    },
-    {
-      "formation_id": "cc_813dd47361b7",
-      "assertion_ids": [
-        "a_a98eb52a4b88b8",
-        "sx_connector_2f7c5c2924fafe38"
-      ],
-      "event_date": "2016-08-24",
-      "place": "Woodway Bridge",
-      "region": "Wiltshire",
-      "country": "England",
-      "source_report_urls": [
-        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A.html",
-        "https://cropcircleconnector.com/2016/woodwaybridge/woodwaybridge2016a.html"
-      ],
-      "source_image_urls": [
-        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A_F.jpg",
-        "https://www.cropcirclecenter.com/ccdata/2016/08/24/UK20160824_A_G.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings-dst417A.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings-dst424A.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings362A.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings372A.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings381A.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-13c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-14c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-16c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-17c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-18c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-19c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-3c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-5c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-6c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/AllCanningsCC-7c.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0048749bbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0048783JKLbbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0048783bbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0048800bbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0048804bbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0058874bbb.jpg",
-        "https://cropcircleconnector.com/2016/woodwaybridge/G0058881bbb.jpg"
-      ],
-      "source_image_count": 24,
-      "current_location_role": "formation_site",
-      "current_latitude": 51.36061782,
-      "current_longitude": -1.90093647,
-      "current_coordinate_uncertainty_m": 25.0,
-      "source_coordinate_availability": "yes",
-      "publisher_map_target_availability": "yes",
-      "named_geographic_clues": [
-        "Woodway Bridge",
-        "Wiltshire"
-      ],
-      "identifiable_persistent_landmarks": [
-        "Woodway Bridge",
-        "Wiltshire"
-      ],
-      "source_image_dimensions": [
-        "570x415",
-        "800x1044",
-        "800x559",
-        "800x553",
-        "800x588",
-        "800x501",
-        "800x450",
-        "800x799",
-        "150x151",
-        "800x801",
-        "800x683",
-        "800x600",
-        "800x840",
-        "800x500"
-      ],
-      "display_rights": "link_only_rights_gated",
-      "publication_rights": "not_cleared_for_redistribution",
-      "straight_component_likelihood": "unknown",
-      "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
     },
     {
       "formation_id": "cc_8a8b76a546d2",
@@ -16617,79 +16778,6 @@
       "review_date": ""
     },
     {
-      "formation_id": "cc_044207cd1b0d",
-      "assertion_ids": [
-        "sx_connector_186079f77073b9e8"
-      ],
-      "event_date": "2016-08-17",
-      "place": "Nursteed Farm",
-      "region": "Wiltshire",
-      "country": "England",
-      "source_report_urls": [
-        "https://cropcircleconnector.com/2016/nursteed/nursteed2016a.html"
-      ],
-      "source_image_urls": [
-        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes-18th-Au.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes2-18th-A.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes3-18th-A.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018633bbb.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018644bbb.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018647bbb.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018664.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018664bbb.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/G0018670bbb.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/NursteedA106A---Copy.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/NursteedA109.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/NursteedAdst15Ads.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-1-of-7_29204.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-2-of-7_29126.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-3-of-7_28584.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-4-of-7_29170.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-5-of-7_28916.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-6-of-7_28916.jpg",
-        "https://cropcircleconnector.com/2016/nursteed/devizes-circle-7-of-7_29204.jpg"
-      ],
-      "source_image_count": 19,
-      "current_location_role": "formation_site",
-      "current_latitude": 51.34499889,
-      "current_longitude": -1.96208997,
-      "current_coordinate_uncertainty_m": 25.0,
-      "source_coordinate_availability": "yes",
-      "publisher_map_target_availability": "yes",
-      "named_geographic_clues": [
-        "Nursteed Farm",
-        "Wiltshire"
-      ],
-      "identifiable_persistent_landmarks": [
-        "Nursteed Farm",
-        "Wiltshire"
-      ],
-      "source_image_dimensions": [
-        "800x452",
-        "800x450",
-        "800x674",
-        "800x941",
-        "800x889",
-        "150x151",
-        "800x876",
-        "800x794",
-        "800x525",
-        "800x534",
-        "800x1087",
-        "800x532",
-        "800x800"
-      ],
-      "display_rights": "link_only_rights_gated",
-      "publication_rights": "not_cleared_for_redistribution",
-      "straight_component_likelihood": "unknown",
-      "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
-    },
-    {
       "formation_id": "cc_886f1e3e45ca",
       "assertion_ids": [
         "sx_connector_7fff9d07487ffcb6"
@@ -16914,84 +17002,6 @@
       "review_date": "2026-07-22"
     },
     {
-      "formation_id": "cc_a52fc2811092",
-      "assertion_ids": [
-        "sx_connector_ed2b844991a8943b"
-      ],
-      "event_date": "2019-07-16",
-      "place": "Rodfield Lane",
-      "region": "Hampshire",
-      "country": "England",
-      "source_report_urls": [
-        "https://cropcircleconnector.com/2019/Rodfield/Rodfield2019a.html"
-      ],
-      "source_image_urls": [
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_000313.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_000615.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_001110.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_00138.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0026.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0044.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0051.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0063.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0071-Pano.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0118-HDR-Pano.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/DJI_0184-HDR-Pano.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/1500063.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/67968726_2655917084419826_5.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/68383190_2655916954419839_1.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/AA69781F-43A4-46BE-80D2-21E.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/CC-Science-Day101-copy---Co.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/Tichborne-77B3.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/Tichborne-dst435.jpg",
-        "https://cropcircleconnector.com/2019/Rodfield/Tichborneopy2.jpg"
-      ],
-      "source_image_count": 19,
-      "current_location_role": "formation_site",
-      "current_latitude": 51.06883071,
-      "current_longitude": -1.2047569,
-      "current_coordinate_uncertainty_m": 25.0,
-      "source_coordinate_availability": "yes",
-      "publisher_map_target_availability": "yes",
-      "named_geographic_clues": [
-        "Rodfield Lane",
-        "Hampshire"
-      ],
-      "identifiable_persistent_landmarks": [
-        "Rodfield Lane",
-        "Hampshire"
-      ],
-      "source_image_dimensions": [
-        "800x609",
-        "800x715",
-        "800x624",
-        "800x625",
-        "800x450",
-        "800x279",
-        "800x760",
-        "800x1253",
-        "800x776",
-        "800x730",
-        "150x149",
-        "800x534",
-        "640x960",
-        "800x799",
-        "800x567",
-        "800x605",
-        "800x1205",
-        "800x527"
-      ],
-      "display_rights": "link_only_rights_gated",
-      "publication_rights": "not_cleared_for_redistribution",
-      "straight_component_likelihood": "unknown",
-      "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
-    },
-    {
       "formation_id": "cc_a766e0a73ba1",
       "assertion_ids": [
         "sx_connector_e1b7c1261c5d7af4"
@@ -17132,11 +17142,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "The publisher's precise BNG target, reported 180-foot (55 metre) diameter, and same-flight road, hedge-junction, field-boundary, woodland, and row context resolve the Longwood Warren field. Four outer-ring controls place the tight frame, but they are crop geometry rather than independent ground control. The footprint remains unaccepted, rights-gated, and excluded from formal alignment. Explicit outcome: provisional_registration.",
+      "selected_overlay_id": "longwood-warren-2021-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_f30c1e8ffd2f",

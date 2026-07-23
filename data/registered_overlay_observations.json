@@ -7136,6 +7136,901 @@
       }
     },
     {
+      "observation_id": "regobs_woodway_bridge_20160824_crop_geometry_v1",
+      "overlay_id": "woodway-bridge-2016-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings362A.jpg",
+        "page_url": "https://cropcircleconnector.com/2016/woodwaybridge/woodwaybridge2016a.html",
+        "sha256": "de6d600d4988a2bfbfdb50e2efee4403a66a0a50896afdadd981eff31d38c3cd",
+        "width_px": 800,
+        "height_px": 553,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          553
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.36061782,
+          -1.90093647
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The precise publisher target and wide frame identify the formation field near Woodway Bridge. All Cannings village, the lake, pasture, field boundaries, and matching tramline direction agree with the current reference mosaic; the selected frame preserves the full formation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.36061782,
+          -1.90093647
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=406994&y=162399&z=0&sv=51.360622,+-1.900923&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 24,
+        "reported_place": "Woodway Bridge, near All Cannings, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2016/woodwaybridge/woodwaybridge2016a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            553
+          ],
+          [
+            0,
+            553
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.360769199026,
+            -1.900826420869
+          ],
+          [
+            51.360498529841,
+            -1.900588374115
+          ],
+          [
+            51.360429151646,
+            -1.901008469431
+          ],
+          [
+            51.36078348184,
+            -1.901418344916
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 553 near-nadir aerial. The publisher target fixes the center, the report documents an approximately 80-foot (24 metre) diameter, and four reviewed outer-ring controls constrain scale and perspective. A same-event wide aerial resolves All Cannings village, the field, lake, pasture, boundaries, and tramline direction.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          553
+        ],
+        "source_geometry_control_pixels": [
+          [
+            307,
+            65
+          ],
+          [
+            638,
+            341
+          ],
+          [
+            433,
+            483
+          ],
+          [
+            128,
+            249
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            11.303201675,
+            4.029593945
+          ],
+          [
+            4.029593945,
+            -11.303201675
+          ],
+          [
+            -11.303201675,
+            -4.029593945
+          ],
+          [
+            -4.029593945,
+            11.303201675
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.025220116471,
+            -0.058322532103,
+            7.649521552662
+          ],
+          [
+            -0.040153517737,
+            -0.005978105051,
+            16.851513194575
+          ],
+          [
+            0.000187501264,
+            -0.000480073501,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 24,
+        "orientation_basis": "The same-event wide aerial fixes the field against All Cannings village, the lake, pasture, and field boundaries. The formation's asymmetric large-circle side points toward the village, and the selected frame's tramlines agree with the field direction.",
+        "orientation_uncertainty_deg": 18,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2016/woodwaybridge/G0048749bbb.jpg",
+        "same_flight_context_source_sha256": "cb25e0f64a9cce2c44ea1ed7c207f081c42496c51a67c78805adb0ac9a8988e4",
+        "reference_export_bbox_wgs84": [
+          -1.9075,
+          51.3565,
+          -1.8945,
+          51.3648
+        ],
+        "reference_export_size_px": [
+          1560,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "1193844b09cf73622d6921466c0331fa76727237cea936e4ffdb03b1cfe054bf",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.360769199026,
+          -1.900826420869
+        ],
+        [
+          51.360498529841,
+          -1.900588374115
+        ],
+        [
+          51.360429151646,
+          -1.901008469431
+        ],
+        [
+          51.36078348184,
+          -1.901418344916
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center inherits the publisher's 25 metre uncertainty; the reported size is not surveyed; orientation is inferred from same-event context and tramline direction; no independent ground point validates the projected corners."
+      }
+    },
+    {
+      "observation_id": "regobs_hackpen_hill_3_20180729_crop_geometry_v1",
+      "overlay_id": "hackpen-hill-3-2018-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0009-2.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/hackpenhill3/hackpenhill2018c.html",
+        "sha256": "bb93b7915fbd7261b985a3fce629f9c56131e9531359156451c25c26b331edb8",
+        "width_px": 800,
+        "height_px": 790,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          790
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.47157664,
+          -1.81405458
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and same-flight wide frame identify the formation field at Hackpen Hill. The persistent woodland, road, field boundary, adjacent arable geometry, and row direction agree with the current mosaic; the selected near-nadir frame preserves the formation geometry.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.47157664,
+          -1.81405458
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=413012&y=174751&z=0&sv=51.471579,+-1.814052&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 33.5,
+        "reported_place": "Hackpen Hill (3), near Broad Hinton, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2018/hackpenhill3/hackpenhill2018c.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            790
+          ],
+          [
+            0,
+            790
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.471800631598,
+            -1.814009263167
+          ],
+          [
+            51.471546670929,
+            -1.813698752066
+          ],
+          [
+            51.471364246038,
+            -1.814095454939
+          ],
+          [
+            51.471588219891,
+            -1.814404761761
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 790 near-nadir aerial. The publisher target fixes the center, the report documents an approximately 110-foot (33.5 metre) diameter, and four outer-ring controls constrain scale and perspective. A same-flight wide aerial resolves the Hackpen woodland, road, field boundary, and row direction.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          790
+        ],
+        "source_geometry_control_pixels": [
+          [
+            380,
+            18
+          ],
+          [
+            785,
+            380
+          ],
+          [
+            385,
+            770
+          ],
+          [
+            2,
+            380
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            13.017194748,
+            10.541116714
+          ],
+          [
+            10.541116714,
+            -13.017194748
+          ],
+          [
+            -13.017194748,
+            -10.541116714
+          ],
+          [
+            -10.541116714,
+            13.017194748
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.028825987676,
+            -0.037277884134,
+            3.142338936546
+          ],
+          [
+            -0.035597129493,
+            -0.029795147978,
+            24.934744705475
+          ],
+          [
+            7.748509e-05,
+            0.000105565265,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 33.5,
+        "orientation_basis": "The same-flight wide frame fixes the field relative to the Hackpen woodland, road, and persistent field boundary. The selected frame's principal row axis is aligned to the corresponding field direction in the current reference mosaic.",
+        "orientation_uncertainty_deg": 20,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0015.jpg",
+        "same_flight_context_source_sha256": "ff1a10bb5a2f6eac9e736823d4db8f2abc716013adbd6894d7a7faaf3da6176a",
+        "reference_export_bbox_wgs84": [
+          -1.8215,
+          51.4675,
+          -1.807,
+          51.476
+        ],
+        "reference_export_size_px": [
+          1700,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "eecbf009c448643de11582a5aa81c950aa997ea609250f4049aba82bb4e4d751",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.471800631598,
+          -1.814009263167
+        ],
+        [
+          51.471546670929,
+          -1.813698752066
+        ],
+        [
+          51.471364246038,
+          -1.814095454939
+        ],
+        [
+          51.471588219891,
+          -1.814404761761
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The target and reported diameter are not survey controlled; orientation is inferred from same-flight context and row direction; no independent ground point validates the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_nursteed_farm_20160817_crop_geometry_v1",
+      "overlay_id": "nursteed-farm-2016-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes-18th-Au.jpg",
+        "page_url": "https://cropcircleconnector.com/2016/nursteed/nursteed2016a.html",
+        "sha256": "cd946a0e4859cc9c5c32590f6c14f67a261c381d9a67da8422d1a87e64d3adc1",
+        "width_px": 800,
+        "height_px": 452,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          452
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.34499889,
+          -1.96208997
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The exact publisher target and same-flight wide aerial identify the Nursteed Farm field. The persistent hedgerow, road and town edge, enclosing field shape, and row direction agree with the current mosaic; the selected frame preserves the complete formation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.34499889,
+          -1.96208997
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=402737&y=160658&z=0&sv=51.345000,+-1.962077&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 55,
+        "reported_place": "Nursteed Farm, near Devizes, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2016/nursteed/nursteed2016a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            452
+          ],
+          [
+            0,
+            452
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.345262053002,
+            -1.962838306258
+          ],
+          [
+            51.34527429931,
+            -1.961326653779
+          ],
+          [
+            51.344713226002,
+            -1.961332849386
+          ],
+          [
+            51.344725728903,
+            -1.96282050196
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 452 near-nadir aerial. The publisher target fixes the center, the report documents an approximately 180-foot (55 metre) diameter, and four outer-ring controls constrain scale and perspective. A same-flight wide aerial resolves the adjacent hedgerow, town edge, field geometry, and row direction.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          452
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            18
+          ],
+          [
+            612,
+            220
+          ],
+          [
+            402,
+            425
+          ],
+          [
+            190,
+            220
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ],
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.128438499351,
+            0.000946721125,
+            -52.034633217248
+          ],
+          [
+            0,
+            -0.133160478967,
+            29.295305372677
+          ],
+          [
+            -5.5582306e-05,
+            3.5282189e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "The same-flight wide aerial fixes the field relative to the persistent hedgerow and Devizes town-edge geometry. The selected frame's near-vertical tramline axis is aligned north-south with the corresponding current field rows.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes2-18th-A.jpg",
+        "same_flight_context_source_sha256": "2b7eb5cbc0d1488c312f2d151ff953f9a3c6613a1ab7be6f530cd14d0eec6c15",
+        "reference_export_bbox_wgs84": [
+          -1.97,
+          51.3405,
+          -1.954,
+          51.3495
+        ],
+        "reference_export_size_px": [
+          1778,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "6993658b62543723051327f284ebbc548081bccfc469bd57e9861ae642c24484",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.345262053002,
+          -1.962838306258
+        ],
+        [
+          51.34527429931,
+          -1.961326653779
+        ],
+        [
+          51.344713226002,
+          -1.961332849386
+        ],
+        [
+          51.344725728903,
+          -1.96282050196
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The target and reported diameter are not survey controlled; orientation is inferred from same-flight hedgerow and row context; no independent ground point validates the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_rodfield_lane_20190716_crop_geometry_v1",
+      "overlay_id": "rodfield-lane-2019-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2019/Rodfield/DJI_0063.jpg",
+        "page_url": "https://cropcircleconnector.com/2019/Rodfield/Rodfield2019a.html",
+        "sha256": "c0281fdef58cf4feb78b39b9b59cebb10dbe20d6995127f9885333578fdf92f8",
+        "width_px": 800,
+        "height_px": 760,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          760
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.06883071,
+          -1.2047569
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and multiple same-flight wide frames identify one Rodfield Lane field west of the large woodland and south of the road. The woodland edge, road, curving field boundary, nearby houses, and rows agree with the current reference mosaic; the selected near-nadir frame preserves the full formation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.06883071,
+          -1.2047569
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=455817&y=130245&z=0&sv=SU+55817+30245&st=5&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 55,
+        "reported_place": "Rodfield Lane, near Tichborne, Hampshire",
+        "source_report_url": "https://cropcircleconnector.com/2019/Rodfield/Rodfield2019a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            760
+          ],
+          [
+            0,
+            760
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.06914091515,
+            -1.205257422005
+          ],
+          [
+            51.069158264142,
+            -1.204031883663
+          ],
+          [
+            51.06848892767,
+            -1.204378310871
+          ],
+          [
+            51.068623438133,
+            -1.205357295491
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 760 near-nadir aerial. The publisher target fixes the center, the report documents an approximately 180-foot (55 metre) diameter, and four outer-ring controls constrain scale and perspective. Several same-flight wide aerials resolve the large eastern woodland, northern road, curving field boundary, houses, and tramline direction.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          760
+        ],
+        "source_geometry_control_pixels": [
+          [
+            425,
+            80
+          ],
+          [
+            715,
+            370
+          ],
+          [
+            500,
+            705
+          ],
+          [
+            150,
+            380
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            2.396782926,
+            27.395354198
+          ],
+          [
+            27.395354198,
+            -2.396782926
+          ],
+          [
+            -2.396782926,
+            -27.395354198
+          ],
+          [
+            -27.395354198,
+            2.396782926
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.090737254137,
+            -0.018043890855,
+            -35.012498629804
+          ],
+          [
+            -0.00939402414,
+            -0.080659546053,
+            34.532037308883
+          ],
+          [
+            -0.000323835955,
+            0.000210751729,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide frames fix the field against the large eastern woodland, northern road, curving western boundary, and nearby houses. The selected frame's tramline axis is aligned to the east-southeast field rows in the current mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2019/Rodfield/DJI_000313.jpg",
+        "same_flight_context_source_sha256": "c9a699dbc9921011883f8f98bbdcd344f472ae6e5b38c0d4e116214f70eec09e",
+        "reference_export_bbox_wgs84": [
+          -1.2125,
+          51.064,
+          -1.197,
+          51.0735
+        ],
+        "reference_export_size_px": [
+          1632,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ccc36866917ac516cc8c393b1f25cde336f096caf852de465df0f2e681256c3c",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.06914091515,
+          -1.205257422005
+        ],
+        [
+          51.069158264142,
+          -1.204031883663
+        ],
+        [
+          51.06848892767,
+          -1.204378310871
+        ],
+        [
+          51.068623438133,
+          -1.205357295491
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center and reported diameter are not survey controlled; orientation is inferred from same-flight landscape context and current rows; no independent ground point validates the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_longwood_warren_20210704_crop_geometry_v1",
+      "overlay_id": "longwood-warren-2021-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2021/longwood/DJI_0903.jpg",
+        "page_url": "https://cropcircleconnector.com/2021/longwood/longwood2021a.html",
+        "sha256": "8310515407cf62817737fd35bca0d77b2c09e408f8199d3e7e5f63d2cdbc1c48",
+        "width_px": 800,
+        "height_px": 811,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          811
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.04069245,
+          -1.22873059
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and same-flight panorama identify the Longwood Warren field beside the persistent road and hedge junction. The junction, field boundaries, surrounding arable blocks, distant woodland, and row direction agree with current imagery; the selected near-nadir frame preserves the complete formation.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.04069245,
+          -1.22873059
+        ],
+        "publisher_map_target": "https://www.streetmap.co.uk/map?x=454170&y=127098&z=0&sv=51.040694,+-1.228722&st=7&mapp=map&searchp=ids",
+        "documented_diameter_m": 55,
+        "reported_place": "Longwood Warren, Hampshire",
+        "source_report_url": "https://cropcircleconnector.com/2021/longwood/longwood2021a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            811
+          ],
+          [
+            0,
+            811
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.040954654851,
+            -1.229158635338
+          ],
+          [
+            51.040998181057,
+            -1.228234471693
+          ],
+          [
+            51.040387337918,
+            -1.228319763835
+          ],
+          [
+            51.040431110275,
+            -1.229178806448
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 811 near-nadir aerial. The publisher target fixes the center, the report documents an approximately 180-foot (55 metre) diameter, and four outer-ring controls constrain scale and perspective. A same-flight panorama resolves the road and hedge junction, enclosing fields, distant woodland, and tramline direction.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          811
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            48
+          ],
+          [
+            753,
+            392
+          ],
+          [
+            444,
+            755
+          ],
+          [
+            47,
+            394
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ],
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.074464148628,
+            -0.004107640448,
+            -29.960813452934
+          ],
+          [
+            -0.000209795543,
+            -0.074057826547,
+            29.188644050032
+          ],
+          [
+            -0.000184123833,
+            7.5439673e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "The same-flight panorama fixes the field relative to the road and hedge junction, enclosing fields, and distant woodland. The selected frame's tramlines are aligned to the corresponding east-northeast row direction in current imagery.",
+        "orientation_uncertainty_deg": 20,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2021/longwood/DJI_0899-Pano.jpg",
+        "same_flight_context_source_sha256": "0734ad0df7eafb7d69054649df376f55a972ec274476660c163d1c83c19e4247",
+        "reference_export_bbox_wgs84": [
+          -1.233,
+          51.0377,
+          -1.2245,
+          51.0437
+        ],
+        "reference_export_size_px": [
+          1417,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "bd679d0e0dee2c014b7dbf8da319b261a4d4a0445d296bb34291a371812075fc",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.040954654851,
+          -1.229158635338
+        ],
+        [
+          51.040998181057,
+          -1.228234471693
+        ],
+        [
+          51.040387337918,
+          -1.228319763835
+        ],
+        [
+          51.040431110275,
+          -1.229178806448
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center and reported diameter are not survey controlled; orientation is inferred from same-flight context and field rows; no independent ground point validates the corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",
