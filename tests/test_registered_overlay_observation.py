@@ -127,6 +127,222 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
         )
         self.assertIn("zero independent", horhausen["quality"]["limitations"])
 
+        darfield = observations["regobs_darfield_2002_legacy_coordinate_scale_v1"]
+        self.assertEqual(
+            darfield["classification"], "coordinate_size_geometry_provisional"
+        )
+        self.assertEqual(
+            darfield["source_registration"]["kind"],
+            "legacy_coordinate_scale_north_up_display_placement",
+        )
+        self.assertEqual(darfield["source_registration"]["control_count"], 0)
+        self.assertEqual(
+            darfield["local_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            darfield["computed_corners_wgs84_lat_lon"],
+            [
+                [53.532226751785, -1.358078415213],
+                [53.532226751785, -1.355205354314],
+                [53.53126618142, -1.355205354314],
+                [53.53126618142, -1.358078415213],
+            ],
+        )
+
+        gurston = observations["regobs_gurston_ashes_20180723_dji_pose_v1"]
+        self.assertEqual(
+            gurston["classification"],
+            "provisional_dual_dji_pose_ground_plane_registration",
+        )
+        self.assertEqual(
+            gurston["formal_alignment_status"],
+            "excluded_pending_independent_ground_control",
+        )
+        self.assertEqual(
+            gurston["source_registration"]["kind"],
+            "dual_dji_pose_flat_ground_camera_projection",
+        )
+        self.assertEqual(
+            gurston["source_registration"]["secondary_pose_checkpoint_residual_m"],
+            3.16,
+        )
+        self.assertEqual(
+            gurston["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            gurston["computed_corners_wgs84_lat_lon"],
+            [
+                [51.04268194049, -1.980308699654],
+                [51.041509401739, -1.979966431565],
+                [51.041417464028, -1.981001164594],
+                [51.042536857681, -1.981327919446],
+            ],
+        )
+        gurston_spec = next(
+            placement
+            for placement in placements
+            if placement["observation_id"]
+            == "regobs_gurston_ashes_20180723_dji_pose_v1"
+        )
+        self.assertFalse(gurston_spec["embedding_allowed"])
+        self.assertEqual(
+            gurston_spec["rights_status"], "not_cleared_for_redistribution"
+        )
+
+        documented_size_observation_ids = {
+            "regobs_hackpen_hill_20180609_crop_geometry_v1",
+            "regobs_cley_hill_20170718_crop_geometry_v1",
+            "regobs_cley_hill_20200711_crop_geometry_v1",
+            "regobs_battlebury_hill_20170705_crop_geometry_v1",
+            "regobs_thorn_hill_20170626_crop_geometry_v1",
+            "regobs_woodway_bridge_20160824_crop_geometry_v1",
+            "regobs_hackpen_hill_3_20180729_crop_geometry_v1",
+            "regobs_nursteed_farm_20160817_crop_geometry_v1",
+            "regobs_rodfield_lane_20190716_crop_geometry_v1",
+            "regobs_longwood_warren_20210704_crop_geometry_v1",
+        }
+        overlays = {
+            row["registration_observation_id"]: row
+            for row in json.loads(
+                (root / "web" / "data" / "registered_overlays.json").read_text(
+                    encoding="utf-8"
+                )
+            )["overlays"]
+            if row.get("registration_observation_id")
+        }
+        for observation_id in documented_size_observation_ids:
+            observation = observations[observation_id]
+            self.assertEqual(
+                observation["classification"],
+                "provisional_documented_size_crop_geometry_rectification",
+            )
+            self.assertEqual(
+                observation["formal_alignment_status"],
+                "excluded_pending_independent_ground_control",
+            )
+            self.assertEqual(
+                observation["projective_display_transform"][
+                    "independent_ground_checkpoint_count"
+                ],
+                0,
+            )
+            self.assertIn("not a landmark or survey", observation["quality"]["limitations"])
+            overlay = overlays[observation_id]
+            self.assertFalse(overlay["embedding_allowed"])
+            self.assertEqual(
+                overlay["rights_status"], "not_cleared_for_redistribution"
+            )
+            self.assertFalse(overlay["show_by_default"])
+
+        queue = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "overlay_production_queue.json").read_text(
+                    encoding="utf-8"
+                )
+            )["records"]
+        }
+        for formation_id in {
+            "cc_4fab9c03a8ea",
+            "cc_f1c8f8391487",
+            "cc_706b58141f82",
+            "cc_591f610ce045",
+            "cc_87b940bfa1c8",
+            "cc_813dd47361b7",
+            "cc_260e8f52da4e",
+            "cc_044207cd1b0d",
+            "cc_a52fc2811092",
+            "cc_b7f8add97942",
+        }:
+            self.assertEqual(
+                queue[formation_id]["processing_status"],
+                "provisional_registration",
+            )
+            self.assertIn(
+                "Explicit outcome: provisional_registration.",
+                queue[formation_id]["blocker_or_rejection_reason"],
+            )
+
+        self.assertEqual(
+            queue["cc_5d34291524c4"]["processing_status"],
+            "candidate_field",
+        )
+        self.assertIn(
+            "Explicit outcome: candidate_field.",
+            queue["cc_5d34291524c4"]["blocker_or_rejection_reason"],
+        )
+
+        legacy_expected = {
+            "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.94641024513, -0.392701146675],
+                    [51.94641024513, -0.390275049526],
+                    [51.945569052006, -0.390275049526],
+                    [51.945569052006, -0.392701146675],
+                ],
+            ),
+            "regobs_waden_hill_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.425019054448, -1.856643925105],
+                    [51.425019054448, -1.854279777825],
+                    [51.424189844132, -1.854279777825],
+                    [51.424189844132, -1.856643925105],
+                ],
+            ),
+            "regobs_dodworth_st_john_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [53.542131113279, -1.536875940351],
+                    [53.542131113279, -1.534284446279],
+                    [53.541264884646, -1.534284446279],
+                    [53.541264884646, -1.536875940351],
+                ],
+            ),
+            "regobs_panocchia_2004_legacy_coordinate_reported_size_v1": (
+                "coordinate_size_north_up_provisional",
+                "legacy_coordinate_reported_size_north_up_display_placement",
+                [
+                    [44.6814292798, 10.31669709193],
+                    [44.6814292798, 10.318449770799],
+                    [44.680494620774, 10.318449770799],
+                    [44.680494620774, 10.31669709193],
+                ],
+            ),
+            "regobs_hackpen_hill_2003_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.473784060641, -1.826643881513],
+                    [51.473784060641, -1.824193423982],
+                    [51.472925497748, -1.824193423982],
+                    [51.472925497748, -1.826643881513],
+                ],
+            ),
+        }
+        for observation_id, (classification, kind, corners) in legacy_expected.items():
+            observation = observations[observation_id]
+            self.assertEqual(observation["classification"], classification)
+            self.assertEqual(observation["source_registration"]["kind"], kind)
+            self.assertEqual(observation["source_registration"]["control_count"], 0)
+            self.assertEqual(
+                observation["local_display_transform"][
+                    "independent_ground_checkpoint_count"
+                ],
+                0,
+            )
+            self.assertEqual(observation["computed_corners_wgs84_lat_lon"], corners)
+
 
 if __name__ == "__main__":
     unittest.main()

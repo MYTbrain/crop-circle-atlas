@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crop-circle-atlas.example/schemas/imagery-item-v1.schema.json",
+  "title": "Normalized imagery item",
+  "type": "object",
+  "required": ["schema_version", "imagery_item_id", "provider", "collection", "item_id", "acquisition", "geometry", "bbox", "crs", "asset", "rights", "retrieved_at", "source_metadata_sha256", "orthorectified"],
+  "properties": {
+    "schema_version": {"const": "crop-circle-atlas/imagery-item/v1"},
+    "imagery_item_id": {"type": "string", "pattern": "^img_[a-f0-9]{20}$"},
+    "provider": {"type": "string"}, "collection": {"type": "string"}, "item_id": {"type": "string"},
+    "acquisition": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": ["string", "null"]}, "end": {"type": ["string", "null"]}}, "additionalProperties": false},
+    "geometry": {"type": "object"}, "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+    "crs": {"type": "string"}, "ground_sample_distance_m": {"type": ["number", "null"], "exclusiveMinimum": 0}, "source_scale": {"type": ["string", "null"]},
+    "asset": {"type": "object", "required": ["href", "local_reference"], "properties": {"href": {"type": ["string", "null"]}, "local_reference": {"type": ["string", "null"]}, "media_type": {"type": ["string", "null"]}}, "additionalProperties": false},
+    "rights": {"type": "object", "required": ["status", "license", "proof", "public_derivative_export_allowed"], "properties": {"status": {"type": "string"}, "holder": {"type": ["string", "null"]}, "license": {"type": ["string", "null"]}, "proof": {"type": ["string", "null"]}, "public_derivative_export_allowed": {"type": "boolean"}}, "additionalProperties": true},
+    "retrieved_at": {"type": "string", "format": "date-time"}, "source_metadata_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "local_file_sha256": {"type": ["string", "null"], "pattern": "^$|^[a-f0-9]{64}$"}, "orthorectified": {"type": "boolean"}, "provider_metadata": {"type": "object"}
+  },
+  "additionalProperties": false
+}

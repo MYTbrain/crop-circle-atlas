@@ -198,7 +198,11 @@ def validate_registered_overlay(root=ROOT):
         assert local_overlay["source_image_url"] == source["url"]
         assert local_overlay["source_image_sha256"] == source["sha256"]
         assert local_overlay["source_photo_pixels"] == "remote_source_link_only"
-        assert local_overlay["rights_status"] == "not_cleared_for_redistribution"
+        assert local_overlay["rights_status"] in {
+            "not_cleared_for_redistribution",
+            "link_only_google_earth_derived_image_not_cleared_for_embedding",
+            "link_only_google_derived_thumbnail_not_cleared_for_embedding",
+        }
         assert local_overlay["show_by_default"] is False
         assert transform["independent_ground_checkpoint_count"] >= 0
 
@@ -248,10 +252,32 @@ def validate_registered_overlay(root=ROOT):
                 "https://creativecommons.org/licenses/by"
             )
             assert projective_overlay["rights_attribution"]
-        else:
+        elif "earthfiles.com" in projective_overlay["source_image_url"]:
             assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
+            assert (
+                projective_overlay["rights_status"]
+                == "all_rights_reserved_link_only_not_cleared_for_embedding"
+            )
+            assert projective_overlay["embedding_allowed"] is False
+        else:
+            assert projective_overlay["source_photo_pixels"] in {
+                "remote_source_link_only",
+                "remote_source_on_explicit_user_action",
+            }
             assert projective_overlay["rights_status"] == "not_cleared_for_redistribution"
-            assert projective_overlay["embedding_allowed"] is True
+            if projective_overlay["embedding_allowed"] is True:
+                assert (
+                    projective_overlay["source_photo_pixels"]
+                    == "remote_source_on_explicit_user_action"
+                    or projective_overlay["source_image_url"].startswith(
+                        "https://iccra.org/"
+                    )
+                )
+            else:
+                assert (
+                    projective_overlay["source_photo_pixels"]
+                    == "remote_source_link_only"
+                )
         assert projective_overlay["show_by_default"] is False
         left, top, right, bottom = source["pixel_boundary_extent_xy"]
         assert transform["source_frame_corners_xy"] == [

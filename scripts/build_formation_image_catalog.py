@@ -38,7 +38,13 @@ def load_reviewed_us_archive_images() -> list[dict[str, str]]:
     payload = json.loads(REVIEWED_US_ARCHIVE_IMAGES_PATH.read_text(encoding="utf-8"))
     rows: list[dict[str, str]] = []
     for report in payload.get("reports", []):
+        metadata_by_url = {
+            item.get("url", ""): item
+            for item in report.get("source_image_metadata", [])
+            if item.get("url")
+        }
         for image_url in report.get("image_urls", []):
+            metadata = metadata_by_url.get(image_url, {})
             link_id = "rimg_" + hashlib.sha256(image_url.encode("utf-8")).hexdigest()[:20]
             rows.append(
                 {
@@ -52,7 +58,10 @@ def load_reviewed_us_archive_images() -> list[dict[str, str]]:
                     "image_kind": "photograph_or_unspecified",
                     "alt_text": f"Source photograph for {report.get('place', 'U.S. crop-circle report')}",
                     "title_text": report.get("match_basis", ""),
+                    "width": str(metadata.get("width", "")),
+                    "height": str(metadata.get("height", "")),
                     "image_http_status": "200",
+                    "image_sha256": metadata.get("sha256", ""),
                     "rights_status": payload.get(
                         "rights_status", "link_only_archive_images_not_redistributed"
                     ),

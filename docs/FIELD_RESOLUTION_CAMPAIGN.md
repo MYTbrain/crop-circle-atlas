@@ -1,6 +1,6 @@
 # Field-resolution campaign
 
-Evaluated 2026-07-21. This protocol turns locality-level report references into
+Evaluated 2026-07-23. This protocol turns locality-level report references into
 reviewable field-location evidence without presenting an automated geocode as
 the formation site.
 
@@ -11,9 +11,9 @@ after four accepted report-alias merges. Every entity has one location role:
 
 | Location role | Count | Meaning |
 |---|---:|---|
-| Field candidates/sites | 407 | Four corroborated fields, 397 candidate fields, and six registered sites |
-| Locality reference | 3,894 | Approximate place centroid retained for finding the report, not the field |
-| Unresolved | 3,444 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
+| Field candidates/sites | 419 | Four corroborated fields, 409 candidate fields, and six registered sites |
+| Locality reference | 3,886 | Approximate place centroid retained for finding the report, not the field |
+| Unresolved | 3,440 | No coordinate suitable even as a locality reference, or evidence deliberately rejected |
 | Total | 7,745 | Complete location-work index |
 
 These counts describe evidence roles, not completion of 7,745 exact
@@ -23,10 +23,10 @@ field is supported by reviewed evidence; it does not necessarily mean every
 feature boundary or formation center is survey-grade. `candidate_field` is a
 bounded hypothesis. Unresolved records remain unresolved.
 
-The working queue is `data/location_work_queue.csv`. Nineteen reviewed field-level
-decisions are recorded separately in `data/site_resolutions.csv`; 384 more
-candidate points come from explicit publisher map targets and remain
-non-accepted. Review,
+The working queue is `data/location_work_queue.csv`. Fifty-seven reviewed
+field-level decisions are recorded separately in `data/site_resolutions.csv`;
+384 candidate points derive from explicit publisher map targets, with overlap
+where a target was reviewed. Review,
 spatial confidence, and image-publication rights cannot be conflated.
 
 ## Whiskey Hill correction and demonstration case
@@ -224,33 +224,24 @@ visually distinct and excluded from formal alignment statistics.
 
 ## Source-photo display and publication rights
 
-The per-report archive exposes 480 unique ICCRA-linked source images across 266
-formations through 517 formation-image links. A source link is not a
-georegistration. The public site contains no packaged ICCRA photographs, and
-only defensibly registered images receive map footprints. Each source-photo
-overlay is disabled until a user explicitly chooses to show it; the browser
-then requests the rights-restricted image directly from the source host and
-applies the atlas's corner metadata locally. The footprints follow the active
-search, year, and country filters. Twelve reviewed placements are currently
-available: Whiskey Hill/Hubbard 1998 and 2000, Wausau 1997,
-Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005, Wavra Farm 1997,
-both Rockville 2003 reports, Miamisburg 2004, Hopewell/Chillicothe 2012, and
-Albion/Starr 2002. For Hubbard
-2000, `data/registered_overlay_observations.json` makes the approximate display
-geometry reproducible while recording that its 35 m detector-sensitivity
-envelope is not a confidence interval and that it lacks an independent ground
-checkpoint. Mayville and Howell retain provisional source-coordinate display
-geometry; Jupiter retains a coordinate anchor while explicitly leaving image
-orientation unresolved. Wausau registers an ICCRA-linked USGS follow-up frame
-from the contemporaneous road map and persistent scene controls, but remains
-provisional because the formation is not clearly visible and no independent
-checkpoint set has reproduced the transform. The repository does not proxy,
-cache for publication, bundle, or redistribute those pixels. Cross-origin or
-source-host failure remains a visible failure; it is not bypassed.
+The per-report archive exposes 7,956 unique source-image links across 1,929
+formations through 8,109 formation-image relationships. A source link is not a
+georegistration. The public site contains no packaged source photographs, and
+only reviewed placements receive map footprints. The web atlas currently
+contains 59 reviewed image-placement records across 51 unique formation events:
+39 landmark/projective/affine or crop-geometry registrations, one camera-pose
+registration, 13 coordinate/size display placements, and six other
+provisional manual or source-coordinate placements. Twenty-five records may
+load source-hosted pixels only after explicit user action; 34 remain
+footprint/link-only. Every placement is excluded from formal alignment
+statistics unless its separate origin and orientation gates pass. The
+repository does not proxy, cache for publication, bundle, or redistribute
+source pixels. Cross-origin or source-host failure remains a visible failure;
+it is not bypassed.
 
 An opt-in browser display is not permission to republish. The current KML/KMZ
-packages zero source-photo files and carries thirteen disabled provisional
-GroundOverlay URLs to the source host. A packaged GroundOverlay remains excluded
+packages zero source-photo files and carries 25 rights-compatible remote-linked
+GroundOverlay URLs to source hosts. A packaged GroundOverlay remains excluded
 until the specific asset has a verified license or written permission,
 rights-holder attribution, proof reference, permitted use, source URL, hash,
 reviewer, and review date. Official USGS/USDA products also retain item-level

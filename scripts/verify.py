@@ -13,8 +13,10 @@ from xml.etree import ElementTree as ET
 
 try:
     from .verify_registered_overlay import validate_registered_overlay
+    from .validate_legacy_kml_candidate_reviews import validate_reviews as validate_legacy_kml_candidate_reviews
 except ImportError:
     from verify_registered_overlay import validate_registered_overlay
+    from validate_legacy_kml_candidate_reviews import validate_reviews as validate_legacy_kml_candidate_reviews
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,6 +66,15 @@ assertions = rows("source_assertions.csv")
 snapshots = rows("source_snapshots.csv")
 source_catalog = rows("source_catalog.csv")
 summary = json.loads((ROOT / "data" / "build_summary.json").read_text(encoding="utf-8"))
+legacy_kml_candidates = json.loads(
+    (ROOT / "data" / "legacy_kml_candidates.json").read_text(encoding="utf-8")
+)
+legacy_kml_candidate_reviews = json.loads(
+    (ROOT / "data" / "legacy_kml_candidate_reviews.json").read_text(encoding="utf-8")
+)
+assert validate_legacy_kml_candidate_reviews(
+    legacy_kml_candidate_reviews, legacy_kml_candidates
+) == {"candidate_field": 4}
 
 assert len(formations) >= 5_000, len(formations)
 assert len(assertions) >= len(formations), (len(assertions), len(formations))
@@ -71,16 +82,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4302, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4305, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
-    "locality_reference": 3894,
-    "unresolved": 3443,
+    "locality_reference": 3886,
+    "unresolved": 3440,
     "corroborated_field": 4,
-    "candidate_field": 398,
+    "candidate_field": 409,
     "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 20
+assert summary["site_resolutions"]["reviewed_overrides"] == 57
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -219,8 +230,8 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 408
-assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3894
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 419
+assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3886
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
 assert all(feature["properties"]["site_status"] in FIELD_SITE_STATUSES for feature in site_geojson["features"])
@@ -436,7 +447,9 @@ assert set(overlays_by_id) == (
     core_overlay_ids | scene_placement_ids | commons_scene_ids
     | commons_same_flight_ids | commons_reviewed_geometry_ids
 )
-assert len(registered_overlays["overlays"]) >= 9
+assert len(registered_overlays["overlays"]) == 59
+assert len({item["formation_id"] for item in registered_overlays["overlays"]}) == 51
+assert sum(item.get("embedding_allowed") is True for item in registered_overlays["overlays"]) == 25
 assert any(
     formation_by_id[item["formation_id"]]["country_code"] not in {"", "US"}
     for item in registered_overlays["overlays"]
@@ -449,15 +462,16 @@ image_relationships = [
 unique_source_image_urls = {image["image_url"] for _, image in image_relationships}
 catalog_metadata = formation_images["metadata"]
 assert catalog_metadata["schema_version"] == "crop-circle-atlas/formation-images/v2"
-assert catalog_metadata["unique_image_count"] == len(unique_source_image_urls) >= 3000
-assert catalog_metadata["formation_image_link_count"] == len(image_relationships) >= 3100
-assert catalog_metadata["formation_count"] == len(formation_images["images_by_formation"]) >= 1800
-assert catalog_metadata["us_unique_image_count"] >= 479
-assert catalog_metadata["non_us_unique_image_count"] >= 2500
-assert catalog_metadata["unknown_country_unique_image_count"] >= 0
-assert catalog_metadata["unverified_unique_image_link_count"] >= 1
-assert catalog_metadata["rights_gated_unique_image_count"] >= 2500
-assert catalog_metadata["source_link_counts"]["Wikimedia Commons"] >= 11
+assert catalog_metadata["unique_image_count"] == len(unique_source_image_urls) == 7956
+assert catalog_metadata["formation_image_link_count"] == len(image_relationships) == 8109
+assert catalog_metadata["formation_count"] == len(formation_images["images_by_formation"]) == 1929
+assert catalog_metadata["us_unique_image_count"] == 567
+assert catalog_metadata["non_us_unique_image_count"] == 7325
+assert catalog_metadata["unknown_country_unique_image_count"] == 64
+assert catalog_metadata["unverified_unique_image_link_count"] == 7398
+assert catalog_metadata["rights_gated_unique_image_count"] == 7463
+assert catalog_metadata["displayable_unique_image_count"] == 493
+assert catalog_metadata["source_link_counts"]["Wikimedia Commons"] == 13
 assert catalog_metadata["source_link_counts"]["Crop Circle Archives"] == 54
 assert catalog_metadata["overlay_placement_count"] == len(registered_overlays["overlays"])
 source_image_rows = {(row["image_url"], row["sha256"]) for row in iccra_images}
@@ -675,19 +689,26 @@ assert "Export unqualified hypothesis KML" in web_index
 assert 'id="resultsList"' in web_index
 assert "unqualified_manual_hypothesis" in web_app
 assert "Provisional registered axes" in web_app
-assert "Registered aerial-photo footprints" in web_app
+assert "Reviewed image footprints" in web_app
 assert "renderSourceImageGallery" in web_app
 assert "sourceImagesByFormation" in web_app
 assert "sitePointPane" in web_app and "localityPointPane" in web_app
+assert "map.getPane('sourcePhotoPane').style.zIndex = '500'" in web_app
+assert "map.getPane('overlayFootprintPane').style.zIndex = '520'" in web_app
 assert "radius: 6, color: '#ffd84d', weight: 2.5, opacity: 1, dashArray: '3 2'" in web_app
 assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in web_app
-assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
+assert "fillColor: '#ffd84d'" in web_app
+assert "source-photo-cluster-marker" in web_styles
+assert ".map-marker-legend" in web_styles
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
-assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260722.3"' in web_index
-assert 'src="app.js?v=20260722.3"' in web_index
-assert "registered_overlays.json?v=20260722.3" in web_app
-assert "formation_images.json?v=20260722.3" in web_app
+assert "Hollow yellow dots are rough locality references" in web_index
+assert "Source-photo availability only; not a registered image placement." in web_index
+assert 'href="styles.css?v=20260722.7"' in web_index
+assert 'src="app.js?v=20260722.9"' in web_index
+assert "formation_index.json?v=20260722.6" in web_app
+assert "formation_sites.geojson?v=20260722.6" in web_app
+assert "registered_overlays.json?v=20260722.6" in web_app
+assert "formation_images.json?v=20260722.6" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app
@@ -696,8 +717,19 @@ assert "Locality centroids and unresolved reports are excluded" in web_app
 assert "image/tiff" not in georef_html
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 source_register_text = (ROOT / "docs" / "SOURCE_REGISTER.md").read_text(encoding="utf-8")
-for phrase in ("8,391 source assertions", "7,745", "449 new normalized source keys"):
+for phrase in (
+    "8,391 source assertions",
+    "7,745",
+    "419 field candidates/sites",
+    "3,886",
+    "3,440",
+    "7,956",
+    "8,109",
+    "59 reviewed",
+    "449 new normalized source keys",
+):
     assert phrase in readme
+for phrase in ("8,391 source assertions", "7,745", "419 field candidates/sites", "3,886", "3,440", "7,956", "8,109", "449 new normalized source keys"):
     assert phrase in source_register_text
 for needed in (
     "SOURCE_REGISTER.md", "METHODOLOGY.md", "IMAGE_GEOREFERENCING.md", "ICCRA_RECONCILIATION.md",

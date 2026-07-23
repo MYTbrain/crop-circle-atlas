@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crop Circle Orientation Review"
+  short_description: "Measure reviewed straight components as true bearings"
+  default_prompt: "Measure a straight component only after registration and preserve provisional status until explicit promotion."

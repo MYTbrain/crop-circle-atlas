@@ -623,6 +623,4092 @@
       "notes": "The source-hosted image loads only after explicit user action and remains excluded from formal alignment calculations."
     },
     {
+      "overlay_id": "naperville-2002-diehl-road-affine-scene-placement",
+      "registration_observation_id": "regobs_naperville_2002_diehl_road_affine_v1",
+      "formation_id": "cc_24e959df4a14",
+      "assertion_id": "iccra_33ace4c96a8fd62e",
+      "title": "Naperville 2002 Diehl Road field placement",
+      "source_image_url": "https://iccra.org/bystate/Illinois/images/naperville2002.png",
+      "source_page_url": "https://iccra.org/bystate/Illinois/ICCRA%20-%20IL%20-%20Naperville,%20Du%20Page%20County%20(July%2026,%202002).html",
+      "source_image_sha256": "a1d2dac98f9d44c92466650009ee47dd35a16d6a9c6ae08e9a8fb5eecf4bff0c",
+      "corners": [
+        [
+          41.797854166667,
+          -88.127472884478
+        ],
+        [
+          41.797854166667,
+          -88.130075028491
+        ],
+        [
+          41.8015625,
+          -88.131226357788
+        ],
+        [
+          41.8015625,
+          -88.128624213775
+        ]
+      ],
+      "center": [
+        41.8001875,
+        -88.129498388402
+      ],
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "provisional_three_control_affine_parking_field_registration",
+      "display_geometry_status": "four_corner_affine_parking_field_scene_placement",
+      "reference_imagery": "Illinois State Geological Survey IL_CUA_2005 official orthophoto service",
+      "reference_imagery_date": "2005",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The full report, named Diehl Road and Molex property, documented apartment-complex context, field acreage, source photograph, and official 1998 and 2005 Illinois orthophotos identify the former field. Three non-collinear parking/field controls reproduce the source rotation, unequal scale, and shear.",
+      "source_photo_pixels": "remote_source_on_explicit_user_action",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Three-control affine field registration, not a survey georegistration. The correct former field is strongly supported, while the source footprint and transformed formation center retain 75 m provisional uncertainty.",
+      "notes": "The ICCRA-hosted source frame loads only after explicit user action and remains excluded from formal alignment calculations.",
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          310,
+          178
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            -1.343042071197411,
+            -1.0349027386296419,
+            1844.338483488186
+          ],
+          [
+            0.0,
+            -3.3333333333333326,
+            1223.3333333333333
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -88.139,
+          41.795,
+          -88.124,
+          41.8055
+        ],
+        "reference_export_size_px": [
+          2400,
+          1680
+        ],
+        "reference_service_url": "https://data.isgs.illinois.edu/arcgis/rest/services/Imagery/IL_CUA_2005/ImageServer",
+        "reference_export_sha256": "ad57f1a34872f5ff0193611085566669e98e08dead386a2acd1dbdb6fae89a5e",
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      }
+    },
+    {
+      "overlay_id": "paint-creek-island-2003-projective-scene-placement",
+      "registration_observation_id": "regobs_paint_creek_island_2003_projective_v1",
+      "formation_id": "cc_2152af98e2d7",
+      "assertion_id": "iccra_23c2d921613cfda1",
+      "title": "Paint Creek Island 2003 creek-boundary placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/paintcreekisland2003b.jpg",
+      "source_page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Paint%20Creek%20Island,%20Bainbridge,%20Ross%20County%20(September%2025,%202003).htm",
+      "source_image_sha256": "f23f9fd7c0e61be0aa99467c30a7927d58f067dd0d0e76adb690d0b20a58a06a",
+      "corners": [
+        [
+          39.246199453783,
+          -83.243226858559
+        ],
+        [
+          39.24425349399,
+          -83.257676182695
+        ],
+        [
+          39.234159595217,
+          -83.25537503365
+        ],
+        [
+          39.234402726127,
+          -83.24591314421
+        ]
+      ],
+      "center": [
+        39.237992769449,
+        -83.25067993951
+      ],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_four_control_projective_island_field_registration",
+      "display_geometry_status": "four_corner_projective_creek_island_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic and NPS Seip Earthworks control",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The ICCRA report, the 2003 wide aerial, NPS Seip coordinates, current imagery, and the distinctive surviving Paint Creek loop identify one field. Four non-collinear persistent island-boundary controls reproduce the oblique frame with a projective transform.",
+      "source_photo_pixels": "remote_source_on_explicit_user_action",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Four-control creek-island projective placement, not a survey georegistration. The field identity is strongly supported; the footprint and transformed formation center retain 100 m provisional uncertainty.",
+      "notes": "The ICCRA-hosted source frame loads only after explicit user action and remains excluded from formal alignment calculations.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          275,
+          184
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            -0.9150155215890178,
+            3.219587331567757,
+            1247.2837717704074
+          ],
+          [
+            0.576014169104055,
+            4.624452082410236,
+            634.7945683904097
+          ],
+          [
+            0.0005639777823341697,
+            0.0030697109388398524,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -83.29,
+          39.2,
+          -83.2,
+          39.27
+        ],
+        "reference_export_size_px": [
+          2400,
+          1867
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "17739b0ff47c9555a93b93b7daebd05ef9e0d542cd12e2f0678e6447e07aab10",
+        "control_count": 4,
+        "independent_checkpoint_count": 0
+      }
+    },
+    {
+      "overlay_id": "serpent-mound-locust-grove-2003-affine-scene-placement",
+      "registration_observation_id": "regobs_serpent_mound_locust_grove_2003_affine_v1",
+      "formation_id": "cc_7cdb63cfe429",
+      "assertion_id": "iccra_8f83eadb098b0eb6",
+      "title": "Serpent Mound / Locust Grove 2003 road-aligned field placement",
+      "source_image_url": "https://iccra.org/bystate/Ohio/images/locustgrove2003d.jpg",
+      "source_page_url": "https://iccra.org/bystate/Ohio/ICCRA%20-%20Ohio%20-%20Locust%20Grove,%20Adams%20County%20(August%2024,%202003).htm",
+      "source_image_sha256": "47852cd5b193e54c1b714f40a77470765a0a6c0846fc28d26a85692d7f6f64ce",
+      "corners": [
+        [
+          39.023249328063,
+          -83.436575581061
+        ],
+        [
+          39.023249328063,
+          -83.434421207626
+        ],
+        [
+          39.021769809558,
+          -83.434421207626
+        ],
+        [
+          39.021769809558,
+          -83.436575581061
+        ]
+      ],
+      "center": [
+        39.02236,
+        -83.43575
+      ],
+      "coordinate_uncertainty_m": 100,
+      "registration_status": "provisional_road_aligned_affine_field_registration",
+      "display_geometry_status": "four_corner_affine_road_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, ICCRA 2003 mapping aerial, and contemporaneous newspaper location description",
+      "reference_imagery_date": "2003_mapping_aerial_plus_undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The public ICCRA report and case PDF, the 2003 wide aerial, a contemporaneous newspaper location description, the persistent Ohio 73 and Brush Creek geometry, and current imagery identify one field. Two separated road points and the historically mapped formation anchor provide a bounded affine display fit.",
+      "source_photo_pixels": "remote_source_on_explicit_user_action",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": true,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Provisional road-aligned affine placement, not a survey georegistration. The unique field is well supported; the image footprint and formation center retain 100 m uncertainty and remain excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. The ICCRA-hosted source frame loads only after explicit user action and is not packaged by the atlas.",
+      "source_registration": {
+        "kind": "manual_road_aligned_anisotropic_affine_scene_registration",
+        "source_frame_size_px": [
+          274,
+          183
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            0.3774084848174661,
+            0.0,
+            1124.3721090939473
+          ],
+          [
+            0.0,
+            0.3880704275952002,
+            804.0322529646675
+          ]
+        ],
+        "meters_per_source_pixel_xy": [
+          0.68,
+          0.9
+        ],
+        "reference_export_bbox_wgs84": [
+          -83.46,
+          39.005,
+          -83.41,
+          39.04
+        ],
+        "reference_export_size_px": [
+          2400,
+          1680
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "a20003e20c3aca247709af2f4a8568b432af0daa094c5e9ce6a132ad28433577",
+        "control_count": 3,
+        "independent_checkpoint_count": 0
+      }
+    },
+    {
+      "overlay_id": "chesterton-windmill-2018-three-control-affine-scene-placement",
+      "registration_observation_id": "regobs_chesterton_windmill_2018_affine_v1",
+      "formation_id": "cc_a9e3e7e22ed9",
+      "assertion_id": "sx_connector_e5af573c0a4099b1",
+      "title": "Chesterton Windmill 2018 field placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/Chesterton/DJI_0034.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/Chesterton/Chesterton2018a.html",
+      "source_image_sha256": "d865d269d583f0810175815cb6110772f7a317a40052401ccaf7b2cfc5423c8d",
+      "corners": [
+        [
+          52.232527632751,
+          -1.491344827118
+        ],
+        [
+          52.231204774628,
+          -1.490292999878
+        ],
+        [
+          52.230963265381,
+          -1.491118854828
+        ],
+        [
+          52.232286123581,
+          -1.492170681915
+        ]
+      ],
+      "center": [
+        52.23209766,
+        -1.49151189
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_three_control_affine_windmill_field_registration",
+      "display_geometry_status": "four_corner_affine_windmill_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, OpenStreetMap Chesterton Windmill building geometry, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher map target identifies the formation center to 25 m, while the windmill building and its distinctive surrounding grass island persist in current imagery. Three non-collinear controls reproduce the source rotation, scale, and shear and place the complete near-nadir frame over the unique field.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Three-control affine field registration, not a survey georegistration. The unique field and source orientation are strongly supported; the footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_three_control_affine_scene_registration",
+        "source_frame_size_px": [
+          800,
+          306
+        ],
+        "affine_source_xy_to_reference_pixel_xy": [
+          [
+            0.5259135220268677,
+            -1.0795487749864692,
+            862.069152508593
+          ],
+          [
+            0.6614290589484046,
+            0.3156983040065101,
+            348.94689958474606
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.4935,
+          52.2302,
+          -1.4895,
+          52.2334
+        ],
+        "reference_export_size_px": [
+          1600,
+          1280
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ab1485684690a6e53a1b2528e7024e9e188b0a081fe8455909d7dfaff9a0c5b4",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "osm_windmill_way_id": 560090333
+      }
+    },
+    {
+      "overlay_id": "figsbury-ring-2016-four-control-projective-scene-placement",
+      "registration_observation_id": "regobs_figsbury_ring_2016_projective_v1",
+      "formation_id": "cc_d336da75d722",
+      "assertion_id": "sx_connector_11c7258898167fe1",
+      "title": "Figsbury Ring 2016 hillfort-aligned field placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/FigsburyRing/dji_0012_27886236953_o.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/FigsburyRing/FigsburyRing2016a.html",
+      "source_image_sha256": "78dc3128e84dcd066c8a1af3e1d92a6dea96b6cf1f5ec3705a47d9637ca8977e",
+      "corners": [
+        [
+          51.108227175095,
+          -1.736219498444
+        ],
+        [
+          51.110482824097,
+          -1.726352632141
+        ],
+        [
+          51.0994618573,
+          -1.731986998291
+        ],
+        [
+          51.100314035645,
+          -1.735115527649
+        ]
+      ],
+      "center": [
+        51.1012653,
+        -1.73390652
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "provisional_four_control_projective_hillfort_registration",
+      "display_geometry_status": "four_corner_projective_hillfort_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, the persistent Figsbury Ring earthwork, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The exact publisher map target identifies the formation center and the wide source aerial independently contains the complete persistent Figsbury Ring enclosure. Three distributed hillfort controls plus the formation anchor define a projective display fit; a held-out southern earthwork point provides an approximately 37 m residual check.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Four-control projective field registration, not a survey georegistration. The unique field and orientation are strongly supported; the full-frame footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          449
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            0.6599190925528349,
+            1.1738480165554261,
+            178.0501572292081
+          ],
+          [
+            -0.1845849978100323,
+            4.395485049526366,
+            27.482490851372038
+          ],
+          [
+            -0.0004923337053871538,
+            0.003217138971669606,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.738,
+          51.098,
+          -1.716,
+          51.1085
+        ],
+        "reference_export_size_px": [
+          2200,
+          1050
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "170d4456a85526b5e6775e39374aad71f96cdf42369c1e8a6815587b1b663570",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 37.04
+      }
+    },
+    {
+      "overlay_id": "yarnbury-castle-2018-four-control-projective-scene-placement",
+      "registration_observation_id": "regobs_yarnbury_castle_2018_projective_v1",
+      "formation_id": "cc_2d94a3a4b7c6",
+      "assertion_id": "sx_connector_e0b9d35b1c56512b",
+      "title": "Yarnbury Castle 2018 earthwork-aligned field placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/yarnburycastle/DJI_0016.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/yarnburycastle/yarnburycastle2018a.html",
+      "source_image_sha256": "06a27b607d6ac5fd56b9f469b26d59b478f081d28762cbf69e26764b4865f07f",
+      "corners": [
+        [
+          51.163078353628,
+          -1.960798766073
+        ],
+        [
+          51.166305638568,
+          -1.950592130025
+        ],
+        [
+          51.159940030416,
+          -1.942315071615
+        ],
+        [
+          51.157227144368,
+          -1.944816780599
+        ]
+      ],
+      "center": [
+        51.15930113,
+        -1.94419495
+      ],
+      "coordinate_uncertainty_m": 30,
+      "registration_status": "provisional_four_control_projective_castle_field_registration",
+      "display_geometry_status": "four_corner_projective_castle_field_scene_placement",
+      "reference_imagery": "Esri World Imagery current mosaic, the persistent Yarnbury Castle earthwork and A303, and the publisher map target",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The exact publisher map target identifies the formation center and the wide source aerial independently contains Yarnbury Castle and the A303. Three distributed earthwork controls plus the formation anchor define a projective display fit; a held-out southeastern earthwork point has an approximately 13 m residual and the transformed road follows the reference A303.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Four-control projective field registration, not a survey georegistration. The unique field, earthwork, and road orientation are strongly supported; the full-frame footprint remains provisional and excluded from formal alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "manual_four_control_projective_scene_registration",
+        "source_frame_size_px": [
+          800,
+          1139
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            2.0989166231713936,
+            3.6128271168605015,
+            -335.85194281770214
+          ],
+          [
+            -0.545856677409102,
+            1.8269839477079097,
+            290.597561225006
+          ],
+          [
+            0.0006388714791955529,
+            0.001219375836985083,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.958,
+          51.156,
+          -1.938,
+          51.1655
+        ],
+        "reference_export_size_px": [
+          2400,
+          1140
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "aadc8cafe51c81fdef3cebca97a94e1a506bbcd5f2474daafb5342a90467f60d",
+        "control_count": 4,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 13.22
+      }
+    },
+    {
+      "overlay_id": "coneybury-hill-2018-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_coneybury_hill_2018_crop_geometry_v1",
+      "formation_id": "cc_cc0d147903f6",
+      "assertion_id": "sx_connector_be996c99cc0c9df8",
+      "title": "Coneybury Hill 2018 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/coneyburyhill/Nr-Stonehenge-08971897A.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/coneyburyhill/coneyburyhill2018a.html",
+      "source_image_sha256": "b758083a3ee3273b6e4e5a6494ceb4a60ea8182be017f89512398c973113d79a",
+      "corners": [
+        [
+          51.174036960642,
+          -1.810352924986
+        ],
+        [
+          51.174021876911,
+          -1.809166183933
+        ],
+        [
+          51.174530356472,
+          -1.809168877573
+        ],
+        [
+          51.174512956593,
+          -1.810380354783
+        ]
+      ],
+      "center": [
+        51.17425768,
+        -1.80980123
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 40 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and reports an approximately 40 metre diameter. Four visible outer-ring cardinal points define a tight projective crop-geometry rectification around that target. Same-flight wide frames and the paired copses support the selected orientation and unique field, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          501
+        ],
+        "source_geometry_control_pixels": [
+          [
+            382,
+            53
+          ],
+          [
+            575,
+            238
+          ],
+          [
+            390,
+            420
+          ],
+          [
+            191,
+            238
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -0.420260787,
+            -19.67293784
+          ],
+          [
+            19.579739213,
+            0.32706216
+          ],
+          [
+            -0.420260787,
+            20.32706216
+          ],
+          [
+            -20.420260787,
+            0.32706216
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.099998547751,
+            -0.002179804856,
+            -38.504176371
+          ],
+          [
+            0.0,
+            0.104611518821,
+            -24.57047932
+          ],
+          [
+            -7.8975352e-05,
+            -4.1035218e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 40,
+        "orientation_basis": "Same-flight wide aerials place the two persistent copses on the source horizontal axis; the tight frame's tramline direction is consistent with that scene orientation.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -1.825,
+          51.168,
+          -1.795,
+          51.181
+        ],
+        "reference_export_size_px": [
+          2400,
+          1040
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "9ae984128e13f873c9f6414e04b9723e96731f6d6772fba59d0ba8476f2d01e4",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "cley-hill-2016-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_cley_hill_2016_crop_geometry_v1",
+      "formation_id": "cc_bc74394a2b82",
+      "assertion_id": "sx_connector_cfd46b5e25bcc1da",
+      "title": "Cley Hill 2016 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/cleyhill/Cley-Hill17A.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/cleyhill/cleyhill2016a.html",
+      "source_image_sha256": "0b0a6515db2c6f9343ba5bb10e679cbb1924168071a1262401f3e555d50c0dc9",
+      "corners": [
+        [
+          51.199968220006,
+          -2.233573281514
+        ],
+        [
+          51.200493342456,
+          -2.233176963057
+        ],
+        [
+          51.200255651635,
+          -2.232390264405
+        ],
+        [
+          51.199714135643,
+          -2.232895346683
+        ]
+      ],
+      "center": [
+        51.20009406,
+        -2.23304218
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 43 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and reports an approximately 43 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification around that target. Same-flight wide frames, Cley Hill, the field boundary, and the matching tramline direction support the selected field and orientation, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          542
+        ],
+        "source_geometry_control_pixels": [
+          [
+            383,
+            61
+          ],
+          [
+            648,
+            260
+          ],
+          [
+            414,
+            465
+          ],
+          [
+            134,
+            279
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -19.156900173,
+            9.665670535
+          ],
+          [
+            9.415008765,
+            20.064994972
+          ],
+          [
+            19.814333221,
+            -8.506913958
+          ],
+          [
+            -8.757575771,
+            -18.906238417
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.035645043905,
+            0.085906769294,
+            -37.046133106954
+          ],
+          [
+            0.067920648501,
+            -0.046648570228,
+            -14.008508172567
+          ],
+          [
+            -0.00011586857,
+            -0.000130923475,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 43,
+        "orientation_basis": "Same-flight wide aerials resolve the formation field immediately south of Cley Hill. The tight frame's tramline axis is aligned to the matching persistent southeast field direction in the reference mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -2.245,
+          51.193,
+          -2.22,
+          51.207
+        ],
+        "reference_export_size_px": [
+          2000,
+          1120
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "226c04865dbf96390cad285ac1ee2fbd1c8f2e630a98567f49ff02bfdb70849d",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "cocum-farm-2019-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_cocum_farm_2019_crop_geometry_v1",
+      "formation_id": "cc_7bb5775c9841",
+      "assertion_id": "sx_connector_a5171f617d780229",
+      "title": "Cocum Farm 2019 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2019/cocum/cccDJI_00181.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2019/cocum/cocum2019a.html",
+      "source_image_sha256": "5c941a4998c7be3c49eef22079ae949d31f743bc97b2b0339dcfb17c078d4e55",
+      "corners": [
+        [
+          51.15792433299,
+          -1.3750002334
+        ],
+        [
+          51.157922012589,
+          -1.373186960089
+        ],
+        [
+          51.157288174792,
+          -1.373335338319
+        ],
+        [
+          51.157294534927,
+          -1.374854113347
+        ]
+      ],
+      "center": [
+        51.15756935,
+        -1.37409738
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 61 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and reports an approximately 61 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification. Same-flight wide frames and the persistent tree avenue, hedge junction, road, and farm context identify the field and yaw quadrant, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          500
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            48
+          ],
+          [
+            611,
+            250
+          ],
+          [
+            400,
+            488
+          ],
+          [
+            188,
+            252
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.0,
+            31.47420456
+          ],
+          [
+            30.5,
+            0.97420456
+          ],
+          [
+            0.0,
+            -29.52579544
+          ],
+          [
+            -30.5,
+            0.97420456
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.157588015487,
+            0.0,
+            -63.035206194757
+          ],
+          [
+            -0.000730729948,
+            -0.152032614025,
+            39.516706397462
+          ],
+          [
+            -1.0388765e-05,
+            0.000386186373,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 61,
+        "orientation_basis": "The same-flight wide aerial places the long Cocum Farm tree avenue directly north of the formation and preserves the tight frame's star and tramline orientation, fixing image-up approximately to true north.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -1.382,
+          51.151,
+          -1.366,
+          51.164
+        ],
+        "reference_export_size_px": [
+          2000,
+          1300
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "1821d4b7480e528eb8e6bfe2c9b6b227b16e63ca24d54d3f973cb434912994fb",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "kitts-lane-2021-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_kitts_lane_2021_crop_geometry_v1",
+      "formation_id": "cc_f4ba8898dbdb",
+      "assertion_id": "sx_connector_836bd92883d53e12",
+      "title": "Kitt's Lane 2021 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2021/kitts/DJI_0868.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2021/kitts/kitts2021a.html",
+      "source_image_sha256": "fff8ee64c186f821d84550cfa5da04678dac1d5a9a3d3f4de4bf5128e3015dc5",
+      "corners": [
+        [
+          51.035457115378,
+          -1.092215755084
+        ],
+        [
+          51.035975042852,
+          -1.092017873617
+        ],
+        [
+          51.035850970725,
+          -1.091198098595
+        ],
+        [
+          51.035335116711,
+          -1.091410179243
+        ]
+      ],
+      "center": [
+        51.03565262,
+        -1.09171343
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher BNG Streetmap target, documented 55 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a BNG target with 25 metre atlas uncertainty and reports an approximately 55 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification. Same-flight wide frames and persistent woodland, buildings, hedges, and field corners identify the field and yaw quadrant, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            22
+          ],
+          [
+            770,
+            398
+          ],
+          [
+            399,
+            774
+          ],
+          [
+            28,
+            398
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -26.647266948,
+            6.796699569
+          ],
+          [
+            6.688717269,
+            26.826979682
+          ],
+          [
+            26.718997395,
+            -6.509004547
+          ],
+          [
+            -6.616986844,
+            -26.539284662
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.017775617449,
+            0.070486341067,
+            -35.163810724445
+          ],
+          [
+            0.071294107526,
+            -0.016970021317,
+            -21.763574526239
+          ],
+          [
+            -2.1606434e-05,
+            -1.72393e-07,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide aerials match the woodland block, Kitt's Lane building cluster, hedgerows, and field corners; the near-nadir frame is rotated so image-up points approximately west-northwest toward that woodland context.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -1.1,
+          51.03,
+          -1.083,
+          51.042
+        ],
+        "reference_export_size_px": [
+          2000,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "9c1c593f37ade1f1513ea44f10db4cf7e6e4634a1a36b7fa365452d337290141",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "clear-wood-2019-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_clear_wood_2019_crop_geometry_v1",
+      "formation_id": "cc_8a8b76a546d2",
+      "assertion_id": "sx_connector_0d6cb0d94deaacd9",
+      "title": "Clear Wood 2019 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2019/clearwood/cccDJI_00061.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2019/clearwood/clearwood2019a.html",
+      "source_image_sha256": "975be2661a0ea65bca42c0a26da7b89dda08dd1f184422719ac4721a2b1e9cc7",
+      "corners": [
+        [
+          51.22699586436,
+          -2.226405601994
+        ],
+        [
+          51.22699586436,
+          -2.224452118006
+        ],
+        [
+          51.226368050922,
+          -2.224488572922
+        ],
+        [
+          51.226368050922,
+          -2.226369147078
+        ]
+      ],
+      "center": [
+        51.22663516,
+        -2.22542886
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 55 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and reports an approximately 55 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification. Same-flight wide frames and the persistent road, field boundaries, woodland edge, and Cley Hill context identify the field and yaw quadrant, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          506
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            82
+          ],
+          [
+            565,
+            279
+          ],
+          [
+            400,
+            482
+          ],
+          [
+            235,
+            279
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.0,
+            28.462211337
+          ],
+          [
+            27.5,
+            0.962211337
+          ],
+          [
+            0.0,
+            -26.537788663
+          ],
+          [
+            -27.5,
+            0.962211337
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.170229521037,
+            0.0,
+            -68.091808414636
+          ],
+          [
+            0.0,
+            -0.140397235684,
+            40.153609405762
+          ],
+          [
+            0.0,
+            7.6620524e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide aerials resolve the road, Clear Wood, field corners, and Cley Hill context. The selected frame's bubble axis points toward the road side of the field, fixing image-up approximately north within the stated uncertainty.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -2.234,
+          51.22,
+          -2.217,
+          51.233
+        ],
+        "reference_export_size_px": [
+          2000,
+          1300
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "5bfac2c5e81da87f6404806ea9d5e2f2bb3406cbc4b5df4932883c7c3a23ad9b",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "etchilhampton-2016-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_etchilhampton_2016_crop_geometry_v1",
+      "formation_id": "cc_270dae67472f",
+      "assertion_id": "sx_connector_47064648735c3fd0",
+      "title": "Etchilhampton 2016 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/Etchilhampton/G0037570bbb.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/Etchilhampton/Etchilhampton2016a.html",
+      "source_image_sha256": "80ac2a8604a889d8dd60b4969e6dbdc5fae2be2e33edaa2490ba1993a9abea00",
+      "corners": [
+        [
+          51.342517852783,
+          -1.942266702652
+        ],
+        [
+          51.3427734375,
+          -1.942223668098
+        ],
+        [
+          51.342746734619,
+          -1.941848278046
+        ],
+        [
+          51.342491149902,
+          -1.94189119339
+        ]
+      ],
+      "center": [
+        51.34262593,
+        -1.94206422
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG Streetmap target, reported 24 metre parenthetical diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a BNG map target with 25 metre atlas uncertainty and reports c.89 feet (24m). Four visible outer-ring cardinal controls define a coordinate-, size-, and orientation-constrained crop-geometry placement around that target. The same-flight wide frame and persistent field outline, village, roads, hedges, and matching crop-row direction identify the field and yaw quadrant, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          735
+        ],
+        "source_geometry_control_pixels": [
+          [
+            375,
+            21
+          ],
+          [
+            711,
+            357
+          ],
+          [
+            375,
+            693
+          ],
+          [
+            39,
+            357
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -11.934262276,
+            1.254341602
+          ],
+          [
+            1.254341602,
+            11.934262276
+          ],
+          [
+            11.934262276,
+            -1.254341602
+          ],
+          [
+            -1.254341602,
+            -11.934262276
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.003733159531,
+            0.035518637725,
+            -14.080088491951
+          ],
+          [
+            0.035518637725,
+            -0.003733159531,
+            -11.986751194511
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 24,
+        "orientation_basis": "The same-flight wide aerial matches the uniquely shaped field west of Etchilhampton village, the eastern road, northern hedge, and adjoining fields. Its crop-row direction transfers the near-nadir frame so image-up points approximately west-northwest.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -1.95,
+          51.337,
+          -1.934,
+          51.349
+        ],
+        "reference_export_size_px": [
+          2000,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "707d2e1c5d6c0b9d92bd7ea4ed546eaed56681f526927e35233185b5361aa273",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "ridgeway-hackpen-2020-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_ridgeway_hackpen_2020_crop_geometry_v1",
+      "formation_id": "cc_e1045cdcfe11",
+      "assertion_id": "sx_connector_ed1f6ca856336949",
+      "title": "The Ridgeway / Hackpen White Horse 2020 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/ridgeway/DJI_0027.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2020/ridgeway/ridgeway2020a.html",
+      "source_image_sha256": "fd8db468b038be67fe013b0f24f060611edc97d427d4c2e17427a8bc4d95b60f",
+      "corners": [
+        [
+          51.475411852701,
+          -1.812958451267
+        ],
+        [
+          51.475798860727,
+          -1.812866697972
+        ],
+        [
+          51.475744141168,
+          -1.812271753382
+        ],
+        [
+          51.475357133153,
+          -1.812363506627
+        ]
+      ],
+      "center": [
+        51.47557557,
+        -1.8126129
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 33.5 metre diameter, same-flight landmark panorama, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a ten-digit BNG target and reports c.110 feet (33.5m). Four visible outer-circle controls define a crop-geometry rectification around that target. The tight frame is linked to a same-flight landmark panorama by 511 SIFT/RANSAC inliers with 0.75 pixel median and 1.88 pixel p95 residual, while the panorama matches the oval copse, track, road loop, pasture, and parcel edges. Those data establish the field and yaw quadrant, but the four scale controls remain formation geometry rather than independent persistent ground checkpoints.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          766
+        ],
+        "source_geometry_control_pixels": [
+          [
+            699.8991,
+            341.5503
+          ],
+          [
+            440.4497,
+            690.8991
+          ],
+          [
+            91.1009,
+            431.4497
+          ],
+          [
+            350.5503,
+            82.1009
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.0,
+            16.75
+          ],
+          [
+            16.75,
+            0.0
+          ],
+          [
+            0.0,
+            -16.75
+          ],
+          [
+            -16.75,
+            0.0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.00795219456745,
+            0.0538521693642,
+            -23.9589564714
+          ],
+          [
+            0.0538521693642,
+            -0.00795219456745,
+            -18.2250097225
+          ],
+          [
+            1.00433e-10,
+            5.3852e-11,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 33.5,
+        "orientation_basis": "A same-flight panorama transfers the tight-frame tramline axis through 511 robust local-feature inliers and matches the oval copse, Ridgeway track, road loop, white-horse pasture, and parcel edges. The resulting undirected field axis is approximately 23.5 degrees true.",
+        "orientation_uncertainty_deg": 10,
+        "reference_export_bbox_wgs84": [
+          -1.822,
+          51.4675,
+          -1.802,
+          51.4835
+        ],
+        "reference_export_size_px": [
+          2000,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "00973b6f61a1eb7c68f00586b22067be81a6591297d9f1f748924ea46f249774",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "roundway-hill-2021-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_roundway_hill_2021_crop_geometry_v1",
+      "formation_id": "cc_a24651bbc437",
+      "assertion_id": "sx_connector_664db93891caf5ec",
+      "title": "Roundway Hill 2021 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2021/roundway/DJI_0750.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2021/roundway/roundway2021a.html",
+      "source_image_sha256": "6161b997968a783de9d5c9e27c4cb7c30b55fdb689bd82d1652da27179efeccc",
+      "corners": [
+        [
+          51.381660902622,
+          -1.988012059279
+        ],
+        [
+          51.381722477012,
+          -1.987207965979
+        ],
+        [
+          51.381196320451,
+          -1.987079184754
+        ],
+        [
+          51.381134199586,
+          -1.98788914496
+        ]
+      ],
+      "center": [
+        51.38143857,
+        -1.98755052
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 49 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a BNG target with 25 metre atlas uncertainty and reports c.160 feet (49m). Four visible outer-circle controls define a projective crop-geometry rectification around that target. Same-flight wide frames reproduce the distinctive field network and southwest field corner and constrain the row axis, but no single source frame supplies four distributed persistent projective controls or three independent affine controls.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            408,
+            54
+          ],
+          [
+            746,
+            386
+          ],
+          [
+            390,
+            716
+          ],
+          [
+            52,
+            386
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -2.985798836,
+            24.317380905
+          ],
+          [
+            24.317380905,
+            2.985798836
+          ],
+          [
+            2.985798836,
+            -24.317380905
+          ],
+          [
+            -24.317380905,
+            -2.985798836
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.06983930835,
+            0.010888735448,
+            -32.0670369607
+          ],
+          [
+            0.00857518881,
+            -0.072982732162,
+            24.750067441671
+          ],
+          [
+            2.25044e-07,
+            -9.090093e-06,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 49,
+        "orientation_basis": "Same-flight wide aerials reproduce the distinctive field network and southwest field corner. The selected frame's nearly horizontal tramlines transfer to an approximately 83-degree true undirected row axis in the north-up reference mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -1.99755052,
+          51.37643857,
+          -1.97755052,
+          51.38643857
+        ],
+        "reference_export_size_px": [
+          1600,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ac6067ae458289b3a36fdf903ba0710957411a20320e881de32149fc1dc22a20",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "ansty-2016-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_ansty_2016_crop_geometry_v1",
+      "formation_id": "cc_d165b4ccc092",
+      "assertion_id": "sx_connector_071c26f0ddb27422",
+      "title": "Ansty 2016 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/Ansty/1.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/Ansty/Ansty2016a.html",
+      "source_image_sha256": "d5df6d9d2d761c1f83361e91a8ed2a11a3095074107bab7387c9cdbbb75adf5b",
+      "corners": [
+        [
+          51.031029483207,
+          -2.07304852716
+        ],
+        [
+          51.029824453923,
+          -2.067484029774
+        ],
+        [
+          51.02719970932,
+          -2.068921037307
+        ],
+        [
+          51.028404738741,
+          -2.074485534801
+        ]
+      ],
+      "center": [
+        51.02904196,
+        -2.07130464
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, Temporary Temples approximate 450-foot diameter, source aerial landmarks, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies BNG E=395096 N=125522 with 25 metre atlas uncertainty. Temporary Temples reports an approximately 450-foot diameter. Four visible outer-circle controls define the crop-geometry placement around the publisher target. The source and reference scenes reproduce the nursery, road and compound, field boundaries, and isolated shed; the shed contributes to the orientation choice and therefore is not an independent checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          600
+        ],
+        "source_geometry_control_pixels": [
+          [
+            364,
+            196
+          ],
+          [
+            497,
+            329
+          ],
+          [
+            364,
+            462
+          ],
+          [
+            231,
+            329
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            22.301418304,
+            64.76802063
+          ],
+          [
+            64.76802063,
+            -22.301418304
+          ],
+          [
+            -22.301418304,
+            -64.76802063
+          ],
+          [
+            -64.76802063,
+            22.301418304
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.486977598721,
+            -0.167679836876,
+            -122.093179602372
+          ],
+          [
+            -0.167679836876,
+            -0.486977598721,
+            221.251090601871
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 137,
+        "orientation_basis": "The source-to-reference vectors from the formation center to the persistent isolated southeastern shed, together with the nursery, road, compound, and field boundaries, orient image-up approximately 19 degrees east of true north.",
+        "orientation_uncertainty_deg": 10,
+        "reference_export_bbox_wgs84": [
+          -2.078,
+          51.025,
+          -2.065,
+          51.033
+        ],
+        "reference_export_size_px": [
+          1800,
+          1108
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "03d84818811fc12d56b8be3f785772b41590d8b99cd4c484ec59e8ac91801c1a",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "ranscomb-bottom-2016-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_ranscomb_bottom_2016_crop_geometry_v1",
+      "formation_id": "cc_d6b8ded1f85e",
+      "assertion_id": "sx_connector_dac716065fa63dce",
+      "title": "Ranscomb Bottom 2016 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/RanscombBottom/Cherhill-&-Wroughton68.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/RanscombBottom/RanscombBottom2016.html",
+      "source_image_sha256": "4124fa7c287aed54451d1699963fb30b5b28350c6a76a3f4bf782e25f70dd53c",
+      "corners": [
+        [
+          51.414611250599,
+          -1.946983462469
+        ],
+        [
+          51.414903708758,
+          -1.942260335416
+        ],
+        [
+          51.412999097441,
+          -1.941934016703
+        ],
+        [
+          51.412570249188,
+          -1.946637492856
+        ]
+      ],
+      "center": [
+        51.41377796,
+        -1.94430415
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, reported 177 metre overall size, wider source aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies BNG E=403970 N=168308 with 25 metre atlas uncertainty and reports c.580 feet (177m) overall. Four formation-extremity points constrain display scale and skew around that target. Wider frames independently identify the hook-shaped field and surrounding landscape and support the approximate undirected field-row axis, but the tight frame contains no independently identifiable persistent geographic controls.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          605
+        ],
+        "source_geometry_control_pixels": [
+          [
+            408,
+            61
+          ],
+          [
+            631,
+            304
+          ],
+          [
+            415,
+            547
+          ],
+          [
+            200,
+            304
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -10.78543663,
+            87.840332031
+          ],
+          [
+            87.840332031,
+            10.78543663
+          ],
+          [
+            10.78543663,
+            -87.840332031
+          ],
+          [
+            -87.840332031,
+            -10.78543663
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.422575477782,
+            0.039911569865,
+            -186.022926347555
+          ],
+          [
+            0.051885744613,
+            -0.37537136237,
+            92.761910239068
+          ],
+          [
+            8.9294155e-05,
+            -1.28613e-06,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 177,
+        "orientation_basis": "Wider aerials identify the unique hook-shaped field. The tight frame's tramlines are aligned to the approximate undirected row axis visible in the current reference field; image-up is estimated about 7 degrees west of true north.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -1.952,
+          51.408,
+          -1.936,
+          51.42
+        ],
+        "reference_export_size_px": [
+          1800,
+          1350
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "31d8de793485d3b5ed4ff1ed0f5962cb568866531caaee51b99b370fe7e04ab8",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "darfield-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_darfield_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_d777276e6710",
+      "assertion_id": "a_47e1c2de56b8fa",
+      "title": "Darfield 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200202-cat-hill-darfield-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "6da12427612e6949683d713a851a42dcd2bee8d716cb15bb1a8d12acca477ed3",
+      "corners": [
+        [
+          53.532226751785,
+          -1.358078415213
+        ],
+        [
+          53.532226751785,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.358078415213
+        ]
+      ],
+      "center": [
+        53.531784,
+        -1.356884
+      ],
+      "coordinate_uncertainty_m": 50,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "Two user-supplied legacy KML points, Crop Circle Research Archive historical Google Earth frame, the matching 2002 catalog diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The formation identity is fixed by the unique 2002 diagram match. The measured source-frame scale bar and publisher-stated north-up orientation constrain the display footprint around the northern legacy point, whose approximately 85 metre road offset matches the source frame better than the southern point. The coordinate conflict is retained as 50 metre uncertainty and no persistent geographic checkpoint independently validates the full-frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source link only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798.2,
+          497.8
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "meters_per_pixel": 0.09900990099009901,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 303,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 46.543,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "hexton-barton-hills-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_96878ba19702",
+      "assertion_id": "a_17cee0fec5cd40",
+      "title": "Barton Hills near Hexton 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enhe200202-west-of-telegraph-hill-hexton-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "be35cfff95a8b909c5cd529df2021fc10ed41160a242c8d1d0212cd03c5002ab",
+      "corners": [
+        [
+          51.94641024513,
+          -0.392701146675
+        ],
+        [
+          51.94641024513,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.392701146675
+        ]
+      ],
+      "center": [
+        51.94603793928447,
+        -0.3915778131514003
+      ],
+      "coordinate_uncertainty_m": 30,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, the matching Barton Hills source photograph, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The legacy point, matching case photograph, historical frame, measured scale bar, and publisher-stated north-up constrain a display footprint. The event-level date disagreement is retained and no persistent landmark independently validates the frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          889,
+          478
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "meters_per_pixel": 0.08670520231213873,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 346,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "waden-hill-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_waden_hill_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_9275734c8913",
+      "assertion_id": "a_01386791543ff7",
+      "title": "Waden Hill 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enwi200206-waden-hill-avebury-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "65d1a3725f6d0df19554060a6c11575b982133bb3e6cddfd80b037f6743cf13a",
+      "corners": [
+        [
+          51.425019054448,
+          -1.856643925105
+        ],
+        [
+          51.425019054448,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.856643925105
+        ]
+      ],
+      "center": [
+        51.42454302630362,
+        -1.855548044334824
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point and description, Crop Circle Research Archive historical Google Earth frame, COMBINED catalog diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The event crosswalk is fixed by the legacy description, catalog diagram, and archive event code. The legacy coordinate, measured scale bar, and publisher-stated north-up constrain a display footprint, but no persistent landmark independently validates its corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source link only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          890,
+          620
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "meters_per_pixel": 0.08547008547008547,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 351,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "panocchia-2004-legacy-coordinate-reported-size-north-up-placement",
+      "registration_observation_id": "regobs_panocchia_2004_legacy_coordinate_reported_size_v1",
+      "formation_id": "cc_69e673eaab9f",
+      "assertion_id": "a_49666c3b359617",
+      "title": "Panocchia 2004 legacy-coordinate and reported-size placement",
+      "source_image_url": "https://www.googlesightseeing.com/wp-content/images/ggssalex059-attr.jpg",
+      "source_page_url": "https://www.googlesightseeing.com/2006/02/alien-crop-circles/",
+      "source_image_sha256": "989cdf3ecd98dfdac5da2dbed4d0258a12202a30d7c0dee9c13029e8e3317c2f",
+      "corners": [
+        [
+          44.6814292798,
+          10.31669709193
+        ],
+        [
+          44.6814292798,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.31669709193
+        ]
+      ],
+      "center": [
+        44.680997,
+        10.317557
+      ],
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "coordinate_size_north_up_provisional",
+      "display_geometry_status": "legacy_coordinate_reported_size_orientation_constrained_display_placement",
+      "reference_imagery": "Two user-supplied legacy KML points, Google Sightseeing historical Google Maps thumbnail and map URL, corroborating 2004 reports and diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The event identity is fixed by the three-circle design and corroborating 2004 reports. The source map URL repeats the preferred coordinate, while the 71.735 metre conflicting KML point remains separate and sets the uncertainty. Reported circle size and north-up source presentation constrain only a provisional display footprint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_derived_thumbnail_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, reported-size-, and source-presentation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_north_up_provisional. The Google-derived thumbnail is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_reported_size_north_up_display_placement",
+        "source_frame_size_px": [
+          160,
+          120
+        ],
+        "source_anchor_pixel_xy": [
+          78.5,
+          55.5
+        ],
+        "anchor_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "meters_per_pixel": 0.8670520231,
+        "reported_circle_diameter_m": 20,
+        "detected_circle_mean_diameter_px": 23.07,
+        "north_up_basis": "Historical Google Maps source presentation and linked map view",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 71.735,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "dodworth-st-john-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_dodworth_st_john_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_6f84d7030b21",
+      "assertion_id": "a_e5234d9526456b",
+      "title": "St John the Baptist Church near Dodworth 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200201-dodworth-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "764a884c34f9f46cc92c6dbe20990b271726e5e81fc59998a50ea07cbb54fc87",
+      "corners": [
+        [
+          53.542131113279,
+          -1.536875940351
+        ],
+        [
+          53.542131113279,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.536875940351
+        ]
+      ],
+      "center": [
+        53.54173168563158,
+        -1.535798850627117
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, matching corn550 ground photograph, and COMBINED catalog diagram",
+      "reference_imagery_date": "historical_source_date_unspecified",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The legacy point and three mutually consistent event-identity sources fix the event crosswalk. The measured scale bar and publisher-stated north-up constrain a display footprint, while the date conflict is retained and no persistent landmark independently validates the frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798,
+          498
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "meters_per_pixel": 0.08928571428571429,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 336,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "hackpen-hill-2003-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_hackpen_hill_2003_legacy_coordinate_scale_v1",
+      "formation_id": "cc_ff64c3c47cb1",
+      "assertion_id": "a_66cc69a8c83a5a",
+      "title": "Hackpen Hill 2003 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200321-hackpen-hill-broad-hinton-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "c06d03f31cb22359860f671d9f1e78a3d88f6bd52cf957e83c7439ffb1e6dbba",
+      "corners": [
+        [
+          51.473784060641,
+          -1.826643881513
+        ],
+        [
+          51.473784060641,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.826643881513
+        ]
+      ],
+      "center": [
+        51.47345414989942,
+        -1.825380364348547
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, matching corn664 aerial photograph, and COMBINED catalog diagram",
+      "reference_imagery_date": "historical_source_date_unspecified",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The design-specific source aerial, catalog diagram, archive code, and ghost fix the event identity. The legacy coordinate, measured scale bar, and publisher-stated north-up constrain a display footprint, but no persistent landmark independently validates its corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame and linked aerial are not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          990,
+          415
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "meters_per_pixel": 0.08849557522123894,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 339,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "huntingburg-2006-seven-control-airport-scene-placement",
+      "registration_observation_id": "regobs_huntingburg_2006_projective_v1",
+      "formation_id": "cc_cee3a40aace5",
+      "assertion_id": "iccra_09b17f954c31afbe",
+      "title": "Huntingburg 2006 airport-grove field placement",
+      "source_image_url": "https://www.earthfiles.com/wp-content/uploads/2017/09/HuntingburgAirportCircleAerial.jpg",
+      "source_page_url": "https://www.earthfiles.com/2006/07/07/anomalies-in-huntingburg-indiana-wheat-pictogram/",
+      "source_image_sha256": "709b59aa26688ca61531ccf28487797cbbde655578a1687bf4160117071c2fcc",
+      "corners": [
+        [
+          38.261665398097,
+          -86.955336622725
+        ],
+        [
+          38.248000323373,
+          -86.962611548512
+        ],
+        [
+          38.244183096354,
+          -86.961394185933
+        ],
+        [
+          38.241522544085,
+          -86.956012418811
+        ]
+      ],
+      "center": [
+        38.244933468366,
+        -86.961260605935
+      ],
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_seven_control_projective_airport_registration",
+      "display_geometry_status": "seven_control_projective_airport_grove_field_scene_placement",
+      "reference_imagery": "Indiana Geographic Information Office 2005 Orthophotography",
+      "reference_imagery_date": "2005-03_to_2005-04_leaf_off",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The field is uniquely identified by four persistent scene classes visible together in the source and official near-contemporaneous orthophoto: runway, hangars, access road, and grove. Seven controls produce a visually coherent projective fit and the held-out airport checkpoint residual is 32.35 metres.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "all_rights_reserved_link_only_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image field identification with a provisional seven-control projective display fit. It is excluded from formal alignment calculations and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Earthfiles retains all source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "manual_seven_control_projective_scene_registration",
+        "source_frame_size_px": [
+          432,
+          320
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            1.2327106653795525,
+            4.019917723613196,
+            927.6842183637397
+          ],
+          [
+            7.655092179628557,
+            10.750494237853518,
+            -909.6845267557769
+          ],
+          [
+            0.012426813872755597,
+            0.00489408716271219,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -86.965,
+          38.235,
+          -86.94,
+          38.252
+        ],
+        "reference_export_size_px": [
+          2400,
+          1600
+        ],
+        "reference_service_url": "https://di-ingov.img.arcgis.com/arcgis/rest/services/DynamicWebMercator/Indiana_2005_Imagery/ImageServer",
+        "reference_export_sha256": "9898bd769de8949c4058333addd4d444ad350f36b9b0d338608c4716514c65cf",
+        "control_count": 7,
+        "control_fit_rmse_m": 39.21,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 32.35,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "the-belt-2015-eight-control-field-scene-placement",
+      "registration_observation_id": "regobs_the_belt_20150721_projective_v1",
+      "formation_id": "cc_a0ad8bfbb86e",
+      "assertion_id": "sx_connector_850cb5b01d9512a2",
+      "title": "The Belt 2015 road-and-woodland field placement",
+      "source_image_url": "https://cropcircleconnector.com/2015/TheBelt/2.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2015/TheBelt/TheBelt2015a.html",
+      "source_image_sha256": "d975cc148530916fbd26b717607b9d4af6cde4ea3f825dd86cc6a3f3b7c24ce8",
+      "corners": [
+        [
+          51.722998693394,
+          -1.793704073296
+        ],
+        [
+          51.723009112782,
+          -1.799259390068
+        ],
+        [
+          51.716108307271,
+          -1.794443674584
+        ],
+        [
+          51.717593068318,
+          -1.79051619793
+        ]
+      ],
+      "center": [
+        51.718503885579,
+        -1.793236217156
+      ],
+      "coordinate_uncertainty_m": 110,
+      "registration_status": "provisional_eight_control_projective_field_boundary_registration",
+      "display_geometry_status": "eight_control_projective_lane_woodland_field_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher coordinate and four persistent scene classes identify one field. Eight boundary controls produce a coherent, non-folded display transform with 20.84 metre control-fit RMSE; this fit residual is not an independent accuracy result.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image field identification with a provisional eight-control projective display fit. It is excluded from formal alignment calculations and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "manual_eight_control_projective_field_boundary_registration",
+        "source_frame_size_px": [
+          800,
+          460
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            -1.218335355187635,
+            1.6893552900083852,
+            547.4493135900116
+          ],
+          [
+            0.0371366935819405,
+            2.593905594916243,
+            -129.2926770319644
+          ],
+          [
+            -0.000302500978307075,
+            0.0002559629541384622,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.79644132,
+          51.71635223,
+          -1.79044132,
+          51.72235223
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "2587f30070410ca62a955b000fd22fb406dd7222bb83eb5f8804acc5a6e4d7a7",
+        "control_count": 8,
+        "control_fit_rmse_m": 20.84,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "mixon-2018-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_mixon_20180810_crop_geometry_v1",
+      "formation_id": "cc_0fde23307e29",
+      "assertion_id": "sx_connector_5f0ccbcc084e93bf",
+      "title": "Mixon 2018 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/mixon/DJI_0107.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/mixon/mixon2018a.html",
+      "source_image_sha256": "bfa1bc8a18a0bae8d0e9b6a54d692712e3e7b8ec0c6b627235c85d6504f91f95",
+      "corners": [
+        [
+          51.343665707339,
+          -1.941671734028
+        ],
+        [
+          51.342929502505,
+          -1.941101779194
+        ],
+        [
+          51.34171803644,
+          -1.941910016499
+        ],
+        [
+          51.344030529727,
+          -1.943729929219
+        ]
+      ],
+      "center": [
+        51.34316531,
+        -1.94181948
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, reported 91.5 metre overall size, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a ten-digit BNG target and reports a 300-foot (91.5 metre) overall size. Four visible formation extremities constrain the display footprint around that target. Same-flight wide frames identify the target field and approximate undirected row axis through the village edge, hedges, road junction, and field outline, but no persistent ground point independently validates the tight-frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration or real-world accuracy benchmark. It remains excluded from formal alignment calculations and cannot become accepted without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          449
+        ],
+        "source_geometry_control_pixels": [
+          [
+            398,
+            48
+          ],
+          [
+            604,
+            324
+          ],
+          [
+            400,
+            428
+          ],
+          [
+            196,
+            324
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            26.430065155029,
+            13.075929641724
+          ],
+          [
+            5.365716934204,
+            -48.099376678467
+          ],
+          [
+            -55.809589385986,
+            -27.035028457642
+          ],
+          [
+            -34.745239257812,
+            34.140277862549
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.049920351569,
+            -0.116350988261,
+            10.283116567474
+          ],
+          [
+            -0.1026001474,
+            -0.056362213771,
+            55.694234112542
+          ],
+          [
+            6.691867e-06,
+            -0.001524375936,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 91.5,
+        "orientation_basis": "Same-flight wide aerials reproduce the large field west of Mixon village, the village-edge hedges, road junction, and surrounding parcel geometry. The tight frame's horizontal tramlines are aligned to the approximately 154-degree true undirected row axis estimated from that context and the current reference field.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -1.94981948,
+          51.33516531,
+          -1.93381948,
+          51.35116531
+        ],
+        "reference_export_size_px": [
+          1600,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "58e6a8739bdff33f5600152a146ee49a81f12215043eaafd39632adddb4036cf",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "lions-gate-2024-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_lions_gate_20240808_crop_geometry_v1",
+      "formation_id": "cc_38d9441f0182",
+      "assertion_id": "sx_connector_b16220557fdb24bc",
+      "title": "Lion's Gate / Etchilhampton Hill 2024 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2024/lionsgate/DJI_20240808152415_0023_D.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2024/lionsgate/lionsgate2024a.html",
+      "source_image_sha256": "9ba0ffd6b5560ec66e97aa5d7d2059c11edeaad53181f83613e016aba1741082",
+      "corners": [
+        [
+          51.342754234653,
+          -1.96218182874
+        ],
+        [
+          51.343368626743,
+          -1.962325015996
+        ],
+        [
+          51.343176300083,
+          -1.961353006108
+        ],
+        [
+          51.342607147861,
+          -1.961205018438
+        ]
+      ],
+      "center": [
+        51.342975652898,
+        -1.96174702286
+      ],
+      "coordinate_uncertainty_m": 135,
+      "registration_status": "coordinate_size_geometry_provisional_with_publisher_target_conflict",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Two independent publisher BNG targets, Temporary Temples reported size, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "Two precise publisher map targets resolve one narrow field, while the same-flight wide aerial identifies the surrounding field boundaries and transfers the approximate row-axis orientation to the tight frame through 53 RANSAC inliers. Four formation extremities constrain the footprint at the midpoint of the documented size range; no persistent ground point independently validates its corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image field identification with a provisional coordinate-, size-, and orientation-constrained display footprint. It is not a real-world accuracy benchmark, remains excluded from formal alignment calculations, and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector and Temporary Temples contributors retain the source-image rights; the atlas publishes the reviewed footprint and source links only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            295,
+            44
+          ],
+          [
+            766,
+            443
+          ],
+          [
+            500,
+            758
+          ],
+          [
+            31,
+            333
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -29.947828292847,
+            -0.229126945138
+          ],
+          [
+            -0.997827172279,
+            28.720872879028
+          ],
+          [
+            27.952173233032,
+            -0.229126945138
+          ],
+          [
+            -0.997827172279,
+            -29.179128646851
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.013360630149,
+            0.089016868748,
+            -30.262495435105
+          ],
+          [
+            0.086459458431,
+            -0.024849775733,
+            -24.643873073076
+          ],
+          [
+            2.2455614e-05,
+            0.000106946767,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 57.9,
+        "documented_diameter_range_m": [
+          54.9,
+          61.0
+        ],
+        "orientation_basis": "The tight frame is linked to the same-flight wide aerial by 53 RANSAC inliers from 91 ratio-test matches. Village-edge and field-boundary context in the wide frame, together with the north-up reference field rows, places the tight frame's positive x-axis approximately north; a 180-degree ambiguity remains.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_wide_source_url": "https://cropcircleconnector.com/2024/lionsgate/DJI_20240808152614_0030_D-P.jpg",
+        "same_flight_wide_source_sha256": "a723cd66e4db21a2d40b57bc845be9648e089004368e499afa7155bb1d84448b",
+        "same_flight_match_ratio_count": 91,
+        "same_flight_match_inlier_count": 53,
+        "same_flight_match_median_residual_px": 1.2817,
+        "same_flight_match_p95_residual_px": 3.6148,
+        "projective_tight_xy_to_same_flight_wide_xy": [
+          [
+            -0.188509364739,
+            -0.539526910681,
+            589.08969510546
+          ],
+          [
+            -0.117091413953,
+            -0.004877135039,
+            584.46249011
+          ],
+          [
+            -0.000623657864,
+            -7.2910672e-05,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -1.97037787,
+          51.33607284,
+          -1.95437787,
+          51.35207284
+        ],
+        "reference_export_size_px": [
+          1600,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "6414b14276c63a289a7e580dcec83285719e783f66e8a42f555f6121d39b36a4",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "gurston-ashes-2018-dual-dji-pose-placement",
+      "registration_observation_id": "regobs_gurston_ashes_20180723_dji_pose_v1",
+      "formation_id": "cc_35019d9ee8e3",
+      "assertion_id": "sx_connector_96fb794a598f99e0",
+      "title": "Gurston Ashes 2018 dual-DJI camera-pose placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/gurston/Mavic08145.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/gurston/gurston2018a.html",
+      "source_image_sha256": "43ccedb054dfbe75836d71f7f2dfeb2cdb1e4eca6328249915db25f0c49a76fd",
+      "corners": [
+        [
+          51.04268194049,
+          -1.980308699654
+        ],
+        [
+          51.041509401739,
+          -1.979966431565
+        ],
+        [
+          51.041417464028,
+          -1.981001164594
+        ],
+        [
+          51.042536857681,
+          -1.981327919446
+        ]
+      ],
+      "center": [
+        51.042005763986,
+        -1.980589862314
+      ],
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "provisional_dual_dji_pose_ground_plane_registration",
+      "display_geometry_status": "four_corner_camera_pose_ground_plane_projection",
+      "reference_imagery": "Two source-hosted DJI frames with embedded camera pose, the publisher BNG target, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "source_frames_2018-07-24; undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The primary full-frame Mavic image retains a complete DJI pose and calibration record. Its image-derived formation center agrees within 3.16 metres with the sub-camera point of a second, near-vertical DJI FC6310 frame made by another contributor. The surrounding field and woodland geometry agree with the publisher field and current reference imagery.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image camera-pose registration with a 3.16 metre cross-photo pose check, not a survey georegistration or a real-world accuracy benchmark. It remains provisional, excluded from formal alignment calculations, and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source links only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "dual_dji_pose_flat_ground_camera_projection",
+        "source_frame_size_px": [
+          850,
+          478
+        ],
+        "original_camera_frame_size_px": [
+          4000,
+          2250
+        ],
+        "source_frame_crop_status": "resized_full_frame_no_crop_metadata",
+        "formation_center_source_xy": [
+          452,
+          210
+        ],
+        "outer_circle_radius_px_reviewed": 170,
+        "camera_make_model": "DJI FC220",
+        "camera_wgs84_lat_lon": [
+          51.042024972222,
+          -1.980750222222
+        ],
+        "relative_altitude_m": 98.7,
+        "absolute_altitude_m": 264.34,
+        "gimbal_yaw_deg": 79.6,
+        "gimbal_pitch_deg": -86.4,
+        "gimbal_roll_deg": 0.0,
+        "calibrated_focal_length_original_px": 3051.613037,
+        "calibrated_optical_center_original_px": [
+          2000,
+          1125
+        ],
+        "effective_focal_length_resized_px": 648.4677703625,
+        "effective_optical_center_resized_px": [
+          425,
+          239
+        ],
+        "formation_center_metres_per_pixel": 0.1533,
+        "image_derived_outer_diameter_m": 52.12,
+        "source_x_axis_true_bearing_deg_at_anchor": 169.6,
+        "source_y_axis_true_bearing_deg_at_anchor": 259.75,
+        "secondary_source_url": "https://cropcircleconnector.com/2018/gurston/G85bc.jpg",
+        "secondary_source_sha256": "897b24748cc8bd1b014c9ba4291eefb564c909be3649f388305fd289a4144ba4",
+        "secondary_camera_make_model": "DJI FC6310",
+        "secondary_camera_wgs84_lat_lon": [
+          51.0419905,
+          -1.980551833333
+        ],
+        "secondary_relative_altitude_m": 98.6,
+        "secondary_gimbal_pitch_deg": -89.9,
+        "secondary_pose_checkpoint_residual_m": 3.16,
+        "reference_export_bbox_wgs84": [
+          -1.99202304,
+          51.03384011,
+          -1.96802304,
+          51.04984011
+        ],
+        "reference_export_size_px": [
+          1800,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "af31edeb8ec0e1a722f2258ea12bab7ceb9b83fa828418b3003ca48a631b10cd",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "independent_pose_checkpoint_count": 1,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "hackpen-hill-2018-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_hackpen_hill_20180609_crop_geometry_v1",
+      "formation_id": "cc_4fab9c03a8ea",
+      "assertion_id": "sx_connector_556439cbbeb4b431",
+      "title": "Hackpen Hill 2018 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/hackpenhill/HackpenCC-overhead.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/hackpenhill/hackpenhill2018a.html",
+      "source_image_sha256": "75245656a5328ca379e1f1862d807d2410ee4f70efa5aea66dc72690f82bc843",
+      "corners": [
+        [
+          51.476643753387,
+          -1.821526085616
+        ],
+        [
+          51.476709966758,
+          -1.821099700768
+        ],
+        [
+          51.476456367221,
+          -1.820996868005
+        ],
+        [
+          51.476389769647,
+          -1.821425726927
+        ]
+      ],
+      "center": [
+        51.47655115,
+        -1.82126257
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 27.5 metre diameter, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and an approximately 27.5 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification. Same-flight context and persistent field/downland geometry identify the unique field and approximate yaw, but the tight source frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          775
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            18
+          ],
+          [
+            760,
+            385
+          ],
+          [
+            400,
+            750
+          ],
+          [
+            40,
+            385
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -3.326426064,
+            13.341566236
+          ],
+          [
+            13.341566236,
+            3.326426064
+          ],
+          [
+            3.326426064,
+            -13.341566236
+          ],
+          [
+            -13.341566236,
+            -3.326426064
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.036953697194,
+            0.009062616694,
+            -18.270586304758
+          ],
+          [
+            0.009213591524,
+            -0.03634817022,
+            10.308608925253
+          ],
+          [
+            0.0,
+            -7.443799e-06,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 27.5,
+        "orientation_basis": "The same-flight wide frame fixes the field against the Hackpen downland, road, pasture, and tree clumps. The selected frame's principal tramline axis is aligned to the corresponding field direction in the current reference mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2018/hackpenhill/DJI_0041.jpg",
+        "same_flight_context_source_sha256": "d33ab4c647f8b43660ad56a0a803377e1ea11a2cc9da42cbc4e546d25eb4e34e",
+        "reference_export_bbox_wgs84": [
+          -1.82951257,
+          51.47055115,
+          -1.81301257,
+          51.48255115
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "c4d75438340767b8221d2ca395098f037280e5ca7aa3d9b9928499a73e57261f",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "cley-hill-2017-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_cley_hill_20170718_crop_geometry_v1",
+      "formation_id": "cc_f1c8f8391487",
+      "assertion_id": "sx_connector_d3f9c4ec2b04bc6f",
+      "title": "Cley Hill 2017 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/cleyhill/DJI_0389.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/cleyhill/cleyhill2017a.html",
+      "source_image_sha256": "6b14c7b6685d993505fa58e9f7559828616314e90d3d51ffdb609331664a6f0d",
+      "corners": [
+        [
+          51.201341617633,
+          -2.228454099982
+        ],
+        [
+          51.20143371245,
+          -2.2270358842
+        ],
+        [
+          51.200511784557,
+          -2.226947422507
+        ],
+        [
+          51.20044985967,
+          -2.22832886365
+        ]
+      ],
+      "center": [
+        51.20093186,
+        -2.22769346
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented minimum 92 metre diameter, same-flight Cley Hill context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and reports an overall diameter in excess of 92 metres. Four visible outer-scallop controls define the tight crop-geometry rectification. Same-flight wide frames identify the field and yaw quadrant, but the tight frame contains no independent persistent ground checkpoint and 92 metres is treated as the documented minimum size.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Minimum-documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          858
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            40
+          ],
+          [
+            775,
+            425
+          ],
+          [
+            410,
+            820
+          ],
+          [
+            24,
+            425
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -4.009164166,
+            45.824956112
+          ],
+          [
+            45.824956112,
+            4.009164166
+          ],
+          [
+            4.009164166,
+            -45.824956112
+          ],
+          [
+            -45.824956112,
+            -4.009164166
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.121888315954,
+            0.008704235327,
+            -53.056254623694
+          ],
+          [
+            0.010663846579,
+            -0.117487981342,
+            45.61421778631
+          ],
+          [
+            -3.8505374e-05,
+            3.3325188e-05,
+            1.0
+          ]
+        ],
+        "documented_minimum_diameter_m": 92,
+        "orientation_basis": "Same-flight wide frames reproduce Cley Hill, the field boundary, and the adjoining field. The selected frame's tramline family is aligned to the corresponding field direction, with a conservative yaw uncertainty.",
+        "orientation_uncertainty_deg": 18,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2017/cleyhill/DJ03181.jpg",
+        "same_flight_context_source_sha256": "13f9152e3ac644f2ff42dc94e2b7b4b5e2bc311903c288d5e4d4291c3c49061b",
+        "reference_export_bbox_wgs84": [
+          -2.23594346,
+          51.19493186,
+          -2.21944346,
+          51.20693186
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "5acedc77695cd67dda8871529940aec8deb9b3dcf1e647dc0ae908985b85efa5",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "cley-hill-2020-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_cley_hill_20200711_crop_geometry_v1",
+      "formation_id": "cc_706b58141f82",
+      "assertion_id": "sx_connector_fa54800fecd6502d",
+      "title": "Cley Hill 2020 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/cleyhill/DJI_0570.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2020/cleyhill/cleyhill2020a.html",
+      "source_image_sha256": "787bf54363bd5bf086c93cbb331c11783d3d8890993e9b3e064e73c5ec2bcdf4",
+      "corners": [
+        [
+          51.204597077197,
+          -2.229662413522
+        ],
+        [
+          51.204307778954,
+          -2.229690045757
+        ],
+        [
+          51.204324902557,
+          -2.230183817392
+        ],
+        [
+          51.204621234945,
+          -2.230148436342
+        ]
+      ],
+      "center": [
+        51.20446134,
+        -2.22991521
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 30.5 metre size, same-flight and hilltop Cley Hill context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 30.5 metre size. Four reviewed outer-ring controls define the crop-geometry rectification. Same-flight and hilltop context frames resolve the field and approximate yaw, but no independent ground checkpoint validates the tight-frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          808
+        ],
+        "source_geometry_control_pixels": [
+          [
+            407,
+            35
+          ],
+          [
+            777,
+            400
+          ],
+          [
+            405,
+            755
+          ],
+          [
+            30,
+            398
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            15.212851766,
+            -1.063786225
+          ],
+          [
+            -1.063786225,
+            -15.212851766
+          ],
+          [
+            -15.212851766,
+            1.063786225
+          ],
+          [
+            1.063786225,
+            15.212851766
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.002682617836,
+            -0.041459527973,
+            17.63174091763
+          ],
+          [
+            -0.039958096905,
+            0.002787616994,
+            15.110264869401
+          ],
+          [
+            -1.7418139e-05,
+            -3.0374446e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 30.5,
+        "orientation_basis": "The wide drone and hilltop context frames reproduce the Cley Hill slope, curved crop boundary, and woodland. The tight frame's tramline direction is aligned to that field context with a conservative yaw uncertainty.",
+        "orientation_uncertainty_deg": 20,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2020/cleyhill/DJI_0001_resized.jpg",
+        "same_flight_context_source_sha256": "edd76580084f460f0f1fc9d40f948ea04ab0e2a2d3136dc5368e5d4ca92db988",
+        "reference_export_bbox_wgs84": [
+          -2.23816521,
+          51.19846134,
+          -2.22166521,
+          51.21046134
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "124b42e95697a8facbc9a57603090182d053285344f90afa0f4462516b13ffa4",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "battlebury-hill-2017-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_battlebury_hill_20170705_crop_geometry_v1",
+      "formation_id": "cc_591f610ce045",
+      "assertion_id": "sx_connector_ad14a588d28da51c",
+      "title": "Battlebury Hill 2017 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/battleburyhill/Warminster09A.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/battleburyhill/battleburyhill2017a.html",
+      "source_image_sha256": "125a838787622803a48e3f4e20f87ec4436d46c77f26757cc8554ed3a5513453",
+      "corners": [
+        [
+          51.207109848219,
+          -2.138713961864
+        ],
+        [
+          51.206800614199,
+          -2.137845702855
+        ],
+        [
+          51.206205567893,
+          -2.138325126337
+        ],
+        [
+          51.206498130098,
+          -2.139262168424
+        ]
+      ],
+      "center": [
+        51.20663759,
+        -2.13852823
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 61 by 61 metre size, same-flight Battlebury Hill context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 61 by 61 metre size. Four outer-loop controls define the crop-geometry rectification. Same-flight wide context resolves the field and approximate yaw, but the tight frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          662
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            80
+          ],
+          [
+            755,
+            350
+          ],
+          [
+            405,
+            610
+          ],
+          [
+            70,
+            350
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            14.318882665,
+            26.929901582
+          ],
+          [
+            26.929901582,
+            -14.318882665
+          ],
+          [
+            -14.318882665,
+            -26.929901582
+          ],
+          [
+            -26.929901582,
+            14.318882665
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.078742132714,
+            -0.054105646477,
+            -12.953587487608
+          ],
+          [
+            -0.041867936214,
+            -0.101757917617,
+            52.571785343253
+          ],
+          [
+            6.4028463e-05,
+            -7.1294754e-05,
+            1.0
+          ]
+        ],
+        "documented_width_m": 61,
+        "documented_length_m": 61,
+        "orientation_basis": "The same-flight wide aerial fixes the field relative to wooded Battlebury Hill, the hill track, and adjacent field boundaries. The selected frame's tramlines are aligned to the corresponding field direction in the current mosaic.",
+        "orientation_uncertainty_deg": 18,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2017/battleburyhill/DJI_0049.jpg",
+        "same_flight_context_source_sha256": "c0839bee3afa3b77f69bd8a8432291e09e01f3e90177d5c7dbfafc110c234ace",
+        "reference_export_bbox_wgs84": [
+          -2.14677823,
+          51.20063759,
+          -2.13027823,
+          51.21263759
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "f5962d4e4d4f80e17d447f66319e93fbe79d1ae01bed7b81ca11cc4f8ca271ea",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "thorn-hill-2017-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_thorn_hill_20170626_crop_geometry_v1",
+      "formation_id": "cc_87b940bfa1c8",
+      "assertion_id": "sx_connector_1afb8a0b5da7d267",
+      "title": "Thorn Hill 2017 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/thornhill/DJI_09404.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/thornhill/thornhill2017a.html",
+      "source_image_sha256": "3ea9aa53a3349d1fd4779c3b9190e3b2bc1b88a7b07cc9c9adc09fd0ef96b193",
+      "corners": [
+        [
+          51.391909719919,
+          -1.831848733373
+        ],
+        [
+          51.392242811568,
+          -1.832043025011
+        ],
+        [
+          51.392343740081,
+          -1.831598626627
+        ],
+        [
+          51.392010648432,
+          -1.831404334989
+        ]
+      ],
+      "center": [
+        51.39212673,
+        -1.83172368
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 36.5 by 18.25 metre extent, same-flight Thorn Hill context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target, 36.5 metre overall length, and 18.25 metre largest-circle diameter. Four formation-bound controls define the tight crop-geometry rectification. Same-flight context resolves the field and approximate end-to-end direction, but the tight frame contains no independent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          450
+        ],
+        "source_geometry_control_pixels": [
+          [
+            30,
+            100
+          ],
+          [
+            770,
+            100
+          ],
+          [
+            770,
+            350
+          ],
+          [
+            30,
+            350
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -2.332827549,
+            -20.270324137
+          ],
+          [
+            -14.81656278,
+            14.028456521
+          ],
+          [
+            2.332827549,
+            20.270324137
+          ],
+          [
+            14.81656278,
+            -14.028456521
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.016869912276,
+            0.068597560883,
+            -8.686486288019
+          ],
+          [
+            0.046349704588,
+            0.024967472076,
+            -24.157563052306
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_length_m": 36.5,
+        "documented_largest_circle_diameter_m": 18.25,
+        "orientation_basis": "The same-flight wide aerial fixes the long field between the eastern lane and southern woodland belt. The hollow-ring end is the southern end and the selected frame's left-to-right formation axis is mapped north-northwest along the field rows.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2017/thornhill/DJI_0022.jpg",
+        "same_flight_context_source_sha256": "fcfd90ead0dfda998e3dc6fe556523a83bec14b55362d117c45550202117ed13",
+        "reference_export_bbox_wgs84": [
+          -1.83997368,
+          51.38612673,
+          -1.82347368,
+          51.39812673
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "69235556bc08fd485d2f7d98341ae6e93168b1ea1b36d2ec73599d2696c6eadd",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "woodway-bridge-2016-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_woodway_bridge_20160824_crop_geometry_v1",
+      "formation_id": "cc_813dd47361b7",
+      "assertion_id": "sx_connector_2f7c5c2924fafe38",
+      "title": "Woodway Bridge 2016 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/woodwaybridge/All-Cannings362A.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/woodwaybridge/woodwaybridge2016a.html",
+      "source_image_sha256": "de6d600d4988a2bfbfdb50e2efee4403a66a0a50896afdadd981eff31d38c3cd",
+      "corners": [
+        [
+          51.360769199026,
+          -1.900826420869
+        ],
+        [
+          51.360498529841,
+          -1.900588374115
+        ],
+        [
+          51.360429151646,
+          -1.901008469431
+        ],
+        [
+          51.36078348184,
+          -1.901418344916
+        ]
+      ],
+      "center": [
+        51.36061782,
+        -1.90093647
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 24 metre diameter, same-event Woodway Bridge context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre coordinate target and an approximately 24 metre diameter. Four visible outer-ring controls define a tight projective crop-geometry rectification. Same-event context resolves the unique field and approximate yaw, but the tight frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It is useful for display and visual comparison only and remains excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          553
+        ],
+        "source_geometry_control_pixels": [
+          [
+            307,
+            65
+          ],
+          [
+            638,
+            341
+          ],
+          [
+            433,
+            483
+          ],
+          [
+            128,
+            249
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            11.303201675,
+            4.029593945
+          ],
+          [
+            4.029593945,
+            -11.303201675
+          ],
+          [
+            -11.303201675,
+            -4.029593945
+          ],
+          [
+            -4.029593945,
+            11.303201675
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.025220116471,
+            -0.058322532103,
+            7.649521552662
+          ],
+          [
+            -0.040153517737,
+            -0.005978105051,
+            16.851513194575
+          ],
+          [
+            0.000187501264,
+            -0.000480073501,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 24,
+        "orientation_basis": "The same-event wide aerial fixes the field against All Cannings village, the lake, pasture, and field boundaries. The formation's asymmetric large-circle side points toward the village, and the selected frame's tramlines agree with the field direction.",
+        "orientation_uncertainty_deg": 18,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2016/woodwaybridge/G0048749bbb.jpg",
+        "same_flight_context_source_sha256": "cb25e0f64a9cce2c44ea1ed7c207f081c42496c51a67c78805adb0ac9a8988e4",
+        "reference_export_bbox_wgs84": [
+          -1.9075,
+          51.3565,
+          -1.8945,
+          51.3648
+        ],
+        "reference_export_size_px": [
+          1560,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "1193844b09cf73622d6921466c0331fa76727237cea936e4ffdb03b1cfe054bf",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "hackpen-hill-3-2018-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_hackpen_hill_3_20180729_crop_geometry_v1",
+      "formation_id": "cc_260e8f52da4e",
+      "assertion_id": "sx_connector_ef50438c82da7eba",
+      "title": "Hackpen Hill (3) 2018 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0009-2.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/hackpenhill3/hackpenhill2018c.html",
+      "source_image_sha256": "bb93b7915fbd7261b985a3fce629f9c56131e9531359156451c25c26b331edb8",
+      "corners": [
+        [
+          51.471800631598,
+          -1.814009263167
+        ],
+        [
+          51.471546670929,
+          -1.813698752066
+        ],
+        [
+          51.471364246038,
+          -1.814095454939
+        ],
+        [
+          51.471588219891,
+          -1.814404761761
+        ]
+      ],
+      "center": [
+        51.47157664,
+        -1.81405458
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 33.5 metre diameter, same-flight Hackpen Hill context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 33.5 metre diameter. Four visible outer-ring controls define the crop-geometry rectification. Same-flight woodland and road context resolve the field and approximate yaw, but no persistent ground checkpoint is present in the tight frame.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          790
+        ],
+        "source_geometry_control_pixels": [
+          [
+            380,
+            18
+          ],
+          [
+            785,
+            380
+          ],
+          [
+            385,
+            770
+          ],
+          [
+            2,
+            380
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            13.017194748,
+            10.541116714
+          ],
+          [
+            10.541116714,
+            -13.017194748
+          ],
+          [
+            -13.017194748,
+            -10.541116714
+          ],
+          [
+            -10.541116714,
+            13.017194748
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.028825987676,
+            -0.037277884134,
+            3.142338936546
+          ],
+          [
+            -0.035597129493,
+            -0.029795147978,
+            24.934744705475
+          ],
+          [
+            7.748509e-05,
+            0.000105565265,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 33.5,
+        "orientation_basis": "The same-flight wide frame fixes the field relative to the Hackpen woodland, road, and persistent field boundary. The selected frame's principal row axis is aligned to the corresponding field direction in the current reference mosaic.",
+        "orientation_uncertainty_deg": 20,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2018/hackpenhill3/DJI_0015.jpg",
+        "same_flight_context_source_sha256": "ff1a10bb5a2f6eac9e736823d4db8f2abc716013adbd6894d7a7faaf3da6176a",
+        "reference_export_bbox_wgs84": [
+          -1.8215,
+          51.4675,
+          -1.807,
+          51.476
+        ],
+        "reference_export_size_px": [
+          1700,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "eecbf009c448643de11582a5aa81c950aa997ea609250f4049aba82bb4e4d751",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "nursteed-farm-2016-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_nursteed_farm_20160817_crop_geometry_v1",
+      "formation_id": "cc_044207cd1b0d",
+      "assertion_id": "sx_connector_186079f77073b9e8",
+      "title": "Nursteed Farm 2016 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes-18th-Au.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2016/nursteed/nursteed2016a.html",
+      "source_image_sha256": "cd946a0e4859cc9c5c32590f6c14f67a261c381d9a67da8422d1a87e64d3adc1",
+      "corners": [
+        [
+          51.345262053002,
+          -1.962838306258
+        ],
+        [
+          51.34527429931,
+          -1.961326653779
+        ],
+        [
+          51.344713226002,
+          -1.961332849386
+        ],
+        [
+          51.344725728903,
+          -1.96282050196
+        ]
+      ],
+      "center": [
+        51.34499889,
+        -1.96208997
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 55 metre diameter, same-flight Nursteed Farm context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 55 metre diameter. Four outer-ring controls define the tight crop-geometry rectification. Same-flight context resolves the field and approximate yaw, but the tight frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          452
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            18
+          ],
+          [
+            612,
+            220
+          ],
+          [
+            402,
+            425
+          ],
+          [
+            190,
+            220
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ],
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.128438499351,
+            0.000946721125,
+            -52.034633217248
+          ],
+          [
+            0,
+            -0.133160478967,
+            29.295305372677
+          ],
+          [
+            -5.5582306e-05,
+            3.5282189e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "The same-flight wide aerial fixes the field relative to the persistent hedgerow and Devizes town-edge geometry. The selected frame's near-vertical tramline axis is aligned north-south with the corresponding current field rows.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2016/nursteed/Crop-Circle-Devizes2-18th-A.jpg",
+        "same_flight_context_source_sha256": "2b7eb5cbc0d1488c312f2d151ff953f9a3c6613a1ab7be6f530cd14d0eec6c15",
+        "reference_export_bbox_wgs84": [
+          -1.97,
+          51.3405,
+          -1.954,
+          51.3495
+        ],
+        "reference_export_size_px": [
+          1778,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "6993658b62543723051327f284ebbc548081bccfc469bd57e9861ae642c24484",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "rodfield-lane-2019-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_rodfield_lane_20190716_crop_geometry_v1",
+      "formation_id": "cc_a52fc2811092",
+      "assertion_id": "sx_connector_ed2b844991a8943b",
+      "title": "Rodfield Lane 2019 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2019/Rodfield/DJI_0063.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2019/Rodfield/Rodfield2019a.html",
+      "source_image_sha256": "c0281fdef58cf4feb78b39b9b59cebb10dbe20d6995127f9885333578fdf92f8",
+      "corners": [
+        [
+          51.06914091515,
+          -1.205257422005
+        ],
+        [
+          51.069158264142,
+          -1.204031883663
+        ],
+        [
+          51.06848892767,
+          -1.204378310871
+        ],
+        [
+          51.068623438133,
+          -1.205357295491
+        ]
+      ],
+      "center": [
+        51.06883071,
+        -1.2047569
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 55 metre diameter, same-flight Rodfield Lane context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 55 metre diameter. Four outer-ring controls define the crop-geometry rectification. Multiple wide frames resolve the field and row-axis orientation, but the selected tight frame contains no independent persistent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          760
+        ],
+        "source_geometry_control_pixels": [
+          [
+            425,
+            80
+          ],
+          [
+            715,
+            370
+          ],
+          [
+            500,
+            705
+          ],
+          [
+            150,
+            380
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            2.396782926,
+            27.395354198
+          ],
+          [
+            27.395354198,
+            -2.396782926
+          ],
+          [
+            -2.396782926,
+            -27.395354198
+          ],
+          [
+            -27.395354198,
+            2.396782926
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.090737254137,
+            -0.018043890855,
+            -35.012498629804
+          ],
+          [
+            -0.00939402414,
+            -0.080659546053,
+            34.532037308883
+          ],
+          [
+            -0.000323835955,
+            0.000210751729,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide frames fix the field against the large eastern woodland, northern road, curving western boundary, and nearby houses. The selected frame's tramline axis is aligned to the east-southeast field rows in the current mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2019/Rodfield/DJI_000313.jpg",
+        "same_flight_context_source_sha256": "c9a699dbc9921011883f8f98bbdcd344f472ae6e5b38c0d4e116214f70eec09e",
+        "reference_export_bbox_wgs84": [
+          -1.2125,
+          51.064,
+          -1.197,
+          51.0735
+        ],
+        "reference_export_size_px": [
+          1632,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ccc36866917ac516cc8c393b1f25cde336f096caf852de465df0f2e681256c3c",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "longwood-warren-2021-documented-size-crop-geometry-placement",
+      "registration_observation_id": "regobs_longwood_warren_20210704_crop_geometry_v1",
+      "formation_id": "cc_b7f8add97942",
+      "assertion_id": "sx_connector_d69878e8e3bca6ec",
+      "title": "Longwood Warren 2021 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2021/longwood/DJI_0903.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2021/longwood/longwood2021a.html",
+      "source_image_sha256": "8310515407cf62817737fd35bca0d77b2c09e408f8199d3e7e5f63d2cdbc1c48",
+      "corners": [
+        [
+          51.040954654851,
+          -1.229158635338
+        ],
+        [
+          51.040998181057,
+          -1.228234471693
+        ],
+        [
+          51.040387337918,
+          -1.228319763835
+        ],
+        [
+          51.040431110275,
+          -1.229178806448
+        ]
+      ],
+      "center": [
+        51.04069245,
+        -1.22873059
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "provisional_documented_size_crop_geometry_rectification",
+      "display_geometry_status": "four_corner_projective_crop_geometry_placement",
+      "reference_imagery": "Publisher Streetmap target, documented 55 metre diameter, same-flight Longwood Warren context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The publisher supplies a 25 metre target and an approximately 55 metre diameter. Four outer-ring controls define the tight crop-geometry rectification. Same-flight road, hedge, and field context resolve the unique field and approximate yaw, but the tight frame contains no independent ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Documented-size crop-geometry rectification, not a real-world accuracy benchmark or survey georegistration. It remains provisional and excluded from alignment calculations.",
+      "notes": "Explicit outcome: provisional_registration. Contributor-retained source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          811
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            48
+          ],
+          [
+            753,
+            392
+          ],
+          [
+            444,
+            755
+          ],
+          [
+            47,
+            394
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ],
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.074464148628,
+            -0.004107640448,
+            -29.960813452934
+          ],
+          [
+            -0.000209795543,
+            -0.074057826547,
+            29.188644050032
+          ],
+          [
+            -0.000184123833,
+            7.5439673e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "The same-flight panorama fixes the field relative to the road and hedge junction, enclosing fields, and distant woodland. The selected frame's tramlines are aligned to the corresponding east-northeast row direction in current imagery.",
+        "orientation_uncertainty_deg": 20,
+        "same_flight_context_source_url": "https://cropcircleconnector.com/2021/longwood/DJI_0899-Pano.jpg",
+        "same_flight_context_source_sha256": "0734ad0df7eafb7d69054649df376f55a972ec274476660c163d1c83c19e4247",
+        "reference_export_bbox_wgs84": [
+          -1.233,
+          51.0377,
+          -1.2245,
+          51.0437
+        ],
+        "reference_export_size_px": [
+          1417,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "bd679d0e0dee2c014b7dbf8da319b261a4d4a0445d296bb34291a371812075fc",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

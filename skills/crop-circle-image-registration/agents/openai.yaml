@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crop Circle Image Registration"
+  short_description: "Register one source image to a selected field candidate"
+  default_prompt: "Register a specific source image to one selected candidate and validate it with independent checkpoints."

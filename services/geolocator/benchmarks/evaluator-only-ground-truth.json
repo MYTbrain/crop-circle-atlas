@@ -1,0 +1,15 @@
+{
+  "schema_version": "crop-circle-atlas/geolocator-benchmark-ground-truth/v1",
+  "access": "evaluator_only_never_loaded_by_search_or_matching",
+  "cases": [
+    {"case_id": "whiskey-hill-1998", "center": [-122.7264972, 45.1714056], "classification": "corroborated_field", "uncertainty_m": 35},
+    {"case_id": "wavra-farm-1997", "center": [-122.8962105, 44.8737785], "classification": "corroborated_field", "uncertainty_m": 20},
+    {"case_id": "rockville-1-2003", "center": [-122.125294687955, 38.242977375075], "classification": "candidate_field", "uncertainty_m": 60},
+    {"case_id": "rockville-2-2003", "center": [-122.1225, 38.2401], "classification": "candidate_field", "uncertainty_m": 60},
+    {"case_id": "wausau-1997", "center": [-89.5679034, 44.9475495], "classification": "candidate_field", "uncertainty_m": 100},
+    {"case_id": "miamisburg-2004", "center": [-84.2705778, 39.6201], "classification": "registered_site", "uncertainty_m": 100},
+    {"case_id": "hopewell-2012", "center": [-83.0871928, 39.3577689], "classification": "candidate_field", "uncertainty_m": 75},
+    {"case_id": "albion-starr-2002", "center": [-84.7965353, 42.2802039], "classification": "candidate_field", "uncertainty_m": 75},
+    {"case_id": "diessenhofen-2008", "center": [8.7249956, 47.6885338], "classification": "corroborated_field", "uncertainty_m": 75}
+  ]
+}

@@ -1,6 +1,6 @@
 # Source register and current crawl boundary
 
-Evaluated 2026-07-21. Ten catalog/reference sources are registered and a Project
+Evaluated 2026-07-23. Ten catalog/reference sources are registered and a Project
 Argus appendix was also evaluated. Six archive families now contribute event
 assertions. The crawl is paused at a practical access boundary, not declared
 globally exhaustive: several holdings require permission, membership,
@@ -26,10 +26,11 @@ robots-compliant access, a working host, or a permitted structured interface.
   entities after four evidence-reviewed report aliases were accepted and
   merged; this is not a claim of 7,745 physically distinct formations. All
   source assertions remain preserved.
-- Location evidence is separated into 407 field candidates/sites, 3,894
-  locality references, and 3,444 unresolved entities. Nineteen field-level
-  records are explicit reviewed overrides; 384 additional rows are explicit
-  publisher map targets retained as non-accepted candidates. The locality references
+- Location evidence is separated into 419 field candidates/sites (409
+  candidate fields, four corroborated fields, and six registered sites), 3,886
+  locality references, and 3,440 unresolved entities. Fifty-seven field-level
+  records are explicit reviewed overrides; 384 candidate rows derive from
+  publisher map targets, with overlap where a target was reviewed. The locality references
   are search aids, not claimed formation fields.
 - 949 entities are US reports; one Puerto Rico record is retained separately.
 - ICCRA reconciliation covers all 1,169 parsed index occurrences plus two
@@ -43,9 +44,9 @@ robots-compliant access, a working host, or a permitted structured interface.
 - The worldwide image-link pass enumerated 7,398 unique publisher image URLs
   from Crop Circle Center, Crop Circle Connector, and DCCA detail pages. These
   are rights-gated, link-only records and their image URLs were not independently
-  fetched. Combined with ICCRA and eleven open-license Commons relationships,
-  the public catalog contains 7,889 unique image links and 8,042 report-image
-  relationships across 1,913 reports: 512 US, 7,313 known non-US, and 64 with
+  fetched. Combined with ICCRA and thirteen open-license Commons relationships,
+  the public catalog contains 7,956 unique image links and 8,109 report-image
+  relationships across 1,929 reports: 567 US, 7,325 known non-US, and 64 with
   country still unresolved.
 - The bounded expansion emitted 639 assertions from four additional archives:
   442 Connector, 184 DCCA, 12 Vigay, and one CCCRN. There are 190 exact

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crop Circle Field Resolution"
+  short_description: "Run one bounded exact-field search through human review"
+  default_prompt: "Resolve one crop formation through a bounded, evidence-preserving candidate workflow."

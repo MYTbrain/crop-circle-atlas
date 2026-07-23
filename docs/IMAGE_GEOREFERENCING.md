@@ -6,12 +6,12 @@ projective homography from four or more control points. It does not upload the
 selected image.
 
 The public per-report archive and the map overlay registry serve different
-purposes. The archive contains 7,889 unique image links across 1,913 reports,
-represented by 8,042 report-image relationships. Of those, 7,398 global
+purposes. The archive contains 7,956 unique image links across 1,929 reports,
+represented by 8,109 report-image relationships. Of those, 7,398 global
 publisher URLs are rights-gated and were not independently image-fetched.
 Those links make source imagery discoverable for review; they do not imply that
-an image has been oriented, scaled, or located. Thirteen images currently have placement
-evidence strong enough for an opt-in map footprint.
+an image has been oriented, scaled, or located. Fifty-nine images currently
+have reviewed placement evidence strong enough for an opt-in map footprint.
 
 ## Reviewer workflow
 
@@ -229,10 +229,10 @@ or an applicable license and its proof are documented in
 `data/image_assets.csv`. The registration metadata contains no image pixels or
 local source path.
 
-The per-report archive exposes 7,889 unique image links. That is not a map
-overlay or a grant of publication rights. For the thirteen registered
-placements, source pixels remain off by default and the browser requests them
-directly from the source host only after an explicit user action when the
-overlay record permits it. The open-license Diessenhofen frame carries creator
-and CC BY-SA 3.0 attribution. A blocked or unavailable remote request fails closed; the atlas does
-not proxy around it.
+The per-report archive exposes 7,956 unique image links. That is not a map
+overlay or a grant of publication rights. For the 59 reviewed placements,
+source pixels remain off by default: 25 may be requested directly from the
+source host only after an explicit user action, while 34 remain
+footprint/link-only under their recorded rights policy. Open-license records
+retain creator and license attribution. A blocked or unavailable remote request
+fails closed; the atlas does not proxy around it.

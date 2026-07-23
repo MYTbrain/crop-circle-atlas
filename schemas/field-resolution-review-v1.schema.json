@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crop-circle-atlas.example/schemas/field-resolution-review-v1.schema.json",
+  "title": "Human field-resolution review",
+  "type": "object",
+  "required": ["schema_version", "review_id", "job_id", "formation_id", "reviewer", "reviewed_at", "decision", "selected_candidate_id", "edited_controls", "held_out_checkpoints", "spatial_classification", "coordinate_uncertainty_m", "rights_decision", "publication_eligible", "notes", "evidence_sha256s"],
+  "properties": {
+    "schema_version": {"const": "crop-circle-atlas/field-resolution-review/v1"}, "review_id": {"type": "string"}, "job_id": {"type": "string"}, "formation_id": {"type": "string"}, "reviewer": {"type": "string", "minLength": 1}, "reviewed_at": {"type": "string", "format": "date-time"}, "decision": {"enum": ["accepted", "downgraded", "rejected", "deferred", "unresolved"]}, "selected_candidate_id": {"type": ["string", "null"]}, "edited_controls": {"type": "array"}, "held_out_checkpoints": {"type": "array"}, "spatial_classification": {"enum": ["unresolved", "locality_reference", "candidate_field", "corroborated_field", "registered_site"]}, "coordinate_uncertainty_m": {"type": ["number", "null"], "minimum": 0}, "rights_decision": {"type": "object"}, "publication_eligible": {"type": "boolean"}, "notes": {"type": "string"}, "evidence_sha256s": {"type": "array", "items": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "uniqueItems": true}, "compatible_evidence_types": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "contradictory_evidence_unresolved": {"type": "boolean"}, "source_coordinate_method": {"type": ["string", "null"]}
+  }, "additionalProperties": false
+}

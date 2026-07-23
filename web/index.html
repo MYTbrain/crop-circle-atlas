@@ -8,7 +8,7 @@
   <meta name="description" content="A provenance-first map of reported crop formations and an experimental geographic alignment lab.">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=20260722.3">
+  <link rel="stylesheet" href="styles.css?v=20260722.7">
 </head>
 <body>
   <main>
@@ -17,6 +17,7 @@
         <p class="eyebrow">Open research workbench</p>
         <h1>Crop Circle Atlas</h1>
         <p class="lede">Reported formations, source lineage, image registration, and testable alignment hypotheses.</p>
+        <a class="lab-link" href="geolocation-review.html">Open exact-field geolocation reviewer</a>
         <a class="lab-link" href="georef.html">Open four-point image registration lab</a>
       </header>
 
@@ -42,15 +43,14 @@
         <label class="check"><input id="usOnly" type="checkbox"> US reports only</label>
         <label class="check"><input id="straightOnly" type="checkbox"> PDF/source-image candidates or reviewed evidence only</label>
         <label class="check"><input id="showLocalities" type="checkbox"> Show rough locality references on map</label>
-        <p class="notice"><strong>Map truth:</strong> solid yellow markers are candidate fields; hollow dashed yellow markers are rough locality references, not formation sites; teal solid markers are corroborated or registered sites. <span id="localityPhotoCoverage">Loading US locality/photo coverageâ€¦</span> Cyan <strong>PIC</strong> badges only mean source photographs are available for a report at that report's current coordinate reference. Amber <strong>IMG</strong> badges and dashed footprints identify the much smaller set with reviewed image placements. Field and registered-image markers remain dominant. Unresolved reports remain searchable without being placed on the map.</p>
+        <p class="notice"><strong>Map truth:</strong> solid green dots show source-photo availability only. Hollow yellow dots are rough locality references, not formation sites. Solid yellow dots mark candidate, reviewed, or registered locations; their exact evidence class and uncertainty remain in popups and the sidebar. Dashed yellow outlines show reviewed image footprints. <span id="localityPhotoCoverage">Loading US locality/photo coverage…</span> Unresolved reports remain searchable without being placed on the map.</p>
         <div class="map-key" aria-label="Location evidence legend">
-          <span><i class="key-dot verified"></i>corroborated/registered</span>
-          <span><i class="key-dot candidate"></i>candidate field</span>
-          <span><i class="key-dot reference"></i>rough locality only</span>
-          <span><i class="key-image-badge source">PIC</i>source photos available</span>
-          <span><i class="key-image-badge mapped">IMG</i>reviewed image placement</span>
-          <span><i class="key-image-badge georef">GEO</i>reviewed footprint; pixels rights-gated</span>
+          <span><i class="key-dot source"></i>source-photo availability</span>
+          <span><i class="key-dot reference"></i>rough locality reference</span>
+          <span><i class="key-dot candidate"></i>candidate/reviewed location</span>
+          <span><i class="key-footprint"></i>reviewed image footprint</span>
         </div>
+        <p class="muted source-photo-disclosure">Availability dots are clustered when zoomed out. Source-photo availability only; not a registered image placement.</p>
         <details class="results" open><summary>Matching reports</summary><div id="resultsList" class="results-list" role="list"></div></details>
       </section>
 
@@ -64,8 +64,8 @@
 
       <section class="overlay-section">
         <h2>Mapped source-image overlays</h2>
-        <p class="muted">Dashed amber footprints mark source photographs with reviewed display placements. <strong>IMG</strong> badges can load permitted source-hosted pixels; <strong>GEO</strong> badges preserve a reviewed footprint while keeping publisher-controlled pixels link-only. They follow the search, year, and country filters, and every record states whether its placement is accepted, provisional, or approximate.</p>
-        <p id="overlayNotice" class="notice">Reviewed source-image footprints are visible by default. Click a badge or dashed footprint to inspect the mapped field; actual pixels load only where the recorded rights policy permits embedding.</p>
+        <p class="muted">Dashed yellow footprints and solid yellow center dots mark reviewed display placements. Source pixels load only on explicit action where recorded rights permit; rights-gated footprints remain link-only. They follow the search, year, and country filters, and every record states whether its placement is accepted, provisional, or approximate.</p>
+        <p id="overlayNotice" class="notice">Reviewed source-image footprints are visible by default. Click a solid yellow placement dot or dashed footprint to inspect the mapped field; actual pixels load only where the recorded rights policy permits embedding.</p>
         <label id="overlayChoiceLabel" hidden>Mapped aerial image
           <select id="overlayChoice"></select>
         </label>
@@ -103,7 +103,7 @@
     <div id="map" aria-label="Interactive crop circle map"></div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script type="module" src="app.js?v=20260722.3"></script>
-  <script type="module" src="atlas-georef-integration.mjs"></script>
+  <script type="module" src="app.js?v=20260722.9"></script>
+  <script type="module" src="atlas-georef-integration.mjs?v=20260722.4"></script>
 </body>
 </html>

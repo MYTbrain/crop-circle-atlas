@@ -191,18 +191,88 @@ class GlobalSourceImageLinkTests(unittest.TestCase):
         self.assertEqual({row["embedding_allowed"] for row in rows}, {"false"})
         self.assertEqual({row["pixel_bytes_packaged"] for row in rows}, {"false"})
         self.assertEqual({row["local_cache_path"] for row in rows}, {""})
+        generated_rows = [row for row in rows if row["source_id"] in GLOBAL.SOURCE_NAMES]
         self.assertEqual(
-            {row["image_sha256_status"] for row in rows},
+            {row["image_sha256_status"] for row in generated_rows},
             {GLOBAL.IMAGE_SHA256_STATUS},
         )
         self.assertEqual(
-            {row["image_fetch_policy"] for row in rows},
+            {row["image_fetch_policy"] for row in generated_rows},
             {GLOBAL.IMAGE_FETCH_POLICY},
         )
         self.assertEqual(
-            {row["placement_status"] for row in rows},
+            {row["placement_status"] for row in generated_rows},
             {GLOBAL.PLACEMENT_STATUS},
         )
+
+        legacy_expected = {
+            "gimg_76c0a68f0d54c95d9786": (
+                "cc_96878ba19702",
+                "be35cfff95a8b909c5cd529df2021fc10ed41160a242c8d1d0212cd03c5002ab",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_bd24fa34504e24f4cdc8": (
+                "cc_9275734c8913",
+                "65d1a3725f6d0df19554060a6c11575b982133bb3e6cddfd80b037f6743cf13a",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_f424af5205b5f4c976be": (
+                "cc_6f84d7030b21",
+                "764a884c34f9f46cc92c6dbe20990b271726e5e81fc59998a50ea07cbb54fc87",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_d9a1273754ef503e0d4e": (
+                "cc_d777276e6710",
+                "6da12427612e6949683d713a851a42dcd2bee8d716cb15bb1a8d12acca477ed3",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_5e0dc51aa8d7b1f8ef9a": (
+                "cc_69e673eaab9f",
+                "989cdf3ecd98dfdac5da2dbed4d0258a12202a30d7c0dee9c13029e8e3317c2f",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_596ea5ce4715a4fb8eb2": (
+                "cc_863c8e5d3833",
+                "81ac915513b0a3cd34242895aad5c990af60f7531e1f5fa9385ce40a5f08e8ba",
+                "source_link_only_not_georegistered",
+            ),
+            "gimg_fc03b48166290429fcfc": (
+                "cc_721e4b7f87f1",
+                "44df5d73d112236849bb4990e25c7b3212300a061f2fe2a81947f08b82a88df1",
+                "source_link_only_not_georegistered",
+            ),
+            "gimg_1a2e42f230099885d180": (
+                "cc_ff64c3c47cb1",
+                "c06d03f31cb22359860f671d9f1e78a3d88f6bd52cf957e83c7439ffb1e6dbba",
+                "reviewed_footprint_rights_gated",
+            ),
+            "gimg_dc845a0e9f104fa45e1b": (
+                "cc_ff64c3c47cb1",
+                "7015f10d5e10f839d1deab4d73c4deba3eb099d68c1f1cf00faf61ed690d9279",
+                "source_link_only_not_georegistered",
+            ),
+            "gimg_efc65ed459ed8472833c": (
+                "cc_b976f6d9a82c",
+                "f82d6c1450519d0b00159158822dea62728488cd2cd9dd03b2aba13936598de1",
+                "source_link_only_not_georegistered",
+            ),
+        }
+        legacy_rows = {
+            row["image_link_id"]: row
+            for row in rows
+            if row["image_link_id"] in legacy_expected
+        }
+        self.assertEqual(set(legacy_rows), set(legacy_expected))
+        for image_link_id, (formation_id, sha256, placement_status) in legacy_expected.items():
+            row = legacy_rows[image_link_id]
+            self.assertEqual(row["source_id"], "legacy_kml_review")
+            self.assertEqual(row["formation_id"], formation_id)
+            self.assertEqual(row["image_sha256"], sha256)
+            self.assertEqual(
+                row["image_sha256_status"], "case_specific_sha256_verified"
+            )
+            self.assertEqual(row["placement_status"], placement_status)
+            self.assertEqual(row["embedding_allowed"], "false")
 
     def test_generated_site_candidates_fail_closed_for_british_grid(self):
         rows = read_csv(ROOT / "data" / "global_source_site_candidates.csv")
