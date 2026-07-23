@@ -1,0 +1,168 @@
+{
+  "schema_version": "legacy-kml-candidate-review/v1",
+  "policy": {
+    "allowed_outcomes": [
+      "properly_registered",
+      "provisional_registration",
+      "candidate_field",
+      "rejected",
+      "unresolved"
+    ],
+    "automatic_site_promotion": false,
+    "automatic_overlay_creation": false,
+    "automatic_alignment_eligibility": false,
+    "automatic_publication_eligibility": false,
+    "candidate_field_is_not_a_registered_site": true
+  },
+  "records": [
+    {
+      "legacy_candidate_id": "lkml_8045474ba5b89fbf",
+      "placemark_name": "Crop Circle",
+      "place": "Near House Springs",
+      "region": "Missouri",
+      "country_code": "US",
+      "latitude": 38.40162879896836,
+      "longitude": -90.62048080723103,
+      "coordinate_uncertainty_m": 35,
+      "outcome": "candidate_field",
+      "reviewed_at": "2026-07-22",
+      "reviewer": "Codex evidence review",
+      "event_date_status": "unknown; placemark posted 2005-12-29 and described as found 2005-12-30",
+      "source_photo_status": "no independent formation photograph preserved",
+      "registration_status": "no source frame available for image registration",
+      "evidence": [
+        {
+          "evidence_id": "legacy_kml_lkml_8045474ba5b89fbf",
+          "kind": "user_supplied_legacy_google_earth_placemark",
+          "source_url": "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/251997",
+          "sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7"
+        },
+        {
+          "evidence_id": "keyhole_forum_post_251997_cached_html",
+          "kind": "archived_forum_post_html",
+          "source_url": "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/251997",
+          "sha256": "66a8ff0358bb5e245cc4ad3b2d86035450063260926dfe5ed2531598b81c2b95"
+        },
+        {
+          "evidence_id": "msdis_naip_2005_mo099",
+          "kind": "official_historical_aerial_reference",
+          "source_url": "https://imagery.msdis.missouri.edu/arcgis/rest/services/NAIP/NAIP2005/ImageServer",
+          "acquisition_date": "2005-08-24",
+          "sha256": "b8548b5409b6e2e21d8bf9715d0792195370b803e97887d5b6fb07b1c2da34a0"
+        }
+      ],
+      "review_notes": "The legacy Google Earth placemark resolves to one agricultural field east of the Big River near House Springs. Official Missouri 2005 NAIP covers the point and confirms the field and access-road context, but the surviving forum post contains only the Google Earth placemark and no independent formation photograph. Comparison with 2004, 2006, and 2007 NAIP does not provide a defensible source-frame registration or independent confirmation of crop-circle geometry. The field is retained as a candidate only; the event date remains unknown.",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false
+    },
+    {
+      "legacy_candidate_id": "lkml_2581ddcf6d36fefd",
+      "placemark_name": "windmillhill cropcircle ghost from 2004",
+      "place": "Windmill Hill",
+      "region": "Wiltshire",
+      "country_code": "GB",
+      "latitude": 51.43459499120964,
+      "longitude": -1.874343072026605,
+      "coordinate_uncertainty_m": 40,
+      "outcome": "candidate_field",
+      "reviewed_at": "2026-07-22",
+      "reviewer": "Codex evidence review",
+      "event_date_status": "crosswalked to the 2004-07-17 Windmill Hill event by formation design",
+      "source_photo_status": "linked oblique aerial photograph verified",
+      "registration_status": "unique legacy-coordinate field retained; source photograph lacks distributed persistent ground controls",
+      "evidence": [
+        {
+          "evidence_id": "legacy_kml_lkml_2581ddcf6d36fefd",
+          "kind": "user_supplied_legacy_google_earth_placemark",
+          "source_url": "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/433355",
+          "sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7"
+        },
+        {
+          "evidence_id": "galactic_corn722_windmill_2004_aerial",
+          "kind": "event_source_oblique_aerial_photograph",
+          "source_url": "https://www.galactic-server.com/c45d8621k/corn722.jpg",
+          "sha256": "f82d6c1450519d0b00159158822dea62728488cd2cd9dd03b2aba13936598de1"
+        },
+        {
+          "evidence_id": "combined_catalog_page_256",
+          "kind": "dated_event_diagram",
+          "source_url": "https://www.cropcirclecenter.com/",
+          "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7"
+        }
+      ],
+      "review_notes": "The linked corn722 aerial exactly matches the long circle-and-crescent chain diagram for the 2004-07-17 Windmill Hill report on catalog page 256. The legacy placemark therefore identifies a candidate field for that 2004 event. It must not be used to anchor the separate 2003 Windmill Hill ghosts: the date and formation designs differ. The 2004 source frame is tight and oblique, with no distributed persistent landmarks or north reference, so no image footprint is published.",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false
+    },
+    {
+      "legacy_candidate_id": "lkml_9da2ff67b695b8e2",
+      "placemark_name": "Crop Circle #1 South of Barnsley",
+      "place": "South of Barnsley",
+      "region": "South Yorkshire",
+      "country_code": "GB",
+      "latitude": 53.53736524535798,
+      "longitude": -1.505412501181453,
+      "coordinate_uncertainty_m": 25,
+      "outcome": "candidate_field",
+      "reviewed_at": "2026-07-22",
+      "reviewer": "Codex evidence review",
+      "event_date_status": "legacy text says 12/08/05; day-month ordering remains unresolved",
+      "source_photo_status": "no independent formation photograph preserved",
+      "registration_status": "legacy coordinate resolves to a field; no source frame is available for image registration",
+      "evidence": [
+        {
+          "evidence_id": "legacy_kml_lkml_9da2ff67b695b8e2",
+          "kind": "user_supplied_legacy_google_earth_placemark",
+          "source_url": "http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973",
+          "sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7"
+        },
+        {
+          "evidence_id": "esri_barnsley_current_reference_export",
+          "kind": "current_aerial_field_reference",
+          "source_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+          "sha256": "bd866f11f7c9a984e3c989b38b37701d05edb6484ff33459b420666789c108bf"
+        }
+      ],
+      "review_notes": "The precise legacy placemark falls inside the large agricultural field immediately east of the M1 south of Barnsley. It is about 98 metres from the separately preserved #2 placemark in the same field. Current imagery verifies the field context but not the historical formation, and the surviving forum reference supplies no source photograph. This remains a candidate field only.",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false
+    },
+    {
+      "legacy_candidate_id": "lkml_0652bc310cbdd4b1",
+      "placemark_name": "Crop Circle #2 South of Barnsley",
+      "place": "South of Barnsley",
+      "region": "South Yorkshire",
+      "country_code": "GB",
+      "latitude": 53.53678155492893,
+      "longitude": -1.504303652242228,
+      "coordinate_uncertainty_m": 25,
+      "outcome": "candidate_field",
+      "reviewed_at": "2026-07-22",
+      "reviewer": "Codex evidence review",
+      "event_date_status": "legacy text says 12/08/05; day-month ordering remains unresolved",
+      "source_photo_status": "no independent formation photograph preserved",
+      "registration_status": "legacy coordinate resolves to a field; no source frame is available for image registration",
+      "evidence": [
+        {
+          "evidence_id": "legacy_kml_lkml_0652bc310cbdd4b1",
+          "kind": "user_supplied_legacy_google_earth_placemark",
+          "source_url": "http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973",
+          "sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7"
+        },
+        {
+          "evidence_id": "esri_barnsley_current_reference_export",
+          "kind": "current_aerial_field_reference",
+          "source_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+          "sha256": "bd866f11f7c9a984e3c989b38b37701d05edb6484ff33459b420666789c108bf"
+        }
+      ],
+      "review_notes": "The precise legacy placemark falls inside the same large agricultural field immediately east of the M1 as the separately preserved #1 point, about 98 metres away. Current imagery verifies the field context but not the historical formation, and the surviving forum reference supplies no source photograph. This remains a distinct candidate record and is not automatically merged or promoted.",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false
+    }
+  ]
+}

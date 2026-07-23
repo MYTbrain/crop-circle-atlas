@@ -4968,6 +4968,126 @@
       }
     },
     {
+      "observation_id": "regobs_hackpen_hill_2003_legacy_coordinate_scale_v1",
+      "overlay_id": "hackpen-hill-2003-legacy-coordinate-scale-north-up-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200321-hackpen-hill-broad-hinton-photo-ge-150m.jpg",
+        "page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "sha256": "c06d03f31cb22359860f671d9f1e78a3d88f6bd52cf957e83c7439ffb1e6dbba",
+        "width_px": 1920,
+        "height_px": 1080,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "coordinate_uncertainty_m": 40,
+        "site_text": "The legacy Hackpen point, corn664 radial-wheel aerial, 2003-07-20 catalog diagram, and ENWI200321 historical ghost crosswalk to the same event. The distinct 2003-07-27 serpent design is rejected as the image match.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "legacy_candidate_id": "lkml_c857c2d1e7ae52b6",
+        "legacy_candidate_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "legacy_folder": "Crop Circle Collection / Old or iffy Crop Circles",
+        "legacy_description_match": "cropcircle cutted Hackpen Hill; linked corn664 aerial",
+        "event_crosswalk_basis": "The corn664 radial-wheel aerial, the 2003-07-20 Hackpen Hill catalog diagram, CRA code ENWI200321, and the historical ghost agree; the July 27 serpent does not.",
+        "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "source_page_sha256": "a649712e7cd914808864c7eddcd758cca15e330d55a3e5b1132157ceb749c4c6",
+        "source_photo_url": "https://www.galactic-server.com/c45d8621k/corn664.jpg",
+        "source_photo_sha256": "7015f10d5e10f839d1deab4d73c4deba3eb099d68c1f1cf00faf61ed690d9279",
+        "source_frame_scale_bar_pixels": [
+          [
+            1580,
+            1077
+          ],
+          [
+            1918,
+            1077
+          ]
+        ],
+        "source_frame_scale_bar_length_m": 30,
+        "catalog_pdf_sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
+        "catalog_pdf_page": 244
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          990.0,
+          415.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "meters_per_pixel": 0.08849557522123894,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The source frame's 30 metre Google Earth scale bar spans 339 pixels from x=1580 to x=1918 at y=1077, giving 0.088495575221 metre per pixel.",
+        "orientation_basis": "The publishing page states that every displayed Google Earth frame is north-up; image x therefore points east and image y points south. This is publisher metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "publisher_stated_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          990,
+          415
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "meters_per_pixel": 0.08849557522123894,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 339,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.473784060641,
+          -1.826643881513
+        ],
+        [
+          51.473784060641,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.826643881513
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "This is a legacy-coordinate, measured-scale, publisher-orientation display placement, not a survey or landmark georegistration. The legacy folder marks the placemark old or iffy, the source acquisition date is not stated, the formation center was read from a faint compressed ghost, and zero independent ground checkpoints validate the corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

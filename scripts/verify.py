@@ -13,8 +13,10 @@ from xml.etree import ElementTree as ET
 
 try:
     from .verify_registered_overlay import validate_registered_overlay
+    from .validate_legacy_kml_candidate_reviews import validate_reviews as validate_legacy_kml_candidate_reviews
 except ImportError:
     from verify_registered_overlay import validate_registered_overlay
+    from validate_legacy_kml_candidate_reviews import validate_reviews as validate_legacy_kml_candidate_reviews
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,6 +66,15 @@ assertions = rows("source_assertions.csv")
 snapshots = rows("source_snapshots.csv")
 source_catalog = rows("source_catalog.csv")
 summary = json.loads((ROOT / "data" / "build_summary.json").read_text(encoding="utf-8"))
+legacy_kml_candidates = json.loads(
+    (ROOT / "data" / "legacy_kml_candidates.json").read_text(encoding="utf-8")
+)
+legacy_kml_candidate_reviews = json.loads(
+    (ROOT / "data" / "legacy_kml_candidate_reviews.json").read_text(encoding="utf-8")
+)
+assert validate_legacy_kml_candidate_reviews(
+    legacy_kml_candidate_reviews, legacy_kml_candidates
+) == {"candidate_field": 4}
 
 assert len(formations) >= 5_000, len(formations)
 assert len(assertions) >= len(formations), (len(assertions), len(formations))
@@ -71,16 +82,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4303, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4305, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
     "locality_reference": 3887,
-    "unresolved": 3442,
+    "unresolved": 3440,
     "corroborated_field": 4,
-    "candidate_field": 406,
+    "candidate_field": 408,
     "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 33
+assert summary["site_resolutions"]["reviewed_overrides"] == 35
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -219,7 +230,7 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 416
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 418
 assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3887
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})

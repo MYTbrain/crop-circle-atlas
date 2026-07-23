@@ -2769,6 +2769,78 @@
       }
     },
     {
+      "overlay_id": "hackpen-hill-2003-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_hackpen_hill_2003_legacy_coordinate_scale_v1",
+      "formation_id": "cc_ff64c3c47cb1",
+      "assertion_id": "a_66cc69a8c83a5a",
+      "title": "Hackpen Hill 2003 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200321-hackpen-hill-broad-hinton-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "c06d03f31cb22359860f671d9f1e78a3d88f6bd52cf957e83c7439ffb1e6dbba",
+      "corners": [
+        [
+          51.473784060641,
+          -1.826643881513
+        ],
+        [
+          51.473784060641,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.824193423982
+        ],
+        [
+          51.472925497748,
+          -1.826643881513
+        ]
+      ],
+      "center": [
+        51.47345414989942,
+        -1.825380364348547
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, matching corn664 aerial photograph, and COMBINED catalog diagram",
+      "reference_imagery_date": "historical_source_date_unspecified",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The design-specific source aerial, catalog diagram, archive code, and ghost fix the event identity. The legacy coordinate, measured scale bar, and publisher-stated north-up constrain a display footprint, but no persistent landmark independently validates its corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame and linked aerial are not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          990,
+          415
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.47345414989942,
+          -1.825380364348547
+        ],
+        "meters_per_pixel": 0.08849557522123894,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 339,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

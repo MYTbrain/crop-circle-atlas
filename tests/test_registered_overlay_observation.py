@@ -193,6 +193,16 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
                     [44.680494620774, 10.31669709193],
                 ],
             ),
+            "regobs_hackpen_hill_2003_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.473784060641, -1.826643881513],
+                    [51.473784060641, -1.824193423982],
+                    [51.472925497748, -1.824193423982],
+                    [51.472925497748, -1.826643881513],
+                ],
+            ),
         }
         for observation_id, (classification, kind, corners) in legacy_expected.items():
             observation = observations[observation_id]

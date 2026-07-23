@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-23T06:19:45.681725Z",
+  "generated_at": "2026-07-23T09:06:47.502905Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
-  "unique_formation_event_count": 1925,
+  "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
     "candidate_field": 11,
     "clues_reviewed": 2,
-    "provisional_registration": 35,
-    "queued": 1859,
+    "provisional_registration": 36,
+    "queued": 1862,
     "source_image_acquired": 13,
     "unresolved": 2
   },
@@ -36941,6 +36941,101 @@
       "selected_overlay_id": "darfield-2002-legacy-coordinate-scale-north-up-placement",
       "registration_classification": "provisional_registration",
       "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_ff64c3c47cb1",
+      "assertion_ids": [
+        "a_66cc69a8c83a5a"
+      ],
+      "event_date": "2003-07-20",
+      "place": "Hackpen Hill",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/407639"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200321-hackpen-hill-broad-hinton-photo-ge-150m.jpg",
+        "https://www.galactic-server.com/c45d8621k/corn664.jpg"
+      ],
+      "source_image_count": 2,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.47345414989942,
+      "current_longitude": -1.825380364348547,
+      "current_coordinate_uncertainty_m": 40.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Hackpen Hill",
+        "Wiltshire",
+        "Broad Hinton"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Hackpen Hill",
+        "Broad Hinton",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "1920x1080",
+        "493x338"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2081,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "hackpen-hill-2003-legacy-coordinate-scale-north-up-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_b976f6d9a82c",
+      "assertion_ids": [
+        "a_15011846522931"
+      ],
+      "event_date": "2004-07-17",
+      "place": "Windmill Hill",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/433355"
+      ],
+      "source_image_urls": [
+        "https://www.galactic-server.com/c45d8621k/corn722.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.43459499120964,
+      "current_longitude": -1.874343072026605,
+      "current_coordinate_uncertainty_m": 40.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Windmill Hill",
+        "Wiltshire",
+        "Avebury"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Windmill Hill",
+        "Avebury",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "300x640"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2078,
+      "processing_status": "queued",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "",
+      "registration_classification": "",
+      "review_date": ""
     },
     {
       "formation_id": "cc_8e09c95d83a5",
@@ -84825,6 +84920,47 @@
       "review_date": ""
     },
     {
+      "formation_id": "cc_721e4b7f87f1",
+      "assertion_ids": [
+        "a_bac44767176e45"
+      ],
+      "event_date": "2003-06-22",
+      "place": "Windmill Hill",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200309-windmill-hill-avebury-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "unresolved",
+      "current_latitude": null,
+      "current_longitude": null,
+      "current_coordinate_uncertainty_m": null,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Windmill Hill",
+        "Wiltshire"
+      ],
+      "identifiable_persistent_landmarks": [],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 1003,
+      "processing_status": "queued",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "",
+      "registration_classification": "",
+      "review_date": ""
+    },
+    {
       "formation_id": "cc_7262de3760e1",
       "assertion_ids": [
         "sx_dcca_e6340975474db433"
@@ -85318,6 +85454,47 @@
       ],
       "identifiable_persistent_landmarks": [],
       "source_image_dimensions": [],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 1003,
+      "processing_status": "queued",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "",
+      "registration_classification": "",
+      "review_date": ""
+    },
+    {
+      "formation_id": "cc_863c8e5d3833",
+      "assertion_ids": [
+        "a_bdcb9ce84d073c"
+      ],
+      "event_date": "2003-06-08",
+      "place": "Windmill Hill",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2026/02/enwi200303-windmill-hill-avebury-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "unresolved",
+      "current_latitude": null,
+      "current_longitude": null,
+      "current_coordinate_uncertainty_m": null,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Windmill Hill",
+        "Wiltshire"
+      ],
+      "identifiable_persistent_landmarks": [],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
       "display_rights": "link_only_rights_gated",
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",

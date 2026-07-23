@@ -370,6 +370,12 @@ class GeorefPageContractTests(unittest.TestCase):
                 "legacy_coordinate_reported_size_north_up_display_placement",
                 75,
             ),
+            "hackpen-hill-2003-legacy-coordinate-scale-north-up-placement": (
+                "cc_ff64c3c47cb1",
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                40,
+            ),
         }
         for overlay_id, (
             formation_id,
