@@ -8,6 +8,10 @@ Circle Connector, DCCA, Paul Vigay's field-report index, and the CCCRN mirror.
 
 **Live atlas:** https://mytbrain.github.io/crop-circle-atlas/
 
+**Geolocation reviewer:** https://mytbrain.github.io/crop-circle-atlas/geolocation-review.html
+
+**Four-point registration lab:** https://mytbrain.github.io/crop-circle-atlas/georef.html
+
 ## Exact-field geolocator MVP
 
 The repository now includes a local, fail-closed exact-field research worker under `services/geolocator/` and an integrated reviewer at `web/geolocation-review.html`. It searches only bounded polygons, normalizes historical imagery metadata, generates physical tiles, ranks candidates, proposes SIFT/RANSAC registrations, validates independent checkpoints in metres, persists explicit human decisions, and generates rights-gated local KML/KMZ overlays. Machine output never mutates canonical atlas coordinates.
@@ -19,10 +23,12 @@ Start with [setup](docs/GEOLOCATOR_SETUP.md), then read the [architecture](docs/
 - 8,391 source assertions resolved into 7,745 conservative catalog entities
   after four evidence-reviewed report aliases were merged. Near matches remain
   separate, so this is not a claim of 7,745 physically distinct formations.
-- Location evidence is separated by role: 407 field candidates/sites,
-  3,894 labeled locality references, and 3,444 unresolved entities. Nineteen of the
-  field-level records are explicit reviewed overrides; 384 more are publisher
-  map targets retained as non-accepted candidate fields. A locality reference
+- Location evidence is separated by role: 419 field candidates/sites
+  (409 candidate fields, four corroborated fields, and six registered sites),
+  3,886 labeled locality references, and 3,440 unresolved entities. Fifty-seven
+  field-level records are explicit reviewed overrides; 384 candidate rows
+  derive from publisher map targets, with overlap where a target was reviewed.
+  A locality reference
   supports discovery and search; it is not presented as the field.
 - 949 United States entities, plus one Puerto Rico record retained separately.
 - The bounded expansion contributes 639 metadata assertions. It contains 190
@@ -33,13 +39,13 @@ Start with [setup](docs/GEOLOCATOR_SETUP.md), then read the [architecture](docs/
   accounted for in 607 canonical assertions. One indexed entity, Mount Airy,
   North Carolina (1965), has no surviving detail page because its ICCRA URL
   returns 404.
-- The normalized per-report archive exposes 7,889 unique image links across
-  1,913 reports, represented by 8,042 formation-image relationships. Of those,
-  512 belong to US reports, 7,313 to known non-US reports, and 64 still lack a
+- The normalized per-report archive exposes 7,956 unique image links across
+  1,929 reports, represented by 8,109 formation-image relationships. Of those,
+  567 belong to US reports, 7,325 to known non-US reports, and 64 still lack a
   country assignment. The 7,398 global publisher links were enumerated from
   report pages but their image URLs were not independently fetched; they are
   explicitly counted as unverified, rights-gated links rather than copied
-  images or registered overlays. Eleven Wikimedia Commons relationships are
+  images or registered overlays. Thirteen Wikimedia Commons relationships are
   open-license records. The underlying ICCRA crawl
   inventoried 681 non-navigation references; all 669 successfully cached hosted
   rows (526 unique SHA-256 values) were analyzed privately, six external
@@ -47,6 +53,12 @@ Start with [setup](docs/GEOLOCATOR_SETUP.md), then read the [architecture](docs/
   review queue is metadata-only because publication rights have not been
   cleared. Its 157 high, 85 medium, and 86 low row-level tiers are unvalidated
   review priorities, not confirmed straight components.
+- The source-photo availability layer clusters 1,246 coordinate-referenced,
+  image-bearing reports without mapped overlays into unnumbered solid green
+  dots. Fifty-one image-bearing reports have reviewed placements, and 632
+  image-bearing reports remain unlocated. Hollow yellow dots remain locality
+  references; solid yellow dots mark candidate, reviewed, or registered
+  locations. Detailed classifications stay in popups and the sidebar.
 - All 5,978 supplied catalog diagrams analyzed for straight components: 974
   high, 344 medium, 1,925 low, and 2,735 none. On a 104-item internal
   convenience sample from six selected pages, the high-or-medium threshold
@@ -57,33 +69,30 @@ Start with [setup](docs/GEOLOCATOR_SETUP.md), then read the [architecture](docs/
   formations. Their five long-distance extensions are clearly labeled
   experimental. The earlier 16 corridor matches came from rough locality
   centroids and are now excluded; accepted rays tested against the two currently
-  alignment-eligible sites produce zero corridor matches. The other 20
+  alignment-eligible sites produce zero corridor matches. The other 417
   candidates/sites are excluded by the quality gate. Diagram angles remain
   image-space measurements and never become geographic bearings without
   independent orientation evidence.
 - The perspective-correct registration and GroundOverlay pipeline is complete,
-  but the public KMZ packages zero image files. The web map and KML/KMZ contain
-  twenty-two opt-in,
-  source-hosted placements: Whiskey Hill/Hubbard 1998 and 2000,
-  Wausau 1997, Mayville/Kekoskee 2003, Howell Township 2003, Jupiter 2005,
-  Wavra Farm 1997, both Rockville 2003 formations, Miamisburg 2004,
-  Hopewell/Chillicothe 2012, Albion/Starr 2002, and nine openly licensed
-  same-flight frames of the Diessenhofen, Switzerland formation of 2008-07-15.
-  Wausau uses a contemporaneous investigator road map and an ICCRA-linked USGS
-  follow-up frame; Mayville and Howell have provisional display geometry tied
-  to source coordinates; Jupiter is explicitly a coordinate-anchored scene
-  whose orientation remains unresolved. Only images with defensible placement
-  evidence receive map footprints. Rights-restricted pixels are requested from
-  the source host only after an explicit user action; the repository contains
-  and redistributes no source-photo pixels. Local-only registration remains
+  but the public KMZ packages zero image files. The web map contains 59 reviewed
+  image-placement records across 51 unique formation events: 39
+  landmark/projective/affine or crop-geometry registrations, one camera-pose
+  registration, 13 coordinate/size display placements, and six other
+  provisional manual or source-coordinate placements. Twenty-five can load
+  source-hosted pixels only after explicit user action; 34 remain
+  footprint/link-only under their recorded rights policy. The combined KML/KMZ
+  contains the same catalog points and experimental axes plus the 25
+  rights-compatible remote-linked GroundOverlays. Only images with reviewed
+  placement evidence receive map footprints. The repository contains and
+  redistributes no source-photo pixels, and local-only registration remains
   available.
 
 ## Exact-field resolution status
 
 Exact-field work has begun, but it is not complete. The current ledger contains
-408 field candidates/sites; 3,894 other coordinates are explicitly labeled
-locality references and 3,443 entities remain unresolved. Twenty field-level
-decisions are preserved as reviewed overrides.
+419 field candidates/sites; 3,886 other coordinates are explicitly labeled
+locality references and 3,440 entities remain unresolved. Fifty-seven
+field-level decisions are preserved as reviewed overrides.
 
 The first reviewed case is Whiskey Hill, Oregon. The 1998 Crop Circle Center
 row was merged into the ICCRA 1998 entity, and the Crop Circle Center and Paul
@@ -140,9 +149,9 @@ because no independent checkpoint or same-date orthophoto is available.
 
 The source-image catalog also includes 54 live-checked, link-only photographs
 from 23 specifically matched U.S. reports in the Crop Circle Archives 2002â€“2006
-North America pages. These additions raise the catalog to 7,945 unique image
-links, including 566 associated with U.S. reports. They create source-evidence
-PIC records, not image overlays or exact site claims.
+North America pages. The current catalog contains 7,956 unique image links,
+including 567 associated with U.S. reports. These are source-evidence records,
+not image overlays or exact-site claims.
 
 The US-first resolution campaign uses official USGS and USDA imagery for
 repeatable evidence, with Google Earth as a manual verification surface only.
@@ -165,18 +174,19 @@ sources, control-point requirements, and unresolved-state policy.
 - `data/iccra_image_straight_candidates.csv`: metadata-only, unvalidated ICCRA
   source-image review queue; no source or derived pixels are included.
 - `web/data/formation_images.json`: normalized per-report source-image archive,
-  with 7,889 unique image links, 1,913 linked reports, 8,042 relationships,
+  with 7,956 unique image links, 1,929 linked reports, 8,109 relationships,
   rights/display policy, and link-verification status.
 - `data/orientation_observations.csv`: human-reviewed true-north bearings.
 - `data/alignment_hits.csv`: centerline corridor hits with coordinate and
   bearing-uncertainty eligibility fields.
-- `web/`: static interactive atlas plus a local-only perspective-correct image
-  registration lab.
+- `web/`: static interactive atlas, fail-closed geolocation reviewer, and
+  local-only perspective-correct image registration lab.
 - `exports/crop_circle_atlas.kml` and `.kmz`: Google Earth points, experimental
   extensions from reviewed local orientations, zero packaged image files, and
-  twenty-one disabled provisional GroundOverlay links to source-hosted images,
-  including nine CC BY-SA 3.0 international placements. Packaged
-  overlays remain rights-cleared only.
+  25 remote-linked GroundOverlays whose recorded rights permit browser/KML
+  loading. The web atlas separately retains all 59 reviewed footprints,
+  including 34 footprint/link-only records. Packaged overlays remain
+  rights-cleared only.
 - `outputs/initial-build/crop_circle_atlas.xlsx`: research workbook.
 
 ## Scientific boundary

@@ -87,7 +87,7 @@ The earlier mixed-coordinate build produced 16 corridor matches against rough
 locality centroids. Those points are not formation sites and are now excluded.
 The evidence-separated rebuild tests accepted rays only against the two
 currently alignment-eligible sites and produces zero corridor matches. The
-other 20 site/candidate records, unresolved reports, and locality references
+other 417 site/candidate records, unresolved reports, and locality references
 are excluded by the current quality gate.
 
 Before any prediction study, preregister range, corridor, directionality, date
@@ -111,9 +111,9 @@ in-repository path, matching hash, valid formation, reviewed transform, and
 explicit publication authorization with license or permission evidence. ICCRA
 source images are link-only/private-cache research inputs until rights holders
 authorize redistribution.
-The current combined KML/KMZ packages zero image files. It contains thirteen
-off-by-default provisional GroundOverlays whose URLs point to the source host;
-those linked displays are not publication authorization and may be blocked by
-the host. When an authorized packaged overlay is added, the combined KML embeds its
+The current combined KML/KMZ packages zero image files. It contains 25
+rights-compatible remote-linked GroundOverlays whose URLs point to source
+hosts; those linked displays are not publication authorization and may be
+blocked by the host. When an authorized packaged overlay is added, the combined KML embeds its
 rights holder, license, proof reference, and source URL in both the description
 and ExtendedData.
