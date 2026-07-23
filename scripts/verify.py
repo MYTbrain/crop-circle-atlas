@@ -684,8 +684,8 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260722.4"' in web_index
-assert 'src="app.js?v=20260722.5"' in web_index
+assert 'href="styles.css?v=20260722.5"' in web_index
+assert 'src="app.js?v=20260722.6"' in web_index
 assert "formation_index.json?v=20260722.5" in web_app
 assert "formation_sites.geojson?v=20260722.5" in web_app
 assert "registered_overlays.json?v=20260722.5" in web_app

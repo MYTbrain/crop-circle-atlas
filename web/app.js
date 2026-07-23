@@ -1,5 +1,13 @@
 import { bearingLateralUncertainty, crossAlongTrack, destination, normalizeBearing } from './atlas-geodesy.mjs';
 import { projectiveImageOverlay } from './projective-image-overlay.mjs';
+import {
+  clusterSourcePhotoLocations,
+  filterSourcePhotoLocations,
+  installDebouncedSourcePhotoRerender,
+  sourcePhotoClusterAction,
+  sourcePhotoClusterSettings,
+  sourcePhotoMarkerPresentation,
+} from './source-photo-clustering.mjs?v=20260722.1';
 
 const map = L.map('map', { preferCanvas: true, zoomControl: false }).setView([38, -96], 4);
 map.createPane('registeredImageryPane');
@@ -8,7 +16,7 @@ map.getPane('registeredImageryPane').style.pointerEvents = 'none';
 map.createPane('localityPointPane');
 map.getPane('localityPointPane').style.zIndex = '420';
 map.createPane('sourcePhotoPane');
-map.getPane('sourcePhotoPane').style.zIndex = '510';
+map.getPane('sourcePhotoPane').style.zIndex = '440';
 map.createPane('overlayFootprintPane');
 map.getPane('overlayFootprintPane').style.zIndex = '520';
 map.createPane('rayPane');
@@ -16,9 +24,8 @@ map.getPane('rayPane').style.zIndex = '460';
 map.getPane('rayPane').style.pointerEvents = 'none';
 map.createPane('sitePointPane');
 map.getPane('sitePointPane').style.zIndex = '480';
-const pointRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 12 });
-const localityRenderer = pointRenderer;
-const siteRenderer = pointRenderer;
+const localityRenderer = L.canvas({ pane: 'localityPointPane', padding: 0.5, tolerance: 12 });
+const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 12 });
 const overlayFootprintRenderer = L.svg({ pane: 'overlayFootprintPane', padding: 0.5 });
 L.control.zoom({ position: 'topright' }).addTo(map);
 
@@ -71,6 +78,7 @@ const renderedMarkersById = new Map();
 const overlayFootprintsByFormation = new Map();
 const provisionalByFormation = new Map();
 const sourceImagesByFormation = new Map();
+let sourcePhotoVisibleIds = null;
 const PANEL_WIDTH_STORAGE_KEY = 'crop-circle-atlas:panel-width';
 const PANEL_MIN_WIDTH = 300;
 
@@ -439,7 +447,7 @@ function renderFeatures(features, targetLayer, reference = false) {
   }
   const orderedGroups = [...groups.values()].sort((left, right) => {
     if (reference) return 0;
-    const priority = (group) => locationRole(fullRecord(group[0])) === 'candidate_field' ? 1 : 0;
+    const priority = (group) => locationRole(fullRecord(group[0])) === 'candidate_field' ? 0 : 1;
     return priority(left) - priority(right);
   });
   for (const group of orderedGroups) {
@@ -474,63 +482,127 @@ function sourcePhotoChoicePopup(records) {
   const popup = document.createElement('div');
   popup.className = 'popup source-photo-popup';
   const title = document.createElement('h3');
-  title.textContent = `${records.length} image-bearing reports share this coordinate reference`;
+  title.textContent = `${records.length} source-photo reports`;
   const disclosure = document.createElement('p');
-  disclosure.textContent = 'Choose a report to load its source-image archive. This badge shows image availability, not a registered photograph or formation placement.';
+  disclosure.textContent = 'Choose a report to open its image archive. No source image loads from this cluster automatically.';
   popup.append(title, disclosure);
   records.forEach((record) => {
     const images = sourceImagesFor(record.formation_id);
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'secondary source-photo-choice';
-    button.textContent = `${record.date_iso} — ${record.place || 'Unnamed report'} (${images.length} image${images.length === 1 ? '' : 's'})`;
+    button.textContent = `${record.date_iso} — ${record.place || 'Unnamed report'} · ${images.length} image${images.length === 1 ? '' : 's'} · ${locationLabel(record)}`;
     button.addEventListener('click', () => window.showSourceImagesForFormation(record.formation_id));
     popup.appendChild(button);
   });
   return popup;
 }
 
+function sourcePhotoAccessibilityLabel(reportCount, imageCount) {
+  const reportLabel = reportCount === 1 ? 'One report' : `${reportCount} reports`;
+  return `${reportLabel} with ${imageCount} source image${imageCount === 1 ? '' : 's'}. Source-photo availability only; not a registered placement.`;
+}
+
+function openSourcePhotoCluster(cluster, coordinate) {
+  const zoom = map.getZoom();
+  const records = cluster.records.map((entry) => entry.record);
+  const action = sourcePhotoClusterAction(cluster, zoom);
+  if (action === 'open_archive') {
+    void window.showSourceImagesForFormation(records[0].formation_id);
+    return;
+  }
+  if (action === 'zoom') {
+    if (cluster.reportCount === 1) {
+      map.setView(coordinate, Math.min(10, zoom + 3));
+      return;
+    }
+    const bounds = L.latLngBounds(
+      [cluster.geographicBounds.south, cluster.geographicBounds.west],
+      [cluster.geographicBounds.north, cluster.geographicBounds.east],
+    );
+    map.fitBounds(bounds, { padding: [45, 45], maxZoom: Math.min(12, zoom + 3) });
+    return;
+  }
+  L.popup({ maxWidth: 380 })
+    .setLatLng(coordinate)
+    .setContent(sourcePhotoChoicePopup(records))
+    .openOn(map);
+}
+
 function renderSourcePhotoAvailability(visibleIds = null) {
+  sourcePhotoVisibleIds = visibleIds;
   sourcePhotoLayer.clearLayers();
   const mappedOverlayIds = new Set(overlayRecords.map((record) => record.formation_id));
-  const groups = new Map();
+  const rawLocations = [];
   for (const formationId of sourceImagesByFormation.keys()) {
-    if (visibleIds && !visibleIds.has(formationId)) continue;
-    if (mappedOverlayIds.has(formationId)) continue;
     const record = formationsById.get(formationId);
     if (!record) continue;
     const coordinates = sourcePhotoCoordinates(record);
     if (!coordinates) continue;
-    const key = `${coordinates[0].toFixed(7)},${coordinates[1].toFixed(7)}`;
-    if (!groups.has(key)) groups.set(key, { coordinates, records: [] });
-    groups.get(key).records.push(record);
-  }
-  for (const { coordinates, records } of groups.values()) {
-    records.sort((left, right) => String(left.date_iso).localeCompare(String(right.date_iso)));
-    const imageCount = records.reduce((total, record) => total + sourceImagesFor(record.formation_id).length, 0);
-    const label = records.length > 1 ? `PIC ${records.length}` : 'PIC';
-    const hitboxWidth = Math.max(44, label.length * 8 + 18);
-    const marker = L.marker(coordinates, {
-      pane: 'sourcePhotoPane',
-      icon: L.divIcon({
-        className: 'source-photo-marker',
-        html: `<span aria-hidden="true">${label}</span><i class="source-photo-anchor-target" aria-hidden="true"></i>`,
-        iconSize: [hitboxWidth + 16, 48],
-        iconAnchor: [8, 40],
-        tooltipAnchor: [Math.round(hitboxWidth / 2), -28],
-      }),
-      title: `${records.length} report${records.length === 1 ? '' : 's'} with ${imageCount} linked source image${imageCount === 1 ? '' : 's'} — availability only`,
+    rawLocations.push({
+      formationId,
+      latitude: coordinates[0],
+      longitude: coordinates[1],
+      imageCount: sourceImagesFor(formationId).length,
+      locationRole: locationRole(record),
+      selected: selected?.formation_id === formationId,
+      record,
     });
-    marker.bindPopup(sourcePhotoChoicePopup(records), { maxWidth: 360 });
-    if (records.length === 1) {
-      const record = records[0];
-      marker.bindTooltip(`${record.place || 'Report'}: ${imageCount} source image${imageCount === 1 ? '' : 's'} available — not a mapped placement`);
-      marker.on('click', () => window.showSourceImagesForFormation(record.formation_id));
+  }
+  const locations = filterSourcePhotoLocations(rawLocations, visibleIds, mappedOverlayIds);
+  const zoom = map.getZoom();
+  const size = map.getSize();
+  const clusters = clusterSourcePhotoLocations(locations, {
+    zoom,
+    width: size.x,
+    height: size.y,
+    settings: sourcePhotoClusterSettings(zoom),
+    project: (point) => map.latLngToContainerPoint([point.latitude, point.longitude]),
+  });
+  for (const cluster of clusters) {
+    const coordinate = map.containerPointToLatLng(L.point(cluster.x, cluster.y));
+    const presentation = sourcePhotoMarkerPresentation(cluster, zoom);
+    const accessibilityLabel = sourcePhotoAccessibilityLabel(cluster.reportCount, cluster.imageCount);
+    const selectedClass = cluster.selected ? ' is-selected' : '';
+    let icon;
+    if (presentation.kind === 'cluster') {
+      const diameter = presentation.sizeTier === 'large' ? 52 : presentation.sizeTier === 'medium' ? 44 : 36;
+      icon = L.divIcon({
+        className: `source-photo-cluster-marker source-photo-size-${presentation.sizeTier}${selectedClass}`,
+        html: `<span aria-hidden="true">${esc(presentation.label)}</span>`,
+        iconSize: [diameter, diameter],
+        iconAnchor: [Math.round(diameter / 2), Math.round(diameter / 2)],
+        tooltipAnchor: [0, -Math.round(diameter / 2)],
+      });
     } else {
-      marker.bindTooltip(`${records.length} reports with source images share this coordinate — click to choose`);
+      icon = L.divIcon({
+        className: `source-photo-marker${selectedClass}`,
+        html: '<span aria-hidden="true">PIC</span><i class="source-photo-anchor-target" aria-hidden="true"></i>',
+        iconSize: [68, 48],
+        iconAnchor: [8, 40],
+        tooltipAnchor: [28, -28],
+      });
     }
+    const marker = L.marker(coordinate, {
+      pane: 'sourcePhotoPane',
+      icon,
+      title: accessibilityLabel,
+    });
+    marker.bindTooltip(`${cluster.reportCount} report${cluster.reportCount === 1 ? '' : 's'} · ${cluster.imageCount} source image${cluster.imageCount === 1 ? '' : 's'} available`);
+    marker.on('add', () => {
+      const element = marker.getElement();
+      element?.setAttribute('aria-label', accessibilityLabel);
+      element?.setAttribute('role', 'button');
+    });
+    marker.on('click', () => openSourcePhotoCluster(cluster, coordinate));
     marker.addTo(sourcePhotoLayer);
   }
+  window.sourcePhotoAvailabilityMetrics = {
+    zoom,
+    visibleMarkerCount: clusters.length,
+    visibleReportCount: clusters.reduce((total, cluster) => total + cluster.reportCount, 0),
+    visibleImageCount: clusters.reduce((total, cluster) => total + cluster.imageCount, 0),
+  };
 }
 
 function sourcePhotoLocationCounts() {
@@ -785,6 +857,7 @@ async function selectFormation(id, focus = false) {
   resetSourceImageGallery();
   updateOverlayControls();
   updateSourceImageControls();
+  if (sourceImagesByFormation.size) renderSourcePhotoAvailability(sourcePhotoVisibleIds);
   if (!applyProvisionalOrientation(selected)) {
     $('hitSummary').textContent = canAlign
       ? 'This reviewed field can originate an unqualified manual hypothesis. Enter a true bearing and uncertainty, then draw the line.'
@@ -961,6 +1034,11 @@ window.showOverlayForFormation = async (id, overlayId = null) => {
 };
 
 initializePanelResizer();
+installDebouncedSourcePhotoRerender(map, () => {
+  if (map.hasLayer(sourcePhotoLayer) && allFormations.length) {
+    renderSourcePhotoAvailability(sourcePhotoVisibleIds);
+  }
+});
 $('drawRay').addEventListener('click', drawRay);
 $('exportRay').addEventListener('click', exportRay);
 $('toggleOverlay').addEventListener('click', toggleSelectedOverlay);
@@ -990,6 +1068,10 @@ $('showLocalities').addEventListener('change', async () => {
   applyFilters();
 });
 map.on('overlayadd', async (event) => {
+  if (event.layer === sourcePhotoLayer) {
+    renderSourcePhotoAvailability(sourcePhotoVisibleIds);
+    return;
+  }
   if (event.layer === localityLayer && !$('showLocalities').checked) {
     $('showLocalities').checked = true;
     try {
@@ -1088,7 +1170,7 @@ Promise.all([
     localityLayer,
     `Rough locality references (not sites; ${usLocalityPhotoReports.length} US have photos)`,
   );
-  layerControl.addOverlay(sourcePhotoLayer, `Source-photo availability (${sourcePhotoCounts.picReports} reports)`);
+  layerControl.addOverlay(sourcePhotoLayer, 'Source-photo availability');
   layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
 
   const years = allFormations.map((record) => Number(record.year)).filter(Number.isFinite);
@@ -1105,13 +1187,13 @@ Promise.all([
   $('localityPhotoCoverage').textContent = `Of ${usLocalityReports.length.toLocaleString()} US rough-locality reports, ${usLocalityPhotoReports.length.toLocaleString()} currently have linked source photos; the photo evidence does not by itself make those coordinates exact.`;
   const displayableOverlayCount = overlayRecords.filter(overlayPixelsMayDisplay).length;
   const rightsGatedOverlayCount = overlayRecords.length - displayableOverlayCount;
-  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} IMG placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels; ${rightsGatedOverlayCount.toLocaleString()} GEO footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Cyan PIC badges indicate source-photo availability without a reviewed footprint.`;
+  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} IMG placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels; ${rightsGatedOverlayCount.toLocaleString()} GEO footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Clustered cyan markers indicate source-photo availability without a reviewed footprint.`;
   const unlocatedImageReports = Number(sourceImageMetadata.formation_count || 0) - sourcePhotoCounts.located;
   const nonUsImages = Number(sourceImageMetadata.non_us_unique_image_count || 0);
   const unknownCountryImages = Number(sourceImageMetadata.unknown_country_unique_image_count || 0);
   const unverifiedLinks = Number(sourceImageMetadata.unverified_unique_image_link_count || 0);
   const rightsGated = Number(sourceImageMetadata.rights_gated_unique_image_count || 0);
-  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by cyan PIC badges, ${sourcePhotoCounts.registered} image-bearing reports have mapped placements covering ${overlayRecords.length} reviewed frames, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by clustered cyan availability markers, ${sourcePhotoCounts.registered} image-bearing reports have mapped placements covering ${overlayRecords.length} reviewed frames, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
   updateSourceImageControls();
   applyFilters();
   addOrientationLayers();

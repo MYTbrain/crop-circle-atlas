@@ -8,7 +8,7 @@
   <meta name="description" content="A provenance-first map of reported crop formations and an experimental geographic alignment lab.">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=20260722.4">
+  <link rel="stylesheet" href="styles.css?v=20260722.5">
 </head>
 <body>
   <main>
@@ -43,7 +43,7 @@
         <label class="check"><input id="usOnly" type="checkbox"> US reports only</label>
         <label class="check"><input id="straightOnly" type="checkbox"> PDF/source-image candidates or reviewed evidence only</label>
         <label class="check"><input id="showLocalities" type="checkbox"> Show rough locality references on map</label>
-        <p class="notice"><strong>Map truth:</strong> solid yellow markers are candidate fields; hollow dashed yellow markers are rough locality references, not formation sites; teal solid markers are corroborated or registered sites. <span id="localityPhotoCoverage">Loading US locality/photo coverageâ€¦</span> Cyan <strong>PIC</strong> badges only mean source photographs are available for a report at that report's current coordinate reference. Amber <strong>IMG</strong> badges and dashed footprints identify the much smaller set with reviewed image placements. Field and registered-image markers remain dominant. Unresolved reports remain searchable without being placed on the map.</p>
+        <p class="notice"><strong>Map truth:</strong> solid yellow markers are candidate fields; hollow dashed yellow markers are rough locality references, not formation sites; teal solid markers are corroborated or registered sites. <span id="localityPhotoCoverage">Loading US locality/photo coverageâ€¦</span> Cyan source-photo markers, including <strong>PIC</strong> badges at close zoom, only mean source photographs are available for a report at that report's current coordinate reference. Amber <strong>IMG</strong> badges and dashed footprints identify the much smaller set with reviewed image placements. Field and registered-image markers remain dominant. Unresolved reports remain searchable without being placed on the map.</p>
         <div class="map-key" aria-label="Location evidence legend">
           <span><i class="key-dot verified"></i>corroborated/registered</span>
           <span><i class="key-dot candidate"></i>candidate field</span>
@@ -52,6 +52,7 @@
           <span><i class="key-image-badge mapped">IMG</i>reviewed image placement</span>
           <span><i class="key-image-badge georef">GEO</i>reviewed footprint; pixels rights-gated</span>
         </div>
+        <p class="muted source-photo-disclosure">Counts are clustered when zoomed out. These markers show source-image availability, not registered image placement.</p>
         <details class="results" open><summary>Matching reports</summary><div id="resultsList" class="results-list" role="list"></div></details>
       </section>
 
@@ -104,7 +105,7 @@
     <div id="map" aria-label="Interactive crop circle map"></div>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script type="module" src="app.js?v=20260722.5"></script>
+  <script type="module" src="app.js?v=20260722.6"></script>
   <script type="module" src="atlas-georef-integration.mjs?v=20260722.4"></script>
 </body>
 </html>

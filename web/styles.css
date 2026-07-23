@@ -56,10 +56,18 @@ footer { color:var(--muted); font-size:11px; padding-top:4px; } a { color:#86e2d
 .popup h3 { margin:0 0 5px; font-size:15px; }.popup p { margin:4px 0; }.popup button { margin-top:8px; padding:6px 8px; }
 .registered-image-marker { background:transparent; border:0; }
 .registered-image-marker span { display:flex; align-items:center; justify-content:center; width:max-content; min-width:34px; height:24px; padding:0 5px; border:2px solid #fff4c7; border-radius:6px; background:#f6ad55; color:#16100a; box-shadow:0 2px 8px #000b; font-size:9px; font-weight:900; letter-spacing:.04em; white-space:nowrap; }
+.source-photo-cluster-marker { display:flex!important; align-items:center; justify-content:center; box-sizing:border-box; border:2px solid #d8fff9; border-radius:50%; background:#0d5b58; color:#fff; box-shadow:0 2px 9px #000c; cursor:pointer; font-size:10px; font-weight:900; line-height:1; white-space:nowrap; }
+.source-photo-cluster-marker span { pointer-events:none; }
+.source-photo-cluster-marker.source-photo-size-medium { background:#0b625e; font-size:10px; }
+.source-photo-cluster-marker.source-photo-size-large { background:#075752; font-size:11px; }
+.source-photo-cluster-marker.is-selected { border-color:#ffe08a; box-shadow:0 0 0 4px #f6ad5566,0 3px 11px #000d; }
+.source-photo-cluster-marker:focus-visible { outline:3px solid #ffe08a; outline-offset:3px; }
 .source-photo-marker { position:absolute!important; background:transparent; border:0; pointer-events:auto!important; cursor:pointer; }
 .source-photo-marker span { position:absolute; top:0; left:16px; display:flex; align-items:center; justify-content:center; width:calc(100% - 16px); min-width:44px; height:28px; padding:0 7px; border:2px solid #d8fff9; border-radius:6px; background:#146b67; color:#effffa; box-shadow:0 2px 8px #000c; font-size:9px; font-weight:900; letter-spacing:.04em; line-height:1; white-space:nowrap; }
+.source-photo-marker.is-selected span { border-color:#ffe08a; box-shadow:0 0 0 3px #f6ad5566,0 2px 8px #000c; }
 .source-photo-anchor-target { position:absolute; left:0; top:32px; display:block; width:16px; height:16px; border-radius:50%; background:transparent; }
 .source-photo-popup .source-photo-choice { margin-top:6px; text-align:left; font-size:11px; }
+.source-photo-disclosure { margin-top:7px; }
 .source-image-section { background:#0d1d1b; margin:0 -10px; padding:20px 10px; border-top-color:#35665e; }
 .source-image-gallery { display:grid; grid-template-columns:1fr; gap:10px; max-height:620px; overflow:auto; margin-top:12px; padding-right:4px; }
 .source-image-gallery[hidden] { display:none; }
