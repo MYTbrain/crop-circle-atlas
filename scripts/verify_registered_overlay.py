@@ -252,6 +252,13 @@ def validate_registered_overlay(root=ROOT):
                 "https://creativecommons.org/licenses/by"
             )
             assert projective_overlay["rights_attribution"]
+        elif "earthfiles.com" in projective_overlay["source_image_url"]:
+            assert projective_overlay["source_photo_pixels"] == "remote_source_link_only"
+            assert (
+                projective_overlay["rights_status"]
+                == "all_rights_reserved_link_only_not_cleared_for_embedding"
+            )
+            assert projective_overlay["embedding_allowed"] is False
         else:
             assert projective_overlay["source_photo_pixels"] in {
                 "remote_source_link_only",

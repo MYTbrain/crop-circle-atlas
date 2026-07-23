@@ -2841,6 +2841,96 @@
       }
     },
     {
+      "overlay_id": "huntingburg-2006-seven-control-airport-scene-placement",
+      "registration_observation_id": "regobs_huntingburg_2006_projective_v1",
+      "formation_id": "cc_cee3a40aace5",
+      "assertion_id": "iccra_09b17f954c31afbe",
+      "title": "Huntingburg 2006 airport-grove field placement",
+      "source_image_url": "https://www.earthfiles.com/wp-content/uploads/2017/09/HuntingburgAirportCircleAerial.jpg",
+      "source_page_url": "https://www.earthfiles.com/2006/07/07/anomalies-in-huntingburg-indiana-wheat-pictogram/",
+      "source_image_sha256": "709b59aa26688ca61531ccf28487797cbbde655578a1687bf4160117071c2fcc",
+      "corners": [
+        [
+          38.261665398097,
+          -86.955336622725
+        ],
+        [
+          38.248000323373,
+          -86.962611548512
+        ],
+        [
+          38.244183096354,
+          -86.961394185933
+        ],
+        [
+          38.241522544085,
+          -86.956012418811
+        ]
+      ],
+      "center": [
+        38.244933468366,
+        -86.961260605935
+      ],
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_seven_control_projective_airport_registration",
+      "display_geometry_status": "seven_control_projective_airport_grove_field_scene_placement",
+      "reference_imagery": "Indiana Geographic Information Office 2005 Orthophotography",
+      "reference_imagery_date": "2005-03_to_2005-04_leaf_off",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The field is uniquely identified by four persistent scene classes visible together in the source and official near-contemporaneous orthophoto: runway, hangars, access road, and grove. Seven controls produce a visually coherent projective fit and the held-out airport checkpoint residual is 32.35 metres.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "all_rights_reserved_link_only_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image field identification with a provisional seven-control projective display fit. It is excluded from formal alignment calculations and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Earthfiles retains all source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "manual_seven_control_projective_scene_registration",
+        "source_frame_size_px": [
+          432,
+          320
+        ],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [
+            1.2327106653795525,
+            4.019917723613196,
+            927.6842183637397
+          ],
+          [
+            7.655092179628557,
+            10.750494237853518,
+            -909.6845267557769
+          ],
+          [
+            0.012426813872755597,
+            0.00489408716271219,
+            1.0
+          ]
+        ],
+        "reference_export_bbox_wgs84": [
+          -86.965,
+          38.235,
+          -86.94,
+          38.252
+        ],
+        "reference_export_size_px": [
+          2400,
+          1600
+        ],
+        "reference_service_url": "https://di-ingov.img.arcgis.com/arcgis/rest/services/DynamicWebMercator/Indiana_2005_Imagery/ImageServer",
+        "reference_export_sha256": "9898bd769de8949c4058333addd4d444ad350f36b9b0d338608c4716514c65cf",
+        "control_count": 7,
+        "control_fit_rmse_m": 39.21,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 32.35,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

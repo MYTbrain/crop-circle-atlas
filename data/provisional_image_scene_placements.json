@@ -1987,6 +1987,130 @@
         "independent_checkpoint_count": 0,
         "formal_alignment_status": "excluded_pending_independent_ground_control"
       }
+    },
+    {
+      "overlay_id": "huntingburg-2006-seven-control-airport-scene-placement",
+      "observation_id": "regobs_huntingburg_2006_projective_v1",
+      "formation_id": "cc_cee3a40aace5",
+      "assertion_id": "iccra_09b17f954c31afbe",
+      "title": "Huntingburg 2006 airport-grove field placement",
+      "source_image_url": "https://www.earthfiles.com/wp-content/uploads/2017/09/HuntingburgAirportCircleAerial.jpg",
+      "source_image_sha256": "709b59aa26688ca61531ccf28487797cbbde655578a1687bf4160117071c2fcc",
+      "anchor_pixel_xy": [343, 238],
+      "anchor_wgs84_lat_lon": [38.244933468366, -86.961260605935],
+      "corners_wgs84": [
+        [38.261665398097, -86.955336622725],
+        [38.248000323373, -86.962611548512],
+        [38.244183096354, -86.961394185933],
+        [38.241522544085, -86.956012418811]
+      ],
+      "corner_basis": "Seven manually selected airport, hangar, access-road, and tree-grove controls were fit with a least-squares projective transform from the 432 by 320 source frame to official 2005 Indiana orthophotography. One held-out hangar/taxiway control has a 32.35 metre residual.",
+      "coordinate_uncertainty_m": 60,
+      "registration_status": "provisional_seven_control_projective_airport_registration",
+      "display_geometry_status": "seven_control_projective_airport_grove_field_scene_placement",
+      "reference_imagery": "Indiana Geographic Information Office 2005 Orthophotography",
+      "reference_imagery_date": "2005-03_to_2005-04_leaf_off",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The source aerial explicitly places the formation beside Huntingburg Airport and shows the runway, hangar row, curving airport access road, and shielding tree grove. Those persistent features match one scene in official 2005 orthophotography and resolve the wheat field southwest of the grove.",
+      "source_report_controls": {
+        "source_report_url": "https://www.earthfiles.com/2006/07/07/anomalies-in-huntingburg-indiana-wheat-pictogram/",
+        "source_report_sha256": "22aa311cef52fe14ac565d8fbb4da00d3b116e0e3df18c5d7552c51b493a9b50",
+        "source_photo_date": "2006-06-26",
+        "reported_landmarks": "Huntingburg Airport; thick grove of tall trees; green ditch; field at least 400 feet from the closest public road",
+        "airport_reference_wgs84_lat_lon": [38.2490278, -86.9536944],
+        "reference_service_url": "https://di-ingov.img.arcgis.com/arcgis/rest/services/DynamicWebMercator/Indiana_2005_Imagery/ImageServer"
+      },
+      "landmark_controls": {
+        "control_model": "seven_point_least_squares_projective_with_one_held_out_airport_checkpoint",
+        "controls": [
+          {
+            "name": "eastern apron and hangar-line control",
+            "source_xy": [15, 135],
+            "reference_export_xy": [800, 350],
+            "wgs84_lat_lon": [38.24828125, -86.956666666667]
+          },
+          {
+            "name": "east-central hangar-line control",
+            "source_xy": [55, 115],
+            "reference_export_xy": [680, 350],
+            "wgs84_lat_lon": [38.24828125, -86.957916666667]
+          },
+          {
+            "name": "western hangar-line control",
+            "source_xy": [150, 75],
+            "reference_export_xy": [390, 350],
+            "wgs84_lat_lon": [38.24828125, -86.9609375]
+          },
+          {
+            "name": "northeast grove boundary control",
+            "source_xy": [85, 145],
+            "reference_export_xy": [610, 430],
+            "wgs84_lat_lon": [38.24743125, -86.958645833333]
+          },
+          {
+            "name": "northwest grove boundary control",
+            "source_xy": [286, 99],
+            "reference_export_xy": [350, 430],
+            "wgs84_lat_lon": [38.24743125, -86.961354166667]
+          },
+          {
+            "name": "southwest grove and access-road curve control",
+            "source_xy": [292, 196],
+            "reference_export_xy": [380, 640],
+            "wgs84_lat_lon": [38.2452, -86.961041666667]
+          },
+          {
+            "name": "southeast grove and access-road curve control",
+            "source_xy": [70, 202],
+            "reference_export_xy": [610, 640],
+            "wgs84_lat_lon": [38.2452, -86.958645833333]
+          }
+        ],
+        "held_out_checkpoints": [
+          {
+            "name": "central hangar and taxiway checkpoint",
+            "source_xy": [100, 95],
+            "expected_reference_export_xy": [540, 350],
+            "transformed_reference_export_xy": [529.1908, 323.9457],
+            "residual_m": 32.35
+          }
+        ],
+        "visual_matches": [
+          "Huntingburg Airport runway and parallel taxiway",
+          "airport hangar row",
+          "curving airport access road",
+          "tree grove shielding the formation field",
+          "formation beside the green ditch southwest of the grove"
+        ]
+      },
+      "independent_ground_checkpoint_count": 1,
+      "review_basis": "The field is uniquely identified by four persistent scene classes visible together in the source and official near-contemporaneous orthophoto: runway, hangars, access road, and grove. Seven controls produce a visually coherent projective fit and the held-out airport checkpoint residual is 32.35 metres.",
+      "quality_status": "useful_provisional_seven_control_projective_registration",
+      "quality_limitations": "The source is a compressed 432 by 320 oblique frame. Manual control selection, tree-canopy season change, building-roof parallax, terrain relief, a 39.21 metre control-fit RMSE, and a 32.35 metre held-out residual limit full-frame accuracy. The 60 metre site uncertainty is conservative and this is not a survey georegistration or real-world accuracy benchmark.",
+      "quality_disclosure": "Real historical-image field identification with a provisional seven-control projective display fit. It is excluded from formal alignment calculations and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Earthfiles retains all source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "rights_status": "all_rights_reserved_link_only_not_cleared_for_embedding",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "manual_seven_control_projective_scene_registration",
+        "source_frame_size_px": [432, 320],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [1.2327106653795525, 4.019917723613196, 927.6842183637397],
+          [7.655092179628557, 10.750494237853518, -909.6845267557769],
+          [0.012426813872755597, 0.00489408716271219, 1.0]
+        ],
+        "reference_export_bbox_wgs84": [-86.965, 38.235, -86.94, 38.252],
+        "reference_export_size_px": [2400, 1600],
+        "reference_service_url": "https://di-ingov.img.arcgis.com/arcgis/rest/services/DynamicWebMercator/Indiana_2005_Imagery/ImageServer",
+        "reference_export_sha256": "9898bd769de8949c4058333addd4d444ad350f36b9b0d338608c4716514c65cf",
+        "control_count": 7,
+        "control_fit_rmse_m": 39.21,
+        "independent_checkpoint_count": 1,
+        "held_out_checkpoint_residual_m": 32.35,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
     }
   ]
 }

@@ -43,8 +43,13 @@ ARCHIVE_EVIDENCE = {
         "landmarks": ["Miamisburg Mound", "persistent roads", "field boundaries"],
     },
     "cc_64e65753ca3c": {
-        "clues": ["Gene Smallidge farm", "Cottage Grove"],
-        "landmarks": ["farm buildings", "field boundaries", "tree lines"],
+        "clues": [
+            "Gene Smallidge farm",
+            "Cottage Grove",
+            "private driveway off Highway 61",
+            "10992 Point Douglas Drive South",
+        ],
+        "landmarks": ["Highway 61", "farm buildings", "field boundaries", "tree lines"],
     },
     "cc_a20bb389770e": {
         "clues": ["Swoboda field", "Tilden", "Chippewa County"],
@@ -78,6 +83,22 @@ ARCHIVE_EVIDENCE = {
         "clues": ["Huntingburg", "Dubois County wheat field"],
         "landmarks": ["roads", "field boundaries", "farm buildings where visible"],
     },
+    "cc_111e3cdced4f": {
+        "clues": [
+            "Fresno State University Farm Laboratory",
+            "48-acre harvested cornfield",
+            "adjacent to State Route 168",
+        ],
+        "landmarks": ["State Route 168", "parallel service road", "automobile dealership"],
+    },
+    "cc_fba8a8655b8a": {
+        "clues": [
+            "Nut Tree Airport",
+            "Blue Ridge Aeronautics overflight",
+            "nine-house city block",
+        ],
+        "landmarks": ["residential street edge", "field road", "airport corridor"],
+    },
     "cc_27e66142db39": {
         "clues": ["two circles at field edge", "oil rig behind circles", "Herington"],
         "landmarks": ["field edge", "road grid"],
@@ -93,6 +114,73 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_64e65753ca3c": {
+        "processing_status": "unresolved",
+        "reason": (
+            "Public reporting and later farm records identify Gene Smallidge's "
+            "long-term farm at 10992 Point Douglas Drive South, reached by a private "
+            "driveway off Highway 61 in south Cottage Grove. The formation report says "
+            "the oats design was about one-half mile from an access point behind a "
+            "fence, but the only surviving 200 by 150 source photograph is a tight "
+            "ground view with no persistent surrounding landmarks. The property has "
+            "multiple plausible fields, so no unique field or defensible image "
+            "registration is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_cee3a40aace5": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The 2006 Earthfiles aerial and official 2005 Indiana orthophoto "
+            "independently match the Huntingburg Airport runway, hangar row, "
+            "curving access road, and shielding tree grove. Seven distributed "
+            "controls resolve one wheat field southwest of the grove; a held-out "
+            "airport control has a 32.35 metre residual. The low-resolution oblique "
+            "frame retains 60 metre uncertainty, remains excluded from formal "
+            "alignment, and is rights-gated. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_ca0e623b0480": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The contemporaneous W-Files road-grid fit resolves the August 16 "
+            "formation to the field west of North 41st Street and north of Townline "
+            "Road. The two ICCRA frames show the formation, a road edge, a farmstead, "
+            "and tree lines, but intervening land-use change leaves fewer than three "
+            "distributed, independently defensible affine controls against current "
+            "reference imagery. The 100 metre candidate-field point is retained; no "
+            "source-photo footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_111e3cdced4f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Contemporaneous Fresno Bee reporting identifies a harvested 48-acre "
+            "Fresno State cornfield adjacent to State Route 168, consistent with the "
+            "ICCRA aerial's freeway, parallel service road, and automobile dealership. "
+            "The university farm contained multiple corridor fields, and later campus "
+            "construction removed or altered the strongest controls before a unique "
+            "field could be independently recovered. The existing 700 metre corridor "
+            "candidate is retained and the aerial remains source-only. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_fba8a8655b8a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The full ICCRA report confirms the Nut Tree Airport overflight, and a "
+            "higher-resolution licensed same-scene aerial resolves the residential "
+            "street edge, nine-house block, field road, and complete insectoid figure. "
+            "Modern reference imagery and the official 2003 Solano land-use geometry "
+            "still admit multiple former airport-side fields; feature matching did not "
+            "produce a unique defensible transform. The 850 metre search center is "
+            "retained and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_003c3da5c31b": {
         "processing_status": "candidate_field",
         "reason": (
