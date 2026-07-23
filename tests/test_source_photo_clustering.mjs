@@ -87,8 +87,9 @@ test('registered-overlay formations stay out of availability markers', () => {
 });
 
 test('reviewed overlays retain the dominant interactive pane', () => {
-  assert.match(appSource, /sourcePhotoPane'\)\.style\.zIndex = '440'/);
+  assert.match(appSource, /sourcePhotoPane'\)\.style\.zIndex = '500'/);
   assert.match(appSource, /overlayFootprintPane'\)\.style\.zIndex = '520'/);
+  assert.match(appSource, /sitePointPane'\)\.style\.zIndex = '480'/);
   assert.match(appSource, /=== 'candidate_field' \? 0 : 1/);
   assert.match(appSource, /footprint\.on\('click', load\)/);
   assert.match(appSource, /marker\.on\('click', load\)/);

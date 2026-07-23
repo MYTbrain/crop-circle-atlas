@@ -16,7 +16,7 @@ map.getPane('registeredImageryPane').style.pointerEvents = 'none';
 map.createPane('localityPointPane');
 map.getPane('localityPointPane').style.zIndex = '420';
 map.createPane('sourcePhotoPane');
-map.getPane('sourcePhotoPane').style.zIndex = '440';
+map.getPane('sourcePhotoPane').style.zIndex = '500';
 map.createPane('overlayFootprintPane');
 map.getPane('overlayFootprintPane').style.zIndex = '520';
 map.createPane('rayPane');
