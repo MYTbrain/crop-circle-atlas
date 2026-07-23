@@ -601,12 +601,23 @@ function renderSourcePhotoAvailability(visibleIds = null) {
       title: accessibilityLabel,
     });
     marker.bindTooltip(`${cluster.reportCount} unique report${cluster.reportCount === 1 ? '' : 's'} · ${cluster.imageCount} source image${cluster.imageCount === 1 ? '' : 's'} · Source-photo availability only; not a registered image placement.`);
+    const activate = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      openSourcePhotoCluster(cluster, coordinate);
+    };
     marker.on('add', () => {
       const element = marker.getElement();
-      element?.setAttribute('aria-label', accessibilityLabel);
-      element?.setAttribute('role', 'button');
+      if (!element) return;
+      element.setAttribute('aria-label', accessibilityLabel);
+      element.setAttribute('role', 'button');
+      element.tabIndex = 0;
+      element.addEventListener('click', activate);
+      element.addEventListener('keydown', (event) => {
+        if (!['Enter', ' '].includes(event.key)) return;
+        activate(event);
+      });
     });
-    marker.on('click', () => openSourcePhotoCluster(cluster, coordinate));
     marker.addTo(sourcePhotoLayer);
   }
   window.sourcePhotoAvailabilityMetrics = {

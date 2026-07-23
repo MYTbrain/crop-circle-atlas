@@ -163,3 +163,11 @@ test('normal map markers use semantic dots without visible badge abbreviations',
   assert.match(cssSource, /\.source-photo-dot \{[^}]*background:#1d9b68/);
   assert.match(cssSource, /\.map-marker-legend/);
 });
+
+test('source-photo dots expose direct pointer and keyboard activation', () => {
+  assert.match(appSource, /element\.addEventListener\('click', activate\)/);
+  assert.match(appSource, /element\.addEventListener\('keydown'/);
+  assert.match(appSource, /element\.tabIndex = 0/);
+  assert.match(appSource, /\['Enter', ' '\]\.includes\(event\.key\)/);
+  assert.doesNotMatch(appSource, /marker\.on\('click', \(\) => openSourcePhotoCluster/);
+});
