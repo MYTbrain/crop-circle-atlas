@@ -195,6 +195,70 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             gurston_spec["rights_status"], "not_cleared_for_redistribution"
         )
 
+        documented_size_observation_ids = {
+            "regobs_hackpen_hill_20180609_crop_geometry_v1",
+            "regobs_cley_hill_20170718_crop_geometry_v1",
+            "regobs_cley_hill_20200711_crop_geometry_v1",
+            "regobs_battlebury_hill_20170705_crop_geometry_v1",
+            "regobs_thorn_hill_20170626_crop_geometry_v1",
+        }
+        overlays = {
+            row["registration_observation_id"]: row
+            for row in json.loads(
+                (root / "web" / "data" / "registered_overlays.json").read_text(
+                    encoding="utf-8"
+                )
+            )["overlays"]
+            if row.get("registration_observation_id")
+        }
+        for observation_id in documented_size_observation_ids:
+            observation = observations[observation_id]
+            self.assertEqual(
+                observation["classification"],
+                "provisional_documented_size_crop_geometry_rectification",
+            )
+            self.assertEqual(
+                observation["formal_alignment_status"],
+                "excluded_pending_independent_ground_control",
+            )
+            self.assertEqual(
+                observation["projective_display_transform"][
+                    "independent_ground_checkpoint_count"
+                ],
+                0,
+            )
+            self.assertIn("not a landmark or survey", observation["quality"]["limitations"])
+            overlay = overlays[observation_id]
+            self.assertFalse(overlay["embedding_allowed"])
+            self.assertEqual(
+                overlay["rights_status"], "not_cleared_for_redistribution"
+            )
+            self.assertFalse(overlay["show_by_default"])
+
+        queue = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "overlay_production_queue.json").read_text(
+                    encoding="utf-8"
+                )
+            )["records"]
+        }
+        for formation_id in {
+            "cc_4fab9c03a8ea",
+            "cc_f1c8f8391487",
+            "cc_706b58141f82",
+            "cc_591f610ce045",
+            "cc_87b940bfa1c8",
+        }:
+            self.assertEqual(
+                queue[formation_id]["processing_status"],
+                "provisional_registration",
+            )
+            self.assertIn(
+                "Explicit outcome: provisional_registration.",
+                queue[formation_id]["blocker_or_rejection_reason"],
+            )
+
         legacy_expected = {
             "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1": (
                 "coordinate_size_geometry_provisional",

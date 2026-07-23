@@ -114,6 +114,67 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_4fab9c03a8ea": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 90-foot (27.5 metre) "
+            "diameter, and same-flight wide aerial resolve the Hackpen Hill formation "
+            "to one field. Four formation-bound controls place the tight overhead "
+            "frame around that target, but they are crop geometry rather than "
+            "independent ground control. The footprint remains unaccepted, "
+            "rights-gated, and excluded from formal alignment. Explicit outcome: "
+            "provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_f1c8f8391487": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported minimum 300-foot (92 metre) "
+            "diameter, and same-flight Cley Hill context resolve the 2017 formation "
+            "field. Four outer-scallop controls place the tight overhead frame, but "
+            "they are formation geometry rather than independent ground control. The "
+            "footprint remains unaccepted, rights-gated, and excluded from formal "
+            "alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_706b58141f82": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 100-foot (30.5 metre) size, "
+            "and same-flight wide and hilltop context resolve the 2020 Cley Hill "
+            "formation field. Four outer-ring controls place the tight overhead frame, "
+            "but they are formation geometry rather than independent ground control. "
+            "The footprint remains unaccepted, rights-gated, and excluded from formal "
+            "alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_591f610ce045": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 200 by 200-foot (61 by 61 "
+            "metre) extent, and same-flight Battlebury Hill context resolve the "
+            "formation field. Four outer-loop controls place the tight overhead frame, "
+            "but they are formation geometry rather than independent ground control. "
+            "The footprint remains unaccepted, rights-gated, and excluded from formal "
+            "alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_87b940bfa1c8": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's precise BNG target, reported 36.5 by 18.25-metre extent, "
+            "and same-flight wide field context resolve the Thorn Hill formation field. "
+            "Four formation-bound controls place the tight overhead frame, but they "
+            "are crop geometry rather than independent ground control. The footprint "
+            "remains unaccepted, rights-gated, and excluded from formal alignment. "
+            "Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_64e65753ca3c": {
         "processing_status": "unresolved",
         "reason": (
