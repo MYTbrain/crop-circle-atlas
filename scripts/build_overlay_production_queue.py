@@ -128,6 +128,81 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-22",
     },
+    "cc_a0ad8bfbb86e": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher BNG pointer and the 2015 wide aerial identify one long "
+            "narrowing field between a curving farm lane and a persistent woodland "
+            "belt. Eight distributed boundary controls produce a coherent non-folded "
+            "projective display fit with a 20.84 metre control-fit RMSE, but that fit "
+            "residual is not independent accuracy evidence. The display anchor differs "
+            "from the publisher pointer by 95.4 metres, a second oblique frame did not "
+            "yield a stable independent transform, and no checkpoint is held out. The "
+            "record retains 110 metre uncertainty, remains excluded from formal "
+            "alignment, and is rights-gated. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_c393cee1489c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher coordinate, the named Hofer roundabout, the shopping "
+            "complex, and the 2014 aerial identify the formation field north of the "
+            "roundabout. Later construction substantially rebuilt the B38/L8253 "
+            "interchange and approach roads. Automated feature matching retained "
+            "only four spatially inconsistent matches, while the attempted manual "
+            "full-frame projective fit crossed the projective horizon. The exact "
+            "publisher point is retained as a reviewed candidate field, but no "
+            "source-photo footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_9e3323a56bd8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's eight-digit BNG map reference resolves the reported "
+            "formation to one field at Lane End Down, and the 2023 wide aerial "
+            "agrees with the road, surrounding fields, and wooded boundaries. The "
+            "wide frame includes the camera horizon, while the tighter ground-only "
+            "frames do not contain four distributed projective controls or three "
+            "defensible affine controls. Tested full-frame projective and affine "
+            "fits either crossed the ground-plane horizon or produced implausible "
+            "scale away from the control line. The precise publisher target is "
+            "retained as a reviewed candidate field, but no source-photo footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_0fde23307e29": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "The publisher's ten-digit BNG target, the reported 300-foot (91.5 "
+            "metre) overall size, and same-flight wide aerials resolve the Mixon "
+            "formation to the large field immediately west of the village. A "
+            "near-nadir source frame is placed with four formation-extremity "
+            "controls around the publisher target; the wide aerial constrains the "
+            "field and approximate row-axis orientation. These are formation "
+            "geometry controls rather than independent ground control, so the "
+            "display footprint remains unaccepted, rights-gated, and excluded from "
+            "formal alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_38d9441f0182": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Two precise publisher BNG targets resolve the same narrow field at "
+            "Etchilhampton Hill but differ by 129.63 metres. The Temporary Temples "
+            "target better matches the formation's along-field position in the "
+            "same-flight wide aerial and anchors a display footprint at the midpoint "
+            "of its reported 180-to-200-foot size range. A 53-inlier same-flight "
+            "match constrains approximate orientation, but the four footprint "
+            "controls are formation geometry rather than independent ground control. "
+            "The placement remains unaccepted, rights-gated, and excluded from formal "
+            "alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_cee3a40aace5": {
         "processing_status": "provisional_registration",
         "reason": (

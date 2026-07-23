@@ -2111,6 +2111,298 @@
         "held_out_checkpoint_residual_m": 32.35,
         "formal_alignment_status": "excluded_pending_independent_ground_control"
       }
+    },
+    {
+      "overlay_id": "the-belt-2015-eight-control-field-scene-placement",
+      "observation_id": "regobs_the_belt_20150721_projective_v1",
+      "formation_id": "cc_a0ad8bfbb86e",
+      "assertion_id": "sx_connector_850cb5b01d9512a2",
+      "title": "The Belt 2015 road-and-woodland field placement",
+      "source_image_url": "https://cropcircleconnector.com/2015/TheBelt/2.jpg",
+      "source_image_sha256": "d975cc148530916fbd26b717607b9d4af6cde4ea3f825dd86cc6a3f3b7c24ce8",
+      "anchor_pixel_xy": [400, 330],
+      "anchor_wgs84_lat_lon": [51.718503885579, -1.793236217156],
+      "corners_wgs84": [
+        [51.722998693394, -1.793704073296],
+        [51.723009112782, -1.799259390068],
+        [51.716108307271, -1.794443674584],
+        [51.717593068318, -1.79051619793]
+      ],
+      "corner_basis": "Eight manually selected controls distributed along the persistent lane-side field boundary and opposite woodland edge were fit with a least-squares projective transform from the 800 by 460 source frame to an Esri World Imagery reference export.",
+      "coordinate_uncertainty_m": 110,
+      "registration_status": "provisional_eight_control_projective_field_boundary_registration",
+      "display_geometry_status": "eight_control_projective_lane_woodland_field_scene_placement",
+      "reference_imagery": "Esri World Imagery",
+      "reference_imagery_date": "undated_current_mosaic",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The publisher BNG pointer and the 2015 wide aerial resolve one long narrowing field between a curving farm lane and a persistent woodland belt near The Belt, Gloucestershire. The source photograph's opposing boundaries, northern neck, adjacent field, and lane geometry match that scene.",
+      "source_report_controls": {
+        "source_report_url": "https://cropcircleconnector.com/2015/TheBelt/TheBelt2015a.html",
+        "source_report_sha256": "ccf37ee7713f8004157462e312e220023a02cfb9007ab7729e0deb430e196216",
+        "event_date": "2015-07-21",
+        "publisher_bng_easting_northing": [414366, 202312],
+        "publisher_map_target_wgs84_lat_lon": [51.71935223, -1.79344132],
+        "publisher_target_to_display_anchor_distance_m": 95.4,
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      },
+      "landmark_controls": {
+        "control_model": "eight_point_least_squares_projective_without_independent_checkpoint",
+        "controls": [
+          {
+            "name": "lane-side northern field-neck control",
+            "source_xy": [340, 142],
+            "reference_export_xy": [359, 268],
+            "wgs84_lat_lon": [51.72101223, -1.79464632]
+          },
+          {
+            "name": "lane-side upper boundary control",
+            "source_xy": [500, 220],
+            "reference_export_xy": [330, 500],
+            "wgs84_lat_lon": [51.71985223, -1.79479132]
+          },
+          {
+            "name": "lane-side middle boundary control",
+            "source_xy": [620, 300],
+            "reference_export_xy": [322, 770],
+            "wgs84_lat_lon": [51.71850223, -1.79483132]
+          },
+          {
+            "name": "lane-side lower boundary control",
+            "source_xy": [720, 400],
+            "reference_export_xy": [420, 1050],
+            "wgs84_lat_lon": [51.71710223, -1.79434132]
+          },
+          {
+            "name": "woodland-side northern field-neck control",
+            "source_xy": [180, 148],
+            "reference_export_xy": [635, 310],
+            "wgs84_lat_lon": [51.72080223, -1.79326632]
+          },
+          {
+            "name": "woodland-side upper boundary control",
+            "source_xy": [160, 250],
+            "reference_export_xy": [780, 475],
+            "wgs84_lat_lon": [51.71997723, -1.79254132]
+          },
+          {
+            "name": "woodland-side middle boundary control",
+            "source_xy": [145, 350],
+            "reference_export_xy": [915, 700],
+            "wgs84_lat_lon": [51.71885223, -1.79186632]
+          },
+          {
+            "name": "woodland-side lower boundary control",
+            "source_xy": [133, 450],
+            "reference_export_xy": [1045, 1020],
+            "wgs84_lat_lon": [51.71725223, -1.79121632]
+          }
+        ],
+        "visual_matches": [
+          "long field narrowing toward its northern neck",
+          "curving lane and hedge along one field boundary",
+          "continuous woodland belt along the opposite boundary",
+          "adjacent field geometry visible beyond the lane",
+          "formation positioned inside the uniquely matched field"
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The publisher coordinate and four persistent scene classes identify one field. Eight boundary controls produce a coherent, non-folded display transform with 20.84 metre control-fit RMSE; this fit residual is not an independent accuracy result.",
+      "quality_status": "useful_provisional_eight_control_projective_field_registration",
+      "quality_limitations": "The 2015 source is an oblique frame and the current reference is not date-matched. Field-edge controls constrain orientation and skew but do not independently fix the along-field position. The transformed source center is 95.4 metres from the publisher map pointer, a second oblique frame did not yield a stable independent transform, and there are zero held-out checkpoints. The 110 metre uncertainty is conservative; this is not a survey georegistration or real-world accuracy benchmark.",
+      "quality_disclosure": "Real historical-image field identification with a provisional eight-control projective display fit. It is excluded from formal alignment calculations and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "manual_eight_control_projective_field_boundary_registration",
+        "source_frame_size_px": [800, 460],
+        "projective_source_xy_to_reference_pixel_xy": [
+          [-1.218335355187635, 1.6893552900083852, 547.4493135900116],
+          [0.0371366935819405, 2.593905594916243, -129.2926770319644],
+          [-0.000302500978307075, 0.0002559629541384622, 1.0]
+        ],
+        "reference_export_bbox_wgs84": [-1.79644132, 51.71635223, -1.79044132, 51.72235223],
+        "reference_export_size_px": [1200, 1200],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "2587f30070410ca62a955b000fd22fb406dd7222bb83eb5f8804acc5a6e4d7a7",
+        "control_count": 8,
+        "control_fit_rmse_m": 20.84,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "mixon-2018-documented-size-crop-geometry-placement",
+      "observation_id": "regobs_mixon_20180810_crop_geometry_v1",
+      "formation_id": "cc_0fde23307e29",
+      "assertion_id": "sx_connector_5f0ccbcc084e93bf",
+      "title": "Mixon 2018 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/mixon/DJI_0107.jpg",
+      "source_image_sha256": "bfa1bc8a18a0bae8d0e9b6a54d692712e3e7b8ec0c6b627235c85d6504f91f95",
+      "anchor_pixel_xy": [400, 260],
+      "anchor_wgs84_lat_lon": [51.34316531, -1.94181948],
+      "corners_wgs84": [
+        [51.343665707339, -1.941671734028],
+        [51.342929502505, -1.941101779194],
+        [51.34171803644, -1.941910016499],
+        [51.344030529727, -1.943729929219]
+      ],
+      "corner_basis": "Four visible formation-extremity points on the near-nadir 800 by 449 aerial constrain display scale and perspective around the publisher's ten-digit BNG target using the report's 300-foot (91.5 metre) overall size. Same-flight wide frames reproduce the large target field, Mixon village edge, enclosing hedges, road junction, and crop-row direction, resolving the field and approximate yaw quadrant. The four controls are formation geometry rather than persistent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, reported 91.5 metre overall size, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "site_text": "The publisher's ten-digit BNG target places the 2018 formation in the large arable field immediately west of Mixon village. Same-flight wide aerials reproduce the target field, village edge, enclosing hedges, road junction, and field-row direction; the selected near-nadir frame preserves the complete six-lobed concentric-circle design.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [51.34316531, -1.94181948],
+        "publisher_bng_easting_northing": [404149, 160455],
+        "publisher_bng_grid_reference": "SU0414960455",
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=404149&y=160455&z=0&sv=51.343172,+-1.941815&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 91.5,
+        "documented_size_text": "300 ft (91.5m) overall",
+        "reported_place": "Mixon, near Etchilhampton, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2018/mixon/mixon2018a.html",
+        "source_report_sha256": "47cb2b07940972ebe60e05d9194a347352876e152dc2f71f290b8729af312e04"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "The publisher supplies a ten-digit BNG target and reports a 300-foot (91.5 metre) overall size. Four visible formation extremities constrain the display footprint around that target. Same-flight wide frames identify the target field and approximate undirected row axis through the village edge, hedges, road junction, and field outline, but no persistent ground point independently validates the tight-frame corners.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "This is a coordinate-, reported-size-, and row-axis-constrained display placement rather than a terrain homography or survey georegistration. The 91.5 metre size is reported rather than surveyed, the selected source is mildly oblique, orientation is transferred from same-flight landscape context with a 180-degree field-axis ambiguity, and zero independent checkpoints validate the corners.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not an independently validated image-to-ground registration or real-world accuracy benchmark. It remains excluded from formal alignment calculations and cannot become accepted without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source link only and neither packages nor embeds the source pixels.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [800, 449],
+        "source_geometry_control_pixels": [
+          [398, 48],
+          [604, 324],
+          [400, 428],
+          [196, 324]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [26.430065155029, 13.075929641724],
+          [5.365716934204, -48.099376678467],
+          [-55.809589385986, -27.035028457642],
+          [-34.745239257812, 34.140277862549]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [0.049920351569, -0.116350988261, 10.283116567474],
+          [-0.1026001474, -0.056362213771, 55.694234112542],
+          [0.000006691867, -0.001524375936, 1.0]
+        ],
+        "documented_diameter_m": 91.5,
+        "orientation_basis": "Same-flight wide aerials reproduce the large field west of Mixon village, the village-edge hedges, road junction, and surrounding parcel geometry. The tight frame's horizontal tramlines are aligned to the approximately 154-degree true undirected row axis estimated from that context and the current reference field.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [-1.94981948, 51.33516531, -1.93381948, 51.35116531],
+        "reference_export_size_px": [1600, 1600],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "58e6a8739bdff33f5600152a146ee49a81f12215043eaafd39632adddb4036cf",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "lions-gate-2024-documented-size-crop-geometry-placement",
+      "observation_id": "regobs_lions_gate_20240808_crop_geometry_v1",
+      "formation_id": "cc_38d9441f0182",
+      "assertion_id": "sx_connector_b16220557fdb24bc",
+      "title": "Lion's Gate / Etchilhampton Hill 2024 documented-size crop-geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2024/lionsgate/DJI_20240808152415_0023_D.jpg",
+      "source_image_sha256": "9ba0ffd6b5560ec66e97aa5d7d2059c11edeaad53181f83613e016aba1741082",
+      "anchor_pixel_xy": [400, 400],
+      "anchor_wgs84_lat_lon": [51.342975652898, -1.96174702286],
+      "corners_wgs84": [
+        [51.342754234653, -1.96218182874],
+        [51.343368626743, -1.962325015996],
+        [51.343176300083, -1.961353006108],
+        [51.342607147861, -1.961205018438]
+      ],
+      "corner_basis": "Four visible formation-extremity points on the tight 800 by 800 aerial constrain display scale and perspective around the Temporary Temples ten-digit BNG target using its reported 180-to-200-foot size range. A 53-inlier same-flight image match transfers the approximate orientation from a wide landscape frame. The four footprint controls are formation geometry rather than persistent ground control.",
+      "coordinate_uncertainty_m": 135,
+      "registration_status": "coordinate_size_geometry_provisional_with_publisher_target_conflict",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Two independent publisher BNG targets, Temporary Temples reported size, same-flight wide aerial context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "site_text": "Both publisher coordinates identify the same narrow arable field at Etchilhampton Hill. The Temporary Temples ten-digit BNG target lies about 130 metres south-southeast of the Crop Circle Connector target and agrees better with the formation's along-field position in the same-flight wide aerial, so it anchors this provisional display placement while the conflict remains explicit.",
+      "source_report_controls": {
+        "temporary_temples_coordinate_wgs84_lat_lon": [51.342975652898, -1.96174702286],
+        "temporary_temples_bng_easting_northing": [402761, 160433],
+        "temporary_temples_bng_grid_reference": "SU 02761 60433",
+        "temporary_temples_reported_size_range_m": [54.9, 61.0],
+        "temporary_temples_documented_size_text": "approximately 180-200 ft",
+        "temporary_temples_page_url": "https://temporarytemples.co.uk/project/etchilhampton-2024",
+        "temporary_temples_page_sha256": "0580f07a94b508bf30698fecb5d21e0ccdefa830586764cff72655189d74fa02",
+        "connector_coordinate_wgs84_lat_lon": [51.34407284, -1.96237787],
+        "connector_bng_easting_northing": [402717, 160555],
+        "connector_report_url": "https://cropcircleconnector.com/2024/lionsgate/lionsgate2024a.html",
+        "connector_report_sha256": "ea23187a5b423e90d7844a2ab4d93e463856f13922b10b2be5b49eb690ed7dd4",
+        "publisher_target_separation_m": 129.63,
+        "documented_diameter_m": 57.9,
+        "reported_place": "Lion's Gate / Etchilhampton Hill, Wiltshire"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "review_basis": "Two precise publisher map targets resolve one narrow field, while the same-flight wide aerial identifies the surrounding field boundaries and transfers the approximate row-axis orientation to the tight frame through 53 RANSAC inliers. Four formation extremities constrain the footprint at the midpoint of the documented size range; no persistent ground point independently validates its corners.",
+      "quality_status": "useful_coordinate_size_geometry_provisional_with_coordinate_conflict",
+      "quality_limitations": "This is a coordinate-, reported-size-, and orientation-constrained display placement rather than a terrain homography or survey georegistration. The two publisher targets differ by 129.63 metres; the Temporary Temples target is used because it better agrees with the formation's along-field position. The 57.9 metre display diameter is the midpoint of a reported 54.9-to-61.0 metre range. Orientation is transferred from a same-flight frame with an unresolved 180-degree field-axis ambiguity, and zero independent checkpoints validate the corners.",
+      "quality_disclosure": "Real historical-image field identification with a provisional coordinate-, size-, and orientation-constrained display footprint. It is not a real-world accuracy benchmark, remains excluded from formal alignment calculations, and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector and Temporary Temples contributors retain the source-image rights; the atlas publishes the reviewed footprint and source links only and neither packages nor embeds the source pixels.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_orientation_constrained_display_placement",
+        "source_frame_size_px": [800, 800],
+        "source_geometry_control_pixels": [
+          [295, 44],
+          [766, 443],
+          [500, 758],
+          [31, 333]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [-29.947828292847, -0.229126945138],
+          [-0.997827172279, 28.720872879028],
+          [27.952173233032, -0.229126945138],
+          [-0.997827172279, -29.179128646851]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [-0.013360630149, 0.089016868748, -30.262495435105],
+          [0.086459458431, -0.024849775733, -24.643873073076],
+          [0.000022455614, 0.000106946767, 1.0]
+        ],
+        "documented_diameter_m": 57.9,
+        "documented_diameter_range_m": [54.9, 61.0],
+        "orientation_basis": "The tight frame is linked to the same-flight wide aerial by 53 RANSAC inliers from 91 ratio-test matches. Village-edge and field-boundary context in the wide frame, together with the north-up reference field rows, places the tight frame's positive x-axis approximately north; a 180-degree ambiguity remains.",
+        "orientation_uncertainty_deg": 15,
+        "same_flight_wide_source_url": "https://cropcircleconnector.com/2024/lionsgate/DJI_20240808152614_0030_D-P.jpg",
+        "same_flight_wide_source_sha256": "a723cd66e4db21a2d40b57bc845be9648e089004368e499afa7155bb1d84448b",
+        "same_flight_match_ratio_count": 91,
+        "same_flight_match_inlier_count": 53,
+        "same_flight_match_median_residual_px": 1.2817,
+        "same_flight_match_p95_residual_px": 3.6148,
+        "projective_tight_xy_to_same_flight_wide_xy": [
+          [-0.188509364739, -0.539526910681, 589.08969510546],
+          [-0.117091413953, -0.004877135039, 584.46249011],
+          [-0.000623657864, -0.000072910672, 1.0]
+        ],
+        "reference_export_bbox_wgs84": [-1.97037787, 51.33607284, -1.95437787, 51.35207284],
+        "reference_export_size_px": [1600, 1600],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "6414b14276c63a289a7e580dcec83285719e783f66e8a42f555f6121d39b36a4",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
     }
   ]
 }
