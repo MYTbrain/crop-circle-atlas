@@ -198,7 +198,11 @@ def validate_registered_overlay(root=ROOT):
         assert local_overlay["source_image_url"] == source["url"]
         assert local_overlay["source_image_sha256"] == source["sha256"]
         assert local_overlay["source_photo_pixels"] == "remote_source_link_only"
-        assert local_overlay["rights_status"] == "not_cleared_for_redistribution"
+        assert local_overlay["rights_status"] in {
+            "not_cleared_for_redistribution",
+            "link_only_google_earth_derived_image_not_cleared_for_embedding",
+            "link_only_google_derived_thumbnail_not_cleared_for_embedding",
+        }
         assert local_overlay["show_by_default"] is False
         assert transform["independent_ground_checkpoint_count"] >= 0
 

@@ -4333,6 +4333,641 @@
       }
     },
     {
+      "observation_id": "regobs_darfield_2002_legacy_coordinate_scale_v1",
+      "overlay_id": "darfield-2002-legacy-coordinate-scale-north-up-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200202-cat-hill-darfield-photo-ge-150m.jpg",
+        "page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "sha256": "6da12427612e6949683d713a851a42dcd2bee8d716cb15bb1a8d12acca477ed3",
+        "width_px": 1920,
+        "height_px": 1080,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "coordinate_uncertainty_m": 50,
+        "site_text": "The 2002 Darfield catalog diagram's ring of circles, central bullseye, and detached two-circle tail uniquely match the north-up historical frame. The frame's road offset favors the northern of two legacy coordinates as the display anchor; the points remain separate evidence records because they disagree by 46.543 metres.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "named_legacy_candidate_id": "lkml_a95c88c874b47898",
+        "named_legacy_candidate_wgs84_lat_lon": [
+          53.53136557047451,
+          -1.356902390606507
+        ],
+        "named_legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "named_legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "proximity_legacy_candidate_id": "lkml_cbe84d3020c48704",
+        "proximity_legacy_candidate_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "proximity_legacy_kml_member": "Anomalies_.kml/alien-crop-circles.kml",
+        "proximity_legacy_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+        "legacy_candidate_separation_m": 46.543,
+        "candidate_merge_status": "unreviewed_do_not_merge",
+        "event_crosswalk_basis": "The 2002 catalog diagram exactly matches the historical frame; the distinct 2001 Darfield star/mandala diagram does not.",
+        "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "source_page_sha256": "a649712e7cd914808864c7eddcd758cca15e330d55a3e5b1132157ceb749c4c6",
+        "source_frame_scale_bar_pixels": [
+          [
+            1614,
+            1077
+          ],
+          [
+            1917,
+            1077
+          ]
+        ],
+        "source_frame_scale_bar_length_m": 30,
+        "reference_export_bbox_wgs84": [
+          -1.359084,
+          53.530474,
+          -1.354684,
+          53.533094
+        ],
+        "reference_export_size_px": [
+          1600,
+          1600
+        ],
+        "reference_export_sha256": "ca23a7fa8d6fff48f3f55d48b9c86d33f392f31f7b14cbea033cbaa48ca73619"
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          798.2,
+          497.8
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "meters_per_pixel": 0.09900990099009901,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The source frame's 30 metre Google Earth scale bar spans 303 pixels from x=1614 to x=1917 at y=1077, giving 0.09900990099 metre per pixel.",
+        "orientation_basis": "The publishing page states that every displayed Google Earth frame is north-up; image x therefore points east and image y points south. This is publisher metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "publisher_stated_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798.2,
+          497.8
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "meters_per_pixel": 0.09900990099009901,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 303,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 46.543,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          53.532226751785,
+          -1.358078415213
+        ],
+        [
+          53.532226751785,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.358078415213
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "This is a legacy-coordinate, measured-scale, publisher-orientation display placement, not a survey or landmark georegistration. The two legacy points disagree by 46.543 metres; the source frame's Google Earth acquisition date is not stated; current road and field appearance may differ; and zero independent ground checkpoints validate the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1",
+      "overlay_id": "hexton-barton-hills-2002-legacy-coordinate-scale-north-up-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enhe200202-west-of-telegraph-hill-hexton-photo-ge-150m.jpg",
+        "page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "sha256": "be35cfff95a8b909c5cd529df2021fc10ed41160a242c8d1d0212cd03c5002ab",
+        "width_px": 1920,
+        "height_px": 1080,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "coordinate_uncertainty_m": 30,
+        "site_text": "The source photograph and historical Google Earth frame crosswalk to the Barton Hills formation near Hexton. A distinct 2002 Lilley/Telegraph Hill radial formation was reviewed and rejected as the image match.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "legacy_candidate_id": "lkml_7138c75b707980ef",
+        "legacy_candidate_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "event_crosswalk_basis": "The case-specific corn558 photograph and ENHE200202 historical frame match the Barton Hills near Hexton formation; the distinct Lilley/Telegraph Hill radial diagram does not.",
+        "date_conflict_status": "preserved_unresolved_canonical_early_june_vs_case_specific_2002_07_22",
+        "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "source_page_sha256": "a649712e7cd914808864c7eddcd758cca15e330d55a3e5b1132157ceb749c4c6",
+        "source_photo_url": "https://www.galactic-server.com/c45d8621k/corn558.jpg",
+        "source_photo_sha256": "f5cf20eb457e345c11fef4524682ee7b47da14e9563e44491938210c9b3c9cf3",
+        "source_frame_scale_bar_pixels": [
+          [
+            1572,
+            1077
+          ],
+          [
+            1918,
+            1077
+          ]
+        ],
+        "source_frame_scale_bar_length_m": 30,
+        "reference_export_bbox_wgs84": [
+          -0.3945,
+          51.9444,
+          -0.3886,
+          51.9479
+        ],
+        "reference_export_size_px": [
+          1600,
+          1200
+        ],
+        "reference_export_sha256": "30344c86afbaad272d2ea2c891ecf381d2f22a7412f436308ac0c29916fcee41"
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          889.0,
+          478.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "meters_per_pixel": 0.08670520231213873,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The source frame's 30 metre Google Earth scale bar spans 346 pixels from x=1572 to x=1918 at y=1077, giving 0.086705202312 metre per pixel.",
+        "orientation_basis": "The publishing page states that every displayed Google Earth frame is north-up; image x therefore points east and image y points south. This is publisher metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "publisher_stated_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          889,
+          478
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "meters_per_pixel": 0.08670520231213873,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 346,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.94641024513,
+          -0.392701146675
+        ],
+        [
+          51.94641024513,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.392701146675
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "This is a legacy-coordinate, measured-scale, publisher-orientation display placement, not a survey or landmark georegistration. The source acquisition date is not stated, the canonical event date conflicts with the case-specific date, and zero independent ground checkpoints validate the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_waden_hill_2002_legacy_coordinate_scale_v1",
+      "overlay_id": "waden-hill-2002-legacy-coordinate-scale-north-up-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enwi200206-waden-hill-avebury-photo-ge-150m.jpg",
+        "page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "sha256": "65d1a3725f6d0df19554060a6c11575b982133bb3e6cddfd80b037f6743cf13a",
+        "width_px": 1920,
+        "height_px": 1080,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "coordinate_uncertainty_m": 40,
+        "site_text": "The legacy jingjang description, Waden Hill locality, catalog diagram, and historical frame identify the 2002-06-21 Waden Hill event. The original KML folder's old-or-iffy label remains part of the provenance.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "legacy_candidate_id": "lkml_5627667302096609",
+        "legacy_candidate_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "legacy_folder": "Crop Circle Collection / Old or iffy Crop Circles",
+        "legacy_description_match": "jingjang cropcircle close to Avebury/Waden Hill",
+        "event_crosswalk_basis": "The legacy yin-yang description, the 2002-06-21 Waden Hill catalog diagram, and the sixth 2002 Wiltshire event code ENWI200206 agree.",
+        "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "source_page_sha256": "a649712e7cd914808864c7eddcd758cca15e330d55a3e5b1132157ceb749c4c6",
+        "source_frame_scale_bar_pixels": [
+          [
+            1567,
+            1077
+          ],
+          [
+            1918,
+            1077
+          ]
+        ],
+        "source_frame_scale_bar_length_m": 30,
+        "reference_export_bbox_wgs84": [
+          -1.8585,
+          51.4228,
+          -1.8526,
+          51.4263
+        ],
+        "reference_export_size_px": [
+          1600,
+          1200
+        ],
+        "reference_export_sha256": "c0b63fb1bf790ee7e95317bda8feee21e9716052bf0c6bc15b41f2a610b54a7c"
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          890.0,
+          620.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "meters_per_pixel": 0.08547008547008547,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The source frame's 30 metre Google Earth scale bar spans 351 pixels from x=1567 to x=1918 at y=1077, giving 0.085470085470 metre per pixel.",
+        "orientation_basis": "The publishing page states that every displayed Google Earth frame is north-up; image x therefore points east and image y points south. This is publisher metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "publisher_stated_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          890,
+          620
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "meters_per_pixel": 0.08547008547008547,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 351,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.425019054448,
+          -1.856643925105
+        ],
+        [
+          51.425019054448,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.856643925105
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "This is a legacy-coordinate, measured-scale, publisher-orientation display placement, not a survey or landmark georegistration. The legacy source itself marks the record old or iffy, the historical acquisition date is not stated, and zero independent ground checkpoints validate the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_panocchia_2004_legacy_coordinate_reported_size_v1",
+      "overlay_id": "panocchia-2004-legacy-coordinate-reported-size-north-up-placement",
+      "classification": "coordinate_size_north_up_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://www.googlesightseeing.com/wp-content/images/ggssalex059-attr.jpg",
+        "page_url": "https://www.googlesightseeing.com/2006/02/alien-crop-circles/",
+        "sha256": "989cdf3ecd98dfdac5da2dbed4d0258a12202a30d7c0dee9c13029e8e3317c2f",
+        "width_px": 160,
+        "height_px": 120,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          160,
+          120
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "coordinate_uncertainty_m": 75,
+        "site_text": "The historical thumbnail's three overlapping circles match the 2004 Panocchia reports and diagram; the distinct 2005 bullseye event was reviewed and rejected as the image match. The source map URL repeats the preferred coordinate.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "preferred_legacy_candidate_id": "lkml_3e0eb93ba86f0bb1",
+        "preferred_legacy_candidate_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "preferred_legacy_kml_member": "Anomalies_.kml/alien-crop-circles.kml",
+        "preferred_legacy_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+        "conflicting_legacy_candidate_id": "lkml_f338898f80db3c1c",
+        "conflicting_legacy_candidate_wgs84_lat_lon": [
+          44.68159555459062,
+          10.31721852521929
+        ],
+        "conflicting_legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "conflicting_legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "legacy_candidate_separation_m": 71.735,
+        "candidate_merge_status": "reviewed_distinct_evidence_points_do_not_merge",
+        "source_map_coordinate_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "event_crosswalk_basis": "The 2004 reports and diagram show three chained 20 metre diameter circles matching the thumbnail; the 2005 event is a distinct bullseye.",
+        "source_page_url": "https://www.googlesightseeing.com/2006/02/alien-crop-circles/",
+        "source_page_sha256": "222a95e6f69338e3112d3a93ce488eaea3cbf1d783a91b92133e54cecd3df789",
+        "reported_circle_diameter_m": 20,
+        "detected_circle_mean_diameter_px": 23.07,
+        "reference_export_bbox_wgs84": [
+          10.3148,
+          44.6791,
+          10.3203,
+          44.683
+        ],
+        "reference_export_sha256": "b88b67f10b248913e2973027da888c801d19b9cfb00b2302b5d5dec97f6b51cb"
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          78.5,
+          55.5
+        ],
+        "anchor_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "meters_per_pixel": 0.8670520231,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "Three independently reported 20 metre diameter circles average 23.07 pixels across in the historical thumbnail, giving 0.8670520231 metre per pixel. This is a formation-size inference, not a map scale bar.",
+        "orientation_basis": "The 2006 Google Maps thumbnail and linked map view are presented north-up; image x is treated as east and image y as south. This is source presentation metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "source_presentation_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_reported_size_north_up_display_placement",
+        "source_frame_size_px": [
+          160,
+          120
+        ],
+        "source_anchor_pixel_xy": [
+          78.5,
+          55.5
+        ],
+        "anchor_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "meters_per_pixel": 0.8670520231,
+        "reported_circle_diameter_m": 20,
+        "detected_circle_mean_diameter_px": 23.07,
+        "north_up_basis": "Historical Google Maps source presentation and linked map view",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 71.735,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          44.6814292798,
+          10.31669709193
+        ],
+        [
+          44.6814292798,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.31669709193
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_north_up_provisional",
+        "limitations": "The 160 by 120 pixel source has no persistent landmark controls and an unknown imagery acquisition date. Scale is inferred from reported formation size rather than a map scale bar, two legacy points disagree by 71.735 metres, and zero independent checkpoints validate the corners."
+      }
+    },
+    {
+      "observation_id": "regobs_dodworth_st_john_2002_legacy_coordinate_scale_v1",
+      "overlay_id": "dodworth-st-john-2002-legacy-coordinate-scale-north-up-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200201-dodworth-photo-ge-150m.jpg",
+        "page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "sha256": "764a884c34f9f46cc92c6dbe20990b271726e5e81fc59998a50ea07cbb54fc87",
+        "width_px": 1920,
+        "height_px": 1080,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "coordinate_uncertainty_m": 40,
+        "site_text": "The legacy Dodworth point, distinctive pentagram-in-circle catalog diagram, corn550 ground photograph, and ENYS200201 historical frame crosswalk to the same St John the Baptist Church near Dodworth event.",
+        "legacy_archive_filename": "Anomalies_.kml.zip",
+        "legacy_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+        "legacy_candidate_id": "lkml_87cf7612dd8054ac",
+        "legacy_candidate_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "legacy_kml_member": "Anomalies_.kml/132_CropCircleCollection.kml",
+        "legacy_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+        "event_crosswalk_basis": "The PDF catalog's pentagram-in-circle diagram, corn550 ground photograph, CRA Dodworth code ENYS200201, and historical ghost agree.",
+        "date_conflict_status": "preserved_unresolved_canonical_2002_06_27_vs_galactic_listing_2002_06_29",
+        "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+        "source_page_sha256": "a649712e7cd914808864c7eddcd758cca15e330d55a3e5b1132157ceb749c4c6",
+        "source_photo_url": "https://www.galactic-server.com/c45d8621k/corn550.jpg",
+        "source_photo_sha256": "27a8fe2977ce2cde148631a0e4422e4982d5a524bee4a8a166b3051fa7cb7135",
+        "source_frame_scale_bar_pixels": [
+          [
+            1582,
+            1077
+          ],
+          [
+            1918,
+            1077
+          ]
+        ],
+        "source_frame_scale_bar_length_m": 30,
+        "catalog_pdf_sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
+        "catalog_pdf_page": 225
+      },
+      "local_display_transform": {
+        "model": "local_square_pixel_provisional_scene_placement",
+        "anchor_pixel_xy": [
+          798.0,
+          498.0
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "meters_per_pixel": 0.08928571428571429,
+        "source_x_axis_true_bearing_deg": 90.0,
+        "source_y_axis_rotation_deg": 90.0,
+        "scale_basis": "The source frame's 30 metre Google Earth scale bar spans 336 pixels from x=1582 to x=1918 at y=1077, giving 0.089285714286 metre per pixel.",
+        "orientation_basis": "The publishing page states that every displayed Google Earth frame is north-up; image x therefore points east and image y points south. This is publisher metadata, not an independently surveyed ground orientation.",
+        "orientation_status": "publisher_stated_north_up_not_independently_ground_checked",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798,
+          498
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "meters_per_pixel": 0.08928571428571429,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 336,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          53.542131113279,
+          -1.536875940351
+        ],
+        [
+          53.542131113279,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.536875940351
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "This is a legacy-coordinate, measured-scale, publisher-orientation display placement, not a survey or landmark georegistration. The historical acquisition date is not stated, two sources disagree by two days on the event date, and zero independent ground checkpoints validate the corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

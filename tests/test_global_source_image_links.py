@@ -191,18 +191,60 @@ class GlobalSourceImageLinkTests(unittest.TestCase):
         self.assertEqual({row["embedding_allowed"] for row in rows}, {"false"})
         self.assertEqual({row["pixel_bytes_packaged"] for row in rows}, {"false"})
         self.assertEqual({row["local_cache_path"] for row in rows}, {""})
+        generated_rows = [row for row in rows if row["source_id"] in GLOBAL.SOURCE_NAMES]
         self.assertEqual(
-            {row["image_sha256_status"] for row in rows},
+            {row["image_sha256_status"] for row in generated_rows},
             {GLOBAL.IMAGE_SHA256_STATUS},
         )
         self.assertEqual(
-            {row["image_fetch_policy"] for row in rows},
+            {row["image_fetch_policy"] for row in generated_rows},
             {GLOBAL.IMAGE_FETCH_POLICY},
         )
         self.assertEqual(
-            {row["placement_status"] for row in rows},
+            {row["placement_status"] for row in generated_rows},
             {GLOBAL.PLACEMENT_STATUS},
         )
+
+        legacy_expected = {
+            "gimg_76c0a68f0d54c95d9786": (
+                "cc_96878ba19702",
+                "be35cfff95a8b909c5cd529df2021fc10ed41160a242c8d1d0212cd03c5002ab",
+            ),
+            "gimg_bd24fa34504e24f4cdc8": (
+                "cc_9275734c8913",
+                "65d1a3725f6d0df19554060a6c11575b982133bb3e6cddfd80b037f6743cf13a",
+            ),
+            "gimg_f424af5205b5f4c976be": (
+                "cc_6f84d7030b21",
+                "764a884c34f9f46cc92c6dbe20990b271726e5e81fc59998a50ea07cbb54fc87",
+            ),
+            "gimg_d9a1273754ef503e0d4e": (
+                "cc_d777276e6710",
+                "6da12427612e6949683d713a851a42dcd2bee8d716cb15bb1a8d12acca477ed3",
+            ),
+            "gimg_5e0dc51aa8d7b1f8ef9a": (
+                "cc_69e673eaab9f",
+                "989cdf3ecd98dfdac5da2dbed4d0258a12202a30d7c0dee9c13029e8e3317c2f",
+            ),
+        }
+        legacy_rows = {
+            row["image_link_id"]: row
+            for row in rows
+            if row["image_link_id"] in legacy_expected
+        }
+        self.assertEqual(set(legacy_rows), set(legacy_expected))
+        for image_link_id, (formation_id, sha256) in legacy_expected.items():
+            row = legacy_rows[image_link_id]
+            self.assertEqual(row["source_id"], "legacy_kml_review")
+            self.assertEqual(row["formation_id"], formation_id)
+            self.assertEqual(row["image_sha256"], sha256)
+            self.assertEqual(
+                row["image_sha256_status"], "case_specific_sha256_verified"
+            )
+            self.assertEqual(
+                row["placement_status"], "reviewed_footprint_rights_gated"
+            )
+            self.assertEqual(row["embedding_allowed"], "false")
 
     def test_generated_site_candidates_fail_closed_for_british_grid(self):
         rows = read_csv(ROOT / "data" / "global_source_site_candidates.csv")

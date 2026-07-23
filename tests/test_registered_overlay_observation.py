@@ -127,6 +127,86 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
         )
         self.assertIn("zero independent", horhausen["quality"]["limitations"])
 
+        darfield = observations["regobs_darfield_2002_legacy_coordinate_scale_v1"]
+        self.assertEqual(
+            darfield["classification"], "coordinate_size_geometry_provisional"
+        )
+        self.assertEqual(
+            darfield["source_registration"]["kind"],
+            "legacy_coordinate_scale_north_up_display_placement",
+        )
+        self.assertEqual(darfield["source_registration"]["control_count"], 0)
+        self.assertEqual(
+            darfield["local_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            darfield["computed_corners_wgs84_lat_lon"],
+            [
+                [53.532226751785, -1.358078415213],
+                [53.532226751785, -1.355205354314],
+                [53.53126618142, -1.355205354314],
+                [53.53126618142, -1.358078415213],
+            ],
+        )
+
+        legacy_expected = {
+            "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.94641024513, -0.392701146675],
+                    [51.94641024513, -0.390275049526],
+                    [51.945569052006, -0.390275049526],
+                    [51.945569052006, -0.392701146675],
+                ],
+            ),
+            "regobs_waden_hill_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [51.425019054448, -1.856643925105],
+                    [51.425019054448, -1.854279777825],
+                    [51.424189844132, -1.854279777825],
+                    [51.424189844132, -1.856643925105],
+                ],
+            ),
+            "regobs_dodworth_st_john_2002_legacy_coordinate_scale_v1": (
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                [
+                    [53.542131113279, -1.536875940351],
+                    [53.542131113279, -1.534284446279],
+                    [53.541264884646, -1.534284446279],
+                    [53.541264884646, -1.536875940351],
+                ],
+            ),
+            "regobs_panocchia_2004_legacy_coordinate_reported_size_v1": (
+                "coordinate_size_north_up_provisional",
+                "legacy_coordinate_reported_size_north_up_display_placement",
+                [
+                    [44.6814292798, 10.31669709193],
+                    [44.6814292798, 10.318449770799],
+                    [44.680494620774, 10.318449770799],
+                    [44.680494620774, 10.31669709193],
+                ],
+            ),
+        }
+        for observation_id, (classification, kind, corners) in legacy_expected.items():
+            observation = observations[observation_id]
+            self.assertEqual(observation["classification"], classification)
+            self.assertEqual(observation["source_registration"]["kind"], kind)
+            self.assertEqual(observation["source_registration"]["control_count"], 0)
+            self.assertEqual(
+                observation["local_display_transform"][
+                    "independent_ground_checkpoint_count"
+                ],
+                0,
+            )
+            self.assertEqual(observation["computed_corners_wgs84_lat_lon"], corners)
+
 
 if __name__ == "__main__":
     unittest.main()

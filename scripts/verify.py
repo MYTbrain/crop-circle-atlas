@@ -71,16 +71,16 @@ assert len(source_catalog) >= 10, len(source_catalog)
 assert summary["formations"] == len(formations)
 assert summary["assertions"]["total"] == len(assertions)
 assert summary["assertions"]["iccra_mode"] == "exhaustive_reconciled"
-assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4302, 949)
+assert (len(assertions), len(formations), summary["geocoded"], summary["us_formations"]) == (8391, 7745, 4303, 949)
 assert summary["formation_aliases"] == {"accepted_reviews": 4, "merged_alias_entities": 4}
 assert summary["site_resolutions"]["status_counts"] == {
-    "locality_reference": 3894,
-    "unresolved": 3443,
+    "locality_reference": 3887,
+    "unresolved": 3442,
     "corroborated_field": 4,
-    "candidate_field": 398,
+    "candidate_field": 406,
     "registered_site": 6,
 }
-assert summary["site_resolutions"]["reviewed_overrides"] == 20
+assert summary["site_resolutions"]["reviewed_overrides"] == 33
 
 expansion = rows("source_expansion_assertions.csv")
 expansion_access = rows("source_expansion_access.csv")
@@ -219,8 +219,8 @@ locality_geojson = json.loads((ROOT / "web" / "data" / "locality_references.geoj
 work_queue = rows("location_work_queue.csv")
 assert formation_index["metadata"]["record_count"] == len(formation_index["formations"]) == len(formations)
 assert len(work_queue) == len(formations)
-assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 408
-assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3894
+assert len(site_geojson["features"]) == summary["site_resolutions"]["field_site_features"] == 416
+assert len(locality_geojson["features"]) == summary["site_resolutions"]["locality_reference_features"] == 3887
 assert not ({feature["properties"]["formation_id"] for feature in site_geojson["features"]} &
             {feature["properties"]["formation_id"] for feature in locality_geojson["features"]})
 assert all(feature["properties"]["site_status"] in FIELD_SITE_STATUSES for feature in site_geojson["features"])
@@ -684,10 +684,12 @@ assert "fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer" in 
 assert "fillColor: verified ? '#2d9e91' : '#ffd84d'" in web_app
 assert ".key-dot.reference { color:var(--candidate); background:transparent; border-style:dashed; }" in web_styles
 assert "hollow dashed yellow markers are rough locality references" in web_index
-assert 'href="styles.css?v=20260722.3"' in web_index
-assert 'src="app.js?v=20260722.3"' in web_index
-assert "registered_overlays.json?v=20260722.3" in web_app
-assert "formation_images.json?v=20260722.3" in web_app
+assert 'href="styles.css?v=20260722.4"' in web_index
+assert 'src="app.js?v=20260722.5"' in web_index
+assert "formation_index.json?v=20260722.5" in web_app
+assert "formation_sites.geojson?v=20260722.5" in web_app
+assert "registered_overlays.json?v=20260722.5" in web_app
+assert "formation_images.json?v=20260722.5" in web_app
 assert "overlayRecords.length.toLocaleString()" in web_app
 assert "activeOverlay?.remove()" in web_app
 assert "await selectFormation(id, true)" in web_app

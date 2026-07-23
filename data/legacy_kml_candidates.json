@@ -1,0 +1,2769 @@
+{
+  "schema_version": "legacy-kml-candidate-source-v1",
+  "generated_at": "2026-07-23T04:22:37Z",
+  "source": {
+    "archive_filename": "Anomalies_.kml.zip",
+    "archive_size_bytes": 235329,
+    "archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+    "source_classification": "user_supplied_legacy_coordinate_candidates_unverified",
+    "rights_status": "unknown_not_cleared_for_redistribution"
+  },
+  "security_policy": {
+    "offline_only": true,
+    "archive_extraction_performed": false,
+    "network_links_executed": false,
+    "url_shortcuts_executed": false,
+    "remote_icons_loaded": false,
+    "embedded_html_images_loaded": false,
+    "external_urls_visited": false,
+    "descriptions_stored_as_inert_text": true,
+    "url_strings_preserved_as_inert_data": true,
+    "maximum_archive_depth": 2,
+    "maximum_source_archive_bytes": 25000000,
+    "maximum_member_bytes": 5000000,
+    "maximum_archive_uncompressed_bytes": 25000000,
+    "maximum_cumulative_expanded_bytes": 25000000
+  },
+  "candidate_policy": {
+    "location_status": "legacy_exact_field_candidate",
+    "automatic_site_promotion": false,
+    "automatic_overlay_creation": false,
+    "automatic_alignment_eligibility": false,
+    "automatic_publication_eligibility": false,
+    "coordinate_precision_is_not_accuracy": true,
+    "possible_duplicate_groups_are_not_automatic_merges": true
+  },
+  "summary": {
+    "candidate_count": 27,
+    "possible_duplicate_group_count": 4,
+    "possible_duplicate_member_count": 8,
+    "priority_counts": {
+      "1": 2,
+      "10": 10,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 5,
+      "9": 3
+    },
+    "confidence_tier_counts": {
+      "tier_1_named_specific_legacy": 4,
+      "tier_2_named_or_cluster_legacy": 7,
+      "tier_3_known_constructed_or_promotional": 1,
+      "tier_3_questioned_or_iffy_legacy": 15
+    },
+    "accepted_site_count": 0,
+    "overlay_count": 0,
+    "alignment_eligible_count": 0,
+    "publication_eligible_count": 0
+  },
+  "audit": {
+    "archive_entries_seen": 47,
+    "candidates_imported": 27,
+    "href_nodes_not_loaded": 3238,
+    "irrelevant_placemarks_skipped": 457,
+    "kml_documents_inspected": 19,
+    "nested_archives_inspected": 11,
+    "network_links_skipped": 21,
+    "non_kml_entries_ignored": 11,
+    "placemarks_seen": 484,
+    "url_shortcut_entries_skipped": 4,
+    "url_strings_preserved_inert": 56
+  },
+  "kml_documents": [
+    {
+      "kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "bytes": 16940,
+      "placemarks_seen": 21,
+      "candidates_imported": 21,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 0,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/Area51_-_Orion310591_v1.001_[+200_POI].zip!Area51_-_Orion310591_v1.001_[+200_POI].kmz!doc.kml",
+      "kml_sha256": "f0855471ad120f8e455d129bcd24e3e38e1c01ad3be5bfc13c36ef6edc399efb",
+      "bytes": 172746,
+      "placemarks_seen": 188,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 110,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/Area51_-_Orion310591_v1.001_[+200_POI]/Area51_-_Orion310591_v1.001_[+200_POI].kmz!doc.kml",
+      "kml_sha256": "f0855471ad120f8e455d129bcd24e3e38e1c01ad3be5bfc13c36ef6edc399efb",
+      "bytes": 172746,
+      "placemarks_seen": 188,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 110,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/EMAG2.kmz!EMAG2.kml",
+      "kml_sha256": "2dc0639e002063f9c3b8d8cec7955fcc5ff009b18916dfed22880bff986ccfed",
+      "bytes": 5408,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 1,
+      "href_nodes_not_loaded": 3,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/Global-Gravity-Anomaly.kmz!doc.kml",
+      "kml_sha256": "11dc2396b5420bd96c8ccbdab2021e78c9463125e91751b0e9d3c27a12e90be9",
+      "bytes": 2003491,
+      "placemarks_seen": 6,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 2355,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/IndianArrowValleyRdGeorgiaCreekRd.kml",
+      "kml_sha256": "d728c521d949a70d7501cb17618b2717ca7c176f0f5da81fe3c1009a69727de6",
+      "bytes": 530,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 1,
+      "href_nodes_not_loaded": 1,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/TopTenFindsinGoogleEarth.kmz!doc.kml",
+      "kml_sha256": "7f370023b5b0919d1801fedf0df184a05aba80b6756acea4fa38de56c0384b54",
+      "bytes": 18859,
+      "placemarks_seen": 10,
+      "candidates_imported": 1,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 20,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/Unidentified_orbs_and_more.kmz!doc.kml",
+      "kml_sha256": "3c4f6063880576b7211c0717a3d7f674007b361aff934e913c59cd47cb96d404",
+      "bytes": 16300,
+      "placemarks_seen": 24,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 19,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/VatterotLn.kml",
+      "kml_sha256": "20b42a0989552613aa29bf2844c3e623078a644202194b84f0b9b1499e7a1d12",
+      "bytes": 472,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 1,
+      "href_nodes_not_loaded": 1,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/VatterotLn.kmz!doc.kml",
+      "kml_sha256": "6fc3d20018f60fa23d789f4f5ceaa9f90c583e6c1c864cb383c6621cafcf196b",
+      "bytes": 436,
+      "placemarks_seen": 1,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 0,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/alien-crop-circles.kml",
+      "kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+      "bytes": 7415,
+      "placemarks_seen": 4,
+      "candidates_imported": 4,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 2,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/black_marble.kml",
+      "kml_sha256": "3ac17c11a42e9f5032afaadfbf12aac8f7b014d6d4afe9958b0728e07ba9de17",
+      "bytes": 98798,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 4,
+      "href_nodes_not_loaded": 177,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/crop-circles.kml",
+      "kml_sha256": "ec948104c4e51f4881fc3cdd0ca4ee36a58338cb17b1b2281a47f5b52b6047e5",
+      "bytes": 1981,
+      "placemarks_seen": 1,
+      "candidates_imported": 1,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 1,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/ge_77900.kml",
+      "kml_sha256": "46e3cc6e48ed5b696884ca30eb26158ef10a010a9c08983ae68aa7731cf76db1",
+      "bytes": 262971,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 8,
+      "href_nodes_not_loaded": 415,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/global_grav_1min_V20.1.kmz!doc.kml",
+      "kml_sha256": "496fd81a148bbe37b58fa53eb783d272c9379e7237c0d7cd7ad4131f699c2947",
+      "bytes": 6350,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 5,
+      "href_nodes_not_loaded": 6,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/hotspots.kmz!anomalies.kml",
+      "kml_sha256": "6e6b736cf09c95335451d2b72521798156812e6c49ed43034999a93be51d0b40",
+      "bytes": 16287,
+      "placemarks_seen": 25,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 9,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/magnetic_anomalies.kml",
+      "kml_sha256": "878c355680334deacfece355175c895900d595469ea6bb96671f282346cfc882",
+      "bytes": 4357,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 4,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/orbs.kmz!doc.kml",
+      "kml_sha256": "589fc3b5a9148402e1d17b58c714f32c9871e23a0bb5b90cad72dbf6f4835005",
+      "bytes": 7650,
+      "placemarks_seen": 16,
+      "candidates_imported": 0,
+      "network_links_skipped": 0,
+      "href_nodes_not_loaded": 4,
+      "active_xml_rejected": false
+    },
+    {
+      "kml_filename": "Anomalies_.kml/保存した場所.kml",
+      "kml_sha256": "1f93cad4fb0d4ee07a776cc4532f3eb5bc19051ffaaafebc4a0d495b3509129b",
+      "bytes": 466,
+      "placemarks_seen": 0,
+      "candidates_imported": 0,
+      "network_links_skipped": 1,
+      "href_nodes_not_loaded": 1,
+      "active_xml_rejected": false
+    }
+  ],
+  "possible_duplicate_groups": [
+    {
+      "possible_duplicate_group_id": "ldup_175477121741",
+      "member_candidate_ids": [
+        "lkml_0652bc310cbdd4b1",
+        "lkml_9da2ff67b695b8e2"
+      ],
+      "member_names": [
+        "Crop Circle #1 South of Barnsley",
+        "Crop Circle #2 South of Barnsley"
+      ],
+      "member_count": 2,
+      "maximum_pair_distance_m": 97.887,
+      "method": "coordinate_proximity_200m_review_required",
+      "review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "possible_duplicate_group_id": "ldup_82256912753f",
+      "member_candidate_ids": [
+        "lkml_3e0eb93ba86f0bb1",
+        "lkml_f338898f80db3c1c"
+      ],
+      "member_names": [
+        "Crop Circle Panocchia, Italy",
+        "Alien Crop Circles! (2 of 4)"
+      ],
+      "member_count": 2,
+      "maximum_pair_distance_m": 71.735,
+      "method": "coordinate_proximity_200m_review_required",
+      "review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "possible_duplicate_group_id": "ldup_88fca5c72bd5",
+      "member_candidate_ids": [
+        "lkml_0ab80c02ae63c53f",
+        "lkml_1513daad29f03564"
+      ],
+      "member_names": [
+        "Crop Circles ?",
+        "Alien Crop Circles! (1 of 4)"
+      ],
+      "member_count": 2,
+      "maximum_pair_distance_m": 153.745,
+      "method": "coordinate_proximity_200m_review_required",
+      "review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "possible_duplicate_group_id": "ldup_9d4aa20c0bb7",
+      "member_candidate_ids": [
+        "lkml_a95c88c874b47898",
+        "lkml_cbe84d3020c48704"
+      ],
+      "member_names": [
+        "Nice crop circle in Darfield, UK",
+        "Alien Crop Circles! (3 of 4)"
+      ],
+      "member_count": 2,
+      "maximum_pair_distance_m": 46.543,
+      "method": "coordinate_proximity_200m_review_required",
+      "review_status": "unreviewed_do_not_merge"
+    }
+  ],
+  "candidates": [
+    {
+      "legacy_candidate_id": "lkml_a95c88c874b47898",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 6,
+      "placemark_name": "Nice crop circle in Darfield, UK",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-1.356902390606507,53.53136557047451,0",
+      "latitude": 53.53136557047451,
+      "longitude": -1.356902390606507,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.356728459370864,
+        "latitude": 53.53173409016868,
+        "altitude": 0.0,
+        "heading": -162.2154905181684,
+        "range": 189.1643021508944,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.356728459370864",
+        "latitude": "53.53173409016868",
+        "altitude": "0",
+        "heading": "-162.2154905181684",
+        "range": "189.1643021508944",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.356728459370864"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "53.53173409016868"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "189.1643021508944"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-162.2154905181684"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/08/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/227002 http://www.e-wombwell.co.uk/CropCircle-07-07-2002.htm",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/227002",
+        "http://ccdb.cropcircleresearch.com/cc-photos/uk2002bw.jpg",
+        "http://www.e-wombwell.co.uk/CropCircle-07-07-2002.htm"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 1,
+      "priority_label": "darfield",
+      "confidence_tier": "tier_1_named_specific_legacy",
+      "possible_duplicate_group_id": "ldup_9d4aa20c0bb7",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_cbe84d3020c48704",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/alien-crop-circles.kml",
+      "original_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+      "source_placemark_index": 3,
+      "placemark_name": "Alien Crop Circles! (3 of 4)",
+      "folder_path": [],
+      "folder": "",
+      "coordinate_original": "-1.356884,53.531784",
+      "latitude": 53.531784,
+      "longitude": -1.356884,
+      "altitude_m": null,
+      "look_at": {
+        "longitude": -1.356884,
+        "latitude": 53.531784,
+        "altitude": 0.0,
+        "heading": 0.0,
+        "range": 1000.0,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.356884",
+        "latitude": "53.531784",
+        "altitude": "0",
+        "heading": "0",
+        "range": "1000",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "-1.356884"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "53.531784"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "1000"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        }
+      ],
+      "description_inert_text": "“Here at Google Sightseeing one of the things people most often ask us to post, are your common-or-garden alien crop circles. Never liking to disappoint our readers, GGSS is proud to present a whole slew of possibly alien crop circles! You lucky people. First up is this bizarre collection of lines and circles near Uckfield, East Sussex, England. At first I ” Read the full text at GoogleSightseeing.com",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://googlesightseeing.com/cache/txtimg/785.gif",
+        "http://googlesightseeing.com/2006/02/14/alien-crop-circles/",
+        "http://media.googlesightseeing.com/wp-content/images/ggssalex060.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": true,
+      "priority_rank": 1,
+      "priority_label": "inherited_from_possible_duplicate_group",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "ldup_9d4aa20c0bb7",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_f338898f80db3c1c",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 10,
+      "placemark_name": "Crop Circle Panocchia, Italy",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "10.31721852521929,44.68159555459062,0",
+      "latitude": 44.68159555459062,
+      "longitude": 10.31721852521929,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": 10.31746424598608,
+        "latitude": 44.6812800333999,
+        "altitude": 0.0,
+        "heading": -7.482569032870153,
+        "range": 298.2925838957094,
+        "tilt": 4.725396902522388e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "10.31746424598608",
+        "latitude": "44.6812800333999",
+        "altitude": "0",
+        "heading": "-7.482569032870153",
+        "range": "298.2925838957094",
+        "tilt": "4.725396902522388e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "10.31746424598608"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "44.6812800333999"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "298.2925838957094"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "4.725396902522388e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-7.482569032870153"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/17/05 http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/237227 http://www.ufologia.net/headlines/articolo_view.asp?ARTICOLO_ID=745",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/237227",
+        "http://i28.photobucket.com/albums/c235/Cyclonicc/pannochiacc1.jpg",
+        "http://www.ufologia.net/headlines/articolo_view.asp?ARTICOLO_ID=745"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 2,
+      "priority_label": "panocchia",
+      "confidence_tier": "tier_1_named_specific_legacy",
+      "possible_duplicate_group_id": "ldup_82256912753f",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_3e0eb93ba86f0bb1",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/alien-crop-circles.kml",
+      "original_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+      "source_placemark_index": 2,
+      "placemark_name": "Alien Crop Circles! (2 of 4)",
+      "folder_path": [],
+      "folder": "",
+      "coordinate_original": "10.317557,44.680997",
+      "latitude": 44.680997,
+      "longitude": 10.317557,
+      "altitude_m": null,
+      "look_at": {
+        "longitude": 10.317557,
+        "latitude": 44.680997,
+        "altitude": 0.0,
+        "heading": 0.0,
+        "range": 1000.0,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "10.317557",
+        "latitude": "44.680997",
+        "altitude": "0",
+        "heading": "0",
+        "range": "1000",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "10.317557"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "44.680997"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "1000"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        }
+      ],
+      "description_inert_text": "“Here at Google Sightseeing one of the things people most often ask us to post, are your common-or-garden alien crop circles. Never liking to disappoint our readers, GGSS is proud to present a whole slew of possibly alien crop circles! You lucky people. First up is this bizarre collection of lines and circles near Uckfield, East Sussex, England. At first I ” Read the full text at GoogleSightseeing.com",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://googlesightseeing.com/cache/txtimg/785.gif",
+        "http://googlesightseeing.com/2006/02/14/alien-crop-circles/",
+        "http://media.googlesightseeing.com/wp-content/images/ggssalex059.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": true,
+      "priority_rank": 2,
+      "priority_label": "inherited_from_possible_duplicate_group",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "ldup_82256912753f",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_8045474ba5b89fbf",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 11,
+      "placemark_name": "Crop Circle",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-90.62048080723103,38.40162879896836,0",
+      "latitude": 38.40162879896836,
+      "longitude": -90.62048080723103,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -90.62028409948526,
+        "latitude": 38.40196885224528,
+        "altitude": 0.0,
+        "heading": 131.1262244648916,
+        "range": 141.3695507438704,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-90.62028409948526",
+        "latitude": "38.40196885224528",
+        "altitude": "0",
+        "heading": "131.1262244648916",
+        "range": "141.3695507438704",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-90.62028409948526"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "38.40196885224528"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "141.3695507438704"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "131.1262244648916"
+        }
+      ],
+      "description_inert_text": "Near House Springs, MO. Found by Zyrotec 12/30/05 http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/251997",
+      "description_had_html": false,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/251997"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 3,
+      "priority_label": "house_springs_missouri",
+      "confidence_tier": "tier_1_named_specific_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_7138c75b707980ef",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 9,
+      "placemark_name": "Crop Circle near Hexton",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-0.3915778131514003,51.94603793928447,0",
+      "latitude": 51.94603793928447,
+      "longitude": -0.3915778131514003,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -0.3916324504829035,
+        "latitude": 51.94631957946446,
+        "altitude": 0.0,
+        "heading": 175.405567287979,
+        "range": 157.765126789692,
+        "tilt": 6.159406802172156e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-0.3916324504829035",
+        "latitude": "51.94631957946446",
+        "altitude": "0",
+        "heading": "175.405567287979",
+        "range": "157.765126789692",
+        "tilt": "6.159406802172156e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-0.3916324504829035"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.94631957946446"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "157.765126789692"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "6.159406802172156e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "175.405567287979"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/04/05. http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/221663 A VERY informative post on this area and crop circles by ridgeway can be found here. http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/265357",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/221663",
+        "http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/265357",
+        "http://www.galactic-server.com/c45d8621k/corn558.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 4,
+      "priority_label": "hexton",
+      "confidence_tier": "tier_1_named_specific_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_2581ddcf6d36fefd",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 13,
+      "placemark_name": "windmillhill cropcircle ghost from 2004",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.874343072026605,51.43459499120964,0",
+      "latitude": 51.43459499120964,
+      "longitude": -1.874343072026605,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.874111817778303,
+        "latitude": 51.43452218440157,
+        "altitude": 0.0,
+        "heading": -89.14837244650946,
+        "range": 456.7057357251791,
+        "tilt": 8.045771576166726e-06,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.874111817778303",
+        "latitude": "51.43452218440157",
+        "altitude": "0",
+        "heading": "-89.14837244650946",
+        "range": "456.7057357251791",
+        "tilt": "8.045771576166726e-006",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.874111817778303"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.43452218440157"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "456.7057357251791"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "8.045771576166726e-006"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-89.14837244650946"
+        }
+      ],
+      "description_inert_text": "windmillhill cropcircle ghost from 2004 we `ve been into it.. http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01396.htm http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01400.htm http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01401.htm Stacker7 http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/433355",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01396.htm",
+        "http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01400.htm",
+        "http://www.029.ch/bilder-gallery/ccuk2004/Seiten/DSC01401.htm",
+        "http://www.galactic-server.com/c45d8621k/corn722.jpg",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/433355"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 5,
+      "priority_label": "windmill_hill",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_c857c2d1e7ae52b6",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 15,
+      "placemark_name": "cropcircle cutted Hackpen Hill",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.825380364348547,51.47345414989942,0",
+      "latitude": 51.47345414989942,
+      "longitude": -1.825380364348547,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.8245554604876,
+        "latitude": 51.47330386882985,
+        "altitude": 0.0,
+        "heading": -32.26932747435662,
+        "range": 549.9896072882069,
+        "tilt": 1.805146709411881,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.8245554604876",
+        "latitude": "51.47330386882985",
+        "altitude": "0",
+        "heading": "-32.26932747435662",
+        "range": "549.9896072882069",
+        "tilt": "1.805146709411881",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.8245554604876"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.47330386882985"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "549.9896072882069"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "1.805146709411881"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-32.26932747435662"
+        }
+      ],
+      "description_inert_text": "Cropcircle cutted Hackpen Hill. ive been into it.. http://www.029.ch/bilder-gallery/ccuk2003/Seiten/DSC00256.htm Stacker7 http://bbs.keyhole.com/ubb/showthreaded.php/Number/407639",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://www.galactic-server.com/c45d8621k/corn664.jpg",
+        "http://www.029.ch/bilder-gallery/ccuk2003/Seiten/DSC00256.htm",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/407639"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 6,
+      "priority_label": "hackpen_hill",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_5627667302096609",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 16,
+      "placemark_name": "jingjang cropcircle",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.855548044334824,51.42454302630362,0",
+      "latitude": 51.42454302630362,
+      "longitude": -1.855548044334824,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.854225675064472,
+        "latitude": 51.42390754394888,
+        "altitude": 0.0,
+        "heading": 157.5595798676779,
+        "range": 535.4085083576763,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.854225675064472",
+        "latitude": "51.42390754394888",
+        "altitude": "0",
+        "heading": "157.5595798676779",
+        "range": "535.4085083576763",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.854225675064472"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.42390754394888"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "535.4085083576763"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "157.5595798676779"
+        }
+      ],
+      "description_inert_text": "A cutted cropcircle close to avebury(henge) /waden hill (ive been into it..in 2003) Here is what it looked like in summer. And here some pix from our trip in 2003 in wiltshire...:) http://029.ch/bilder-gallery/ccuk2003/index.htm Stacker7 http://bbs.keyhole.com/ubb/showthreaded.php/Number/406840",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://www.galactic-server.com/c45d8621k/corn628.jpg",
+        "http://029.ch/bilder-gallery/ccuk2003/index.htm",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/406840"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 7,
+      "priority_label": "waden_hill",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_9da2ff67b695b8e2",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 7,
+      "placemark_name": "Crop Circle #1 South of Barnsley",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-1.505412501181453,53.53736524535798,0",
+      "latitude": 53.53736524535798,
+      "longitude": -1.505412501181453,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.505192355208818,
+        "latitude": 53.53756716529991,
+        "altitude": 0.0,
+        "heading": 27.41949723510886,
+        "range": 110.9196587971022,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.505192355208818",
+        "latitude": "53.53756716529991",
+        "altitude": "0",
+        "heading": "27.41949723510886",
+        "range": "110.9196587971022",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.505192355208818"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "53.53756716529991"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "110.9196587971022"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "27.41949723510886"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/08/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 8,
+      "priority_label": "south_yorkshire_cluster",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "ldup_175477121741",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_0652bc310cbdd4b1",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 8,
+      "placemark_name": "Crop Circle #2 South of Barnsley",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-1.504303652242228,53.53678155492893,0",
+      "latitude": 53.53678155492893,
+      "longitude": -1.504303652242228,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.504690110172297,
+        "latitude": 53.53670044167705,
+        "altitude": 0.0,
+        "heading": -101.9088403446289,
+        "range": 139.131908901835,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.504690110172297",
+        "latitude": "53.53670044167705",
+        "altitude": "0",
+        "heading": "-101.9088403446289",
+        "range": "139.131908901835",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.504690110172297"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "53.53670044167705"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "139.131908901835"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-101.9088403446289"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/08/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/226973"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 8,
+      "priority_label": "south_yorkshire_cluster",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "ldup_175477121741",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_87cf7612dd8054ac",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 5,
+      "placemark_name": "Crop Circle - Dodworth, UK",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-1.535798850627117,53.54173168563158,0",
+      "latitude": 53.54173168563158,
+      "longitude": -1.535798850627117,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.535791605826079,
+        "latitude": 53.54154972024757,
+        "altitude": 0.0,
+        "heading": 8.861566467645014,
+        "range": 153.8403000267969,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.535791605826079",
+        "latitude": "53.54154972024757",
+        "altitude": "0",
+        "heading": "8.861566467645014",
+        "range": "153.8403000267969",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.535791605826079"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "53.54154972024757"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "153.8403000267969"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "8.861566467645014"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/08/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/227061",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/227061"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 8,
+      "priority_label": "south_yorkshire_cluster",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_2f8d2f23392b182c",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 3,
+      "placemark_name": "Crop Circle near Ossett, UK",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-1.559797886626015,53.69472386411723,0",
+      "latitude": 53.69472386411723,
+      "longitude": -1.559797886626015,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.559294484919168,
+        "latitude": 53.69458634459217,
+        "altitude": 0.0,
+        "heading": -54.38868547818529,
+        "range": 153.4289682777659,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.559294484919168",
+        "latitude": "53.69458634459217",
+        "altitude": "0",
+        "heading": "-54.38868547818529",
+        "range": "153.4289682777659",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.559294484919168"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "53.69458634459217"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "153.4289682777659"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-54.38868547818529"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/11/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/230294",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/230294"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 8,
+      "priority_label": "south_yorkshire_cluster",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_1cde692d6ffa7a37",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/alien-crop-circles.kml",
+      "original_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+      "source_placemark_index": 4,
+      "placemark_name": "Alien Crop Circles! (4 of 4)",
+      "folder_path": [],
+      "folder": "",
+      "coordinate_original": "-1.347005,53.538749",
+      "latitude": 53.538749,
+      "longitude": -1.347005,
+      "altitude_m": null,
+      "look_at": {
+        "longitude": -1.347005,
+        "latitude": 53.538749,
+        "altitude": 0.0,
+        "heading": 0.0,
+        "range": 1000.0,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.347005",
+        "latitude": "53.538749",
+        "altitude": "0",
+        "heading": "0",
+        "range": "1000",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "-1.347005"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "53.538749"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "1000"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        }
+      ],
+      "description_inert_text": "“Here at Google Sightseeing one of the things people most often ask us to post, are your common-or-garden alien crop circles. Never liking to disappoint our readers, GGSS is proud to present a whole slew of possibly alien crop circles! You lucky people. First up is this bizarre collection of lines and circles near Uckfield, East Sussex, England. At first I ” Read the full text at GoogleSightseeing.com",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://googlesightseeing.com/cache/txtimg/785.gif",
+        "http://googlesightseeing.com/2006/02/14/alien-crop-circles/",
+        "http://media.googlesightseeing.com/wp-content/images/jggss238.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 8,
+      "priority_label": "south_yorkshire_cluster",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_089ee097d06688b9",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 1,
+      "placemark_name": "Crop Circle near Eynsford, UK",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "0.1982946672342365,51.35635607027512,0",
+      "latitude": 51.35635607027512,
+      "longitude": 0.1982946672342365,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": 0.198002014080142,
+        "latitude": 51.35640002855087,
+        "altitude": 0.0,
+        "heading": 135.7011623385712,
+        "range": 95.88516616404542,
+        "tilt": 4.438302451399154e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "0.198002014080142",
+        "latitude": "51.35640002855087",
+        "altitude": "0",
+        "heading": "135.7011623385712",
+        "range": "95.88516616404542",
+        "tilt": "4.438302451399154e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0.198002014080142"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.35640002855087"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "95.88516616404542"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "4.438302451399154e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "135.7011623385712"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 1/9/06 http://bbs.keyhole.com/ubb/showthreaded.php/Number/266200",
+      "description_had_html": false,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/266200"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 9,
+      "priority_label": "remaining_ordinary_crop_circle_placemark",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_986578c58e013452",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/crop-circles.kml",
+      "original_kml_sha256": "ec948104c4e51f4881fc3cdd0ca4ee36a58338cb17b1b2281a47f5b52b6047e5",
+      "source_placemark_index": 1,
+      "placemark_name": "Crop Circles",
+      "folder_path": [],
+      "folder": "",
+      "coordinate_original": "-101.40003200,36.90611700",
+      "latitude": 36.906117,
+      "longitude": -101.400032,
+      "altitude_m": null,
+      "look_at": {
+        "longitude": null,
+        "latitude": null,
+        "altitude": null,
+        "heading": null,
+        "range": null,
+        "tilt": null,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "",
+        "latitude": "",
+        "altitude": "",
+        "heading": "",
+        "range": "",
+        "tilt": "",
+        "altitude_mode": ""
+      },
+      "look_at_children": [],
+      "description_inert_text": "By: Speedogomer. Read more... (report offensive) Fields in Oklahoma",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://virtualglobetrotting.com/map/crop-circles/",
+        "http://cf.vgtstatic.com/thumb/6/5/6592-v1.jpg",
+        "http://virtualglobetrotting.com/user/Speedogomer/",
+        "http://virtualglobetrotting.com/report/?mid=6592&t=inappropriate",
+        "http://cf.vgtstatic.com/thumb/6/5/6592-v1-micro.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 9,
+      "priority_label": "remaining_ordinary_crop_circle_placemark",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_433413b8874b8e4e",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 4,
+      "placemark_name": "Pacman Crop Circle in Reading",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-0.985369956189956,51.40030670473704,0",
+      "latitude": 51.40030670473704,
+      "longitude": -0.985369956189956,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -0.9852518820333732,
+        "latitude": 51.40025263570217,
+        "altitude": 0.0,
+        "heading": -55.4260419891496,
+        "range": 79.81914391046097,
+        "tilt": 1.15796058668534e-09,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-0.9852518820333732",
+        "latitude": "51.40025263570217",
+        "altitude": "0",
+        "heading": "-55.4260419891496",
+        "range": "79.81914391046097",
+        "tilt": "1.15796058668534e-009",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-0.9852518820333732"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.40025263570217"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "79.81914391046097"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "1.15796058668534e-009"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-55.4260419891496"
+        }
+      ],
+      "description_inert_text": "Found by Cyclonic 12/11/05. http://bbs.keyhole.com/ubb/showthreaded.php/Number/230010",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/230010"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 9,
+      "priority_label": "remaining_ordinary_crop_circle_placemark",
+      "confidence_tier": "tier_2_named_or_cluster_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_4dc15132b237e2ef",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/TopTenFindsinGoogleEarth.kmz!doc.kml",
+      "original_kml_sha256": "7f370023b5b0919d1801fedf0df184a05aba80b6756acea4fa38de56c0384b54",
+      "source_placemark_index": 2,
+      "placemark_name": "Firefox Crop Circles",
+      "folder_path": [
+        "Top Ten Finds in Google Earth.kmz",
+        "Top Ten Finds in Google Earth"
+      ],
+      "folder": "Top Ten Finds in Google Earth.kmz / Top Ten Finds in Google Earth",
+      "coordinate_original": "-123.1137419625,45.12375706662499,0",
+      "latitude": 45.12375706662499,
+      "longitude": -123.1137419625,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -123.1141180773151,
+        "latitude": 45.12324949646165,
+        "altitude": 0.0,
+        "heading": -0.02686187873561442,
+        "range": 906.09991480456,
+        "tilt": 0.0,
+        "altitude_mode": "relativeToGround"
+      },
+      "look_at_original": {
+        "longitude": "-123.1141180773151",
+        "latitude": "45.12324949646165",
+        "altitude": "0",
+        "heading": "-0.02686187873561442",
+        "range": "906.0999148045599",
+        "tilt": "0",
+        "altitude_mode": "relativeToGround"
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "-123.1141180773151"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "45.12324949646165"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "-0.02686187873561442"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "906.0999148045599"
+        },
+        {
+          "tag": "altitudeMode",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "relativeToGround"
+        },
+        {
+          "tag": "altitudeMode",
+          "namespace": "http://www.google.com/kml/ext/2.2",
+          "text": "relativeToSeaFloor"
+        }
+      ],
+      "description_inert_text": "Maybe alien technology isn't so foreign after all. This Firefox crop circle sprouted up in a cornfield in Oregon, but its origins are no mystery. In 2006, the Oregon State University Linux Users group created the giant logo — spanning more than 45,000 sq. ft. — to celebrate the Web browser's 50 millionth download. Read more: http://www.time.com/time/specials/packages/article/0,28804,1881770_1881787_1881775,00.html#ixzz16iCWcVZg",
+      "description_had_html": false,
+      "original_url_strings": [
+        "http://www.time.com/time/specials/packages/article/0,28804,1881770_1881787_1881775,00.html#ixzz16iCWcVZg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_known_constructed_or_promotional",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_1513daad29f03564",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/alien-crop-circles.kml",
+      "original_kml_sha256": "bbe92b750c5124d2be310695de1ae17bbfd55451210ca26bcffc983d6e902b53",
+      "source_placemark_index": 1,
+      "placemark_name": "Alien Crop Circles! (1 of 4)",
+      "folder_path": [],
+      "folder": "",
+      "coordinate_original": "0.019355,51.010648",
+      "latitude": 51.010648,
+      "longitude": 0.019355,
+      "altitude_m": null,
+      "look_at": {
+        "longitude": 0.019355,
+        "latitude": 51.010648,
+        "altitude": 0.0,
+        "heading": 0.0,
+        "range": 1000.0,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "0.019355",
+        "latitude": "51.010648",
+        "altitude": "0",
+        "heading": "0",
+        "range": "1000",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0.019355"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "51.010648"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "1000"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://www.opengis.net/kml/2.2",
+          "text": "0"
+        }
+      ],
+      "description_inert_text": "“Here at Google Sightseeing one of the things people most often ask us to post, are your common-or-garden alien crop circles. Never liking to disappoint our readers, GGSS is proud to present… a whole slew of possibly alien crop circles! You lucky people. First up is this bizarre collection of lines and circles near Uckfield, East Sussex, England. At first I …” Read the full text at GoogleSightseeing.com",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://googlesightseeing.com/cache/txtimg/785.gif",
+        "http://googlesightseeing.com/2006/02/14/alien-crop-circles/",
+        "http://media.googlesightseeing.com/wp-content/images/ggssalex058.jpg",
+        "http://googlesightseeing.com/maps?p=785&c=&ll=51.010648,0.019355&spn=0.005147,0.007522&t=k&hl=en"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "ldup_88fca5c72bd5",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_514cb93416f7b2fa",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 18,
+      "placemark_name": "cop circle?",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-2.099734838578172,52.3614900435967,0",
+      "latitude": 52.3614900435967,
+      "longitude": -2.099734838578172,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -2.099398048717394,
+        "latitude": 52.3613431178479,
+        "altitude": 0.0,
+        "heading": -3.299640539329097,
+        "range": 120.5360135080906,
+        "tilt": 1.745994429895993e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-2.099398048717394",
+        "latitude": "52.3613431178479",
+        "altitude": "0",
+        "heading": "-3.299640539329097",
+        "range": "120.5360135080906",
+        "tilt": "1.745994429895993e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-2.099398048717394"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "52.3613431178479"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "120.5360135080906"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "1.745994429895993e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-3.299640539329097"
+        }
+      ],
+      "description_inert_text": "I have a cop circle on the grass. Found by jean888. http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/344190",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/344190"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_0ab80c02ae63c53f",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 12,
+      "placemark_name": "Crop Circles ?",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "0.01765867322623294,51.01152701263806,0",
+      "latitude": 51.01152701263806,
+      "longitude": 0.01765867322623294,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": 0.01947670308379736,
+        "latitude": 51.0109050778755,
+        "altitude": 0.0,
+        "heading": 0.0003470447880281624,
+        "range": 417.6596523524985,
+        "tilt": 5.741666933921369e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "0.01947670308379736",
+        "latitude": "51.0109050778755",
+        "altitude": "0",
+        "heading": "0.0003470447880281624",
+        "range": "417.6596523524985",
+        "tilt": "5.741666933921369e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0.01947670308379736"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.0109050778755"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "417.6596523524985"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "5.741666933921369e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0.0003470447880281624"
+        }
+      ],
+      "description_inert_text": "The first Crop Circles ever found in Google Earth. Posted by: ebbyfish Click here for the post Are these Crop Circles or grain towers?",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showprofile.php?User=12174",
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/22916",
+        "http://www.circlemakers.org/Img/sussex_03.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "ldup_88fca5c72bd5",
+      "possible_duplicate_group_size": 2,
+      "duplicate_group_method": "coordinate_proximity_200m_review_required",
+      "duplicate_review_status": "unreviewed_do_not_merge"
+    },
+    {
+      "legacy_candidate_id": "lkml_8870bf73bed0b15a",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 2,
+      "placemark_name": "Crop Circles?",
+      "folder_path": [
+        "Crop Circle Collection"
+      ],
+      "folder": "Crop Circle Collection",
+      "coordinate_original": "-0.3856781488260879,52.55956639056156,0",
+      "latitude": 52.55956639056156,
+      "longitude": -0.3856781488260879,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -0.3856922151193638,
+        "latitude": 52.55960573961748,
+        "altitude": 0.0,
+        "heading": -30.68358329484394,
+        "range": 165.3800776469341,
+        "tilt": 0.004765575226094033,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-0.3856922151193638",
+        "latitude": "52.55960573961748",
+        "altitude": "0",
+        "heading": "-30.68358329484394",
+        "range": "165.3800776469341",
+        "tilt": "0.004765575226094033",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-0.3856922151193638"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "52.55960573961748"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "165.3800776469341"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0.004765575226094033"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-30.68358329484394"
+        }
+      ],
+      "description_inert_text": "Found by genehil 12/28/05 http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/250255",
+      "description_had_html": false,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/250255"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_e8786d34456661a3",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 20,
+      "placemark_name": "iffy crop circle design",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-0.658334114887964,52.24611417797837,0",
+      "latitude": 52.24611417797837,
+      "longitude": -0.658334114887964,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -0.6586486948977229,
+        "latitude": 52.24595717171689,
+        "altitude": 0.0,
+        "heading": 65.27115808029264,
+        "range": 268.4778092915725,
+        "tilt": 3.339764514450455e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-0.6586486948977229",
+        "latitude": "52.24595717171689",
+        "altitude": "0",
+        "heading": "65.27115808029264",
+        "range": "268.4778092915725",
+        "tilt": "3.339764514450455e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-0.6586486948977229"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "52.24595717171689"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "268.4778092915725"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "3.339764514450455e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "65.27115808029264"
+        }
+      ],
+      "description_inert_text": "Not like a classic crop circle, and not complex enough to be a crop maze. I cant figure out what farming purpose this would serve so im guessing its a design of some type to be viewed from the air. http://bbs.keyhole.com/ubb/showthreaded.php/Number/228729 Cyclonic",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/228729"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_725187acb1ad0d81",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 17,
+      "placemark_name": "Old Crop Circle - Wiltshire",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.837142313328912,51.41876254820806,0",
+      "latitude": 51.41876254820806,
+      "longitude": -1.837142313328912,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.837473600116213,
+        "latitude": 51.41927319607046,
+        "altitude": 0.0,
+        "heading": 157.4360598167775,
+        "range": 217.2466660089383,
+        "tilt": 1.305863197257224e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.837473600116213",
+        "latitude": "51.41927319607046",
+        "altitude": "0",
+        "heading": "157.4360598167775",
+        "range": "217.2466660089383",
+        "tilt": "1.305863197257224e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.837473600116213"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.41927319607046"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "217.2466660089383"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "1.305863197257224e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "157.4360598167775"
+        }
+      ],
+      "description_inert_text": "Cyclonic http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/391057",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/391057",
+        "http://www.galactic-server.com/c45d8621k/corn667.jpg"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_84d8dbe85c335626",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 21,
+      "placemark_name": "Possible Crop Circles once",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.18168166293971,51.75943367479979,0",
+      "latitude": 51.75943367479979,
+      "longitude": -1.18168166293971,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.182153405793958,
+        "latitude": 51.75929824676882,
+        "altitude": 0.0,
+        "heading": 88.39658915022012,
+        "range": 162.6642174427986,
+        "tilt": 0.0,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.182153405793958",
+        "latitude": "51.75929824676882",
+        "altitude": "0",
+        "heading": "88.39658915022012",
+        "range": "162.6642174427986",
+        "tilt": "0",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.182153405793958"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.75929824676882"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "162.6642174427986"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "88.39658915022012"
+        }
+      ],
+      "description_inert_text": "*No placemark on BBS* Added through PM and coords.",
+      "description_had_html": true,
+      "original_url_strings": [],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_dc3bc14b03fa3c0a",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 14,
+      "placemark_name": "possibly were crop circles once",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-1.162515544245295,51.76526234273344,0",
+      "latitude": 51.76526234273344,
+      "longitude": -1.162515544245295,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -1.162495658485632,
+        "latitude": 51.76538668850773,
+        "altitude": 0.0,
+        "heading": -76.6258226812,
+        "range": 297.9474004445899,
+        "tilt": 1.353637337474248e-10,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-1.162495658485632",
+        "latitude": "51.76538668850773",
+        "altitude": "0",
+        "heading": "-76.62582268120001",
+        "range": "297.9474004445899",
+        "tilt": "1.353637337474248e-010",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-1.162495658485632"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.76538668850773"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "297.9474004445899"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "1.353637337474248e-010"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-76.62582268120001"
+        }
+      ],
+      "description_inert_text": "Cyclonic http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/273098 Couldve been, we'll never know for sure. :)",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Cat/0/Number/273098"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    },
+    {
+      "legacy_candidate_id": "lkml_88afa0f8a2c9d3fa",
+      "source_archive_filename": "Anomalies_.kml.zip",
+      "source_archive_sha256": "7f4d8fff89a59afb995c78ef82481439ace8ab5eb77e9e708a9a25b222724be8",
+      "original_kml_filename": "Anomalies_.kml/132_CropCircleCollection.kml",
+      "original_kml_sha256": "4685872076905d54474dad7256e5e5e297ebea82e1e3eb93b13edf457533f9c7",
+      "source_placemark_index": 19,
+      "placemark_name": "unfinished or bad crop circle",
+      "folder_path": [
+        "Crop Circle Collection",
+        "Old or iffy Crop Circles"
+      ],
+      "folder": "Crop Circle Collection / Old or iffy Crop Circles",
+      "coordinate_original": "-0.8994805074512585,51.48033056848112,0",
+      "latitude": 51.48033056848112,
+      "longitude": -0.8994805074512585,
+      "altitude_m": 0.0,
+      "look_at": {
+        "longitude": -0.8993822833337787,
+        "latitude": 51.48044423511171,
+        "altitude": 0.0,
+        "heading": -140.7569937508642,
+        "range": 70.35867601905377,
+        "tilt": 2.243347734280413e-09,
+        "altitude_mode": ""
+      },
+      "look_at_original": {
+        "longitude": "-0.8993822833337787",
+        "latitude": "51.48044423511171",
+        "altitude": "0",
+        "heading": "-140.7569937508642",
+        "range": "70.35867601905378",
+        "tilt": "2.243347734280413e-009",
+        "altitude_mode": ""
+      },
+      "look_at_children": [
+        {
+          "tag": "longitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-0.8993822833337787"
+        },
+        {
+          "tag": "latitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "51.48044423511171"
+        },
+        {
+          "tag": "altitude",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "0"
+        },
+        {
+          "tag": "range",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "70.35867601905378"
+        },
+        {
+          "tag": "tilt",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "2.243347734280413e-009"
+        },
+        {
+          "tag": "heading",
+          "namespace": "http://earth.google.com/kml/2.1",
+          "text": "-140.7569937508642"
+        }
+      ],
+      "description_inert_text": "Cyclonic http://bbs.keyhole.com/ubb/showthreaded.php/Number/230018",
+      "description_had_html": true,
+      "original_url_strings": [
+        "http://bbs.keyhole.com/ubb/showthreaded.php/Number/230018"
+      ],
+      "remote_content_executed": false,
+      "network_links_executed": false,
+      "legacy_location_status": "legacy_exact_field_candidate",
+      "review_status": "queued_unverified",
+      "site_status": "candidate_field_only",
+      "alignment_eligible": false,
+      "overlay_eligible": false,
+      "publication_eligible": false,
+      "coordinate_accuracy_status": "legacy_point_precision_not_validated_accuracy",
+      "coordinate_uncertainty_m": null,
+      "priority_inherited_from_duplicate_group": false,
+      "priority_rank": 10,
+      "priority_label": "old_iffy_or_questioned",
+      "confidence_tier": "tier_3_questioned_or_iffy_legacy",
+      "possible_duplicate_group_id": "",
+      "possible_duplicate_group_size": 1,
+      "duplicate_group_method": "",
+      "duplicate_review_status": "not_applicable"
+    }
+  ]
+}

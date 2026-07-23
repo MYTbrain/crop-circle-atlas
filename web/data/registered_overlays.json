@@ -2407,6 +2407,368 @@
       }
     },
     {
+      "overlay_id": "darfield-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_darfield_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_d777276e6710",
+      "assertion_id": "a_47e1c2de56b8fa",
+      "title": "Darfield 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200202-cat-hill-darfield-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "6da12427612e6949683d713a851a42dcd2bee8d716cb15bb1a8d12acca477ed3",
+      "corners": [
+        [
+          53.532226751785,
+          -1.358078415213
+        ],
+        [
+          53.532226751785,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.355205354314
+        ],
+        [
+          53.53126618142,
+          -1.358078415213
+        ]
+      ],
+      "center": [
+        53.531784,
+        -1.356884
+      ],
+      "coordinate_uncertainty_m": 50,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "Two user-supplied legacy KML points, Crop Circle Research Archive historical Google Earth frame, the matching 2002 catalog diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The formation identity is fixed by the unique 2002 diagram match. The measured source-frame scale bar and publisher-stated north-up orientation constrain the display footprint around the northern legacy point, whose approximately 85 metre road offset matches the source frame better than the southern point. The coordinate conflict is retained as 50 metre uncertainty and no persistent geographic checkpoint independently validates the full-frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source link only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798.2,
+          497.8
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.531784,
+          -1.356884
+        ],
+        "meters_per_pixel": 0.09900990099009901,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 303,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 46.543,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "hexton-barton-hills-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_96878ba19702",
+      "assertion_id": "a_17cee0fec5cd40",
+      "title": "Barton Hills near Hexton 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enhe200202-west-of-telegraph-hill-hexton-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "be35cfff95a8b909c5cd529df2021fc10ed41160a242c8d1d0212cd03c5002ab",
+      "corners": [
+        [
+          51.94641024513,
+          -0.392701146675
+        ],
+        [
+          51.94641024513,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.390275049526
+        ],
+        [
+          51.945569052006,
+          -0.392701146675
+        ]
+      ],
+      "center": [
+        51.94603793928447,
+        -0.3915778131514003
+      ],
+      "coordinate_uncertainty_m": 30,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, the matching Barton Hills source photograph, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The legacy point, matching case photograph, historical frame, measured scale bar, and publisher-stated north-up constrain a display footprint. The event-level date disagreement is retained and no persistent landmark independently validates the frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          889,
+          478
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.94603793928447,
+          -0.3915778131514003
+        ],
+        "meters_per_pixel": 0.08670520231213873,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 346,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "waden-hill-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_waden_hill_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_9275734c8913",
+      "assertion_id": "a_01386791543ff7",
+      "title": "Waden Hill 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enwi200206-waden-hill-avebury-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "65d1a3725f6d0df19554060a6c11575b982133bb3e6cddfd80b037f6743cf13a",
+      "corners": [
+        [
+          51.425019054448,
+          -1.856643925105
+        ],
+        [
+          51.425019054448,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.854279777825
+        ],
+        [
+          51.424189844132,
+          -1.856643925105
+        ]
+      ],
+      "center": [
+        51.42454302630362,
+        -1.855548044334824
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point and description, Crop Circle Research Archive historical Google Earth frame, COMBINED catalog diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The event crosswalk is fixed by the legacy description, catalog diagram, and archive event code. The legacy coordinate, measured scale bar, and publisher-stated north-up constrain a display footprint, but no persistent landmark independently validates its corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source link only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          890,
+          620
+        ],
+        "anchor_wgs84_lat_lon": [
+          51.42454302630362,
+          -1.855548044334824
+        ],
+        "meters_per_pixel": 0.08547008547008547,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 351,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "panocchia-2004-legacy-coordinate-reported-size-north-up-placement",
+      "registration_observation_id": "regobs_panocchia_2004_legacy_coordinate_reported_size_v1",
+      "formation_id": "cc_69e673eaab9f",
+      "assertion_id": "a_49666c3b359617",
+      "title": "Panocchia 2004 legacy-coordinate and reported-size placement",
+      "source_image_url": "https://www.googlesightseeing.com/wp-content/images/ggssalex059-attr.jpg",
+      "source_page_url": "https://www.googlesightseeing.com/2006/02/alien-crop-circles/",
+      "source_image_sha256": "989cdf3ecd98dfdac5da2dbed4d0258a12202a30d7c0dee9c13029e8e3317c2f",
+      "corners": [
+        [
+          44.6814292798,
+          10.31669709193
+        ],
+        [
+          44.6814292798,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.318449770799
+        ],
+        [
+          44.680494620774,
+          10.31669709193
+        ]
+      ],
+      "center": [
+        44.680997,
+        10.317557
+      ],
+      "coordinate_uncertainty_m": 75,
+      "registration_status": "coordinate_size_north_up_provisional",
+      "display_geometry_status": "legacy_coordinate_reported_size_orientation_constrained_display_placement",
+      "reference_imagery": "Two user-supplied legacy KML points, Google Sightseeing historical Google Maps thumbnail and map URL, corroborating 2004 reports and diagram, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "historical_source_date_unspecified_current_reference_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The event identity is fixed by the three-circle design and corroborating 2004 reports. The source map URL repeats the preferred coordinate, while the 71.735 metre conflicting KML point remains separate and sets the uncertainty. Reported circle size and north-up source presentation constrain only a provisional display footprint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_derived_thumbnail_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, reported-size-, and source-presentation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_north_up_provisional. The Google-derived thumbnail is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_reported_size_north_up_display_placement",
+        "source_frame_size_px": [
+          160,
+          120
+        ],
+        "source_anchor_pixel_xy": [
+          78.5,
+          55.5
+        ],
+        "anchor_wgs84_lat_lon": [
+          44.680997,
+          10.317557
+        ],
+        "meters_per_pixel": 0.8670520231,
+        "reported_circle_diameter_m": 20,
+        "detected_circle_mean_diameter_px": 23.07,
+        "north_up_basis": "Historical Google Maps source presentation and linked map view",
+        "orientation_uncertainty_deg": 5,
+        "legacy_candidate_separation_m": 71.735,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
+      "overlay_id": "dodworth-st-john-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_observation_id": "regobs_dodworth_st_john_2002_legacy_coordinate_scale_v1",
+      "formation_id": "cc_6f84d7030b21",
+      "assertion_id": "a_e5234d9526456b",
+      "title": "St John the Baptist Church near Dodworth 2002 legacy-coordinate and measured-scale placement",
+      "source_image_url": "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200201-dodworth-photo-ge-150m.jpg",
+      "source_page_url": "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/",
+      "source_image_sha256": "764a884c34f9f46cc92c6dbe20990b271726e5e81fc59998a50ea07cbb54fc87",
+      "corners": [
+        [
+          53.542131113279,
+          -1.536875940351
+        ],
+        [
+          53.542131113279,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.534284446279
+        ],
+        [
+          53.541264884646,
+          -1.536875940351
+        ]
+      ],
+      "center": [
+        53.54173168563158,
+        -1.535798850627117
+      ],
+      "coordinate_uncertainty_m": 40,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "legacy_coordinate_scale_orientation_constrained_display_placement",
+      "reference_imagery": "User-supplied legacy KML point, Crop Circle Research Archive historical Google Earth frame, matching corn550 ground photograph, and COMBINED catalog diagram",
+      "reference_imagery_date": "historical_source_date_unspecified",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The legacy point and three mutually consistent event-identity sources fix the event crosswalk. The measured scale bar and publisher-stated north-up constrain a display footprint, while the date conflict is retained and no persistent landmark independently validates the frame corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "link_only_google_earth_derived_image_not_cleared_for_embedding",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, measured-scale-, and publisher-orientation-constrained display placement, not an independently validated image-to-ground registration. It is excluded from formal alignment calculations and is not a real-world accuracy benchmark.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. The Google Earth-derived source frame is not embedded or redistributed; the public atlas exposes the reviewed footprint and supporting source links only.",
+      "source_registration": {
+        "kind": "legacy_coordinate_scale_north_up_display_placement",
+        "source_frame_size_px": [
+          1920,
+          1080
+        ],
+        "source_anchor_pixel_xy": [
+          798,
+          498
+        ],
+        "anchor_wgs84_lat_lon": [
+          53.54173168563158,
+          -1.535798850627117
+        ],
+        "meters_per_pixel": 0.08928571428571429,
+        "scale_bar_length_m": 30,
+        "scale_bar_span_px": 336,
+        "north_up_basis": "Publishing-page statement that all displayed Google Earth images are north-up",
+        "orientation_uncertainty_deg": 5,
+        "control_count": 0,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

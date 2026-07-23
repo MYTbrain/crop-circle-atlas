@@ -1,15 +1,15 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-23T03:14:52.621825Z",
+  "generated_at": "2026-07-23T06:19:45.681725Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
-  "unique_formation_event_count": 1920,
+  "unique_formation_event_count": 1925,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
     "candidate_field": 11,
     "clues_reviewed": 2,
-    "provisional_registration": 30,
+    "provisional_registration": 35,
     "queued": 1859,
     "source_image_acquired": 13,
     "unresolved": 2
@@ -36654,6 +36654,52 @@
       "review_date": ""
     },
     {
+      "formation_id": "cc_6f84d7030b21",
+      "assertion_ids": [
+        "a_e5234d9526456b"
+      ],
+      "event_date": "2002-06-27",
+      "place": "Dodworth",
+      "region": "South Yorkshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200201-dodworth-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 53.54173168563158,
+      "current_longitude": -1.535798850627117,
+      "current_coordinate_uncertainty_m": 40.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Dodworth",
+        "South Yorkshire",
+        "St John the Baptist Church"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Dodworth",
+        "St John the Baptist Church",
+        "South Yorkshire"
+      ],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "high",
+      "priority_score": 2098,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "dodworth-st-john-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
       "formation_id": "cc_07d6c67ff4d4",
       "assertion_ids": [
         "a_2f3b7df4243c3b"
@@ -36701,6 +36747,198 @@
       "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
       "selected_overlay_id": "commons-horhausen-20090712-aerial-crop-geometry",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_69e673eaab9f",
+      "assertion_ids": [
+        "a_49666c3b359617"
+      ],
+      "event_date": "2004-06-26",
+      "place": "Panocchia",
+      "region": "Emilia-Romagna",
+      "country": "Italy",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://www.googlesightseeing.com/2006/02/alien-crop-circles/"
+      ],
+      "source_image_urls": [
+        "https://www.googlesightseeing.com/wp-content/images/ggssalex059-attr.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 44.680997,
+      "current_longitude": 10.317557,
+      "current_coordinate_uncertainty_m": 75.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Panocchia",
+        "Emilia-Romagna",
+        "Pannocchia",
+        "Parma"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Panocchia",
+        "Pannocchia",
+        "Parma",
+        "Emilia-Romagna"
+      ],
+      "source_image_dimensions": [
+        "160x120"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2083,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "panocchia-2004-legacy-coordinate-reported-size-north-up-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_9275734c8913",
+      "assertion_ids": [
+        "a_01386791543ff7"
+      ],
+      "event_date": "2002-06-21",
+      "place": "Waden Hill",
+      "region": "Wiltshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2025/10/enwi200206-waden-hill-avebury-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.42454302630362,
+      "current_longitude": -1.855548044334824,
+      "current_coordinate_uncertainty_m": 40.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Waden Hill",
+        "Wiltshire",
+        "Avebury",
+        "jingjang cropcircle"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Waden Hill",
+        "Avebury",
+        "jingjang cropcircle",
+        "Wiltshire"
+      ],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2083,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "waden-hill-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_96878ba19702",
+      "assertion_ids": [
+        "a_17cee0fec5cd40"
+      ],
+      "event_date": "2002-06",
+      "place": "Barton Hills",
+      "region": "Hertfordshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2025/10/enhe200202-west-of-telegraph-hill-hexton-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 51.94603793928447,
+      "current_longitude": -0.3915778131514003,
+      "current_coordinate_uncertainty_m": 30.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Barton Hills",
+        "Hertfordshire",
+        "Hexton",
+        "West of Telegraph Hill"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Barton Hills",
+        "Hexton",
+        "West of Telegraph Hill",
+        "Hertfordshire"
+      ],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2083,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "hexton-barton-hills-2002-legacy-coordinate-scale-north-up-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
+    },
+    {
+      "formation_id": "cc_d777276e6710",
+      "assertion_ids": [
+        "a_47e1c2de56b8fa"
+      ],
+      "event_date": "2002-07-19",
+      "place": "Darfield",
+      "region": "South Yorkshire",
+      "country": "England",
+      "source_report_urls": [
+        "https://www.cropcirclecenter.com/",
+        "https://circleresearcharchive.com/research/crop-circles-visible-on-google-earth/"
+      ],
+      "source_image_urls": [
+        "https://circleresearcharchive.com/wp-content/uploads/2025/10/enys200202-cat-hill-darfield-photo-ge-150m.jpg"
+      ],
+      "source_image_count": 1,
+      "current_location_role": "formation_site",
+      "current_latitude": 53.531784,
+      "current_longitude": -1.356884,
+      "current_coordinate_uncertainty_m": 50.0,
+      "source_coordinate_availability": "no",
+      "publisher_map_target_availability": "no",
+      "named_geographic_clues": [
+        "Darfield",
+        "South Yorkshire",
+        "Cat Hill",
+        "Cathill Roundabout"
+      ],
+      "identifiable_persistent_landmarks": [
+        "Darfield",
+        "Cat Hill",
+        "Cathill Roundabout",
+        "South Yorkshire"
+      ],
+      "source_image_dimensions": [
+        "1920x1080"
+      ],
+      "display_rights": "link_only_rights_gated",
+      "publication_rights": "not_cleared_for_redistribution",
+      "straight_component_likelihood": "unknown",
+      "priority_score": 2083,
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "",
+      "selected_overlay_id": "darfield-2002-legacy-coordinate-scale-north-up-placement",
       "registration_classification": "provisional_registration",
       "review_date": "2026-07-22"
     },

@@ -298,6 +298,102 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertEqual(len(rockville["corners"]), 4)
         self.assertEqual(rockville["coordinate_uncertainty_m"], 75)
 
+    def test_darfield_legacy_coordinate_scale_placement_is_rights_gated(self):
+        overlay_payload = json.loads(
+            (ROOT / "web" / "data" / "registered_overlays.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        darfield = next(
+            record
+            for record in overlay_payload["overlays"]
+            if record["overlay_id"]
+            == "darfield-2002-legacy-coordinate-scale-north-up-placement"
+        )
+        self.assertEqual(darfield["formation_id"], "cc_d777276e6710")
+        self.assertEqual(
+            darfield["registration_status"],
+            "coordinate_size_geometry_provisional",
+        )
+        self.assertEqual(
+            darfield["source_registration"]["kind"],
+            "legacy_coordinate_scale_north_up_display_placement",
+        )
+        self.assertEqual(darfield["source_registration"]["control_count"], 0)
+        self.assertEqual(
+            darfield["source_registration"]["independent_checkpoint_count"], 0
+        )
+        self.assertEqual(darfield["coordinate_uncertainty_m"], 50)
+        self.assertFalse(darfield["embedding_allowed"])
+        self.assertEqual(
+            darfield["formal_alignment_status"],
+            "excluded_pending_independent_ground_control",
+        )
+        self.assertIn(
+            "not an independently validated image-to-ground registration",
+            darfield["quality_disclosure"],
+        )
+
+    def test_legacy_coordinate_display_placements_fail_closed(self):
+        overlay_payload = json.loads(
+            (ROOT / "web" / "data" / "registered_overlays.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        overlays = {
+            record["overlay_id"]: record for record in overlay_payload["overlays"]
+        }
+        expected = {
+            "hexton-barton-hills-2002-legacy-coordinate-scale-north-up-placement": (
+                "cc_96878ba19702",
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                30,
+            ),
+            "waden-hill-2002-legacy-coordinate-scale-north-up-placement": (
+                "cc_9275734c8913",
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                40,
+            ),
+            "dodworth-st-john-2002-legacy-coordinate-scale-north-up-placement": (
+                "cc_6f84d7030b21",
+                "coordinate_size_geometry_provisional",
+                "legacy_coordinate_scale_north_up_display_placement",
+                40,
+            ),
+            "panocchia-2004-legacy-coordinate-reported-size-north-up-placement": (
+                "cc_69e673eaab9f",
+                "coordinate_size_north_up_provisional",
+                "legacy_coordinate_reported_size_north_up_display_placement",
+                75,
+            ),
+        }
+        for overlay_id, (
+            formation_id,
+            classification,
+            registration_kind,
+            uncertainty_m,
+        ) in expected.items():
+            overlay = overlays[overlay_id]
+            self.assertEqual(overlay["formation_id"], formation_id)
+            self.assertEqual(overlay["registration_status"], classification)
+            self.assertEqual(overlay["source_registration"]["kind"], registration_kind)
+            self.assertEqual(overlay["source_registration"]["control_count"], 0)
+            self.assertEqual(
+                overlay["source_registration"]["independent_checkpoint_count"], 0
+            )
+            self.assertEqual(overlay["coordinate_uncertainty_m"], uncertainty_m)
+            self.assertFalse(overlay["embedding_allowed"])
+            self.assertEqual(
+                overlay["formal_alignment_status"],
+                "excluded_pending_independent_ground_control",
+            )
+            self.assertIn(
+                "not an independently validated image-to-ground registration",
+                overlay["quality_disclosure"],
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

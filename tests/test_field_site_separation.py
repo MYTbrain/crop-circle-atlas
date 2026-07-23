@@ -152,6 +152,26 @@ class FieldSiteSeparationTests(unittest.TestCase):
         self.assertEqual(swiss["alignment_eligible"], "false")
         self.assertIn("no persistent-landmark checkpoint", swiss["notes"])
 
+    def test_legacy_coordinate_reviews_are_candidate_fields_not_alignment_sites(self):
+        rows = {row["formation_id"]: row for row in csv_rows("site_resolutions.csv")}
+        expected = {
+            "cc_d777276e6710": ("50", "coordinate_size_geometry_provisional"),
+            "cc_96878ba19702": ("30", "date conflict is preserved"),
+            "cc_9275734c8913": ("40", "zero independent checkpoints"),
+            "cc_6f84d7030b21": ("40", "conflict is preserved"),
+            "cc_69e673eaab9f": ("75", "distinct 2005 bullseye event"),
+        }
+        for formation_id, (uncertainty_m, disclosure) in expected.items():
+            row = rows[formation_id]
+            self.assertEqual(row["site_status"], "candidate_field")
+            self.assertEqual(row["coordinate_uncertainty_m"], uncertainty_m)
+            self.assertEqual(row["alignment_eligible"], "false")
+            self.assertEqual(
+                row["rights_status"],
+                "remote_source_pixels_not_cleared_for_embedding",
+            )
+            self.assertIn(disclosure, row["notes"])
+
     def test_whiskey_cluster_aliases_and_alignment_eligibility_are_explicit(self):
         expected_aliases = "Whiskey Hill; Hubbard; Woodburn"
         for formation_id in ("cc_e5724a3476de", "cc_69ae8f9bae18", "cc_80f4a64d3689"):

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T03:02:44Z",
+  "generated_at": "2026-07-23T06:19:43Z",
   "pdf": {
     "path": "C:\\Users\\jarod\\Downloads\\COMBINED.pdf",
     "sha256": "f51718f1eeb1c3f06f3a154d02eb7ab24dcefebb201e3ace04c6e8f79dcc65e7",
@@ -26,21 +26,21 @@
     "accepted_reviews": 4,
     "merged_alias_entities": 4
   },
-  "geocoded": 4302,
+  "geocoded": 4303,
   "site_resolutions": {
-    "reviewed_overrides": 28,
+    "reviewed_overrides": 33,
     "global_source_map_candidates": 384,
-    "combined_overrides": 407,
+    "combined_overrides": 412,
     "status_counts": {
-      "locality_reference": 3891,
-      "unresolved": 3443,
-      "candidate_field": 401,
+      "locality_reference": 3887,
+      "unresolved": 3442,
+      "candidate_field": 406,
       "registered_site": 6,
       "corroborated_field": 4
     },
-    "field_site_features": 411,
-    "locality_reference_features": 3891,
-    "unresolved_formations": 3443,
+    "field_site_features": 416,
+    "locality_reference_features": 3887,
+    "unresolved_formations": 3442,
     "full_index_records": 7745,
     "location_work_queue_rows": 7745
   },
@@ -133,7 +133,7 @@
   },
   "images": {
     "iccra_image_references": 681,
-    "formations_with_linked_images": 1921,
+    "formations_with_linked_images": 1926,
     "iccra_straight_analysis": {
       "successfully_cached_hosted_rows": 669,
       "analyzed_rows": 669,
