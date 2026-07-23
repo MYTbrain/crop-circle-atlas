@@ -125,7 +125,7 @@ class GeorefPageContractTests(unittest.TestCase):
         self.assertIn("maxZoom: 18", javascript)
         self.assertIn("approximate", html)
         self.assertIn("Hollow yellow dots are rough locality references", html)
-        self.assertIn('href="styles.css?v=20260722.6"', html)
+        self.assertIn('href="styles.css?v=20260722.7"', html)
         self.assertIn('src="app.js?v=20260722.7"', html)
         self.assertIn("source-photo-clustering.mjs?v=20260722.2", javascript)
         self.assertIn("Availability dots are clustered when zoomed out.", html)
@@ -162,6 +162,7 @@ class GeorefPageContractTests(unittest.TestCase):
             "the author-level grid rule must not override the native hidden attribute",
         )
         self.assertIn("#overlayChoiceLabel[hidden] { display:none; }", stylesheet)
+        self.assertIn("#overlayOpacityLabel[hidden] { display:none; }", stylesheet)
         self.assertIn('id="panelResizer"', html)
         self.assertIn('role="separator"', html)
         self.assertIn("PANEL_WIDTH_STORAGE_KEY", javascript)
