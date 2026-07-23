@@ -3301,6 +3301,122 @@
       }
     },
     {
+      "overlay_id": "gurston-ashes-2018-dual-dji-pose-placement",
+      "registration_observation_id": "regobs_gurston_ashes_20180723_dji_pose_v1",
+      "formation_id": "cc_35019d9ee8e3",
+      "assertion_id": "sx_connector_96fb794a598f99e0",
+      "title": "Gurston Ashes 2018 dual-DJI camera-pose placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/gurston/Mavic08145.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/gurston/gurston2018a.html",
+      "source_image_sha256": "43ccedb054dfbe75836d71f7f2dfeb2cdb1e4eca6328249915db25f0c49a76fd",
+      "corners": [
+        [
+          51.04268194049,
+          -1.980308699654
+        ],
+        [
+          51.041509401739,
+          -1.979966431565
+        ],
+        [
+          51.041417464028,
+          -1.981001164594
+        ],
+        [
+          51.042536857681,
+          -1.981327919446
+        ]
+      ],
+      "center": [
+        51.042005763986,
+        -1.980589862314
+      ],
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "provisional_dual_dji_pose_ground_plane_registration",
+      "display_geometry_status": "four_corner_camera_pose_ground_plane_projection",
+      "reference_imagery": "Two source-hosted DJI frames with embedded camera pose, the publisher BNG target, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "source_frames_2018-07-24; undated_current_mosaic_retrieved_2026-07-22",
+      "reviewed_at": "2026-07-22",
+      "review_basis": "The primary full-frame Mavic image retains a complete DJI pose and calibration record. Its image-derived formation center agrees within 3.16 metres with the sub-camera point of a second, near-vertical DJI FC6310 frame made by another contributor. The surrounding field and woodland geometry agree with the publisher field and current reference imagery.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Real historical-image camera-pose registration with a 3.16 metre cross-photo pose check, not a survey georegistration or a real-world accuracy benchmark. It remains provisional, excluded from formal alignment calculations, and cannot become accepted or publication-eligible without independent human review.",
+      "notes": "Explicit outcome: provisional_registration. Crop Circle Connector contributors retain the source-image rights; the atlas publishes the reviewed footprint and source links only and neither packages nor embeds the source pixels.",
+      "source_registration": {
+        "kind": "dual_dji_pose_flat_ground_camera_projection",
+        "source_frame_size_px": [
+          850,
+          478
+        ],
+        "original_camera_frame_size_px": [
+          4000,
+          2250
+        ],
+        "source_frame_crop_status": "resized_full_frame_no_crop_metadata",
+        "formation_center_source_xy": [
+          452,
+          210
+        ],
+        "outer_circle_radius_px_reviewed": 170,
+        "camera_make_model": "DJI FC220",
+        "camera_wgs84_lat_lon": [
+          51.042024972222,
+          -1.980750222222
+        ],
+        "relative_altitude_m": 98.7,
+        "absolute_altitude_m": 264.34,
+        "gimbal_yaw_deg": 79.6,
+        "gimbal_pitch_deg": -86.4,
+        "gimbal_roll_deg": 0.0,
+        "calibrated_focal_length_original_px": 3051.613037,
+        "calibrated_optical_center_original_px": [
+          2000,
+          1125
+        ],
+        "effective_focal_length_resized_px": 648.4677703625,
+        "effective_optical_center_resized_px": [
+          425,
+          239
+        ],
+        "formation_center_metres_per_pixel": 0.1533,
+        "image_derived_outer_diameter_m": 52.12,
+        "source_x_axis_true_bearing_deg_at_anchor": 169.6,
+        "source_y_axis_true_bearing_deg_at_anchor": 259.75,
+        "secondary_source_url": "https://cropcircleconnector.com/2018/gurston/G85bc.jpg",
+        "secondary_source_sha256": "897b24748cc8bd1b014c9ba4291eefb564c909be3649f388305fd289a4144ba4",
+        "secondary_camera_make_model": "DJI FC6310",
+        "secondary_camera_wgs84_lat_lon": [
+          51.0419905,
+          -1.980551833333
+        ],
+        "secondary_relative_altitude_m": 98.6,
+        "secondary_gimbal_pitch_deg": -89.9,
+        "secondary_pose_checkpoint_residual_m": 3.16,
+        "reference_export_bbox_wgs84": [
+          -1.99202304,
+          51.03384011,
+          -1.96802304,
+          51.04984011
+        ],
+        "reference_export_size_px": [
+          1800,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "af31edeb8ec0e1a722f2258ea12bab7ceb9b83fa828418b3003ca48a631b10cd",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "independent_pose_checkpoint_count": 1,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

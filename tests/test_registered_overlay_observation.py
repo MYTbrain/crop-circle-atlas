@@ -152,6 +152,49 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             ],
         )
 
+        gurston = observations["regobs_gurston_ashes_20180723_dji_pose_v1"]
+        self.assertEqual(
+            gurston["classification"],
+            "provisional_dual_dji_pose_ground_plane_registration",
+        )
+        self.assertEqual(
+            gurston["formal_alignment_status"],
+            "excluded_pending_independent_ground_control",
+        )
+        self.assertEqual(
+            gurston["source_registration"]["kind"],
+            "dual_dji_pose_flat_ground_camera_projection",
+        )
+        self.assertEqual(
+            gurston["source_registration"]["secondary_pose_checkpoint_residual_m"],
+            3.16,
+        )
+        self.assertEqual(
+            gurston["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            gurston["computed_corners_wgs84_lat_lon"],
+            [
+                [51.04268194049, -1.980308699654],
+                [51.041509401739, -1.979966431565],
+                [51.041417464028, -1.981001164594],
+                [51.042536857681, -1.981327919446],
+            ],
+        )
+        gurston_spec = next(
+            placement
+            for placement in placements
+            if placement["observation_id"]
+            == "regobs_gurston_ashes_20180723_dji_pose_v1"
+        )
+        self.assertFalse(gurston_spec["embedding_allowed"])
+        self.assertEqual(
+            gurston_spec["rights_status"], "not_cleared_for_redistribution"
+        )
+
         legacy_expected = {
             "regobs_hexton_barton_hills_2002_legacy_coordinate_scale_v1": (
                 "coordinate_size_geometry_provisional",

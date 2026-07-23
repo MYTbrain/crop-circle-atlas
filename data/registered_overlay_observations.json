@@ -6049,6 +6049,194 @@
       }
     },
     {
+      "observation_id": "regobs_gurston_ashes_20180723_dji_pose_v1",
+      "overlay_id": "gurston-ashes-2018-dual-dji-pose-placement",
+      "classification": "provisional_dual_dji_pose_ground_plane_registration",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/gurston/Mavic08145.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/gurston/gurston2018a.html",
+        "sha256": "43ccedb054dfbe75836d71f7f2dfeb2cdb1e4eca6328249915db25f0c49a76fd",
+        "width_px": 850,
+        "height_px": 478,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          850,
+          478
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.042005763986,
+          -1.980589862314
+        ],
+        "coordinate_uncertainty_m": 12,
+        "site_text": "Two independently authored near-nadir DJI images converge on the same Gurston Ashes field and formation center. The primary Mavic camera model projects the formation center to 51.04200576, -1.98058986; the second DJI camera subpoint is 3.16 metres away. The publisher's BNG pointer is in the same field but lies 43.75 metres east-southeast of the image-derived center.",
+        "reported_place": "Gurston Ashes, near Fovant, Wiltshire",
+        "publisher_bng_easting_northing": [
+          401497,
+          126943
+        ],
+        "publisher_target_wgs84_lat_lon": [
+          51.04184011,
+          -1.98002304
+        ],
+        "publisher_target_to_projected_center_m": 43.75,
+        "publisher_report_url": "https://cropcircleconnector.com/2018/gurston/gurston2018a.html",
+        "publisher_report_sha256": "6398927b2a185984cd5086482ddda03e78a028cc45f090eafa81ca842ba573c0"
+      },
+      "landmark_controls": {
+        "control_model": "dual_source_dji_camera_pose_with_flat_local_ground_projection",
+        "primary_projected_formation_center_wgs84_lat_lon": [
+          51.042005763986,
+          -1.980589862314
+        ],
+        "secondary_camera_subpoint_wgs84_lat_lon": [
+          51.0419905,
+          -1.980551833333
+        ],
+        "secondary_pose_checkpoint_residual_m": 3.16,
+        "visual_matches": [
+          "same circular formation",
+          "same tramline pattern",
+          "same Gurston Ashes field",
+          "same adjoining woodland and field geometry"
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            850,
+            0
+          ],
+          [
+            850,
+            478
+          ],
+          [
+            0,
+            478
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.04268194049,
+            -1.980308699654
+          ],
+          [
+            51.041509401739,
+            -1.979966431565
+          ],
+          [
+            51.041417464028,
+            -1.981001164594
+          ],
+          [
+            51.042536857681,
+            -1.981327919446
+          ]
+        ],
+        "basis": "The uncropped 850 by 478 Mavic frame retains DJI GPS, 98.70 m relative altitude, calibrated focal length and optical center, and gimbal yaw, pitch, and roll. A pinhole camera ray is intersected with the local ground plane for each image corner. A second near-nadir DJI frame from a different camera places its sub-camera point 3.16 m from the primary frame's independently projected formation center.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "dual_dji_pose_flat_ground_camera_projection",
+        "source_frame_size_px": [
+          850,
+          478
+        ],
+        "original_camera_frame_size_px": [
+          4000,
+          2250
+        ],
+        "source_frame_crop_status": "resized_full_frame_no_crop_metadata",
+        "formation_center_source_xy": [
+          452,
+          210
+        ],
+        "outer_circle_radius_px_reviewed": 170,
+        "camera_make_model": "DJI FC220",
+        "camera_wgs84_lat_lon": [
+          51.042024972222,
+          -1.980750222222
+        ],
+        "relative_altitude_m": 98.7,
+        "absolute_altitude_m": 264.34,
+        "gimbal_yaw_deg": 79.6,
+        "gimbal_pitch_deg": -86.4,
+        "gimbal_roll_deg": 0.0,
+        "calibrated_focal_length_original_px": 3051.613037,
+        "calibrated_optical_center_original_px": [
+          2000,
+          1125
+        ],
+        "effective_focal_length_resized_px": 648.4677703625,
+        "effective_optical_center_resized_px": [
+          425,
+          239
+        ],
+        "formation_center_metres_per_pixel": 0.1533,
+        "image_derived_outer_diameter_m": 52.12,
+        "source_x_axis_true_bearing_deg_at_anchor": 169.6,
+        "source_y_axis_true_bearing_deg_at_anchor": 259.75,
+        "secondary_source_url": "https://cropcircleconnector.com/2018/gurston/G85bc.jpg",
+        "secondary_source_sha256": "897b24748cc8bd1b014c9ba4291eefb564c909be3649f388305fd289a4144ba4",
+        "secondary_camera_make_model": "DJI FC6310",
+        "secondary_camera_wgs84_lat_lon": [
+          51.0419905,
+          -1.980551833333
+        ],
+        "secondary_relative_altitude_m": 98.6,
+        "secondary_gimbal_pitch_deg": -89.9,
+        "secondary_pose_checkpoint_residual_m": 3.16,
+        "reference_export_bbox_wgs84": [
+          -1.99202304,
+          51.03384011,
+          -1.96802304,
+          51.04984011
+        ],
+        "reference_export_size_px": [
+          1800,
+          1600
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "af31edeb8ec0e1a722f2258ea12bab7ceb9b83fa828418b3003ca48a631b10cd",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "independent_pose_checkpoint_count": 1,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.04268194049,
+          -1.980308699654
+        ],
+        [
+          51.041509401739,
+          -1.979966431565
+        ],
+        [
+          51.041417464028,
+          -1.981001164594
+        ],
+        [
+          51.042536857681,
+          -1.981327919446
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_dual_dji_pose_registration",
+        "limitations": "The projection assumes a locally flat ground plane at the DJI relative-altitude datum; neither camera altitude nor ground elevation is survey controlled. The primary frame is a resized but uncropped derivative, the formation center was reviewed from image geometry, and there is no surveyed ground checkpoint. Relief and residual camera-model error can distort the outer footprint even though the two pose records converge at the formation."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

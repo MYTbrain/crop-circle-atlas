@@ -203,6 +203,74 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-22",
     },
+    "cc_04161b1b5a47": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's BNG target and the 2015 wide aerial resolve the "
+            "formation to the large field south of the distinctive paired masts "
+            "and persistent tree grove near Stoford. The reusable landscape "
+            "controls in that frame are compressed near the camera horizon, the "
+            "tight frames contain formation geometry and tramlines but no "
+            "distributed persistent ground controls, and the report provides no "
+            "defensible ground scale. The precise field candidate is retained, but "
+            "no source-photo footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_07b663c48cc4": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's precise BNG target and the wide aerial identify the "
+            "formation field immediately northwest of Target Wood: the woodland "
+            "edge, adjoining road, hedge, and field geometry agree with current "
+            "reference imagery. Stable landscape controls occupy only the distant "
+            "upper portion of the oblique frame, the remaining field boundaries "
+            "are outside the image, and the report provides no defensible ground "
+            "scale. The 25 metre field candidate is retained, but no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_35019d9ee8e3": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "A full-frame near-nadir DJI image retains GPS, relative altitude, "
+            "calibrated focal length and optical center, and gimbal pose. Its "
+            "flat-local-ground ray projection places the visible formation center "
+            "3.16 metres from the sub-camera point of a second near-vertical DJI "
+            "frame by another contributor. The publisher BNG pointer resolves the "
+            "same field but lies 43.75 metres from the image-derived center. The "
+            "camera-pose footprint remains unaccepted, rights-gated, and excluded "
+            "from formal alignment. Explicit outcome: provisional_registration."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_1249f5846bfd": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's BNG target and wide aerial resolve the report to the "
+            "large arable field west of Etchilhampton village. The wide frame "
+            "contains the report formation plus another formation in the same "
+            "field, while the near-nadir frames contain crop geometry and tramlines "
+            "but no embedded camera pose, documented scale, or distributed persistent "
+            "ground controls. To avoid conflating distinct events, no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_ebc33aa12a06": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher's BNG target, wide 2020 aerial, and current mosaic "
+            "resolve the formation to the large pale arable field north of Stanton "
+            "St Bernard. The formation is in the near foreground while reusable "
+            "landscape controls are confined to the upper half of the oblique frame; "
+            "the tight frames contain only crop geometry and tramlines, with no "
+            "retained camera pose or documented scale. No source-photo footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-22",
+    },
     "cc_cee3a40aace5": {
         "processing_status": "provisional_registration",
         "reason": (
