@@ -7,7 +7,7 @@ import {
   sourcePhotoClusterAction,
   sourcePhotoClusterSettings,
   sourcePhotoMarkerPresentation,
-} from './source-photo-clustering.mjs?v=20260722.1';
+} from './source-photo-clustering.mjs?v=20260722.2';
 
 const map = L.map('map', { preferCanvas: true, zoomControl: false }).setView([38, -96], 4);
 map.createPane('registeredImageryPane');
@@ -29,6 +29,24 @@ const siteRenderer = L.canvas({ pane: 'sitePointPane', padding: 0.5, tolerance: 
 const overlayFootprintRenderer = L.svg({ pane: 'overlayFootprintPane', padding: 0.5 });
 L.control.zoom({ position: 'topright' }).addTo(map);
 
+const markerLegend = L.control({ position: 'bottomleft' });
+markerLegend.onAdd = () => {
+  const container = L.DomUtil.create('div', 'map-marker-legend');
+  container.innerHTML = `<details open>
+    <summary>Map markers</summary>
+    <span><i class="map-legend-dot source" aria-hidden="true"></i>Source-photo availability</span>
+    <span><i class="map-legend-dot locality" aria-hidden="true"></i>Rough locality reference</span>
+    <span><i class="map-legend-dot reviewed" aria-hidden="true"></i>Candidate/reviewed location</span>
+    <span><i class="map-legend-footprint" aria-hidden="true"></i>Reviewed image footprint</span>
+    <small>Marker details and evidence quality are available in tooltips, popups, and the sidebar.</small>
+  </details>`;
+  container.setAttribute('aria-label', 'Map marker legend');
+  L.DomEvent.disableClickPropagation(container);
+  L.DomEvent.disableScrollPropagation(container);
+  return container;
+};
+markerLegend.addTo(map);
+
 const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; OpenStreetMap contributors',
@@ -48,7 +66,7 @@ const localityLayer = L.layerGroup();
 const sourcePhotoLayer = L.layerGroup().addTo(map);
 const registeredFootprintLayer = L.layerGroup().addTo(map);
 layerControl.addOverlay(siteLayer, 'Field candidates and reviewed sites');
-layerControl.addOverlay(localityLayer, 'Rough locality references (not sites)');
+layerControl.addOverlay(localityLayer, 'Rough locality references');
 
 const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({
@@ -185,7 +203,7 @@ function locationLabel(record) {
   }
   if (role === 'corroborated_field') return 'Corroborated field/site';
   if (role === 'candidate_field') return 'Candidate field (not exact)';
-  if (role === 'locality_reference') return 'Reference locality—not the formation site';
+  if (role === 'locality_reference') return 'Rough locality reference; not the formation site.';
   return 'Unresolved—no point placed';
 }
 
@@ -399,6 +417,7 @@ function popupFor(records) {
       <p><strong>${esc(locationLabel(record))}</strong></p>
       <p>Method: ${esc(method)}${Number.isFinite(uncertainty) ? ` · uncertainty ${(uncertainty * 1000).toFixed(0)} m` : ''}</p>
       <p>Review: ${esc(record.site_review_status || 'not reviewed')} · directly visible: ${esc(record.site_directly_visible || 'not recorded')} · alignment target: ${isAlignmentEligibleSite(record) ? 'eligible by current site-quality gate' : 'not eligible'}</p>
+      <p>Registration: ${esc(hasOverlay ? overlay.registration_status.replaceAll('_', ' ') : 'no reviewed image placement')} · rights: ${esc(overlay?.rights_status || record.site_rights_status || 'not recorded')}</p>
       ${record.site_notes || record.location_notes ? `<p>${esc(record.site_notes || record.location_notes)}</p>` : ''}
       ${straightNotes(record)}
       ${linkedImages.length ? `<p>Formation-linked source images: ${linkedImages.length}; publication rights and georegistration are not assumed.</p>` : ''}
@@ -426,12 +445,11 @@ function markerStyle(record, reference = false) {
       fillColor: '#ffd84d', fillOpacity: 0.08, renderer: localityRenderer,
     };
   }
-  const verified = isActualSite(record);
   return {
-    radius: (verified ? 8 : 10) + (hasLine ? 1 : 0),
-    color: verified ? '#d8fff9' : '#fffde7',
-    weight: verified ? (hasLine ? 3.5 : 3) : 4,
-    fillColor: verified ? '#2d9e91' : '#ffd84d',
+    radius: 8 + (hasLine ? 1 : 0),
+    color: '#fff7bf',
+    weight: hasLine ? 3.5 : 3,
+    fillColor: '#ffd84d',
     fillOpacity: 1,
     renderer: siteRenderer,
   };
@@ -484,7 +502,7 @@ function sourcePhotoChoicePopup(records) {
   const title = document.createElement('h3');
   title.textContent = `${records.length} source-photo reports`;
   const disclosure = document.createElement('p');
-  disclosure.textContent = 'Choose a report to open its image archive. No source image loads from this cluster automatically.';
+  disclosure.textContent = 'Source-photo availability only; not a registered image placement. Choose a report to open its image archive. No source image loads from this cluster automatically.';
   popup.append(title, disclosure);
   records.forEach((record) => {
     const images = sourceImagesFor(record.formation_id);
@@ -500,7 +518,7 @@ function sourcePhotoChoicePopup(records) {
 
 function sourcePhotoAccessibilityLabel(reportCount, imageCount) {
   const reportLabel = reportCount === 1 ? 'One report' : `${reportCount} reports`;
-  return `${reportLabel} with ${imageCount} source image${imageCount === 1 ? '' : 's'}. Source-photo availability only; not a registered placement.`;
+  return `${reportLabel} with ${imageCount} source image${imageCount === 1 ? '' : 's'}. Source-photo availability only; not a registered image placement.`;
 }
 
 function openSourcePhotoCluster(cluster, coordinate) {
@@ -564,31 +582,25 @@ function renderSourcePhotoAvailability(visibleIds = null) {
     const presentation = sourcePhotoMarkerPresentation(cluster, zoom);
     const accessibilityLabel = sourcePhotoAccessibilityLabel(cluster.reportCount, cluster.imageCount);
     const selectedClass = cluster.selected ? ' is-selected' : '';
-    let icon;
-    if (presentation.kind === 'cluster') {
-      const diameter = presentation.sizeTier === 'large' ? 52 : presentation.sizeTier === 'medium' ? 44 : 36;
-      icon = L.divIcon({
-        className: `source-photo-cluster-marker source-photo-size-${presentation.sizeTier}${selectedClass}`,
-        html: `<span aria-hidden="true">${esc(presentation.label)}</span>`,
-        iconSize: [diameter, diameter],
-        iconAnchor: [Math.round(diameter / 2), Math.round(diameter / 2)],
-        tooltipAnchor: [0, -Math.round(diameter / 2)],
-      });
-    } else {
-      icon = L.divIcon({
-        className: `source-photo-marker${selectedClass}`,
-        html: '<span aria-hidden="true">PIC</span><i class="source-photo-anchor-target" aria-hidden="true"></i>',
-        iconSize: [68, 48],
-        iconAnchor: [8, 40],
-        tooltipAnchor: [28, -28],
-      });
-    }
+    const diameter = presentation.kind === 'individual'
+      ? 14
+      : presentation.sizeTier === 'large' ? 26 : presentation.sizeTier === 'medium' ? 22 : 18;
+    const markerClass = presentation.kind === 'cluster'
+      ? 'source-photo-cluster-marker'
+      : 'source-photo-marker';
+    const icon = L.divIcon({
+      className: `source-photo-dot ${markerClass} source-photo-size-${presentation.sizeTier}${selectedClass}`,
+      html: '',
+      iconSize: [diameter, diameter],
+      iconAnchor: [Math.round(diameter / 2), Math.round(diameter / 2)],
+      tooltipAnchor: [0, -Math.round(diameter / 2)],
+    });
     const marker = L.marker(coordinate, {
       pane: 'sourcePhotoPane',
       icon,
       title: accessibilityLabel,
     });
-    marker.bindTooltip(`${cluster.reportCount} report${cluster.reportCount === 1 ? '' : 's'} · ${cluster.imageCount} source image${cluster.imageCount === 1 ? '' : 's'} available`);
+    marker.bindTooltip(`${cluster.reportCount} unique report${cluster.reportCount === 1 ? '' : 's'} · ${cluster.imageCount} source image${cluster.imageCount === 1 ? '' : 's'} · Source-photo availability only; not a registered image placement.`);
     marker.on('add', () => {
       const element = marker.getElement();
       element?.setAttribute('aria-label', accessibilityLabel);
@@ -791,15 +803,10 @@ function renderRegisteredFootprints(visibleIds = null) {
       renderer: overlayFootprintRenderer,
     }).bindTooltip(`${record.title}${countLabel} — click to ${canDisplay ? 'browse the registered images' : 'inspect the reviewed footprint'}`);
     const center = Array.isArray(record.center) ? record.center : footprint.getBounds().getCenter();
-    const marker = L.marker(center, {
-      pane: 'overlayFootprintPane',
-      icon: L.divIcon({
-        className: 'registered-image-marker',
-        html: `<span aria-hidden="true">${canDisplay ? 'IMG' : 'GEO'}${records.length > 1 ? ` ×${records.length}` : ''}</span>`,
-        iconSize: [records.length > 1 ? 48 : 34, 24], iconAnchor: [records.length > 1 ? 24 : 17, 31], tooltipAnchor: [0, -25],
-      }),
-      title: `${record.title}${countLabel} — click to ${canDisplay ? 'browse' : 'inspect'}`,
-    }).bindTooltip(`${record.title}${countLabel} — click to ${canDisplay ? 'browse the registered images' : 'inspect the reviewed footprint'}`);
+    const marker = L.circleMarker(center, {
+      pane: 'overlayFootprintPane', radius: 9, color: '#fff7bf', weight: 3,
+      fillColor: '#ffd84d', fillOpacity: 1, renderer: overlayFootprintRenderer,
+    }).bindTooltip(`${record.title}${countLabel} · ${records.length} reviewed image${records.length === 1 ? '' : 's'} · ${canDisplay ? 'source pixels load only on explicit action' : 'rights-gated footprint; source pixels remain link-only'}`);
     const load = () => window.showOverlayForFormation(record.formation_id, record.overlay_id);
     footprint.on('click', load);
     marker.on('click', load);
@@ -1098,7 +1105,7 @@ function addOrientationLayers() {
         layer.bindPopup(`<div class="popup"><h3>Experimental extension of accepted local orientation</h3><p>${esc(properties.date_iso)} · ${esc(properties.place)}</p><p>${esc(properties.azimuth_true_deg)}° true ± ${esc(properties.azimuth_uncertainty_deg)}°</p><p>${esc(properties.orientation_method)} · origin ${esc(properties.origin_method)} ± ${esc(properties.origin_uncertainty_m)} m</p><p>No predictive validity has been demonstrated.</p>${properties.evidence_url ? `<a href="${esc(properties.evidence_url)}" target="_blank" rel="noreferrer">Open orientation evidence</a>` : ''}</div>`);
       },
     });
-    layerControl.addOverlay(qualified, `Accepted local axes extended experimentally (${data.features.length})`);
+    layerControl.addOverlay(qualified, `Accepted experimental axes (${data.features.length})`);
   }).catch((error) => console.warn('Accepted orientation layer unavailable:', error));
 
   if (!provisionalCollection.features.length) return;
@@ -1135,16 +1142,16 @@ async function ensureLocalities() {
 }
 
 Promise.all([
-  fetch('data/formation_index.json?v=20260722.5').then((response) => {
+  fetch('data/formation_index.json?v=20260722.6').then((response) => {
     if (!response.ok) throw new Error(`formation index HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/formation_sites.geojson?v=20260722.5').then((response) => {
+  fetch('data/formation_sites.geojson?v=20260722.6').then((response) => {
     if (!response.ok) throw new Error(`site layer HTTP ${response.status}`);
     return response.json();
   }),
-  fetch('data/registered_overlays.json?v=20260722.5').then((response) => response.ok ? response.json() : { overlays: [] }),
-  fetch('data/formation_images.json?v=20260722.5').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
+  fetch('data/registered_overlays.json?v=20260722.6').then((response) => response.ok ? response.json() : { overlays: [] }),
+  fetch('data/formation_images.json?v=20260722.6').then((response) => response.ok ? response.json() : { metadata: {}, images_by_formation: {} }),
   fetch('data/provisional_orientation_rays.geojson').then((response) => response.ok ? response.json() : { type: 'FeatureCollection', features: [] }),
 ]).then(([indexPayload, sites, overlays, sourceImages, provisionalRays]) => {
   allFormations = primaryRows(indexPayload);
@@ -1165,13 +1172,12 @@ Promise.all([
   const usLocalityPhotoReports = usLocalityReports.filter(
     (record) => sourceImagesByFormation.has(record.formation_id),
   );
+  layerControl.removeLayer(siteLayer);
   layerControl.removeLayer(localityLayer);
-  layerControl.addOverlay(
-    localityLayer,
-    `Rough locality references (not sites; ${usLocalityPhotoReports.length} US have photos)`,
-  );
-  layerControl.addOverlay(sourcePhotoLayer, 'Source-photo availability');
-  layerControl.addOverlay(registeredFootprintLayer, `Registered aerial-photo footprints (${overlayRecords.length})`);
+  layerControl.addOverlay(siteLayer, `Field candidates and reviewed sites (${siteCollection.features.length})`);
+  layerControl.addOverlay(localityLayer, `Rough locality references (${Number(indexPayload.metadata?.site_status_counts?.locality_reference || 0)})`);
+  layerControl.addOverlay(sourcePhotoLayer, `Source-photo availability (${sourcePhotoCounts.picReports})`);
+  layerControl.addOverlay(registeredFootprintLayer, `Reviewed image footprints (${overlayRecords.length})`);
 
   const years = allFormations.map((record) => Number(record.year)).filter(Number.isFinite);
   $('yearMin').value = Math.min(...years);
@@ -1187,13 +1193,13 @@ Promise.all([
   $('localityPhotoCoverage').textContent = `Of ${usLocalityReports.length.toLocaleString()} US rough-locality reports, ${usLocalityPhotoReports.length.toLocaleString()} currently have linked source photos; the photo evidence does not by itself make those coordinates exact.`;
   const displayableOverlayCount = overlayRecords.filter(overlayPixelsMayDisplay).length;
   const rightsGatedOverlayCount = overlayRecords.length - displayableOverlayCount;
-  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} IMG placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels; ${rightsGatedOverlayCount.toLocaleString()} GEO footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Clustered cyan markers indicate source-photo availability without a reviewed footprint.`;
+  $('overlayNotice').textContent = `${overlayRecords.length.toLocaleString()} reviewed source-image placement${overlayRecords.length === 1 ? ' is' : 's are'} mapped. ${displayableOverlayCount.toLocaleString()} placement${displayableOverlayCount === 1 ? '' : 's'} can load source pixels explicitly; ${rightsGatedOverlayCount.toLocaleString()} footprint${rightsGatedOverlayCount === 1 ? '' : 's'} ${rightsGatedOverlayCount === 1 ? 'is' : 'are'} link-only under the recorded rights policy. Solid green dots indicate source-photo availability without a reviewed placement.`;
   const unlocatedImageReports = Number(sourceImageMetadata.formation_count || 0) - sourcePhotoCounts.located;
   const nonUsImages = Number(sourceImageMetadata.non_us_unique_image_count || 0);
   const unknownCountryImages = Number(sourceImageMetadata.unknown_country_unique_image_count || 0);
   const unverifiedLinks = Number(sourceImageMetadata.unverified_unique_image_link_count || 0);
   const rightsGated = Number(sourceImageMetadata.rights_gated_unique_image_count || 0);
-  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by clustered cyan availability markers, ${sourcePhotoCounts.registered} image-bearing reports have mapped placements covering ${overlayRecords.length} reviewed frames, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
+  $('sourceImageSummary').textContent = `${Number(sourceImageMetadata.unique_image_count || 0).toLocaleString()} unique image links are attached to ${Number(sourceImageMetadata.formation_count || 0).toLocaleString()} reports across the cataloged archives; ${Number(sourceImageMetadata.us_unique_image_count || 0).toLocaleString()} belong to US reports, ${nonUsImages.toLocaleString()} to known non-US reports, and ${unknownCountryImages.toLocaleString()} still lack a country assignment. ${unverifiedLinks.toLocaleString()} source-file links have not been independently HTTP-checked; ${rightsGated.toLocaleString()} are link-only under their recorded rights policy. ${sourcePhotoCounts.picReports} coordinate-referenced reports are represented by clustered green availability dots, ${sourcePhotoCounts.registered} image-bearing reports have mapped placements covering ${overlayRecords.length} reviewed frames, and ${unlocatedImageReports} image-bearing reports remain unlocated.`;
   updateSourceImageControls();
   applyFilters();
   addOrientationLayers();

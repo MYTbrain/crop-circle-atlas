@@ -137,10 +137,7 @@ export function sourcePhotoMarkerPresentation(cluster, zoom) {
   const reportCount = Number(cluster?.reportCount || 0);
   const clusterMarker = Number(zoom) <= 7 || reportCount > 1;
   const sizeTier = reportCount >= 50 ? 'large' : reportCount >= 10 ? 'medium' : 'small';
-  let label = 'PIC';
-  if (Number(zoom) <= 4) label = String(reportCount);
-  else if (clusterMarker) label = `PIC ${reportCount}`;
-  return { kind: clusterMarker ? 'cluster' : 'individual', label, sizeTier };
+  return { kind: clusterMarker ? 'cluster' : 'individual', sizeTier };
 }
 
 export function sourcePhotoClusterAction(cluster, zoom) {

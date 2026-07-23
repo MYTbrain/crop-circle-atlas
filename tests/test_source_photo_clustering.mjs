@@ -86,7 +86,7 @@ test('registered-overlay formations stay out of availability markers', () => {
   assert.deepEqual(filtered.map((entry) => entry.formationId), ['available']);
 });
 
-test('registered IMG and GEO overlays retain the dominant interactive pane', () => {
+test('reviewed overlays retain the dominant interactive pane', () => {
   assert.match(appSource, /sourcePhotoPane'\)\.style\.zIndex = '440'/);
   assert.match(appSource, /overlayFootprintPane'\)\.style\.zIndex = '520'/);
   assert.match(appSource, /=== 'candidate_field' \? 0 : 1/);
@@ -101,11 +101,12 @@ test('cluster interaction chooses zoom, archive, or chooser deterministically', 
   assert.equal(sourcePhotoClusterAction({ reportCount: 3, minX: 0, maxX: 2, minY: 0, maxY: 2 }, 12), 'choose');
 });
 
-test('high zoom reveals an isolated PIC record', () => {
+test('high zoom reveals an isolated source-photo dot without a text label', () => {
   assert.deepEqual(sourcePhotoMarkerPresentation({ reportCount: 1 }, 11), {
-    kind: 'individual', label: 'PIC', sizeTier: 'small',
+    kind: 'individual', sizeTier: 'small',
   });
   assert.equal(sourcePhotoMarkerPresentation({ reportCount: 2 }, 11).kind, 'cluster');
+  assert.equal('label' in sourcePhotoMarkerPresentation({ reportCount: 100 }, 2), false);
 });
 
 test('filter changes alter cluster membership', () => {
@@ -136,13 +137,29 @@ test('selected-report clusters retain a visible selection state', () => {
     point('b', 120, 110),
   ], 9);
   assert.equal(clusters[0].selected, true);
-  assert.match(cssSource, /source-photo-cluster-marker\.is-selected/);
+  assert.match(cssSource, /source-photo-dot\.is-selected/);
   assert.match(appSource, /cluster\.selected \? ' is-selected'/);
 });
 
 test('mobile layout and disclosure remain usable', () => {
   assert.match(cssSource, /@media \(max-width:780px\)/);
-  assert.match(appSource, /const diameter = .*52.*44.*36/);
-  assert.match(htmlSource, /Counts are clustered when zoomed out\./);
+  assert.match(appSource, /\? 26 : presentation\.sizeTier === 'medium' \? 22 : 18/);
+  assert.match(htmlSource, /Availability dots are clustered when zoomed out\./);
+  assert.match(cssSource, /\.map-marker-legend \{ max-width:205px;/);
   assert.equal(sourcePhotoClusterSettings(10).radiusPx >= 55, true);
+});
+
+test('normal map markers use semantic dots without visible badge abbreviations', () => {
+  assert.match(appSource, /className: `source-photo-dot \$\{markerClass\}/);
+  assert.match(appSource, /html: ''/);
+  assert.match(appSource, /L\.circleMarker\(center/);
+  assert.doesNotMatch(appSource, /registered-image-marker/);
+  assert.doesNotMatch(appSource, /aria-hidden="true">PIC/);
+  assert.match(appSource, /Source-photo availability only; not a registered image placement\./);
+  assert.match(appSource, /Rough locality reference; not the formation site\./);
+  assert.match(htmlSource, /solid green dots show source-photo availability only/i);
+  assert.match(htmlSource, /solid yellow dots mark candidate, reviewed, or registered locations/i);
+  assert.doesNotMatch(htmlSource, /<strong>(PIC|IMG|GEO)<\/strong>/);
+  assert.match(cssSource, /\.source-photo-dot \{[^}]*background:#1d9b68/);
+  assert.match(cssSource, /\.map-marker-legend/);
 });
