@@ -2534,6 +2534,895 @@
       }
     },
     {
+      "observation_id": "regobs_coneybury_hill_2018_crop_geometry_v1",
+      "overlay_id": "coneybury-hill-2018-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/coneyburyhill/Nr-Stonehenge-08971897A.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/coneyburyhill/coneyburyhill2018a.html",
+        "sha256": "b758083a3ee3273b6e4e5a6494ceb4a60ea8182be017f89512398c973113d79a",
+        "width_px": 800,
+        "height_px": 501,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          501
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.17425768,
+          -1.80980123
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The exact publisher target places the 2018 Coneybury Hill formation in the arable field south of the A303. Same-flight wide aerials show the formation field, the distinctive paired copses, the A303 corridor, and the surrounding field pattern, resolving the unique field while the selected tight aerial preserves the formation geometry at useful resolution.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.17425768,
+          -1.80980123
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=413393&y=141686&z=0&sv=51.174258,+-1.809799&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 40,
+        "reported_place": "Coneybury Hill, near Stonehenge, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2018/coneyburyhill/coneyburyhill2018a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            501
+          ],
+          [
+            0,
+            501
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.174036960642,
+            -1.810352924986
+          ],
+          [
+            51.174021876911,
+            -1.809166183933
+          ],
+          [
+            51.174530356472,
+            -1.809168877573
+          ],
+          [
+            51.174512956593,
+            -1.810380354783
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the tight 800 by 501 aerial. The publisher map target fixes the center, the source report documents a 40 metre diameter, and the outer-ring cardinal points constrain local scale and perspective. Same-flight wide aerials showing the paired copses and field context constrain scene orientation, but do not supply independent ground control for this tight frame.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          501
+        ],
+        "source_geometry_control_pixels": [
+          [
+            382,
+            53
+          ],
+          [
+            575,
+            238
+          ],
+          [
+            390,
+            420
+          ],
+          [
+            191,
+            238
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -0.420260787,
+            -19.67293784
+          ],
+          [
+            19.579739213,
+            0.32706216
+          ],
+          [
+            -0.420260787,
+            20.32706216
+          ],
+          [
+            -20.420260787,
+            0.32706216
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.099998547751,
+            -0.002179804856,
+            -38.504176371
+          ],
+          [
+            0.0,
+            0.104611518821,
+            -24.57047932
+          ],
+          [
+            -7.8975352e-05,
+            -4.1035218e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 40,
+        "orientation_basis": "Same-flight wide aerials place the two persistent copses on the source horizontal axis; the tight frame's tramline direction is consistent with that scene orientation.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -1.825,
+          51.168,
+          -1.795,
+          51.181
+        ],
+        "reference_export_size_px": [
+          2400,
+          1040
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "9ae984128e13f873c9f6414e04b9723e96731f6d6772fba59d0ba8476f2d01e4",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.174036960642,
+          -1.810352924986
+        ],
+        [
+          51.174021876911,
+          -1.809166183933
+        ],
+        [
+          51.174530356472,
+          -1.809168877573
+        ],
+        [
+          51.174512956593,
+          -1.810380354783
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center inherits the publisher's 25 metre uncertainty; the 40 metre size is reported rather than surveyed; orientation is inferred from same-flight scene context and field tramlines; no persistent ground point independently validates the projected corners."
+      }
+    },
+    {
+      "observation_id": "regobs_cley_hill_2016_crop_geometry_v1",
+      "overlay_id": "cley-hill-2016-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2016/cleyhill/Cley-Hill17A.jpg",
+        "page_url": "https://cropcircleconnector.com/2016/cleyhill/cleyhill2016a.html",
+        "sha256": "0b0a6515db2c6f9343ba5bb10e679cbb1924168071a1262401f3e555d50c0dc9",
+        "width_px": 800,
+        "height_px": 542,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          542
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.20009406,
+          -2.23304218
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The exact publisher target places the 2016 formation in the arable field immediately south of Cley Hill. Same-flight wide aerials show the hill earthworks, the hill-to-field boundary, and the formation field, resolving the unique field; the selected tight aerial preserves the formation geometry and tramline direction at useful resolution.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.20009406,
+          -2.23304218
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=383814&y=144568&z=0&sv=51.200097,+-2.233035&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 43,
+        "reported_place": "Cley Hill, near Warminster, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2016/cleyhill/cleyhill2016a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            542
+          ],
+          [
+            0,
+            542
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.199968220006,
+            -2.233573281514
+          ],
+          [
+            51.200493342456,
+            -2.233176963057
+          ],
+          [
+            51.200255651635,
+            -2.232390264405
+          ],
+          [
+            51.199714135643,
+            -2.232895346683
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the tight 800 by 542 aerial. The publisher map target fixes the center, the source report documents a 43 metre diameter, and four outer-ring controls constrain local scale and perspective. Same-flight wide aerials identify the field immediately south of Cley Hill; the tight frame's tramlines align with the persistent field direction visible in reference imagery.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          542
+        ],
+        "source_geometry_control_pixels": [
+          [
+            383,
+            61
+          ],
+          [
+            648,
+            260
+          ],
+          [
+            414,
+            465
+          ],
+          [
+            134,
+            279
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -19.156900173,
+            9.665670535
+          ],
+          [
+            9.415008765,
+            20.064994972
+          ],
+          [
+            19.814333221,
+            -8.506913958
+          ],
+          [
+            -8.757575771,
+            -18.906238417
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.035645043905,
+            0.085906769294,
+            -37.046133106954
+          ],
+          [
+            0.067920648501,
+            -0.046648570228,
+            -14.008508172567
+          ],
+          [
+            -0.00011586857,
+            -0.000130923475,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 43,
+        "orientation_basis": "Same-flight wide aerials resolve the formation field immediately south of Cley Hill. The tight frame's tramline axis is aligned to the matching persistent southeast field direction in the reference mosaic.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -2.245,
+          51.193,
+          -2.22,
+          51.207
+        ],
+        "reference_export_size_px": [
+          2000,
+          1120
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "226c04865dbf96390cad285ac1ee2fbd1c8f2e630a98567f49ff02bfdb70849d",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.199968220006,
+          -2.233573281514
+        ],
+        [
+          51.200493342456,
+          -2.233176963057
+        ],
+        [
+          51.200255651635,
+          -2.232390264405
+        ],
+        [
+          51.199714135643,
+          -2.232895346683
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center inherits the publisher's 25 metre uncertainty; the 43 metre size is reported rather than surveyed; orientation is inferred from same-flight context and matching field tramlines; no persistent ground point independently validates the projected corners."
+      }
+    },
+    {
+      "observation_id": "regobs_cocum_farm_2019_crop_geometry_v1",
+      "overlay_id": "cocum-farm-2019-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2019/cocum/cccDJI_00181.jpg",
+        "page_url": "https://cropcircleconnector.com/2019/cocum/cocum2019a.html",
+        "sha256": "5c941a4998c7be3c49eef22079ae949d31f743bc97b2b0339dcfb17c078d4e55",
+        "width_px": 800,
+        "height_px": 500,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          500
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.15756935,
+          -1.37409738
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target places the 2019 formation in the arable field immediately south of Cocum Farm's long straight tree avenue. Same-flight wide aerials reproduce the avenue, its southern hedge junction, surrounding field boundaries, road, and farm cluster, resolving the unique field and yaw quadrant; the selected tight frame preserves the formation geometry.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.15756935,
+          -1.37409738
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=443868&y=139999&z=115&sv=443868,139999&st=4&ar=y&mapp=map.srf&searchp=ids.srf&dn=642&ax=443868&ay=139999&lm=0",
+        "documented_diameter_m": 61,
+        "reported_place": "Cocum Farm, near Barton Stacey, Hampshire",
+        "source_report_url": "https://cropcircleconnector.com/2019/cocum/cocum2019a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            500
+          ],
+          [
+            0,
+            500
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.15792433299,
+            -1.3750002334
+          ],
+          [
+            51.157922012589,
+            -1.373186960089
+          ],
+          [
+            51.157288174792,
+            -1.373335338319
+          ],
+          [
+            51.157294534927,
+            -1.374854113347
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the tight 800 by 500 aerial. The publisher map target fixes the center, the source report documents a 61 metre diameter, and four outer-ring controls constrain local scale and perspective. Same-flight wide aerials show the distinctive north-south tree avenue, adjoining hedgerows, road, and farm context, resolving the field and image-up orientation.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          500
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            48
+          ],
+          [
+            611,
+            250
+          ],
+          [
+            400,
+            488
+          ],
+          [
+            188,
+            252
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.0,
+            31.47420456
+          ],
+          [
+            30.5,
+            0.97420456
+          ],
+          [
+            0.0,
+            -29.52579544
+          ],
+          [
+            -30.5,
+            0.97420456
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.157588015487,
+            0.0,
+            -63.035206194757
+          ],
+          [
+            -0.000730729948,
+            -0.152032614025,
+            39.516706397462
+          ],
+          [
+            -1.0388765e-05,
+            0.000386186373,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 61,
+        "orientation_basis": "The same-flight wide aerial places the long Cocum Farm tree avenue directly north of the formation and preserves the tight frame's star and tramline orientation, fixing image-up approximately to true north.",
+        "orientation_uncertainty_deg": 15,
+        "reference_export_bbox_wgs84": [
+          -1.382,
+          51.151,
+          -1.366,
+          51.164
+        ],
+        "reference_export_size_px": [
+          2000,
+          1300
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "1821d4b7480e528eb8e6bfe2c9b6b227b16e63ca24d54d3f973cb434912994fb",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.15792433299,
+          -1.3750002334
+        ],
+        [
+          51.157922012589,
+          -1.373186960089
+        ],
+        [
+          51.157288174792,
+          -1.373335338319
+        ],
+        [
+          51.157294534927,
+          -1.374854113347
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center inherits the publisher's 25 metre uncertainty; the 61 metre size is reported rather than surveyed; orientation is transferred from same-flight context; no persistent ground point independently validates the tight-frame corners."
+      }
+    },
+    {
+      "observation_id": "regobs_kitts_lane_2021_crop_geometry_v1",
+      "overlay_id": "kitts-lane-2021-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2021/kitts/DJI_0868.jpg",
+        "page_url": "https://cropcircleconnector.com/2021/kitts/kitts2021a.html",
+        "sha256": "fff8ee64c186f821d84550cfa5da04678dac1d5a9a3d3f4de4bf5128e3015dc5",
+        "width_px": 800,
+        "height_px": 800,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          800
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.03565262,
+          -1.09171343
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher's BNG target places the 2021 formation in the arable field immediately east of the large Kitt's Lane woodland block. Same-flight wide aerials reproduce the woodland edge, nearby buildings, field corners, and hedge pattern, resolving the unique field; the selected near-nadir frame preserves the formation geometry.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.03565262,
+          -1.09171343
+        ],
+        "publisher_bng_easting_northing": [
+          463783,
+          126647
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map?x=463783&y=126647&z=0&sv=51.035110,+-1.090227&st=7&mapp=map&searchp=ids",
+        "documented_diameter_m": 55,
+        "reported_place": "Kitt's Lane, near West Meon, Hampshire",
+        "source_report_url": "https://cropcircleconnector.com/2021/kitts/kitts2021a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            800
+          ],
+          [
+            0,
+            800
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.035457115378,
+            -1.092215755084
+          ],
+          [
+            51.035975042852,
+            -1.092017873617
+          ],
+          [
+            51.035850970725,
+            -1.091198098595
+          ],
+          [
+            51.035335116711,
+            -1.091410179243
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the near-nadir 800 by 800 aerial. The publisher's BNG map target fixes the center, the source report documents a 55 metre diameter, and four outer-ring controls constrain local scale and perspective. Same-flight wide aerials show the field beside the persistent woodland block, Kitt's Lane buildings, hedges, and field corners, resolving the unique field and yaw quadrant.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            405,
+            22
+          ],
+          [
+            770,
+            398
+          ],
+          [
+            399,
+            774
+          ],
+          [
+            28,
+            398
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -26.647266948,
+            6.796699569
+          ],
+          [
+            6.688717269,
+            26.826979682
+          ],
+          [
+            26.718997395,
+            -6.509004547
+          ],
+          [
+            -6.616986844,
+            -26.539284662
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.017775617449,
+            0.070486341067,
+            -35.163810724445
+          ],
+          [
+            0.071294107526,
+            -0.016970021317,
+            -21.763574526239
+          ],
+          [
+            -2.1606434e-05,
+            -1.72393e-07,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide aerials match the woodland block, Kitt's Lane building cluster, hedgerows, and field corners; the near-nadir frame is rotated so image-up points approximately west-northwest toward that woodland context.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -1.1,
+          51.03,
+          -1.083,
+          51.042
+        ],
+        "reference_export_size_px": [
+          2000,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "9c1c593f37ade1f1513ea44f10db4cf7e6e4634a1a36b7fa365452d337290141",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.035457115378,
+          -1.092215755084
+        ],
+        [
+          51.035975042852,
+          -1.092017873617
+        ],
+        [
+          51.035850970725,
+          -1.091198098595
+        ],
+        [
+          51.035335116711,
+          -1.091410179243
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center uses the transformed BNG coordinate; the Streetmap URL's human-readable latitude/longitude label differs from that BNG target. The 55 metre size is reported rather than surveyed, orientation is transferred from same-flight context, and no persistent ground point independently validates the tight-frame corners."
+      }
+    },
+    {
+      "observation_id": "regobs_clear_wood_2019_crop_geometry_v1",
+      "overlay_id": "clear-wood-2019-documented-size-crop-geometry-placement",
+      "classification": "provisional_documented_size_crop_geometry_rectification",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2019/clearwood/cccDJI_00061.jpg",
+        "page_url": "https://cropcircleconnector.com/2019/clearwood/clearwood2019a.html",
+        "sha256": "975be2661a0ea65bca42c0a26da7b89dda08dd1f184422719ac4721a2b1e9cc7",
+        "width_px": 800,
+        "height_px": 506,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          506
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.22663516,
+          -2.22542886
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The exact publisher target places the 2019 formation in the arable field south of the A362 and north of Clear Wood. Same-flight wide aerials reproduce the road corridor, long field edges, hedge junctions, woodland, and Cley Hill profile, resolving the unique field; the selected tight frame preserves the formation geometry.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.22663516,
+          -2.22542886
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=384355&y=147518&z=0&sv=ST8435547518&st=5&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 55,
+        "reported_place": "Clear Wood, Cley Hill, near Warminster, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2019/clearwood/clearwood2019a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            506
+          ],
+          [
+            0,
+            506
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.22699586436,
+            -2.226405601994
+          ],
+          [
+            51.22699586436,
+            -2.224452118006
+          ],
+          [
+            51.226368050922,
+            -2.224488572922
+          ],
+          [
+            51.226368050922,
+            -2.226369147078
+          ]
+        ],
+        "basis": "Four-point projective crop-geometry rectification of the 800 by 506 aerial. The publisher map target fixes the center, the source report documents a 55 metre diameter, and four outer-ring controls constrain local scale and perspective. Same-flight wide aerials show the A362 corridor, Clear Wood edge, field corners, hedges, and Cley Hill context, resolving the unique field and yaw quadrant.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "documented_size_crop_geometry_projective_rectification",
+        "source_frame_size_px": [
+          800,
+          506
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            82
+          ],
+          [
+            565,
+            279
+          ],
+          [
+            400,
+            482
+          ],
+          [
+            235,
+            279
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.0,
+            28.462211337
+          ],
+          [
+            27.5,
+            0.962211337
+          ],
+          [
+            0.0,
+            -26.537788663
+          ],
+          [
+            -27.5,
+            0.962211337
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.170229521037,
+            0.0,
+            -68.091808414636
+          ],
+          [
+            0.0,
+            -0.140397235684,
+            40.153609405762
+          ],
+          [
+            0.0,
+            7.6620524e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-flight wide aerials resolve the road, Clear Wood, field corners, and Cley Hill context. The selected frame's bubble axis points toward the road side of the field, fixing image-up approximately north within the stated uncertainty.",
+        "orientation_uncertainty_deg": 20,
+        "reference_export_bbox_wgs84": [
+          -2.234,
+          51.22,
+          -2.217,
+          51.233
+        ],
+        "reference_export_size_px": [
+          2000,
+          1300
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "5bfac2c5e81da87f6404806ea9d5e2f2bb3406cbc4b5df4932883c7c3a23ad9b",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control"
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.22699586436,
+          -2.226405601994
+        ],
+        [
+          51.22699586436,
+          -2.224452118006
+        ],
+        [
+          51.226368050922,
+          -2.224488572922
+        ],
+        [
+          51.226368050922,
+          -2.226369147078
+        ]
+      ],
+      "quality": {
+        "status": "useful_provisional_documented_size_crop_geometry_placement",
+        "limitations": "This is a crop-geometry placement, not a landmark or survey georegistration. The center inherits the publisher's 25 metre uncertainty; the 55 metre size is reported rather than surveyed; orientation is transferred from same-flight context; no persistent ground point independently validates the tight-frame corners."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

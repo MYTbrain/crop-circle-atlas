@@ -211,6 +211,52 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-22",
     },
+    "cc_b4d637c767f9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Waden Hill publisher target and the independently visible "
+            "Silbury Hill / A4 scene identify one candidate field. The source is "
+            "strongly oblique and terrain-dominated; only the formation anchor and "
+            "clustered mound controls survived review. A three-control affine trial "
+            "missed its held-out summit check by approximately 88 metres, so no "
+            "source-frame footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_079e9ed8bea7": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Patney Bridge publisher target, railway corridor, underbridge, "
+            "field edges, and farm structures identify one candidate field. The wide "
+            "frames are materially oblique and the tight frames contain formation "
+            "geometry without distributed persistent landmarks. Tested full-frame "
+            "fits were unstable, so no source-frame footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_c13a98d2fd3f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Pepperbox Hill publisher target, red-roof shed, angled hedge "
+            "corner, adjoining green field, wooded belt, and A36 context identify one "
+            "candidate field. Fewer than three defensible affine or four projective "
+            "controls survive across the oblique source frames; trial transforms had "
+            "implausible footprints, so no source-frame overlay is published."
+        ),
+        "review_date": "2026-07-22",
+    },
+    "cc_8b6d16796ee3": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Maiden Castle publisher target, the persistent hillfort "
+            "ramparts, and the surrounding field pattern identify one candidate "
+            "field. The available wide aerial is strongly oblique and the usable "
+            "rampart controls are terrain-sensitive and nearly collinear; a tested "
+            "three-control affine fit missed the held-out rampart check by about "
+            "100 metres, so no source-frame footprint is published."
+        ),
+        "review_date": "2026-07-22",
+    },
 }
 
 

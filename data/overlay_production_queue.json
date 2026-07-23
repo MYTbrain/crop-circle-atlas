@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-22T23:12:21.921016Z",
+  "generated_at": "2026-07-23T01:38:55.731043Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1920,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 7,
+    "candidate_field": 11,
     "clues_reviewed": 2,
-    "provisional_registration": 20,
-    "queued": 1873,
+    "provisional_registration": 25,
+    "queued": 1864,
     "source_image_acquired": 13,
     "unresolved": 2
   },
@@ -12934,11 +12934,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Patney Bridge publisher target, railway corridor, underbridge, field edges, and farm structures identify one candidate field. The wide frames are materially oblique and the tight frames contain formation geometry without distributed persistent landmarks. Tested full-frame fits were unstable, so no source-frame footprint is published.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_07b663c48cc4",
@@ -14303,11 +14303,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cocum-farm-2019-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_813dd47361b7",
@@ -14535,11 +14535,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "clear-wood-2019-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_8c3b2c48da4a",
@@ -15427,11 +15427,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Waden Hill publisher target and the independently visible Silbury Hill / A4 scene identify one candidate field. The source is strongly oblique and terrain-dominated; only the formation anchor and clustered mound controls survived review. A three-control affine trial missed its held-out summit check by approximately 88 metres, so no source-frame footprint is published.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_bc74394a2b82",
@@ -15514,11 +15514,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cley-hill-2016-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_c125d1c37d59",
@@ -15835,11 +15835,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "coneybury-hill-2018-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_d165b4ccc092",
@@ -16577,11 +16577,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "kitts-lane-2021-documented-size-crop-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_fffbf1ce3c4b",
@@ -17031,11 +17031,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Maiden Castle publisher target, the persistent hillfort ramparts, and the surrounding field pattern identify one candidate field. The available wide aerial is strongly oblique and the usable rampart controls are terrain-sensitive and nearly collinear; a tested three-control affine fit missed the held-out rampart check by about 100 metres, so no source-frame footprint is published.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_a52fc2811092",
@@ -18073,11 +18073,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Pepperbox Hill publisher target, red-roof shed, angled hedge corner, adjoining green field, wooded belt, and A36 context identify one candidate field. Fewer than three defensible affine or four projective controls survive across the oblique source frames; trial transforms had implausible footprints, so no source-frame overlay is published.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-22"
     },
     {
       "formation_id": "cc_cb77ef2ea1a6",
