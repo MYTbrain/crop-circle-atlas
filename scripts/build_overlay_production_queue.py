@@ -626,6 +626,135 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-22",
     },
+    "cc_a839f3bb4d14": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Herepath publisher target and wide source frames identify a "
+            "field beside the Avebury henge, village road, trees, and field-boundary "
+            "complex. Three inspected DJI derivatives contain no retained EXIF/XMP "
+            "camera pose, and no landscape feature was measured against independent "
+            "reference imagery. The candidate field is retained, but no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_963b25557b94": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Hunt's Down publisher target and eight reviewed DJI frames "
+            "reproduce the same formation, enclosing field, hedgerow, woodland, and "
+            "isolated-tree context. The web derivatives retain no EXIF/XMP camera "
+            "pose, and no persistent feature was measured against independent "
+            "reference imagery. The candidate field is retained, but no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_d74a95a2117a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Scrubbs Lane publisher target and wide DJI frames identify a "
+            "field with hedgerows, isolated trees, field corners, and distant "
+            "woodland. Four inspected derivatives contain no retained EXIF/XMP "
+            "camera pose, and the visible landscape was not converted into "
+            "distributed pixel-to-map controls. The candidate field is retained, "
+            "but no source-photo footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_b99db3829904": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Etchilhampton Hill publisher target and five reviewed DJI frames "
+            "constrain the reported field, but a second formation-like feature in "
+            "the same scene leaves the specific formation center ambiguous. The "
+            "derivatives retain no EXIF/XMP camera pose and no persistent landscape "
+            "controls were measured. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_886f1e3e45ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Allan King Way publisher target and five reviewed DJI frames "
+            "identify a candidate field using the hedgerow/track corridor, wooded "
+            "clumps, field boundaries, and distant settlement. The derivatives "
+            "retain no EXIF/XMP camera pose, same-flight timing is unverified, and "
+            "no independent reference controls were measured. No source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_fec12ccafd56": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Barbury Castle publisher target and 18 reviewed source frames "
+            "consistently reproduce one field below the hillside road, tree-line "
+            "bends, and track geometry. The persistent controls remain concentrated "
+            "on one side of strongly oblique, relief-affected frames, so no stable "
+            "full-frame planar transform or independent held-out checkpoint set is "
+            "available. No source-photo footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_ac20cd7fff97": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Luxenborough publisher target and reported approximately 122 metre "
+            "diameter preserve a precise search point, but no unique field match or "
+            "true-north orientation was independently established. Reported size and "
+            "formation geometry are not persistent ground controls. No defensible "
+            "display footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_a1d3b0aeea80": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Winterbourne Stoke Down publisher target and reported approximately "
+            "61 metre diameter preserve a precise search point, but no persistent "
+            "landmark match or true-north orientation was established. A possible "
+            "Stonehenge alias also remains unaccepted. No defensible display footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_5a2600dc568f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Uffcott publisher target and reported approximately 30.5 metre "
+            "diameter preserve a precise search point, but the source frames were not "
+            "matched to persistent field controls and do not establish true north. "
+            "Reported size alone cannot locate or rotate a source frame. No defensible "
+            "display footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8fb51295f08d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Uffcott Down publisher target and reported approximately 61 metre "
+            "overall size preserve a precise search point, but no persistent "
+            "landmark match or true-north orientation was established. The possible "
+            "Barbury Castle alias remains unresolved. No defensible display footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_78ba2c2622ec": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Clifford's Hill publisher target and reported approximately 39.5 "
+            "metre diameter preserve a precise search point, but the formation nodes, "
+            "petals, tramlines, and reported size are not independent persistent "
+            "ground controls. No matched landmark or true-north cue supports an honest "
+            "display footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
 }
 
 
