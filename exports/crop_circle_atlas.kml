@@ -140373,6 +140373,261 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Keysley Down 2018 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2018/keysleydown/keysleydown2018a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>keysley-down-2018-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_ff7c7874a0a5</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2018/keysleydown/keysleydown2018a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_keysley_down_2018_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-2.172319528343,51.106160998388,0 -2.172667887271,51.10598341331,0 -2.172375257132,51.105759653086,0 -2.172033106848,51.105947915346,0 -2.172319528343,51.106160998388,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Winterbourne Bassett 2018 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2018/winterbournebassett/winterbournebassett2018a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>winterbourne-bassett-2018-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_3566d569dde0</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2018/winterbournebassett/winterbournebassett2018a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_winterbourne_bassett_2018_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.851264109243,51.478030133724,0 -1.852110948137,51.478029540714,0 -1.852106625771,51.477504120349,0 -1.85128024314,51.477493184263,0 -1.851264109243,51.478030133724,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Preston Grange 2023 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2023/Preston/Preston2023a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>preston-grange-2023-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_564508c2d8a6</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2023/Preston/Preston2023a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_axis_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_preston_grange_2023_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.139944608834,51.16184101213,0 -1.139949282329,51.161273205268,0 -1.139046271122,51.161270263159,0 -1.139041586542,51.161838069985,0 -1.139944608834,51.16184101213,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Clearbury Ring 2015 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2015/clearburyring/clearburyring2015a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>clearbury-ring-2015-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_ee71c9475bd1</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2015/clearburyring/clearburyring2015a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_clearbury_ring_2015_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.792709923437,51.016494274013,0 -1.79162757502,51.017281852705,0 -1.792846541213,51.017948349551,0 -1.793928884496,51.017160759659,0 -1.792709923437,51.016494274013,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Woolstone Wells 2020 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2020/woolstone/woolstone2020a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>woolstone-wells-2020-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_8adfc159a7b9</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2020/woolstone/woolstone2020a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_woolstone_wells_2020_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.575105771825,51.583094059586,0 -1.575100121238,51.583737990199,0 -1.576140705973,51.583744557659,0 -1.576131868585,51.583091474754,0 -1.575105771825,51.583094059586,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

@@ -114,6 +114,91 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_a766e0a73ba1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Upper Rapeland has an exact publisher target and an approximate "
+            "38.1 metre diameter, but the bounded review did not complete an "
+            "original-frame/current-reference crosswalk that resolves a unique "
+            "field and true orientation. No source-photo transform or "
+            "independent ground checkpoint is available, so no footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3026040dd61b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Bishop's Cannings Down has an exact publisher target and an "
+            "approximate 54.864 metre diameter, but the retained camera GPS is "
+            "93.698 metres from that target while the near-nadir pose implies a "
+            "much smaller camera-to-image-center offset. The original-frame crop "
+            "window and pose cannot reconcile the center, and no independent "
+            "ground checkpoint resolves it. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_fffbf1ce3c4b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Connector and Temporary Temples evidence resolve the same "
+            "Boreham Wood field, but their map targets are 197.306 metres apart "
+            "inside it. The approximate 60.96 metre diameter, rights-gated "
+            "near-nadir frame, and zero independent ground checkpoints cannot "
+            "adjudicate that center conflict. No source-photo footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f30c1e8ffd2f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Buckland Down report's displayed grid reference and linked "
+            "Streetmap query differ by 1,025.413 metres. Same-event frames "
+            "corroborate the formation and landscape, but no documented size, "
+            "surviving camera pose, or independent ground checkpoint resolves "
+            "the conflicting centers. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_35bc1f4dd411": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and same-event Longwood Warren context resolve "
+            "one field by its road junction, hedges, circuit, and copse pattern. "
+            "Published overall sizes conflict materially at about 40 versus "
+            "60.96 metres, while the tight frames contain no distributed "
+            "persistent controls or independent checkpoint. No source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_e04260cea9e6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Muncombe Hill target and same-event context resolve the field "
+            "between the western woodland, eastern road, and northern solar "
+            "installations. Published overall sizes conflict at about 76 versus "
+            "106.7 metres, and the source frames supply neither distributed "
+            "persistent coplanar controls nor an independent checkpoint. No "
+            "source-photo footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_c90d17acd2af": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Willoughby Hedge publisher target and same-event context resolve "
+            "the candidate field, but no event-specific overall dimension was "
+            "found. The near-nadir image omits the full formation, the complete "
+            "views are oblique, and no camera pose or independent ground "
+            "checkpoint survives. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
     "cc_486fd4d67389": {
         "processing_status": "candidate_field",
         "reason": (

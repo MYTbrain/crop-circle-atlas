@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-29T20:19:30.033302Z",
+  "generated_at": "2026-07-29T23:29:39.498553Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 40,
+    "candidate_field": 47,
     "clues_reviewed": 2,
-    "provisional_registration": 55,
-    "queued": 1815,
+    "provisional_registration": 60,
+    "queued": 1803,
     "source_image_acquired": 11,
     "unresolved": 3
   },
@@ -16771,11 +16771,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Connector and Temporary Temples evidence resolve the same Boreham Wood field, but their map targets are 197.306 metres apart inside it. The approximate 60.96 metre diameter, rights-gated near-nadir frame, and zero independent ground checkpoints cannot adjudicate that center conflict. No source-photo footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_886f1e3e45ca",
@@ -17066,11 +17066,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Upper Rapeland has an exact publisher target and an approximate 38.1 metre diameter, but the bounded review did not complete an original-frame/current-reference crosswalk that resolves a unique field and true orientation. No source-photo transform or independent ground checkpoint is available, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_b7f8add97942",
@@ -17222,11 +17222,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Buckland Down report's displayed grid reference and linked Streetmap query differ by 1,025.413 metres. Same-event frames corroborate the formation and landscape, but no documented size, surviving camera pose, or independent ground checkpoint resolves the conflicting centers. No source-photo footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_ff7c7874a0a5",
@@ -17296,11 +17296,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "keysley-down-2018-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_3566d569dde0",
@@ -17371,11 +17371,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "winterbourne-bassett-2018-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_35bc1f4dd411",
@@ -17442,11 +17442,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and same-event Longwood Warren context resolve one field by its road junction, hedges, circuit, and copse pattern. Published overall sizes conflict materially at about 40 versus 60.96 metres, while the tight frames contain no distributed persistent controls or independent checkpoint. No source-photo footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_37764ac002d2",
@@ -17738,11 +17738,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "preston-grange-2023-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_75b85fd54146",
@@ -18105,11 +18105,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Muncombe Hill target and same-event context resolve the field between the western woodland, eastern road, and northern solar installations. Published overall sizes conflict at about 76 versus 106.7 metres, and the source frames supply neither distributed persistent coplanar controls nor an independent checkpoint. No source-photo footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_fec12ccafd56",
@@ -18251,11 +18251,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2212,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "woolstone-wells-2020-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_3026040dd61b",
@@ -18323,11 +18323,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Bishop's Cannings Down has an exact publisher target and an approximate 54.864 metre diameter, but the retained camera GPS is 93.698 metres from that target while the near-nadir pose implies a much smaller camera-to-image-center offset. The original-frame crop window and pose cannot reconcile the center, and no independent ground checkpoint resolves it. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_3f3c81c35f60",
@@ -18685,11 +18685,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Willoughby Hedge publisher target and same-event context resolve the candidate field, but no event-specific overall dimension was found. The near-nadir image omits the full formation, the complete views are oblique, and no camera pose or independent ground checkpoint survives. No source-photo footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_d348038b1262",
@@ -18833,11 +18833,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "clearbury-ring-2015-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_f5c282a9d9d7",

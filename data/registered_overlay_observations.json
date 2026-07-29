@@ -8830,6 +8830,1006 @@
       }
     },
     {
+      "observation_id": "regobs_keysley_down_2018_crop_geometry_v1",
+      "overlay_id": "keysley-down-2018-coordinate-size-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/keysleydown/DJI_0051.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/keysleydown/keysleydown2018a.html",
+        "sha256": "8d679ee5e77e375685b254ca420d6fceacb6002ac364be91df7c8d54887fd6ca",
+        "width_px": 800,
+        "height_px": 799,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          799
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.10596308,
+          -2.17234941
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and same-event DJI_0027 frame resolve the Keysley Down field through the A303, twin scrub islands, enclosing hedges, and distant ridge. The selected original DJI_0051 frame supplies the formation geometry only.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.10596308,
+          -2.17234941
+        ],
+        "publisher_bng_easting_northing": [
+          388030,
+          134088
+        ],
+        "publisher_map_target": "http://www.streetmap.co.uk/map.srf?x=388030&y=134088&z=0&sv=51.105971,+-2.172336&st=7&mapp=map.srf&searchp=ids.srf",
+        "documented_diameter_m": 30.5,
+        "documented_size_text": "approximately 100 feet (30.5 metres)",
+        "reported_place": "Keysley Down, near Chicklade, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2018/keysleydown/keysleydown2018a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            799
+          ],
+          [
+            0,
+            799
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.105947915346,
+            -2.172033106848
+          ],
+          [
+            51.105759653086,
+            -2.172375257132
+          ],
+          [
+            51.10598341331,
+            -2.172667887271
+          ],
+          [
+            51.106160998388,
+            -2.172319528343
+          ]
+        ],
+        "basis": "Four outer-ring points in the original 800 by 799 near-nadir catalog frame constrain a non-folded display footprint around the publisher target using the documented 30.5 metre diameter. A same-event wide frame resolves the A303, twin scrub islands, hedges, and yaw quadrant. These are formation-bound controls, not independent ground controls.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          799
+        ],
+        "source_geometry_control_pixels": [
+          [
+            407,
+            15
+          ],
+          [
+            787,
+            398
+          ],
+          [
+            409,
+            785
+          ],
+          [
+            15,
+            397
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            9.802511048,
+            -11.682177758
+          ],
+          [
+            -11.682177758,
+            -9.802511048
+          ],
+          [
+            -9.802511048,
+            11.682177758
+          ],
+          [
+            11.682177758,
+            9.802511048
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.029870283919,
+            -0.025071777319,
+            22.153141187911
+          ],
+          [
+            -0.025130303333,
+            0.030037116593,
+            -1.687024783881
+          ],
+          [
+            -4.6398013e-05,
+            1.6719913e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 30.5,
+        "orientation_basis": "DJI_0027 matches the A303, twin scrub islands, enclosing hedges, and distant ridge; the asymmetric three-satellite geometry transfers an approximately 140 degree true source-top bearing to original frame DJI_0051.",
+        "orientation_uncertainty_deg": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -2.18234941,
+          51.09996308,
+          -2.16234941,
+          51.11196308
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "58d813ab8c7447bc21de91edea289b8bae02204e86894ac4cf27c95262ed8c70",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.96288159,
+            1.01335921
+          ],
+          "jacobian_determinant_range": [
+            -0.001689786,
+            -0.00144964
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.105947915346,
+          -2.172033106848
+        ],
+        [
+          51.105759653086,
+          -2.172375257132
+        ],
+        [
+          51.10598341331,
+          -2.172667887271
+        ],
+        [
+          51.106160998388,
+          -2.172319528343
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. The center inherits 25 metre publisher uncertainty, the diameter is approximate, source-top orientation carries plus or minus 25 degrees uncertainty, and zero independent ground checkpoints validate the footprint."
+      }
+    },
+    {
+      "observation_id": "regobs_winterbourne_bassett_2018_crop_geometry_v1",
+      "overlay_id": "winterbourne-bassett-2018-coordinate-size-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/winterbournebassett/DJI_0002.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/winterbournebassett/winterbournebassett2018a.html",
+        "sha256": "8b7672964b3fede7ed23739abdc266220678072eb81663f0793cfa757bda39e7",
+        "width_px": 800,
+        "height_px": 773,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          773
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.4777714,
+          -1.85169764
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and genuine wide context place the formation northeast of the village and tree cluster, west of the road, and on the matching side of the diagonal hedge. Original near-nadir DJI_0002 supplies formation geometry only.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.4777714,
+          -1.85169764
+        ],
+        "publisher_bng_easting_northing": [
+          410396,
+          175434
+        ],
+        "documented_operational_diameter_m": 55,
+        "documented_diameter_range_m": [
+          55,
+          60.96
+        ],
+        "documented_size_text": "approximately 180 feet / 55 metres; independent report approximately 200 feet",
+        "reported_place": "Winterbourne Bassett, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2018/winterbournebassett/winterbournebassett2018a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            773
+          ],
+          [
+            0,
+            773
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.477493184263,
+            -1.85128024314
+          ],
+          [
+            51.477504120349,
+            -1.852106625771
+          ],
+          [
+            51.478029540714,
+            -1.852110948137
+          ],
+          [
+            51.478030133724,
+            -1.851264109243
+          ]
+        ],
+        "basis": "Four outer-spiral points in original catalog frame DJI_0002 constrain a non-folded display footprint around the publisher target using a conservative 55 metre operational diameter. Genuine same-flight context comes from DJI_0001-2 and the horizon/village view in DJI_0010; no landscape point is claimed in the selected tight frame.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          773
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            38
+          ],
+          [
+            785,
+            398
+          ],
+          [
+            405,
+            757
+          ],
+          [
+            28,
+            405
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ],
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.072544244684,
+            0.000504480144,
+            28.998527628297
+          ],
+          [
+            0.000706283477,
+            0.076379513171,
+            -30.953478771495
+          ],
+          [
+            2.7394142e-05,
+            -3.1379596e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "DJI_0001-2 provides genuine field context and DJI_0010 preserves horizon/village context; crop-row direction and asymmetric spiral geometry transfer an approximately 180 degree true source-top bearing to original DJI_0002. DJI_0003 and DJI_0033 are formation-only frames and are not used as landscape evidence.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.86169764,
+          51.4717714,
+          -1.84169764,
+          51.4837714
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "d92441aaa7a12b1e2cd03575499b99617a49a7107a2f4b88c23968a5a753faf7",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.975774952,
+            1.021887919
+          ],
+          "jacobian_determinant_range": [
+            -0.005954908,
+            -0.005184588
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.477493184263,
+          -1.85128024314
+        ],
+        [
+          51.477504120349,
+          -1.852106625771
+        ],
+        [
+          51.478029540714,
+          -1.852110948137
+        ],
+        [
+          51.478030133724,
+          -1.851264109243
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. The center inherits 25 metre publisher uncertainty, published size spans 55 to 60.96 metres, orientation carries plus or minus 20 degrees uncertainty, and zero independent ground checkpoints validate the footprint."
+      }
+    },
+    {
+      "observation_id": "regobs_preston_grange_2023_crop_geometry_v1",
+      "overlay_id": "preston-grange-2023-coordinate-size-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2023/Preston/DJI_20230802082038_0018_D.jpg",
+        "page_url": "https://cropcircleconnector.com/2023/Preston/Preston2023a.html",
+        "sha256": "6eeabfc30cfbdcd05a12b45bf0d945b0be0340828c800b88f6417b60e55474d2",
+        "width_px": 800,
+        "height_px": 800,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          800
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.16155569,
+          -1.13951124
+        ],
+        "coordinate_uncertainty_m": 45,
+        "site_text": "The Connector and Temporary Temples targets are 38.013 metres apart inside the same unique field. Same-event wide imagery reproduces the enclosing field, road network, and Preston Candover village context; the selected original near-nadir frame supplies formation geometry only.",
+        "connector_coordinate_wgs84_lat_lon": [
+          51.16155569,
+          -1.13951124
+        ],
+        "connector_bng_easting_northing": [
+          460268,
+          140608
+        ],
+        "temporary_temples_bng_easting_northing": [
+          460302,
+          140625
+        ],
+        "publisher_target_separation_m": 38.013,
+        "documented_operational_length_m": 60.96,
+        "documented_size_range_m": [
+          60.96,
+          80
+        ],
+        "reported_place": "Preston Grange, Hampshire",
+        "source_report_url": "https://cropcircleconnector.com/2023/Preston/Preston2023a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            800
+          ],
+          [
+            0,
+            800
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.161838069985,
+            -1.139041586542
+          ],
+          [
+            51.161270263159,
+            -1.139046271122
+          ],
+          [
+            51.161273205268,
+            -1.139949282329
+          ],
+          [
+            51.16184101213,
+            -1.139944608834
+          ]
+        ],
+        "basis": "Four formation-extremity points in the original 800 by 800 near-nadir catalog frame constrain a non-folded similarity display footprint around the Connector target using a conservative 60.96 metre operational length. Same-event wide context constrains the undirected long axis approximately north-south; the 180 degree ambiguity leaves this symmetric display footprint unchanged.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            15,
+            414
+          ],
+          [
+            787,
+            410
+          ],
+          [
+            400,
+            205
+          ],
+          [
+            400,
+            620
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0.157514094,
+            30.400220134
+          ],
+          [
+            0.157514094,
+            -30.559779866
+          ],
+          [
+            16.502976644,
+            -0.085507651
+          ],
+          [
+            -16.266091812,
+            0.084280268
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.000409127517,
+            -0.078961610738,
+            32.853757852349
+          ],
+          [
+            -0.078961610738,
+            0.000409127517,
+            31.415265503356
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_length_m": 60.96,
+        "documented_size_range_m": [
+          60.96,
+          80
+        ],
+        "orientation_basis": "Same-event wide imagery and current reference imagery constrain the formation's long axis approximately north-south. The selected original frame is approximately 90 degrees source-top true, with an unresolved 180 degree ambiguity that does not change the symmetric display footprint.",
+        "orientation_uncertainty_deg": 180,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls determine the similarity transform; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.14951124,
+          51.15555569,
+          -1.12951124,
+          51.16755569
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "0358c71483bcaaf0a3b0b6f74c8878112b878d857520d7af1a9be057854dd2ba",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.006235103356,
+            -0.006235103356
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.161838069985,
+          -1.139041586542
+        ],
+        [
+          51.161270263159,
+          -1.139046271122
+        ],
+        [
+          51.161273205268,
+          -1.139949282329
+        ],
+        [
+          51.16184101213,
+          -1.139944608834
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. Publisher targets differ by 38.013 metres, published size spans 60.96 to 80 metres, directed yaw is ambiguous by 180 degrees, and zero independent ground checkpoints validate the footprint."
+      }
+    },
+    {
+      "observation_id": "regobs_clearbury_ring_2015_crop_geometry_v1",
+      "overlay_id": "clearbury-ring-2015-coordinate-size-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2015/clearburyring/G0029357bbb.jpg",
+        "page_url": "https://cropcircleconnector.com/2015/clearburyring/clearburyring2015a.html",
+        "sha256": "264cc4a95260802933b3364e2216897dae6020c5007b67f6478bd20cf46a6177",
+        "width_px": 800,
+        "height_px": 781,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          781
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.01730793,
+          -1.79293665
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target and same-event wide frames resolve the unique field through the northwestern woodland and building complex, field boundaries, and surrounding terrain. The selected original frame supplies formation geometry only and clips part of the lower terminal at the image boundary.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.01730793,
+          -1.79293665
+        ],
+        "publisher_bng_easting_northing": [
+          414621,
+          124235
+        ],
+        "documented_operational_length_m": 110,
+        "documented_size_range_m": [
+          110,
+          121.92
+        ],
+        "documented_size_text": "in excess of 360 feet; independent report approximately 400 feet",
+        "reported_place": "Clearbury Ring, Wiltshire",
+        "source_report_url": "https://cropcircleconnector.com/2015/clearburyring/clearburyring2015a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            781
+          ],
+          [
+            0,
+            781
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.017160759659,
+            -1.793928884496
+          ],
+          [
+            51.017948349551,
+            -1.792846541213
+          ],
+          [
+            51.017281852705,
+            -1.79162757502
+          ],
+          [
+            51.016494274013,
+            -1.792709923437
+          ]
+        ],
+        "basis": "Four formation-extremity points in original catalog frame G0029357bbb constrain a non-folded similarity display footprint around the publisher target using a conservative 110 metre operational length. Same-event contextual frames resolve the northwestern woodland and building complex. These are formation-bound controls, not independent ground controls.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_frame_size_px": [
+          800,
+          781
+        ],
+        "source_geometry_control_pixels": [
+          [
+            438,
+            21
+          ],
+          [
+            384,
+            778
+          ],
+          [
+            210,
+            263
+          ],
+          [
+            608,
+            294
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -25.744351399,
+            29.605045283
+          ],
+          [
+            52.037394531,
+            -48.176700648
+          ],
+          [
+            -20.885667877,
+            -18.34086182
+          ],
+          [
+            20.294571713,
+            22.30594623
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.094937309366,
+            0.109522272967,
+            -69.626860634087
+          ],
+          [
+            0.109522272967,
+            -0.094937309366,
+            -16.37202678009
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_length_m": 110,
+        "documented_size_range_m": [
+          110,
+          121.92
+        ],
+        "orientation_basis": "The small terminal end in the selected frame points toward the northwestern woodland and building complex visible in same-event contextual frames and current reference imagery.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls determine the similarity transform; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.80293665,
+          51.01130793,
+          -1.78293665,
+          51.02330793
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "15dc2e5b1166412848b672191927720efd8db52aed8c4ac16fb30eaa21bf580a",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.021008220986,
+            -0.021008220986
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.017160759659,
+          -1.793928884496
+        ],
+        [
+          51.017948349551,
+          -1.792846541213
+        ],
+        [
+          51.017281852705,
+          -1.79162757502
+        ],
+        [
+          51.016494274013,
+          -1.792709923437
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. The center inherits 25 metre publisher uncertainty, published length spans 110 to 121.92 metres, part of the lower terminal reaches the image boundary, orientation carries plus or minus 20 degrees uncertainty, and zero independent ground checkpoints validate the footprint."
+      }
+    },
+    {
+      "observation_id": "regobs_woolstone_wells_2020_crop_geometry_v1",
+      "overlay_id": "woolstone-wells-2020-coordinate-size-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2020/woolstone/DJI_0492.jpg",
+        "page_url": "https://cropcircleconnector.com/2020/woolstone/woolstone2020a.html",
+        "sha256": "f20a6b499eb653a7f15a64549d18355a7db49de2f4378d24aa57de8d9eb273ff",
+        "width_px": 800,
+        "height_px": 786,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          786
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.58341313,
+          -1.57562057
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The publisher target lies in the small arable field south of Woolstone village, west of the long north-south wood, and north of the road and spring valley. Same-flight context and current imagery reproduce that unique landscape; original near-nadir DJI_0492 alone supplies the source geometry.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.58341313,
+          -1.57562057
+        ],
+        "publisher_bng_easting_northing": [
+          429501,
+          187258
+        ],
+        "documented_diameter_m": 60.96,
+        "documented_size_text": "approximately 200 feet (60.96 metres)",
+        "reported_place": "Woolstone Wells, near Uffington Castle, Oxfordshire",
+        "source_report_url": "https://cropcircleconnector.com/2020/woolstone/woolstone2020a.html"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            786
+          ],
+          [
+            0,
+            786
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.583091474754,
+            -1.576131868585
+          ],
+          [
+            51.583744557659,
+            -1.576140705973
+          ],
+          [
+            51.583737990199,
+            -1.575100121238
+          ],
+          [
+            51.583094059586,
+            -1.575105771825
+          ]
+        ],
+        "basis": "Four outer-ring points in original catalog frame DJI_0492 constrain a non-folded display footprint around the publisher target using the documented 60.96 metre diameter. The same-flight panorama resolves the eastern wood, western lane, southern road and valley, settlement, and source-frame tramline orientation. No derived crop supplies canonical geometry.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          786
+        ],
+        "source_geometry_control_pixels": [
+          [
+            397,
+            57
+          ],
+          [
+            734,
+            390
+          ],
+          [
+            399,
+            726
+          ],
+          [
+            58,
+            389
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            -30.48,
+            0
+          ],
+          [
+            0,
+            30.48
+          ],
+          [
+            30.48,
+            0
+          ],
+          [
+            0,
+            -30.48
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.000134801934,
+            0.091126107472,
+            -35.440237294621
+          ],
+          [
+            0.090182418188,
+            -0.000269603642,
+            -35.787052612999
+          ],
+          [
+            -1.7481484e-05,
+            1.7901464e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 60.96,
+        "orientation_basis": "The same-flight panorama resolves the target field relative to the eastern wood, western lane, southern road and valley, settlement, and escarpment. Its tramline axis transfers to original near-nadir DJI_0492, where image top is approximately true west and image right approximately north.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.58562057,
+          51.57741313,
+          -1.56562057,
+          51.58941313
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "413b5f9d31afc892a8fe2e665fd3ad25f3059f6875f5101f20ab3b32c1699307",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.986032294,
+            1.014052649
+          ],
+          "jacobian_determinant_range": [
+            -0.008572272,
+            -0.007881118
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.583091474754,
+          -1.576131868585
+        ],
+        [
+          51.583744557659,
+          -1.576140705973
+        ],
+        [
+          51.583737990199,
+          -1.575100121238
+        ],
+        [
+          51.583094059586,
+          -1.575105771825
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. The center inherits 25 metre publisher uncertainty, the diameter is approximate, orientation carries plus or minus 20 degrees uncertainty, and zero independent ground checkpoints validate the footprint."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

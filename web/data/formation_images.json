@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 63,
-    "overlay_placement_count": 63,
+    "mapped_catalog_image_count": 68,
+    "overlay_placement_count": 68,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -34972,7 +34972,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "winterbourne-bassett-2018-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_eaac92fa4535680b09d1",
@@ -58465,7 +58467,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "preston-grange-2023-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_94bcc0186980cb16b79b",
@@ -94398,7 +94402,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "woolstone-wells-2020-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_aba6e0a23112f7a3d6b3",
@@ -163888,7 +163894,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "clearbury-ring-2015-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_7d050f1c9f869a159c95",
@@ -173568,7 +173576,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "keysley-down-2018-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_2bdc9727c1984fac72d3",
