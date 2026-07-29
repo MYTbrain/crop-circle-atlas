@@ -114,6 +114,94 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_486fd4d67389": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and wide Shaw Hill aerial resolve a distinctive "
+            "road junction, hedgerows, field corners, tree rows, and nearby "
+            "settlement. The acquired frames retain no camera pose, documented "
+            "size, measured image-to-map controls, or held-out checkpoint, so no "
+            "source-photo footprint is proposed. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_37764ac002d2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target, reported 46 metre diameter, and wide "
+            "Etchilhampton context identify the candidate field. The ridge, "
+            "woodline, and settlement features were not measured against reference "
+            "imagery, and the retained files provide no verified camera pose or "
+            "independent checkpoint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_75b85fd54146": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and Rodfield Lane panorama identify the woodland "
+            "edge, field corner, hedgerow, and adjoining crop boundary. Persistent "
+            "features are clustered along one side, woodland canopy is not a planar "
+            "control surface, and no size or verified reference transform is "
+            "available. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_4bbda1f80471": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and coherent Roundway Hill aerial sequence show "
+            "hedgerows, tree lines, an isolated tree, field boundaries, and distant "
+            "settlement. The oblique terrain context supplies no distributed "
+            "coplanar controls, documented size, or held-out checkpoint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_dd5484141415": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 20 reviewed frames uniquely identify the "
+            "field southwest of the Milk Hill White Horse. The useful landmarks lie "
+            "on steep relief and remain clustered uphill or along one edge, so no "
+            "defensible planar fit or calibrated pose exists. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8aab5a525413": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 19 reviewed frames uniquely identify the "
+            "field north of the Westbury White Horse and Bratton Camp. Wide views "
+            "cross the horizon and sloping hillfort while tight views lack "
+            "distributed persistent controls, preventing a defensible fit. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_cb77ef2ea1a6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 18 reviewed frames uniquely identify the "
+            "field west of wooded Hod Hill. Persistent features are clustered along "
+            "the far edge, and slope plus wooded relief prevent a full-footprint "
+            "planar fit or independent checkpoint test. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8c3b2c48da4a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 26 reviewed frames uniquely identify the "
+            "Forests Way field by the marina, canal, lakes, woods, and roads. The "
+            "best frame mixes field, water, woodland, and marina depths; attempted "
+            "matching produced no non-folded projective footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
     "cc_5d34291524c4": {
         "processing_status": "candidate_field",
         "reason": (

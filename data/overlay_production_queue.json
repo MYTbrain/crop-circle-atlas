@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-29T13:13:54.200499Z",
+  "generated_at": "2026-07-29T20:19:30.033302Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 32,
+    "candidate_field": 40,
     "clues_reviewed": 2,
-    "provisional_registration": 51,
-    "queued": 1827,
+    "provisional_registration": 55,
+    "queued": 1815,
     "source_image_acquired": 11,
     "unresolved": 3
   },
@@ -14767,11 +14767,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "fonthill-down-2017-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_4f5c587f808a",
@@ -14848,11 +14848,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "hackpen-hill-2017-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_5a2600dc568f",
@@ -15418,11 +15418,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and all 26 reviewed frames uniquely identify the Forests Way field by the marina, canal, lakes, woods, and roads. The best frame mixes field, water, woodland, and marina depths; attempted matching produced no non-folded projective footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_8fb51295f08d",
@@ -16219,11 +16219,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "etchilhampton-2015-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_cac7fb7209b1",
@@ -16299,11 +16299,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "bydemill-copse-2017-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_cc0d147903f6",
@@ -16614,11 +16614,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and all 20 reviewed frames uniquely identify the field southwest of the Milk Hill White Horse. The useful landmarks lie on steep relief and remain clustered uphill or along one edge, so no defensible planar fit or calibrated pose exists. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_f4ba8898dbdb",
@@ -16916,11 +16916,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2217,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and all 19 reviewed frames uniquely identify the field north of the Westbury White Horse and Bratton Camp. Wide views cross the horizon and sloping hillfort while tight views lack distributed persistent controls, preventing a defensible fit. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_8b6d16796ee3",
@@ -17515,11 +17515,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target, reported 46 metre diameter, and wide Etchilhampton context identify the candidate field. The ridge, woodline, and settlement features were not measured against reference imagery, and the retained files provide no verified camera pose or independent checkpoint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_486fd4d67389",
@@ -17590,11 +17590,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and wide Shaw Hill aerial resolve a distinctive road junction, hedgerows, field corners, tree rows, and nearby settlement. The acquired frames retain no camera pose, documented size, measured image-to-map controls, or held-out checkpoint, so no source-photo footprint is proposed. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_4bbda1f80471",
@@ -17664,11 +17664,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and coherent Roundway Hill aerial sequence show hedgerows, tree lines, an isolated tree, field boundaries, and distant settlement. The oblique terrain context supplies no distributed coplanar controls, documented size, or held-out checkpoint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_564508c2d8a6",
@@ -17810,11 +17810,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and Rodfield Lane panorama identify the woodland edge, field corner, hedgerow, and adjoining crop boundary. Persistent features are clustered along one side, woodland canopy is not a planar control surface, and no size or verified reference transform is available. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_b99db3829904",
@@ -18033,11 +18033,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2214,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The publisher target and all 18 reviewed frames uniquely identify the field west of wooded Hod Hill. Persistent features are clustered along the far edge, and slope plus wooded relief prevent a full-footprint planar fit or independent checkpoint test. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_e04260cea9e6",

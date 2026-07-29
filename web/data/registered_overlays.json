@@ -4709,6 +4709,585 @@
       }
     },
     {
+      "overlay_id": "hackpen-hill-2017-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_hackpen_hill_2017_crop_geometry_v1",
+      "formation_id": "cc_4f5c587f808a",
+      "assertion_id": "sx_connector_737ec5866fd8ec2a",
+      "title": "Hackpen Hill 2017 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/hackpen/DJI_0160_14995252416113.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/hackpen/hackpen2017a.html",
+      "source_image_sha256": "2a1ea55075d7de535a09bb9061e8d605dd0b2af554ef26bf04c4a1b369f96e94",
+      "corners": [
+        [
+          51.477245150403,
+          -1.820837347368
+        ],
+        [
+          51.476827177657,
+          -1.821022025606
+        ],
+        [
+          51.476968930214,
+          -1.821686606373
+        ],
+        [
+          51.477365102812,
+          -1.821485516106
+        ]
+      ],
+      "center": [
+        51.47709962,
+        -1.82126043
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 150 to 180 foot extent, same-event Hackpen landscape context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The exact publisher target, conservative documented size, and same-event wide landscape frames resolve the field and yaw quadrant. Four formation-extremity controls define the selected near-nadir source geometry; no independent persistent ground point validates the projected corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is excluded from alignment calculations and cannot automatically become an accepted site.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          790
+        ],
+        "source_geometry_control_pixels": [
+          [
+            407,
+            18
+          ],
+          [
+            792,
+            392
+          ],
+          [
+            417,
+            774
+          ],
+          [
+            18,
+            385
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            21.861126721,
+            -6.68361717
+          ],
+          [
+            -6.68361717,
+            -21.861126721
+          ],
+          [
+            -21.861126721,
+            6.68361717
+          ],
+          [
+            6.68361717,
+            21.861126721
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.016776217175,
+            -0.057708870486,
+            29.333649261056
+          ],
+          [
+            -0.056746606368,
+            0.018461833241,
+            16.200444491719
+          ],
+          [
+            -4.6633084e-05,
+            5.2757535e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 45.72,
+        "orientation_basis": "Same-event wide frames match the Hackpen downland boundary, oval copse, scattered shrubs, and curving access route; asymmetric internal geometry transfers that approximately 107 degree true bearing to the selected tight frame.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.83126043,
+          51.47109962,
+          -1.81126043,
+          51.48309962
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "b387ad0d3fbcdad21d1d60c2ae274d602f00499d672691a96ea647ef2df2c398",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.962740166,
+            1.041625695
+          ],
+          "jacobian_determinant_range": [
+            -0.004022183,
+            -0.003175806
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "bydemill-copse-2017-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_bydemill_copse_2017_crop_geometry_v1",
+      "formation_id": "cc_cac7fb7209b1",
+      "assertion_id": "sx_connector_61e878e85a8b0d5d",
+      "title": "Bydemill Copse 2017 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/highworth/DJI_0050bbb.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/highworth/highworth2017a.html",
+      "source_image_sha256": "0ddd6bb5e66a81a00fa54e003caf7626bee54bf2dad48a97243fe304aa486c3d",
+      "corners": [
+        [
+          51.631824196623,
+          -1.741515580461
+        ],
+        [
+          51.631825730991,
+          -1.740624301189
+        ],
+        [
+          51.631254851803,
+          -1.740728496016
+        ],
+        [
+          51.631249140939,
+          -1.741561904039
+        ]
+      ],
+      "center": [
+        51.63150344,
+        -1.74110559
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 55 metre diameter, same-event Bydemill Copse landscape context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The exact publisher target, documented 55 metre diameter, and same-event landscape context resolve the unique field and yaw. Four formation-extremity controls define the selected near-nadir source geometry; no independent persistent ground point validates the projected corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is excluded from alignment calculations and cannot automatically become an accepted site.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          776
+        ],
+        "source_geometry_control_pixels": [
+          [
+            375,
+            95
+          ],
+          [
+            777,
+            425
+          ],
+          [
+            436,
+            770
+          ],
+          [
+            35,
+            420
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            27.5
+          ],
+          [
+            27.5,
+            0
+          ],
+          [
+            0,
+            -27.5
+          ],
+          [
+            -27.5,
+            0
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.077315650249,
+            -0.006987043948,
+            -28.329599668263
+          ],
+          [
+            0.00057320449,
+            -0.085063546263,
+            35.706627273151
+          ],
+          [
+            1.0025722e-05,
+            9.077581e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 55,
+        "orientation_basis": "Same-event landscape and drone frames match the rounded field, northern hedge, dense eastern woodland, and adjoining parcels; crop-row direction and asymmetric formation geometry transfer north to the selected tight frame.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.75110559,
+          51.62550344,
+          -1.73110559,
+          51.63750344
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "ced25418af03716a79da50be52e6864d7cd13117a3bcb71a900f94523351e634",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1.0,
+            1.078361805
+          ],
+          "jacobian_determinant_range": [
+            -0.006851408,
+            -0.005463698
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "fonthill-down-2017-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_fonthill_down_2017_crop_geometry_v1",
+      "formation_id": "cc_3efe58101636",
+      "assertion_id": "sx_connector_1c5a4cf4bf08d81b",
+      "title": "Fonthill Down 2017 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/fonthill/DJI_0022.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/fonthill/fonthill2017a.html",
+      "source_image_sha256": "3d1bd39a7bded513e3527a84c77280c90b58bee1deee7c0093888b43650e8633",
+      "corners": [
+        [
+          51.113014540242,
+          -2.08972547046
+        ],
+        [
+          51.113014707785,
+          -2.089105755987
+        ],
+        [
+          51.112644467108,
+          -2.089160857904
+        ],
+        [
+          51.112640769317,
+          -2.089650690209
+        ]
+      ],
+      "center": [
+        51.11282713,
+        -2.08940508
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 40 metre diameter, same-event Fonthill Down landscape context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The exact publisher target, documented 40 metre diameter, and same-event wide landscape frames resolve the unique field and yaw. Six formation-extremity controls define the selected near-nadir source geometry with a 0.12 metre internal fit; no independent persistent ground point validates the projected corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is excluded from alignment calculations and cannot automatically become an accepted site.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          832
+        ],
+        "source_geometry_control_pixels": [
+          [
+            412,
+            12
+          ],
+          [
+            747,
+            186
+          ],
+          [
+            787,
+            583
+          ],
+          [
+            397,
+            819
+          ],
+          [
+            27,
+            577
+          ],
+          [
+            71,
+            183
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            0,
+            20
+          ],
+          [
+            17.320508076,
+            10
+          ],
+          [
+            17.320508076,
+            -10
+          ],
+          [
+            0,
+            -20
+          ],
+          [
+            -17.320508076,
+            -10
+          ],
+          [
+            -17.320508076,
+            10
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.054455207798,
+            0.00078269545,
+            -22.390631664828
+          ],
+          [
+            0.000341672233,
+            -0.056655638193,
+            20.862508111327
+          ],
+          [
+            1.5246213e-05,
+            0.000320346693,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 40,
+        "orientation_basis": "Same-event wide frames match the curved woodland, A303 corridor, isolated copse, tree island, and field outline. Repeated crop-row intersections and asymmetric arm-terminal geometry transfer north to the selected original near-nadir frame.",
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0.1209,
+        "reference_export_bbox_wgs84": [
+          -2.09940508,
+          51.10682713,
+          -2.07940508,
+          51.11882713
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "dd65c23ba98307c30c5038279bb34ccd64c784e637801049704d7cefbc9ed48e",
+        "control_count": 6,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1.0,
+            1.278389826
+          ],
+          "jacobian_determinant_range": [
+            -0.003470825,
+            -0.001661292
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "etchilhampton-2015-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_etchilhampton_2015_crop_geometry_v1",
+      "formation_id": "cc_c9aaf7cc3d3a",
+      "assertion_id": "sx_connector_2cb3204542ee7d58",
+      "title": "Etchilhampton 2015 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2015/Etchilhampton/011.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2015/Etchilhampton/Etchilhampton2015a.html",
+      "source_image_sha256": "579bbbf0c24ea270617712b89197e1b4c98d03a8e7864c50adc565e8b1ad89b0",
+      "corners": [
+        [
+          51.344605561786,
+          -1.944008743062
+        ],
+        [
+          51.344433013855,
+          -1.943245754905
+        ],
+        [
+          51.344010843698,
+          -1.943520258456
+        ],
+        [
+          51.344173506389,
+          -1.944232189381
+        ]
+      ],
+      "center": [
+        51.34429921,
+        -1.94375628
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher BNG target, documented 45.72 metre diameter, same-event Etchilhampton landscape context, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The exact publisher target, documented 45.72 metre diameter, and same-event landscape frame resolve the unique field and yaw. Four formation-extremity controls define the selected near-nadir source geometry; no independent persistent ground point validates the projected corners.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is excluded from alignment calculations and cannot automatically become an accepted site.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_frame_size_px": [
+          800,
+          718
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            43
+          ],
+          [
+            735,
+            358
+          ],
+          [
+            400,
+            693
+          ],
+          [
+            64,
+            358
+          ]
+        ],
+        "target_geometry_offsets_m_east_north": [
+          [
+            7.818580476,
+            21.481373311
+          ],
+          [
+            21.481373311,
+            -7.818580476
+          ],
+          [
+            -7.818580476,
+            -21.481373311
+          ],
+          [
+            -21.481373311,
+            7.818580476
+          ]
+        ],
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.066154877722,
+            -0.024879824776,
+            -17.554973819114
+          ],
+          [
+            -0.024078407343,
+            -0.068356753931,
+            34.103080844382
+          ],
+          [
+            -4.589626e-06,
+            9.7912026e-05,
+            1.0
+          ]
+        ],
+        "documented_diameter_m": 45.72,
+        "orientation_basis": "The same-event wide frame matches the north-northeast road, elongated copse and farm strip, adjoining parcels, and southeast village. The square, outer-circle intersections, and crop-row direction transfer an approximately 20 degree source-top bearing to the selected tight frame.",
+        "orientation_uncertainty_deg": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four controls exactly determine the homography; zero interpolation residual is not an accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.95375628,
+          51.33829921,
+          -1.93375628,
+          51.35029921
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "d309b6dc410f0674e2e5226fcdaea347c029b5125f96f15e5ff8ccc47a47a2b3",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.996332889,
+            1.070202923
+          ],
+          "jacobian_determinant_range": [
+            -0.005349899,
+            -0.00431679
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

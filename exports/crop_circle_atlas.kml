@@ -140169,6 +140169,210 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Hackpen Hill 2017 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2017/hackpen/hackpen2017a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>hackpen-hill-2017-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_4f5c587f808a</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2017/hackpen/hackpen2017a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_hackpen_hill_2017_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.821485516106,51.477365102812,0 -1.821686606373,51.476968930214,0 -1.821022025606,51.476827177657,0 -1.820837347368,51.477245150403,0 -1.821485516106,51.477365102812,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Bydemill Copse 2017 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2017/highworth/highworth2017a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>bydemill-copse-2017-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_cac7fb7209b1</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2017/highworth/highworth2017a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_bydemill_copse_2017_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.741561904039,51.631249140939,0 -1.740728496016,51.631254851803,0 -1.740624301189,51.631825730991,0 -1.741515580461,51.631824196623,0 -1.741561904039,51.631249140939,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Fonthill Down 2017 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2017/fonthill/fonthill2017a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>fonthill-down-2017-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_3efe58101636</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2017/fonthill/fonthill2017a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_fonthill_down_2017_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-2.089650690209,51.112640769317,0 -2.089160857904,51.112644467108,0 -2.089105755987,51.113014707785,0 -2.08972547046,51.113014540242,0 -2.089650690209,51.112640769317,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Etchilhampton 2015 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2015/Etchilhampton/Etchilhampton2015a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>etchilhampton-2015-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_c9aaf7cc3d3a</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2015/Etchilhampton/Etchilhampton2015a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_etchilhampton_2015_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.944232189381,51.344173506389,0 -1.943520258456,51.344010843698,0 -1.943245754905,51.344433013855,0 -1.944008743062,51.344605561786,0 -1.944232189381,51.344173506389,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>
