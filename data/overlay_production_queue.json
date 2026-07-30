@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T07:09:12.855843Z",
+  "generated_at": "2026-07-30T08:28:16.403578Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 64,
+    "candidate_field": 75,
     "clues_reviewed": 2,
     "provisional_registration": 73,
-    "queued": 1767,
+    "queued": 1756,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -14539,10 +14539,10 @@
       "straight_component_likelihood": "unknown",
       "priority_score": 2220,
       "processing_status": "candidate_field",
-      "blocker_or_rejection_reason": "The exact Westbury map target and the road, escarpment, and White Horse scene identify one candidate field. The wide source frames are strongly oblique and the additional controls are compressed, near-collinear, or affected by terrain parallax; the near-nadir frames contain no persistent landmarks, so no image footprint is published.",
+      "blocker_or_rejection_reason": "The exact Westbury map target identifies one candidate field, but the available oblique frames mix terrain depths and leave the road, escarpment, and White Horse controls compressed or near-collinear. No reproducible affine or projective source-frame footprint survives the bounded review. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": "2026-07-22"
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_079e9ed8bea7",
@@ -22947,11 +22947,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Combe Hill publisher target retains a candidate field, but the linked report evidence supplies no sourced physical formation size. The early scale gate therefore prevents a coordinate-size display footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_de3f149726f6",
@@ -23860,11 +23860,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Eight original Pilgrim's Trail catalog frames were hash-verified and reviewed around the exact publisher target. They retain no camera pose, sourced scale, or independent pixel-to-reference crosswalk, so no source-frame footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_4ea612a2af0b",
@@ -24307,11 +24307,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Three original Woodcote Lane catalog frames were reviewed, but the near-nadir frame is unavailable and the report's grid and URL targets remain inconsistent. No camera pose, scale, or independent crosswalk supports a footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_9e23e0510dbf",
@@ -24938,11 +24938,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Little Nutford publisher target retains a candidate field, but the linked report evidence supplies no sourced physical formation size. The early scale gate therefore prevents a coordinate-size display footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_29bca12367b9",
@@ -25757,11 +25757,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Oliver's Castle publisher target retains a candidate field, but the bounded review found no reproducible persistent-landmark match or distributed affine/projective controls. No source-frame footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_76a70382f1a9",
@@ -26320,11 +26320,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Stanton St Bernard publisher target retains a candidate field, but the linked report evidence supplies no sourced physical formation size. The early scale gate therefore prevents a coordinate-size display footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_d0f5312794e8",
@@ -26576,11 +26576,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Eight original Little Down catalog frames retain one candidate field, but the visible tree islands are same-flight evidence rather than independent controls. No retained pose, metric scale, or reference crosswalk supports a footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_edab9414ec9f",
@@ -27386,11 +27386,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Six original Woodborough Hill catalog frames were reviewed around the publisher target. Their metadata is Photoshop-only and supplies no camera pose, metric scale, or independent reference crosswalk. No source-frame footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_969c2fe55692",
@@ -29009,11 +29009,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Hackpen Hill White Horse publisher target retains a candidate field, but the bounded review ended without a staged, hash-verified full frame and distributed reference controls. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_e92d77f71af8",
@@ -29069,11 +29069,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Nun's Walk publisher target retains a candidate field, but the linked report evidence supplies no sourced physical formation size. The early scale gate therefore prevents a coordinate-size display footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ec30f3c01b4d",
@@ -33269,11 +33269,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2178,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Hetty Pegler's Tump publisher target retains a candidate field, but the bounded review found no reproducible persistent-landmark match or distributed affine/projective controls. No source-frame footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_f06f42a013c4",

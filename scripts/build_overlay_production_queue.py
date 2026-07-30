@@ -660,13 +660,13 @@ PRODUCTION_REVIEW = {
     "cc_029cf09b5162": {
         "processing_status": "candidate_field",
         "reason": (
-            "The exact Westbury map target and the road, escarpment, and White Horse "
-            "scene identify one candidate field. The wide source frames are strongly "
-            "oblique and the additional controls are compressed, near-collinear, or "
-            "affected by terrain parallax; the near-nadir frames contain no persistent "
-            "landmarks, so no image footprint is published."
+            "The exact Westbury map target identifies one candidate field, but the "
+            "available oblique frames mix terrain depths and leave the road, "
+            "escarpment, and White Horse controls compressed or near-collinear. "
+            "No reproducible affine or projective source-frame footprint survives "
+            "the bounded review. Explicit outcome: candidate_field."
         ),
-        "review_date": "2026-07-22",
+        "review_date": "2026-07-30",
     },
     "cc_70a65215ef96": {
         "processing_status": "candidate_field",
@@ -1157,6 +1157,116 @@ PRODUCTION_REVIEW = {
             "candidate_field."
         ),
         "review_date": "2026-07-29",
+    },
+    "cc_49cc2f4a4128": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eight original Pilgrim's Trail catalog frames were hash-verified and "
+            "reviewed around the exact publisher target. They retain no camera pose, "
+            "sourced scale, or independent pixel-to-reference crosswalk, so no "
+            "source-frame footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_8ea75ae79c53": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Six original Woodborough Hill catalog frames were reviewed around the "
+            "publisher target. Their metadata is Photoshop-only and supplies no "
+            "camera pose, metric scale, or independent reference crosswalk. No "
+            "source-frame footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_ebb616c3eb52": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eight original Little Down catalog frames retain one candidate field, "
+            "but the visible tree islands are same-flight evidence rather than "
+            "independent controls. No retained pose, metric scale, or reference "
+            "crosswalk supports a footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_86cadc2efb3d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Three original Woodcote Lane catalog frames were reviewed, but the "
+            "near-nadir frame is unavailable and the report's grid and URL targets "
+            "remain inconsistent. No camera pose, scale, or independent crosswalk "
+            "supports a footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e3c5c466d9e1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hackpen Hill White Horse publisher target retains a candidate field, "
+            "but the bounded review ended without a staged, hash-verified full frame "
+            "and distributed reference controls. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_76a63b9aa326": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Oliver's Castle publisher target retains a candidate field, but the "
+            "bounded review found no reproducible persistent-landmark match or "
+            "distributed affine/projective controls. No source-frame footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e74fb3ca1fc8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hetty Pegler's Tump publisher target retains a candidate field, but "
+            "the bounded review found no reproducible persistent-landmark match or "
+            "distributed affine/projective controls. No source-frame footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d4f0ffc7b93f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Combe Hill publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e92d77f71af8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Nun's Walk publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d04a0f91f17d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Stanton St Bernard publisher target retains a candidate field, but "
+            "the linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_247d37448c7d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Little Nutford publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
     },
 }
 
