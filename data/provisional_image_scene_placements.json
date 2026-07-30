@@ -6444,6 +6444,412 @@
           "status": "directed_orientation_transferred_no_180_degree_ambiguity"
         }
       }
+    },
+    {
+      "overlay_id": "norton-plantation-2020-coordinate-size-geometry-placement",
+      "observation_id": "regobs_norton_plantation_2020_crop_geometry_v1",
+      "formation_id": "cc_b844f0eade69",
+      "assertion_id": "sx_connector_2e1ef82b596dfede",
+      "title": "Norton Plantation 2020 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/norton/DJI_0379.jpg",
+      "source_image_identifier": "gimg_31065f525d121be135d7",
+      "source_image_sha256": "3a7fc7d4525666e4cfbfe416d0d5f303dee09cf32ff50eadd0f12f415646cf98",
+      "anchor_pixel_xy": [
+        402,
+        390
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.1919188,
+        -2.1264847
+      ],
+      "corners_wgs84": [
+        [
+          51.191623589447,
+          -2.126715176746
+        ],
+        [
+          51.192069710788,
+          -2.126945861029
+        ],
+        [
+          51.192210674077,
+          -2.126255442468
+        ],
+        [
+          51.191764551386,
+          -2.126024764147
+        ]
+      ],
+      "corner_basis": "A similarity transform places the complete original catalog frame around the precise publisher target using the sourced approximate 150 ft diameter and a directed same-flight hillfort/woodland orientation. Formation geometry supplies scale and is explicitly non-independent.",
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Temporary Temples precise target and size, same-event full catalog originals, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "Temporary Temples documents an approximate 150 ft diameter and precise Google target. The selected original and panorama reproduce Norton Plantation and Scratchbury Hillfort on one directed side. This remains candidate/unaccepted and publication-ineligible.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.1919188,
+          -2.1264847
+        ],
+        "reported_place": "Scratchbury Hillfort, near Norton Plantation, Wiltshire, England",
+        "reported_date": "2020-08-07",
+        "source_report_url": "https://temporarytemples.co.uk/project/scratchbury-hillfort-wilts-7th-august-2020",
+        "documented_operational_overall_diameter_m": 45.72,
+        "resolved_google_short_url": "https://goo.gl/maps/2a5GXKDEZ2qY3xew6"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The precise target, sourced size, nonfold footprint, and one-sided hillfort/woodland context support display placement; no independent ground checkpoint validates the transform.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 12 m, yaw uncertainty is plus or minus 15 degrees, size is approximate, and independent checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not survey georegistration or an accuracy benchmark. It is candidate/unaccepted, publication-ineligible, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "publication_eligible": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_31065f525d121be135d7",
+        "source_frame_size_px": [
+          800,
+          778
+        ],
+        "anchor_pixel_xy": [
+          402,
+          390
+        ],
+        "source_geometry_control_pixels": [
+          [
+            52,
+            390
+          ],
+          [
+            752,
+            390
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -22.86,
+            0
+          ],
+          [
+            22.86,
+            0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "publisher approximate overall diameter",
+            "value_ft": 150,
+            "value_m": 45.72,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative full-design span",
+            "source_points_xy": [
+              [
+                52,
+                390
+              ],
+              [
+                752,
+                390
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Norton Plantation woodland edge and Scratchbury Hillfort crest",
+            "role": "unique field and directed orientation context",
+            "accepted_for_fit": false,
+            "reason": "Context only; not a coplanar transform point or checkpoint."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.020183224261,
+            0.062117577036,
+            -16.112198890944
+          ],
+          [
+            0.062117577036,
+            0.020183224261,
+            -32.842723430224
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_diameter_m": 45.72,
+        "orientation_basis": "Same-flight selected-to-panorama registration transfers the one-sided plantation and hillfort direction to the selected original; the operational source-top bearing is 252 degrees true.",
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound scale interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -2.1344847,
+          51.1869188,
+          -2.1184847,
+          51.1969188
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "6b9d5291d2b30a87b93f1d40d573765c52656ad0f0291b9063e7cba45d8d7e4e",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.004265955918,
+            -0.004265955918
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -2648.403551108572,
+          "result": "pass_non_folded"
+        },
+        "source_top_control_bearing_true_deg": 252,
+        "cross_frame_orientation_transfer": {
+          "model": "same_flight_sift_ratio_ransac_homography_selected_to_panorama",
+          "selected_keypoints": 8000,
+          "panorama_keypoints": 8000,
+          "ratio_test_matches": 212,
+          "ransac_inliers": 167,
+          "inlier_ratio": 0.7877358491,
+          "inlier_rmse_px": 1.878984,
+          "inlier_max_px": 3.877983,
+          "selected_inlier_bbox_xyxy": [
+            11.761333,
+            15.947232,
+            552.976563,
+            762.975098
+          ],
+          "selected_to_panorama_homography": [
+            [
+              0.105940848702,
+              0.818998666856,
+              162.104431825852
+            ],
+            [
+              -0.174641682199,
+              -0.060593103832,
+              1070.088665392204
+            ],
+            [
+              0.000583381652,
+              0.000100579847,
+              1
+            ]
+          ],
+          "status": "directed_orientation_transferred_no_180_degree_ambiguity"
+        }
+      }
+    },
+    {
+      "overlay_id": "enmill-barn-2022-coordinate-size-geometry-placement",
+      "observation_id": "regobs_enmill_barn_2022_crop_geometry_v1",
+      "formation_id": "cc_76a70382f1a9",
+      "assertion_id": "sx_connector_814ae40c5480aa0e",
+      "title": "Enmill Barn 2022 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2022/enmill/DJI_0071.jpg",
+      "source_image_identifier": "gimg_282a79843d05fc8930be",
+      "source_image_sha256": "0ca552db110ab29dcf317798092e52edbde26b3823224ea4a52f57ee9637cfda",
+      "anchor_pixel_xy": [
+        400,
+        400
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.0530566,
+        -1.3807254
+      ],
+      "corners_wgs84": [
+        [
+          51.053242348283,
+          -1.381020111927
+        ],
+        [
+          51.053242348285,
+          -1.380431424853
+        ],
+        [
+          51.052871315341,
+          -1.380431427202
+        ],
+        [
+          51.05287131534,
+          -1.381020109572
+        ]
+      ],
+      "corner_basis": "A similarity transform places the complete original around the precise publisher target using the sourced approximate 100 ft diameter. The fourfold quintuplet is handled with an explicit orientation-neutral north-up convention; this is not a claim about scene yaw.",
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_neutral_display_placement",
+      "reference_imagery": "Temporary Temples precise target and size, full catalog originals, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "Temporary Temples documents an approximate 100 ft diameter and precise Google target. The wider full original corroborates the target field. Fourfold symmetry permits an honest orientation-neutral display basis. This remains candidate/unaccepted and publication-ineligible.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.0530566,
+          -1.3807254
+        ],
+        "reported_place": "Crab Wood, Enmill Road, near Enmill Barn, Hampshire, England",
+        "reported_date": "2022-04-24",
+        "source_report_url": "https://temporarytemples.co.uk/project/crab-wood-24th-april-2022",
+        "documented_operational_overall_diameter_m": 30.48,
+        "resolved_google_short_url": "https://goo.gl/maps/c4cCqsWpMYh6dxAy8"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The precise target, sourced size, unique-field context, permitted orientation-neutral basis, and nonfold footprint support display geometry; no independent ground checkpoint validates it.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 12 m, photographic yaw is not claimed, size is approximate, and independent checkpoint count is zero.",
+      "quality_disclosure": "Coordinate- and size-constrained orientation-neutral display placement, not survey georegistration or an accuracy benchmark. It is candidate/unaccepted, publication-ineligible, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "publication_eligible": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_orientation_neutral_display_placement",
+        "source_image_identifier": "gimg_282a79843d05fc8930be",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "anchor_pixel_xy": [
+          400,
+          400
+        ],
+        "source_geometry_control_pixels": [
+          [
+            105,
+            400
+          ],
+          [
+            695,
+            400
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -15.24,
+            0
+          ],
+          [
+            15.24,
+            0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "publisher approximate overall diameter",
+            "value_ft": 100,
+            "value_m": 30.48,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative full-design span",
+            "source_points_xy": [
+              [
+                105,
+                400
+              ],
+              [
+                695,
+                400
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "woodland notch and field/landscape arrangement in the wide original",
+            "role": "unique field context",
+            "accepted_for_fit": false,
+            "reason": "Context only; no geographic yaw or checkpoint is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.051661016949,
+            0,
+            -20.664406779661
+          ],
+          [
+            0,
+            -0.051661016949,
+            20.664406779661
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_diameter_m": 30.48,
+        "orientation_basis": "Orientation-neutral convention: the four-satellite quintuplet is invariant under 90-degree rotations at the display-geometry level. Source top is assigned true north only for reproducibility.",
+        "orientation_uncertainty_deg_modulo_90": 45,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound scale interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.3887254,
+          51.0480566,
+          -1.3727254,
+          51.0580566
+        ],
+        "reference_export_size_px": [
+          1400,
+          1000
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "865db84201d4a89c33c768d79b667f04a31a4d835ea323dd8ad620a48c355ae5",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.002668860672,
+            -0.002668860672
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -1703.80332200632,
+          "result": "pass_non_folded"
+        },
+        "source_top_control_bearing_true_deg": 0,
+        "cross_frame_orientation_transfer": {
+          "status": "not_applicable_orientation_neutral_basis",
+          "photographic_yaw_claimed": false
+        }
+      }
     }
   ]
 }

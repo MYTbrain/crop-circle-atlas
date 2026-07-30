@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T08:28:16.403578Z",
+  "generated_at": "2026-07-30T09:53:20.043947Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 75,
+    "candidate_field": 85,
     "clues_reviewed": 2,
-    "provisional_registration": 73,
-    "queued": 1756,
+    "provisional_registration": 75,
+    "queued": 1744,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -19188,11 +19188,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Sunnyside has a sourced approximate 30.48 metre diameter, but its center remains at 25 metre uncertainty and no original-frame orientation evidence was staged before the bounded access cutoff. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_3a709a5ad15a",
@@ -20958,11 +20958,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Cooks Plantation has a sourced approximate 36.576 metre diameter, but its center remains at 25 metre uncertainty and no original-frame orientation evidence was staged before the bounded access cutoff. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_b370c99e94ef",
@@ -21097,11 +21097,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Forest Hill has a sourced approximate 76.2 metre diameter and reviewed original catalog frames, but the publisher center remains at 25 metre uncertainty. That exceeds the 12 metre display-placement gate, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_d62e0f21e878",
@@ -21168,11 +21168,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Ockley Hill has a sourced approximate 45.72 metre size and reviewed original catalog frames, but the publisher center remains at 25 metre uncertainty. That exceeds the 12 metre display-placement gate, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_dec77eb484bc",
@@ -22618,11 +22618,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Norton Plantation / Scratchbury Hillfort has a precise publisher target, sourced approximate 45.72 metre diameter, and directed same-flight landscape context. Its nonfold coordinate-size display footprint has zero independent checkpoints and remains unaccepted, rights-gated, publication-ineligible, and excluded from alignment calculations. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "norton-plantation-2020-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_c1dc991a35bc",
@@ -22818,11 +22818,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Fox Hill has a sourced approximate 45.72 to 54.864 metre width and reviewed original catalog frames, but its publisher center remains at 25 metre uncertainty. That exceeds the 12 metre placement gate, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_d4272d0f7fb7",
@@ -23477,11 +23477,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Roundway 2020 has a sourced approximate 60.96 metre diameter, but the precise Google target was not resolved against the Connector target before the bounded access cutoff. Center uncertainty remains 25 metres and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_2adf4a9b92d5",
@@ -24115,11 +24115,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Chirton Bottom has a sourced approximate 36.576 metre diameter, but the precise Google target was not resolved against the Connector target before the bounded access cutoff. Center uncertainty remains 25 metres and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_812f7c2283fc",
@@ -25126,11 +25126,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Kiteland Cottages has a sourced approximate 76.2 metre diameter and reviewed original frames, but the publisher Google and printed OS-grid targets differ by 50.79 metres. The 12 metre center gate fails and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_42bdbaf09713",
@@ -25822,11 +25822,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Enmill Barn / Crab Wood has a precise publisher target and sourced approximate 30.48 metre diameter. Its fourfold geometry supports an orientation-neutral nonfold display footprint, but photographic yaw is not claimed and independent checkpoint count is zero. It remains unaccepted, rights-gated, publication-ineligible, and alignment-ineligible. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "enmill-barn-2022-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_86082744be4d",
@@ -26387,11 +26387,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Gussage St Andrew has a sourced approximate 60.96 metre diameter and reviewed original catalog frames, but the publisher center remains at 25 metre uncertainty. That exceeds the 12 metre display-placement gate, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_dd260263c626",
@@ -28949,11 +28949,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Roundway Down has a sourced approximate 76.2 metre diameter and an orientation-neutral source frame, but its two publisher anchors differ by 18.03 metres. A center within the 12 metre gate is therefore not proved and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_e3c5c466d9e1",

@@ -1268,6 +1268,130 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_d62e0f21e878": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ockley Hill has a sourced approximate 45.72 metre size and reviewed "
+            "original catalog frames, but the publisher center remains at 25 metre "
+            "uncertainty. That exceeds the 12 metre display-placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_cd13445a6e89": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Forest Hill has a sourced approximate 76.2 metre diameter and reviewed "
+            "original catalog frames, but the publisher center remains at 25 metre "
+            "uncertainty. That exceeds the 12 metre display-placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d0f5312794e8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Gussage St Andrew has a sourced approximate 60.96 metre diameter and "
+            "reviewed original catalog frames, but the publisher center remains at "
+            "25 metre uncertainty. That exceeds the 12 metre display-placement gate, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dc30267dcbce": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway Down has a sourced approximate 76.2 metre diameter and an "
+            "orientation-neutral source frame, but its two publisher anchors differ "
+            "by 18.03 metres. A center within the 12 metre gate is therefore not "
+            "proved and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2782fed800ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sunnyside has a sourced approximate 30.48 metre diameter, but its center "
+            "remains at 25 metre uncertainty and no original-frame orientation "
+            "evidence was staged before the bounded access cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_aac7d03b1817": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cooks Plantation has a sourced approximate 36.576 metre diameter, but "
+            "its center remains at 25 metre uncertainty and no original-frame "
+            "orientation evidence was staged before the bounded access cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_80a8efdc1d13": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chirton Bottom has a sourced approximate 36.576 metre diameter, but the "
+            "precise Google target was not resolved against the Connector target "
+            "before the bounded access cutoff. Center uncertainty remains 25 metres "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_239d6d0c8abd": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway 2020 has a sourced approximate 60.96 metre diameter, but the "
+            "precise Google target was not resolved against the Connector target "
+            "before the bounded access cutoff. Center uncertainty remains 25 metres "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d03144df7e92": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fox Hill has a sourced approximate 45.72 to 54.864 metre width and "
+            "reviewed original catalog frames, but its publisher center remains at "
+            "25 metre uncertainty. That exceeds the 12 metre placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b844f0eade69": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Norton Plantation / Scratchbury Hillfort has a precise publisher target, "
+            "sourced approximate 45.72 metre diameter, and directed same-flight "
+            "landscape context. Its nonfold coordinate-size display footprint has "
+            "zero independent checkpoints and remains unaccepted, rights-gated, "
+            "publication-ineligible, and excluded from alignment calculations. "
+            "Explicit outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_37d7177f4cdc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Kiteland Cottages has a sourced approximate 76.2 metre diameter and "
+            "reviewed original frames, but the publisher Google and printed OS-grid "
+            "targets differ by 50.79 metres. The 12 metre center gate fails and no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_76a70382f1a9": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Enmill Barn / Crab Wood has a precise publisher target and sourced "
+            "approximate 30.48 metre diameter. Its fourfold geometry supports an "
+            "orientation-neutral nonfold display footprint, but photographic yaw is "
+            "not claimed and independent checkpoint count is zero. It remains "
+            "unaccepted, rights-gated, publication-ineligible, and alignment-ineligible. "
+            "Explicit outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 
