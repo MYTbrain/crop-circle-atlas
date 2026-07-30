@@ -5073,6 +5073,446 @@
           "result": "pass_non_folded"
         }
       }
+    },
+    {
+      "overlay_id": "hill-barn-2016-coordinate-size-geometry-placement",
+      "observation_id": "regobs_hill_barn_2016_crop_geometry_v1",
+      "formation_id": "cc_2d6aa1adc5ee",
+      "assertion_id": "sx_connector_bb8c421d4c02844d",
+      "title": "Hill Barn 2016 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/hillbarn/E.-Kennett-May05A.jpg",
+      "source_image_sha256": "9ab59dab78cea893314b13e7ad69e93b6d37c96c13ae5d03385ce2ea1e1c24ab",
+      "anchor_pixel_xy": [
+        414.919250488281,
+        334.546234130859
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.40024287,
+        -1.81747726
+      ],
+      "corners_wgs84": [
+        [
+          51.400608667181,
+          -1.818056884033
+        ],
+        [
+          51.400649944468,
+          -1.816872056272
+        ],
+        [
+          51.399984052518,
+          -1.817098865276
+        ],
+        [
+          51.399986183463,
+          -1.817888234955
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the retained publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "The Connector page publishes SU127668 / E412794 N166817 and documents an approximate 120 ft (36.5 m) overall size. The selected aerial and G0011672 show the formation in the same field immediately south of a persistent scrub/hedge boundary; the current north-up reference resolves that unique field at the publisher target. The selected frame?s formation-to-north-boundary direction makes source top approximately north. A conservative 25 degree yaw uncertainty covers manual transfer and obliquity.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.40024287,
+          -1.81747726
+        ],
+        "reported_place": "Hill Barn, Wiltshire, England",
+        "reported_date": "2016-05-06",
+        "source_report_url": "https://cropcircleconnector.com/2016/hillbarn/hillbarn060516a.html",
+        "documented_operational_diameter_m": 36.5,
+        "publisher_grid_reference": "SU127668",
+        "publisher_easting": 412794,
+        "publisher_northing": 166817,
+        "publisher_crs": "EPSG:27700"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 25 degrees; zero independent ground checkpoints validate the footprint. Publisher center, approximate size, and field-boundary yaw have no independent ground checkpoint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_5a4babfbe625eaa001da",
+        "source_frame_size_px": [
+          800,
+          670
+        ],
+        "source_geometry_control_pixels": [
+          [
+            410,
+            174
+          ],
+          [
+            633,
+            338
+          ],
+          [
+            421,
+            533
+          ],
+          [
+            191,
+            331
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            0,
+            18.25
+          ],
+          [
+            18.25,
+            0
+          ],
+          [
+            0,
+            -18.25
+          ],
+          [
+            -18.25,
+            0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate overall diameter",
+            "value_ft": 120,
+            "value_m": 36.5,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "outer-ring extrema",
+            "source_points_xy": [
+              [
+                410,
+                174
+              ],
+              [
+                633,
+                338
+              ],
+              [
+                421,
+                533
+              ],
+              [
+                191,
+                331
+              ]
+            ],
+            "status": "used_for_projective_display_rectification_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation-to-north-boundary direction",
+            "status": "used_for_display_yaw_only_not_ground_control"
+          },
+          {
+            "type": "formation nodes, tramlines, crop rows, and shadows",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "north scrub/hedge field boundary",
+            "role": "unique field and orientation context",
+            "accepted_for_fit": false,
+            "reason": "It supplies a directed side of the field but not distributed same-point controls around the formation."
+          },
+          {
+            "feature": "distant field junctions, trees, and buildings in G0011672",
+            "role": "landscape context",
+            "accepted_for_fit": false,
+            "reason": "Mixed depth, low resolution, and clustered away from the formation plane."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.09967881603308965,
+            -0.003054225560902458,
+            -40.33687932596973
+          ],
+          [
+            0.0019651699628574636,
+            -0.12408644622614252,
+            40.697266237947396
+          ],
+          [
+            -8.351717831325235e-05,
+            0.0007201579487006982,
+            1.0
+          ]
+        ],
+        "documented_operational_diameter_m": 36.5,
+        "orientation_basis": "The source-top side is the side nearest the persistent north field boundary visible in the selected and wide same-event frames; the north-up reference places that boundary north of the publisher target.",
+        "orientation_uncertainty_deg": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.82947726,
+          51.39224287,
+          -1.80547726,
+          51.40824287
+        ],
+        "reference_export_size_px": [
+          1600,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "1a367cb95de1037e7ecf0f7861ba9c40fc17807fe211ae7ea1a41644e7870d48",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.933269774528,
+            1.481785667681
+          ],
+          "jacobian_determinant_range": [
+            -0.018345963021,
+            -0.004583591934
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4918.878282883244,
+          "result": "pass_non_folded"
+        },
+        "source_top_bearing_true_deg": 0
+      }
+    },
+    {
+      "overlay_id": "rollright-stones-2017-coordinate-size-geometry-placement",
+      "observation_id": "regobs_rollright_stones_2017_crop_geometry_v1",
+      "formation_id": "cc_e018e8685c50",
+      "assertion_id": "sx_connector_aca487024499230a",
+      "title": "Rollright Stones 2017 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/rollright/rollright-edit1.jpg",
+      "source_image_sha256": "0499ce113a30f5432c667d00210a98e9af39bcf8e34e35d8bfc539b2c4d6d995",
+      "anchor_pixel_xy": [
+        420.016632080078,
+        620.368377685547
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.97468482,
+        -1.56748156
+      ],
+      "corners_wgs84": [
+        [
+          51.974858407909,
+          -1.56871944789
+        ],
+        [
+          51.975271865966,
+          -1.568399991398
+        ],
+        [
+          51.974762936509,
+          -1.566972753583
+        ],
+        [
+          51.974373947571,
+          -1.567374733534
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the retained publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "The Connector page contains two conflicting location encodings: the printed SP2935430709 resolves to E429354 N230709, while the Streetmap href carries E429807 N230779, equivalent to SP2980730779. They are 458.376 m apart and are not treated as consistent. The page also documents wheat with an approximate 140 ft (43 m) overall size. The selected original visibly contains the full formation and the King's Men stone circle in the same directed scene; the official Rollright Trust location is 51 deg 58 min 32.68 sec N, 1 deg 34 min 14.11 sec W, approximately 244 m away at bearing 298.929 deg from the retained numeric anchor. The original catalog frame and north-up reference place the formation on the southeast side of the King's Men monument, matching the numeric Streetmap anchor. The printed grid point is 453 m farther west and would place the formation southwest of the monument, contrary to that staged monument/field-side relationship. The numeric anchor is therefore retained operationally for this provisional display, not promoted as independently validated.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.97468482,
+          -1.56748156
+        ],
+        "reported_place": "The Rollright Stones, Oxfordshire, England",
+        "reported_date": "2017-08-05",
+        "source_report_url": "https://cropcircleconnector.com/2017/rollright/rollrightl2017a.html",
+        "documented_operational_diameter_m": 43.0,
+        "publisher_grid_reference": "SP2980730779",
+        "publisher_easting": 429807,
+        "publisher_northing": 230779,
+        "publisher_crs": "EPSG:27700",
+        "printed_page_grid_reference": "SP2935430709",
+        "printed_page_grid_reference_easting": 429354,
+        "printed_page_grid_reference_northing": 230709,
+        "numeric_streetmap_anchor_grid_reference": "SP2980730779",
+        "numeric_streetmap_anchor_easting": 429807,
+        "numeric_streetmap_anchor_northing": 230779,
+        "printed_numeric_anchor_separation_m": 458.376,
+        "coordinate_conflict_status": "not_consistent_numeric_streetmap_anchor_retained_for_provisional_display"
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 12 degrees; zero independent ground checkpoints validate the footprint. The printed and numeric source locations conflict by 458.376 m; the numeric anchor is retained from staged monument/field-side evidence but has no independent ground checkpoint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_7585cd912f62ed706975",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            413,
+            465
+          ],
+          [
+            747,
+            615
+          ],
+          [
+            427,
+            775
+          ],
+          [
+            77,
+            626
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -18.817210272011,
+            10.400124882853
+          ],
+          [
+            10.400124882853,
+            18.817210272011
+          ],
+          [
+            18.817210272011,
+            -10.400124882853
+          ],
+          [
+            -10.400124882853,
+            -18.817210272011
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate overall diameter",
+            "value_ft": 140,
+            "value_m": 43.0,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "outer-ring extrema on original catalog frame",
+            "source_points_xy": [
+              [
+                413,
+                465
+              ],
+              [
+                747,
+                615
+              ],
+              [
+                427,
+                775
+              ],
+              [
+                77,
+                626
+              ]
+            ],
+            "status": "used_for_projective_display_rectification_only_explicitly_non_independent"
+          },
+          {
+            "type": "source formation-to-monument direction",
+            "status": "used_for_display_yaw_only_not_ground_control"
+          },
+          {
+            "type": "formation nodes, tramlines, shadows, and crop rows",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "King's Men stone circle at the Rollright Stones",
+            "role": "unique field and directed orientation context",
+            "accepted_for_fit": false,
+            "reason": "The official coordinate supplies bearing context only; the monument is outside the formation plane and is not a transform control or checkpoint."
+          },
+          {
+            "feature": "road, hedges, and monument-side tree groups",
+            "role": "field context",
+            "accepted_for_fit": false,
+            "reason": "Mixed depth and clustered outside the selected source frame."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.03183437776500603,
+            0.11556413343930921,
+            -85.06330294099078
+          ],
+          [
+            0.05306485535835353,
+            -0.06706245996470273,
+            19.315307806397396
+          ],
+          [
+            -6.907533648503921e-05,
+            -1.1658136152125848e-05,
+            1.0
+          ]
+        ],
+        "documented_operational_diameter_m": 43.0,
+        "orientation_basis": "The source point nearest the visible King's Men stone circle maps toward the official monument coordinate at bearing 298.929 degrees true from the retained numeric Streetmap anchor. The conflicting printed grid point is not used.",
+        "orientation_uncertainty_deg": 12,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.57948156,
+          51.96668482,
+          -1.55548156,
+          51.98268482
+        ],
+        "reference_export_size_px": [
+          1600,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "016c2511c784892251c75cf499639e01266b77f7a26ca41c2783755365e3dfdf",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.9354939553629051,
+            1.0
+          ],
+          "jacobian_determinant_range": [
+            -0.009732100284723384,
+            -0.007967636867983546
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -5621.6569979351025,
+          "result": "pass_non_folded"
+        },
+        "source_monumentward_bearing_true_deg": 298.929085
+      }
     }
   ]
 }

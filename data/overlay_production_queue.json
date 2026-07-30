@@ -1,18 +1,18 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T01:51:39.897913Z",
+  "generated_at": "2026-07-30T04:18:11.550678Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 48,
+    "candidate_field": 57,
     "clues_reviewed": 2,
-    "provisional_registration": 67,
-    "queued": 1791,
+    "provisional_registration": 69,
+    "queued": 1779,
     "source_image_acquired": 11,
-    "unresolved": 7
+    "unresolved": 8
   },
   "records": [
     {
@@ -19052,11 +19052,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Yarnbury Castle target and road, castle, and A36 context resolve one candidate field. No documented overall size or stable distributed same-plane controls support an honest image footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_175208ac7d3f",
@@ -19122,11 +19122,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Spiers Lane publisher and Connector targets differ by 85.2 metres. The road-side context does not uniquely resolve the center and directed frame, so the documented 240-foot size cannot support an honest footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_2782fed800ba",
@@ -19253,11 +19253,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Lay Wood evidence retains a candidate field and documents an approximate 200-foot formation, but its publisher targets differ by about 17 metres and no independent control resolves the center. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_3af6a382b875",
@@ -19399,11 +19399,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Sutton Hall target and same-event context resolve one candidate field beside the hall. No documented overall size or stable distributed same-plane controls support an honest image footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_743e3bd229e3",
@@ -19604,11 +19604,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Westwoods landscape suggests the reported field, but the Connector point lies in woodland and the bounded review cannot reproduce an exact formation center or directed frame. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_f8807dac7eef",
@@ -19669,11 +19669,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Manton Drove target, unique field, and approximate 27.4-to-30.5 metre size are retained, but no defensible directed orientation supports an image footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_fca804fc7fdd",
@@ -20076,11 +20076,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "hill-barn-2016-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_37b6e035f986",
@@ -20419,11 +20419,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Barton Stacey Belt target, field, and documented 76.2-metre size are retained, but the source frame has an unresolved 180-degree directional ambiguity. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_62493118db40",
@@ -20549,11 +20549,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "The Normanton Down Barrows source and secondary publisher targets differ by about 124 metres, and the bounded review found no visual crosswalk that resolves one formation-bearing field. No source-photo footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_76570d34bf3c",
@@ -20749,11 +20749,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Norton Plantation evidence retains a candidate field and documents an approximate 200-foot formation, but its publisher targets differ by about 42 metres and no directed source-frame orientation survives. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_91a458f45811",
@@ -22492,11 +22492,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Wilton Windmill evidence retains a candidate field and documents an approximate 330-foot formation, but its publisher targets differ by about 66 metres and no directed source-frame orientation survives. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_b3a720cf7d69",
@@ -23084,11 +23084,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "rollright-stones-2017-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_e5b84624008b",

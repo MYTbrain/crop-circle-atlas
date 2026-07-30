@@ -140985,6 +140985,108 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Hill Barn 2016 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2016/hillbarn/hillbarn060516a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>hill-barn-2016-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_2d6aa1adc5ee</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2016/hillbarn/hillbarn060516a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_hill_barn_2016_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.817888234955,51.399986183463,0 -1.817098865276,51.399984052518,0 -1.816872056272,51.400649944468,0 -1.818056884033,51.400608667181,0 -1.817888234955,51.399986183463,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Rollright Stones 2017 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2017/rollright/rollrightl2017a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>rollright-stones-2017-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_e018e8685c50</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2017/rollright/rollrightl2017a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_rollright_stones_2017_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.567374733534,51.974373947571,0 -1.566972753583,51.974762936509,0 -1.568399991398,51.975271865966,0 -1.56871944789,51.974858407909,0 -1.567374733534,51.974373947571,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

@@ -980,6 +980,105 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-29",
     },
+    "cc_6b40658e7a2e": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Normanton Down Barrows source and secondary publisher targets "
+            "differ by about 124 metres, and the bounded review found no visual "
+            "crosswalk that resolves one formation-bearing field. No source-photo "
+            "footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_86f3c35cfc57": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Wilton Windmill evidence retains a candidate field and documents "
+            "an approximate 330-foot formation, but its publisher targets differ "
+            "by about 66 metres and no directed source-frame orientation survives. "
+            "No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8b083004c965": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Norton Plantation evidence retains a candidate field and documents "
+            "an approximate 200-foot formation, but its publisher targets differ "
+            "by about 42 metres and no directed source-frame orientation survives. "
+            "No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3a709a5ad15a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Lay Wood evidence retains a candidate field and documents an "
+            "approximate 200-foot formation, but its publisher targets differ by "
+            "about 17 metres and no independent control resolves the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_136c5cb78f3f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Yarnbury Castle target and road, castle, and A36 context resolve "
+            "one candidate field. No documented overall size or stable distributed "
+            "same-plane controls support an honest image footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_459260b91734": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Sutton Hall target and same-event context resolve one candidate "
+            "field beside the hall. No documented overall size or stable distributed "
+            "same-plane controls support an honest image footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_175208ac7d3f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Spiers Lane publisher and Connector targets differ by 85.2 metres. "
+            "The road-side context does not uniquely resolve the center and directed "
+            "frame, so the documented 240-foot size cannot support an honest "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_5c145606dd1c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Barton Stacey Belt target, field, and documented 76.2-metre size "
+            "are retained, but the source frame has an unresolved 180-degree "
+            "directional ambiguity. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f8807dac7eef": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Manton Drove target, unique field, and approximate 27.4-to-30.5 "
+            "metre size are retained, but no defensible directed orientation "
+            "supports an image footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_ccc61e24b8c8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Westwoods landscape suggests the reported field, but the Connector "
+            "point lies in woodland and the bounded review cannot reproduce an exact "
+            "formation center or directed frame. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
 }
 
 
