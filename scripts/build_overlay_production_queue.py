@@ -1647,6 +1647,129 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_045ccfcde873": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cley Hill retains a publisher coordinate candidate with 25 metre "
+            "uncertainty. Source acquisition did not complete before the bounded "
+            "cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_113a6637adde": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Tidcombe Down retains a publisher coordinate candidate with 25 "
+            "metre uncertainty. Source acquisition did not complete before the "
+            "bounded cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_c1dc991a35bc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Belmore Lane retains a publisher coordinate candidate with 25 "
+            "metre uncertainty. Source acquisition did not complete before the "
+            "bounded cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6dd1867f35ae": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Long Wood retains a publisher coordinate candidate with 25 metre "
+            "uncertainty. Source acquisition did not complete before the bounded "
+            "cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_a6558cff2782": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sandal Castle retains a publisher grid candidate and a strong named "
+            "landmark lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_f3e05454e411": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Wilton Windmill retains a publisher grid candidate and a strong "
+            "named landmark lead, but no original catalog raster or fitted "
+            "persistent controls were completed before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_edbca8cc578d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Sanctuary retains a publisher grid candidate and a named "
+            "monument lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_3a9c49b0eab2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ackling Dyke retains a publisher grid candidate and a named "
+            "earthwork lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_84304b9d75ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "White Way has an event-matched approximate 30.48 metre diameter, "
+            "but its publisher target retains 25 metre uncertainty and original "
+            "frame inspection did not complete before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_66711c76f288": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Mid Wilts Way has an event-matched approximate 30.48 metre "
+            "diameter, but its publisher target retains 25 metre uncertainty and "
+            "original frame inspection did not complete before the bounded "
+            "cutoff. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_aa2b1c14b407": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Berwick Bassett Clump has an event-matched approximate 60.96 metre "
+            "diameter, but its publisher target retains 25 metre uncertainty, "
+            "the source describes an apparently incomplete design, and original "
+            "frame inspection did not complete before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_39e98d556610": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Summers Lane (1) has event-matched component dimensions, but no "
+            "overall footprint size, its publisher target retains 25 metre "
+            "uncertainty, and original frame inspection did not complete before "
+            "the bounded cutoff. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 
