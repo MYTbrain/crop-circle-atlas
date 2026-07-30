@@ -8820,6 +8820,215 @@
       }
     },
     {
+      "overlay_id": "beech-clump-2025-coordinate-size-directed-geometry-placement",
+      "registration_observation_id": "regobs_beech_clump_2025_crop_geometry_v1",
+      "formation_id": "cc_7bd8d137be89",
+      "assertion_id": "sx_connector_5f573dcf105383d1",
+      "title": "Beech Clump 2025 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2025/beech/DJI_20250712080356_0051_D.png",
+      "source_page_url": "https://cropcircleconnector.com/2025/beech/beech2025a.html",
+      "source_image_sha256": "ba5ef3bb5ca06871caa736ce8d3849061577e1fb1c2ed9e3b452fe565831747b",
+      "corners": [
+        [
+          50.988011116605,
+          -2.114792132386
+        ],
+        [
+          50.988011116605,
+          -2.113457287614
+        ],
+        [
+          50.987527963395,
+          -2.113457287614
+        ],
+        [
+          50.987527963395,
+          -2.114792132386
+        ]
+      ],
+      "center": [
+        50.98776954,
+        -2.11412471
+      ],
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Event-specific Connector map reference, Lucy Pringle dimensions, complete and directed-wide catalog originals, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_basis": "The event-specific grid anchor, independent same-event dimensions, complete source frame, directed contextual frame, and nonfold similarity footprint support provisional display geometry. No independent source-to-ground checkpoint validates it.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration or an accuracy benchmark. It is candidate/unaccepted, publication-ineligible, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_2edc87f2c47061996a54",
+        "source_frame_size_px": [
+          800,
+          460
+        ],
+        "anchor_pixel_xy": [
+          400,
+          230
+        ],
+        "source_geometry_control_pixels": [
+          [
+            75,
+            230
+          ],
+          [
+            725,
+            230
+          ],
+          [
+            400,
+            127.368421052632
+          ],
+          [
+            400,
+            332.631578947368
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -38,
+            0
+          ],
+          [
+            38,
+            0
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            -12
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "publisher approximate overall dimensions",
+            "value_ft": [
+              250,
+              80
+            ],
+            "value_m": [
+              76,
+              24
+            ],
+            "status": "operational_scale_constraints_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans",
+            "source_points_xy": [
+              [
+                75,
+                230
+              ],
+              [
+                725,
+                230
+              ],
+              [
+                400,
+                127.368421052632
+              ],
+              [
+                400,
+                332.631578947368
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "curving hedge and field boundary behind the formation in the directed wide original",
+            "role": "unique-field and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "No source-to-reference control fit or independent checkpoint is claimed."
+          },
+          {
+            "feature": "wooded chalk hillside and isolated beech clump",
+            "role": "event-location context",
+            "accepted_for_fit": false,
+            "reason": "Relief and near-horizon placement make these unsuitable as planar fit controls."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.116923076923,
+            0,
+            -46.769230769231
+          ],
+          [
+            0,
+            -0.116923076923,
+            26.892307692308
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          76,
+          24
+        ],
+        "orientation_basis": "The selected near-overhead frame's left-to-right long axis is assigned approximately true east-west. The directed wide frame shows the long axis approximately parallel to the event-field boundary, and the current north-up context gives that local boundary an approximately east-west tangent. This is a coarse display direction, not measured photographic yaw.",
+        "source_left_to_right_control_bearing_true_deg": 90,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound scale interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -2.12312471,
+          50.98176954,
+          -2.10512471,
+          50.99376954
+        ],
+        "reference_export_size_px": [
+          1400,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "ea2f9f7bb06c8063f441019c507af9125df7f2b9dc1184523134aff4f65218fb",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.013671005917,
+            -0.013671005917
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -5030.930177514793,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifier": "gimg_e3128ad378e160915822",
+          "context_source_image_url": "https://cropcircleconnector.com/2025/beech/DJI_20250712080727_0060_D-H.png",
+          "photographic_yaw_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

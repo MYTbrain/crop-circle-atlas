@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 83,
-    "overlay_placement_count": 83,
+    "mapped_catalog_image_count": 84,
+    "overlay_placement_count": 84,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -83817,13 +83817,15 @@
         "title_text": "",
         "width": 800,
         "height": 460,
-        "sha256": "",
+        "sha256": "ba5ef3bb5ca06871caa736ce8d3849061577e1fb1c2ed9e3b452fe565831747b",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "beech-clump-2025-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_e3128ad378e160915822",

@@ -1392,6 +1392,134 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_a2bcbffed0b6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Welsh Way has a sourced approximate 45.72 metre size, but the "
+            "publisher coordinate does not establish the formation center within "
+            "the 12 metre placement gate. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_91a458f45811": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Parkers Hill Plantation has a sourced approximate 60.96 to 67.056 "
+            "metre size, but the publisher coordinate does not establish the "
+            "formation center within the 12 metre placement gate. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dec77eb484bc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill has a full publisher grid reference, a sourced "
+            "approximate 60.96 metre diameter, and reviewed full catalog frames. "
+            "The retained reference places the target at or near a field boundary "
+            "and does not independently prove the formation center within 12 "
+            "metres. No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b370c99e94ef": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chillandham Lane 2S shares a field with a second same-date formation. "
+            "Reviewed full catalog frames and field context do not disambiguate "
+            "the 2S center, size, and orientation within 12 metres without a "
+            "cross-event assignment. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4a5094c50b69": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Muenchener Berg retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_37b6e035f986": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chilcomb Ranges retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_7bd8d137be89": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Beech Clump has an event-specific ten-figure grid reference, "
+            "independently documented approximate 76 by 24 metre dimensions, a "
+            "complete source frame, and directed same-event landscape context. "
+            "Its nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "publication-ineligible, and alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_5fa3397b58d7": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Preston Candover retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_002d58639768": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Barbury Castle has a sourced approximate 73.152 metre diameter and "
+            "a reviewed complete catalog frame, but its publisher grid targets "
+            "differ by approximately 38.3 metres. The 12 metre center gate fails "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b3a720cf7d69": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fulley Wood has a sourced approximate 54.864 to 60.96 metre size, "
+            "but its only cataloged publisher target retains 25 metre center "
+            "uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_53a94e6ae861": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Furzefield Shaw has an event-matched approximate 54.864 metre size, "
+            "but its publisher target retains 25 metre center uncertainty. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_499b670c00f5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chillandham Lane 1C shares a field and date with the separate 2S "
+            "formation. The staged sources do not reconcile the conflicting "
+            "targets or prove the 1C identity within 12 metres without a "
+            "cross-event assignment. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 
