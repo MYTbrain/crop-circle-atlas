@@ -1,18 +1,18 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T04:18:11.550678Z",
+  "generated_at": "2026-07-30T07:09:12.855843Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 57,
+    "candidate_field": 64,
     "clues_reviewed": 2,
-    "provisional_registration": 69,
-    "queued": 1779,
+    "provisional_registration": 73,
+    "queued": 1767,
     "source_image_acquired": 11,
-    "unresolved": 8
+    "unresolved": 9
   },
   "records": [
     {
@@ -19324,11 +19324,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Hoo Mill publisher target and source frames retain a candidate field, but no sourced metric size or distributed persistent controls support a defensible display footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_459260b91734",
@@ -19804,11 +19804,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Six original Cake Wood catalog frames were hash-verified and reviewed, but they retain no camera pose, sourced formation dimensions, or reference-image crosswalk that supports an honest footprint. The publisher target remains a candidate only. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_0d1a819fdc2a",
@@ -19870,11 +19870,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "One complete Cakebole Lane original frame survives review; two incomplete gray frames are excluded. No camera pose, sourced dimensions, or reference-image crosswalk supports a footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_0fd192c3bbcc",
@@ -19937,11 +19937,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "hatherden-lane-2023-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_1f2cfe563407",
@@ -20006,11 +20006,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Willoughby Hedge target and broad reported size retain a candidate field, but the complete original frame lacks defensible directed context and cannot support a stable footprint. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_2d6aa1adc5ee",
@@ -20218,11 +20218,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "yarnbury-castle-2019-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_4a5094c50b69",
@@ -20352,11 +20352,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Pancake Plantation (2) target retains a candidate field, but the linked report supplies no defensible metric formation size. No scale-qualified nonfold footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_5c145606dd1c",
@@ -20484,11 +20484,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "potterne-field-2020-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_6b40658e7a2e",
@@ -21299,11 +21299,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "easton-clump-2020-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_c393cee1489c",
@@ -22883,11 +22883,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Whispering Knights monument and road context resolve one field, but fisheye distortion, relief, and one-sided controls prevent a stable coplanar affine or projective transform. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_d4f0ffc7b93f",
@@ -23411,11 +23411,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "The Allan King Way unique-field cutoff expired before an original source frame or reproducible reference crosswalk was preserved. No transform or footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_239d6d0c8abd",
@@ -25388,11 +25388,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Devil's Den barn, track, and field geometry resolve one field, but elevated buildings and mutable vegetation do not provide distributed coplanar controls. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_66711c76f288",

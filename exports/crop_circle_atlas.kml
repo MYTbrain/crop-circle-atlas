@@ -141087,6 +141087,210 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Hatherden Lane 2023 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2023/Charlton/Charlton2023a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>hatherden-lane-2023-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_0fd192c3bbcc</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2023/Charlton/Charlton2023a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_hatherden_lane_2023_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.504720306524,51.236168062912,0 -1.50400108366,51.235815311067,0 -1.503439162736,51.236266813322,0 -1.504158388342,51.236619568593,0 -1.504720306524,51.236168062912,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Yarnbury Castle 2019 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2019/Yarnbury/Yarnbury2019a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>yarnbury-castle-2019-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_3cafd08de8cd</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2019/Yarnbury/Yarnbury2019a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_yarnbury_castle_2019_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.950651071371,51.158678260698,0 -1.950469983893,51.158183621951,0 -1.9497202475,51.158235054603,0 -1.949807835776,51.158877389325,0 -1.950651071371,51.158678260698,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Potterne Field 2020 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2020/Potterne/Potterne2020a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>potterne-field-2020-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_62493118db40</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2020/Potterne/Potterne2020a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_potterne_field_2020_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.994176312483,51.329364848281,0 -1.992905252549,51.329386440269,0 -1.99293898844,51.329961381976,0 -1.994177288231,51.329963983068,0 -1.994176312483,51.329364848281,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Easton Clump 2020 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2020/eastonclump/eastonclump2020a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>easton-clump-2020-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_fe74c746833c</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2020/eastonclump/eastonclump2020a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_easton_clump_2020_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.70511409275,51.336679436701,0 -1.704481381546,51.336191306929,0 -1.703700640443,51.336582318475,0 -1.704339571875,51.337075253537,0 -1.70511409275,51.336679436701,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

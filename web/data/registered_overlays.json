@@ -7601,6 +7601,861 @@
       }
     },
     {
+      "overlay_id": "hatherden-lane-2023-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_hatherden_lane_2023_crop_geometry_v1",
+      "formation_id": "cc_0fd192c3bbcc",
+      "assertion_id": "sx_connector_00108d96a4f1bca3",
+      "title": "Hatherden Lane 2023 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2023/Charlton/DJI_20230726061723_0257_D.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2023/Charlton/Charlton2023a.html",
+      "source_image_sha256": "a5754b4eea317254e8cc060563d025a7ff9aa6aaa2fb16765cd50ae0a40fbff2",
+      "corners": [
+        [
+          51.236619568593,
+          -1.504158388342
+        ],
+        [
+          51.236266813322,
+          -1.503439162736
+        ],
+        [
+          51.235815311067,
+          -1.50400108366
+        ],
+        [
+          51.236168062912,
+          -1.504720306524
+        ]
+      ],
+      "center": [
+        51.23621593,
+        -1.50407944
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_21d864fa58d48cf4f7fe",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            37,
+            361
+          ],
+          [
+            764,
+            361
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -20.919048703314,
+            20.39343881097
+          ],
+          [
+            24.785575005535,
+            -15.314926757660004
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate overall diameter",
+            "value_ft": 190,
+            "value_m": 58,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative full-design source span",
+            "source_points_xy": [
+              [
+                37,
+                361
+              ],
+              [
+                764,
+                361
+              ]
+            ],
+            "source_span_px": 727,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation geometry, tramlines, crop rows, and shadows",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "electricity pylon east-northeast of the publisher target",
+            "role": "unique field and directed orientation context",
+            "accepted_for_fit": false,
+            "reason": "Used for yaw context only, not a coplanar source-to-ground transform point."
+          },
+          {
+            "feature": "enclosing hedges and wooded ridge",
+            "role": "field context",
+            "accepted_for_fit": false,
+            "reason": "Mixed-depth context, not distributed ground control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.062867432887,
+            -0.04911742169,
+            -5.513754490043
+          ],
+          [
+            -0.04911742169,
+            -0.062867432887,
+            44.905926685707
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_diameter_m": 58,
+        "orientation_basis": "The same-flight 0166 pylonward vector is cross-walked to the same persistent pylon east-northeast of the publisher target in the north-up reference; asymmetric formation geometry transfers that directed sense to the selected original.",
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.51407944,
+          51.23021593,
+          -1.49407944,
+          51.24221593
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "22cb11b738048754595b3c3b4298881b396a6eaccf3d0af5a66236baa514dd33",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.006364835231,
+            -0.006364835231
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4063.317176541,
+          "result": "pass_non_folded"
+        },
+        "source_top_bearing_true_deg": 38
+      }
+    },
+    {
+      "overlay_id": "yarnbury-castle-2019-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_yarnbury_castle_2019_crop_geometry_v1",
+      "formation_id": "cc_3cafd08de8cd",
+      "assertion_id": "sx_connector_587c0dbb66785c0a",
+      "title": "Yarnbury Castle 2019 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2019/Yarnbury/DJI_0021.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2019/Yarnbury/Yarnbury2019a.html",
+      "source_image_sha256": "c5ec59f8bd7a8546ef56ff06d931bf0a195487e7862d5fd42039642c7ce34722",
+      "corners": [
+        [
+          51.158877389325,
+          -1.949807835776
+        ],
+        [
+          51.158235054603,
+          -1.9497202475
+        ],
+        [
+          51.158183621951,
+          -1.950469983893
+        ],
+        [
+          51.158678260698,
+          -1.950651071371
+        ]
+      ],
+      "center": [
+        51.15846759,
+        -1.95023036
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_38ec8fec70b9e32b5625",
+        "source_frame_size_px": [
+          800,
+          705
+        ],
+        "source_geometry_control_pixels": [
+          [
+            394,
+            143
+          ],
+          [
+            655,
+            365
+          ],
+          [
+            384,
+            649
+          ],
+          [
+            147,
+            386
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            19.318415114493,
+            4.106255893651
+          ],
+          [
+            4.106255893651,
+            -19.318415114493
+          ],
+          [
+            -19.318415114493,
+            -4.106255893651
+          ],
+          [
+            -4.106255893651,
+            19.318415114493
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate main-circle diameter",
+            "value_ft": 130,
+            "value_m": 39.5,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "main-ring extrema on selected original catalog frame",
+            "source_points_xy": [
+              [
+                394,
+                143
+              ],
+              [
+                655,
+                365
+              ],
+              [
+                384,
+                649
+              ],
+              [
+                147,
+                386
+              ]
+            ],
+            "status": "used_for_projective_display_rectification_only_explicitly_non_independent"
+          },
+          {
+            "type": "cross-frame formation pattern",
+            "status": "used_to_transfer_contextual_yaw_only_not_ground_control"
+          },
+          {
+            "type": "satellite discs, tramlines, shadows, and crop rows",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Yarnbury Castle hillfort earthworks",
+            "role": "unique field and directed orientation context",
+            "accepted_for_fit": false,
+            "reason": "The hillfort lies across the A36 on different terrain and is not coplanar with the formation field."
+          },
+          {
+            "feature": "A36 carriageway and two field-track junctions",
+            "role": "field-side and yaw context",
+            "accepted_for_fit": false,
+            "reason": "The visible points are clustered along the north side and do not surround the formation."
+          },
+          {
+            "feature": "hedges and tree groups",
+            "role": "landscape context",
+            "accepted_for_fit": false,
+            "reason": "Raised or mutable vegetation was not used as projective control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.016193620209819556,
+            -0.09514205828056571,
+            29.46575780430563
+          ],
+          [
+            -0.09560539307940166,
+            -0.022180528329950263,
+            45.5677534867704
+          ],
+          [
+            0.0002402910030123491,
+            0.0003957781809724367,
+            1.0
+          ]
+        ],
+        "documented_operational_main_circle_diameter_m": 39.5,
+        "orientation_basis": "A36 and Yarnbury Castle geometry in the wide original context frame was matched to the north-up reference; the distinctive formation pattern transfers that yaw to the selected near-nadir frame.",
+        "orientation_uncertainty_deg": 12,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.96175836,
+          51.15057529,
+          -1.93775836,
+          51.16657529
+        ],
+        "reference_export_size_px": [
+          1600,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "36ef7e7f7ceedca676851cc57ed282f2c11e0c9ed3bc83ec3ec8e209558eb818",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1.0,
+            1.470620350811
+          ],
+          "jacobian_determinant_range": [
+            -0.011746979234,
+            -0.003693384195
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3641.693606359649,
+          "result": "pass_non_folded"
+        },
+        "source_top_control_bearing_true_deg": 78
+      }
+    },
+    {
+      "overlay_id": "potterne-field-2020-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_potterne_field_2020_crop_geometry_v1",
+      "formation_id": "cc_62493118db40",
+      "assertion_id": "sx_connector_a5ba8d04e5081261",
+      "title": "Potterne Field 2020 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/Potterne/DJI_0326-3.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2020/Potterne/Potterne2020a.html",
+      "source_image_sha256": "9f83a3c938e8d679ab34c2cc7ffd3e751f6c7488730042374d434c4a667b69eb",
+      "corners": [
+        [
+          51.329963983068,
+          -1.994177288231
+        ],
+        [
+          51.329961381976,
+          -1.99293898844
+        ],
+        [
+          51.329386440269,
+          -1.992905252549
+        ],
+        [
+          51.329364848281,
+          -1.994176312483
+        ]
+      ],
+      "center": [
+        51.32966491,
+        -1.99353497
+      ],
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_5cc927a3ddac2ede6e04",
+        "source_frame_size_px": [
+          800,
+          605
+        ],
+        "source_geometry_control_pixels": [
+          [
+            401,
+            25
+          ],
+          [
+            684,
+            309
+          ],
+          [
+            400,
+            589
+          ],
+          [
+            125,
+            312
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -0.531949348208,
+            30.475357748367
+          ],
+          [
+            30.475357748367,
+            0.531949348208
+          ],
+          [
+            0.531949348208,
+            -30.475357748367
+          ],
+          [
+            -30.475357748367,
+            -0.531949348208
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "publisher approximate overall diameter",
+            "value_ft": 200,
+            "value_m": 60.96,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "outer formation extrema on selected original catalog frame",
+            "source_points_xy": [
+              [
+                401,
+                25
+              ],
+              [
+                684,
+                309
+              ],
+              [
+                400,
+                589
+              ],
+              [
+                125,
+                312
+              ]
+            ],
+            "status": "used_for_projective_display_rectification_only_explicitly_non_independent"
+          },
+          {
+            "type": "same-flight formation texture, tree shadow, and tramline intersections",
+            "status": "used_only_for_selected_to_panorama_direction_transfer_not_ground_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "isolated tree at the precise publisher target",
+            "role": "unique field and center coincidence",
+            "accepted_for_fit": false,
+            "reason": "It validates the display anchor but is not a distributed projective control or held-out checkpoint."
+          },
+          {
+            "feature": "south wooded field edge and landscape beyond",
+            "role": "directed panorama orientation context",
+            "accepted_for_fit": false,
+            "reason": "It supplies yaw context through the same-flight panorama but is not used as a transform control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.10980708661348552,
+            0.002094102818318941,
+            -44.62731652492143
+          ],
+          [
+            0.0013325147895644797,
+            -0.10881472916615105,
+            33.25564911453702
+          ],
+          [
+            5.1401957609165024e-05,
+            -4.449778019017593e-05,
+            1.0
+          ]
+        ],
+        "documented_operational_overall_diameter_m": 60.96,
+        "orientation_basis": "The north-up target-to-south-field-edge direction is 177.382 degrees true. Same-flight feature registration maps the selected-frame up axis into the panorama down axis; pulling the panorama field-edge vector back through that homography gives selected-frame top bearing 359.049 degrees true, rounded operationally to 359 degrees.",
+        "orientation_uncertainty_deg": 12,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -2.00353497,
+          51.32366491,
+          -1.98353497,
+          51.33566491
+        ],
+        "reference_export_size_px": [
+          1400,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "19f8265d4a5deb4335c5c22a28b47c580564ed41dc968e7517ffff40ef353c8b",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.973123340765,
+            1.04107016413
+          ],
+          "jacobian_determinant_range": [
+            -0.013057062381,
+            -0.010663730147
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -5691.612782830064,
+          "result": "pass_non_folded"
+        },
+        "source_top_control_bearing_true_deg": 359,
+        "cross_frame_orientation_transfer": {
+          "model": "same_flight_sift_ratio_ransac_homography_selected_to_panorama",
+          "selected_keypoints": 7802,
+          "panorama_keypoints": 6763,
+          "ratio_test_matches": 38,
+          "ransac_inliers": 29,
+          "inlier_ratio": 0.763157894737,
+          "inlier_rmse_px": 1.287625,
+          "inlier_max_px": 2.871149,
+          "selected_inlier_bbox_xyxy": [
+            143.864807,
+            4.885633,
+            657.165527,
+            468.782654
+          ],
+          "selected_to_panorama_homography": [
+            [
+              -1.370422510247527,
+              0.7899938412464751,
+              974.0614559627709
+            ],
+            [
+              0.05423734771317707,
+              0.23855987055408048,
+              836.2904983165187
+            ],
+            [
+              0.00017067244920111318,
+              0.0018514438305599012,
+              1.0
+            ]
+          ],
+          "mapped_anchor_panorama_xy": [
+            408.044541,
+            567.217954
+          ],
+          "panorama_south_field_edge_context_xy": [
+            405,
+            232
+          ],
+          "reference_south_field_edge_context_xy": [
+            715,
+            670
+          ],
+          "derived_source_top_bearing_true_deg": 359.048873,
+          "status": "directed_orientation_transferred_no_180_degree_ambiguity"
+        }
+      }
+    },
+    {
+      "overlay_id": "easton-clump-2020-coordinate-size-geometry-placement",
+      "registration_observation_id": "regobs_easton_clump_2020_crop_geometry_v1",
+      "formation_id": "cc_fe74c746833c",
+      "assertion_id": "sx_connector_115713f779dc70da",
+      "title": "Easton Clump 2020 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/eastonclump/DJI_0494.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2020/eastonclump/eastonclump2020a.html",
+      "source_image_sha256": "dc95033749be8c5a5a991b42f2d89b9175ce0025fd58eaeba74296de8427ec37",
+      "corners": [
+        [
+          51.337075253537,
+          -1.704339571875
+        ],
+        [
+          51.336582318475,
+          -1.703700640443
+        ],
+        [
+          51.336191306929,
+          -1.704481381546
+        ],
+        [
+          51.336679436701,
+          -1.70511409275
+        ]
+      ],
+      "center": [
+        51.33663007,
+        -1.70441189
+      ],
+      "coordinate_uncertainty_m": 12,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "review_basis": "The retained publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_0515076b81b22561a559",
+        "source_frame_size_px": [
+          800,
+          798
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            52
+          ],
+          [
+            747,
+            400
+          ],
+          [
+            400,
+            751
+          ],
+          [
+            53,
+            400
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            23.687408905208475,
+            19.181685519199046
+          ],
+          [
+            19.181685519199043,
+            -23.687408905208475
+          ],
+          [
+            -23.687408905208464,
+            -19.181685519199057
+          ],
+          [
+            -19.181685519199057,
+            23.687408905208464
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "publisher approximate overall diameter",
+            "value_ft": 200,
+            "value_m": 60.96,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "outer formation extrema on selected original catalog frame",
+            "source_points_xy": [
+              [
+                400,
+                52
+              ],
+              [
+                747,
+                400
+              ],
+              [
+                400,
+                751
+              ],
+              [
+                53,
+                400
+              ]
+            ],
+            "status": "used_for_projective_display_rectification_only_explicitly_non_independent"
+          },
+          {
+            "type": "same-flight formation texture and tramline intersections",
+            "status": "used_only_for_selected_to_panorama_direction_transfer_not_ground_control"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "wooded Easton Clump southeast of the precise target",
+            "role": "unique directed landscape context",
+            "accepted_for_fit": false,
+            "reason": "It supplies yaw context through the same-flight panorama but is not used as a transform control."
+          },
+          {
+            "feature": "earthwork and hedgerow between formation and wooded clump",
+            "role": "directed panorama orientation corroboration",
+            "accepted_for_fit": false,
+            "reason": "The one-sided arrangement rejects the 180 degree alternative but is not an independently surveyed ground control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.05555150572027965,
+            -0.06811094721731632,
+            5.0237765988146705
+          ],
+          [
+            -0.06860039645521393,
+            -0.055155157542370686,
+            49.50222159903384
+          ],
+          [
+            5.911295117860429e-19,
+            1.2340803633133278e-05,
+            1.0
+          ]
+        ],
+        "documented_operational_overall_diameter_m": 60.96,
+        "orientation_basis": "The north-up target-to-Easton-Clump direction is 135.948 degrees true. Same-flight feature registration maps the selected frame into the panorama; pulling the panorama clump direction back through that homography gives selected-frame top bearing 50.695 degrees true, rounded operationally to 51 degrees. The directed earthwork, hedgerow, and wooded clump reject the 231 degree alternative.",
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.71441189,
+          51.33063007,
+          -1.69441189,
+          51.34263007
+        ],
+        "reference_export_size_px": [
+          1400,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "b7c615dfb0db0562ad02b375e7a7cdb9a5d1000ed2964f3b820289fe17ea2a82",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1.0,
+            1.009835620496
+          ],
+          "jacobian_determinant_range": [
+            -0.00777457934,
+            -0.007549615656
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4878.779299687185,
+          "result": "pass_non_folded"
+        },
+        "source_top_control_bearing_true_deg": 51,
+        "cross_frame_orientation_transfer": {
+          "model": "same_flight_sift_ratio_ransac_homography_selected_to_panorama",
+          "selected_keypoints": 6378,
+          "panorama_keypoints": 8000,
+          "ratio_test_matches": 333,
+          "ransac_inliers": 153,
+          "inlier_ratio": 0.4594594595,
+          "inlier_rmse_px": 2.296391,
+          "inlier_max_px": 3.917645,
+          "selected_inlier_bbox_xyxy": [
+            17.91766,
+            7.447593,
+            479.957672,
+            542.681213
+          ],
+          "selected_to_panorama_homography": [
+            [
+              0.0002198908524225579,
+              1.2511593525558489,
+              4.064682059768133
+            ],
+            [
+              -0.5297840357770428,
+              -0.11627071678166814,
+              1451.1351848658835
+            ],
+            [
+              0.0005570458236734217,
+              8.834797847510191e-05,
+              1.0
+            ]
+          ],
+          "mapped_anchor_panorama_xy": [
+            401.075677,
+            947.984067
+          ],
+          "panorama_easton_clump_context_xy": [
+            176,
+            225
+          ],
+          "reference_easton_clump_context_xy": [
+            1104,
+            730
+          ],
+          "target_to_clump_bearing_true_deg": 135.9482,
+          "derived_source_top_bearing_true_deg": 50.6953,
+          "rejected_180_degree_alternative_true_deg": 230.6953,
+          "status": "directed_orientation_transferred_no_180_degree_ambiguity"
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

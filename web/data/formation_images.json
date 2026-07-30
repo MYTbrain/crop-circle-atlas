@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 77,
-    "overlay_placement_count": 77,
+    "mapped_catalog_image_count": 81,
+    "overlay_placement_count": 81,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -11817,7 +11817,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "hatherden-lane-2023-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_24da798afcf1dac773f7",
@@ -41813,7 +41815,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "yarnbury-castle-2019-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_fbde6c417abde007e2fc",
@@ -66204,7 +66208,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "potterne-field-2020-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_736e6703704e61cafcf0",
@@ -172419,7 +172425,9 @@
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "easton-clump-2020-coordinate-size-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_7014f340897f913b9367",

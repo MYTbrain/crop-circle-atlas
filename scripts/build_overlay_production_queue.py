@@ -1079,6 +1079,85 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-29",
     },
+    "cc_00a10f9e60ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Six original Cake Wood catalog frames were hash-verified and reviewed, "
+            "but they retain no camera pose, sourced formation dimensions, or "
+            "reference-image crosswalk that supports an honest footprint. The "
+            "publisher target remains a candidate only. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_0d1a819fdc2a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "One complete Cakebole Lane original frame survives review; two incomplete "
+            "gray frames are excluded. No camera pose, sourced dimensions, or "
+            "reference-image crosswalk supports a footprint. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_221975af1ce9": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Allan King Way unique-field cutoff expired before an original source "
+            "frame or reproducible reference crosswalk was preserved. No transform "
+            "or footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3af6a382b875": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hoo Mill publisher target and source frames retain a candidate field, "
+            "but no sourced metric size or distributed persistent controls support "
+            "a defensible display footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_d4272d0f7fb7": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Whispering Knights monument and road context resolve one field, but "
+            "fisheye distortion, relief, and one-sided controls prevent a stable "
+            "coplanar affine or projective transform. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_600f60e20fb9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Devil's Den barn, track, and field geometry resolve one field, but "
+            "elevated buildings and mutable vegetation do not provide distributed "
+            "coplanar controls. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_1f2cfe563407": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Willoughby Hedge target and broad reported size retain a "
+            "candidate field, but the complete original frame lacks defensible "
+            "directed context and cannot support a stable footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_4ad91f8abdc1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Pancake Plantation (2) target retains a candidate field, but "
+            "the linked report supplies no defensible metric formation size. No "
+            "scale-qualified nonfold footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
 }
 
 
