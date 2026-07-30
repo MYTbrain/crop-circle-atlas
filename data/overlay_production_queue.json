@@ -1,18 +1,18 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-29T23:29:39.498553Z",
+  "generated_at": "2026-07-30T01:51:39.897913Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 47,
+    "candidate_field": 48,
     "clues_reviewed": 2,
-    "provisional_registration": 60,
-    "queued": 1803,
+    "provisional_registration": 67,
+    "queued": 1791,
     "source_image_acquired": 11,
-    "unresolved": 3
+    "unresolved": 7
   },
   "records": [
     {
@@ -1950,11 +1950,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 5083,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "The New Park report securely identifies Maple Lawn Farms, but the historical 2004 formation-bearing strip cannot be reconciled to one unique present-day field. No transform or footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_6bc118741f7e",
@@ -1998,11 +1998,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 5079,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "Three original Burnsville frames were reviewed within the bounded reported terrain locus, but their scene cues do not identify one unique field and the tested feature fit is degenerate. No transform or footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_f6c7487031e4",
@@ -18396,11 +18396,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The exact Etchilhampton Hill (2) publisher target, same-event wide aerials, tree belt, landscape context, and current reference imagery identify one candidate field. A complete near-nadir source frame survives, but no sourced metric dimension supports an honest display scale, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_5a8d44d98915",
@@ -18470,11 +18470,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "stoke-charity-2024-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_a0b87912ba00",
@@ -18546,11 +18546,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "watership-down-2021-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_b3b0718cdb6c",
@@ -18613,11 +18613,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "mud-lane-2021-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_c90d17acd2af",
@@ -18761,11 +18761,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "The Farley Mount report preserves a publisher pointer and monument viewpoint, but no staged source pixels or reference-image crosswalk establishes one unique formation-bearing field. No footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_ee71c9475bd1",
@@ -18910,11 +18910,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2211,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "unresolved",
+      "blocker_or_rejection_reason": "The Ackling Dyke report's numeric map pointer and printed grid label differ by approximately 581 metres across multiple fields. Same-event source frames do not resolve that conflict, and no defensible metric scale is documented. No footprint is published. Explicit outcome: unresolved.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_270dae67472f",
@@ -19466,11 +19466,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "handley-hill-2020-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_a924832e6d3c",
@@ -19534,11 +19534,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "rauwiller-2015-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_ccc61e24b8c8",
@@ -19739,11 +19739,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2208,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "waylands-smithy-2023-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_00a10f9e60ba",
@@ -22360,11 +22360,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "stonehenge-visitors-centre-2024-coordinate-size-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-29"
     },
     {
       "formation_id": "cc_5fa3397b58d7",

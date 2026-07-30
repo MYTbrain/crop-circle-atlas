@@ -928,6 +928,58 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-29",
     },
+    "cc_d348038b1262": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Farley Mount report preserves a publisher pointer and monument "
+            "viewpoint, but no staged source pixels or reference-image crosswalk "
+            "establishes one unique formation-bearing field. No footprint is "
+            "published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f5c282a9d9d7": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Ackling Dyke report's numeric map pointer and printed grid label "
+            "differ by approximately 581 metres across multiple fields. Same-event "
+            "source frames do not resolve that conflict, and no defensible metric "
+            "scale is documented. No footprint is published. Explicit outcome: "
+            "unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3f3c81c35f60": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Etchilhampton Hill (2) publisher target, same-event wide "
+            "aerials, tree belt, landscape context, and current reference imagery "
+            "identify one candidate field. A complete near-nadir source frame "
+            "survives, but no sourced metric dimension supports an honest display "
+            "scale, so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_b670486b7829": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The New Park report securely identifies Maple Lawn Farms, but the "
+            "historical 2004 formation-bearing strip cannot be reconciled to one "
+            "unique present-day field. No transform or footprint is published. "
+            "Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_6bc118741f7e": {
+        "processing_status": "unresolved",
+        "reason": (
+            "Three original Burnsville frames were reviewed within the bounded "
+            "reported terrain locus, but their scene cues do not identify one "
+            "unique field and the tested feature fit is degenerate. No transform "
+            "or footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
 }
 
 

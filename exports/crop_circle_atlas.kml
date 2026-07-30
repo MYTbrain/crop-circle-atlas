@@ -140628,6 +140628,363 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Mud Lane 2021 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2021/mudlane/mudlane2021a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>mud-lane-2021-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_b3b0718cdb6c</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2021/mudlane/mudlane2021a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_mud_lane_2021_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.69933461334,51.37613576323,0 -1.69873084046,51.37613576323,0 -1.69873084046,51.376386700142,0 -1.69933461334,51.376386700142,0 -1.69933461334,51.37613576323,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Wayland's Smithy 2023 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2023/waylands/waylands2023a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>waylands-smithy-2023-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_fca804fc7fdd</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2023/waylands/waylands2023a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_waylands_smithy_2023_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.597207418324,51.568542897438,0 -1.597943431111,51.568299644141,0 -1.59755208617,51.567842151228,0 -1.596816073383,51.568085404525,0 -1.597207418324,51.568542897438,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Stonehenge Visitors Centre 2024 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2024/stonehenge/stonehenge2024.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>stonehenge-visitors-centre-2024-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_5ad92f6c8137</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2024/stonehenge/stonehenge2024.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_stonehenge_visitors_centre_2024_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.862039594717,51.187328198536,0 -1.863782691107,51.187328198536,0 -1.863782691107,51.18651050271,0 -1.862039594717,51.18651050271,0 -1.862039594717,51.187328198536,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Stoke Charity 2024 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2024/charity/charity2024a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>stoke-charity-2024-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_5a8d44d98915</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2024/charity/charity2024a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_stoke_charity_2024_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.299625742459,51.143579896703,0 -1.29923963561,51.144325402743,0 -1.300476288529,51.144577485746,0 -1.300862395379,51.143831979706,0 -1.299625742459,51.143579896703,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Watership Down 2021 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2021/nuthanger/nuthanger2021a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>watership-down-2021-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_a0b87912ba00</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2021/nuthanger/nuthanger2021a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_watership_down_2021_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.298348095166,51.304764262031,0 -1.299138116072,51.304764262031,0 -1.299138116072,51.304270355834,0 -1.298348095166,51.304270355834,0 -1.298348095166,51.304764262031,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Rauwiller 2015 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2015/Rauwiller/Rauwiller2015a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>rauwiller-2015-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_a924832e6d3c</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2015/Rauwiller/Rauwiller2015a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_rauwiller_2015_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>7.099572588426,48.805317381964,0 7.099883606069,48.805455790985,0 7.0995504449,48.80582430743,0 7.099130252248,48.80558580848,0 7.099572588426,48.805317381964,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Handley Hill 2020 coordinate-size geometry placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2020/dorset001/dorset2020a.html | Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>handley-hill-2020-coordinate-size-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_743e3bd229e3</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2020/dorset001/dorset2020a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_orientation_constrained_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_handley_hill_2020_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.997154125069,50.947690800305,0 -1.996548708786,50.947758056426,0 -1.996651852648,50.948126595519,0 -1.997257268932,50.948059339399,0 -1.997154125069,50.947690800305,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

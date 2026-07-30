@@ -3737,6 +3737,1342 @@
           "result": "pass_non_folded"
         }
       }
+    },
+    {
+      "overlay_id": "mud-lane-2021-coordinate-size-geometry-placement",
+      "observation_id": "regobs_mud_lane_2021_crop_geometry_v1",
+      "formation_id": "cc_b3b0718cdb6c",
+      "assertion_id": "sx_connector_1a83a133e1be946b",
+      "title": "Mud Lane 2021 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2021/mudlane/DJI_0554-2.jpg",
+      "source_image_sha256": "dd8496324cd0d6bb95463b7ff52eb8491d9259f81232578ccfa711c11f304ba2",
+      "anchor_pixel_xy": [
+        444,
+        267
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.37626076,
+        -1.6989991
+      ],
+      "corners_wgs84": [
+        [
+          51.376386700142,
+          -1.69933461334
+        ],
+        [
+          51.376386700142,
+          -1.69873084046
+        ],
+        [
+          51.37613576323,
+          -1.69873084046
+        ],
+        [
+          51.37613576323,
+          -1.69933461334
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "The staged report publishes the consistent SU2104764177 / E421047 N164177 target and documents wheat with an overall size of about 110 ft (33.5 m). DJI_0554-2 is a complete near-nadir original showing the full asymmetric design and two tramline pairs. DJI_0558-2 and DJI_0566-Pano show the same formation against the exact-target field's complex north-edge hedgerow and flatter patchwork beyond; the current north-up reference preserves that field-edge arrangement.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.37626076,
+          -1.6989991
+        ],
+        "reported_place": "Mud Lane, Wiltshire, England",
+        "reported_date": "2021-06-09",
+        "source_report_url": "https://cropcircleconnector.com/2021/mudlane/mudlane2021a.html",
+        "documented_operational_overall_size_m": 33.5
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 20 degrees; zero independent ground checkpoints validate the footprint. Publisher center, approximate reported size, and contextual yaw have no independent ground checkpoint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_c52a4015abe8f45c62e6",
+        "source_frame_size_px": [
+          800,
+          533
+        ],
+        "source_geometry_control_pixels": [
+          [
+            444,
+            0
+          ],
+          [
+            799,
+            267
+          ],
+          [
+            444,
+            532
+          ],
+          [
+            0,
+            267
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented overall size",
+            "value_ft": 110,
+            "value_m": 33.5,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative overall source span",
+            "source_points_xy": [
+              [
+                91,
+                250
+              ],
+              [
+                729,
+                250
+              ]
+            ],
+            "source_span_px": 638,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation anchor, asymmetric satellites, and tramline crossings",
+            "source_anchor_xy": [
+              444,
+              267
+            ],
+            "status": "used_for_display_anchor_and_orientation_transfer_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.052507836991,
+            0,
+            -23.313479623824
+          ],
+          [
+            0,
+            -0.052507836991,
+            14.019592476489
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_size_m": 33.5,
+        "orientation_basis": "The same-event 0558 and 0566 views face the exact-target field's complex north-edge hedgerow and flatter patchwork beyond. The main crescent, unequal satellites, and tramline crossings transfer that directed sense to the selected complete frame.",
+        "source_top_bearing_true_deg": 0,
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.7089991,
+          51.37026076,
+          -1.6889991,
+          51.38226076
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "9d4b02f9dccf2833681372c4b56ddeb54ad13e7fe66264f62a0f6bd82cf9a3c6",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.002757072945,
+            -0.002757072945
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -1171.943482768,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "waylands-smithy-2023-coordinate-size-geometry-placement",
+      "observation_id": "regobs_waylands_smithy_2023_crop_geometry_v1",
+      "formation_id": "cc_fca804fc7fdd",
+      "assertion_id": "sx_connector_19ccd9f76d34d89d",
+      "title": "Wayland's Smithy 2023 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2023/waylands/DJI_20230804065102_0029_D.jpg",
+      "source_image_sha256": "ae25addba49688b81bf29f539edaf3e38a4a21b0c03e0240daeadba8f039c0d0",
+      "anchor_pixel_xy": [
+        400,
+        389
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.56818636,
+        -1.59737507
+      ],
+      "corners_wgs84": [
+        [
+          51.568085404525,
+          -1.596816073383
+        ],
+        [
+          51.567842151228,
+          -1.59755208617
+        ],
+        [
+          51.568299644141,
+          -1.597943431111
+        ],
+        [
+          51.568542897438,
+          -1.597207418324
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Crop Circle Connector publishes E=428003, N=185556; Crop Circle Access independently gives SU28003 85556, the same target. Temporary Temples gives SU27987 85559, approximately 16.3 m from the Connector target and within the retained 25 m publisher-coordinate uncertainty. Strategic aerial and panoramic frames place the formation in the unique field immediately north of the wooded Wayland's Smithy monument.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.56818636,
+          -1.59737507
+        ],
+        "reported_place": "Wayland's Smithy, Oxfordshire, England",
+        "reported_date": "2023-08-04",
+        "source_report_url": "https://cropcircleconnector.com/2023/waylands/waylands2023a.html",
+        "operational_diameter_m": 54.864,
+        "documented_diameter_range_m": [
+          54.864,
+          60.0
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 12 degrees; zero independent ground checkpoints validate the footprint. Center, scale, and yaw remain publisher/context constrained and have no independent ground checkpoint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_a66059754ee9de86eed3",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            0
+          ],
+          [
+            799,
+            389
+          ],
+          [
+            400,
+            799
+          ],
+          [
+            0,
+            389
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate diameter",
+            "value_range_m": [
+              54.864,
+              60.0
+            ],
+            "status": "operational_scale_constraint_not_independent_ground_control"
+          },
+          {
+            "type": "outer_ring_pixel_extent",
+            "source_center_xy": [
+              400,
+              389
+            ],
+            "source_points_xy": {
+              "top": [
+                400,
+                12
+              ],
+              "right": [
+                784,
+                389
+              ],
+              "bottom": [
+                400,
+                765
+              ],
+              "left": [
+                17,
+                389
+              ]
+            },
+            "mean_diameter_px": 760,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "same_event_tramline_axis_and_asymmetric_three_lobe_sense",
+            "status": "used_to_transfer_display_orientation_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation geometry, tramlines, shadows, vehicles, and generic crop or field edges",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.063739522019,
+            -0.033890905027,
+            38.679370863278
+          ],
+          [
+            -0.033890905027,
+            0.063739522019,
+            -11.238312054592
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "operational_diameter_m": 54.864,
+        "documented_diameter_range_m": [
+          54.864,
+          60.0
+        ],
+        "orientation_basis": "Same-event frame 0098 shows the Wayland's Smithy plantation directly behind the source-top side of the formation. The tight frame's asymmetric three-lobe arrangement and the same two tramline pairs transfer that direction without a 180 degree ambiguity. The publisher target E428003 N185556 and monument map reference SU28098539 give a formation-to-monument bearing of about 152 degrees true.",
+        "source_top_bearing_true_deg": 152,
+        "orientation_uncertainty_deg": 12,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.60737507,
+          51.56218636,
+          -1.58737507,
+          51.57418636
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "ef7e5669bdc96623d0577ede4680eb2e220b8055616ec4a7155d66a034ce7c6f",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.005211320111,
+            -0.005211320111
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3326.911970057,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "stonehenge-visitors-centre-2024-coordinate-size-geometry-placement",
+      "observation_id": "regobs_stonehenge_visitors_centre_2024_crop_geometry_v1",
+      "formation_id": "cc_5ad92f6c8137",
+      "assertion_id": "sx_connector_3fea0dd33403d77c",
+      "title": "Stonehenge Visitors Centre 2024 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2024/stonehenge/DJI_20240630115210_0050_D.jpg",
+      "source_image_sha256": "00eae3a31de78f5bf203f6c111eed6e0a3be868d621ab0abef9c468929684128",
+      "anchor_pixel_xy": [
+        285,
+        326
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.18695627,
+        -1.86266135
+      ],
+      "corners_wgs84": [
+        [
+          51.18651050271,
+          -1.862039594717
+        ],
+        [
+          51.18651050271,
+          -1.863782691107
+        ],
+        [
+          51.187328198536,
+          -1.863782691107
+        ],
+        [
+          51.187328198536,
+          -1.862039594717
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Crop Circle Connector publishes E=409695, N=143090, normalized to 51.18695627, -1.86266135. Temporary Temples gives SU09693 43099, approximately 9.2 m from the Connector target and within the retained 25 m publisher-coordinate uncertainty. Strategic source frames jointly show the formation, adjacent barrow or tumulus, visitor-centre complex, car park, and approach-road geometry, resolving the unique field.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.18695627,
+          -1.86266135
+        ],
+        "reported_place": "Stonehenge Visitors Centre, Wiltshire, England",
+        "reported_date": "2024-06-30",
+        "source_report_url": "https://cropcircleconnector.com/2024/stonehenge/stonehenge2024.html",
+        "operational_diameter_m": 50.29,
+        "documented_diameter_range_m": [
+          50.29,
+          54.864
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 10 degrees; zero independent ground checkpoints validate the footprint. Center, scale, and yaw remain publisher/context constrained and have no independent ground checkpoint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_9ed022cca53000243e59",
+        "source_frame_size_px": [
+          800,
+          599
+        ],
+        "source_geometry_control_pixels": [
+          [
+            285,
+            0
+          ],
+          [
+            799,
+            326
+          ],
+          [
+            285,
+            598
+          ],
+          [
+            0,
+            326
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "documented approximate diameter",
+            "value_range_m": [
+              50.29,
+              54.864
+            ],
+            "status": "operational_scale_constraint_not_independent_ground_control"
+          },
+          {
+            "type": "representative_opposed_terminal_span",
+            "source_points_xy": [
+              [
+                456,
+                276
+              ],
+              [
+                151,
+                403
+              ]
+            ],
+            "source_span_px": 330.38462434,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation_center_and_asymmetric_arm_sense",
+            "source_center_xy": [
+              285,
+              326
+            ],
+            "status": "used_for_anchor_and_directed_display_orientation_only_explicitly_non_independent"
+          },
+          {
+            "type": "formation geometry, tramlines, shadows, vehicles, and generic crop or field edges",
+            "status": "excluded_from_independent_control"
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.152216526724,
+            0,
+            43.381710116355
+          ],
+          [
+            0,
+            0.152216526724,
+            -49.622587712041
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "operational_diameter_m": 50.29,
+        "documented_diameter_range_m": [
+          50.29,
+          54.864
+        ],
+        "orientation_basis": "The selected original contains both the complete formation and adjacent tumulus. In the source the tumulus is to image-right; in north-up reference imagery it is due west of the precise publisher target, so image-right is approximately west and source-top approximately south. The same-event visitor-centre/road frame crosschecks the directed sense.",
+        "source_top_bearing_true_deg": 180,
+        "orientation_uncertainty_deg": 10,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound geometry determines the display transform; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.87266135,
+          51.18095627,
+          -1.85266135,
+          51.19295627
+        ],
+        "reference_export_size_px": [
+          1200,
+          1200
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "reference_export_sha256": "223cf92e6eea0dbd6a58bcdf1cac9888110efaa709c14414e1a644fc2579f2f7",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.023169871008,
+            -0.023169871008
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -11070.610707333,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "stoke-charity-2024-coordinate-size-geometry-placement",
+      "observation_id": "regobs_stoke_charity_2024_crop_geometry_v1",
+      "formation_id": "cc_5a8d44d98915",
+      "assertion_id": "sx_connector_387bc1bb6bc493a2",
+      "title": "Stoke Charity 2024 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2024/charity/Stoke-Charity-1-EDIT.jpg",
+      "source_image_sha256": "492be5a98bb34a0b773a364dc7ab7bd98139740254bd0a14552c4c24993aabc7",
+      "anchor_pixel_xy": [
+        400,
+        400
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.144079,
+        -1.30005
+      ],
+      "corners_wgs84": [
+        [
+          51.143831979706,
+          -1.300862395379
+        ],
+        [
+          51.144577485746,
+          -1.300476288529
+        ],
+        [
+          51.144325402743,
+          -1.29923963561
+        ],
+        [
+          51.143579896703,
+          -1.299625742459
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 35,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Temporary Temples publishes OS Grid Ref SU 49055 38514 and a precise Google Maps target resolving to 51.144079, -1.300050. The normalized grid point lies 31.9 m from the Google target; the Google target is retained as the display anchor and the conservative center uncertainty is raised to 35 m. Crop Circle Connector independently publishes SU4894738804; its repository-normalized point is 20.4 m from the Temporary Temples target and falls in the same field. The original wide source frame shows the formation southeast of a circular covered reservoir at a four-field crossing; that reservoir, crossing, field boundaries, River Dever tree corridor, and surrounding settlement pattern uniquely match current Esri imagery at the publisher target.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.144079,
+          -1.30005
+        ],
+        "reported_place": "Stoke Charity, Hampshire, England",
+        "reported_date": "2024-07-28",
+        "source_report_url": "https://cropcircleconnector.com/2024/charity/charity2024a.html",
+        "documented_operational_diameter_m": 67.056,
+        "documented_size_range_m": [
+          67.056,
+          95
+        ],
+        "publisher_grid_target_separation_m": 31.9
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 35 m; orientation uncertainty is plus or minus 15 degrees; zero independent ground checkpoints validate the footprint. The Temporary Temples grid and Google targets differ by 31.9 m and published diameters disagree materially; center is publisher-anchored, scale and shape are formation-bound, and no independent ground checkpoint validates the footprint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_02ad973957c7a1be4bf3",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            105
+          ],
+          [
+            707,
+            400
+          ],
+          [
+            400,
+            695
+          ],
+          [
+            93,
+            400
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "label": "outer_ring_source_top",
+            "source_xy": [
+              400,
+              105
+            ],
+            "target_local_m_east_north": [
+              -31.887022878,
+              10.360721788
+            ]
+          },
+          {
+            "label": "outer_ring_source_right",
+            "source_xy": [
+              707,
+              400
+            ],
+            "target_local_m_east_north": [
+              10.360721787,
+              31.887022878
+            ]
+          },
+          {
+            "label": "outer_ring_source_bottom",
+            "source_xy": [
+              400,
+              695
+            ],
+            "target_local_m_east_north": [
+              31.887022878,
+              -10.360721787
+            ]
+          },
+          {
+            "label": "outer_ring_source_left",
+            "source_xy": [
+              93,
+              400
+            ],
+            "target_local_m_east_north": [
+              -10.360721788,
+              -31.887022878
+            ]
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.033748279438,
+            0.108091602977,
+            -56.735952966087
+          ],
+          [
+            0.103866524034,
+            -0.035121090805,
+            -27.498173291568
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_diameter_m": 67.056,
+        "documented_size_range_m": [
+          67.056,
+          95
+        ],
+        "orientation_basis": "The reservoir-to-formation vector is matched in the original wide source and north-up reference mosaic, then the asymmetric internal design is transferred to the selected complete frame.",
+        "source_top_bearing_true_deg": 288,
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound outer-ring controls determine the display homography; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.30831706,
+          51.13900496,
+          -1.29231706,
+          51.14900496
+        ],
+        "reference_export_size_px": [
+          1200,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "a32cbdc33f8c64652cb4668d6d811186f99b85211c909d92ea1c02f3dfda1d5b",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.012412375465,
+            -0.012412375465
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "watership-down-2021-coordinate-size-geometry-placement",
+      "observation_id": "regobs_watership_down_2021_crop_geometry_v1",
+      "formation_id": "cc_a0b87912ba00",
+      "assertion_id": "sx_connector_d02f980871aa4f5e",
+      "title": "Watership Down 2021 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2021/nuthanger/DJI_0684.jpg",
+      "source_image_sha256": "4d81a2cf663caae1657419ab6636ed2e7ff310bf20c048cd2219874051293145",
+      "anchor_pixel_xy": [
+        400,
+        393.5
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.3045136,
+        -1.2987436
+      ],
+      "corners_wgs84": [
+        [
+          51.304270355834,
+          -1.298348095166
+        ],
+        [
+          51.304270355834,
+          -1.299138116072
+        ],
+        [
+          51.304764262031,
+          -1.299138116072
+        ],
+        [
+          51.304764262031,
+          -1.298348095166
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 30,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Temporary Temples explicitly labels its Google Maps link as the precise location; the short link resolves to 51.3045136, -1.2987436. Crop Circle Connector independently publishes BNG SU4894556506. Its normalized field pointer is approximately 123.4 m north-west of the Temporary Temples center but remains in the same uniquely shaped field and is treated only as a field-level crosscheck. Original panorama frames show the formation in a broad field south of a continuous tree belt, with the same field-edge curvature and surrounding wooded blocks visible in current Esri imagery around the precise publisher target.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.3045136,
+          -1.2987436
+        ],
+        "reported_place": "Watership Down, Hampshire, England",
+        "reported_date": "2021-08-11",
+        "source_report_url": "https://cropcircleconnector.com/2021/nuthanger/nuthanger2021a.html",
+        "documented_operational_overall_length_m": 51.816,
+        "documented_size_range_m": [
+          51.816,
+          60.96
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 30 m; orientation uncertainty is plus or minus 15 degrees; zero independent ground checkpoints validate the footprint. The Connector grid is a field-level pointer 123.4 m from the precise Temporary Temples target; published sizes also differ, and no independent ground checkpoint validates the selected anchor.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_54c09f254d1b4cd985d7",
+        "source_frame_size_px": [
+          800,
+          800
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            17
+          ],
+          [
+            400,
+            770
+          ],
+          [
+            215,
+            585
+          ],
+          [
+            585,
+            585
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "label": "small_plain_circle_south_extent",
+            "source_xy": [
+              400,
+              17
+            ],
+            "target_local_m_east_north": [
+              0,
+              -25.908
+            ]
+          },
+          {
+            "label": "large_ring_north_extent",
+            "source_xy": [
+              400,
+              770
+            ],
+            "target_local_m_east_north": [
+              0,
+              25.908
+            ]
+          },
+          {
+            "label": "large_ring_left_extent",
+            "source_xy": [
+              215,
+              585
+            ],
+            "target_local_m_east_north": [
+              12.730358566,
+              13.177641434
+            ]
+          },
+          {
+            "label": "large_ring_right_extent",
+            "source_xy": [
+              585,
+              585
+            ],
+            "target_local_m_east_north": [
+              -12.730358566,
+              13.177641434
+            ]
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.068812749004,
+            0,
+            27.525099601594
+          ],
+          [
+            0,
+            0.068812749004,
+            -27.077816733068
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_length_m": 51.816,
+        "documented_size_range_m": [
+          51.816,
+          60.96
+        ],
+        "orientation_basis": "The continuous northern tree belt is at the top of the original context panoramas and the complex ringed end is nearer that belt. The selected complete frame places the plain-circle end at source-top, so selected source-top points approximately true south.",
+        "source_top_bearing_true_deg": 180,
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation endpoints define scale and preserved image geometry defines width; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -1.30725539,
+          51.30057644,
+          -1.29125539,
+          51.31057644
+        ],
+        "reference_export_size_px": [
+          1200,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "c57dc43acc089cb06d7ba6a1a91d283fc628fef4e12e5f9f0a8ad997a880407c",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.004735194425,
+            -0.004735194425
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "rauwiller-2015-coordinate-size-geometry-placement",
+      "observation_id": "regobs_rauwiller_2015_crop_geometry_v1",
+      "formation_id": "cc_a924832e6d3c",
+      "assertion_id": "sx_connector_92bc2feab960f36e",
+      "title": "Rauwiller 2015 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2015/Rauwiller/rauwiller111.jpg",
+      "source_image_sha256": "3366e6e38ff0847ce0558fd6ed42a85d8796e3475b5cf5d76361fb1eb0bacdf3",
+      "anchor_pixel_xy": [
+        356,
+        285
+      ],
+      "anchor_wgs84_lat_lon": [
+        48.80552778,
+        7.09955556
+      ],
+      "corners_wgs84": [
+        [
+          48.80558580848,
+          7.099130252248
+        ],
+        [
+          48.80582430743,
+          7.0995504449
+        ],
+        [
+          48.805455790985,
+          7.099883606069
+        ],
+        [
+          48.805317381964,
+          7.099572588426
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Crop Circle Connector publishes the exact DMS map target 48 48 19.9 N, 7 05 58.4 E, normalized to 48.80552778, 7.09955556. The original wide frames show the formation close to a curving tree-lined field edge, beside a pasture containing distinctive isolated tree rows; the enclosing field, pasture rows, curving boundary, and nearby road configuration uniquely match current Esri imagery at the publisher target. Crop Circle Connector reports a thirty-metre diameter; the independent Odla report also describes approximately thirty metres.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          48.80552778,
+          7.09955556
+        ],
+        "reported_place": "Rauwiller, Bas-Rhin, France",
+        "reported_date": "2015-06-11",
+        "source_report_url": "https://cropcircleconnector.com/2015/Rauwiller/Rauwiller2015a.html",
+        "documented_operational_diameter_m": 30,
+        "documented_size_range_m": [
+          30,
+          30
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 20 degrees; zero independent ground checkpoints validate the footprint. The selected frame is oblique, scale and rectification are formation-bound, center inherits publisher uncertainty, and no independent ground checkpoint validates the footprint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_display_placement",
+        "source_image_identifier": "gimg_04b9b422eea194fee521",
+        "source_frame_size_px": [
+          700,
+          579
+        ],
+        "source_geometry_control_pixels": [
+          [
+            360,
+            95
+          ],
+          [
+            665,
+            255
+          ],
+          [
+            370,
+            485
+          ],
+          [
+            35,
+            275
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "label": "main_outline_source_top",
+            "source_xy": [
+              360,
+              95
+            ],
+            "target_local_m_east_north": [
+              -9.641814147,
+              11.490666649
+            ]
+          },
+          {
+            "label": "main_outline_source_right",
+            "source_xy": [
+              665,
+              255
+            ],
+            "target_local_m_east_north": [
+              11.49066665,
+              9.641814148
+            ]
+          },
+          {
+            "label": "main_outline_source_bottom",
+            "source_xy": [
+              370,
+              485
+            ],
+            "target_local_m_east_north": [
+              9.641814147,
+              -11.490666649
+            ]
+          },
+          {
+            "label": "main_outline_source_left",
+            "source_xy": [
+              35,
+              275
+            ],
+            "target_local_m_east_north": [
+              -11.490666647,
+              -9.641814146
+            ]
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.04412674805,
+            0.057097313866,
+            -31.182243395807
+          ],
+          [
+            0.03327569349,
+            -0.070247567492,
+            6.459700812505
+          ],
+          [
+            -0.000142582339,
+            0.000792017365,
+            1
+          ]
+        ],
+        "documented_operational_diameter_m": 30,
+        "documented_size_range_m": [
+          30,
+          30
+        ],
+        "orientation_basis": "The formation's asymmetric terminal chain is matched between the selected frame and the original wide field-edge frames, whose tree-lined boundary is matched to north-up reference imagery.",
+        "source_top_bearing_true_deg": 320,
+        "orientation_uncertainty_deg": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound main-outline controls determine the display homography; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          7.09155556,
+          48.80052778,
+          7.10755556,
+          48.81052778
+        ],
+        "reference_export_size_px": [
+          1200,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "a135988ea7ea5a7df1bbbb287b100cda5a9190495ff4aec8812f1f25664a53ec",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.900334945039,
+            1.45778603697
+          ],
+          "jacobian_determinant_range": [
+            -0.007930212444,
+            -0.001868167378
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
+    },
+    {
+      "overlay_id": "handley-hill-2020-coordinate-size-geometry-placement",
+      "observation_id": "regobs_handley_hill_2020_crop_geometry_v1",
+      "formation_id": "cc_743e3bd229e3",
+      "assertion_id": "sx_connector_9ce1ed9319abd948",
+      "title": "Handley Hill 2020 coordinate-size geometry placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/dorset001/DJI_0416-Edit.jpg",
+      "source_image_sha256": "3c6cbfdcf6e02395c8560d0bdff89dbc91c10b0a906bb664e9be5f9eb9f00bdb",
+      "anchor_pixel_xy": [
+        400,
+        386
+      ],
+      "anchor_wgs84_lat_lon": [
+        50.94790874,
+        -1.99690261
+      ],
+      "corners_wgs84": [
+        [
+          50.948059339399,
+          -1.997257268932
+        ],
+        [
+          50.948126595519,
+          -1.996651852648
+        ],
+        [
+          50.947758056426,
+          -1.996548708786
+        ],
+        [
+          50.947690800305,
+          -1.997154125069
+        ]
+      ],
+      "corner_basis": "Four formation-bound geometry points in the original catalog frame define a non-folded display footprint around the publisher target. Same-event context constrains the unique field and directed orientation. No formation feature is treated as an independent ground control.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_orientation_constrained_display_placement",
+      "reference_imagery": "Publisher target, documented formation dimensions, same-event contextual aerials, and Esri World Imagery current mosaic",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-29",
+      "reviewed_at": "2026-07-29",
+      "site_text": "Crop Circle Connector publishes Streetmap BNG target SU0031416497, normalized in the catalog to 50.94790874, -1.99690261. The original wide frame shows the formation close to the northern hedgerow of a distinctive field; the hedgerow angle, field outline, adjoining road, neighboring triangular field, and Sixpenny Handley settlement edge uniquely match current Esri imagery at the publisher target. Lucy Pringle independently documents barley and approximately 130 ft (39.5 m) diameter for Handley Hill.",
+      "source_report_controls": {
+        "publisher_coordinate_wgs84_lat_lon": [
+          50.94790874,
+          -1.99690261
+        ],
+        "reported_place": "Handley Hill, Dorset, England",
+        "reported_date": "2020-05-31",
+        "source_report_url": "https://cropcircleconnector.com/2020/dorset001/dorset2020a.html",
+        "documented_operational_diameter_m": 39.5,
+        "documented_size_range_m": [
+          39.5,
+          39.624
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The publisher target, documented dimensions, and same-event context resolve a unique field and defensible display orientation. The source transform is constrained only by formation geometry and has no independent persistent-ground checkpoint.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m; orientation uncertainty is plus or minus 15 degrees; zero independent ground checkpoints validate the footprint. The radial pattern is rotationally repetitive, scale and shape are formation-bound, center inherits publisher uncertainty, and no independent ground checkpoint validates the footprint.",
+      "quality_disclosure": "Coordinate-, size-, and orientation-constrained display placement, not a survey georegistration or real-world accuracy benchmark. It is candidate/unaccepted, excluded from alignment calculations, rights-gated, and cannot automatically become an accepted site or publication-eligible asset.",
+      "notes": "Explicit outcome: coordinate_size_geometry_provisional. Rights-gated source pixels are not embedded or redistributed; the public atlas exposes the reviewed footprint and source link only.",
+      "rights_status": "not_cleared_for_redistribution",
+      "embedding_allowed": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_display_placement",
+        "source_image_identifier": "gimg_209f59e15df6ec3687b0",
+        "source_frame_size_px": [
+          800,
+          773
+        ],
+        "source_geometry_control_pixels": [
+          [
+            400,
+            20
+          ],
+          [
+            766,
+            386
+          ],
+          [
+            400,
+            752
+          ],
+          [
+            34,
+            386
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "label": "outer_circle_source_top",
+            "source_xy": [
+              400,
+              20
+            ],
+            "target_local_m_east_north": [
+              -3.429551509,
+              19.449953122
+            ]
+          },
+          {
+            "label": "outer_circle_source_right",
+            "source_xy": [
+              766,
+              386
+            ],
+            "target_local_m_east_north": [
+              19.449953122,
+              3.429551509
+            ]
+          },
+          {
+            "label": "outer_circle_source_bottom",
+            "source_xy": [
+              400,
+              752
+            ],
+            "target_local_m_east_north": [
+              3.429551509,
+              -19.449953122
+            ]
+          },
+          {
+            "label": "outer_circle_source_left",
+            "source_xy": [
+              34,
+              386
+            ],
+            "target_local_m_east_north": [
+              -19.449953122,
+              -3.429551509
+            ]
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.053141948421,
+            0.009370359314,
+            -24.873738063498
+          ],
+          [
+            0.009370359314,
+            -0.053141948421,
+            16.764648364808
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_diameter_m": 39.5,
+        "documented_size_range_m": [
+          39.5,
+          39.624
+        ],
+        "orientation_basis": "The selected-frame tramline is cross-matched to the original wide frame, where the same tramline and northern hedgerow transfer into the north-up publisher field.",
+        "source_top_bearing_true_deg": 350,
+        "orientation_uncertainty_deg": 15,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound circle-extrema controls define scale and preserved image geometry; zero interpolation residual is not an independent accuracy test.",
+        "reference_export_bbox_wgs84": [
+          -2.00490261,
+          50.94290874,
+          -1.98890261,
+          50.95290874
+        ],
+        "reference_export_size_px": [
+          1200,
+          900
+        ],
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "reference_export_sha256": "cbbd0e32bc7f8f45a4fa635e659e85b662c9d377370fe8e045213d8059fa69f0",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.002911870316,
+            -0.002911870316
+          ],
+          "jacobian_sign_consistent": true,
+          "result": "pass_non_folded"
+        }
+      }
     }
   ]
 }
