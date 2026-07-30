@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T19:22:14.340801Z",
+  "generated_at": "2026-07-30T20:23:48.421888Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 120,
+    "candidate_field": 132,
     "clues_reviewed": 2,
     "provisional_registration": 76,
-    "queued": 1708,
+    "queued": 1696,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -20616,11 +20616,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2205,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Alfred's Settlement (2) retains a publisher coordinate candidate with 25 metre uncertainty. Two original catalog rasters were hash- and dimension-verified and reviewed, but they contain no geotag or camera pose, and no documented size or independent landmark solution was established. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_7bd8d137be89",
@@ -21759,11 +21759,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Etchilhampton Hill retains a 25 metre publisher candidate. Two original catalog rasters were hash- and dimension-verified and reviewed; their hill crest, buildings, tree lines, road, and field boundaries remain strongly oblique and were not independently matched to a reference control set. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_210881b656bd",
@@ -22099,11 +22099,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Milk Hill retains a publisher coordinate candidate with 25 metre uncertainty. Two original catalog rasters were hash- and dimension-verified and reviewed, but they contain no geotag or camera pose, and no documented size or independent landmark solution was established. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_499b670c00f5",
@@ -23799,11 +23799,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Roundway Hill (2) retains a publisher coordinate candidate with 25 metre uncertainty. Two original catalog rasters were hash- and dimension-verified and reviewed, but they contain no geotag or camera pose, and no documented size or independent landmark solution was established. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_49cc2f4a4128",
@@ -24747,11 +24747,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "White Sheet Downs retains a 25 metre publisher candidate. Two original catalog rasters were hash- and dimension-verified and reviewed; their hilltop copse, hedges, roads, and field boundaries remain relief-dominated and were not independently matched to a planar reference control set. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_14e82637573f",
@@ -25000,11 +25000,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Odstone Barn retains a publisher coordinate candidate with 25 metre uncertainty. Two original catalog rasters were hash- and dimension-verified and reviewed, but they contain no geotag or camera pose, and no documented size or independent landmark solution was established. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_2e8bd4fa9994",
@@ -25696,11 +25696,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Maccoombe Down retains a 25 metre publisher candidate. Two original catalog rasters were hash- and dimension-verified and reviewed; their wooded blocks, hedges, and field boundaries remain strongly oblique and were not independently matched to a reference control set. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_76a63b9aa326",
@@ -26199,11 +26199,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Jack's Castle Plantation retains a 25 metre publisher candidate. Two original catalog rasters were hash- and dimension-verified and reviewed, but the tower is a single elevated landmark and the plantation edge does not provide a distributed planar control set. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ca3db6cac855",
@@ -27012,11 +27012,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Stone Circle / Avebury has a visually supported unique field and an independently documented approximate 76.2 metre span. Two original catalog rasters were hash- and dimension-verified and reviewed, but the event-specific publisher anchors disagree by approximately 34 metres and the oblique frames provide no solved north-up pose. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_308f7ddbd4f6",
@@ -27750,11 +27750,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Etchilhampton Hill (2) has a visually supported unique field and event-specific size evidence. Two original catalog rasters were hash- and dimension-verified and reviewed, but the publisher anchors disagree by approximately 93.6 metres and the oblique frames provide no solved north-up pose. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_f7954e8111e4",
@@ -28356,11 +28356,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Zeals Knoll has a visually supported unique field and event-specific size evidence. Two original catalog rasters were hash- and dimension-verified and reviewed, but the publisher anchors disagree by approximately 52.8 metres and the oblique frames provide no solved north-up pose. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_7a343b043b74",
@@ -29189,11 +29189,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Roundway Hill has a visually supported unique field and event-specific size evidence. Two original catalog rasters were hash- and dimension-verified and reviewed, but the publisher anchors disagree by approximately 23.1 metres and the source frame has no documented north orientation or solved camera pose. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_93ec7bb7e833",
