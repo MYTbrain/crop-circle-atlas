@@ -1520,6 +1520,133 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_e5b84624008b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Nun's Walk has reviewed complete and contextual source frames, but "
+            "the publisher grid and coordinate text differ by approximately "
+            "117.03 metres. The center gate fails and no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_752553dd93e5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Smeathe's Plantation has reviewed source frames, but its publisher "
+            "anchor retains 25 metre uncertainty and no event-specific size or "
+            "metadata-backed camera pose was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_7b3649a57f6c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Owl House has reviewed source frames, but its publisher anchor "
+            "retains 25 metre uncertainty and no event-specific size or "
+            "metadata-backed camera pose was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_cd408c1c3bab": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Tawsmead Copse has reviewed complete and contextual source frames, "
+            "but two publisher grid targets differ by approximately 54.74 "
+            "metres. The center gate fails and no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4c5ee110d661": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Willoughby Hedge has reviewed complete and contextual frames plus "
+            "an event-specific approximate 35.5 metre diameter, but its anchor "
+            "retains 25 metre uncertainty and the distant hedge does not supply "
+            "a defensible planar control set. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_210881b656bd": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Potterne Field has two reviewed source frames, but both are "
+            "formation-tight and supply zero persistent ground controls. Its "
+            "publisher anchor retains 25 metre uncertainty. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_084447adeb93": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roman Road has reviewed complete and landscape frames, but the "
+            "context is strongly oblique and relief-affected rather than a "
+            "matched planar control set. Its publisher anchor retains 25 metre "
+            "uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_45bc4184c3a1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Foxley Road has reviewed complete and contextual frames, but the "
+            "distant hedge and tree line are neither distributed nor "
+            "independently matched controls. Its publisher anchor retains 25 "
+            "metre uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_156f9cc1c673": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fox Ground Down has reviewed complete and contextual source frames "
+            "plus an independently documented approximate 54.864 metre "
+            "diameter, but its publisher anchor retains 25 metre uncertainty "
+            "and orientation is unresolved. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_ede9e555c69f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Knoll Down has reviewed complete and contextual source frames, but "
+            "its publisher anchor retains 25 metre uncertainty and no "
+            "event-specific overall dimension was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2adf4a9b92d5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Devizes Road has reviewed complete and contextual source frames "
+            "plus an independently documented approximate 45.72 metre diameter, "
+            "but its publisher anchor retains 25 metre uncertainty and no "
+            "source-to-ground transform was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b321bcf1b391": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Green Street has reviewed complete and contextual source frames, a "
+            "publisher DMS marker, and an approximate 48.768 to 54.864 metre "
+            "diameter. Marker precision alone does not prove the formation "
+            "center within 12 metres and no source-to-ground transform was "
+            "established. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 
