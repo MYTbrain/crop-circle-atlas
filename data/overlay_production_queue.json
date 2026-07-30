@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T20:23:48.421888Z",
+  "generated_at": "2026-07-30T22:03:05.771572Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 132,
+    "candidate_field": 143,
     "clues_reviewed": 2,
-    "provisional_registration": 76,
-    "queued": 1696,
+    "provisional_registration": 77,
+    "queued": 1684,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -24619,11 +24619,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Waden Hill has a strongly corroborated event landscape and approximate size evidence, but its same-event publisher anchors differ by about 40 metres. No independent planar controls resolve the formation center, so the governing coordinate-conflict gate fails closed and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_edbca8cc578d",
@@ -25888,11 +25888,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Potterne Hill has near-coincident event targets supporting the same parcel, but generic field boundaries, tractor lines, and a wooded horizon do not establish a transferable source-frame footprint. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_9c6a3fbb1f80",
@@ -26014,11 +26014,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Eastleigh Court has a uniquely supported field and approximate 55 metre diameter evidence, but every complete source frame is oblique and contains sky or relief. No defensible ground-only full-frame footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_a6558cff2782",
@@ -26449,11 +26449,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Falkner's Circle retains a same-parcel publisher candidate, but the reviewed wide frames contain generic rolling-field context without a transferable monument, road, building, or distinctive tree control set. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_e36238e8c588",
@@ -26638,11 +26638,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Ware Farm Manor has two near-coincident same-event targets, a complete source frame, a Cobb-directed landscape frame, and published size evidence. Its nonfold coordinate-size display footprint has zero independent checkpoints and remains unaccepted, rights-gated, publication-ineligible, and alignment-ineligible. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "ware-farm-manor-2025-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_efebfd5446ca",
@@ -27629,11 +27629,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "The Gallops has a strongly supported unique field and a complete near-overhead frame, but no authoritative same-event metric size supports a reproducible full-frame footprint. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ba887cdeb3c2",
@@ -28474,11 +28474,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Ipuaçu retains a 79 metre map-view candidate, but that point is not a demonstrated formation center and the source photographs lack persistent field context for a unique match. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_860535b066ca",
@@ -28771,11 +28771,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Broad Hinton has approximate 55 metre diameter evidence, but its same-event publisher anchors differ by about 115 metres and the reviewed context does not independently resolve the center. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_d0fdd30adb3e",
@@ -29304,11 +29304,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2187,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "First Broad Drive has a visually supported unique field, but event-specific metric scale is unresolved and all reviewed formation frames are oblique. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_0f88a82459e2",
@@ -30288,11 +30288,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2187,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Barton Stacey Belt has a visually supported unique field and published size evidence, but same-event publisher anchors differ by 55.145 metres. No independently measured center resolution exists, so the coordinate-conflict gate fails closed and no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ab1622ed3f0a",
@@ -30400,11 +30400,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2185,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Zürcher Weinland has a supported event field, but the complete frame is strongly oblique, the near-overhead frame clips both tips, and the publisher requests that the exact location remain private. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_0ed1d457fdb6",
@@ -30514,11 +30514,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2184,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Kitt's Lane has visually supported field context, but coordinate clues differ by approximately 96 to 120 metres, the retained anchor meets a wooded edge, and published size estimates conflict. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_414e05996a56",

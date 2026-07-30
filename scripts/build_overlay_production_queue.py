@@ -1914,6 +1914,137 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_ec0e34557974": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Waden Hill has a strongly corroborated event landscape and "
+            "approximate size evidence, but its same-event publisher anchors "
+            "differ by about 40 metres. No independent planar controls resolve "
+            "the formation center, so the governing coordinate-conflict gate "
+            "fails closed and no footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dd260263c626": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Falkner's Circle retains a same-parcel publisher candidate, but "
+            "the reviewed wide frames contain generic rolling-field context "
+            "without a transferable monument, road, building, or distinctive "
+            "tree control set. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_edab9414ec9f": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Ware Farm Manor has two near-coincident same-event targets, a "
+            "complete source frame, a Cobb-directed landscape frame, and "
+            "published size evidence. Its nonfold coordinate-size display "
+            "footprint has zero independent checkpoints and remains "
+            "unaccepted, rights-gated, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_86082744be4d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Potterne Hill has near-coincident event targets supporting the "
+            "same parcel, but generic field boundaries, tractor lines, and a "
+            "wooded horizon do not establish a transferable source-frame "
+            "footprint. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_a5b77e6c72ff": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eastleigh Court has a uniquely supported field and approximate "
+            "55 metre diameter evidence, but every complete source frame is "
+            "oblique and contains sky or relief. No defensible ground-only "
+            "full-frame footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b552fe94f8a2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Gallops has a strongly supported unique field and a complete "
+            "near-overhead frame, but no authoritative same-event metric size "
+            "supports a reproducible full-frame footprint. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_bbfcc41330a2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Broad Hinton has approximate 55 metre diameter evidence, but its "
+            "same-event publisher anchors differ by about 115 metres and the "
+            "reviewed context does not independently resolve the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_0c60f9be3ff9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "First Broad Drive has a visually supported unique field, but "
+            "event-specific metric scale is unresolved and all reviewed "
+            "formation frames are oblique. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_82875d48b666": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ipuaçu retains a 79 metre map-view candidate, but that point is "
+            "not a demonstrated formation center and the source photographs "
+            "lack persistent field context for a unique match. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d425e2c76703": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Zürcher Weinland has a supported event field, but the complete "
+            "frame is strongly oblique, the near-overhead frame clips both "
+            "tips, and the publisher requests that the exact location remain "
+            "private. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_f83b788f9191": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Barton Stacey Belt has a visually supported unique field and "
+            "published size evidence, but same-event publisher anchors differ "
+            "by 55.145 metres. No independently measured center resolution "
+            "exists, so the coordinate-conflict gate fails closed and no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_3a52a7fe0821": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Kitt's Lane has visually supported field context, but coordinate "
+            "clues differ by approximately 96 to 120 metres, the retained "
+            "anchor meets a wooded edge, and published size estimates "
+            "conflict. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 

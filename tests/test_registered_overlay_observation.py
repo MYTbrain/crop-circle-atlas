@@ -396,6 +396,61 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
         ):
             self.assertFalse(placement[gate])
 
+    def test_ware_farm_manor_2025_uses_full_boundary_and_remains_unaccepted(self):
+        root = Path(__file__).resolve().parents[1]
+        placements = json.loads(
+            (root / "data" / "provisional_image_scene_placements.json").read_text(
+                encoding="utf-8"
+            )
+        )["placements"]
+        placement = next(
+            row for row in placements if row["formation_id"] == "cc_edab9414ec9f"
+        )
+        observations = json.loads(
+            (root / "data" / "registered_overlay_observations.json").read_text(
+                encoding="utf-8"
+            )
+        )["observations"]
+        observation = next(
+            row
+            for row in observations
+            if row["observation_id"] == placement["observation_id"]
+        )
+        expected_corners = [
+            [50.719109257839, -2.958653307858],
+            [50.718295637077, -2.958879902548],
+            [50.71843910037, -2.960164984897],
+            [50.719252721132, -2.959938390206],
+        ]
+        self.assertEqual(
+            observation["projective_display_transform"]["source_frame_corners_xy"],
+            [[0, 0], [800, 0], [800, 800], [0, 800]],
+        )
+        self.assertEqual(
+            observation["computed_corners_wgs84_lat_lon"], expected_corners
+        )
+        self.assertAlmostEqual(
+            observation["source_registration"][
+                "non_folded_display_footprint_check"
+            ]["source_frame_corner_polygon_signed_area_m2"],
+            -8458.386429568916,
+            places=9,
+        )
+        self.assertEqual(
+            observation["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        for gate in (
+            "accepted",
+            "publication_eligible",
+            "embedding_allowed",
+            "pixel_bytes_packaged",
+            "alignment_eligibility",
+        ):
+            self.assertFalse(placement[gate])
+
 
 if __name__ == "__main__":
     unittest.main()
