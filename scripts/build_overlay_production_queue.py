@@ -114,6 +114,179 @@ BLOCKED_ARCHIVE = {
 
 
 PRODUCTION_REVIEW = {
+    "cc_a766e0a73ba1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Upper Rapeland has an exact publisher target and an approximate "
+            "38.1 metre diameter, but the bounded review did not complete an "
+            "original-frame/current-reference crosswalk that resolves a unique "
+            "field and true orientation. No source-photo transform or "
+            "independent ground checkpoint is available, so no footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3026040dd61b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Bishop's Cannings Down has an exact publisher target and an "
+            "approximate 54.864 metre diameter, but the retained camera GPS is "
+            "93.698 metres from that target while the near-nadir pose implies a "
+            "much smaller camera-to-image-center offset. The original-frame crop "
+            "window and pose cannot reconcile the center, and no independent "
+            "ground checkpoint resolves it. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_fffbf1ce3c4b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Connector and Temporary Temples evidence resolve the same "
+            "Boreham Wood field, but their map targets are 197.306 metres apart "
+            "inside it. The approximate 60.96 metre diameter, rights-gated "
+            "near-nadir frame, and zero independent ground checkpoints cannot "
+            "adjudicate that center conflict. No source-photo footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f30c1e8ffd2f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Buckland Down report's displayed grid reference and linked "
+            "Streetmap query differ by 1,025.413 metres. Same-event frames "
+            "corroborate the formation and landscape, but no documented size, "
+            "surviving camera pose, or independent ground checkpoint resolves "
+            "the conflicting centers. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_35bc1f4dd411": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and same-event Longwood Warren context resolve "
+            "one field by its road junction, hedges, circuit, and copse pattern. "
+            "Published overall sizes conflict materially at about 40 versus "
+            "60.96 metres, while the tight frames contain no distributed "
+            "persistent controls or independent checkpoint. No source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_e04260cea9e6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Muncombe Hill target and same-event context resolve the field "
+            "between the western woodland, eastern road, and northern solar "
+            "installations. Published overall sizes conflict at about 76 versus "
+            "106.7 metres, and the source frames supply neither distributed "
+            "persistent coplanar controls nor an independent checkpoint. No "
+            "source-photo footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_c90d17acd2af": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Willoughby Hedge publisher target and same-event context resolve "
+            "the candidate field, but no event-specific overall dimension was "
+            "found. The near-nadir image omits the full formation, the complete "
+            "views are oblique, and no camera pose or independent ground "
+            "checkpoint survives. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_486fd4d67389": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and wide Shaw Hill aerial resolve a distinctive "
+            "road junction, hedgerows, field corners, tree rows, and nearby "
+            "settlement. The acquired frames retain no camera pose, documented "
+            "size, measured image-to-map controls, or held-out checkpoint, so no "
+            "source-photo footprint is proposed. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_37764ac002d2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target, reported 46 metre diameter, and wide "
+            "Etchilhampton context identify the candidate field. The ridge, "
+            "woodline, and settlement features were not measured against reference "
+            "imagery, and the retained files provide no verified camera pose or "
+            "independent checkpoint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_75b85fd54146": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and Rodfield Lane panorama identify the woodland "
+            "edge, field corner, hedgerow, and adjoining crop boundary. Persistent "
+            "features are clustered along one side, woodland canopy is not a planar "
+            "control surface, and no size or verified reference transform is "
+            "available. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_4bbda1f80471": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and coherent Roundway Hill aerial sequence show "
+            "hedgerows, tree lines, an isolated tree, field boundaries, and distant "
+            "settlement. The oblique terrain context supplies no distributed "
+            "coplanar controls, documented size, or held-out checkpoint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_dd5484141415": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 20 reviewed frames uniquely identify the "
+            "field southwest of the Milk Hill White Horse. The useful landmarks lie "
+            "on steep relief and remain clustered uphill or along one edge, so no "
+            "defensible planar fit or calibrated pose exists. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8aab5a525413": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 19 reviewed frames uniquely identify the "
+            "field north of the Westbury White Horse and Bratton Camp. Wide views "
+            "cross the horizon and sloping hillfort while tight views lack "
+            "distributed persistent controls, preventing a defensible fit. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_cb77ef2ea1a6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 18 reviewed frames uniquely identify the "
+            "field west of wooded Hod Hill. Persistent features are clustered along "
+            "the far edge, and slope plus wooded relief prevent a full-footprint "
+            "planar fit or independent checkpoint test. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8c3b2c48da4a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The publisher target and all 26 reviewed frames uniquely identify the "
+            "Forests Way field by the marina, canal, lakes, woods, and roads. The "
+            "best frame mixes field, water, woodland, and marina depths; attempted "
+            "matching produced no non-folded projective footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
     "cc_5d34291524c4": {
         "processing_status": "candidate_field",
         "reason": (
@@ -487,13 +660,13 @@ PRODUCTION_REVIEW = {
     "cc_029cf09b5162": {
         "processing_status": "candidate_field",
         "reason": (
-            "The exact Westbury map target and the road, escarpment, and White Horse "
-            "scene identify one candidate field. The wide source frames are strongly "
-            "oblique and the additional controls are compressed, near-collinear, or "
-            "affected by terrain parallax; the near-nadir frames contain no persistent "
-            "landmarks, so no image footprint is published."
+            "The exact Westbury map target identifies one candidate field, but the "
+            "available oblique frames mix terrain depths and leave the road, "
+            "escarpment, and White Horse controls compressed or near-collinear. "
+            "No reproducible affine or projective source-frame footprint survives "
+            "the bounded review. Explicit outcome: candidate_field."
         ),
-        "review_date": "2026-07-22",
+        "review_date": "2026-07-30",
     },
     "cc_70a65215ef96": {
         "processing_status": "candidate_field",
@@ -625,6 +798,1512 @@ PRODUCTION_REVIEW = {
             "100 metres, so no source-frame footprint is published."
         ),
         "review_date": "2026-07-22",
+    },
+    "cc_a839f3bb4d14": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Herepath publisher target and wide source frames identify a "
+            "field beside the Avebury henge, village road, trees, and field-boundary "
+            "complex. Three inspected DJI derivatives contain no retained EXIF/XMP "
+            "camera pose, and no landscape feature was measured against independent "
+            "reference imagery. The candidate field is retained, but no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_963b25557b94": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Hunt's Down publisher target and eight reviewed DJI frames "
+            "reproduce the same formation, enclosing field, hedgerow, woodland, and "
+            "isolated-tree context. The web derivatives retain no EXIF/XMP camera "
+            "pose, and no persistent feature was measured against independent "
+            "reference imagery. The candidate field is retained, but no source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_d74a95a2117a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Scrubbs Lane publisher target and wide DJI frames identify a "
+            "field with hedgerows, isolated trees, field corners, and distant "
+            "woodland. Four inspected derivatives contain no retained EXIF/XMP "
+            "camera pose, and the visible landscape was not converted into "
+            "distributed pixel-to-map controls. The candidate field is retained, "
+            "but no source-photo footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_b99db3829904": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Etchilhampton Hill publisher target and five reviewed DJI frames "
+            "constrain the reported field, but a second formation-like feature in "
+            "the same scene leaves the specific formation center ambiguous. The "
+            "derivatives retain no EXIF/XMP camera pose and no persistent landscape "
+            "controls were measured. No source-photo footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_886f1e3e45ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Allan King Way publisher target and five reviewed DJI frames "
+            "identify a candidate field using the hedgerow/track corridor, wooded "
+            "clumps, field boundaries, and distant settlement. The derivatives "
+            "retain no EXIF/XMP camera pose, same-flight timing is unverified, and "
+            "no independent reference controls were measured. No source-photo "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_fec12ccafd56": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Barbury Castle publisher target and 18 reviewed source frames "
+            "consistently reproduce one field below the hillside road, tree-line "
+            "bends, and track geometry. The persistent controls remain concentrated "
+            "on one side of strongly oblique, relief-affected frames, so no stable "
+            "full-frame planar transform or independent held-out checkpoint set is "
+            "available. No source-photo footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_ac20cd7fff97": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Luxenborough publisher target and reported approximately 122 metre "
+            "diameter preserve a precise search point, but no unique field match or "
+            "true-north orientation was independently established. Reported size and "
+            "formation geometry are not persistent ground controls. No defensible "
+            "display footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_a1d3b0aeea80": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Winterbourne Stoke Down publisher target and reported approximately "
+            "61 metre diameter preserve a precise search point, but no persistent "
+            "landmark match or true-north orientation was established. A possible "
+            "Stonehenge alias also remains unaccepted. No defensible display footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_5a2600dc568f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Uffcott publisher target and reported approximately 30.5 metre "
+            "diameter preserve a precise search point, but the source frames were not "
+            "matched to persistent field controls and do not establish true north. "
+            "Reported size alone cannot locate or rotate a source frame. No defensible "
+            "display footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8fb51295f08d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Uffcott Down publisher target and reported approximately 61 metre "
+            "overall size preserve a precise search point, but no persistent "
+            "landmark match or true-north orientation was established. The possible "
+            "Barbury Castle alias remains unresolved. No defensible display footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_78ba2c2622ec": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Clifford's Hill publisher target and reported approximately 39.5 "
+            "metre diameter preserve a precise search point, but the formation nodes, "
+            "petals, tramlines, and reported size are not independent persistent "
+            "ground controls. No matched landmark or true-north cue supports an honest "
+            "display footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_d348038b1262": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Farley Mount report preserves a publisher pointer and monument "
+            "viewpoint, but no staged source pixels or reference-image crosswalk "
+            "establishes one unique formation-bearing field. No footprint is "
+            "published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f5c282a9d9d7": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Ackling Dyke report's numeric map pointer and printed grid label "
+            "differ by approximately 581 metres across multiple fields. Same-event "
+            "source frames do not resolve that conflict, and no defensible metric "
+            "scale is documented. No footprint is published. Explicit outcome: "
+            "unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3f3c81c35f60": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Etchilhampton Hill (2) publisher target, same-event wide "
+            "aerials, tree belt, landscape context, and current reference imagery "
+            "identify one candidate field. A complete near-nadir source frame "
+            "survives, but no sourced metric dimension supports an honest display "
+            "scale, so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_b670486b7829": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The New Park report securely identifies Maple Lawn Farms, but the "
+            "historical 2004 formation-bearing strip cannot be reconciled to one "
+            "unique present-day field. No transform or footprint is published. "
+            "Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_6bc118741f7e": {
+        "processing_status": "unresolved",
+        "reason": (
+            "Three original Burnsville frames were reviewed within the bounded "
+            "reported terrain locus, but their scene cues do not identify one "
+            "unique field and the tested feature fit is degenerate. No transform "
+            "or footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_6b40658e7a2e": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Normanton Down Barrows source and secondary publisher targets "
+            "differ by about 124 metres, and the bounded review found no visual "
+            "crosswalk that resolves one formation-bearing field. No source-photo "
+            "footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_86f3c35cfc57": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Wilton Windmill evidence retains a candidate field and documents "
+            "an approximate 330-foot formation, but its publisher targets differ "
+            "by about 66 metres and no directed source-frame orientation survives. "
+            "No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_8b083004c965": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Norton Plantation evidence retains a candidate field and documents "
+            "an approximate 200-foot formation, but its publisher targets differ "
+            "by about 42 metres and no directed source-frame orientation survives. "
+            "No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3a709a5ad15a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Lay Wood evidence retains a candidate field and documents an "
+            "approximate 200-foot formation, but its publisher targets differ by "
+            "about 17 metres and no independent control resolves the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_136c5cb78f3f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Yarnbury Castle target and road, castle, and A36 context resolve "
+            "one candidate field. No documented overall size or stable distributed "
+            "same-plane controls support an honest image footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_459260b91734": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Sutton Hall target and same-event context resolve one candidate "
+            "field beside the hall. No documented overall size or stable distributed "
+            "same-plane controls support an honest image footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_175208ac7d3f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Spiers Lane publisher and Connector targets differ by 85.2 metres. "
+            "The road-side context does not uniquely resolve the center and directed "
+            "frame, so the documented 240-foot size cannot support an honest "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_5c145606dd1c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Barton Stacey Belt target, field, and documented 76.2-metre size "
+            "are retained, but the source frame has an unresolved 180-degree "
+            "directional ambiguity. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_f8807dac7eef": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Manton Drove target, unique field, and approximate 27.4-to-30.5 "
+            "metre size are retained, but no defensible directed orientation "
+            "supports an image footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_ccc61e24b8c8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Westwoods landscape suggests the reported field, but the Connector "
+            "point lies in woodland and the bounded review cannot reproduce an exact "
+            "formation center or directed frame. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_00a10f9e60ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Six original Cake Wood catalog frames were hash-verified and reviewed, "
+            "but they retain no camera pose, sourced formation dimensions, or "
+            "reference-image crosswalk that supports an honest footprint. The "
+            "publisher target remains a candidate only. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_0d1a819fdc2a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "One complete Cakebole Lane original frame survives review; two incomplete "
+            "gray frames are excluded. No camera pose, sourced dimensions, or "
+            "reference-image crosswalk supports a footprint. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_221975af1ce9": {
+        "processing_status": "unresolved",
+        "reason": (
+            "The Allan King Way unique-field cutoff expired before an original source "
+            "frame or reproducible reference crosswalk was preserved. No transform "
+            "or footprint is published. Explicit outcome: unresolved."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_3af6a382b875": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hoo Mill publisher target and source frames retain a candidate field, "
+            "but no sourced metric size or distributed persistent controls support "
+            "a defensible display footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_d4272d0f7fb7": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Whispering Knights monument and road context resolve one field, but "
+            "fisheye distortion, relief, and one-sided controls prevent a stable "
+            "coplanar affine or projective transform. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_600f60e20fb9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Devil's Den barn, track, and field geometry resolve one field, but "
+            "elevated buildings and mutable vegetation do not provide distributed "
+            "coplanar controls. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_1f2cfe563407": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Willoughby Hedge target and broad reported size retain a "
+            "candidate field, but the complete original frame lacks defensible "
+            "directed context and cannot support a stable footprint. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_4ad91f8abdc1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The exact Pancake Plantation (2) target retains a candidate field, but "
+            "the linked report supplies no defensible metric formation size. No "
+            "scale-qualified nonfold footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-29",
+    },
+    "cc_49cc2f4a4128": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eight original Pilgrim's Trail catalog frames were hash-verified and "
+            "reviewed around the exact publisher target. They retain no camera pose, "
+            "sourced scale, or independent pixel-to-reference crosswalk, so no "
+            "source-frame footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_8ea75ae79c53": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Six original Woodborough Hill catalog frames were reviewed around the "
+            "publisher target. Their metadata is Photoshop-only and supplies no "
+            "camera pose, metric scale, or independent reference crosswalk. No "
+            "source-frame footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_ebb616c3eb52": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eight original Little Down catalog frames retain one candidate field, "
+            "but the visible tree islands are same-flight evidence rather than "
+            "independent controls. No retained pose, metric scale, or reference "
+            "crosswalk supports a footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_86cadc2efb3d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Three original Woodcote Lane catalog frames were reviewed, but the "
+            "near-nadir frame is unavailable and the report's grid and URL targets "
+            "remain inconsistent. No camera pose, scale, or independent crosswalk "
+            "supports a footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e3c5c466d9e1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hackpen Hill White Horse publisher target retains a candidate field, "
+            "but the bounded review ended without a staged, hash-verified full frame "
+            "and distributed reference controls. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_76a63b9aa326": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Oliver's Castle publisher target retains a candidate field, but the "
+            "bounded review found no reproducible persistent-landmark match or "
+            "distributed affine/projective controls. No source-frame footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e74fb3ca1fc8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Hetty Pegler's Tump publisher target retains a candidate field, but "
+            "the bounded review found no reproducible persistent-landmark match or "
+            "distributed affine/projective controls. No source-frame footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d4f0ffc7b93f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Combe Hill publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e92d77f71af8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Nun's Walk publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d04a0f91f17d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Stanton St Bernard publisher target retains a candidate field, but "
+            "the linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_247d37448c7d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Little Nutford publisher target retains a candidate field, but the "
+            "linked report evidence supplies no sourced physical formation size. "
+            "The early scale gate therefore prevents a coordinate-size display "
+            "footprint. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d62e0f21e878": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ockley Hill has a sourced approximate 45.72 metre size and reviewed "
+            "original catalog frames, but the publisher center remains at 25 metre "
+            "uncertainty. That exceeds the 12 metre display-placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_cd13445a6e89": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Forest Hill has a sourced approximate 76.2 metre diameter and reviewed "
+            "original catalog frames, but the publisher center remains at 25 metre "
+            "uncertainty. That exceeds the 12 metre display-placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d0f5312794e8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Gussage St Andrew has a sourced approximate 60.96 metre diameter and "
+            "reviewed original catalog frames, but the publisher center remains at "
+            "25 metre uncertainty. That exceeds the 12 metre display-placement gate, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dc30267dcbce": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway Down has a sourced approximate 76.2 metre diameter and an "
+            "orientation-neutral source frame, but its two publisher anchors differ "
+            "by 18.03 metres. A center within the 12 metre gate is therefore not "
+            "proved and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2782fed800ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sunnyside has a sourced approximate 30.48 metre diameter, but its center "
+            "remains at 25 metre uncertainty and no original-frame orientation "
+            "evidence was staged before the bounded access cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_aac7d03b1817": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cooks Plantation has a sourced approximate 36.576 metre diameter, but "
+            "its center remains at 25 metre uncertainty and no original-frame "
+            "orientation evidence was staged before the bounded access cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_80a8efdc1d13": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chirton Bottom has a sourced approximate 36.576 metre diameter, but the "
+            "precise Google target was not resolved against the Connector target "
+            "before the bounded access cutoff. Center uncertainty remains 25 metres "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_239d6d0c8abd": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway 2020 has a sourced approximate 60.96 metre diameter, but the "
+            "precise Google target was not resolved against the Connector target "
+            "before the bounded access cutoff. Center uncertainty remains 25 metres "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d03144df7e92": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fox Hill has a sourced approximate 45.72 to 54.864 metre width and "
+            "reviewed original catalog frames, but its publisher center remains at "
+            "25 metre uncertainty. That exceeds the 12 metre placement gate, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b844f0eade69": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Norton Plantation / Scratchbury Hillfort has a precise publisher target, "
+            "sourced approximate 45.72 metre diameter, and directed same-flight "
+            "landscape context. Its nonfold coordinate-size display footprint has "
+            "zero independent checkpoints and remains unaccepted, rights-gated, "
+            "publication-ineligible, and excluded from alignment calculations. "
+            "Explicit outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_37d7177f4cdc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Kiteland Cottages has a sourced approximate 76.2 metre diameter and "
+            "reviewed original frames, but the publisher Google and printed OS-grid "
+            "targets differ by 50.79 metres. The 12 metre center gate fails and no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_76a70382f1a9": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Enmill Barn / Crab Wood has a precise publisher target and sourced "
+            "approximate 30.48 metre diameter. Its fourfold geometry supports an "
+            "orientation-neutral nonfold display footprint, but photographic yaw is "
+            "not claimed and independent checkpoint count is zero. It remains "
+            "unaccepted, rights-gated, publication-ineligible, and alignment-ineligible. "
+            "Explicit outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_a2bcbffed0b6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Welsh Way has a sourced approximate 45.72 metre size, but the "
+            "publisher coordinate does not establish the formation center within "
+            "the 12 metre placement gate. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_91a458f45811": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Parkers Hill Plantation has a sourced approximate 60.96 to 67.056 "
+            "metre size, but the publisher coordinate does not establish the "
+            "formation center within the 12 metre placement gate. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dec77eb484bc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill has a full publisher grid reference, a sourced "
+            "approximate 60.96 metre diameter, and reviewed full catalog frames. "
+            "The retained reference places the target at or near a field boundary "
+            "and does not independently prove the formation center within 12 "
+            "metres. No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b370c99e94ef": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chillandham Lane 2S shares a field with a second same-date formation. "
+            "Reviewed full catalog frames and field context do not disambiguate "
+            "the 2S center, size, and orientation within 12 metres without a "
+            "cross-event assignment. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4a5094c50b69": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Muenchener Berg retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_37b6e035f986": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chilcomb Ranges retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_7bd8d137be89": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Beech Clump has an event-specific ten-figure grid reference, "
+            "independently documented approximate 76 by 24 metre dimensions, a "
+            "complete source frame, and directed same-event landscape context. "
+            "Its nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "publication-ineligible, and alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_5fa3397b58d7": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Preston Candover retains a publisher coordinate candidate, but no "
+            "original full catalog frame was staged before the hard wave cutoff. "
+            "Unique-field accuracy within 12 metres and reproducible geometry "
+            "remain unproved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_002d58639768": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Barbury Castle has a sourced approximate 73.152 metre diameter and "
+            "a reviewed complete catalog frame, but its publisher grid targets "
+            "differ by approximately 38.3 metres. The 12 metre center gate fails "
+            "and no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b3a720cf7d69": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fulley Wood has a sourced approximate 54.864 to 60.96 metre size, "
+            "but its only cataloged publisher target retains 25 metre center "
+            "uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_53a94e6ae861": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Furzefield Shaw has an event-matched approximate 54.864 metre size, "
+            "but its publisher target retains 25 metre center uncertainty. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_499b670c00f5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chillandham Lane 1C shares a field and date with the separate 2S "
+            "formation. The staged sources do not reconcile the conflicting "
+            "targets or prove the 1C identity within 12 metres without a "
+            "cross-event assignment. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e5b84624008b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Nun's Walk has reviewed complete and contextual source frames, but "
+            "the publisher grid and coordinate text differ by approximately "
+            "117.03 metres. The center gate fails and no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_752553dd93e5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Smeathe's Plantation has reviewed source frames, but its publisher "
+            "anchor retains 25 metre uncertainty and no event-specific size or "
+            "metadata-backed camera pose was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_7b3649a57f6c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Owl House has reviewed source frames, but its publisher anchor "
+            "retains 25 metre uncertainty and no event-specific size or "
+            "metadata-backed camera pose was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_cd408c1c3bab": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Tawsmead Copse has reviewed complete and contextual source frames, "
+            "but two publisher grid targets differ by approximately 54.74 "
+            "metres. The center gate fails and no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4c5ee110d661": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Willoughby Hedge has reviewed complete and contextual frames plus "
+            "an event-specific approximate 35.5 metre diameter, but its anchor "
+            "retains 25 metre uncertainty and the distant hedge does not supply "
+            "a defensible planar control set. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_210881b656bd": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Potterne Field has two reviewed source frames, but both are "
+            "formation-tight and supply zero persistent ground controls. Its "
+            "publisher anchor retains 25 metre uncertainty. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_084447adeb93": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roman Road has reviewed complete and landscape frames, but the "
+            "context is strongly oblique and relief-affected rather than a "
+            "matched planar control set. Its publisher anchor retains 25 metre "
+            "uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_45bc4184c3a1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Foxley Road has reviewed complete and contextual frames, but the "
+            "distant hedge and tree line are neither distributed nor "
+            "independently matched controls. Its publisher anchor retains 25 "
+            "metre uncertainty. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_156f9cc1c673": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Fox Ground Down has reviewed complete and contextual source frames "
+            "plus an independently documented approximate 54.864 metre "
+            "diameter, but its publisher anchor retains 25 metre uncertainty "
+            "and orientation is unresolved. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_ede9e555c69f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Knoll Down has reviewed complete and contextual source frames, but "
+            "its publisher anchor retains 25 metre uncertainty and no "
+            "event-specific overall dimension was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2adf4a9b92d5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Devizes Road has reviewed complete and contextual source frames "
+            "plus an independently documented approximate 45.72 metre diameter, "
+            "but its publisher anchor retains 25 metre uncertainty and no "
+            "source-to-ground transform was established. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b321bcf1b391": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Green Street has reviewed complete and contextual source frames, a "
+            "publisher DMS marker, and an approximate 48.768 to 54.864 metre "
+            "diameter. Marker precision alone does not prove the formation "
+            "center within 12 metres and no source-to-ground transform was "
+            "established. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_045ccfcde873": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cley Hill retains a publisher coordinate candidate with 25 metre "
+            "uncertainty. Source acquisition did not complete before the bounded "
+            "cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_113a6637adde": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Tidcombe Down retains a publisher coordinate candidate with 25 "
+            "metre uncertainty. Source acquisition did not complete before the "
+            "bounded cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_c1dc991a35bc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Belmore Lane retains a publisher coordinate candidate with 25 "
+            "metre uncertainty. Source acquisition did not complete before the "
+            "bounded cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6dd1867f35ae": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Long Wood retains a publisher coordinate candidate with 25 metre "
+            "uncertainty. Source acquisition did not complete before the bounded "
+            "cutoff, so no metadata-backed pose or footprint is claimed. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_a6558cff2782": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sandal Castle retains a publisher grid candidate and a strong named "
+            "landmark lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_f3e05454e411": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Wilton Windmill retains a publisher grid candidate and a strong "
+            "named landmark lead, but no original catalog raster or fitted "
+            "persistent controls were completed before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_edbca8cc578d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Sanctuary retains a publisher grid candidate and a named "
+            "monument lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_3a9c49b0eab2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ackling Dyke retains a publisher grid candidate and a named "
+            "earthwork lead, but no original catalog raster or fitted persistent "
+            "controls were completed before the bounded cutoff. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_84304b9d75ba": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "White Way has an event-matched approximate 30.48 metre diameter, "
+            "but its publisher target retains 25 metre uncertainty and original "
+            "frame inspection did not complete before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_66711c76f288": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Mid Wilts Way has an event-matched approximate 30.48 metre "
+            "diameter, but its publisher target retains 25 metre uncertainty and "
+            "original frame inspection did not complete before the bounded "
+            "cutoff. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_aa2b1c14b407": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Berwick Bassett Clump has an event-matched approximate 60.96 metre "
+            "diameter, but its publisher target retains 25 metre uncertainty, "
+            "the source describes an apparently incomplete design, and original "
+            "frame inspection did not complete before the bounded cutoff. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_39e98d556610": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Summers Lane (1) has event-matched component dimensions, but no "
+            "overall footprint size, its publisher target retains 25 metre "
+            "uncertainty, and original frame inspection did not complete before "
+            "the bounded cutoff. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_423d47ecb9f5": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway Hill (2) retains a publisher coordinate candidate with "
+            "25 metre uncertainty. Two original catalog rasters were hash- and "
+            "dimension-verified and reviewed, but they contain no geotag or "
+            "camera pose, and no documented size or independent landmark "
+            "solution was established. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_29bca12367b9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Odstone Barn retains a publisher coordinate candidate with 25 "
+            "metre uncertainty. Two original catalog rasters were hash- and "
+            "dimension-verified and reviewed, but they contain no geotag or "
+            "camera pose, and no documented size or independent landmark "
+            "solution was established. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4919eb7e214e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Milk Hill retains a publisher coordinate candidate with 25 metre "
+            "uncertainty. Two original catalog rasters were hash- and "
+            "dimension-verified and reviewed, but they contain no geotag or "
+            "camera pose, and no documented size or independent landmark "
+            "solution was established. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_76570d34bf3c": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Alfred's Settlement (2) retains a publisher coordinate candidate "
+            "with 25 metre uncertainty. Two original catalog rasters were "
+            "hash- and dimension-verified and reviewed, but they contain no "
+            "geotag or camera pose, and no documented size or independent "
+            "landmark solution was established. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_1fcc40a50c98": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill retains a 25 metre publisher candidate. Two "
+            "original catalog rasters were hash- and dimension-verified and "
+            "reviewed; their hill crest, buildings, tree lines, road, and field "
+            "boundaries remain strongly oblique and were not independently "
+            "matched to a reference control set. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_7017fdabf2f8": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Maccoombe Down retains a 25 metre publisher candidate. Two "
+            "original catalog rasters were hash- and dimension-verified and "
+            "reviewed; their wooded blocks, hedges, and field boundaries remain "
+            "strongly oblique and were not independently matched to a reference "
+            "control set. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_0cc95b12ee2e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "White Sheet Downs retains a 25 metre publisher candidate. Two "
+            "original catalog rasters were hash- and dimension-verified and "
+            "reviewed; their hilltop copse, hedges, roads, and field boundaries "
+            "remain relief-dominated and were not independently matched to a "
+            "planar reference control set. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b0af4058d0f6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Jack's Castle Plantation retains a 25 metre publisher candidate. "
+            "Two original catalog rasters were hash- and dimension-verified and "
+            "reviewed, but the tower is a single elevated landmark and the "
+            "plantation edge does not provide a distributed planar control set. "
+            "No footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2f1170f4e036": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Stone Circle / Avebury has a visually supported unique field and "
+            "an independently documented approximate 76.2 metre span. Two "
+            "original catalog rasters were hash- and dimension-verified and "
+            "reviewed, but the event-specific publisher anchors disagree by "
+            "approximately 34 metres and the oblique frames provide no solved "
+            "north-up pose. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_fa1e1f3f2ea4": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Roundway Hill has a visually supported unique field and "
+            "event-specific size evidence. Two original catalog rasters were "
+            "hash- and dimension-verified and reviewed, but the publisher "
+            "anchors disagree by approximately 23.1 metres and the source frame "
+            "has no documented north orientation or solved camera pose. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6f5247bcd413": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Zeals Knoll has a visually supported unique field and "
+            "event-specific size evidence. Two original catalog rasters were "
+            "hash- and dimension-verified and reviewed, but the publisher "
+            "anchors disagree by approximately 52.8 metres and the oblique "
+            "frames provide no solved north-up pose. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_c5f7b2872b26": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill (2) has a visually supported unique field and "
+            "event-specific size evidence. Two original catalog rasters were "
+            "hash- and dimension-verified and reviewed, but the publisher "
+            "anchors disagree by approximately 93.6 metres and the oblique "
+            "frames provide no solved north-up pose. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_ec0e34557974": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Waden Hill has a strongly corroborated event landscape and "
+            "approximate size evidence, but its same-event publisher anchors "
+            "differ by about 40 metres. No independent planar controls resolve "
+            "the formation center, so the governing coordinate-conflict gate "
+            "fails closed and no footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_dd260263c626": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Falkner's Circle retains a same-parcel publisher candidate, but "
+            "the reviewed wide frames contain generic rolling-field context "
+            "without a transferable monument, road, building, or distinctive "
+            "tree control set. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_edab9414ec9f": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Ware Farm Manor has two near-coincident same-event targets, a "
+            "complete source frame, a Cobb-directed landscape frame, and "
+            "published size evidence. Its nonfold coordinate-size display "
+            "footprint has zero independent checkpoints and remains "
+            "unaccepted, rights-gated, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_86082744be4d": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Potterne Hill has near-coincident event targets supporting the "
+            "same parcel, but generic field boundaries, tractor lines, and a "
+            "wooded horizon do not establish a transferable source-frame "
+            "footprint. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_a5b77e6c72ff": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Eastleigh Court has a uniquely supported field and approximate "
+            "55 metre diameter evidence, but every complete source frame is "
+            "oblique and contains sky or relief. No defensible ground-only "
+            "full-frame footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_b552fe94f8a2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "The Gallops has a strongly supported unique field and a complete "
+            "near-overhead frame, but no authoritative same-event metric size "
+            "supports a reproducible full-frame footprint. No footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_bbfcc41330a2": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Broad Hinton has approximate 55 metre diameter evidence, but its "
+            "same-event publisher anchors differ by about 115 metres and the "
+            "reviewed context does not independently resolve the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_0c60f9be3ff9": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "First Broad Drive has a visually supported unique field, but "
+            "event-specific metric scale is unresolved and all reviewed "
+            "formation frames are oblique. No footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_82875d48b666": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ipuaçu retains a 79 metre map-view candidate, but that point is "
+            "not a demonstrated formation center and the source photographs "
+            "lack persistent field context for a unique match. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d425e2c76703": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Zürcher Weinland has a supported event field, but the complete "
+            "frame is strongly oblique, the near-overhead frame clips both "
+            "tips, and the publisher requests that the exact location remain "
+            "private. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_f83b788f9191": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Barton Stacey Belt has a visually supported unique field and "
+            "published size evidence, but same-event publisher anchors differ "
+            "by 55.145 metres. No independently measured center resolution "
+            "exists, so the coordinate-conflict gate fails closed and no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_3a52a7fe0821": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Kitt's Lane has visually supported field context, but coordinate "
+            "clues differ by approximately 96 to 120 metres, the retained "
+            "anchor meets a wooded edge, and published size estimates "
+            "conflict. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_0cf000760654": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Martinsell Hill has a publisher target, unmistakable scarp and "
+            "field context, a complete source frame, and same-event size "
+            "reports. Its nonfold coordinate-size display footprint uses a "
+            "61 metre operational diameter while preserving the conflicting "
+            "36 metre estimate. It has zero independent checkpoints and "
+            "remains unaccepted, rights-gated, public-overlay-ineligible, "
+            "publication-ineligible, and alignment-ineligible. Explicit "
+            "outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e4db4e489b8f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Stanton St Bernard has a uniquely recognizable Milk Hill "
+            "landscape, but same-event publisher targets differ by 159.688 "
+            "metres and no independently measured planar controls resolve the "
+            "center. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d25d5f8c75ad": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Norridge Wood has two same-event targets 20.655 metres apart, a "
+            "uniquely recognizable wedge field beside the wood and road, a "
+            "complete source frame, and a 180-to-200-foot reported length. Its "
+            "nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "public-overlay-ineligible, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_34c0a4a40d7e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill has recognizable summit and parcel context, "
+            "but same-event publisher targets differ by 287.237 metres and no "
+            "independently measured planar controls resolve the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4ea612a2af0b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Monarch's Way has a visually supported unique field, but no "
+            "authoritative same-event metric dimensions support a transferable "
+            "full-frame footprint. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6cb1ee15e26a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Wyke Lane's displayed and linked same-event targets differ by "
+            "53.6 metres, no metric scale is documented, and the reviewed "
+            "frames are oblique. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_97bdacefa82e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Scrubbs Lane has a documented 120-foot size, but the staged "
+            "source context does not uniquely demonstrate the event field. No "
+            "transferable footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4add176bd4af": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sutton Hall's same-event targets differ by approximately 248 "
+            "metres, metric scale is absent, and the tall reviewed frame clips "
+            "a terminal element. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4c02ba2e51ed": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sarraltroff has supported field context, but no reviewed source "
+            "frame is both complete and ground-only. No transferable footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d0fdd30adb3e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sparticles Wood has recognizable landscape context, but all "
+            "complete reviewed frames include horizon or vertical landscape "
+            "and no reliable same-event metric scale is documented. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_1f8fe91369b0": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Winterbourne Stoke Down has strong visual field evidence, but "
+            "same-event publisher targets differ by 24.604 metres, crossing "
+            "the 23 metre conflict threshold without independent center "
+            "resolution. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_860535b066ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ammersee has a visually supported unique field, but metric scale "
+            "and a defensible camera pose or measured planar-control fit remain "
+            "unresolved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_de3f149726f6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ridgeway (2) has internally consistent publisher coordinates and "
+            "a documented component scale, but the target lies at or beside a "
+            "persistent round copse while same-event imagery places the "
+            "formation away from it. No measured offset resolves the center, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_36ba5b834120": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sutton Hall has a plausible candidate field and near-coincident "
+            "same-event targets, but no traceable event-specific overall metric "
+            "size supports a transferable full-frame footprint. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_812f7c2283fc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Reigate Hill's displayed grid cell and same-page linked pointer "
+            "differ by 179.847 metres. No independently measured controls "
+            "resolve the center conflict, so no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_019237ced8b1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Monarch's Way has same-event final-report and rumours targets "
+            "208.246 metres apart, while the available size statements have "
+            "conflicting scope. No independent controls resolve either issue, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2bf345d347d1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cheesefoot Head's Connector anchor and the cited same-event "
+            "Temporary Temples map anchor differ by 373.372 metres. The source "
+            "evidence supplies zero independently measured controls or "
+            "checkpoints to resolve the center conflict, so no footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_9c6a3fbb1f80": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Alton Barnes has an event-specific linked publisher target, "
+            "recognizable village and hedgerow context, a complete source "
+            "frame, and an approximately 18 metre operational diameter. Its "
+            "nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "public-overlay-ineligible, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e36238e8c588": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Woolstone Hill's Connector anchor and the cited same-event "
+            "Temporary Temples precise-location map anchor differ by 51.011 "
+            "metres. The source evidence supplies zero independently measured "
+            "controls or checkpoints to resolve the center conflict, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_efebfd5446ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cow Down's same-report displayed grid square and linked target "
+            "differ by at least 242.84 metres. No independent controls resolve "
+            "the center conflict, so no footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6955c20df4d6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Stroud Green has strong same-event imagery, but no defensible "
+            "event-wide metric scale is documented; a retrospective 15-foot "
+            "component-side statement is not an overall surveyed size. No "
+            "transferable footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_14e82637573f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chilcomb Down has a documented 170-foot size, but the same-event "
+            "article coordinate and canonical publisher target differ by "
+            "254.211 metres. No independent controls resolve the center "
+            "conflict, so no footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4a47f86f7c30": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Burderop Down has recognizable same-event imagery, but no "
+            "event-specific overall metric scale supports a transferable "
+            "full-frame footprint. The reported date discrepancy is retained "
+            "as a limitation. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2e8bd4fa9994": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ackling Dyke (2) has distinctive same-event context and an "
+            "approximately 80-foot size report, but its source-map and internal "
+            "analysis points differ by 23.220 metres with unresolved point "
+            "semantics. The conflict crosses the 23 metre fail-closed threshold, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
     },
 }
 

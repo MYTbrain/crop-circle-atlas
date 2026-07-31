@@ -142,7 +142,11 @@ def public_image_entry(
             "title_text": image.get("title_text", ""),
             "width": positive_int(image.get("width")),
             "height": positive_int(image.get("height")),
-            "sha256": image.get("image_sha256", ""),
+            "sha256": (
+                overlay.get("source_image_sha256", "")
+                if overlay
+                else image.get("image_sha256", "")
+            ),
             "rights_status": image.get("rights_status", "link_only_not_cleared"),
             "embedding_allowed": text_bool(image.get("embedding_allowed")),
             "pixel_display_policy": (

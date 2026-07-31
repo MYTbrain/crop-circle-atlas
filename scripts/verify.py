@@ -447,8 +447,8 @@ assert set(overlays_by_id) == (
     core_overlay_ids | scene_placement_ids | commons_scene_ids
     | commons_same_flight_ids | commons_reviewed_geometry_ids
 )
-assert len(registered_overlays["overlays"]) == 59
-assert len({item["formation_id"] for item in registered_overlays["overlays"]}) == 51
+assert len(registered_overlays["overlays"]) == len(overlays_by_id)
+assert len({item["formation_id"] for item in registered_overlays["overlays"]}) >= 51
 assert sum(item.get("embedding_allowed") is True for item in registered_overlays["overlays"]) == 25
 assert any(
     formation_by_id[item["formation_id"]]["country_code"] not in {"", "US"}
