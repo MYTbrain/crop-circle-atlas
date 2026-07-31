@@ -11708,6 +11708,1989 @@
           "uncertainty_deg_modulo_180": 20
         }
       }
+    },
+    {
+      "overlay_id": "roundway-hill-2014-coordinate-size-directed-geometry-placement",
+      "observation_id": "regobs_roundway_hill_2014_crop_geometry_v1",
+      "formation_id": "cc_42bdbaf09713",
+      "assertion_id": "sx_connector_ccabdb52592103ac",
+      "title": "Roundway Hill 2014 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2014/roundway/Roundway-&-Avebury12-copy.jpg",
+      "source_image_identifier": "gimg_a7ff46b3b3298811c9e7",
+      "source_image_sha256": "25bbd1f4ce1980823a7790b04df9482491d40a1cf6348cf9383e54f8a8517a7c",
+      "anchor_pixel_xy": [
+        415.0,
+        623.0
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.37736447,
+        -1.98084192
+      ],
+      "corners_wgs84": [
+        [
+          51.377646538616,
+          -1.981216676866
+        ],
+        [
+          51.377687474122,
+          -1.98059270598
+        ],
+        [
+          51.377103261134,
+          -1.980494333006
+        ],
+        [
+          51.377062325627,
+          -1.981118303892
+        ]
+      ],
+      "corner_basis": "A nonfolding similarity transform places the complete selected original around the Connector-linked E401430 N164257 event target. The reported 180 ft overall length supplies operational scale. The road, wood, White Horse, knoll, and tramlines supply only a coarse orientation; the reported 100 ft width is retained as corroborating metadata but is not forced through the oblique frame.",
+      "coordinate_uncertainty_m": 25.0,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Connector event grid/link, same-event dimension report(s), complete and directed catalog originals, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector target lies inside its displayed SU014642 square. Same-event imagery uniquely matches the road, wooded slope, White Horse, and knoll, and the Connector reports 180 by 100 ft overall. This supports candidate display geometry only.",
+      "source_report_controls": {
+        "publisher_grid_reference": "SU014642; displayed 100 m grid square containing linked EPSG:27700 E=401430 N=164257",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.37736447,
+          -1.98084192
+        ],
+        "reported_place": "Roundway Hill, near Devizes, Wiltshire, England",
+        "reported_date": "2014-07-30",
+        "source_report_url": "https://www.cropcircleconnector.com/2014/roundway/roundway2014a.html",
+        "dimension_source_urls": [
+          "https://www.cropcircleconnector.com/2014/roundway/roundway2014a.html"
+        ],
+        "documented_operational_overall_length_m": 54.864,
+        "same_event_length_estimate_range_m": [
+          54.864,
+          54.864
+        ],
+        "reported_overall_width_m_not_fitted": 30.48
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The internally consistent event grid/link, uniquely matched Roundway landscape, complete source frame, reported length, and nonfold footprint support provisional display geometry. No planar landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, scale uses an approximate 54.864 m length in an oblique frame, orientation uncertainty is 25 degrees modulo 180, and independent checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, perspective rectification, or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_a7ff46b3b3298811c9e7",
+        "source_frame_size_px": [
+          800,
+          1200
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            1200
+          ],
+          [
+            0,
+            1200
+          ]
+        ],
+        "anchor_pixel_xy": [
+          415.0,
+          623.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            625.0,
+            165.0
+          ],
+          [
+            205.0,
+            1080.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall length and width",
+            "operational_length_ft": 180,
+            "operational_length_m": 54.864,
+            "reported_width_ft": 100,
+            "reported_width_m": 30.48,
+            "scale_fit_dimension": "length_only",
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design length on selected original",
+            "source_points_xy": [
+              [
+                625.0,
+                165.0
+              ],
+              [
+                205.0,
+                1080.0
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "diagonal event-field road, wooded slope, Roundway White Horse, and nearby round knoll",
+            "role": "unique parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The features identify the landscape but the aerial frames are perspective-affected and no source-to-reference coordinates were measured."
+          },
+          {
+            "feature": "event-field tramline family across the selected and wide originals",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a coarse bearing; it is formation-adjacent context, not an independent landmark fit."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.054195491596,
+            0.005696175699,
+            -26.039846473036
+          ],
+          [
+            0.005696175699,
+            -0.054195491596,
+            31.399878349435
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_length_m": 54.864,
+        "same_event_length_estimate_range_m": [
+          54.864,
+          54.864
+        ],
+        "reported_overall_width_m_not_fitted": 30.48,
+        "scale_m_per_px": 0.05449401551519243,
+        "orientation_basis": "In the wide same-event frame, the diagonal road and field tramlines transfer to the uniquely matched north-up road/wood/White-Horse landscape. Transferring the same tramline family into the selected complete frame gives source image-right an operational bearing near 84 degrees true, modulo 180. The 25-degree uncertainty explicitly covers the oblique frames and coarse visual transfer.",
+        "source_left_to_right_control_bearing_true_deg": 84.0,
+        "orientation_uncertainty_deg_modulo_180": 25.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_a/cc_42bdbaf09713/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "807bfa807b569abf31c37f8710e6fcf8a5759e0e274e4c0d09398ed66fbd610f",
+        "reference_context_path": "tmp/overlay-wave-016/lane_a/cc_42bdbaf09713/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "e5b0c01dd3a23f06eef52605c5cd5af33d3790d809d98c4985ea9dd7efc49fe8",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.00296959772697,
+            -0.00296959772697
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -2850.813817891253,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_cc8f95bcfaac138322b1",
+            "gimg_ed4532b42886658f28a0"
+          ],
+          "context_landmark": "event-field road, wooded slope, Roundway White Horse, round knoll, and tramline family",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25.0
+        }
+      }
+    },
+    {
+      "overlay_id": "green-street-2014-coordinate-size-directed-geometry-placement",
+      "observation_id": "regobs_green_street_2014_crop_geometry_v1",
+      "formation_id": "cc_19b522a41390",
+      "assertion_id": "sx_connector_25b1cba79f91c864",
+      "title": "Green Street 2014 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2014/greenstreet/Roundway-&-Avebury25.jpg",
+      "source_image_identifier": "gimg_761c1794c82b9da09bcb",
+      "source_image_sha256": "bf61fef84cf6eea97082d6dfdba8afad8090dd67a6d35ee5804e84342ea25411",
+      "anchor_pixel_xy": [
+        400.0,
+        290.0
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.43538273,
+        -1.82381109
+      ],
+      "corners_wgs84": [
+        [
+          51.435676629291,
+          -1.8238862484
+        ],
+        [
+          51.43533587649,
+          -1.823339641853
+        ],
+        [
+          51.435086701004,
+          -1.823739347891
+        ],
+        [
+          51.435427453805,
+          -1.824285954438
+        ]
+      ],
+      "corner_basis": "A nonfolding similarity transform places the complete selected original around the Connector-linked E412344 N170724 event target. The midpoint of two same-event approximate diameter reports, 33.528 m, supplies operational scale. The grass corridor, tapered field, copses, entrance shaft, and tramlines supply only a coarse orientation.",
+      "coordinate_uncertainty_m": 25.0,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Connector event grid/link, same-event dimension report(s), complete and directed catalog originals, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector target lies inside its displayed SU123707 square. Same-event imagery uniquely matches the grass corridor and tapered field. Diameter reports span 100 to 120 ft; their midpoint is an operational display choice only.",
+      "source_report_controls": {
+        "publisher_grid_reference": "SU123707; displayed 100 m grid square containing linked EPSG:27700 E=412344 N=170724",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.43538273,
+          -1.82381109
+        ],
+        "reported_place": "Green Street, near Avebury, Wiltshire, England",
+        "reported_date": "2014-07-29",
+        "source_report_url": "https://www.cropcircleconnector.com/2014/greenstreet/greenstreet2014a.html",
+        "dimension_source_urls": [
+          "https://www.cropcircleconnector.com/2014/greenstreet/greenstreet2014a.html",
+          "https://temporarytemples.co.uk/project/green-street-avebury-wiltshire-29th-july-2014"
+        ],
+        "documented_operational_overall_diameter_m": 33.528,
+        "same_event_diameter_estimate_range_m": [
+          30.48,
+          36.576
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The internally consistent event grid/link, uniquely matched grass-corridor parcel, complete frame, bounded same-event size range, and nonfold footprint support provisional display geometry. No planar landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, diameter reports span 30.48 to 36.576 m, orientation uncertainty is 25 degrees modulo 180, and independent checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, perspective rectification, or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_761c1794c82b9da09bcb",
+        "source_frame_size_px": [
+          800,
+          585
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            585
+          ],
+          [
+            0,
+            585
+          ]
+        ],
+        "anchor_pixel_xy": [
+          400.0,
+          290.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            150.0,
+            290.0
+          ],
+          [
+            650.0,
+            290.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 33.528,
+            "same_event_report_range_ft": [
+              100,
+              120
+            ],
+            "same_event_report_range_m": [
+              30.48,
+              36.576
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design diameter on selected original",
+            "source_points_xy": [
+              [
+                150.0,
+                290.0
+              ],
+              [
+                650.0,
+                290.0
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "long grass corridor, tapered event-field boundary, and distant copse arrangement",
+            "role": "unique parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The landscape uniquely identifies the field but the wide frame is perspective-affected and no planar correspondences were measured."
+          },
+          {
+            "feature": "formation entrance shaft and event-field tramline family",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a coarse bearing through the wide context frame; it is not an independent ground control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.047415752319,
+            -0.047415752319,
+            -5.215732755117
+          ],
+          [
+            -0.047415752319,
+            -0.047415752319,
+            32.716869100279
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_diameter_m": 33.528,
+        "same_event_diameter_estimate_range_m": [
+          30.48,
+          36.576
+        ],
+        "scale_m_per_px": 0.06705599999999999,
+        "orientation_basis": "The entrance shaft points source-right in the selected frame and toward image-bottom in the wide same-event frame. Transferring that relationship through the uniquely matched grass-corridor boundary and field geometry gives source image-right an operational bearing near 135 degrees true, modulo 180. The 25-degree uncertainty covers the oblique wide frame and coarse visual transfer.",
+        "source_left_to_right_control_bearing_true_deg": 135.0,
+        "orientation_uncertainty_deg_modulo_180": 25.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_a/cc_19b522a41390/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "12ee1d79e015dd59e0d6bbe92f4a0983fd9a078048ad4e57d3aeb4254ef03282",
+        "reference_context_path": "tmp/overlay-wave-016/lane_a/cc_19b522a41390/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "3dd9ef46aa53f67d00d7794028e5251f7013fb605c402c15c5538574a2e64df1",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.004496507136,
+            -0.004496507136
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -2104.365339647964,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_1c74c22e9686b184b77a",
+            "gimg_b1a7e32bcee7a57afa67"
+          ],
+          "context_landmark": "grass corridor, tapered event-field boundary, copse arrangement, formation entrance shaft, and tramline family",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25.0
+        }
+      }
+    },
+    {
+      "overlay_id": "cc_696716c610cf-coordinate-size-contextual-placement",
+      "observation_id": "regobs_cc_696716c610cf_crop_geometry_v1",
+      "formation_id": "cc_696716c610cf",
+      "assertion_id": "sx_connector_0bb5a4d1b3fd0cc5",
+      "additional_assertion_ids": [
+        "a_6c9dbf06966c57"
+      ],
+      "title": "Castle Hill, Mere, Wiltshire, England coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/castlehill/G0032705bbb.jpg",
+      "source_image_identifier": "gimg_f737e216b56e961ab130",
+      "source_image_sha256": "ed173fff180c2a1b025b06b4389f2a9e123cd919fc79298dc7167ab1e1561c9f",
+      "anchor_pixel_xy": [
+        401,
+        237
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.09547044,
+        -2.2750415
+      ],
+      "corners_wgs84": [
+        [
+          51.095556102851,
+          -2.275271676494
+        ],
+        [
+          51.095556102853,
+          -2.274812471518
+        ],
+        [
+          51.095384053802,
+          -2.274812472368
+        ],
+        [
+          51.0953840538,
+          -2.27527167564
+        ]
+      ],
+      "corner_basis": "A nonfolding full-frame similarity transform places the selected complete source around the event-specific publisher coordinate. Same-event reporting supplies operational size and the uniquely matched parcel context supplies only coarse direction; projective and survey accuracy are not claimed.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_display_placement",
+      "reference_imagery": "Connector event target, complete and contextual same-event originals, independently reviewed same-event reports, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector Streetmap target resolves to E380836 N132943 and the staged WGS84 center. The Crop Circle Center detail record and the reviewed Temporary Temples event page expose no additional numeric map, grid, or short-link anchor; no unresolved same-event location conflict remains. This supports candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "ST808329; EPSG:27700 E=380836 N=132943",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.09547044,
+          -2.2750415
+        ],
+        "reported_place": "Castle Hill, Mere, Wiltshire, England",
+        "reported_date": "2016-06-06",
+        "source_report_url": "https://cropcircleconnector.com/2016/castlehill/castlehill2016.html",
+        "same_event_review_urls": [
+          "https://temporarytemples.co.uk/project/mere-2-wiltshire-6th-june-2016"
+        ],
+        "documented_operational_dimension_m": 30.48,
+        "same_event_dimension_estimate_range_m": [
+          24.384,
+          30.48
+        ]
+      },
+      "same_event_anchor_review": {
+        "numeric_map_or_grid_anchors_resolved": [
+          "https://www.streetmap.co.uk/map.srf?mapp=map.srf&searchp=ids.srf&st=7&sv=51.095479%2C+-2.275038&x=380836&y=132943&z=0"
+        ],
+        "other_same_event_publishers_reviewed": [
+          "https://temporarytemples.co.uk/project/mere-2-wiltshire-6th-june-2016"
+        ],
+        "additional_numeric_anchor_found": false,
+        "unresolved_conflict_over_23m": false,
+        "conflict_threshold_m": 23
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The exact event-specific grid target, independently matching landscape context, complete source boundary, and event-specific size report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, size is approximate, orientation uncertainty is 25 degrees modulo 180, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and contextual-orientation display placement, not survey georegistration, projective rectification, or an accuracy benchmark.",
+      "notes": "Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_f737e216b56e961ab130",
+        "source_frame_size_px": [
+          800,
+          476
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            476
+          ],
+          [
+            0,
+            476
+          ]
+        ],
+        "anchor_pixel_xy": [
+          401,
+          237
+        ],
+        "source_geometry_control_pixels": [
+          [
+            22,
+            237
+          ],
+          [
+            780,
+            237
+          ],
+          [
+            401,
+            31
+          ],
+          [
+            401,
+            443
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall length",
+            "operational_value_m": 30.48,
+            "same_event_report_range_m": [
+              24.384,
+              30.48
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                22,
+                237
+              ],
+              [
+                780,
+                237
+              ],
+              [
+                401,
+                31
+              ],
+              [
+                401,
+                443
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Castle Hill mound, A303 corridor, event-field boundary, and adjoining field system",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The mound and field context identify the publisher-target parcel but are perspective-affected and are not measured planar fit controls."
+          },
+          {
+            "feature": "event-field tramlines visible in selected and contextual originals",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.040211081794,
+            0.0,
+            -16.124643799472
+          ],
+          [
+            0.0,
+            -0.040211081794,
+            9.530026385224
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_operational_dimension_m": 30.48,
+        "same_event_dimension_estimate_range_m": [
+          24.384,
+          30.48
+        ],
+        "scale_m_per_px": 0.040211081794195254,
+        "orientation_basis": "The selected near-overhead frame has a vertical tramline family. The same-event contextual originals and the distinctive Castle Hill parcel transfer that family only coarsely to the current north-up field pattern, giving source image-right an operational bearing near 90 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 90.0,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_b/cc_696716c610cf/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "4fac97646366947cc75ffd740030be667f74f8a62b127d9ee7391a724d951b8b",
+        "reference_context_path": "tmp/overlay-wave-016/lane_b/cc_696716c610cf/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "489788ef8c4947406f9431a10ae37f5055b2047275b93ef29d213b4bcf1e5472",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.001616931099059461,
+            -0.001616931099059461
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -615.7273625218428,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "unique_parcel_contextual_direction_display_only",
+          "context_source_image_identifiers": [
+            "gimg_c30d646efc7d64b3c571",
+            "gimg_9a388c5c230ccb2c0b78"
+          ],
+          "context_landmark": "Castle Hill mound, A303 corridor, event-field boundary, and adjoining field system",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      }
+    },
+    {
+      "overlay_id": "cc_969c2fe55692-coordinate-size-contextual-placement",
+      "observation_id": "regobs_cc_969c2fe55692_crop_geometry_v1",
+      "formation_id": "cc_969c2fe55692",
+      "assertion_id": "sx_connector_dcfdeca5016527e6",
+      "additional_assertion_ids": [],
+      "title": "The Ridgeway, near Hackpen Hill, Wiltshire, England coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/ridgeway/Tichnborne-&-Hackpen01.jpg",
+      "source_image_identifier": "gimg_1de24749be05dbdedf4d",
+      "source_image_sha256": "7eeaf59590c19b9b9aeb2260152be55479e7753d283de07d4926b94d4f9f035e",
+      "anchor_pixel_xy": [
+        400,
+        294
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.47826127,
+        -1.81088839
+      ],
+      "corners_wgs84": [
+        [
+          51.478397719536,
+          -1.811448400722
+        ],
+        [
+          51.478554285252,
+          -1.810512664179
+        ],
+        [
+          51.478133582432,
+          -1.810332143434
+        ],
+        [
+          51.477977018145,
+          -1.811267871986
+        ]
+      ],
+      "corner_basis": "A nonfolding full-frame similarity transform places the selected complete source around the event-specific publisher coordinate. Same-event reporting supplies operational size and the uniquely matched parcel context supplies only coarse direction; projective and survey accuracy are not claimed.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_display_placement",
+      "reference_imagery": "Connector event target, complete and contextual same-event originals, independently reviewed same-event reports, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector Streetmap target resolves to E413230 N175495 and the staged WGS84 center. The reviewed Temporary Temples event page exposes no additional numeric map, grid, or short-link anchor; no unresolved same-event location conflict remains. This supports candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "SU132754; EPSG:27700 E=413230 N=175495",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.47826127,
+          -1.81088839
+        ],
+        "reported_place": "The Ridgeway, near Hackpen Hill, Wiltshire, England",
+        "reported_date": "2016-06-23",
+        "source_report_url": "https://cropcircleconnector.com/2016/ridgeway/ridgeway2016a.html",
+        "same_event_review_urls": [
+          "https://temporarytemples.co.uk/project/hackpen-hill-wiltshire-23rd-june-2016"
+        ],
+        "documented_operational_dimension_m": 39.624,
+        "same_event_dimension_estimate_range_m": [
+          39.624,
+          39.624
+        ]
+      },
+      "same_event_anchor_review": {
+        "numeric_map_or_grid_anchors_resolved": [
+          "https://www.streetmap.co.uk/map.srf?ar=y&ax=413230&ay=175495&dn=673&lm=0&mapp=map.srf&searchp=ids.srf&st=4&sv=413230%2C175495&x=413230&y=175495&z=115"
+        ],
+        "other_same_event_publishers_reviewed": [
+          "https://temporarytemples.co.uk/project/hackpen-hill-wiltshire-23rd-june-2016"
+        ],
+        "additional_numeric_anchor_found": false,
+        "unresolved_conflict_over_23m": false,
+        "conflict_threshold_m": 23
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The exact event-specific grid target, independently matching landscape context, complete source boundary, and event-specific size report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, size is approximate, orientation uncertainty is 25 degrees modulo 180, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and contextual-orientation display placement, not survey georegistration, projective rectification, or an accuracy benchmark.",
+      "notes": "Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_1de24749be05dbdedf4d",
+        "source_frame_size_px": [
+          800,
+          576
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            576
+          ],
+          [
+            0,
+            576
+          ]
+        ],
+        "anchor_pixel_xy": [
+          400,
+          294
+        ],
+        "source_geometry_control_pixels": [
+          [
+            150,
+            294
+          ],
+          [
+            665,
+            294
+          ],
+          [
+            400,
+            78
+          ],
+          [
+            400,
+            505
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 39.624,
+            "same_event_report_range_m": [
+              39.624,
+              39.624
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                150,
+                294
+              ],
+              [
+                665,
+                294
+              ],
+              [
+                400,
+                78
+              ],
+              [
+                400,
+                505
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "distinctive round barrow copses, Ridgeway track, event-field boundary, and adjoining field system",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The barrow-copse sequence and field layout uniquely identify the publisher-target parcel but are not measured in the selected oblique source frame."
+          },
+          {
+            "feature": "event-field tramlines visible in selected and contextual originals",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.081260817284,
+            0.021773770368,
+            -38.905815401773
+          ],
+          [
+            0.021773770368,
+            -0.081260817284,
+            15.181172134525
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_operational_dimension_m": 39.624,
+        "same_event_dimension_estimate_range_m": [
+          39.624,
+          39.624
+        ],
+        "scale_m_per_px": 0.08412738853503185,
+        "orientation_basis": "The selected frame's formation-crossing tramline runs from lower-left to upper-right. The same tramline family transfers through the wide contextual original to the uniquely matched barrow-copse parcel, giving source image-right an operational bearing near 75 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 75.0,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_b/cc_969c2fe55692/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "5565082f9301c2a2fdbf18bb322eaa6d5d05159d19008407dd878ab1957d68f7",
+        "reference_context_path": "tmp/overlay-wave-016/lane_b/cc_969c2fe55692/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "0e10bea90d385e52d2964dc1ec72dfc5db6a79233b53c5e9b53f62b03df3db82",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.007077417501724208,
+            -0.007077417501724208
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3261.273984794515,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "unique_parcel_contextual_direction_display_only",
+          "context_source_image_identifiers": [
+            "gimg_932a70bc933ef880b77b",
+            "gimg_b481b68cfe96062ddb76"
+          ],
+          "context_landmark": "distinctive round barrow copses, Ridgeway track, event-field boundary, and adjoining field system",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      }
+    },
+    {
+      "overlay_id": "cc_43a7b52887b1-coordinate-size-contextual-placement",
+      "observation_id": "regobs_cc_43a7b52887b1_crop_geometry_v1",
+      "formation_id": "cc_43a7b52887b1",
+      "assertion_id": "sx_connector_1bc08bebcbd70c36",
+      "additional_assertion_ids": [],
+      "title": "Blackwood, near Popham, Hampshire, England coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2016/blackwood/Popham06A.jpg",
+      "source_image_identifier": "gimg_a33fd6d9ffd9cc75ca77",
+      "source_image_sha256": "f76966a3ab4525d381af7cc1275ab52e1d76dee1896fef429776eca8f860c894",
+      "anchor_pixel_xy": [
+        392,
+        576
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.19226046,
+        -1.2293378
+      ],
+      "corners_wgs84": [
+        [
+          51.192198592112,
+          -1.229791742247
+        ],
+        [
+          51.192509324302,
+          -1.229591950931
+        ],
+        [
+          51.192327128353,
+          -1.228874297421
+        ],
+        [
+          51.19201639738,
+          -1.229074092775
+        ]
+      ],
+      "corner_basis": "A nonfolding full-frame similarity transform places the selected complete source around the event-specific publisher coordinate. Same-event reporting supplies operational size and the uniquely matched parcel context supplies only coarse direction; projective and survey accuracy are not claimed.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_display_placement",
+      "reference_imagery": "Connector event target, complete and contextual same-event originals, independently reviewed same-event reports, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector Streetmap target resolves to E453951 N143953 and the staged WGS84 center. The reviewed Temporary Temples event and product pages expose no additional numeric map, grid, or short-link anchor; no unresolved same-event location conflict remains. This supports candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "SU539439; EPSG:27700 E=453951 N=143953",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.19226046,
+          -1.2293378
+        ],
+        "reported_place": "Blackwood, near Popham, Hampshire, England",
+        "reported_date": "2016-06-28",
+        "source_report_url": "https://cropcircleconnector.com/2016/blackwood/blackwood2016.html",
+        "same_event_review_urls": [
+          "https://temporarytemples.co.uk/project/popham-hants-27th-june-2016",
+          "https://temporarytemples.co.uk/product/blackwood-popham-2016-l-10-x-15-photo-print"
+        ],
+        "documented_operational_dimension_m": 45.72,
+        "same_event_dimension_estimate_range_m": [
+          45.72,
+          45.72
+        ]
+      },
+      "same_event_anchor_review": {
+        "numeric_map_or_grid_anchors_resolved": [
+          "https://www.streetmap.co.uk/map.srf?mapp=map.srf&searchp=ids.srf&st=7&sv=51.192264%2C+-1.229327&x=453951&y=143953&z=0"
+        ],
+        "other_same_event_publishers_reviewed": [
+          "https://temporarytemples.co.uk/project/popham-hants-27th-june-2016",
+          "https://temporarytemples.co.uk/product/blackwood-popham-2016-l-10-x-15-photo-print"
+        ],
+        "additional_numeric_anchor_found": false,
+        "unresolved_conflict_over_23m": false,
+        "conflict_threshold_m": 23
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The exact event-specific grid target, independently matching landscape context, complete source boundary, and event-specific size report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, size is approximate, orientation uncertainty is 25 degrees modulo 180, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and contextual-orientation display placement, not survey georegistration, projective rectification, or an accuracy benchmark.",
+      "notes": "Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_a33fd6d9ffd9cc75ca77",
+        "source_frame_size_px": [
+          800,
+          1161
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            1161
+          ],
+          [
+            0,
+            1161
+          ]
+        ],
+        "anchor_pixel_xy": [
+          392,
+          576
+        ],
+        "source_geometry_control_pixels": [
+          [
+            93,
+            576
+          ],
+          [
+            690,
+            576
+          ],
+          [
+            392,
+            86
+          ],
+          [
+            392,
+            1067
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall length",
+            "operational_value_m": 45.72,
+            "same_event_report_range_m": [
+              45.72,
+              45.72
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                93,
+                576
+              ],
+              [
+                690,
+                576
+              ],
+              [
+                392,
+                86
+              ],
+              [
+                392,
+                1067
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Popham airfield, A303 corridor, Black Wood edge, and event-field boundaries",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The airfield-road-woodland configuration uniquely identifies the publisher-target parcel but is not a measured planar fit in the source photographs."
+          },
+          {
+            "feature": "event-field tramlines visible in selected and contextual originals",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.017458729308,
+            0.043211871387,
+            -31.733859807665
+          ],
+          [
+            0.043211871387,
+            -0.017458729308,
+            -6.882825502456
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_operational_dimension_m": 45.72,
+        "same_event_dimension_estimate_range_m": [
+          45.72,
+          45.72
+        ],
+        "scale_m_per_px": 0.04660550458715596,
+        "orientation_basis": "The selected near-overhead frame's tractor lines rise gently toward source image-right. The same-event contextual original and the uniquely matched Popham/Blackwood parcel transfer those lines only coarsely to a near north-south current field direction, giving source image-right an operational bearing near 22 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 22.0,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_b/cc_43a7b52887b1/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "0288c466d7e85df2f7e052814e1ecdf260cf598fec31ed7b8cd6af9ea5e6e7ed",
+        "reference_context_path": "tmp/overlay-wave-016/lane_b/cc_43a7b52887b1/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "c65e7818c3183209133443701954afd98d18d4325e2a2a0558ba65d69b66097a",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.0021720730578234154,
+            -0.0021720730578234154
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -2017.4214561063882,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "unique_parcel_contextual_direction_display_only",
+          "context_source_image_identifiers": [
+            "gimg_897901b4c4fcba3f4d30",
+            "gimg_7a285208cbe0bbf0b6cd"
+          ],
+          "context_landmark": "Popham airfield, A303 corridor, Black Wood edge, and event-field boundaries",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      }
+    },
+    {
+      "overlay_id": "cc_9e5263790960-coordinate-size-contextual-placement",
+      "observation_id": "regobs_cc_9e5263790960_crop_geometry_v1",
+      "formation_id": "cc_9e5263790960",
+      "assertion_id": "sx_connector_4e613e9b782bf37a",
+      "additional_assertion_ids": [],
+      "title": "Blackhorse Lane, Margery, Surrey, England coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2015/blackhorse/G0037986bbb.jpg",
+      "source_image_identifier": "gimg_f02c487852cbb8b88154",
+      "source_image_sha256": "b16ba08d45cfb50ec9d0d02460a7c3e951cf02c105e43c9ef11a672bedb7eed6",
+      "anchor_pixel_xy": [
+        425,
+        376
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.2629256,
+        -0.19665812
+      ],
+      "corners_wgs84": [
+        [
+          51.262692685494,
+          -0.197341828943
+        ],
+        [
+          51.263339335762,
+          -0.196966697586
+        ],
+        [
+          51.263167521899,
+          -0.196214294599
+        ],
+        [
+          51.262520874023,
+          -0.196589435114
+        ]
+      ],
+      "corner_basis": "A nonfolding full-frame similarity transform places the selected complete source around the event-specific publisher coordinate. Same-event reporting supplies operational size and the uniquely matched parcel context supplies only coarse direction; projective and survey accuracy are not claimed.",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_display_placement",
+      "reference_imagery": "Connector event target, complete and contextual same-event originals, independently reviewed same-event reports, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector Streetmap target resolves to E525919 N153074 and the staged WGS84 center. The available rendering of the archived Temporary Temples event record exposes no additional numeric map, grid, or short-link anchor; no unresolved same-event location conflict remains. This supports candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "TQ259530; EPSG:27700 E=525919 N=153074",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.2629256,
+          -0.19665812
+        ],
+        "reported_place": "Blackhorse Lane, Margery, Surrey, England",
+        "reported_date": "2015-06-16",
+        "source_report_url": "https://cropcircleconnector.com/2015/blackhorse/blackhorse2015a.html",
+        "same_event_review_urls": [
+          "https://temporarytemples.co.uk/?p=8368"
+        ],
+        "documented_operational_dimension_m": 30.48,
+        "same_event_dimension_estimate_range_m": [
+          24.384,
+          30.48
+        ]
+      },
+      "same_event_anchor_review": {
+        "numeric_map_or_grid_anchors_resolved": [
+          "http://www.streetmap.co.uk/map.srf?x=525919&y=153074&z=0&sv=51.262932,+-0.196656&st=7&mapp=map.srf&searchp=ids.srf"
+        ],
+        "other_same_event_publishers_reviewed": [
+          "https://temporarytemples.co.uk/?p=8368"
+        ],
+        "additional_numeric_anchor_found": false,
+        "unresolved_conflict_over_23m": false,
+        "conflict_threshold_m": 23
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The exact event-specific grid target, independently matching landscape context, complete source boundary, and event-specific size report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, size is approximate, orientation uncertainty is 25 degrees modulo 180, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and contextual-orientation display placement, not survey georegistration, projective rectification, or an accuracy benchmark.",
+      "notes": "Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_f02c487852cbb8b88154",
+        "source_frame_size_px": [
+          800,
+          584
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            584
+          ],
+          [
+            0,
+            584
+          ]
+        ],
+        "anchor_pixel_xy": [
+          425,
+          376
+        ],
+        "source_geometry_control_pixels": [
+          [
+            255,
+            376
+          ],
+          [
+            594,
+            376
+          ],
+          [
+            425,
+            226
+          ],
+          [
+            425,
+            524
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 30.48,
+            "same_event_report_range_m": [
+              24.384,
+              30.48
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                255,
+                376
+              ],
+              [
+                594,
+                376
+              ],
+              [
+                425,
+                226
+              ],
+              [
+                425,
+                524
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "event-field copse sequence, A217/M25 road geometry, hedged boundaries, and adjoining field system",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The copse-road-field configuration identifies the publisher-target parcel but no feature is measured as a planar fit control in the oblique source frame."
+          },
+          {
+            "feature": "event-field tramlines visible in selected and contextual originals",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.032730844485,
+            0.089927256143,
+            -47.723257216029
+          ],
+          [
+            0.089927256143,
+            -0.032730844485,
+            -25.912286334316
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "documented_operational_dimension_m": 30.48,
+        "same_event_dimension_estimate_range_m": [
+          24.384,
+          30.48
+        ],
+        "scale_m_per_px": 0.09569858712715856,
+        "orientation_basis": "The selected frame's formation-crossing tramline rises gently toward source image-right. The same-event wide contextual frame and the uniquely matched Margery copse parcel transfer that tramline only coarsely to the current field direction, giving source image-right an operational bearing near 20 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 20.0,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_b/cc_9e5263790960/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "a280b35694cfb5594d6844d1530ddf4ef4123dc82f2211b3715733fa12bd0520",
+        "reference_context_path": "tmp/overlay-wave-016/lane_b/cc_9e5263790960/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "e8cf5def644ffc49e96b4d9eb85cfb55db2a605ee60c4d0812ac7868e1b0e47d",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.009158219578134359,
+            -0.009158219578134359
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4278.720186904372,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "unique_parcel_contextual_direction_display_only",
+          "context_source_image_identifiers": [
+            "gimg_628488e7c6f8c19fb2de",
+            "gimg_8359d255f389b2dd5590"
+          ],
+          "context_landmark": "event-field copse sequence, A217/M25 road geometry, hedged boundaries, and adjoining field system",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      }
+    },
+    {
+      "overlay_id": "overlay_cc_ba887cdeb3c2_coordinate_size_geometry_v1",
+      "observation_id": "obs_cc_ba887cdeb3c2_wave016_lane_c",
+      "formation_id": "cc_ba887cdeb3c2",
+      "assertion_id": "sx_connector_c525e36264812d5c",
+      "title": "Hackpen Hill 2014 provisional coordinate-size display placement review",
+      "source_image_url": "https://cropcircleconnector.com/2014/wiltshire2/G0b.jpg",
+      "source_image_identifier": "gimg_52b7b614f35d1c6f759e",
+      "source_image_sha256": "2685bc094a79a01a7bfef0512bc792c594041084fa2f65a6177755e9f9bcc9b3",
+      "anchor_pixel_xy": [
+        403,
+        377
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.47863888888889,
+        -1.805888888888889
+      ],
+      "corners_wgs84": [
+        [
+          51.47829394617,
+          -1.806124404712
+        ],
+        [
+          51.478804766022,
+          -1.806422155548
+        ],
+        [
+          51.478978837942,
+          -1.805656249291
+        ],
+        [
+          51.47846801616,
+          -1.805358505877
+        ]
+      ],
+      "corner_basis": "full source-image boundary under a nonfold formation-bound similarity display transform",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "provisional_display_only_non_survey",
+      "reference_imagery": "Publisher event target, complete and contextual same-event originals, event-specific size evidence, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "current_not_event_date_matched",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector map supplies a single DMS event target, while the independent Crop Circle Center record supplies no competing map anchor. Matching road, round-copse, and field context plus the approximately 57.6072 m report support candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "Google Maps DMS target 51°28'43.1\"N 1°48'21.2\"W",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.47863888888889,
+          -1.805888888888889
+        ],
+        "reported_place": "Hackpen Hill, near Winterbourne Bassett, Wiltshire, England",
+        "reported_date": "2014-07-08",
+        "source_report_url": "https://cropcircleconnector.com/2014/wiltshire2/wiltshire2014b.html",
+        "dimension_source_urls": [
+          "https://cropcircleconnector.com/2014/wiltshire2/wiltshire2014b.html"
+        ],
+        "documented_operational_diameter_m": 57.6072,
+        "same_event_diameter_estimates_m": [
+          57.6072
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The single event target, unique Hackpen road/copse/field context, complete final source boundary, and event-specific 189 ft report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, the 57.6072 m dimension is approximate, orientation uncertainty is 20 degrees modulo 180, the selected boundary is tight to the frame, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, projective rectification, or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_context_directed_display_placement",
+        "source_image_identifier": "gimg_52b7b614f35d1c6f759e",
+        "source_frame_size_px": [
+          800,
+          749
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            749
+          ],
+          [
+            0,
+            749
+          ]
+        ],
+        "anchor_pixel_xy": [
+          403,
+          377
+        ],
+        "source_geometry_control_pixels": [
+          [
+            10,
+            377
+          ],
+          [
+            796,
+            377
+          ],
+          [
+            403,
+            8
+          ],
+          [
+            403,
+            746
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 57.6072,
+            "same_event_report_range_m": [
+              57.6072,
+              57.6072
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                10,
+                377
+              ],
+              [
+                796,
+                377
+              ],
+              [
+                403,
+                8
+              ],
+              [
+                403,
+                746
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Hackpen road, paired round copses, and triangular event-field boundaries",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The landscape supports the event parcel but is not used as a measured planar fit control."
+          },
+          {
+            "feature": "event-field tramline family visible across the selected and contextual originals",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a coarse bearing transfer; no source-to-reference landmark correspondence is measured."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.025856722835,
+            0.071040762131,
+            -16.362108020882
+          ],
+          [
+            0.071040762131,
+            0.025856722835,
+            -38.377411647588
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          57.6072,
+          57.6072
+        ],
+        "same_event_diameter_estimate_range_m": [
+          57.6072,
+          57.6072
+        ],
+        "scale_m_per_px": 0.0756,
+        "orientation_basis": "The event-field tramline family is nearly horizontal in the selected frame and runs from the formation toward the road in the contextual frame. Matching the road and round copses in north-up imagery gives source image-right an operational bearing near 340 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 340,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_c/cc_ba887cdeb3c2/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "8ed0e607730fa89bcecdefecf183f341f5744e5d96313862c28c6ecc80bc8f75",
+        "reference_context_path": "tmp/overlay-wave-016/lane_c/cc_ba887cdeb3c2/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "f42a361af07a91960751318839cca48674a3935c90ae28b9b01453f62ac4c50d",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.005715359999919333,
+            -0.005715359999919333
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3424.643711951665,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "context_directed_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_6f98048a51ce49ecb9cd",
+            "gimg_e7da41e2c350507a3254"
+          ],
+          "context_landmark": "Hackpen road, round-copse, and triangular-field system",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      }
+    },
+    {
+      "overlay_id": "overlay_cc_d6ba560cfdb0_coordinate_size_geometry_v1",
+      "observation_id": "obs_cc_d6ba560cfdb0_wave016_lane_c",
+      "formation_id": "cc_d6ba560cfdb0",
+      "assertion_id": "sx_connector_928962a40815dbab",
+      "title": "Gipsy Lane 2014 provisional coordinate-size display placement review",
+      "source_image_url": "https://cropcircleconnector.com/2014/GipsyLane/GipsyLane2014b.jpg",
+      "source_image_identifier": "gimg_e6832876b39e8632021d",
+      "source_image_sha256": "564fd5605240965a4c7e4453f4a0ccd4fa784ee13830501bc4adbd681f3b9c7a",
+      "anchor_pixel_xy": [
+        407,
+        385
+      ],
+      "anchor_wgs84_lat_lon": [
+        51.05506601511953,
+        -1.2627776938299133
+      ],
+      "corners_wgs84": [
+        [
+          51.055195440662,
+          -1.262994786321
+        ],
+        [
+          51.055195440676,
+          -1.262568068894
+        ],
+        [
+          51.054947010479,
+          -1.262568070016
+        ],
+        [
+          51.054947010465,
+          -1.262994785159
+        ]
+      ],
+      "corner_basis": "full source-image boundary under a nonfold formation-bound similarity display transform",
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "provisional_display_only_non_survey",
+      "reference_imagery": "Publisher event target, complete and contextual same-event originals, event-specific size evidence, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "current_not_event_date_matched",
+      "reviewed_at": "2026-07-30",
+      "site_text": "The Connector's displayed SU517286 square contains its linked Streetmap target. Matching road, woodland, building, and field context plus the independently reported approximately 24.384 m overall size support candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+      "source_report_controls": {
+        "publisher_grid_reference": "SU517286; displayed 100 m grid square E=451700..451800 N=128600..128700 containing linked EPSG:27700 E=451767 N=128672",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.05506601511953,
+          -1.2627776938299133
+        ],
+        "reported_place": "Gipsy Lane, Chilcomb Down, near Winchester, Hampshire, England",
+        "reported_date": "2014-06-06",
+        "source_report_url": "https://cropcircleconnector.com/2014/GipsyLane/GipsyLane2014a.html",
+        "dimension_source_urls": [
+          "https://www.lucypringle.co.uk/photos/2014/gypsy-lane-cropcircle2014.shtml"
+        ],
+        "documented_operational_diameter_m": 24.384,
+        "same_event_diameter_estimates_m": [
+          24.384
+        ]
+      },
+      "independent_ground_checkpoint_count": 0,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "review_basis": "The internally consistent grid/link target, unique Chilcomb Down landscape context, complete near-overhead source, and same-event 80 ft report support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "quality_status": "useful_coordinate_size_geometry_provisional",
+      "quality_limitations": "Display placement only. Center uncertainty is 25 m, the 24.384 m dimension is approximate, orientation uncertainty is 20 degrees modulo 180, the irregular design boundary is estimated from source pixels, and independent ground checkpoint count is zero.",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, projective rectification, or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "rights_status": "not_cleared_for_redistribution",
+      "accepted": false,
+      "public_overlay_allowed": false,
+      "publication_eligible": false,
+      "redistribution_allowed": false,
+      "embedding_allowed": false,
+      "pixel_bytes_packaged": false,
+      "alignment_eligibility": false,
+      "source_photo_pixels": "remote_source_link_only",
+      "source_distribution": "remote_source_link_only_not_packaged",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_context_directed_display_placement",
+        "source_image_identifier": "gimg_e6832876b39e8632021d",
+        "source_frame_size_px": [
+          800,
+          739
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            739
+          ],
+          [
+            0,
+            739
+          ]
+        ],
+        "anchor_pixel_xy": [
+          407,
+          385
+        ],
+        "source_geometry_control_pixels": [
+          [
+            83,
+            385
+          ],
+          [
+            730,
+            385
+          ],
+          [
+            407,
+            48
+          ],
+          [
+            407,
+            705
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 24.384,
+            "same_event_report_range_m": [
+              24.384,
+              24.384
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                83,
+                385
+              ],
+              [
+                730,
+                385
+              ],
+              [
+                407,
+                48
+              ],
+              [
+                407,
+                705
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Chilcomb Down road junction, woodland belts, prominent building, and event-field boundaries",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The features support the event parcel but are not used as a measured planar fit control."
+          },
+          {
+            "feature": "event-field tramline family across the selected and contextual originals",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a coarse bearing transfer; no source-to-reference landmark correspondence is measured."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.037398773006,
+            0.0,
+            -15.221300613442
+          ],
+          [
+            0.0,
+            -0.037398773006,
+            14.39852760731
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          24.384,
+          24.384
+        ],
+        "same_event_diameter_estimate_range_m": [
+          24.384,
+          24.384
+        ],
+        "scale_m_per_px": 0.03739877300613497,
+        "orientation_basis": "The contextual frame places the road/woodland/building complex to the north-west and the rising field to the north-east, matching current north-up imagery. The same tramline family and spiral geometry transfer to the selected frame, giving source image-right an operational bearing near 90 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 90,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-016/lane_c/cc_d6ba560cfdb0/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "43c713c083d1923057cfa6596698c9bacd989c653f167be08c1ea0a7b6d03418",
+        "reference_context_path": "tmp/overlay-wave-016/lane_c/cc_d6ba560cfdb0/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "39107bf33dc637b5b88ec3301a39d41c82163727dc3845d66a99adc79568782b",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.0013986682223543145,
+            -0.0013986682223543145
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -826.8926530558706,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "context_directed_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_839057de99b8a2527d48",
+            "gimg_c0c66f3d76e49e8888e7"
+          ],
+          "context_landmark": "Chilcomb Down road-junction, woodland, building, and event-field system",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      }
     }
   ]
 }

@@ -141648,6 +141648,414 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Roundway Hill 2014 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2014/roundway/roundway2014a.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>roundway-hill-2014-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_42bdbaf09713</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2014/roundway/roundway2014a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_roundway_hill_2014_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.981118303892,51.377062325627,0 -1.980494333006,51.377103261134,0 -1.98059270598,51.377687474122,0 -1.981216676866,51.377646538616,0 -1.981118303892,51.377062325627,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Green Street 2014 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2014/greenstreet/greenstreet2014a.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>green-street-2014-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_19b522a41390</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2014/greenstreet/greenstreet2014a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_green_street_2014_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.824285954438,51.435427453805,0 -1.823739347891,51.435086701004,0 -1.823339641853,51.43533587649,0 -1.8238862484,51.435676629291,0 -1.824285954438,51.435427453805,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Castle Hill, Mere, Wiltshire, England coordinate-size contextual display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2016/castlehill/castlehill2016.html | Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>cc_696716c610cf-coordinate-size-contextual-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_696716c610cf</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2016/castlehill/castlehill2016.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_cc_696716c610cf_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-2.27527167564,51.0953840538,0 -2.274812472368,51.095384053802,0 -2.274812471518,51.095556102853,0 -2.275271676494,51.095556102851,0 -2.27527167564,51.0953840538,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>The Ridgeway, near Hackpen Hill, Wiltshire, England coordinate-size contextual display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2016/ridgeway/ridgeway2016a.html | Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>cc_969c2fe55692-coordinate-size-contextual-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_969c2fe55692</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2016/ridgeway/ridgeway2016a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_cc_969c2fe55692_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.811267871986,51.477977018145,0 -1.810332143434,51.478133582432,0 -1.810512664179,51.478554285252,0 -1.811448400722,51.478397719536,0 -1.811267871986,51.477977018145,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Blackwood, near Popham, Hampshire, England coordinate-size contextual display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2016/blackwood/blackwood2016.html | Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>cc_43a7b52887b1-coordinate-size-contextual-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_43a7b52887b1</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2016/blackwood/blackwood2016.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_cc_43a7b52887b1_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.229074092775,51.19201639738,0 -1.228874297421,51.192327128353,0 -1.229591950931,51.192509324302,0 -1.229791742247,51.192198592112,0 -1.229074092775,51.19201639738,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Blackhorse Lane, Margery, Surrey, England coordinate-size contextual display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2015/blackhorse/blackhorse2015a.html | Rights-gated source pixels are not approved for publication, embedding, packaging, or redistribution.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>cc_9e5263790960-coordinate-size-contextual-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_9e5263790960</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2015/blackhorse/blackhorse2015a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_cc_9e5263790960_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-0.196589435114,51.262520874023,0 -0.196214294599,51.263167521899,0 -0.196966697586,51.263339335762,0 -0.197341828943,51.262692685494,0 -0.196589435114,51.262520874023,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Hackpen Hill 2014 provisional coordinate-size display placement review [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2014/wiltshire2/wiltshire2014b.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>overlay_cc_ba887cdeb3c2_coordinate_size_geometry_v1</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_ba887cdeb3c2</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2014/wiltshire2/wiltshire2014b.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>provisional_display_only_non_survey</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>obs_cc_ba887cdeb3c2_wave016_lane_c</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.805358505877,51.47846801616,0 -1.805656249291,51.478978837942,0 -1.806422155548,51.478804766022,0 -1.806124404712,51.47829394617,0 -1.805358505877,51.47846801616,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Gipsy Lane 2014 provisional coordinate-size display placement review [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2014/GipsyLane/GipsyLane2014a.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>overlay_cc_d6ba560cfdb0_coordinate_size_geometry_v1</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_d6ba560cfdb0</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2014/GipsyLane/GipsyLane2014a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>provisional_display_only_non_survey</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>obs_cc_d6ba560cfdb0_wave016_lane_c</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.262994785159,51.054947010465,0 -1.262568070016,51.054947010479,0 -1.262568068894,51.055195440676,0 -1.262994786321,51.055195440662,0 -1.262994785159,51.054947010465,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

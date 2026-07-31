@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 88,
-    "overlay_placement_count": 88,
+    "mapped_catalog_image_count": 96,
+    "overlay_placement_count": 96,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -17647,13 +17647,15 @@
         "title_text": "",
         "width": 800,
         "height": 585,
-        "sha256": "",
+        "sha256": "bf61fef84cf6eea97082d6dfdba8afad8090dd67a6d35ee5804e84342ea25411",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "green-street-2014-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_50e91118fad98db1252a",
@@ -45607,13 +45609,15 @@
         "title_text": "",
         "width": 800,
         "height": 1200,
-        "sha256": "",
+        "sha256": "25bbd1f4ce1980823a7790b04df9482491d40a1cf6348cf9383e54f8a8517a7c",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "roundway-hill-2014-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_cc8f95bcfaac138322b1",
@@ -46127,13 +46131,15 @@
         "title_text": "",
         "width": 800,
         "height": 1161,
-        "sha256": "",
+        "sha256": "f76966a3ab4525d381af7cc1275ab52e1d76dee1896fef429776eca8f860c894",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "cc_43a7b52887b1-coordinate-size-contextual-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_a726e82b4648d1588ae3",
@@ -70388,13 +70394,15 @@
         "title_text": "",
         "width": 800,
         "height": 476,
-        "sha256": "",
+        "sha256": "ed173fff180c2a1b025b06b4389f2a9e123cd919fc79298dc7167ab1e1561c9f",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "cc_696716c610cf-coordinate-size-contextual-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_9392ac19718f2ca667b4",
@@ -103736,13 +103744,15 @@
         "title_text": "",
         "width": 800,
         "height": 576,
-        "sha256": "",
+        "sha256": "7eeaf59590c19b9b9aeb2260152be55479e7753d283de07d4926b94d4f9f035e",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "cc_969c2fe55692-coordinate-size-contextual-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       }
     ],
     "cc_96d6e3af4376": [
@@ -108030,13 +108040,15 @@
         "title_text": "",
         "width": 800,
         "height": 584,
-        "sha256": "",
+        "sha256": "b16ba08d45cfb50ec9d0d02460a7c3e951cf02c105e43c9ef11a672bedb7eed6",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "cc_9e5263790960-coordinate-size-contextual-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_8359d255f389b2dd5590",
@@ -128040,13 +128052,15 @@
         "title_text": "",
         "width": 800,
         "height": 749,
-        "sha256": "",
+        "sha256": "2685bc094a79a01a7bfef0512bc792c594041084fa2f65a6177755e9f9bcc9b3",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "overlay_cc_ba887cdeb3c2_coordinate_size_geometry_v1",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_6f98048a51ce49ecb9cd",
@@ -148028,13 +148042,15 @@
         "title_text": "",
         "width": 800,
         "height": 739,
-        "sha256": "",
+        "sha256": "564fd5605240965a4c7e4453f4a0ccd4fa784ee13830501bc4adbd681f3b9c7a",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "overlay_cc_d6ba560cfdb0_coordinate_size_geometry_v1",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_6c82a874a061b40e5d2c",

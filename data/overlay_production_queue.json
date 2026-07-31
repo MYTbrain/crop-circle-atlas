@@ -1,6 +1,6 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-31T03:45:52.202003Z",
+  "generated_at": "2026-07-31T04:29:02.576102Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
@@ -9,8 +9,8 @@
     "blocked_source": 3,
     "candidate_field": 164,
     "clues_reviewed": 2,
-    "provisional_registration": 80,
-    "queued": 1660,
+    "provisional_registration": 88,
+    "queued": 1652,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -25191,11 +25191,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "roundway-hill-2014-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_4a47f86f7c30",
@@ -26953,11 +26953,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "green-street-2014-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_2f1170f4e036",
@@ -27323,11 +27323,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cc_696716c610cf-coordinate-size-contextual-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_8ea75ae79c53",
@@ -27449,11 +27449,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cc_969c2fe55692-coordinate-size-contextual-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_97bdacefa82e",
@@ -27570,11 +27570,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cc_9e5263790960-coordinate-size-contextual-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_b552fe94f8a2",
@@ -27692,11 +27692,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "overlay_cc_ba887cdeb3c2_coordinate_size_geometry_v1",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_c5f7b2872b26",
@@ -28177,11 +28177,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "cc_43a7b52887b1-coordinate-size-contextual-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_5e9681044b3e",
@@ -28891,11 +28891,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "overlay_cc_d6ba560cfdb0_coordinate_size_geometry_v1",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_dc30267dcbce",
