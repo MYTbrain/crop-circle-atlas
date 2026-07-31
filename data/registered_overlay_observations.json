@@ -18290,6 +18290,294 @@
       }
     },
     {
+      "observation_id": "regobs_frieding_2025_crop_geometry_v1",
+      "overlay_id": "frieding-2025-coordinate-size-pose-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2025/Frieding/KK%201.jpg",
+        "page_url": "https://cropcircleconnector.com/2025/Frieding/Frieding2025a.html",
+        "sha256": "7ff2d93c51dab1cbe8bd012d28b9f8d2f9d38e27fa54a3308b477f7030d93504",
+        "width_px": 800,
+        "height_px": 550,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          550
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          47.98925,
+          11.22227778
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The event-specific DMS target, approximately 250 ft same-event size, complete posed frame, and pose/tree-row directional agreement support provisional display geometry only. The placement remains unaccepted, rights-gated, publication-ineligible, and alignment-ineligible.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          47.98925,
+          11.22227778
+        ],
+        "embedded_google_target_wgs84_lat_lon": [
+          47.989235,
+          11.22227
+        ],
+        "catalog_to_embedded_target_separation_m": 1.8,
+        "reported_place": "Frieding, near Andechs, Germany",
+        "reported_date": "2025-07-20",
+        "source_report_url": "https://cropcircleconnector.com/2025/Frieding/Frieding2025a.html",
+        "dimension_source_url": "https://cropcirclephotographs.co.uk/crop-circles-2025-july/",
+        "reported_approximate_overall_diameter_ft": 250,
+        "reported_rounded_overall_diameter_m": 76,
+        "operational_direct_conversion_m": 76.2
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            550
+          ],
+          [
+            0,
+            550
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            47.988796463837,
+            11.223017617017
+          ],
+          [
+            47.98881420888,
+            11.22142037062
+          ],
+          [
+            47.989748949279,
+            11.221451954471
+          ],
+          [
+            47.989676852299,
+            11.2231175885
+          ]
+        ],
+        "basis": "A four-point nonfolding projective display transform places the complete KK_201 frame around the event-specific DMS anchor. An independent same-event approximate 250 ft report sets a 38.1 m radius; DJI XMP yaw and the south tree row constrain direction. Formation controls are explicitly non-independent.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_dji_pose_directed_display_placement",
+        "source_image_identifier": "gimg_66f8028dad8cc0ea28d5",
+        "source_frame_size_px": [
+          800,
+          550
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            550
+          ],
+          [
+            0,
+            550
+          ]
+        ],
+        "anchor_pixel_xy": [
+          398.5,
+          276.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            396,
+            65
+          ],
+          [
+            645,
+            276
+          ],
+          [
+            401,
+            480
+          ],
+          [
+            143,
+            276
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -1.529021295491,
+            -38.06930645386
+          ],
+          [
+            -38.06930645386,
+            1.529021295491
+          ],
+          [
+            1.529021295491,
+            38.06930645386
+          ],
+          [
+            38.06930645386,
+            -1.529021295491
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "independent same-event approximate overall diameter",
+            "reported_value_ft": 250,
+            "operational_value_m": 76.2,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "four measured outer-boundary points on KK_201",
+            "source_points_xy": [
+              [
+                396,
+                65
+              ],
+              [
+                645,
+                276
+              ],
+              [
+                401,
+                480
+              ],
+              [
+                143,
+                276
+              ]
+            ],
+            "target_radius_m": 38.1,
+            "status": "used_for_projective_display_geometry_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "individual-tree row and field/woodland boundary south of the candidate center",
+            "role": "absolute-orientation corroboration",
+            "accepted_for_fit": false,
+            "reason": "No persistent point coordinates were measured into the transform."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.144365479001,
+            0.008752909004,
+            55.119928197679
+          ],
+          [
+            0.005798316604,
+            0.174552685094,
+            -50.487414759955
+          ],
+          [
+            -6.86243e-05,
+            -7.6543681e-05,
+            1.0
+          ]
+        ],
+        "documented_approximate_overall_diameter_m": 76.2,
+        "camera_pose": {
+          "metadata_namespace": "DJI XMP drone-dji",
+          "camera_model": "FC2103",
+          "relative_altitude_m": 96.7,
+          "gimbal_yaw_deg": -177.7,
+          "gimbal_pitch_deg": -60.7,
+          "gimbal_roll_deg": 0.0,
+          "flight_yaw_deg": -177.8,
+          "camera_gps_status": "not_present_in_staged_file"
+        },
+        "orientation_basis": "KK_201 XMP gimbal yaw -177.7 degrees gives an operational image-top bearing of 182.3 degrees. The individual-tree row south of the candidate anchor appears at source top in KK_201/KK_202 and south in the current north-up reference, corroborating direction. Ten degrees is retained conservatively; no survey yaw is claimed.",
+        "source_top_control_bearing_true_deg": 182.3,
+        "orientation_uncertainty_deg": 10,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls interpolate exactly but are not independent accuracy evidence.",
+        "reference_close_path": "tmp/overlay-wave-020/inspection/cc_be7ed32b5680/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "03d73b411fdcae5eae754ef250ab8c519e64125e0aafdf73f0fe0c3203bbaa60",
+        "reference_context_path": "tmp/overlay-wave-020/inspection/cc_be7ed32b5680/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "a6f1ea66beb312e9c97d80e7ed8f7e2423aff731f61ee5e0f914a4cdf4e98792",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.90300153542,
+            1.0
+          ],
+          "homography_determinant": -0.024026115364,
+          "jacobian_determinant_range": [
+            -0.0326301,
+            -0.0240261
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -12304.33800332964,
+          "result": "pass_non_folded"
+        },
+        "pose_and_context_orientation_transfer": {
+          "status": "dji_pose_direction_corroborated_by_south_tree_row_display_only",
+          "context_source_image_identifiers": [
+            "gimg_0adbf78b7f4c267b76c5",
+            "gimg_73c073b00f53022ea08c",
+            "gimg_318ec66090c4e8dbfab3"
+          ],
+          "photographic_yaw_claimed": true,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg": 10
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          47.988796463837,
+          11.223017617017
+        ],
+        [
+          47.98881420888,
+          11.22142037062
+        ],
+        [
+          47.989748949279,
+          11.221451954471
+        ],
+        [
+          47.989676852299,
+          11.2231175885
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. Center uncertainty is 25 m, size is approximate, orientation uncertainty is 10 degrees, camera GPS is absent, and independent checkpoint count is zero."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

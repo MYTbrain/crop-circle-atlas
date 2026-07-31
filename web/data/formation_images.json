@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 101,
-    "overlay_placement_count": 101,
+    "mapped_catalog_image_count": 102,
+    "overlay_placement_count": 102,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -130518,13 +130518,15 @@
         "title_text": "",
         "width": 800,
         "height": 550,
-        "sha256": "",
+        "sha256": "7ff2d93c51dab1cbe8bd012d28b9f8d2f9d38e27fa54a3308b477f7030d93504",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "frieding-2025-coordinate-size-pose-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_0adbf78b7f4c267b76c5",

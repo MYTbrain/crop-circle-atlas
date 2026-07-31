@@ -142311,6 +142311,57 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Frieding 2025 coordinate-size pose-directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2025/Frieding/Frieding2025a.html | Rights-gated source pixels remain in the temporary inspection workspace and are not packaged or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>frieding-2025-coordinate-size-pose-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_be7ed32b5680</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2025/Frieding/Frieding2025a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_pose_directed_projective_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_frieding_2025_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>11.2231175885,47.989676852299,0 11.221451954471,47.989748949279,0 11.22142037062,47.98881420888,0 11.223017617017,47.988796463837,0 11.2231175885,47.989676852299,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

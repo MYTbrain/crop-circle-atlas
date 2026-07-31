@@ -1,6 +1,6 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-31T14:26:05.751409Z",
+  "generated_at": "2026-07-31T16:28:31.778627Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
@@ -9,8 +9,8 @@
     "blocked_source": 3,
     "candidate_field": 164,
     "clues_reviewed": 2,
-    "provisional_registration": 93,
-    "queued": 1647,
+    "provisional_registration": 94,
+    "queued": 1646,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -32270,11 +32270,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2179,
-      "processing_status": "queued",
+      "processing_status": "provisional_registration",
       "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "selected_overlay_id": "frieding-2025-coordinate-size-pose-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-31"
     },
     {
       "formation_id": "cc_1462c648b57c",

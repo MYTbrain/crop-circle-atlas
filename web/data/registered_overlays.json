@@ -12586,6 +12586,236 @@
       }
     },
     {
+      "overlay_id": "frieding-2025-coordinate-size-pose-directed-geometry-placement",
+      "registration_observation_id": "regobs_frieding_2025_crop_geometry_v1",
+      "formation_id": "cc_be7ed32b5680",
+      "assertion_id": "sx_connector_09f14856d08ef22f",
+      "title": "Frieding 2025 coordinate-size pose-directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2025/Frieding/KK%201.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2025/Frieding/Frieding2025a.html",
+      "source_image_sha256": "7ff2d93c51dab1cbe8bd012d28b9f8d2f9d38e27fa54a3308b477f7030d93504",
+      "corners": [
+        [
+          47.988796463837,
+          11.223017617017
+        ],
+        [
+          47.98881420888,
+          11.22142037062
+        ],
+        [
+          47.989748949279,
+          11.221451954471
+        ],
+        [
+          47.989676852299,
+          11.2231175885
+        ]
+      ],
+      "center": [
+        47.98925,
+        11.22227778
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_pose_directed_projective_display_placement",
+      "reference_imagery": "Connector DMS/Google target, Lucy Pringle approximate diameter, four same-flight DJI frames, and Esri current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-31",
+      "reviewed_at": "2026-07-31",
+      "review_basis": "The DMS anchor, independent approximate size, complete source, DJI pose, directionally corroborating tree row, and nonfolding footprint support provisional display geometry. No independent checkpoint validates accuracy.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, approximate-size-, and pose-directed projective display placement, not survey georegistration, photogrammetric reconstruction, or an accuracy benchmark. Candidate/unaccepted and all public, rights, publication, embedding, pixel, and alignment gates are false.",
+      "notes": "Rights-gated source pixels remain in the temporary inspection workspace and are not packaged or redistributed.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_projective_dji_pose_directed_display_placement",
+        "source_image_identifier": "gimg_66f8028dad8cc0ea28d5",
+        "source_frame_size_px": [
+          800,
+          550
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            550
+          ],
+          [
+            0,
+            550
+          ]
+        ],
+        "anchor_pixel_xy": [
+          398.5,
+          276.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            396,
+            65
+          ],
+          [
+            645,
+            276
+          ],
+          [
+            401,
+            480
+          ],
+          [
+            143,
+            276
+          ]
+        ],
+        "target_geometry_control_local_m_east_north": [
+          [
+            -1.529021295491,
+            -38.06930645386
+          ],
+          [
+            -38.06930645386,
+            1.529021295491
+          ],
+          [
+            1.529021295491,
+            38.06930645386
+          ],
+          [
+            38.06930645386,
+            -1.529021295491
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "independent same-event approximate overall diameter",
+            "reported_value_ft": 250,
+            "operational_value_m": 76.2,
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "four measured outer-boundary points on KK_201",
+            "source_points_xy": [
+              [
+                396,
+                65
+              ],
+              [
+                645,
+                276
+              ],
+              [
+                401,
+                480
+              ],
+              [
+                143,
+                276
+              ]
+            ],
+            "target_radius_m": 38.1,
+            "status": "used_for_projective_display_geometry_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "individual-tree row and field/woodland boundary south of the candidate center",
+            "role": "absolute-orientation corroboration",
+            "accepted_for_fit": false,
+            "reason": "No persistent point coordinates were measured into the transform."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.144365479001,
+            0.008752909004,
+            55.119928197679
+          ],
+          [
+            0.005798316604,
+            0.174552685094,
+            -50.487414759955
+          ],
+          [
+            -6.86243e-05,
+            -7.6543681e-05,
+            1.0
+          ]
+        ],
+        "documented_approximate_overall_diameter_m": 76.2,
+        "camera_pose": {
+          "metadata_namespace": "DJI XMP drone-dji",
+          "camera_model": "FC2103",
+          "relative_altitude_m": 96.7,
+          "gimbal_yaw_deg": -177.7,
+          "gimbal_pitch_deg": -60.7,
+          "gimbal_roll_deg": 0.0,
+          "flight_yaw_deg": -177.8,
+          "camera_gps_status": "not_present_in_staged_file"
+        },
+        "orientation_basis": "KK_201 XMP gimbal yaw -177.7 degrees gives an operational image-top bearing of 182.3 degrees. The individual-tree row south of the candidate anchor appears at source top in KK_201/KK_202 and south in the current north-up reference, corroborating direction. Ten degrees is retained conservatively; no survey yaw is claimed.",
+        "source_top_control_bearing_true_deg": 182.3,
+        "orientation_uncertainty_deg": 10,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Four formation-bound controls interpolate exactly but are not independent accuracy evidence.",
+        "reference_close_path": "tmp/overlay-wave-020/inspection/cc_be7ed32b5680/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "03d73b411fdcae5eae754ef250ab8c519e64125e0aafdf73f0fe0c3203bbaa60",
+        "reference_context_path": "tmp/overlay-wave-020/inspection/cc_be7ed32b5680/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "a6f1ea66beb312e9c97d80e7ed8f7e2423aff731f61ee5e0f914a4cdf4e98792",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            0.90300153542,
+            1.0
+          ],
+          "homography_determinant": -0.024026115364,
+          "jacobian_determinant_range": [
+            -0.0326301,
+            -0.0240261
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -12304.33800332964,
+          "result": "pass_non_folded"
+        },
+        "pose_and_context_orientation_transfer": {
+          "status": "dji_pose_direction_corroborated_by_south_tree_row_display_only",
+          "context_source_image_identifiers": [
+            "gimg_0adbf78b7f4c267b76c5",
+            "gimg_73c073b00f53022ea08c",
+            "gimg_318ec66090c4e8dbfab3"
+          ],
+          "photographic_yaw_claimed": true,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg": 10
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",
