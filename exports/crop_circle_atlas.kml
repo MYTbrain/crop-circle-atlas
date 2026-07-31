@@ -142056,6 +142056,108 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Jesuino Marcondes 2018 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2018/Jesuino/Jesuino2018a.html | Rights-gated source pixels are not packaged or publicly redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>jesuino-marcondes-2018-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_8e59dc6f50d7</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2018/Jesuino/Jesuino2018a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_jesuino_marcondes_2018_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-51.012416058912,-25.303585970411,0 -51.015319246398,-25.303585970411,0 -51.015319246398,-25.305269014983,0 -51.012416058912,-25.305269014983,0 -51.012416058912,-25.303585970411,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>La Rosiere Sicault 2019 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2019/Louans/Louans2019a.html | Rights-gated source pixels remain temporary review inputs and are not packaged or publicly redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>la-rosiere-sicault-2019-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_96d6e3af4376</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2019/Louans/Louans2019a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_la_rosiere_sicault_2019_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>0.742909270219,47.201007677861,0 0.742521499956,47.200549924418,0 0.742854799872,47.200418774084,0 0.743242572046,47.20087652641,0 0.742909270219,47.201007677861,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

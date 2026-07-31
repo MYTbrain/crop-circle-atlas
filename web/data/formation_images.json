@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 96,
-    "overlay_placement_count": 96,
+    "mapped_catalog_image_count": 98,
+    "overlay_placement_count": 98,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -98100,13 +98100,15 @@
         "title_text": "",
         "width": 800,
         "height": 513,
-        "sha256": "",
+        "sha256": "27f509d75a0042689e3e3d0503fd703fe06dc14f5c1ad3625cb98bc504fb4687",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "jesuino-marcondes-2018-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_4b238a13b3b2c0963ac2",
@@ -103874,13 +103876,15 @@
         "title_text": "",
         "width": 800,
         "height": 397,
-        "sha256": "",
+        "sha256": "60c3bc21ee7269c404db2971605590d3c2518a33d3d8149e4475a08903a2b59c",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "la-rosiere-sicault-2019-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_2571507b2b9baf0996ea",

@@ -16963,6 +16963,559 @@
       }
     },
     {
+      "observation_id": "regobs_jesuino_marcondes_2018_crop_geometry_v1",
+      "overlay_id": "jesuino-marcondes-2018-coordinate-size-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/Jesuino/DJI_0100.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/Jesuino/Jesuino2018a.html",
+        "sha256": "27f509d75a0042689e3e3d0503fd703fe06dc14f5c1ad3625cb98bc504fb4687",
+        "width_px": 800,
+        "height_px": 513,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          513
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          -25.30416667,
+          -51.01355556
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "Jesuino Marcondes, near Prudentopolis, Southern Brazil; publisher DMS target; candidate/unaccepted.",
+        "publisher_coordinate_wgs84_lat_lon": [
+          -25.30416667,
+          -51.01355556
+        ],
+        "resolved_map_target_wgs84_lat_lon": [
+          -25.3041785,
+          -51.013562
+        ],
+        "anchor_separation_m": 1.466,
+        "reported_place": "Jesuino Marcondes, near Prudentopolis, Southern Brazil",
+        "reported_date": "2018-08-03",
+        "source_report_url": "https://www.cropcircleconnector.com/2018/Jesuino/Jesuino2018a.html",
+        "dimension_source_urls": [
+          "https://ufo.com.br/o-primeiro-caso-brasileiro-registrado-neste-ano/",
+          "https://ufo.com.br/saiu-o-relatorio-do-possivel-agroglifo-de-prudentopolis-feito-pela-revista-ufo/"
+        ],
+        "documented_main_body_external_diameter_m": 84.0,
+        "documented_approximate_inner_circle_diameter_m": 60.0,
+        "reported_ring_widths_m_not_fitted": [
+          1.7,
+          4.0
+        ],
+        "reported_satellite_diameter_m_not_fitted": 4.0
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            513
+          ],
+          [
+            0,
+            513
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            -25.305269014983,
+            -51.012416058912
+          ],
+          [
+            -25.305269014983,
+            -51.015319246398
+          ],
+          [
+            -25.303585970411,
+            -51.015319246398
+          ],
+          [
+            -25.303585970411,
+            -51.012416058912
+          ]
+        ],
+        "basis": "A nonfolding similarity transform anchors the visually inspected complete 800 by 513 near-overhead frame at the Connector DMS target. The field-report 84 m main-body external diameter supplies display scale via a 230 px representative diameter. The approximately 60 m inner circle spans a corroborating 164 px. Cardinal arms and repeated road/house context supply coarse direction only.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_917dcabeb1b2695ab068",
+        "source_frame_size_px": [
+          800,
+          513
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            513
+          ],
+          [
+            0,
+            513
+          ]
+        ],
+        "anchor_pixel_xy": [
+          314.0,
+          336.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            199.0,
+            336.0
+          ],
+          [
+            429.0,
+            336.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific measured main-body external diameter",
+            "operational_value_m": 84.0,
+            "source_wording": "total of 84 m in its external diameter",
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative main-body external diameter on selected source",
+            "source_points_xy": [
+              [
+                199.0,
+                336.0
+              ],
+              [
+                429.0,
+                336.0
+              ]
+            ],
+            "pixel_span": 230.0,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "corroborating approximate inner-circle diameter",
+            "reported_value_m": 60.0,
+            "source_points_xy": [
+              [
+                232.0,
+                336.0
+              ],
+              [
+                396.0,
+                336.0
+              ]
+            ],
+            "pixel_span": 164.0,
+            "status": "corroborating_formation_bound_control_not_independently_fitted"
+          },
+          {
+            "type": "four short arms described as approximately cardinal",
+            "source_image_right_bearing_true_deg": 270.0,
+            "orientation_uncertainty_deg_modulo_180": 15.0,
+            "status": "used_for_display_orientation_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "diagonal red dirt road, eastern branch/access track, isolated farmhouse, and adjacent woodland edge",
+            "role": "unique parcel and coarse orientation context",
+            "accepted_for_fit": false,
+            "reason": "The repeated frames and current mosaic support identity and direction, but no source-to-reference point coordinates were measured and the source date differs from the current mosaic."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.365217391304,
+            -0.0,
+            114.678260869565
+          ],
+          [
+            -0.0,
+            0.365217391304,
+            -122.713043478261
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_main_body_external_diameter_m": 84.0,
+        "documented_approximate_inner_circle_diameter_m": 60.0,
+        "corroborating_inner_circle_control_pixels": [
+          [
+            232.0,
+            336.0
+          ],
+          [
+            396.0,
+            336.0
+          ]
+        ],
+        "corroborating_inner_circle_implied_m": 59.896,
+        "inner_circle_report_to_implied_difference_m": 0.104,
+        "reported_ring_widths_m_not_fitted": [
+          1.7,
+          4.0
+        ],
+        "reported_satellite_diameter_m_not_fitted": 4.0,
+        "scale_m_per_px": 0.3652173913043478,
+        "orientation_basis": "The Connector explicitly describes the four short arms as approximately North/East/South/West and image left-to-right as East-to-West. The diagonal road, branch, farmhouse, and woodland repeat across the selected and wider frames and agree with that direction in the north-up current context. Source image-right is therefore assigned 270 degrees true with 15 degrees uncertainty.",
+        "source_image_right_bearing_true_deg": 270.0,
+        "orientation_uncertainty_deg_modulo_180": 15.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-017/inspection/cc_8e59dc6f50d7/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "90a5e50b0350da7f8f655793b607c7f771495db7c427d08d500cc47cf5d37295",
+        "reference_context_path": "tmp/overlay-wave-017/inspection/cc_8e59dc6f50d7/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "287148035b90798b17cccbf0f0010dbb6ec5c8b102947a878f5fc60676cda95f",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.133383742911153,
+            -0.133383742911153
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -54740.68809073735,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_cca3a36d4af6c0f63420",
+            "gimg_94a89328d1f0a2015116"
+          ],
+          "context_landmark": "red dirt road, branch/access track, isolated farmhouse, and woodland edge across DJI_0100, DJI_0092, and DJI_0091",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 15.0
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          -25.305269014983,
+          -51.012416058912
+        ],
+        [
+          -25.305269014983,
+          -51.015319246398
+        ],
+        [
+          -25.303585970411,
+          -51.015319246398
+        ],
+        [
+          -25.303585970411,
+          -51.012416058912
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Source-reported main-body scale with satellites not independently fitted; no camera calibration or pose; no measured persistent fit points; zero independent checkpoints; current mosaic date mismatch; rights-gated source pixels."
+      }
+    },
+    {
+      "observation_id": "regobs_la_rosiere_sicault_2019_crop_geometry_v1",
+      "overlay_id": "la-rosiere-sicault-2019-coordinate-size-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2019/Louans/5d1e10b2cb317e7e4e8b4574.jpg",
+        "page_url": "https://cropcircleconnector.com/2019/Louans/Louans2019a.html",
+        "sha256": "60c3bc21ee7269c404db2971605590d3c2518a33d3d8149e4475a08903a2b59c",
+        "width_px": 800,
+        "height_px": 397,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          397
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          47.200722222222225,
+          0.7428611111111111
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "La Rosiere Sicault near Louans; reconciled publisher DMS target; candidate/unaccepted coordinate-size display geometry only.",
+        "publisher_coordinate_reference": "47°12'02.6\"N 0°44'34.3\"E",
+        "publisher_coordinate_wgs84_lat_lon": [
+          47.200722222222225,
+          0.7428611111111111
+        ],
+        "resolved_map_marker_wgs84_lat_lon": [
+          47.200733,
+          0.74285
+        ],
+        "anchor_separation_m": 1.464,
+        "reported_place": "La Rosiere Sicault, near Louans, Indre-et-Loire, France",
+        "reported_date": "2019-07-03",
+        "source_report_url": "https://cropcircleconnector.com/2019/Louans/Louans2019a.html",
+        "dimension_source_urls": [
+          "https://cropcircleconnector.com/2019/Louans/Louans2019a.html",
+          "https://www.lanouvellerepublique.fr/indre-et-loire/un-crop-circle-decouvert-depuis-un-planeur-dans-le-sud-touraine?fbclid=IwAR3wIH16PEhHvmUgwO6ShtsA_uJnv7GzegjRbOw1ftaw30C9K97zql5pxj4"
+        ],
+        "documented_overall_length_m": 60.0,
+        "source_wording": "a figure 60 meters long"
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            397
+          ],
+          [
+            0,
+            397
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            47.20087652641,
+            0.743242572046
+          ],
+          [
+            47.200418774084,
+            0.742854799872
+          ],
+          [
+            47.200549924418,
+            0.742521499956
+          ],
+          [
+            47.201007677861,
+            0.742909270219
+          ]
+        ],
+        "basis": "A nonfolding similarity transform anchors the visually inspected complete 800 by 397 near-overhead frame at the reconciled Connector DMS target. The reported 60 m overall length supplies display scale via a 816.835 px representative longitudinal span. Same-event field and landscape context supplies coarse direction only.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_context_directed_display_placement",
+        "source_image_identifier": "gimg_513dae92430510d77bb2",
+        "source_frame_size_px": [
+          800,
+          397
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            397
+          ],
+          [
+            0,
+            397
+          ]
+        ],
+        "anchor_pixel_xy": [
+          399.0,
+          224.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            8.0,
+            106.0
+          ],
+          [
+            790.0,
+            342.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific reported overall length",
+            "operational_value_m": 60.0,
+            "source_wording": "a figure 60 meters long",
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative full-formation longitudinal endpoints",
+            "source_points_xy": [
+              [
+                8.0,
+                106.0
+              ],
+              [
+                790.0,
+                342.0
+              ]
+            ],
+            "pixel_span": 816.835356727413,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "same-event landscape and field-boundary direction transfer",
+            "source_image_right_bearing_true_deg": 210.0,
+            "longitudinal_axis_bearing_from_large_end_true_deg": 226.79330382505714,
+            "orientation_uncertainty_deg_modulo_180": 25.0,
+            "status": "used_for_display_orientation_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "formation-field road/boundary junctions, adjacent rectangular parcels, wood blocks, and isolated farm groups",
+            "role": "unique event parcel and coarse orientation context",
+            "accepted_for_fit": false,
+            "reason": "The wide glider frame, lower-altitude field frame, and current mosaic support identity and direction, but no source-to-reference pixel control coordinates were measured."
+          },
+          {
+            "feature": "repeated event-field tramline family across the staged drone frames",
+            "role": "cross-frame direction transfer",
+            "accepted_for_fit": false,
+            "reason": "Used for coarse source orientation only; tramlines are not an independent metric ground control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            -0.036727107553,
+            -0.063613216298,
+            28.903476364505
+          ],
+          [
+            -0.063613216298,
+            0.036727107553,
+            17.154801210785
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_overall_length_m": 60.0,
+        "representative_longitudinal_pixel_span": 816.835356727413,
+        "scale_m_per_px": 0.07345421510692841,
+        "orientation_basis": "The wide glider frame and lower-altitude field frame preserve the same formation ends, tramlines, field boundary/road junctions, wood blocks, and farm groups visible in the north-up current context. They support source image-right at approximately 210 degrees true and the large-to-small formation axis at approximately 226.8 degrees true, both for display direction only.",
+        "source_image_right_bearing_true_deg": 210.0,
+        "longitudinal_axis_bearing_from_large_end_true_deg": 226.79330382505714,
+        "orientation_uncertainty_deg_modulo_180": 25.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-017/inspection/cc_96d6e3af4376/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "e3b02103f77ce4a76262c21a5808beb235541b5b0cdf49403254ce8e4541414d",
+        "reference_context_path": "tmp/overlay-wave-017/inspection/cc_96d6e3af4376/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "f2366ad5adce6bf4a513ef23fae00980772f682423be547e479efb64da9e138e",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.005395521716985763,
+            -0.005395521716985763
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -1713.6176973146783,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "context_directed_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_f84f73f98aa0447c5f62",
+            "gimg_9757c15225019dd2bbfe"
+          ],
+          "context_landmark": "formation field road/boundary junctions, adjacent rectangular parcels, wood blocks, isolated farm groups, and repeated tramlines",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 25.0
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          47.20087652641,
+          0.743242572046
+        ],
+        [
+          47.200418774084,
+          0.742854799872
+        ],
+        [
+          47.200549924418,
+          0.742521499956
+        ],
+        [
+          47.201007677861,
+          0.742909270219
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Reported scale; coarse contextual orientation; source boundary tight at the smaller terminal ring; no camera calibration or pose; no measured persistent fit points; zero independent checkpoints; current mosaic date mismatch; rights-gated source pixels."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",
