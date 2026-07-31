@@ -12383,6 +12383,209 @@
       }
     },
     {
+      "overlay_id": "atherington-2017-coordinate-size-context-display-placement",
+      "registration_observation_id": "regobs_atherington_20170719_crop_geometry_lane_a_v1",
+      "formation_id": "cc_54e10e357d9c",
+      "assertion_id": "sx_connector_6a6ca67b10f86219",
+      "title": "Atherington 2017 coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2017/atherington/DJI_0415.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2017/atherington/atherington2017a.html",
+      "source_image_sha256": "b2ae4ac4eecbad11cfaf6e562451694bfa647cb17720838c3a7525fe2dfccb19",
+      "corners": [
+        [
+          50.796142592177,
+          -0.580530965961
+        ],
+        [
+          50.796585827823,
+          -0.580530965961
+        ],
+        [
+          50.796585827823,
+          -0.579855150583
+        ],
+        [
+          50.796142592177,
+          -0.579855150583
+        ]
+      ],
+      "center": [
+        50.79636421,
+        -0.58019262
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Publisher grid target, event-specific size report, adjacent-number same-event complete and coastal-context source frames, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-31",
+      "reviewed_at": "2026-07-31",
+      "review_basis": "The reconciled grid anchor, unique beach-side field, same groyne/shore/woodland/field setting, complete near-overhead frame, and event-specific approximately 150-160 ft diameter support a useful display placement. The coastal axis is transferred only modulo 180 degrees and is not georegistration.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement only. It is not survey georegistration, perspective rectification, or an accuracy benchmark. Candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "The temporary QC contact sheet remains under tmp. Source pixels are not added to any canonical or public package.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_adc537a5195d7be03c25",
+        "source_frame_size_px": [
+          800,
+          771
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            771
+          ],
+          [
+            0,
+            771
+          ]
+        ],
+        "anchor_pixel_xy": [
+          400.0,
+          386.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            17.0,
+            386.0
+          ],
+          [
+            783.0,
+            386.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter range",
+            "reported_value_ft": [
+              150.0,
+              160.0
+            ],
+            "converted_value_m": [
+              45.72,
+              48.768
+            ],
+            "operational_midpoint_m": 47.244,
+            "status": "operational_scale_constraint_explicitly_approximate_and_non_independent"
+          },
+          {
+            "type": "representative overall horizontal footprint span on selected source",
+            "source_points_xy": [
+              [
+                17.0,
+                386.0
+              ],
+              [
+                783.0,
+                386.0
+              ]
+            ],
+            "pixel_span": 766.0,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "coastal and tramline axis transferred from adjacent-number same-event context",
+            "source_image_right_bearing_true_deg_modulo_180": 0.0,
+            "orientation_uncertainty_deg_modulo_180": 12.0,
+            "status": "used_for_display_orientation_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Climping Beach shoreline and groyne, woodland edge, estate boundary, coastal field outline, and repeated tramline family",
+            "role": "unique parcel and coarse axis context",
+            "accepted_for_fit": false,
+            "reason": "The same-event landscape frames and current references support field identity and an axis modulo 180 degrees, but no source-to-reference point coordinates were measured and imagery dates differ."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "source_xy_to_local_metres_east_north": [
+          [
+            0.0,
+            0.061676240209,
+            -23.807028720627
+          ],
+          [
+            0.061676240209,
+            0.0,
+            -24.670496083551
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_approximate_diameter_range_m": [
+          45.72,
+          48.768
+        ],
+        "operational_midpoint_diameter_m": 47.244,
+        "scale_m_per_px": 0.061676240209,
+        "orientation_basis": "The adjacent-number same-event context frame looks west along Climping Beach with the sea to frame-left and land to frame-right. Matching formation geometry and continuous tramlines transfer the axis into the selected frame; shoreline curvature, the groyne, the woodland/estate edge, and field outline support image-right approximately north. No absolute camera yaw or point registration is claimed.",
+        "source_image_right_bearing_true_deg_modulo_180": 0.0,
+        "orientation_uncertainty_deg_modulo_180": 12.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-019/inspection/cc_54e10e357d9c/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "db7778d0a403d853203e1a3bca4ea76e53297c27ac72f045752bb7e5b1a1b5f2",
+        "reference_context_path": "tmp/overlay-wave-019/inspection/cc_54e10e357d9c/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "093645d6fa755ac0ca44e94220c5a029f87f47be5a19e1e05b9fcfd9b1fc292c",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.003803958606,
+            -0.003803958606
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -2346.281668367771,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "contextual_axis_transfer_modulo_180_display_only",
+          "context_source_image_identifiers": [
+            "gimg_14478d27994d6e925d02",
+            "gimg_b8f5e5b9e62a17bef210"
+          ],
+          "context_landmark": "Climping Beach shoreline and groyne, woodland/estate edge, coastal field outline, and repeated tramlines",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 12.0
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",
