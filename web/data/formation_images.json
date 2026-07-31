@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 87,
-    "overlay_placement_count": 87,
+    "mapped_catalog_image_count": 88,
+    "overlay_placement_count": 88,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -106851,13 +106851,15 @@
         "title_text": "",
         "width": 800,
         "height": 798,
-        "sha256": "",
+        "sha256": "4f15a2b8461045c7ca065d56fbcae1d9d0b8e3a5cc92bcc989f284b1a618f12f",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "alton-barnes-2015-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_5965cacf94eae3a2123d",

@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-31T01:02:28.012909Z",
+  "generated_at": "2026-07-31T03:45:52.202003Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 153,
+    "candidate_field": 164,
     "clues_reviewed": 2,
-    "provisional_registration": 79,
-    "queued": 1672,
+    "provisional_registration": 80,
+    "queued": 1660,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -21893,11 +21893,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Sutton Hall has a plausible candidate field and near-coincident same-event targets, but no traceable event-specific overall metric size supports a transferable full-frame footprint. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_3a9c49b0eab2",
@@ -23016,11 +23016,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Ridgeway (2) has internally consistent publisher coordinates and a documented component scale, but the target lies at or beside a persistent round copse while same-event imagery places the formation away from it. No measured offset resolves the center, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_e018e8685c50",
@@ -23280,11 +23280,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Monarch's Way has same-event final-report and rumours targets 208.246 metres apart, while the available size statements have conflicting scope. No independent controls resolve either issue, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_084447adeb93",
@@ -23605,11 +23605,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Cheesefoot Head's Connector anchor and the cited same-event Temporary Temples map anchor differ by 373.372 metres. The source evidence supplies zero independently measured controls or checkpoints to resolve the center conflict, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_34c0a4a40d7e",
@@ -24176,11 +24176,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Reigate Hill's displayed grid cell and same-page linked pointer differ by 179.847 metres. No independently measured controls resolve the center conflict, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_84304b9d75ba",
@@ -24814,11 +24814,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Chilcomb Down has a documented 170-foot size, but the same-event article coordinate and canonical publisher target differ by 254.211 metres. No independent controls resolve the center conflict, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_20932c02f6cb",
@@ -25065,11 +25065,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Ackling Dyke (2) has distinctive same-event context and an approximately 80-foot size report, but its source-map and internal analysis points differ by 23.220 metres with unresolved point semantics. The conflict crosses the 23 metre fail-closed threshold, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_37d7177f4cdc",
@@ -25256,11 +25256,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Burderop Down has recognizable same-event imagery, but no event-specific overall metric scale supports a transferable full-frame footprint. The reported date discrepancy is retained as a limitation. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_4c02ba2e51ed",
@@ -25512,11 +25512,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Stroud Green has strong same-event imagery, but no defensible event-wide metric scale is documented; a retrospective 15-foot component-side statement is not an overall surveyed size. No transferable footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_6cb1ee15e26a",
@@ -25950,11 +25950,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Alton Barnes has an event-specific linked publisher target, recognizable village and hedgerow context, a complete source frame, and an approximately 18 metre operational diameter. Its nonfold coordinate-size display footprint has zero independent checkpoints and remains unaccepted, rights-gated, public-overlay-ineligible, publication-ineligible, and alignment-ineligible. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "alton-barnes-2015-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_a5b77e6c72ff",
@@ -26509,11 +26509,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Woolstone Hill's Connector anchor and the cited same-event Temporary Temples precise-location map anchor differ by 51.011 metres. The source evidence supplies zero independently measured controls or checkpoints to resolve the center conflict, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ebb616c3eb52",
@@ -26703,11 +26703,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Cow Down's same-report displayed grid square and linked target differ by at least 242.84 metres. No independent controls resolve the center conflict, so no footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_f19139ca2261",

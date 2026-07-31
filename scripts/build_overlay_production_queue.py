@@ -2174,6 +2174,137 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_de3f149726f6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ridgeway (2) has internally consistent publisher coordinates and "
+            "a documented component scale, but the target lies at or beside a "
+            "persistent round copse while same-event imagery places the "
+            "formation away from it. No measured offset resolves the center, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_36ba5b834120": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sutton Hall has a plausible candidate field and near-coincident "
+            "same-event targets, but no traceable event-specific overall metric "
+            "size supports a transferable full-frame footprint. No footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_812f7c2283fc": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Reigate Hill's displayed grid cell and same-page linked pointer "
+            "differ by 179.847 metres. No independently measured controls "
+            "resolve the center conflict, so no footprint is published. "
+            "Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_019237ced8b1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Monarch's Way has same-event final-report and rumours targets "
+            "208.246 metres apart, while the available size statements have "
+            "conflicting scope. No independent controls resolve either issue, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2bf345d347d1": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cheesefoot Head's Connector anchor and the cited same-event "
+            "Temporary Temples map anchor differ by 373.372 metres. The source "
+            "evidence supplies zero independently measured controls or "
+            "checkpoints to resolve the center conflict, so no footprint is "
+            "published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_9c6a3fbb1f80": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Alton Barnes has an event-specific linked publisher target, "
+            "recognizable village and hedgerow context, a complete source "
+            "frame, and an approximately 18 metre operational diameter. Its "
+            "nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "public-overlay-ineligible, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e36238e8c588": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Woolstone Hill's Connector anchor and the cited same-event "
+            "Temporary Temples precise-location map anchor differ by 51.011 "
+            "metres. The source evidence supplies zero independently measured "
+            "controls or checkpoints to resolve the center conflict, so no "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_efebfd5446ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Cow Down's same-report displayed grid square and linked target "
+            "differ by at least 242.84 metres. No independent controls resolve "
+            "the center conflict, so no footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6955c20df4d6": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Stroud Green has strong same-event imagery, but no defensible "
+            "event-wide metric scale is documented; a retrospective 15-foot "
+            "component-side statement is not an overall surveyed size. No "
+            "transferable footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_14e82637573f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Chilcomb Down has a documented 170-foot size, but the same-event "
+            "article coordinate and canonical publisher target differ by "
+            "254.211 metres. No independent controls resolve the center "
+            "conflict, so no footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4a47f86f7c30": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Burderop Down has recognizable same-event imagery, but no "
+            "event-specific overall metric scale supports a transferable "
+            "full-frame footprint. The reported date discrepancy is retained "
+            "as a limitation. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_2e8bd4fa9994": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ackling Dyke (2) has distinctive same-event context and an "
+            "approximately 80-foot size report, but its source-map and internal "
+            "analysis points differ by 23.220 metres with unresolved point "
+            "semantics. The conflict crosses the 23 metre fail-closed threshold, "
+            "so no footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 

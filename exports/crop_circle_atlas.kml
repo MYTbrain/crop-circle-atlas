@@ -141597,6 +141597,57 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Alton Barnes 2015 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2015/altonbarnes/altonbarnes2015.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>alton-barnes-2015-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_9c6a3fbb1f80</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2015/altonbarnes/altonbarnes2015.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_alton_barnes_2015_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.85501660225,51.35732234971,0 -1.854756156858,51.357378497544,0 -1.854845610942,51.357541155402,0 -1.855106057147,51.357485007371,0 -1.85501660225,51.35732234971,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>

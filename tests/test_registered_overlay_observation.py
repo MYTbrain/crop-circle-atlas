@@ -597,6 +597,108 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
             queue["cc_d25d5f8c75ad"]["blocker_or_rejection_reason"],
         )
 
+    def test_wave_15_alton_barnes_placement_remains_unaccepted(self):
+        root = Path(__file__).resolve().parents[1]
+        placements = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "provisional_image_scene_placements.json").read_text(
+                    encoding="utf-8"
+                )
+            )["placements"]
+        }
+        observations = {
+            row["observation_id"]: row
+            for row in json.loads(
+                (root / "data" / "registered_overlay_observations.json").read_text(
+                    encoding="utf-8"
+                )
+            )["observations"]
+        }
+        queue = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "overlay_production_queue.json").read_text(
+                    encoding="utf-8"
+                )
+            )["records"]
+        }
+        cases = {
+            "cc_9c6a3fbb1f80": {
+                "source_corners": [[0, 0], [800, 0], [800, 798], [0, 798]],
+                "map_corners": [
+                    [51.357485007371, -1.855106057147],
+                    [51.357541155402, -1.854845610942],
+                    [51.357378497544, -1.854756156858],
+                    [51.35732234971, -1.85501660225],
+                ],
+                "signed_area_m2": -367.2285986557484,
+            },
+        }
+        for formation_id, expected in cases.items():
+            with self.subTest(formation_id=formation_id):
+                placement = placements[formation_id]
+                observation = observations[placement["observation_id"]]
+                self.assertEqual(
+                    observation["projective_display_transform"][
+                        "source_frame_corners_xy"
+                    ],
+                    expected["source_corners"],
+                )
+                self.assertEqual(
+                    observation["computed_corners_wgs84_lat_lon"],
+                    expected["map_corners"],
+                )
+                self.assertAlmostEqual(
+                    observation["source_registration"][
+                        "non_folded_display_footprint_check"
+                    ]["source_frame_corner_polygon_signed_area_m2"],
+                    expected["signed_area_m2"],
+                    places=9,
+                )
+                self.assertEqual(
+                    observation["projective_display_transform"][
+                        "independent_ground_checkpoint_count"
+                    ],
+                    0,
+                )
+                for gate in (
+                    "accepted",
+                    "public_overlay_allowed",
+                    "publication_eligible",
+                    "redistribution_allowed",
+                    "embedding_allowed",
+                    "pixel_bytes_packaged",
+                    "alignment_eligibility",
+                ):
+                    self.assertFalse(placement[gate])
+                self.assertEqual(
+                    queue[formation_id]["processing_status"],
+                    "provisional_registration",
+                )
+                self.assertIn(
+                    "Explicit outcome: coordinate_size_geometry_provisional.",
+                    queue[formation_id]["blocker_or_rejection_reason"],
+                )
+        for formation_id, conflict_distance in (
+            ("cc_2bf345d347d1", "373.372"),
+            ("cc_e36238e8c588", "51.011"),
+        ):
+            with self.subTest(conflicted_formation_id=formation_id):
+                self.assertNotIn(formation_id, placements)
+                self.assertEqual(
+                    queue[formation_id]["processing_status"],
+                    "candidate_field",
+                )
+                self.assertIn(
+                    conflict_distance,
+                    queue[formation_id]["blocker_or_rejection_reason"],
+                )
+                self.assertIn(
+                    "Explicit outcome: candidate_field.",
+                    queue[formation_id]["blocker_or_rejection_reason"],
+                )
+
 
 if __name__ == "__main__":
     unittest.main()

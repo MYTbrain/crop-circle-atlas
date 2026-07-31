@@ -14533,6 +14533,280 @@
       }
     },
     {
+      "observation_id": "regobs_alton_barnes_2015_crop_geometry_v1",
+      "overlay_id": "alton-barnes-2015-coordinate-size-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2015/altonbarnes/G0019639bbb.jpg",
+        "page_url": "https://cropcircleconnector.com/2015/altonbarnes/altonbarnes2015.html",
+        "sha256": "4f15a2b8461045c7ca065d56fbcae1d9d0b8e3a5cc92bcc989f284b1a618f12f",
+        "width_px": 800,
+        "height_px": 798,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          798
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.35743189968086,
+          -1.854929366915359
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The Connector displays SU101620 and links E410198 N162050 inside that 100 m square. Same-event imagery and the reported approximately 18 m design support candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, redistribution-prohibited, publication-ineligible, and alignment-ineligible.",
+        "publisher_grid_reference": "SU101620; displayed 100 m grid square containing linked EPSG:27700 E=410198 N=162050",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.35743189968086,
+          -1.854929366915359
+        ],
+        "reported_place": "Alton Barnes, Wiltshire, England",
+        "reported_date": "2015-07-14",
+        "source_report_url": "https://cropcircleconnector.com/2015/altonbarnes/altonbarnes2015.html",
+        "dimension_source_urls": [
+          "https://cropcirclephotographs.co.uk/crop-circles-2015-july/"
+        ],
+        "documented_operational_diameter_m": 18.0,
+        "same_event_diameter_estimates_m": [
+          18.0
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            798
+          ],
+          [
+            0,
+            798
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.357485007371,
+            -1.855106057147
+          ],
+          [
+            51.357541155402,
+            -1.854845610942
+          ],
+          [
+            51.357378497544,
+            -1.854756156858
+          ],
+          [
+            51.35732234971,
+            -1.85501660225
+          ]
+        ],
+        "basis": "A nonfolding full-frame similarity transform places the complete near-overhead original around the Connector-linked E410198 N162050 event target, which lies inside the report's displayed SU101620 grid square. Lucy Pringle's approximately 18 m report supplies operational scale. Directed same-event field and settlement context supplies only a coarse orientation; neither projective nor survey accuracy is claimed.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_ce1200f3af80e730520a",
+        "source_frame_size_px": [
+          800,
+          798
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            798
+          ],
+          [
+            0,
+            798
+          ]
+        ],
+        "anchor_pixel_xy": [
+          405,
+          400
+        ],
+        "source_geometry_control_pixels": [
+          [
+            24,
+            400
+          ],
+          [
+            785,
+            400
+          ],
+          [
+            405,
+            30
+          ],
+          [
+            405,
+            770
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 18.0,
+            "same_event_report_range_m": [
+              18.0,
+              18.0
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                24,
+                400
+              ],
+              [
+                785,
+                400
+              ],
+              [
+                405,
+                30
+              ],
+              [
+                405,
+                770
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "event-field boundary and adjacent settlement edge in the directed same-event frames",
+            "role": "candidate-parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The context supports the linked target parcel but is perspective-affected and not used as a measured planar fit."
+          },
+          {
+            "feature": "event-field tramline family across the selected and contextual originals",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a coarse bearing; no source-to-reference landmark correspondence is measured."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.022677327596,
+            0.007808430087,
+            -12.30768971114
+          ],
+          [
+            0.007808430087,
+            -0.022677327596,
+            5.908516853194
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          18.0,
+          18.0
+        ],
+        "same_event_diameter_estimate_range_m": [
+          18.0,
+          18.0
+        ],
+        "scale_m_per_px": 0.023984010659560292,
+        "orientation_basis": "The selected source's dominant event-field tramline runs approximately 20 degrees clockwise from source image-right. The same tramline family transfers through the directed same-event context frames to the target parcel, where current north-up imagery places it near 91 degrees true. This gives source image-right an operational bearing near 71 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 71,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-015/lane_b/cc_9c6a3fbb1f80/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "13ad004316975dfec424bfc5e586c1f83dc9ab6af3ec0a9d88341296d759696d",
+        "reference_context_path": "tmp/overlay-wave-015/lane_b/cc_9c6a3fbb1f80/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "64666e820e1c9d0cd8205990d4d440b372ae9a2d2eddb49a0a1bbc5718628c6e",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.0005752327673179016,
+            -0.0005752327673179016
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -367.2285986557484,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_579942ee0fece7245801",
+            "gimg_7e3d971266cd6d5f7a06"
+          ],
+          "context_landmark": "event-field boundary, tramline family, and adjacent settlement edge",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.357485007371,
+          -1.855106057147
+        ],
+        [
+          51.357541155402,
+          -1.854845610942
+        ],
+        [
+          51.357378497544,
+          -1.854756156858
+        ],
+        [
+          51.35732234971,
+          -1.85501660225
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. Center uncertainty is 25 m, the 18 m dimension is approximate, orientation uncertainty is 20 degrees modulo 180, and independent ground checkpoint count is zero."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",
