@@ -1,16 +1,16 @@
 {
   "schema_version": "crop-circle-atlas/overlay-production-queue/v1",
-  "generated_at": "2026-07-30T22:03:05.771572Z",
+  "generated_at": "2026-07-31T01:02:28.012909Z",
   "queue_basis": "Unique formation events with one or more source-image records; the 23 reviewed U.S. Crop Circle Archives matches are ranked first.",
   "unique_formation_event_count": 1929,
   "reviewed_us_archive_event_count": 23,
   "reviewed_us_archive_image_count": 54,
   "status_counts": {
     "blocked_source": 3,
-    "candidate_field": 143,
+    "candidate_field": 153,
     "clues_reviewed": 2,
-    "provisional_registration": 77,
-    "queued": 1684,
+    "provisional_registration": 79,
+    "queued": 1672,
     "source_image_acquired": 11,
     "unresolved": 9
   },
@@ -21561,11 +21561,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2202,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Martinsell Hill has a publisher target, unmistakable scarp and field context, a complete source frame, and same-event size reports. Its nonfold coordinate-size display footprint uses a 61 metre operational diameter while preserving the conflicting 36 metre estimate. It has zero independent checkpoints and remains unaccepted, rights-gated, public-overlay-ineligible, publication-ineligible, and alignment-ineligible. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "martinsell-hill-2018-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_113a6637adde",
@@ -23667,11 +23667,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Etchilhampton Hill has recognizable summit and parcel context, but same-event publisher targets differ by 287.237 metres and no independently measured planar controls resolve the center. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_39e98d556610",
@@ -23925,11 +23925,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Monarch's Way has a visually supported unique field, but no authoritative same-event metric dimensions support a transferable full-frame footprint. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_752553dd93e5",
@@ -24491,11 +24491,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
-      "selected_overlay_id": "",
-      "registration_classification": "",
-      "review_date": ""
+      "processing_status": "provisional_registration",
+      "blocker_or_rejection_reason": "Norridge Wood has two same-event targets 20.655 metres apart, a uniquely recognizable wedge field beside the wood and road, a complete source frame, and a 180-to-200-foot reported length. Its nonfold coordinate-size display footprint has zero independent checkpoints and remains unaccepted, rights-gated, public-overlay-ineligible, publication-ineligible, and alignment-ineligible. Explicit outcome: coordinate_size_geometry_provisional.",
+      "selected_overlay_id": "norridge-wood-2018-coordinate-size-directed-geometry-placement",
+      "registration_classification": "provisional_registration",
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_e4db4e489b8f",
@@ -24554,11 +24554,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2199,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Stanton St Bernard has a uniquely recognizable Milk Hill landscape, but same-event publisher targets differ by 159.688 metres and no independently measured planar controls resolve the center. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_ec0e34557974",
@@ -25321,11 +25321,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Sarraltroff has supported field context, but no reviewed source frame is both complete and ground-only. No transferable footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_600f60e20fb9",
@@ -25573,11 +25573,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2196,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Wyke Lane's displayed and linked same-event targets differ by 53.6 metres, no metric scale is documented, and the reviewed frames are oblique. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_6dd1867f35ae",
@@ -27138,11 +27138,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Sutton Hall's same-event targets differ by approximately 248 metres, metric scale is absent, and the tall reviewed frame clips a terminal element. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_4c444179d978",
@@ -27508,11 +27508,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2193,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Scrubbs Lane has a documented 120-foot size, but the staged source context does not uniquely demonstrate the event field. No transferable footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_9e5263790960",
@@ -28116,11 +28116,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Winterbourne Stoke Down has strong visual field evidence, but same-event publisher targets differ by 24.604 metres, crossing the 23 metre conflict threshold without independent center resolution. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_43a7b52887b1",
@@ -28533,11 +28533,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Ammersee has a visually supported unique field, but metric scale and a defensible camera pose or measured planar-control fit remain unresolved. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_8e59dc6f50d7",
@@ -28831,11 +28831,11 @@
       "publication_rights": "not_cleared_for_redistribution",
       "straight_component_likelihood": "unknown",
       "priority_score": 2190,
-      "processing_status": "queued",
-      "blocker_or_rejection_reason": "",
+      "processing_status": "candidate_field",
+      "blocker_or_rejection_reason": "Sparticles Wood has recognizable landscape context, but all complete reviewed frames include horizon or vertical landscape and no reliable same-event metric scale is documented. No footprint is published. Explicit outcome: candidate_field.",
       "selected_overlay_id": "",
       "registration_classification": "",
-      "review_date": ""
+      "review_date": "2026-07-30"
     },
     {
       "formation_id": "cc_d6ba560cfdb0",

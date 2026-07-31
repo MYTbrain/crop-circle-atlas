@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 85,
-    "overlay_placement_count": 85,
+    "mapped_catalog_image_count": 87,
+    "overlay_placement_count": 87,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -9955,13 +9955,15 @@
         "title_text": "",
         "width": 800,
         "height": 803,
-        "sha256": "",
+        "sha256": "689ae29a12cc0037bf2c29ae4eb370c25f4bb5b93a499d0e41a5e1cfb6cb16ac",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "martinsell-hill-2018-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_d95c2968968df607a523",
@@ -143387,13 +143389,15 @@
         "title_text": "",
         "width": 800,
         "height": 606,
-        "sha256": "",
+        "sha256": "3baf261ea5cbf3ddc5cbd7e8e2afc099dd470146a3a9115955a8398b681a845c",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "norridge-wood-2018-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_c70db06e8794418f4573",

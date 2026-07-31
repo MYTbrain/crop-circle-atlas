@@ -13997,6 +13997,542 @@
       }
     },
     {
+      "observation_id": "regobs_martinsell_hill_2018_crop_geometry_v1",
+      "overlay_id": "martinsell-hill-2018-coordinate-size-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/martinsell/DJI_0072-2.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/martinsell/martinsellhill2018.html",
+        "sha256": "689ae29a12cc0037bf2c29ae4eb370c25f4bb5b93a499d0e41a5e1cfb6cb16ac",
+        "width_px": 800,
+        "height_px": 803,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          803
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.37651207,
+          -1.73615154
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The Connector map targets SU1846164195. The directed originals contain the complete formation, distinctive Martinsell Hill scarp, wooded saddle, and event-field boundary. Event-specific size reports span approximately 36 to 61 m. This supports candidate coordinate-size display geometry only; it remains unaccepted, rights-gated, publication-ineligible, and alignment-ineligible.",
+        "publisher_grid_reference": "SU1846164195; EPSG:27700 E=418461 N=164195",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.37651207,
+          -1.73615154
+        ],
+        "reported_place": "Martinsell Hill, near Wootton Rivers, Wiltshire, England",
+        "reported_date": "2018-07-07",
+        "source_report_url": "https://cropcircleconnector.com/2018/martinsell/martinsellhill2018.html",
+        "dimension_source_urls": [
+          "https://temporarytemples.co.uk/project/martinsell-hill-wilts-7th-july-2018",
+          "https://cropcirclephotographs.co.uk/july-2018-crop-circles-lucy-pringle-crop-circle-photography-uk/"
+        ],
+        "documented_operational_diameter_m": 61.0,
+        "other_same_event_diameter_estimates_m": [
+          36.0,
+          61.0
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            803
+          ],
+          [
+            0,
+            803
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.37690612351,
+            -1.73641035823
+          ],
+          [
+            51.376683303313,
+            -1.735526828258
+          ],
+          [
+            51.376129735851,
+            -1.735885136173
+          ],
+          [
+            51.376352556048,
+            -1.736768666145
+          ]
+        ],
+        "basis": "A nonfolding full-frame similarity transform places the complete near-overhead original around the Connector SU1846164195 event target. The distinctive Martinsell Hill scarp, wooded saddle, hooked field boundary, and directed same-event originals uniquely identify the parcel and provide a coarse bearing. Temporary Temples' just-over-200-ft estimate supplies the 61.0 m operational scale; Lucy Pringle's conflicting 36 m estimate remains disclosed.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_111f462c04a91655e666",
+        "source_frame_size_px": [
+          800,
+          803
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            803
+          ],
+          [
+            0,
+            803
+          ]
+        ],
+        "anchor_pixel_xy": [
+          400,
+          410
+        ],
+        "source_geometry_control_pixels": [
+          [
+            38,
+            410
+          ],
+          [
+            762,
+            410
+          ],
+          [
+            400,
+            35
+          ],
+          [
+            400,
+            785
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 61.0,
+            "same_event_report_range_m": [
+              36.0,
+              61.0
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                38,
+                410
+              ],
+              [
+                762,
+                410
+              ],
+              [
+                400,
+                35
+              ],
+              [
+                400,
+                785
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Martinsell Hill scarp, wooded saddle, and event-field boundary",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "These features identify the parcel and direction but are distant and perspective-affected, so they are not used as measured planar fit controls."
+          },
+          {
+            "feature": "event-field tractor lines and utility corridor",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.076741133146,
+            -0.031005430391,
+            -17.984226797962
+          ],
+          [
+            -0.031005430391,
+            -0.076741133146,
+            43.866036746355
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          61.0,
+          61.0
+        ],
+        "other_same_event_diameter_estimate_range_m": [
+          36.0,
+          61.0
+        ],
+        "scale_m_per_px": 0.08276797829036635,
+        "orientation_basis": "The selected frame's dominant formation-field tramline runs approximately 27 degrees counter-clockwise from source image-right. The same tramline family transfers through the two directed originals to the uniquely matched Martinsell Hill parcel, where current north-up reference imagery places it near 85 degrees true. This gives source image-right an operational bearing near 112 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 112,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-014/lane_a/cc_0cf000760654/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "3f1add0e7bf404f023137cee2e8775ee5abf27d312abe22a187739fafb72d560",
+        "reference_context_path": "tmp/overlay-wave-014/lane_a/cc_0cf000760654/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "fe513a38d053675fb885250bf247ee31f2c3061c59008c1bfca28e6fe2e3a225",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.00685053823,
+            -0.00685053823
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4400.785759128374,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_30643a13059ca818f7b4",
+            "gimg_d5c1ccaf78819ec7f0be"
+          ],
+          "context_landmark": "Martinsell Hill scarp, wooded saddle, and event-field boundary",
+          "photographic_yaw_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.37690612351,
+          -1.73641035823
+        ],
+        [
+          51.376683303313,
+          -1.735526828258
+        ],
+        [
+          51.376129735851,
+          -1.735885136173
+        ],
+        [
+          51.376352556048,
+          -1.736768666145
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. Center uncertainty is 25 m, size reports span 36 to 61 m, orientation uncertainty is 20 degrees modulo 180, and independent ground checkpoint count is zero."
+      }
+    },
+    {
+      "observation_id": "regobs_norridge_wood_2018_crop_geometry_v1",
+      "overlay_id": "norridge-wood-2018-coordinate-size-directed-geometry-placement",
+      "classification": "coordinate_size_geometry_provisional",
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "source_evidence": {
+        "url": "https://cropcircleconnector.com/2018/norridgewood/DJI_0127.jpg",
+        "page_url": "https://cropcircleconnector.com/2018/norridgewood/norridgewood2018a.html",
+        "sha256": "3baf261ea5cbf3ddc5cbd7e8e2afc099dd470146a3a9115955a8398b681a845c",
+        "width_px": 800,
+        "height_px": 606,
+        "pixel_boundary_extent_xy": [
+          0,
+          0,
+          800,
+          606
+        ],
+        "distribution": "remote_source_link_only_not_packaged"
+      },
+      "source_report_controls": {
+        "coordinate_wgs84_lat_lon": [
+          51.20795443,
+          -2.21347051
+        ],
+        "coordinate_uncertainty_m": 25,
+        "site_text": "The Connector target ST8518445438 and Temporary Temples Google target are approximately 20.655 m apart. The directed original uniquely contains the wedge field against Norridge Wood and the Cley Hill skyline. Temporary Temples reports 180 to 200 ft overall length. This supports candidate display geometry only and remains unaccepted, rights-gated, publication-ineligible, and alignment-ineligible.",
+        "publisher_grid_reference": "ST8518445438; EPSG:27700 E=385184 N=145438",
+        "publisher_coordinate_wgs84_lat_lon": [
+          51.20795443,
+          -2.21347051
+        ],
+        "alternate_same_event_coordinate_wgs84_lat_lon": [
+          51.2079639,
+          -2.2131744
+        ],
+        "alternate_anchor_separation_m": 20.655,
+        "reported_place": "Norridge Wood, near Warminster, Wiltshire, England",
+        "reported_date": "2018-08-14",
+        "source_report_url": "https://cropcircleconnector.com/2018/norridgewood/norridgewood2018a.html",
+        "dimension_source_url": "https://temporarytemples.co.uk/project/norridge-wood-nr-warminster-wiltshire",
+        "documented_operational_length_m": 57.912,
+        "same_event_length_estimate_range_m": [
+          54.864,
+          60.96
+        ]
+      },
+      "projective_display_transform": {
+        "model": "four_corner_projective_scene_placement",
+        "source_frame_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            606
+          ],
+          [
+            0,
+            606
+          ]
+        ],
+        "corners_wgs84_lat_lon": [
+          [
+            51.20771218741,
+            -2.213994647996
+          ],
+          [
+            51.208266130153,
+            -2.213619330531
+          ],
+          [
+            51.208088015585,
+            -2.212949554683
+          ],
+          [
+            51.207534072842,
+            -2.213324872148
+          ]
+        ],
+        "basis": "A nonfolding full-frame similarity transform places the complete ground-only original around the Connector ST8518445438 target. Temporary Temples' precise map target is approximately 20.655 m away. The Norridge Wood boundary, wedge-shaped event parcel, adjacent road, and Cley Hill context uniquely identify the field and supply a coarse bearing. The reported 180-to-200-ft length is represented by a 190-ft operational midpoint.",
+        "independent_ground_checkpoint_count": 0
+      },
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_b4ef86dcbf5eefc476ad",
+        "source_frame_size_px": [
+          800,
+          606
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            606
+          ],
+          [
+            0,
+            606
+          ]
+        ],
+        "anchor_pixel_xy": [
+          467,
+          276
+        ],
+        "source_geometry_control_pixels": [
+          [
+            225,
+            523
+          ],
+          [
+            709,
+            29
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall length",
+            "operational_value_ft": 190,
+            "operational_value_m": 57.912,
+            "same_event_report_range_ft": [
+              180,
+              200
+            ],
+            "same_event_report_range_m": [
+              54.864,
+              60.96
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design length on selected original",
+            "source_points_xy": [
+              [
+                225,
+                523
+              ],
+              [
+                709,
+                29
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Norridge Wood boundary, event-field wedge, and adjacent road",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "These features identify the parcel and direction but are perspective-affected and are not measured planar fit controls."
+          },
+          {
+            "feature": "Cley Hill skyline",
+            "role": "broader landscape corroboration",
+            "accepted_for_fit": false,
+            "reason": "The distant relief landmark corroborates the landscape but is not a ground-plane fit control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.032718999633,
+            0.077081132693,
+            -36.554165451732
+          ],
+          [
+            0.077081132693,
+            -0.032718999633,
+            -26.966445068759
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_length_m": 57.912,
+        "same_event_length_estimate_range_m": [
+          54.864,
+          60.96
+        ],
+        "scale_m_per_px": 0.08373788840276263,
+        "orientation_basis": "The selected frame's overall design axis runs approximately 45.6 degrees counter-clockwise from source image-right, from the nearer lower lobe toward the farther upper lobe. The same three-circle geometry and tractor lines transfer to the directed frame, where that axis points toward the uniquely matched Norridge Wood edge, approximately 337 degrees true. This gives source image-right an operational bearing near 23 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 23,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-014/lane_a/cc_d25d5f8c75ad/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "710831d4328e76c952b562887008e6198705aa2e3eb6de612d3ac58b6dc5c7d6",
+        "reference_context_path": "tmp/overlay-wave-014/lane_a/cc_d25d5f8c75ad/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "9de64b8d44df422de0506fbad4c7307c536f47433f623fc29b099fdefbbe07bb",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.007012033954,
+            -0.007012033954
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3399.434060973631,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_35a6082104b0285b4e88",
+            "gimg_23f433f8d97b55d8bbac"
+          ],
+          "context_landmark": "Norridge Wood boundary, wedge-shaped event parcel, adjacent road, and Cley Hill skyline",
+          "photographic_yaw_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      },
+      "computed_corners_wgs84_lat_lon": [
+        [
+          51.20771218741,
+          -2.213994647996
+        ],
+        [
+          51.208266130153,
+          -2.213619330531
+        ],
+        [
+          51.208088015585,
+          -2.212949554683
+        ],
+        [
+          51.207534072842,
+          -2.213324872148
+        ]
+      ],
+      "quality": {
+        "status": "useful_coordinate_size_geometry_provisional",
+        "limitations": "Display placement only. Center uncertainty is 25 m, length reports span 54.864 to 60.96 m, orientation uncertainty is 25 degrees modulo 180, the source frame is oblique, and independent ground checkpoint count is zero."
+      }
+    },
+    {
       "observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "classification": "provisional_four_control_landmark_scene_placement",

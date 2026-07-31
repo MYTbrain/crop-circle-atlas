@@ -9241,6 +9241,422 @@
       }
     },
     {
+      "overlay_id": "martinsell-hill-2018-coordinate-size-directed-geometry-placement",
+      "registration_observation_id": "regobs_martinsell_hill_2018_crop_geometry_v1",
+      "formation_id": "cc_0cf000760654",
+      "assertion_id": "sx_connector_603d4041cf986bcc",
+      "title": "Martinsell Hill 2018 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/martinsell/DJI_0072-2.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/martinsell/martinsellhill2018.html",
+      "source_image_sha256": "689ae29a12cc0037bf2c29ae4eb370c25f4bb5b93a499d0e41a5e1cfb6cb16ac",
+      "corners": [
+        [
+          51.37690612351,
+          -1.73641035823
+        ],
+        [
+          51.376683303313,
+          -1.735526828258
+        ],
+        [
+          51.376129735851,
+          -1.735885136173
+        ],
+        [
+          51.376352556048,
+          -1.736768666145
+        ]
+      ],
+      "center": [
+        51.37651207,
+        -1.73615154
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Connector event target and complete/directed originals, Temporary Temples and Lucy Pringle event-specific size reports, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_basis": "The event-specific target, unmistakable Martinsell Hill parcel context, complete frame, and event-specific size reports support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_111f462c04a91655e666",
+        "source_frame_size_px": [
+          800,
+          803
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            803
+          ],
+          [
+            0,
+            803
+          ]
+        ],
+        "anchor_pixel_xy": [
+          400,
+          410
+        ],
+        "source_geometry_control_pixels": [
+          [
+            38,
+            410
+          ],
+          [
+            762,
+            410
+          ],
+          [
+            400,
+            35
+          ],
+          [
+            400,
+            785
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall diameter",
+            "operational_value_m": 61.0,
+            "same_event_report_range_m": [
+              36.0,
+              61.0
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design spans on selected original",
+            "source_points_xy": [
+              [
+                38,
+                410
+              ],
+              [
+                762,
+                410
+              ],
+              [
+                400,
+                35
+              ],
+              [
+                400,
+                785
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Martinsell Hill scarp, wooded saddle, and event-field boundary",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "These features identify the parcel and direction but are distant and perspective-affected, so they are not used as measured planar fit controls."
+          },
+          {
+            "feature": "event-field tractor lines and utility corridor",
+            "role": "same-field cross-frame direction context",
+            "accepted_for_fit": false,
+            "reason": "Used only for coarse orientation transfer; no measured source-to-reference correspondence is claimed."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.076741133146,
+            -0.031005430391,
+            -17.984226797962
+          ],
+          [
+            -0.031005430391,
+            -0.076741133146,
+            43.866036746355
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_dimensions_m": [
+          61.0,
+          61.0
+        ],
+        "other_same_event_diameter_estimate_range_m": [
+          36.0,
+          61.0
+        ],
+        "scale_m_per_px": 0.08276797829036635,
+        "orientation_basis": "The selected frame's dominant formation-field tramline runs approximately 27 degrees counter-clockwise from source image-right. The same tramline family transfers through the two directed originals to the uniquely matched Martinsell Hill parcel, where current north-up reference imagery places it near 85 degrees true. This gives source image-right an operational bearing near 112 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 112,
+        "orientation_uncertainty_deg_modulo_180": 20,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-014/lane_a/cc_0cf000760654/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "3f1add0e7bf404f023137cee2e8775ee5abf27d312abe22a187739fafb72d560",
+        "reference_context_path": "tmp/overlay-wave-014/lane_a/cc_0cf000760654/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "fe513a38d053675fb885250bf247ee31f2c3061c59008c1bfca28e6fe2e3a225",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 4,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.00685053823,
+            -0.00685053823
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -4400.785759128374,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_30643a13059ca818f7b4",
+            "gimg_d5c1ccaf78819ec7f0be"
+          ],
+          "context_landmark": "Martinsell Hill scarp, wooded saddle, and event-field boundary",
+          "photographic_yaw_claimed": false,
+          "uncertainty_deg_modulo_180": 20
+        }
+      }
+    },
+    {
+      "overlay_id": "norridge-wood-2018-coordinate-size-directed-geometry-placement",
+      "registration_observation_id": "regobs_norridge_wood_2018_crop_geometry_v1",
+      "formation_id": "cc_d25d5f8c75ad",
+      "assertion_id": "sx_connector_76bd891375ce49a8",
+      "title": "Norridge Wood 2018 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2018/norridgewood/DJI_0127.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2018/norridgewood/norridgewood2018a.html",
+      "source_image_sha256": "3baf261ea5cbf3ddc5cbd7e8e2afc099dd470146a3a9115955a8398b681a845c",
+      "corners": [
+        [
+          51.20771218741,
+          -2.213994647996
+        ],
+        [
+          51.208266130153,
+          -2.213619330531
+        ],
+        [
+          51.208088015585,
+          -2.212949554683
+        ],
+        [
+          51.207534072842,
+          -2.213324872148
+        ]
+      ],
+      "center": [
+        51.20795443,
+        -2.21347051
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Connector and Temporary Temples event-specific targets, Temporary Temples event-specific size range, complete and directed catalog originals, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_basis": "Near-coincident event targets, unmistakable Norridge Wood parcel context, event-specific length, and a complete ground-only frame support provisional display geometry. No source-to-ground landmark fit or independent checkpoint validates accuracy.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, perspective rectification, or an accuracy benchmark. It is candidate/unaccepted, public-overlay-ineligible, publication-ineligible, alignment-ineligible, and rights-gated.",
+      "notes": "Rights-gated source pixels are not embedded, packaged, or redistributed.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_b4ef86dcbf5eefc476ad",
+        "source_frame_size_px": [
+          800,
+          606
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            606
+          ],
+          [
+            0,
+            606
+          ]
+        ],
+        "anchor_pixel_xy": [
+          467,
+          276
+        ],
+        "source_geometry_control_pixels": [
+          [
+            225,
+            523
+          ],
+          [
+            709,
+            29
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate overall length",
+            "operational_value_ft": 190,
+            "operational_value_m": 57.912,
+            "same_event_report_range_ft": [
+              180,
+              200
+            ],
+            "same_event_report_range_m": [
+              54.864,
+              60.96
+            ],
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative complete-design length on selected original",
+            "source_points_xy": [
+              [
+                225,
+                523
+              ],
+              [
+                709,
+                29
+              ]
+            ],
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Norridge Wood boundary, event-field wedge, and adjacent road",
+            "role": "unique-event parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "These features identify the parcel and direction but are perspective-affected and are not measured planar fit controls."
+          },
+          {
+            "feature": "Cley Hill skyline",
+            "role": "broader landscape corroboration",
+            "accepted_for_fit": false,
+            "reason": "The distant relief landmark corroborates the landscape but is not a ground-plane fit control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.032718999633,
+            0.077081132693,
+            -36.554165451732
+          ],
+          [
+            0.077081132693,
+            -0.032718999633,
+            -26.966445068759
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_operational_overall_length_m": 57.912,
+        "same_event_length_estimate_range_m": [
+          54.864,
+          60.96
+        ],
+        "scale_m_per_px": 0.08373788840276263,
+        "orientation_basis": "The selected frame's overall design axis runs approximately 45.6 degrees counter-clockwise from source image-right, from the nearer lower lobe toward the farther upper lobe. The same three-circle geometry and tractor lines transfer to the directed frame, where that axis points toward the uniquely matched Norridge Wood edge, approximately 337 degrees true. This gives source image-right an operational bearing near 23 degrees true, modulo 180.",
+        "source_left_to_right_control_bearing_true_deg": 23,
+        "orientation_uncertainty_deg_modulo_180": 25,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-014/lane_a/cc_d25d5f8c75ad/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "710831d4328e76c952b562887008e6198705aa2e3eb6de612d3ac58b6dc5c7d6",
+        "reference_context_path": "tmp/overlay-wave-014/lane_a/cc_d25d5f8c75ad/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "9de64b8d44df422de0506fbad4c7307c536f47433f623fc29b099fdefbbe07bb",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.007012033954,
+            -0.007012033954
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -3399.434060973631,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_35a6082104b0285b4e88",
+            "gimg_23f433f8d97b55d8bbac"
+          ],
+          "context_landmark": "Norridge Wood boundary, wedge-shaped event parcel, adjacent road, and Cley Hill skyline",
+          "photographic_yaw_claimed": false,
+          "uncertainty_deg_modulo_180": 25
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

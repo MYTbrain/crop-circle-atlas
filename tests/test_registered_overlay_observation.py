@@ -451,6 +451,152 @@ class RegisteredOverlayObservationTests(unittest.TestCase):
         ):
             self.assertFalse(placement[gate])
 
+    def test_martinsell_hill_2018_uses_full_boundary_and_remains_unaccepted(self):
+        root = Path(__file__).resolve().parents[1]
+        placements = json.loads(
+            (root / "data" / "provisional_image_scene_placements.json").read_text(
+                encoding="utf-8"
+            )
+        )["placements"]
+        placement = next(
+            row for row in placements if row["formation_id"] == "cc_0cf000760654"
+        )
+        observations = json.loads(
+            (root / "data" / "registered_overlay_observations.json").read_text(
+                encoding="utf-8"
+            )
+        )["observations"]
+        observation = next(
+            row
+            for row in observations
+            if row["observation_id"] == placement["observation_id"]
+        )
+        expected_corners = [
+            [51.37690612351, -1.73641035823],
+            [51.376683303313, -1.735526828258],
+            [51.376129735851, -1.735885136173],
+            [51.376352556048, -1.736768666145],
+        ]
+        self.assertEqual(
+            observation["projective_display_transform"]["source_frame_corners_xy"],
+            [[0, 0], [800, 0], [800, 803], [0, 803]],
+        )
+        self.assertEqual(
+            observation["computed_corners_wgs84_lat_lon"], expected_corners
+        )
+        self.assertAlmostEqual(
+            observation["source_registration"][
+                "non_folded_display_footprint_check"
+            ]["source_frame_corner_polygon_signed_area_m2"],
+            -4400.785759128374,
+            places=9,
+        )
+        self.assertEqual(
+            observation["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        for gate in (
+            "accepted",
+            "public_overlay_allowed",
+            "publication_eligible",
+            "embedding_allowed",
+            "pixel_bytes_packaged",
+            "alignment_eligibility",
+        ):
+            self.assertFalse(placement[gate])
+
+        queue = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "overlay_production_queue.json").read_text(
+                    encoding="utf-8"
+                )
+            )["records"]
+        }
+        self.assertEqual(
+            queue["cc_0cf000760654"]["processing_status"],
+            "provisional_registration",
+        )
+        self.assertIn(
+            "Explicit outcome: coordinate_size_geometry_provisional.",
+            queue["cc_0cf000760654"]["blocker_or_rejection_reason"],
+        )
+
+    def test_norridge_wood_2018_uses_full_boundary_and_remains_unaccepted(self):
+        root = Path(__file__).resolve().parents[1]
+        placements = json.loads(
+            (root / "data" / "provisional_image_scene_placements.json").read_text(
+                encoding="utf-8"
+            )
+        )["placements"]
+        placement = next(
+            row for row in placements if row["formation_id"] == "cc_d25d5f8c75ad"
+        )
+        observations = json.loads(
+            (root / "data" / "registered_overlay_observations.json").read_text(
+                encoding="utf-8"
+            )
+        )["observations"]
+        observation = next(
+            row
+            for row in observations
+            if row["observation_id"] == placement["observation_id"]
+        )
+        expected_corners = [
+            [51.20771218741, -2.213994647996],
+            [51.208266130153, -2.213619330531],
+            [51.208088015585, -2.212949554683],
+            [51.207534072842, -2.213324872148],
+        ]
+        self.assertEqual(
+            observation["projective_display_transform"]["source_frame_corners_xy"],
+            [[0, 0], [800, 0], [800, 606], [0, 606]],
+        )
+        self.assertEqual(
+            observation["computed_corners_wgs84_lat_lon"], expected_corners
+        )
+        self.assertAlmostEqual(
+            observation["source_registration"][
+                "non_folded_display_footprint_check"
+            ]["source_frame_corner_polygon_signed_area_m2"],
+            -3399.434060973631,
+            places=9,
+        )
+        self.assertEqual(
+            observation["projective_display_transform"][
+                "independent_ground_checkpoint_count"
+            ],
+            0,
+        )
+        for gate in (
+            "accepted",
+            "public_overlay_allowed",
+            "publication_eligible",
+            "embedding_allowed",
+            "pixel_bytes_packaged",
+            "alignment_eligibility",
+        ):
+            self.assertFalse(placement[gate])
+
+        queue = {
+            row["formation_id"]: row
+            for row in json.loads(
+                (root / "data" / "overlay_production_queue.json").read_text(
+                    encoding="utf-8"
+                )
+            )["records"]
+        }
+        self.assertEqual(
+            queue["cc_d25d5f8c75ad"]["processing_status"],
+            "provisional_registration",
+        )
+        self.assertIn(
+            "Explicit outcome: coordinate_size_geometry_provisional.",
+            queue["cc_d25d5f8c75ad"]["blocker_or_rejection_reason"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

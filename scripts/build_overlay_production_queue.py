@@ -2045,6 +2045,135 @@ PRODUCTION_REVIEW = {
         ),
         "review_date": "2026-07-30",
     },
+    "cc_0cf000760654": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Martinsell Hill has a publisher target, unmistakable scarp and "
+            "field context, a complete source frame, and same-event size "
+            "reports. Its nonfold coordinate-size display footprint uses a "
+            "61 metre operational diameter while preserving the conflicting "
+            "36 metre estimate. It has zero independent checkpoints and "
+            "remains unaccepted, rights-gated, public-overlay-ineligible, "
+            "publication-ineligible, and alignment-ineligible. Explicit "
+            "outcome: coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_e4db4e489b8f": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Stanton St Bernard has a uniquely recognizable Milk Hill "
+            "landscape, but same-event publisher targets differ by 159.688 "
+            "metres and no independently measured planar controls resolve the "
+            "center. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d25d5f8c75ad": {
+        "processing_status": "provisional_registration",
+        "reason": (
+            "Norridge Wood has two same-event targets 20.655 metres apart, a "
+            "uniquely recognizable wedge field beside the wood and road, a "
+            "complete source frame, and a 180-to-200-foot reported length. Its "
+            "nonfold coordinate-size display footprint has zero independent "
+            "checkpoints and remains unaccepted, rights-gated, "
+            "public-overlay-ineligible, publication-ineligible, and "
+            "alignment-ineligible. Explicit outcome: "
+            "coordinate_size_geometry_provisional."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_34c0a4a40d7e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Etchilhampton Hill has recognizable summit and parcel context, "
+            "but same-event publisher targets differ by 287.237 metres and no "
+            "independently measured planar controls resolve the center. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4ea612a2af0b": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Monarch's Way has a visually supported unique field, but no "
+            "authoritative same-event metric dimensions support a transferable "
+            "full-frame footprint. No footprint is published. Explicit "
+            "outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_6cb1ee15e26a": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Wyke Lane's displayed and linked same-event targets differ by "
+            "53.6 metres, no metric scale is documented, and the reviewed "
+            "frames are oblique. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_97bdacefa82e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Scrubbs Lane has a documented 120-foot size, but the staged "
+            "source context does not uniquely demonstrate the event field. No "
+            "transferable footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4add176bd4af": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sutton Hall's same-event targets differ by approximately 248 "
+            "metres, metric scale is absent, and the tall reviewed frame clips "
+            "a terminal element. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_4c02ba2e51ed": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sarraltroff has supported field context, but no reviewed source "
+            "frame is both complete and ground-only. No transferable footprint "
+            "is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_d0fdd30adb3e": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Sparticles Wood has recognizable landscape context, but all "
+            "complete reviewed frames include horizon or vertical landscape "
+            "and no reliable same-event metric scale is documented. No "
+            "footprint is published. Explicit outcome: candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_1f8fe91369b0": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Winterbourne Stoke Down has strong visual field evidence, but "
+            "same-event publisher targets differ by 24.604 metres, crossing "
+            "the 23 metre conflict threshold without independent center "
+            "resolution. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
+    "cc_860535b066ca": {
+        "processing_status": "candidate_field",
+        "reason": (
+            "Ammersee has a visually supported unique field, but metric scale "
+            "and a defensible camera pose or measured planar-control fit remain "
+            "unresolved. No footprint is published. Explicit outcome: "
+            "candidate_field."
+        ),
+        "review_date": "2026-07-30",
+    },
 }
 
 

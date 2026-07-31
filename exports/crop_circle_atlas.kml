@@ -141495,6 +141495,108 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Martinsell Hill 2018 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2018/martinsell/martinsellhill2018.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>martinsell-hill-2018-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_0cf000760654</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2018/martinsell/martinsellhill2018.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_martinsell_hill_2018_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-1.736768666145,51.376352556048,0 -1.735885136173,51.376129735851,0 -1.735526828258,51.376683303313,0 -1.73641035823,51.37690612351,0 -1.736768666145,51.376352556048,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Norridge Wood 2018 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2018/norridgewood/norridgewood2018a.html | Rights-gated source pixels are not embedded, packaged, or redistributed.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>norridge-wood-2018-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_d25d5f8c75ad</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2018/norridgewood/norridgewood2018a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_norridge_wood_2018_crop_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-2.213324872148,51.207534072842,0 -2.212949554683,51.208088015585,0 -2.213619330531,51.208266130153,0 -2.213994647996,51.20771218741,0 -2.213324872148,51.207534072842,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>
