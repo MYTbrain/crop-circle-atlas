@@ -11,8 +11,8 @@
     "unverified_unique_image_link_count": 7398,
     "rights_gated_unique_image_count": 7463,
     "displayable_unique_image_count": 493,
-    "mapped_catalog_image_count": 98,
-    "overlay_placement_count": 98,
+    "mapped_catalog_image_count": 100,
+    "overlay_placement_count": 100,
     "source_link_counts": {
       "Crop Circle Archives": 54,
       "Crop Circle Center": 2374,
@@ -114486,13 +114486,15 @@
         "title_text": "",
         "width": 800,
         "height": 573,
-        "sha256": "",
+        "sha256": "14e8c11c01ae50b6c843e22cbc92d30745fe01e288baabaabf8e0f5fc56e3a70",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "blaesheim-2019-coordinate-size-directed-geometry-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_ca66bf2461ea68dbbf2c",
@@ -131669,13 +131671,15 @@
         "title_text": "",
         "width": 800,
         "height": 645,
-        "sha256": "",
+        "sha256": "f7de2f06b8c0ac1a497ce27adc6ad304d8ebb39ada8c9e90ca8a80af627aa0f6",
         "rights_status": "metadata_only_contributor_image_rights_retained",
         "embedding_allowed": false,
         "pixel_display_policy": "link_only_rights_gated",
         "pixel_bytes_packaged": false,
         "link_verification_status": "not_requested",
-        "placement_status": "source_link_only_not_georegistered"
+        "placement_status": "mapped_overlay",
+        "overlay_id": "ipuacu-2020-coordinate-size-context-display-placement",
+        "registration_status": "coordinate_size_geometry_provisional"
       },
       {
         "image_link_id": "gimg_06fdedf974f51822eb96",

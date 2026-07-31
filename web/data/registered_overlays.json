@@ -11992,6 +11992,397 @@
       }
     },
     {
+      "overlay_id": "ipuacu-2020-coordinate-size-context-display-placement",
+      "registration_observation_id": "regobs_ipuacu_20201028_crop_geometry_lane_a_v1",
+      "formation_id": "cc_c09990209f4c",
+      "assertion_id": "sx_connector_70f28936da210e33",
+      "title": "Ipuaçu 2020 coordinate-size contextual display placement",
+      "source_image_url": "https://cropcircleconnector.com/2020/Ipuacu/fab2020b.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2020/Ipuacu/Ipuacu2020a.html",
+      "source_image_sha256": "f7de2f06b8c0ac1a497ce27adc6ad304d8ebb39ada8c9e90ca8a80af627aa0f6",
+      "corners": [
+        [
+          -26.629258439883,
+          -52.387995442041
+        ],
+        [
+          -26.628804046658,
+          -52.386853752282
+        ],
+        [
+          -26.629626892421,
+          -52.386443924902
+        ],
+        [
+          -26.630081285646,
+          -52.38758561466
+        ]
+      ],
+      "center": [
+        -26.62944444,
+        -52.38722222
+      ],
+      "coordinate_uncertainty_m": 25,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Publisher DMS target, event-specific field measurements, same-event complete and landscape-context source frames, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_basis": "The reconciled DMS anchor, unique sloping field beside the drainage gully and dirt-road/powerline corridor, complete near-overhead frame, and event-specific approximately 50 m survey diameter support a useful display placement. The crop-row direction is transferred only modulo 180 degrees and is not georegistration.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement only. It is not survey georegistration, perspective rectification, or an accuracy benchmark. Candidate/unaccepted, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, alignment-ineligible, and rights-gated.",
+      "notes": "The temporary QC contact sheet remains under tmp. Source pixels are not added to any canonical or public package.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_dca0d6654c8ccbfbfc79",
+        "source_frame_size_px": [
+          800,
+          645
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            645
+          ],
+          [
+            0,
+            645
+          ]
+        ],
+        "anchor_pixel_xy": [
+          398.0,
+          323.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            237.0,
+            323.0
+          ],
+          [
+            559.0,
+            323.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "event-specific approximate outer-circle diameter",
+            "operational_value_m": 50.0,
+            "source_wording": "circle of about 50 m in diameter",
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative outer-circle diameter on selected source",
+            "source_points_xy": [
+              [
+                237.0,
+                323.0
+              ],
+              [
+                559.0,
+                323.0
+              ]
+            ],
+            "pixel_span": 322.0,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          },
+          {
+            "type": "crop-row axis transferred across same-event frames",
+            "source_image_right_bearing_true_deg_modulo_180": 66.0,
+            "orientation_uncertainty_deg_modulo_180": 20.0,
+            "status": "used_for_display_orientation_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "unpaved road and drainage gully west of the field, powerline towers, sloping field, paired wooded islands, and repeated tramline family",
+            "role": "unique parcel and coarse axis context",
+            "accepted_for_fit": false,
+            "reason": "The same-event wide frames and current mosaics support field identity and an axis modulo 180 degrees, but no source-to-reference point coordinates were measured and the imagery dates differ."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "source_xy_to_local_metres_east_north": [
+          [
+            0.141854884727,
+            0.063157863832,
+            -76.858234139012
+          ],
+          [
+            0.063157863832,
+            -0.141854884727,
+            20.682297961862
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "documented_approximate_outer_circle_diameter_m": 50.0,
+        "documented_triangle_base_m_not_fitted": 45.0,
+        "documented_triangle_sides_m_not_fitted": 42.5,
+        "documented_outer_circle_and_arc_width_m_not_fitted": 2.0,
+        "documented_triangle_line_width_m_not_fitted": 1.2,
+        "scale_m_per_px": 0.155279503106,
+        "orientation_basis": "The selected frame's tramlines recur in the same-event landscape views. In the north-up current close reference the candidate field's dominant row family is approximately 66 degrees true modulo 180. The road/gully/powerline landscape supports that coarse transfer, but no absolute photographic yaw or point registration is claimed.",
+        "source_image_right_bearing_true_deg_modulo_180": 66.0,
+        "orientation_uncertainty_deg_modulo_180": 20.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-018/inspection/cc_c09990209f4c/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "efb055d47ee1c952ee9b4b7f418a83289bf005c543640db473989118290b4591",
+        "reference_context_path": "tmp/overlay-wave-018/inspection/cc_c09990209f4c/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "0242f99c6211e7307b8458fde5523d987798ac1de2a5c8404d6fdf846b40d923",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 3,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.024111724085,
+            -0.024111724085
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -12441.649627714976,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "contextual_axis_transfer_modulo_180_display_only",
+          "context_source_image_identifiers": [
+            "gimg_06fdedf974f51822eb96",
+            "gimg_7f2977fdea86ae0b9668",
+            "gimg_17d5ccdc2b5469c7cded"
+          ],
+          "context_landmark": "unpaved road, drainage gully, powerline towers, sloping field, wooded islands, and repeated crop rows",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg_modulo_180": 20.0
+        }
+      }
+    },
+    {
+      "overlay_id": "blaesheim-2019-coordinate-size-directed-geometry-placement",
+      "registration_observation_id": "regobs_blaesheim_2019_school_geometry_v1",
+      "formation_id": "cc_a81dedf56385",
+      "assertion_id": "sx_connector_fbdb61df4bad9b5c",
+      "title": "Blaesheim 2019 coordinate-size directed display placement",
+      "source_image_url": "https://cropcircleconnector.com/2019/Alsace/le-plan-de-l-exercice-de-ge.jpg",
+      "source_page_url": "https://cropcircleconnector.com/2019/Alsace/Alsace2019a.html",
+      "source_image_sha256": "14e8c11c01ae50b6c843e22cbc92d30745fe01e288baabaabf8e0f5fc56e3a70",
+      "corners": [
+        [
+          48.512847370754,
+          7.61416983324
+        ],
+        [
+          48.511613532659,
+          7.615728023709
+        ],
+        [
+          48.510872005874,
+          7.614397959668
+        ],
+        [
+          48.512105826126,
+          7.612839759643
+        ]
+      ],
+      "center": [
+        48.5117918,
+        7.6141857
+      ],
+      "coordinate_uncertainty_m": 63,
+      "registration_status": "coordinate_size_geometry_provisional",
+      "display_geometry_status": "coordinate_size_directed_contextual_orientation_display_placement",
+      "reference_imagery": "Connector event map/grid, same-event dimension evidence, selected complete geometry frame, landscape context, and Esri World Imagery current close/context mosaics",
+      "reference_imagery_date": "undated_current_mosaic_retrieved_2026-07-30",
+      "reviewed_at": "2026-07-30",
+      "review_basis": "The event-specific view center, uniquely matched parcel, annotated orthographic plan, complete aerial, approximate event-wide length, and nonfold footprint support provisional display geometry. No planar landmark fit or independent checkpoint validates accuracy.",
+      "source_photo_pixels": "remote_source_link_only",
+      "rights_status": "not_cleared_for_redistribution",
+      "rights_attribution": "",
+      "license_url": "",
+      "embedding_allowed": false,
+      "default_opacity": 0.68,
+      "show_by_default": false,
+      "formal_alignment_status": "excluded_pending_independent_ground_control",
+      "quality_disclosure": "Coordinate-, size-, and context-directed display placement, not survey georegistration, perspective rectification, or an accuracy benchmark. It is candidate/unaccepted, rights-uncleared, public-overlay-ineligible, publication-ineligible, redistribution-prohibited, embedding-prohibited, pixel-packaging-false, and alignment-ineligible.",
+      "notes": "Rights-gated source pixels remain in the temporary inspection workspace. They are not packaged or redistributed by this placement.",
+      "source_registration": {
+        "kind": "coordinate_size_geometry_similarity_directed_contextual_display_placement",
+        "source_image_identifier": "gimg_1b682c4c83a39198d6a3",
+        "source_frame_size_px": [
+          800,
+          573
+        ],
+        "full_boundary_source_corners_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            800,
+            0
+          ],
+          [
+            800,
+            573
+          ],
+          [
+            0,
+            573
+          ]
+        ],
+        "anchor_pixel_xy": [
+          405.0,
+          333.0
+        ],
+        "source_geometry_control_pixels": [
+          [
+            70.0,
+            333.0
+          ],
+          [
+            740.0,
+            333.0
+          ]
+        ],
+        "formation_bound_controls": [
+          {
+            "type": "approximate event-wide overall length",
+            "operational_value_m": 150.0,
+            "source_status": "secondary_contemporaneous_account_approximate_not_surveyed",
+            "status": "operational_scale_constraint_explicitly_non_independent"
+          },
+          {
+            "type": "representative end-to-end span on annotated plan",
+            "source_points_xy": [
+              [
+                70.0,
+                333.0
+              ],
+              [
+                740.0,
+                333.0
+              ]
+            ],
+            "pixel_span": 670.0,
+            "status": "used_for_display_scale_only_explicitly_non_independent"
+          }
+        ],
+        "persistent_controls_reviewed": [
+          {
+            "feature": "Blaesheim settlement edge, tree-lined road, plan right-side road, and event-field boundaries",
+            "role": "unique parcel and coarse-direction context",
+            "accepted_for_fit": false,
+            "reason": "The plan and aerial resolve the parcel, but no distributed source-to-reference landmark coordinates were measured."
+          },
+          {
+            "feature": "long formation axis and field-edge relationship",
+            "role": "same-event coarse source orientation transfer",
+            "accepted_for_fit": false,
+            "reason": "Used only for a bounded visual bearing; it is not an independent geographic control."
+          }
+        ],
+        "persistent_controls_accepted_for_fit": 0,
+        "projective_source_xy_to_local_metres_east_north": [
+          [
+            0.14390767381,
+            -0.171502487265,
+            -1.172279633827
+          ],
+          [
+            -0.171502487265,
+            -0.14390767381,
+            117.379762721374
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reported_approximate_overall_length_m": 150.0,
+        "dimension_evidence_status": "secondary_contemporaneous_report_approximate_not_surveyed",
+        "scale_m_per_px": 0.22388059701492538,
+        "orientation_basis": "The annotated plan is an orthographic view of the event field. Its right-side road, lower-left settlement edge, field boundaries, and long design axis agree with the complete same-event aerial and the current north-up parcel. This supplies an operational source-right bearing near 140 degrees true, modulo 180; 20 degrees covers the manual contextual transfer. No distributed control fit is claimed.",
+        "source_left_to_right_control_bearing_true_deg": 140.0,
+        "orientation_uncertainty_deg_modulo_180": 20.0,
+        "control_fit_rms_m": 0,
+        "control_fit_note": "Formation-bound similarity interpolation has zero algebraic residual but is not an independent accuracy test.",
+        "reference_close_path": "tmp/overlay-wave-018/inspection/cc_a81dedf56385/esri_current_close.jpg",
+        "reference_close_size_px": [
+          1600,
+          1200
+        ],
+        "reference_close_sha256": "66c1e710fa230a728d5071c48ea179f42916b9d3aa8b36b72511d98841206b6a",
+        "reference_context_path": "tmp/overlay-wave-018/inspection/cc_a81dedf56385/esri_current_context.jpg",
+        "reference_context_size_px": [
+          1600,
+          1200
+        ],
+        "reference_context_sha256": "d3129f9317d88f7679e366f614dbf76c985b09c50fdd88fd3844721870d78e9d",
+        "reference_service_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+        "control_count": 2,
+        "independent_checkpoint_count": 0,
+        "formal_alignment_status": "excluded_pending_independent_ground_control",
+        "registration_model_accuracy_claim": "none",
+        "non_folded_display_footprint_check": {
+          "projective_denominator_range": [
+            1,
+            1
+          ],
+          "jacobian_determinant_range": [
+            -0.05012252172,
+            -0.05012252172
+          ],
+          "jacobian_sign_consistent": true,
+          "source_frame_corner_polygon_signed_area_m2": -22976.16395621277,
+          "result": "pass_non_folded"
+        },
+        "cross_frame_orientation_transfer": {
+          "status": "directed_contextual_transfer_display_only",
+          "context_source_image_identifiers": [
+            "gimg_05dcf92dffdd86b97a43",
+            "gimg_d68a18e48bd9040595eb"
+          ],
+          "context_landmark": "Blaesheim settlement edge, tree-lined road, event-field boundaries, plan right-side road, and long formation axis",
+          "photographic_yaw_claimed": false,
+          "projective_accuracy_claimed": false,
+          "uncertainty_deg": 20.0,
+          "symmetry_modulus_deg": 180
+        }
+      }
+    },
+    {
       "overlay_id": "commons-diessenhofen-20080715-164408",
       "registration_observation_id": "regobs_commons_diessenhofen_20080715_v1",
       "formation_id": "cc_2deeb6879ebf",

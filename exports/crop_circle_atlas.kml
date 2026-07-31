@@ -142158,6 +142158,108 @@
           </outerBoundaryIs>
         </Polygon>
       </Placemark>
+      <Placemark>
+        <name>Ipuaçu 2020 coordinate-size contextual display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2020/Ipuacu/Ipuacu2020a.html | The temporary QC contact sheet remains under tmp. Source pixels are not added to any canonical or public package.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>ipuacu-2020-coordinate-size-context-display-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_c09990209f4c</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2020/Ipuacu/Ipuacu2020a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_ipuacu_20201028_crop_geometry_lane_a_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>-52.38758561466,-26.630081285646,0 -52.386443924902,-26.629626892421,0 -52.386853752282,-26.628804046658,0 -52.387995442041,-26.629258439883,0 -52.38758561466,-26.630081285646,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Blaesheim 2019 coordinate-size directed display placement [image rights-gated]</name>
+        <visibility>1</visibility>
+        <description>Reviewed image footprint; source pixels are not embedded or remotely loaded. Rights: not_cleared_for_redistribution | source page: https://cropcircleconnector.com/2019/Alsace/Alsace2019a.html | Rights-gated source pixels remain in the temporary inspection workspace. They are not packaged or redistributed by this placement.</description>
+        <ExtendedData>
+          <Data name="overlay_id">
+            <value>blaesheim-2019-coordinate-size-directed-geometry-placement</value>
+          </Data>
+          <Data name="formation_id">
+            <value>cc_a81dedf56385</value>
+          </Data>
+          <Data name="registration_status">
+            <value>coordinate_size_geometry_provisional</value>
+          </Data>
+          <Data name="rights_status">
+            <value>not_cleared_for_redistribution</value>
+          </Data>
+          <Data name="embedding_allowed">
+            <value>false</value>
+          </Data>
+          <Data name="pixel_distribution">
+            <value>not_packaged_not_remotely_loaded</value>
+          </Data>
+          <Data name="source_page_url">
+            <value>https://cropcircleconnector.com/2019/Alsace/Alsace2019a.html</value>
+          </Data>
+          <Data name="display_geometry_status">
+            <value>coordinate_size_directed_contextual_orientation_display_placement</value>
+          </Data>
+          <Data name="registration_observation_id">
+            <value>regobs_blaesheim_2019_school_geometry_v1</value>
+          </Data>
+        </ExtendedData>
+        <Style>
+          <LineStyle>
+            <color>ff55adf6</color>
+            <width>3</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>3055adf6</color>
+          </PolyStyle>
+        </Style>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>7.612839759643,48.512105826126,0 7.614397959668,48.510872005874,0 7.615728023709,48.511613532659,0 7.61416983324,48.512847370754,0 7.612839759643,48.512105826126,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
       <GroundOverlay>
         <name>Diessenhofen 2008-07-15 16:44:08 landmark-controlled aerial placement</name>
         <visibility>1</visibility>
